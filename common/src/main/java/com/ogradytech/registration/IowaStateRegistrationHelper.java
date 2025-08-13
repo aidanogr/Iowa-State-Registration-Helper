@@ -132,7 +132,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 					throw new NumberFormatException();
 				}
 				
-				
+				String classesAPI_request_data = buildJSON_requestData(departmentFullName, courseIDString, classContainsDiscussionBoxes[i].isSelected());
 				
 				System.out.println(departmentFullName);
 				System.out.println(courseID);
@@ -146,7 +146,29 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	}
     }
     
-    public static void handleFormSubmissionException(FormSubmissionException e) {
+    private static String buildJSON_requestData(String departmentFullName, String courseIDString, boolean selected) {
+    	String template = " {\n" +
+    			  "\"academicPeriodId\": \"ACADEMIC_PERIOD-2025Fall\",\n" + //TODO make academic period programatic...
+    			  "\"department\": \"" + departmentFullName + "\",\n" + 
+    			  "\"courseId\": \"2270\",\n" +
+    			  "\"level\": null,\n" +
+    			  "\"requirement\": null,\n" +
+    			  "\"instructor\": \"\",\n" +
+    			  "\"semesterTag\": null,\n" +
+    			  "\"credits\": null,\n" +
+    			  "\"openSeats\": false,\n" +
+    			  "\"daysOfTheWeek\": [],\n" +
+    			  "\"sectionStartDate\": null,\n" +
+    			  "\"sectionEndDate\": null,\n" +
+    			  "\"title\": \"\",\n" +
+    			  "\"deliveryMode\": null,\n" +
+    			  "\"allowedGradingBases\": []\n" +
+    			"} "
+		return null;
+	}
+
+
+	public static void handleFormSubmissionException(FormSubmissionException e) {
     	
     	InstructionalDialog d = new InstructionalDialog("DialogTitle", "DialogBody");
 
