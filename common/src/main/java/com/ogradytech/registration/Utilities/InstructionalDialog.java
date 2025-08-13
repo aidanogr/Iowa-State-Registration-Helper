@@ -3,15 +3,18 @@ package com.ogradytech.registration.Utilities;
 import com.codename1.ui.Button;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.TextArea;
+import com.codename1.ui.layouts.BoxLayout;
 
 public class InstructionalDialog {
 
 	public Dialog dialog;
 	public TextArea title;
 	public TextArea body;
+	public Button exitButton;
 	
 	public InstructionalDialog(String titleUIID, String bodyUIID) {
-		Dialog d = new Dialog();
+
+		Dialog d = new Dialog(BoxLayout.y());
 
 		d.setUIID("InstructionalDialog");
 		
@@ -31,14 +34,14 @@ public class InstructionalDialog {
 		this.dialog = d; 
 		this.body = body;
 		
-		Button exitButton = new Button("Close this window");
+		this.exitButton = new Button("Close this window");
+		this.exitButton.setUIID("Button");
 		exitButton.addActionListener(evt -> {
 			d.dispose();
 		});
 		dialog.add(title);
 		dialog.add(body);	
 		dialog.add(exitButton);
-
 	}
 	
 	

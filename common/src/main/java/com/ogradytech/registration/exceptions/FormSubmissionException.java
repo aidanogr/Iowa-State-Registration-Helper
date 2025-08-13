@@ -9,7 +9,9 @@ public class FormSubmissionException extends Exception{
 
 	public enum ExceptionType {
 		CLASS_NOT_FOUND, //message: attempted class name
-		NO_CLASSES_SUBMITTED //message: none
+		NO_CLASSES_SUBMITTED, //message: none
+		IO_EXCEPTION, //message: none
+		BAD_FORMAT, //message: attempted classname input
 	}
 	
 	private String message;

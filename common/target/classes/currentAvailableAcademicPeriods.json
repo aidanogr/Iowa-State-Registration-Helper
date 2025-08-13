@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "ACADEMIC_PERIOD-2024-2025Winter",
+            "name": "2024-2025 Winter Session (12/23/2024-01/17/2025)",
+            "isCurrent": false,
+            "startDate": 1734912000
+        },
+        {
+            "id": "ACADEMIC_PERIOD-2025Fall",
+            "name": "2025 Fall Semester (08/25/2025-12/19/2025)",
+            "isCurrent": true,
+            "startDate": 1756080000
+        },
+        {
+            "id": "ACADEMIC_PERIOD-2025Summer",
+            "name": "2025 Summer Semester (05/19/2025-08/08/2025)",
+            "isCurrent": false,
+            "startDate": 1747612800
+        },
+        {
+            "id": "ACADEMIC_PERIOD-2025Spring",
+            "name": "2025 Spring Semester (01/21/2025-05/16/2025)",
+            "isCurrent": false,
+            "startDate": 1737417600
+        }
+    ]
+}

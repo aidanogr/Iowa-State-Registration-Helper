@@ -2,6 +2,7 @@ package com.ogradytech.registration;
 
 import static com.codename1.ui.CN.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import com.codename1.system.Lifecycle;
@@ -14,6 +15,7 @@ import com.codename1.ui.plaf.*;
 import com.codename1.ui.table.TableLayout;
 import com.codename1.ui.util.Resources;
 import com.ogradytech.registration.Utilities.InstructionalDialog;
+import com.ogradytech.registration.Utilities.ParsingUtilities;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 import com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionType;
 
@@ -36,33 +38,12 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 
     public static void showPreface() {
     	    	
-    	//todo: make this a InstructionalDialog
-        Dialog preface = new Dialog();
-        TextArea prefaceTitle = new TextArea("Iowa State Registration Helper ");
-        prefaceTitle.setEndsWith3Points(false);
-        prefaceTitle.setUIID("DialogTitle");
-        prefaceTitle.setEditable(false);
-        prefaceTitle.setFocusable(false);
-
-        preface.add(prefaceTitle);
-
-        TextArea prefaceBody = new TextArea("Enter up to " + maxNumberOfClasses + " desired classes and hit generate to view potential schedules."
+    	InstructionalDialog preface = new InstructionalDialog("DialogTitle", "DialogBody");
+        preface.title.setText("Iowa State Registration Helper ");
+        preface.body.setText("Enter up to " + maxNumberOfClasses + " desired classes and hit generate to view potential schedules."
         		+ " If a class has a discussion section, make sure to click checkbox next to class. Course sections waitlisted or closed are not included"
         		+ "in generated schedules");
-        prefaceBody.setEndsWith3Points(false);
-        prefaceBody.setUIID("DialogBody");
-        prefaceBody.setEditable(false);
-        prefaceBody.setFocusable(false);
 
-        preface.add(prefaceBody);
-        
-        Button prefaceExitButton = new Button("Close this window");
-        prefaceExitButton.setUIID("Button");
-        prefaceExitButton.addActionListener(evt -> {
-        	preface.dispose();
-        });
-        
-        preface.add(prefaceExitButton);
         
         preface.show();
         
@@ -92,12 +73,13 @@ public class IowaStateRegistrationHelper extends Lifecycle {
         TextField[] classInputs = new TextField[maxNumberOfClasses];
         CheckBox[] classContainsDiscussionBoxes = new CheckBox[maxNumberOfClasses];
         for(int i = 0; i < maxNumberOfClasses; i++) {
-        	TextField classInput = classInputs[i];
-        	classInput = new TextField();
+
+        	TextField classInput = new TextField("");
+        	classInputs[i] = classInput;
         	classInputContainer.add(textCol, classInput);
         	
-        	CheckBox classContainsDiscussionBox = classContainsDiscussionBoxes[i];
-        	classContainsDiscussionBox = new CheckBox();
+        	CheckBox classContainsDiscussionBox = new CheckBox();
+        	classContainsDiscussionBoxes[i] = classContainsDiscussionBox;
         	classInputContainer.add(checkCol, classContainsDiscussionBox);
         }
         inputForm.add(classInputContainer);
@@ -126,7 +108,41 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     public static void formSubmitted(TextField[] classInputs, CheckBox[] classContainsDiscussionBoxes) throws FormSubmissionException {
     	ArrayList<Integer> validClassInputs = new ArrayList<>(10);
     	for(int i = 0 ; i < classInputs.length; i++) {
-    		
+    		if(!classInputs[i].getText().trim().isEmpty()) validClassInputs.add(i);
+    	}
+    	
+    	if(validClassInputs.size() == 0) {
+    		throw new FormSubmissionException(ExceptionType.NO_CLASSES_SUBMITTED, "");
+    	}
+    	ArrayList<String> departmentFullNames = new ArrayList<String>(10);
+    	for(int i = 0; i < validClassInputs.size(); i++) {
+    		try {
+    			String validClassName = ParsingUtilities.stripLeadingAndTrailingWhiteSpace(
+    						classInputs[validClassInputs.get(i)].getText()
+    					);
+				int delimiterIndex = validClassName.indexOf(" ");
+				if(delimiterIndex == -1) {
+					throw new FormSubmissionException(ExceptionType.BAD_FORMAT, validClassName);
+				}				
+				String departmentFullName = ParsingUtilities.getDepartmentFromFullCourseName(validClassName);
+				String courseIDString = validClassName.substring(delimiterIndex + 1, validClassName.length()).trim();
+				
+				int courseID = Integer.valueOf(courseIDString); //exception can be thrown here
+				if(courseID < 101 || courseID > 7000) {
+					throw new NumberFormatException();
+				}
+				
+				
+				
+				System.out.println(departmentFullName);
+				System.out.println(courseID);
+			} catch (IOException e) {
+				throw new FormSubmissionException(FormSubmissionException.ExceptionType.IO_EXCEPTION, "");
+			} catch (NumberFormatException e) {
+				throw new FormSubmissionException(ExceptionType.BAD_FORMAT, "Please enter valid courseID");
+			} catch (FormSubmissionException e) {
+				throw e;
+			}
     	}
     }
     
@@ -145,6 +161,14 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				break;
 			case NO_CLASSES_SUBMITTED:
 				d.body.setText("Please enter at least 1 class");
+				break;
+			case BAD_FORMAT:
+				d.body.setText("A class you have entered has a bad format: \n" + e.getMessage());
+				break;
+			default:
+				d.body.setText("An unexpected error has occured. Please contact aidan@ogradytech.com with details of your crash if"
+						+ " problem persists " + e.getExceptionType().name() + "\n\n" + e.getStackTrace());
+				e.printStackTrace();
 				break;
     	}
     	
