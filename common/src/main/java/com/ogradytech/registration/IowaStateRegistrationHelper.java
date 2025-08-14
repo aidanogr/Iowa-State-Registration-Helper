@@ -24,7 +24,7 @@ import com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionT
  * of building native mobile applications using Java.
  */
 public class IowaStateRegistrationHelper extends Lifecycle {
-	
+	public static int networkRequestCounter = 0;
 	public static final int maxNumberOfClasses = 10; 
 	public static Form inputForm;
 
@@ -75,6 +75,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
         for(int i = 0; i < maxNumberOfClasses; i++) {
 
         	TextField classInput = new TextField("");
+        	classInput.setMaxSize(15);
         	classInputs[i] = classInput;
         	classInputContainer.add(textCol, classInput);
         	
@@ -146,30 +147,49 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	}
     }
     
-    private static String buildJSON_requestData(String departmentFullName, String courseIDString, boolean selected) {
+    private static String buildJSON_requestData(String departmentFullName, String courseIDString, boolean classContainsDiscussion) {
+		networkRequestCounter++;
+		System.out.println("\nNetwork request counter: " + networkRequestCounter);
     	String template = " {\n" +
     			  "\"academicPeriodId\": \"ACADEMIC_PERIOD-2025Fall\",\n" + //TODO make academic period programatic...
     			  "\"department\": \"" + departmentFullName + "\",\n" + 
-    			  "\"courseId\": \"2270\",\n" +
+    			  "\"courseId\": \""+ courseIDString + "\",\n" +
     			  "\"level\": null,\n" +
     			  "\"requirement\": null,\n" +
     			  "\"instructor\": \"\",\n" +
     			  "\"semesterTag\": null,\n" +
     			  "\"credits\": null,\n" +
-    			  "\"openSeats\": false,\n" +
+    			  "\"openSeats\": true,\n" +
     			  "\"daysOfTheWeek\": [],\n" +
     			  "\"sectionStartDate\": null,\n" +
     			  "\"sectionEndDate\": null,\n" +
     			  "\"title\": \"\",\n" +
     			  "\"deliveryMode\": null,\n" +
     			  "\"allowedGradingBases\": []\n" +
-    			"} "
+    			  "} ";
+    	ConnectionRequest r = new ConnectionRequest();
+    	r.setPost(true);
+    	r.setUrl("https://api.classes.iastate.edu/api/courses/search");
+    	r.setRequestBody(template);
+    	r.addRequestHeader("Accept", "application/json, text/plain, */*");
+    	r.addRequestHeader("Accept-Encoding", "gzip, deflate, br, zstd");
+    	r.addRequestHeader("Accept-Language", "en-US,en;q=0.9");
+    	r.addRequestHeader("Content-Length", String.valueOf(template.length()));
+    	r.addRequestHeader("Content-Type", "application/json");
+    	
+    	r.addResponseListener(evt -> {
+    		String body = new String(r.getResponseData());
+    		System.out.println(body);
+    	});
+    	
+    	NetworkManager.getInstance().addToQueue(r);
 		return null;
 	}
 
 
 	public static void handleFormSubmissionException(FormSubmissionException e) {
-    	
+
+
     	InstructionalDialog d = new InstructionalDialog("DialogTitle", "DialogBody");
 
     	d.title.setText("An Error has occured");
