@@ -1,4 +1,4 @@
-package com.ogradytech.registration.Utilities;
+package com.ogradytech.registration.gui;
 
 import com.codename1.ui.Button;
 import com.codename1.ui.Dialog;

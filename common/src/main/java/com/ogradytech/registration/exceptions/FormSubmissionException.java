@@ -12,6 +12,7 @@ public class FormSubmissionException extends Exception{
 		NO_CLASSES_SUBMITTED, //message: none
 		IO_EXCEPTION, //message: none
 		BAD_FORMAT, //message: attempted classname input
+		PARSING_EXCEPTION, //message: Program aborted unexpectedly. Please contact aidan@ogradytech.com
 	}
 	
 	private String message;

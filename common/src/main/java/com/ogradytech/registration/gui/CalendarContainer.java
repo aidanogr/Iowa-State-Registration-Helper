@@ -1,4 +1,4 @@
-package com.ogradytech.registration.Utilities;
+package com.ogradytech.registration.gui;
 
 import java.util.ArrayList;
 

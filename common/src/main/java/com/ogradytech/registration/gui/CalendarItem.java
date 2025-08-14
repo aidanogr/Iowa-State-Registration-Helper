@@ -1,11 +1,16 @@
-package com.ogradytech.registration.Utilities;
+package com.ogradytech.registration.gui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+<<<<<<< Updated upstream:common/src/main/java/com/ogradytech/registration/Utilities/CalendarItem.java
 import com.codename1.ui.Button;
 import com.ogradytech.registration.Utilities.MeetingInfo.Days;
+=======
+import com.ogradytech.registration.Utilities.MeetingInfo;
+import com.ogradytech.registration.exceptions.FormSubmissionException;
+>>>>>>> Stashed changes:common/src/main/java/com/ogradytech/registration/gui/CalendarItem.java
 
 public class CalendarItem {
 
@@ -31,7 +36,7 @@ public class CalendarItem {
 		}
 	}
 	
-	public void addMeetingInfo(String section, short hour, short minute, ArrayList<Days> days) {
+	public void addMeetingInfo(String section, short hour, short minute, String days) throws FormSubmissionException {
 		this.sectionMeetingInfo.put(section, new MeetingInfo(hour, minute, days));
 	}
 
