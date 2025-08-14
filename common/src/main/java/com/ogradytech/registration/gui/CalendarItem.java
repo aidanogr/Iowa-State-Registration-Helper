@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-<<<<<<< Updated upstream:common/src/main/java/com/ogradytech/registration/Utilities/CalendarItem.java
 import com.codename1.ui.Button;
-import com.ogradytech.registration.Utilities.MeetingInfo.Days;
-=======
 import com.ogradytech.registration.Utilities.MeetingInfo;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
->>>>>>> Stashed changes:common/src/main/java/com/ogradytech/registration/gui/CalendarItem.java
 
 public class CalendarItem {
 
