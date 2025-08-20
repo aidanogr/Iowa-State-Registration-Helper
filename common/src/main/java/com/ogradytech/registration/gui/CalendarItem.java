@@ -14,10 +14,15 @@ public class CalendarItem {
 	private static int currentColorIndex = 0;
 
 	private String courseName;
+	private InstructionFormat type;
 	private Map<String, MeetingInfo> sectionMeetingInfo;
 	private String currentSection; 	//could be number or letter,
 	public Button button;
+	public int color;
 
+	public enum InstructionFormat {
+		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
+	}
 	
 	public CalendarItem(String courseName) {
 		this.courseName = courseName;
@@ -26,15 +31,14 @@ public class CalendarItem {
 		button = new Button(courseName);
 		button.setUIID("ClassButton");
 		button.getAllStyles().setBgColor(allColors[currentColorIndex]);
+		color = allColors[currentColorIndex];
 		currentColorIndex++;
 		if(currentColorIndex >= allColors.length) {
 			currentColorIndex = 0;
 		}
 	}
 	
-	public void addMeetingInfo(String section, short hour, short minute, String days) throws FormSubmissionException {
-		this.sectionMeetingInfo.put(section, new MeetingInfo(hour, minute, days));
-	}
+
 
 	public void addMeetingInfo(String section, MeetingInfo info) {
 		this.sectionMeetingInfo.put(section, info);
@@ -43,4 +47,51 @@ public class CalendarItem {
 	public MeetingInfo getCurrentSectionMeetingInfo() {
 		return sectionMeetingInfo.get(currentSection);
 	}
+	
+	public String getCourseName() {
+		return courseName;
+	}
+	
+	public void debugPrint() {
+	    StringBuilder sb = new StringBuilder();
+	    sb.append("CalendarItem {");
+	    sb.append("\n  Course Name: ").append(courseName);
+	    sb.append("\n  Type: ").append(type);
+	    sb.append("\n  Current Section: ").append(currentSection);
+	    sb.append("\n  Color Index: ").append(currentColorIndex)
+	      .append(" (0x").append(Integer.toHexString(allColors[currentColorIndex])).append(")");
+
+	    sb.append("\n  Meeting Info:");
+	    if (sectionMeetingInfo != null && !sectionMeetingInfo.isEmpty()) {
+	        for (Map.Entry<String, MeetingInfo> entry : sectionMeetingInfo.entrySet()) {
+	            sb.append("\n    Section ").append(entry.getKey()).append(": ");
+	            MeetingInfo info = entry.getValue();
+	            sb.append("[Days=").append(info.getMeetingDays())
+	              .append(", Start=")
+	              .append(twoDigits(info.getStartHour()))
+	              .append(":")
+	              .append(twoDigits(info.getStartMinute()))
+	              .append(", End=")
+	              .append(twoDigits(info.getEndHour()))
+	              .append(":")
+	              .append(twoDigits(info.getEndMinute()))
+	              .append("]");
+	        }
+	    } else {
+	        sb.append(" none");
+	    }
+
+	    sb.append("\n  Button: ").append(button != null ? button.getText() : "null");
+
+	    sb.append("\n}");
+	    System.out.println(sb.toString());
+	}
+
+	/**
+	 * Helper to pad single-digit numbers with a leading 0.
+	 */
+	private static String twoDigits(int n) {
+	    return (n < 10 ? "0" : "") + n;
+	}
+
 }

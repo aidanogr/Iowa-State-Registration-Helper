@@ -4,6 +4,9 @@ import static com.codename1.ui.CN.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 import com.codename1.system.Lifecycle;
 import com.codename1.ui.*;
@@ -14,9 +17,12 @@ import com.codename1.io.*;
 import com.codename1.ui.plaf.*;
 import com.codename1.ui.table.TableLayout;
 import com.codename1.ui.util.Resources;
+import com.codename1.util.regex.StringReader;
+import com.ogradytech.registration.Utilities.MeetingInfo;
 import com.ogradytech.registration.Utilities.ParsingUtilities;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 import com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionType;
+import com.ogradytech.registration.gui.CalendarItem;
 import com.ogradytech.registration.gui.InstructionalDialog;
 
 /**
@@ -27,12 +33,14 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 	public static int networkRequestCounter = 0;
 	public static final int maxNumberOfClasses = 10; 
 	public static Form inputForm;
-
+	public static ArrayList<CalendarItem> calendarCourseInformation = new ArrayList<>(10);
     @Override
     public void runApp() {
        
     	showPreface();
-    	showInputForm();	//upon form submission,
+    	showInputForm();	// calls "formSubmitted()" once complete. Function now controls flow of program.
+
+    	
    }
     
 
@@ -100,7 +108,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     
 
     /**
-     * function attempts to build JSON string of input classes as long as they exist and 
+     * 
      * forward it 
      * @param classContainsDiscussionBoxes 
      * @param classInputs 
@@ -133,7 +141,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 					throw new NumberFormatException();
 				}
 				
-				String classesAPI_request_data = buildJSON_requestData(departmentFullName, courseIDString, classContainsDiscussionBoxes[i].isSelected());
+				requestCourseInfo(departmentFullName, courseIDString, classContainsDiscussionBoxes[i].isSelected());
 				
 				System.out.println(departmentFullName);
 				System.out.println(courseID);
@@ -147,7 +155,8 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	}
     }
     
-    private static String buildJSON_requestData(String departmentFullName, String courseIDString, boolean classContainsDiscussion) {
+    //TODO this should probably throw something
+    private static void requestCourseInfo(String departmentFullName, String courseIDString, boolean classContainsDiscussion) {
 		networkRequestCounter++;
 		System.out.println("\nNetwork request counter: " + networkRequestCounter);
     	String template = " {\n" +
@@ -177,13 +186,53 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	r.addRequestHeader("Content-Length", String.valueOf(template.length()));
     	r.addRequestHeader("Content-Type", "application/json");
     	
+    	//this should not need to be syncronized, 1 current background thread worker. but if more desired we need to change this
     	r.addResponseListener(evt -> {
     		String body = new String(r.getResponseData());
+    		parseAndStoreClassData(body);
+    		
     		System.out.println(body);
     	});
     	
     	NetworkManager.getInstance().addToQueue(r);
-		return null;
+	}
+
+
+    /**
+     * Stores parsed JSON in global  "calendarCourseInformation" list (see top of file)
+     * @param body JSON of the request body, specifically for api.classes.iastate.edu/api/courses/search
+     */
+	@SuppressWarnings("unchecked")
+	private static void parseAndStoreClassData(String body) {
+		// TODO Auto-generated method stub
+		JSONParser bodyParser = new JSONParser();
+		StringReader reader = new StringReader(body);
+		Map<String, Object> parsedJSON;
+		try {
+			parsedJSON = bodyParser.parseJSON(reader);
+			//TODO this might be the ugliest line of code i've ever written. I might just roll my own JSON parser
+			//update: i tried to roll my own json parser and it sucked. ugly code is okay ig
+			Map<String, Object> classFound =  ((java.util.List<Map<String, Object>>)parsedJSON.get("data")).get(0);
+			CalendarItem classItem = new CalendarItem((String) classFound.get("courseId"));
+
+			java.util.List<Map<String,Object>> sections = (List<Map<String, Object>>) classFound.get("sections");
+			if(sections.size() < 1) { System.err.println("Assertion failed; sections size < 1"); return; } //TODO throw exception here?
+			String meetingType = (String) sections.get(0).get("instructionalFormat"); //we need to check if there are multiple instruction formats under the same class (i.e COMS 2270 has lecture and discussion)
+			for(int i = 0; i < sections.size(); i++) {
+				Map<String,Object> section = sections.get(i);
+				if(!meetingType.equals((String) section.get("instructionalFormat"))) {
+					System.err.println("poopy scoopy");
+				}
+				classItem.addMeetingInfo(
+						(String) section.get("number"),new MeetingInfo((String) section.get("meetingPatterns"))
+					);
+				classItem.debugPrint();
+			}
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
