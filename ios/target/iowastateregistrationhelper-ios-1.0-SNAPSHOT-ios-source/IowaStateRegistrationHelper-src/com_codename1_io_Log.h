@@ -1,0 +1,162 @@
+#ifndef __COM_CODENAME1_IO_LOG__
+#define __COM_CODENAME1_IO_LOG__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_io_Log;
+extern void __INIT_VTABLE_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log_setReportingLevel___int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_io_Log_getReportingLevel___R_int(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_LONG com_codename1_io_Log_getUniqueDeviceId___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Log_getUniqueDeviceKey___R_java_lang_String(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log_sendLog__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log_sendLogAsync__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log_sendLogImpl___boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_install___com_codename1_io_Log(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_p___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_p___java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Log_e___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_logThrowable___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_print___java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Log_createWriter___R_java_io_Writer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_deleteLog__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Log_getWriter___R_java_io_Writer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Log_getThreadAndTimeStamp___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_setLevel___int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_io_Log_getLevel___R_int(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Log_getLogContent___R_java_lang_String(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Log_showLog__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Log_getInstance___R_com_codename1_io_Log(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_io_Log_isFileWriteEnabled___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_setFileWriteEnabled___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Log_getFileURL___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_setFileURL___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_trackFileSystem__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_bindCrashProtection___boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_Log_isCrashBound___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Log_access$000___com_codename1_io_Log_R_java_io_Writer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_io_Log_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Log_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_Log_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Log_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Log_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Log_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Log_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_io_Log_logThrowable___java_lang_Throwable com_codename1_io_Log_logThrowable___java_lang_Throwable
+#define virtual_com_codename1_io_Log_print___java_lang_String_int com_codename1_io_Log_print___java_lang_String_int
+#define virtual_com_codename1_io_Log_createWriter___R_java_io_Writer com_codename1_io_Log_createWriter___R_java_io_Writer
+#define virtual_com_codename1_io_Log_getThreadAndTimeStamp___R_java_lang_String com_codename1_io_Log_getThreadAndTimeStamp___R_java_lang_String
+#define virtual_com_codename1_io_Log_setFileWriteEnabled___boolean com_codename1_io_Log_setFileWriteEnabled___boolean
+#define virtual_com_codename1_io_Log_getFileURL___R_java_lang_String com_codename1_io_Log_getFileURL___R_java_lang_String
+extern JAVA_BOOLEAN get_static_com_codename1_io_Log_crashBound();
+extern JAVA_BOOLEAN STATIC_FIELD_com_codename1_io_Log_crashBound;
+extern void set_static_com_codename1_io_Log_crashBound(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+extern JAVA_INT get_static_com_codename1_io_Log_DEBUG();
+extern JAVA_INT STATIC_FIELD_com_codename1_io_Log_DEBUG;
+extern void set_static_com_codename1_io_Log_DEBUG(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_io_Log_INFO();
+extern JAVA_INT get_static_com_codename1_io_Log_WARNING();
+extern JAVA_INT get_static_com_codename1_io_Log_ERROR();
+extern JAVA_OBJECT get_static_com_codename1_io_Log_instance();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_Log_instance;
+extern void set_static_com_codename1_io_Log_instance(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_INT get_static_com_codename1_io_Log_REPORTING_NONE();
+extern JAVA_INT STATIC_FIELD_com_codename1_io_Log_REPORTING_NONE;
+extern void set_static_com_codename1_io_Log_REPORTING_NONE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_io_Log_REPORTING_DEBUG();
+extern JAVA_INT STATIC_FIELD_com_codename1_io_Log_REPORTING_DEBUG;
+extern void set_static_com_codename1_io_Log_REPORTING_DEBUG(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_io_Log_REPORTING_PRODUCTION();
+extern JAVA_INT STATIC_FIELD_com_codename1_io_Log_REPORTING_PRODUCTION;
+extern void set_static_com_codename1_io_Log_REPORTING_PRODUCTION(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_BOOLEAN get_static_com_codename1_io_Log_initialized();
+extern JAVA_BOOLEAN STATIC_FIELD_com_codename1_io_Log_initialized;
+extern void set_static_com_codename1_io_Log_initialized(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+JAVA_INT get_field_com_codename1_io_Log_level(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_level(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_Log_zeroTime(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_zeroTime(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_Log_output(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_output(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_io_Log_fileWriteEnabled(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_fileWriteEnabled(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_Log_fileURL(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_fileURL(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_io_Log_logDirty(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_logDirty(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_Log_reporting(JAVA_OBJECT t);
+void set_field_com_codename1_io_Log_reporting(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_io_Log {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT com_codename1_io_Log_level;
+    JAVA_LONG com_codename1_io_Log_zeroTime;
+    JAVA_OBJECT com_codename1_io_Log_output;
+    JAVA_BOOLEAN com_codename1_io_Log_fileWriteEnabled;
+    JAVA_OBJECT com_codename1_io_Log_fileURL;
+    JAVA_BOOLEAN com_codename1_io_Log_logDirty;
+    JAVA_INT com_codename1_io_Log_reporting;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_LOG__

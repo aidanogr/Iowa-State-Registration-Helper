@@ -1,0 +1,80 @@
+#ifndef __COM_CODENAME1_UI_SPINNER_PICKER_1__
+#define __COM_CODENAME1_UI_SPINNER_PICKER_1__
+
+#include "cn1_globals.h"
+#include "com_codename1_ui_events_ActionListener.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_ui_spinner_Picker_1;
+extern void __INIT_VTABLE_com_codename1_ui_spinner_Picker_1(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_ui_spinner_Picker_1(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_ui_spinner_Picker_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_ui_spinner_Picker_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_ui_spinner_Picker_1(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1___INIT_____com_codename1_ui_spinner_Picker(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createStringPicker3D___R_com_codename1_ui_spinner_Spinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createDatePicker3D___R_com_codename1_ui_spinner_DateSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createCalendarPicker___R_com_codename1_ui_spinner_CalendarPicker(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createTimePicker3D___R_com_codename1_ui_spinner_TimeSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createDateTimePicker3D___R_com_codename1_ui_spinner_DateTimeSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_createDurationPicker3D___R_com_codename1_ui_spinner_DurationSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_endEditing___int_com_codename1_components_InteractionDialog_com_codename1_ui_spinner_InternalPickerWidget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_showInteractionDialog__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Picker_1_showDialog___com_codename1_ui_Dialog_com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_access$1600___com_codename1_ui_spinner_Picker_1_int_com_codename1_components_InteractionDialog_com_codename1_ui_spinner_InternalPickerWidget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Picker_1_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_ui_spinner_Picker_1_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_spinner_Picker_1_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_spinner_Picker_1_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_INT get_static_com_codename1_ui_spinner_Picker_1_COMMAND_DONE();
+extern JAVA_INT get_static_com_codename1_ui_spinner_Picker_1_COMMAND_NEXT();
+extern JAVA_INT get_static_com_codename1_ui_spinner_Picker_1_COMMAND_PREV();
+extern JAVA_INT get_static_com_codename1_ui_spinner_Picker_1_COMMAND_CANCEL();
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Picker_1_this_0(JAVA_OBJECT t);
+void set_field_com_codename1_ui_spinner_Picker_1_this_0(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_ui_spinner_Picker_1 {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_ui_spinner_Picker_1_this_0;
+};
+
+
+
+#endif //__COM_CODENAME1_UI_SPINNER_PICKER_1__

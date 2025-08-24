@@ -1,0 +1,134 @@
+#ifndef __JAVA_IO_DATAOUTPUTSTREAM__
+#define __JAVA_IO_DATAOUTPUTSTREAM__
+
+#include "cn1_globals.h"
+#include "java_io_DataOutput.h"
+#include "java_io_FilterOutputStream.h"
+extern struct clazz class__java_io_DataOutputStream;
+extern void __INIT_VTABLE_java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_io_DataOutputStream___INIT_____java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_io_DataOutputStream_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_write___byte_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_io_DataOutputStream_write___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeBoolean___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeByte___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeBytes___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeChar___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeChars___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeDouble___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeFloat___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeInt___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_writeLong___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_INT java_io_DataOutputStream_writeLongToBuffer___long_byte_1ARRAY_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_io_DataOutputStream_writeShort___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_INT java_io_DataOutputStream_writeShortToBuffer___int_byte_1ARRAY_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_io_DataOutputStream_writeUTF___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_LONG java_io_DataOutputStream_countUTFBytes___java_lang_String_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_io_DataOutputStream_writeUTFBytesToBuffer___java_lang_String_long_byte_1ARRAY_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID java_io_DataOutputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_io_DataOutputStream_checkError___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_io_DataOutputStream_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_io_DataOutputStream_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_io_DataOutputStream_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_io_DataOutputStream_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_io_DataOutputStream_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_io_DataOutputStream_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_io_DataOutputStream_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID virtual_java_io_DataOutputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID virtual_java_io_DataOutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_write___byte_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeBoolean___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeByte___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeChar___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeChars___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeDouble___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeFloat___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeInt___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeLong___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeShort___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID virtual_java_io_DataOutputStream_writeUTF___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+#define virtual_java_io_DataOutputStream_size___R_int java_io_DataOutputStream_size___R_int
+#define virtual_java_io_DataOutputStream_writeShortToBuffer___int_byte_1ARRAY_int_R_int java_io_DataOutputStream_writeShortToBuffer___int_byte_1ARRAY_int_R_int
+#define virtual_java_io_DataOutputStream_countUTFBytes___java_lang_String_R_long java_io_DataOutputStream_countUTFBytes___java_lang_String_R_long
+#define virtual_java_io_DataOutputStream_writeUTFBytesToBuffer___java_lang_String_long_byte_1ARRAY_int_R_int java_io_DataOutputStream_writeUTFBytesToBuffer___java_lang_String_long_byte_1ARRAY_int_R_int
+JAVA_INT get_field_java_io_DataOutputStream_written(JAVA_OBJECT t);
+void set_field_java_io_DataOutputStream_written(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_java_io_DataOutputStream_buff(JAVA_OBJECT t);
+void set_field_java_io_DataOutputStream_buff(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_java_io_DataOutputStream_out(JAVA_OBJECT t);
+void set_field_java_io_DataOutputStream_out(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__java_io_DataOutputStream {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT java_io_FilterOutputStream_out;
+    JAVA_INT java_io_DataOutputStream_written;
+    JAVA_OBJECT java_io_DataOutputStream_buff;
+};
+
+
+
+#endif //__JAVA_IO_DATAOUTPUTSTREAM__

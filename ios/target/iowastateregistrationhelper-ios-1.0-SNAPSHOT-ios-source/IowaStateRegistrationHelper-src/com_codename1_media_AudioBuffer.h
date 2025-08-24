@@ -1,0 +1,120 @@
+#ifndef __COM_CODENAME1_MEDIA_AUDIOBUFFER__
+#define __COM_CODENAME1_MEDIA_AUDIOBUFFER__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_media_AudioBuffer;
+extern void __INIT_VTABLE_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE);
+
+JAVA_INT com_codename1_media_AudioBuffer_retain___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AudioBuffer_release___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyFrom___com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyTo___com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyTo___float_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_copyTo___float_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_INT com_codename1_media_AudioBuffer_getSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AudioBuffer_getMaxSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_fireFrameReceived__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_addCallback___com_codename1_media_AudioBuffer_AudioBufferCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_removeCallback___com_codename1_media_AudioBuffer_AudioBufferCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_media_AudioBuffer_getSampleRate___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AudioBuffer_getNumChannels___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_downSample___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_media_AudioBuffer_access$000___com_codename1_media_AudioBuffer_R_java_util_ArrayList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_media_AudioBuffer_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_media_AudioBuffer_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AudioBuffer_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_media_AudioBuffer_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AudioBuffer_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AudioBuffer_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_media_AudioBuffer_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_media_AudioBuffer_retain___R_int com_codename1_media_AudioBuffer_retain___R_int
+#define virtual_com_codename1_media_AudioBuffer_release___R_int com_codename1_media_AudioBuffer_release___R_int
+#define virtual_com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY
+#define virtual_com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY_int_int com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY_int_int
+#define virtual_com_codename1_media_AudioBuffer_getSize___R_int com_codename1_media_AudioBuffer_getSize___R_int
+#define virtual_com_codename1_media_AudioBuffer_getMaxSize___R_int com_codename1_media_AudioBuffer_getMaxSize___R_int
+JAVA_OBJECT get_field_com_codename1_media_AudioBuffer_refLock(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_refLock(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_media_AudioBuffer_refCounter(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_refCounter(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_media_AudioBuffer_callbacks(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_callbacks(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_media_AudioBuffer_buffer(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_buffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_media_AudioBuffer_tmpDownSampleBuffer(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_tmpDownSampleBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_media_AudioBuffer_inFireFrame(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_inFireFrame(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_media_AudioBuffer_pendingOps(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_pendingOps(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_media_AudioBuffer_size(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_size(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_media_AudioBuffer_sampleRate(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_sampleRate(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_media_AudioBuffer_numChannels(JAVA_OBJECT t);
+void set_field_com_codename1_media_AudioBuffer_numChannels(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_media_AudioBuffer {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_media_AudioBuffer_refLock;
+    JAVA_INT com_codename1_media_AudioBuffer_refCounter;
+    JAVA_OBJECT com_codename1_media_AudioBuffer_callbacks;
+    JAVA_OBJECT com_codename1_media_AudioBuffer_buffer;
+    JAVA_OBJECT com_codename1_media_AudioBuffer_tmpDownSampleBuffer;
+    JAVA_BOOLEAN com_codename1_media_AudioBuffer_inFireFrame;
+    JAVA_OBJECT com_codename1_media_AudioBuffer_pendingOps;
+    JAVA_INT com_codename1_media_AudioBuffer_size;
+    JAVA_INT com_codename1_media_AudioBuffer_sampleRate;
+    JAVA_INT com_codename1_media_AudioBuffer_numChannels;
+};
+
+
+
+#endif //__COM_CODENAME1_MEDIA_AUDIOBUFFER__

@@ -83,3 +83,11 @@ SideCommand {
     font-size: 4mm;
     border-bottom: 2px solid #cccccc;
 }
+ClassButton {
+	width: 20%;
+}
+
+CalendarContainer {
+	height: 100%;
+	width: 100%;
+}

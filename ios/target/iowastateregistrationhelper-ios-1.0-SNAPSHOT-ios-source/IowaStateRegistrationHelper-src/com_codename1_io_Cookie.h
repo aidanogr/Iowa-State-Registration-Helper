@@ -1,0 +1,137 @@
+#ifndef __COM_CODENAME1_IO_COOKIE__
+#define __COM_CODENAME1_IO_COOKIE__
+
+#include "cn1_globals.h"
+#include "com_codename1_io_Externalizable.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_io_Cookie;
+extern struct clazz class_array1__com_codename1_io_Cookie;
+extern void __INIT_VTABLE_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_ARRAY_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE, JAVA_INT size);
+
+JAVA_VOID com_codename1_io_Cookie___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Cookie_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Cookie_setSecure___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_Cookie_isSecure___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setHttpOnly___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_Cookie_isHttpOnly___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setPath___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Cookie_getPath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Cookie_getValue___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setValue___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Cookie_getDomain___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setDomain___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_LONG com_codename1_io_Cookie_getExpires___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setExpires___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_INT com_codename1_io_Cookie_getVersion___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_externalize___java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Cookie_getObjectId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Cookie_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_setAutoStored___boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_Cookie_isAutoStored___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Cookie_clearCookiesFromStorage__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Cookie___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_io_Cookie_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Cookie_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_Cookie_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Cookie_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Cookie_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Cookie_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_io_Cookie_getName___R_java_lang_String com_codename1_io_Cookie_getName___R_java_lang_String
+#define virtual_com_codename1_io_Cookie_setName___java_lang_String com_codename1_io_Cookie_setName___java_lang_String
+#define virtual_com_codename1_io_Cookie_setSecure___boolean com_codename1_io_Cookie_setSecure___boolean
+#define virtual_com_codename1_io_Cookie_isSecure___R_boolean com_codename1_io_Cookie_isSecure___R_boolean
+#define virtual_com_codename1_io_Cookie_setHttpOnly___boolean com_codename1_io_Cookie_setHttpOnly___boolean
+#define virtual_com_codename1_io_Cookie_isHttpOnly___R_boolean com_codename1_io_Cookie_isHttpOnly___R_boolean
+#define virtual_com_codename1_io_Cookie_setPath___java_lang_String com_codename1_io_Cookie_setPath___java_lang_String
+#define virtual_com_codename1_io_Cookie_getPath___R_java_lang_String com_codename1_io_Cookie_getPath___R_java_lang_String
+#define virtual_com_codename1_io_Cookie_getValue___R_java_lang_String com_codename1_io_Cookie_getValue___R_java_lang_String
+#define virtual_com_codename1_io_Cookie_setValue___java_lang_String com_codename1_io_Cookie_setValue___java_lang_String
+#define virtual_com_codename1_io_Cookie_getDomain___R_java_lang_String com_codename1_io_Cookie_getDomain___R_java_lang_String
+#define virtual_com_codename1_io_Cookie_setDomain___java_lang_String com_codename1_io_Cookie_setDomain___java_lang_String
+#define virtual_com_codename1_io_Cookie_getExpires___R_long com_codename1_io_Cookie_getExpires___R_long
+#define virtual_com_codename1_io_Cookie_setExpires___long com_codename1_io_Cookie_setExpires___long
+extern JAVA_BOOLEAN get_static_com_codename1_io_Cookie_autoStored();
+extern JAVA_BOOLEAN STATIC_FIELD_com_codename1_io_Cookie_autoStored;
+extern void set_static_com_codename1_io_Cookie_autoStored(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+extern JAVA_OBJECT get_static_com_codename1_io_Cookie_STORAGE_NAME();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_Cookie_STORAGE_NAME;
+extern void set_static_com_codename1_io_Cookie_STORAGE_NAME(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+JAVA_OBJECT get_field_com_codename1_io_Cookie_name(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_name(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_Cookie_value(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_value(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_Cookie_domain(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_domain(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_Cookie_path(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_path(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_io_Cookie_secure(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_secure(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_io_Cookie_httpOnly(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_httpOnly(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_Cookie_expires(JAVA_OBJECT t);
+void set_field_com_codename1_io_Cookie_expires(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_io_Cookie {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_io_Cookie_name;
+    JAVA_OBJECT com_codename1_io_Cookie_value;
+    JAVA_OBJECT com_codename1_io_Cookie_domain;
+    JAVA_OBJECT com_codename1_io_Cookie_path;
+    JAVA_BOOLEAN com_codename1_io_Cookie_secure;
+    JAVA_BOOLEAN com_codename1_io_Cookie_httpOnly;
+    JAVA_LONG com_codename1_io_Cookie_expires;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_COOKIE__

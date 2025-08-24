@@ -1,0 +1,94 @@
+#ifndef __JAVA_UTIL_TIMEZONE_2__
+#define __JAVA_UTIL_TIMEZONE_2__
+
+#include "cn1_globals.h"
+#include "java_util_TimeZone.h"
+extern struct clazz class__java_util_TimeZone_2;
+extern void __INIT_VTABLE_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_util_TimeZone_2___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_util_TimeZone_2_getOffset___int_int_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6);
+
+JAVA_INT java_util_TimeZone_2_getRawOffset___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_util_TimeZone_2_inDaylightTime___java_util_Date_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_util_TimeZone_2_useDaylightTime___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_util_TimeZone_2_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_util_TimeZone_2_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2_setID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_util_TimeZone_2_getAvailableIDs___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_TimeZone_2_getDefault___R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE);
+
+JAVA_INT java_util_TimeZone_2_getDSTSavings___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_util_TimeZone_2_getID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_util_TimeZone_2_getTimeZone___java_lang_String_R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_util_TimeZone_2_access$000___java_lang_String_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5);
+
+JAVA_INT java_util_TimeZone_2_access$100___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_util_TimeZone_2_access$200___java_lang_String_long_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_LONG java_util_TimeZone_2_access$300___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_LONG java_util_TimeZone_2_access$400___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_TimeZone_2_access$500___java_util_TimeZone_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID java_util_TimeZone_2___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_TimeZone_2_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_util_TimeZone_2_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_TimeZone_2_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_util_TimeZone_2_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_util_TimeZone_2_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define get_static_java_util_TimeZone_2_SHORT(threadStateArgument) get_static_java_util_TimeZone_SHORT(threadStateArgument)
+#define set_static_java_util_TimeZone_2_SHORT(threadStateArgument, valueArgument) set_static_java_util_TimeZone_SHORT(threadStateArgument, valueArgument)
+#define get_static_java_util_TimeZone_2_LONG(threadStateArgument) get_static_java_util_TimeZone_LONG(threadStateArgument)
+#define set_static_java_util_TimeZone_2_LONG(threadStateArgument, valueArgument) set_static_java_util_TimeZone_LONG(threadStateArgument, valueArgument)
+#define get_static_java_util_TimeZone_2_GMT(threadStateArgument) get_static_java_util_TimeZone_GMT(threadStateArgument)
+#define set_static_java_util_TimeZone_2_GMT(threadStateArgument, valueArgument) set_static_java_util_TimeZone_GMT(threadStateArgument, valueArgument)
+JAVA_OBJECT get_field_java_util_TimeZone_2_val_ID(JAVA_OBJECT t);
+void set_field_java_util_TimeZone_2_val_ID(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__java_util_TimeZone_2 {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT java_util_TimeZone_ID;
+    JAVA_OBJECT java_util_TimeZone_2_val_ID;
+};
+
+
+
+#endif //__JAVA_UTIL_TIMEZONE_2__

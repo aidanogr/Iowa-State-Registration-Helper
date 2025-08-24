@@ -1,0 +1,3021 @@
+#include "com_codename1_ui_spinner_Spinner3D_ScrollingContainer.h"
+#include "com_codename1_ui_layouts_BoxLayout.h"
+#include "com_codename1_ui_plaf_Border.h"
+#include "com_codename1_ui_plaf_Style.h"
+#include "com_codename1_ui_spinner_Spinner3D_ScrollingContainer.h"
+#include "java_lang_NullPointerException.h"
+const struct clazz *base_interfaces_for_com_codename1_ui_spinner_Spinner3D_ScrollingContainer[] = {};
+struct clazz class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer = {
+  DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_codename1_ui_spinner_Spinner3D_ScrollingContainer ,0 , &__GC_MARK_com_codename1_ui_spinner_Spinner3D_ScrollingContainer,  0, cn1_class_id_com_codename1_ui_spinner_Spinner3D_ScrollingContainer, "com.codename1.ui.spinner.Spinner3D.ScrollingContainer", 0, 0, 0, JAVA_FALSE, &class__com_codename1_ui_Container, base_interfaces_for_com_codename1_ui_spinner_Spinner3D_ScrollingContainer, 0, &__NEW_INSTANCE_com_codename1_ui_spinner_Spinner3D_ScrollingContainer, 0
+, 0, 0, 0, 0, 0, 0};
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableX(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container_scrollableX;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableX(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container_scrollableX = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableY(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container_scrollableY;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableY(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container_scrollableY = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer__tmpRenderingElevatedComponents(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container__tmpRenderingElevatedComponents;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer__tmpRenderingElevatedComponents(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Container__tmpRenderingElevatedComponents = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hasLead(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_hasLead;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hasLead(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_hasLead = __cn1Val;
+}
+
+JAVA_INT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_renderedElevation(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_renderedElevation;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_renderedElevation(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_renderedElevation = __cn1Val;
+}
+
+JAVA_INT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_renderedElevationComponentIndex(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_renderedElevationComponentIndex;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_renderedElevationComponentIndex(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_renderedElevationComponentIndex = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollSize(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_scrollSize;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollSize(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_scrollSize = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldCalcPreferredSize(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_shouldCalcPreferredSize;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldCalcPreferredSize(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_shouldCalcPreferredSize = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldCalcScrollSize(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_shouldCalcScrollSize;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldCalcScrollSize(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_shouldCalcScrollSize = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_draggedMotionX(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_draggedMotionX;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_draggedMotionX(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_draggedMotionX = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_draggedMotionY(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_draggedMotionY;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_draggedMotionY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_draggedMotionY = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_noBind(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_noBind;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_noBind(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_noBind = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerPressedListeners(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerPressedListeners;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerPressedListeners(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerPressedListeners = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerReleasedListeners(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerReleasedListeners;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerReleasedListeners(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerReleasedListeners = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerDraggedListeners(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerDraggedListeners;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerDraggedListeners(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_pointerDraggedListeners = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragFinishedListeners(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_dragFinishedListeners;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragFinishedListeners(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_dragFinishedListeners = __cn1Val;
+}
+
+JAVA_OBJECT get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_longPressListeners(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_longPressListeners;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_longPressListeners(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_longPressListeners = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isUnselectedStyle(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_isUnselectedStyle;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isUnselectedStyle(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_isUnselectedStyle = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_doNotPaint(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_doNotPaint;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_doNotPaint(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_doNotPaint = __cn1Val;
+}
+
+JAVA_BOOLEAN get_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_internalRegisteredAnimated(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_internalRegisteredAnimated;
+}
+
+void set_field_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_internalRegisteredAnimated(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)__cn1T).com_codename1_ui_Component_internalRegisteredAnimated = __cn1Val;
+}
+
+JAVA_VOID __FINALIZER_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
+    __FINALIZER_com_codename1_ui_Container(threadStateData, objToDelete);
+}
+
+void __GC_MARK_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force) {
+    struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer* objInstance = (struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer*)objToMark;
+    __GC_MARK_com_codename1_ui_Container(threadStateData, objToMark, force);
+}
+
+JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(threadStateData);
+    JAVA_OBJECT o = codenameOneGcMalloc(threadStateData, sizeof(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer), &class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer);
+    return o;
+}
+
+JAVA_OBJECT __NEW_INSTANCE_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(threadStateData);
+    JAVA_OBJECT o = codenameOneGcMalloc(threadStateData, sizeof(struct obj__com_codename1_ui_spinner_Spinner3D_ScrollingContainer), &class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer);
+com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT____(threadStateData, o);
+    return o;
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10142, 200);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(47);
+    BC_ALOAD(0);
+    PUSH_OBJ(com_codename1_ui_layouts_BoxLayout_y___R_com_codename1_ui_layouts_BoxLayout(threadStateData));
+    com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(48);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    PUSH_OBJ(com_codename1_ui_plaf_Border_createEmpty___R_com_codename1_ui_plaf_Border(threadStateData));
+    virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(49);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    volatile JAVA_INT ilocals_1_ = 0; /* scrollY */
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10142, 2546);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
+    __CN1_DEBUG_INFO(52);
+    /* CustomInvoke */com_codename1_ui_Container_setScrollY___int(threadStateData, __cn1ThisObject, ilocals_1_); 
+    __CN1_DEBUG_INFO(53);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT_____com_codename1_ui_layouts_Layout_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout_java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT_____com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_encloseIn___com_codename1_ui_layouts_Layout_com_codename1_ui_Component_java_lang_Object_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+    return com_codename1_ui_Container_encloseIn___com_codename1_ui_layouts_Layout_com_codename1_ui_Component_java_lang_Object_R_com_codename1_ui_Container(threadStateData, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_encloseIn___com_codename1_ui_layouts_Layout_com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_encloseIn___com_codename1_ui_layouts_Layout_com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initLaf___com_codename1_ui_plaf_UIManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_initLaf___com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUIManager___R_com_codename1_ui_plaf_UIManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_wrapInLayeredPane___R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_wrapInLayeredPane___R_com_codename1_ui_Container(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSurface___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isSurface___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSurface___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setSurface___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___com_codename1_ui_Component_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addAll___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_addAll___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___java_lang_String_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_add___java_lang_String_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___com_codename1_ui_Image_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_add___com_codename1_ui_Image_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___java_lang_Object_java_lang_String_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_add___java_lang_Object_java_lang_String_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_add___java_lang_Object_com_codename1_ui_Image_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_add___java_lang_Object_com_codename1_ui_Image_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setUIManager___com_codename1_ui_plaf_UIManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_setUIManager___com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setLeadComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_setLeadComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_focusGainedInternal__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_focusGainedInternal__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_focusLostInternal__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_focusLostInternal__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLeadComponent___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getLeadComponent___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLeadParent___R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getLeadParent___R_com_codename1_ui_Container(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_keyPressed___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_keyPressed___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_keyReleased___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_keyReleased___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLayout___R_com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getActualLayout___R_com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getActualLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setLayout___com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_setLayout___com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_invalidate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_invalidate__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setShouldLayout___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setShouldLayout___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setShouldCalcPreferredSize___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setShouldCalcPreferredSize___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLayoutWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getLayoutWidth___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLayoutHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getLayoutHeight___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_applyRTL___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_applyRTL___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_constrainWidthWhenScrollable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_constrainWidthWhenScrollable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_constrainHeightWhenScrollable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_constrainHeightWhenScrollable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_addComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addComponent___java_lang_Object_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addComponent___int_java_lang_Object_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+com_codename1_ui_Container_addComponent___int_java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_insertComponentAt___int_java_lang_Object_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+com_codename1_ui_Container_insertComponentAt___int_java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_insertComponentAtImpl___int_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Container_insertComponentAtImpl___int_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addComponent___int_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Container_addComponent___int_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+com_codename1_ui_Container_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
+com_codename1_ui_Container_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replace___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_java_lang_Runnable_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_INT __cn1Arg5) {
+com_codename1_ui_Container_replace___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_java_lang_Runnable_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4, __cn1Arg5);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_BOOLEAN __cn1Arg4) {
+com_codename1_ui_Container_replaceAndWait___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replace___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+com_codename1_ui_Container_replace___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createReplaceTransition___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+    return com_codename1_ui_Container_createReplaceTransition___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_onParentPositionChange__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_onParentPositionChange__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_onOrientationChange___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_onOrientationChange___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_replace___com_codename1_ui_Component_com_codename1_ui_Component_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
+com_codename1_ui_Container_replace___com_codename1_ui_Component_com_codename1_ui_Component_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initComponentImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_initComponentImpl__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isEnabled___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isEnabled___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_removeComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setComponentIndex___com_codename1_ui_Component_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_setComponentIndex___com_codename1_ui_Component_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeComponentImpl___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_removeComponentImpl___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeComponentImplNoAnimationSafety___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_removeComponentImplNoAnimationSafety___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_cancelRepaints__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_cancelRepaints__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_deinitializeImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_deinitializeImpl__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_flushReplace__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_flushReplace__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_removeAll__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_revalidateWithAnimationSafety__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_revalidateWithAnimationSafety__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_revalidateWithAnimationSafetyInternal___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_revalidateWithAnimationSafetyInternal___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_revalidate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_revalidate__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_revalidateInternal___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_revalidateInternal___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_revalidateLater__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_revalidateLater__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_forceRevalidate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_forceRevalidate__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_clearClientProperties__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_clearClientProperties__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isObscuredByChildren___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isObscuredByChildren___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setAllowEnableLayoutOnPaint___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setAllowEnableLayoutOnPaint___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addElevatedComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_addElevatedComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeElevatedComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_removeElevatedComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintElevatedPane___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintElevatedPane___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintElevatedPane___com_codename1_ui_Graphics_boolean_int_int_int_int_int_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7, JAVA_INT __cn1Arg8, JAVA_BOOLEAN __cn1Arg9) {
+com_codename1_ui_Container_paintElevatedPane___com_codename1_ui_Graphics_boolean_int_int_int_int_int_int_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4, __cn1Arg5, __cn1Arg6, __cn1Arg7, __cn1Arg8, __cn1Arg9);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_markComponentsToBePaintedInElevatedPane___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_markComponentsToBePaintedInElevatedPane___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paint___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintGlass___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintGlass___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintGlassImpl___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintGlassImpl___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintIntersecting___com_codename1_ui_Graphics_com_codename1_ui_Component_int_int_int_int_boolean_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_BOOLEAN __cn1Arg7, JAVA_INT __cn1Arg8) {
+com_codename1_ui_Container_paintIntersecting___com_codename1_ui_Graphics_com_codename1_ui_Component_int_int_int_int_boolean_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4, __cn1Arg5, __cn1Arg6, __cn1Arg7, __cn1Arg8);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_layoutContainer__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_layoutContainer__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSafeArea___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setSafeArea___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSafeArea___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isSafeArea___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSafeAreaRoot___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setSafeAreaRoot___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSafeAreaRoot___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isSafeAreaRoot___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSafeAreaRoot___R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getSafeAreaRoot___R_com_codename1_ui_Container(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_doLayout__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_doLayout__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentCount___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getComponentCount___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentAt___int_R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Container_getComponentAt___int_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentIndex___com_codename1_ui_Component_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_getComponentIndex___com_codename1_ui_Component_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_contains___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollComponentToVisible___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_scrollComponentToVisible___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_moveScrollTowards___int_com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_moveScrollTowards___int_com_codename1_ui_Component_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getClosestComponentTo___int_int_R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_getClosestComponentTo___int_int_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getResponderAt___int_int_R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_getResponderAt___int_int_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentAt___int_int_R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_getComponentAt___int_int_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_findDropTargetAt___int_int_R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_findDropTargetAt___int_int_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerPressed___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_pointerPressed___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_calcPreferredSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paramString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_paramString___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_refreshTheme___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_refreshTheme___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableXFlag___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_scrollableXFlag___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollableYFlag___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_scrollableYFlag___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isScrollableX___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isScrollableX___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isScrollableY___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isScrollableY___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSideGap___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getSideGap___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBottomGap___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getBottomGap___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollableX___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setScrollableX___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollableY___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setScrollableY___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollable___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setScrollable___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setCellRenderer___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setCellRenderer___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollIncrement___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_setScrollIncrement___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollIncrement___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getScrollIncrement___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_findFirstFocusable___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_findFirstFocusable___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragInitiated__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_dragInitiated__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireClicked__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Container_fireClicked__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSelectableInteraction___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isSelectableInteraction___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setEnabled___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setEnabled___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setLightweightMode___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setLightweightMode___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getGridPosY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getGridPosY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintComponentBackground___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintComponentBackground___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintBackground___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintBackground___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintBorderBackground___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Container_paintBorderBackground___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getGridPosX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_getGridPosX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setBlockFocus___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Container_setBlockFocus___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isBlockFocus___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_isBlockFocus___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateHierarchyAndWait___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_animateHierarchyAndWait___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateHierarchy___int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Container_createAnimateHierarchy___int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateHierarchy___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_animateHierarchy___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateHierarchyFadeAndWait___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_animateHierarchyFadeAndWait___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateHierarchyFade___int_int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_createAnimateHierarchyFade___int_int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateHierarchyFade___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_animateHierarchyFade___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateLayoutFadeAndWait___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_animateLayoutFadeAndWait___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateLayoutFadeAndWait___int_int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_createAnimateLayoutFadeAndWait___int_int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateLayoutFade___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_animateLayoutFade___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateLayoutFade___int_int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Container_createAnimateLayoutFade___int_int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateLayoutAndWait___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_animateLayoutAndWait___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateLayout___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Container_animateLayout___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_updateTabIndices___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Container_updateTabIndices___int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateLayout___int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Container_createAnimateLayout___int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_drop___com_codename1_ui_Component_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
+com_codename1_ui_Container_drop___com_codename1_ui_Component_int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateMotion___int_int_int_R_com_codename1_ui_animations_Motion(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
+    return com_codename1_ui_Container_createAnimateMotion___int_int_int_R_com_codename1_ui_animations_Motion(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_morph___com_codename1_ui_Component_com_codename1_ui_Component_int_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
+com_codename1_ui_Container_morph___com_codename1_ui_Component_com_codename1_ui_Component_int_java_lang_Runnable(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_morphAndWait___com_codename1_ui_Component_com_codename1_ui_Component_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
+com_codename1_ui_Container_morphAndWait___com_codename1_ui_Component_com_codename1_ui_Component_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateUnlayout___int_int_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+com_codename1_ui_Container_animateUnlayout___int_int_java_lang_Runnable(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animateUnlayoutAndWait___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Container_animateUnlayoutAndWait___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createAnimateUnlayout___int_int_java_lang_Runnable_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+    return com_codename1_ui_Container_createAnimateUnlayout___int_int_java_lang_Runnable_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getChildrenAsList___boolean_R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    return com_codename1_ui_Container_getChildrenAsList___boolean_R_java_util_List(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_iterator___boolean_R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    return com_codename1_ui_Container_iterator___boolean_R_java_util_Iterator(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Container_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$000___com_codename1_ui_Container_R_java_util_ArrayList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_access$000___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$100___com_codename1_ui_Container_R_com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_access$100___com_codename1_ui_Container_R_com_codename1_ui_layouts_Layout(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$200___com_codename1_ui_Container_R_java_util_ArrayList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_access$200___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$302___com_codename1_ui_Container_boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+    return com_codename1_ui_Container_access$302___com_codename1_ui_Container_boolean_R_boolean(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1100___com_codename1_ui_Container_R_java_util_Vector(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Container_access$1100___com_codename1_ui_Container_R_java_util_Vector(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1102___com_codename1_ui_Container_java_util_Vector_R_java_util_Vector(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Container_access$1102___com_codename1_ui_Container_java_util_Vector_R_java_util_Vector(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1202___com_codename1_ui_Container_boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+    return com_codename1_ui_Container_access$1202___com_codename1_ui_Container_boolean_R_boolean(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___CLINIT____(CODENAME_ONE_THREAD_STATE) {
+com_codename1_ui_Container___CLINIT____(threadStateData);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDragAndDropInitialized___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isDragAndDropInitialized___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setEditingDelegate___com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setEditingDelegate___com_codename1_ui_Editable(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getEditingDelegate___R_com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getEditingDelegate___R_com_codename1_ui_Editable(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setCursor___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setCursor___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getCursor___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getCursor___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSameSize___com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSameSize___com_codename1_ui_Component_1ARRAY(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSameWidth___com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSameWidth___com_codename1_ui_Component_1ARRAY(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_showNativeOverlay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_showNativeOverlay__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hideNativeOverlay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_hideNativeOverlay__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_updateNativeOverlay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_updateNativeOverlay__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getNativeOverlay___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getNativeOverlay___R_java_lang_Object(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSetCursorSupported___R_boolean(CODENAME_ONE_THREAD_STATE) {
+    return com_codename1_ui_Component_isSetCursorSupported___R_boolean(threadStateData);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getAllStyles___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSameWidth___R_com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getSameWidth___R_com_codename1_ui_Component_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSameHeight___com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSameHeight___com_codename1_ui_Component_1ARRAY(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSameHeight___R_com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getSameHeight___R_com_codename1_ui_Component_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isVisible___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isVisible___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getVisibleRect___com_codename1_ui_geom_Rectangle_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_getVisibleRect___com_codename1_ui_geom_Rectangle_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isVisibleOnForm___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isVisibleOnForm___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getClientProperty___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_stripMarginAndPadding___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_stripMarginAndPadding___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_putClientProperty___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_putClientProperty___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDirtyRegion___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDirtyRegion___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDirtyRegion___com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setDirtyRegion___com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setVisible___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setVisible___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setOpaque___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setOpaque___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isOpaque___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isOpaque___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getWidth___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterWidth___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerWidth___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getHeight___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterHeight___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerHeight___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setX___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setY___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDragRegion___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_isDragRegion___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDragRegionStatus___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_getDragRegionStatus___int_int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBaseline___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_getBaseline___int_int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBaselineResizeBehavior___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getBaselineResizeBehavior___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPreferredSize___com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setPreferredSize___com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPreferredSizeStr___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setPreferredSizeStr___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredSizeStr___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredSizeStr___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_parsePreferredSize___java_lang_String_com_codename1_ui_geom_Dimension_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_parsePreferredSize___java_lang_String_com_codename1_ui_geom_Dimension_R_com_codename1_ui_geom_Dimension(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredSizeWithMargin___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredSizeWithMargin___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollDimension___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollDimension___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calcScrollSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_calcScrollSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollSize___com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setScrollSize___com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPreferredW___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setPreferredW___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPreferredH___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setPreferredH___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredW___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredW___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredH___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredH___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterPreferredH___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterPreferredH___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerPreferredH___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerPreferredH___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOuterPreferredW___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOuterPreferredW___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInnerPreferredW___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInnerPreferredW___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setWidth___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setWidth___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHeight___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setHeight___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSize___com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSize___com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUIID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getUIID___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setUIID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setUIID___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setUIID___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_setUIID___java_lang_String_java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlineAllStyles___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlineAllStyles___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlineSelectedStyles___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlineSelectedStyles___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlineUnselectedStyles___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlineUnselectedStyles___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlineDisabledStyles___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlineDisabledStyles___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlinePressedStyles___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlinePressedStyles___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlineAllStyles___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlineAllStyles___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlineUnselectedStyles___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlineUnselectedStyles___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlineSelectedStyles___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlineSelectedStyles___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlineDisabledStyles___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlineDisabledStyles___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlinePressedStyles___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlinePressedStyles___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_remove__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getParent___R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getParent___R_com_codename1_ui_Container(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setParent___com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setParent___com_codename1_ui_Container(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setOwner___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setOwner___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getOwner___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getOwner___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isOwnedBy___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_isOwnedBy___com_codename1_ui_Component_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_containsOrOwns___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_containsOrOwns___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addFocusListener___com_codename1_ui_events_FocusListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addFocusListener___com_codename1_ui_events_FocusListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeFocusListener___com_codename1_ui_events_FocusListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeFocusListener___com_codename1_ui_events_FocusListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addScrollListener___com_codename1_ui_events_ScrollListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addScrollListener___com_codename1_ui_events_ScrollListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeScrollListener___com_codename1_ui_events_ScrollListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeScrollListener___com_codename1_ui_events_ScrollListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireFocusGained__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_fireFocusGained__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireFocusLost__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_fireFocusLost__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireFocusGained___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_fireFocusGained___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSelectCommandText___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSelectCommandText___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSelectCommandText___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getSelectCommandText___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireFocusLost___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_fireFocusLost___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_fireActionEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_fireActionEvent__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setLabelForComponent___com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setLabelForComponent___com_codename1_ui_Label(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getLabelForComponent___R_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getLabelForComponent___R_com_codename1_ui_Label(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_startComponentLableTicker__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_startComponentLableTicker__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_stopComponentLableTicker__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_stopComponentLableTicker__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_focusGained__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_focusGained__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_focusLost__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_focusLost__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintBackgrounds___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintBackgrounds___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hasElevation___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_hasElevation___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_findSurface___R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_findSurface___R_com_codename1_ui_Container(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowOffsetX___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Component_calculateShadowOffsetX___int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowOffsetX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_calculateShadowOffsetX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowOffsetY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_calculateShadowOffsetY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowOffsetY___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Component_calculateShadowOffsetY___int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_calculateShadowWidth___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowWidth___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Component_calculateShadowWidth___int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_calculateShadowHeight___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_calculateShadowHeight___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    return com_codename1_ui_Component_calculateShadowHeight___int_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintShadows___com_codename1_ui_Graphics_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
+com_codename1_ui_Component_paintShadows___com_codename1_ui_Graphics_int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getAbsoluteX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getAbsoluteX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getAbsoluteY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getAbsoluteY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getRelativeX___com_codename1_ui_Container_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getRelativeX___com_codename1_ui_Container_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getRelativeY___com_codename1_ui_Container_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getRelativeY___com_codename1_ui_Container_R_int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintInternal___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintInternal___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintInternal___com_codename1_ui_Graphics_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_paintInternal___com_codename1_ui_Graphics_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isInClippingRegion___com_codename1_ui_Graphics_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_isInClippingRegion___com_codename1_ui_Graphics_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_internalPaintImpl___com_codename1_ui_Graphics_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_internalPaintImpl___com_codename1_ui_Graphics_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintIntersectingComponentsAbove___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintIntersectingComponentsAbove___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintScrollbars___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintScrollbars___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintScrollbarX___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintScrollbarX___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollOpacity___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollOpacity___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSelectedRect___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getSelectedRect___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintScrollbarY___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintScrollbarY___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintComponent___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintComponent___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintComponent___com_codename1_ui_Graphics_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_paintComponent___com_codename1_ui_Graphics_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintTensile___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintTensile___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBorder___R_com_codename1_ui_plaf_Border(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getBorder___R_com_codename1_ui_plaf_Border(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollable___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollable___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isScrollable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isScrollable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollX___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollY___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_onScrollX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_onScrollX___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_onScrollY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_onScrollY___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setScrollX___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_resetScroll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_resetScroll__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDraggedx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDraggedx___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDraggedy___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDraggedy___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_contains___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_contains___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_visibleBoundsContains___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_visibleBoundsContains___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hasFixedPreferredSize___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_hasFixedPreferredSize___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBounds___com_codename1_ui_geom_Rectangle_R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getBounds___com_codename1_ui_geom_Rectangle_R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getVisibleBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getVisibleBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getVisibleBounds___com_codename1_ui_geom_Rectangle_R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getVisibleBounds___com_codename1_ui_geom_Rectangle_R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isFocusable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isFocusable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_resetFocusable__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_resetFocusable__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setFocusable___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setFocusable___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTabIndex___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setTabIndex___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getTabIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getTabIndex___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPreferredTabIndex___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setPreferredTabIndex___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPreferredTabIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPreferredTabIndex___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTraversable___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setTraversable___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isTraversable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isTraversable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_handlesInput___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_handlesInput___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHandlesInput___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setHandlesInput___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_hasFocus___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_hasFocus___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setFocus___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setFocus___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentForm___R_com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_repaint___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_repaint___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_repaint__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_repaint__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_repaint___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
+com_codename1_ui_Component_repaint___int_int_int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_longKeyPress___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_longKeyPress___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_keyRepeated___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_keyRepeated___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getAnimationManager___R_com_codename1_ui_AnimationManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getAnimationManager___R_com_codename1_ui_AnimationManager(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollAnimationSpeed___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollAnimationSpeed___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isBlockLead___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isBlockLead___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setBlockLead___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setBlockLead___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isIgnorePointerEvents___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isIgnorePointerEvents___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setIgnorePointerEvents___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setIgnorePointerEvents___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isRippleEffect___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isRippleEffect___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setRippleEffect___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setRippleEffect___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getInlineStylesTheme___R_com_codename1_ui_util_Resources(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getInlineStylesTheme___R_com_codename1_ui_util_Resources(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInlineStylesTheme___com_codename1_ui_util_Resources(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setInlineStylesTheme___com_codename1_ui_util_Resources(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldRenderComponentSelection___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_shouldRenderComponentSelection___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isHideInLandscape___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isHideInLandscape___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHideInLandscape___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setHideInLandscape___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createStyleAnimation___java_lang_String_int_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_createStyleAnimation___java_lang_String_int_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_createStyleAnimation___com_codename1_ui_plaf_Style_com_codename1_ui_plaf_Style_int_java_lang_String_R_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
+    return com_codename1_ui_Component_createStyleAnimation___com_codename1_ui_plaf_Style_com_codename1_ui_plaf_Style_int_java_lang_String_R_com_codename1_ui_animations_ComponentAnimation(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollAnimationSpeed___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setScrollAnimationSpeed___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSmoothScrolling___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isSmoothScrolling___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSmoothScrolling___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setSmoothScrolling___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDisableSmoothScrolling___boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setDisableSmoothScrolling___boolean(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerHover___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerHover___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_clearDrag__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_clearDrag__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerHoverReleased___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerHoverReleased___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerHoverPressed___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerHoverPressed___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pinch___float_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
+    return com_codename1_ui_Component_pinch___float_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pinchReleased___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_pinchReleased___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pinch___int_1ARRAY_int_1ARRAY_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_pinch___int_1ARRAY_int_1ARRAY_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPinchBlocksDragAndDrop___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setPinchBlocksDragAndDrop___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isPinchBlocksDragAndDrop___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isPinchBlocksDragAndDrop___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerDragged___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerDragged___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDragImage___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDragImage___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDragTransparency___byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BYTE __cn1Arg1) {
+com_codename1_ui_Component_setDragTransparency___byte(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BYTE com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDragTransparency___R_byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDragTransparency___R_byte(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDefaultDragTransparency___byte(CODENAME_ONE_THREAD_STATE, JAVA_BYTE __cn1Arg1) {
+com_codename1_ui_Component_setDefaultDragTransparency___byte(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_BYTE com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDefaultDragTransparency___R_byte(CODENAME_ONE_THREAD_STATE) {
+    return com_codename1_ui_Component_getDefaultDragTransparency___R_byte(threadStateData);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_toImage___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_toImage___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_drawDraggedImage___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_drawDraggedImage___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_drawDraggedImage___com_codename1_ui_Graphics_com_codename1_ui_Image_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
+com_codename1_ui_Component_drawDraggedImage___com_codename1_ui_Graphics_com_codename1_ui_Image_int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_draggingOver___com_codename1_ui_Component_int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
+    return com_codename1_ui_Component_draggingOver___com_codename1_ui_Component_int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragEnter___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_dragEnter___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragExit___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_dragExit___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addPullToRefresh___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addPullToRefresh___java_lang_Runnable(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_respondsToPointerEvents___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_respondsToPointerEvents___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerDragged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_pointerDragged___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isStickyDrag___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isStickyDrag___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerPressed___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerPressed___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDragAndDropOperation___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_isDragAndDropOperation___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initDragAndDrop___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_initDragAndDrop___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerReleased___int_1ARRAY_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_pointerReleased___int_1ARRAY_int_1ARRAY(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_longPointerPress___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_longPointerPress___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_pointerReleased___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_pointerReleased___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTensileDragEnabled___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setTensileDragEnabled___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isTensileDragEnabled___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isTensileDragEnabled___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getTextSelectionSupport___R_com_codename1_ui_TextSelection_TextSelectionSupport(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getTextSelectionSupport___R_com_codename1_ui_TextSelection_TextSelectionSupport(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isScrollDecelerationMotionInProgress___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isScrollDecelerationMotionInProgress___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_startTensile___int_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
+com_codename1_ui_Component_startTensile___int_int_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addDropListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addDropListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeDropListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeDropListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addDragOverListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addDragOverListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeDragOverListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeDragOverListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragFinished___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_dragFinished___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_dragFinishedImpl___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+com_codename1_ui_Component_dragFinishedImpl___int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addDragFinishedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addDragFinishedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addStateChangeListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addStateChangeListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeStateChangeListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeStateChangeListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addPointerPressedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addPointerPressedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addLongPressListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addLongPressListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintRippleOverlay___com_codename1_ui_Graphics_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
+com_codename1_ui_Component_paintRippleOverlay___com_codename1_ui_Graphics_int_int_int(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removePointerPressedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removePointerPressedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeLongPressListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeLongPressListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removeDragFinishedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removeDragFinishedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addPointerReleasedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addPointerReleasedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removePointerReleasedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removePointerReleasedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addPointerDraggedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_addPointerDraggedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_removePointerDraggedListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_removePointerDraggedListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_FLOAT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDragSpeed___boolean_R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    return com_codename1_ui_Component_getDragSpeed___boolean_R_float(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isPressedStyle___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isPressedStyle___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPressedStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPressedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initUnselectedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_initUnselectedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initPressedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_initPressedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initDisabledStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_initDisabledStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initSelectedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_initSelectedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPressedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setPressedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUnselectedStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getSelectedStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getDisabledStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getDisabledStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setUnselectedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setUnselectedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSelectedStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setSelectedStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDisabledStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setDisabledStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_installDefaultPainter___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_installDefaultPainter___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_requestFocus__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_requestFocus__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_findNegativeScrolls___java_util_Set_R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_findNegativeScrolls___java_util_Set_R_java_util_Set(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_toString___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_refreshTheme__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_refreshTheme__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_refreshTheme___java_lang_String_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_refreshTheme___java_lang_String_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_mergeStyle___com_codename1_ui_plaf_Style_com_codename1_ui_plaf_Style_R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_mergeStyle___com_codename1_ui_plaf_Style_com_codename1_ui_plaf_Style_R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDragActivated___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isDragActivated___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDragActivated___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setDragActivated___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_checkAnimation__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_checkAnimation__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_deregisterAnimatedInternal__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_deregisterAnimatedInternal__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isTensileMotionInProgress___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isTensileMotionInProgress___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_animate___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_animate___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_tryDeregisterAnimated__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_tryDeregisterAnimated__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollRectToVisible___com_codename1_ui_geom_Rectangle_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_scrollRectToVisible___com_codename1_ui_geom_Rectangle_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_scrollRectToVisible___int_int_int_int_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
+com_codename1_ui_Component_scrollRectToVisible___int_int_int_int_com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4, __cn1Arg5);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintBorder___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintBorder___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isCellRenderer___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isCellRenderer___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isScrollVisible___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isScrollVisible___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollVisible___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setScrollVisible___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setIsScrollVisible___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setIsScrollVisible___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_lockStyleImages___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_lockStyleImages___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_registerElevatedInternal___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_registerElevatedInternal___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_startEditingAsync__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_startEditingAsync__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_stopEditing___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_stopEditing___java_lang_Runnable(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isEditing___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isEditing___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isEditable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isEditable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_laidOut__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_laidOut__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_deinitialize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_deinitialize__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initComponent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_initComponent__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isInitialized___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isInitialized___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setInitialized___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setInitialized___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_styleChanged___java_lang_String_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_styleChanged___java_lang_String_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getNextFocusDown___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getNextFocusDown___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setNextFocusDown___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setNextFocusDown___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getNextFocusUp___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getNextFocusUp___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setNextFocusUp___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setNextFocusUp___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getNextFocusLeft___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getNextFocusLeft___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setNextFocusLeft___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setNextFocusLeft___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getNextFocusRight___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getNextFocusRight___R_com_codename1_ui_Component(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setNextFocusRight___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setNextFocusRight___com_codename1_ui_Component(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_onEditComplete___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_onEditComplete___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getName___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setName___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_initCustomStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_initCustomStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_deinitializeCustomStyle___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_deinitializeCustomStyle___com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isRTL___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isRTL___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setRTL___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setRTL___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isTactileTouch___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_isTactileTouch___int_int_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isTactileTouch___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isTactileTouch___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTactileTouch___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setTactileTouch___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPropertyNames___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPropertyNames___R_java_lang_String_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPropertyTypes___R_java_lang_Class_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPropertyTypes___R_java_lang_Class_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPropertyTypeNames___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getPropertyTypeNames___R_java_lang_String_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getPropertyValue___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getPropertyValue___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setPropertyValue___java_lang_String_java_lang_Object_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_setPropertyValue___java_lang_String_java_lang_Object_R_java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintLockRelease__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+com_codename1_ui_Component_paintLockRelease__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintLock___boolean_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    return com_codename1_ui_Component_paintLock___boolean_R_com_codename1_ui_Image(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isSnapToGrid___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isSnapToGrid___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSnapToGrid___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setSnapToGrid___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldBlockSideSwipe___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_shouldBlockSideSwipe___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldBlockSideSwipeLeft___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_shouldBlockSideSwipeLeft___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldBlockSideSwipeRight___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_shouldBlockSideSwipeRight___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_blocksSideSwipe___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_blocksSideSwipe___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isFlatten___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isFlatten___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setFlatten___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setFlatten___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getTensileLength___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getTensileLength___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTensileLength___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setTensileLength___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getHintLabelImpl___R_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getHintLabelImpl___R_com_codename1_ui_Label(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHintLabelImpl___com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setHintLabelImpl___com_codename1_ui_Label(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_shouldShowHint___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_shouldShowHint___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_paintHint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_paintHint___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getHint___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getHint___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getHintIcon___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getHintIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHint___java_lang_String_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_setHint___java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isGrabsPointerEvents___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isGrabsPointerEvents___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setGrabsPointerEvents___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setGrabsPointerEvents___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getScrollOpacityChangeSpeed___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getScrollOpacityChangeSpeed___R_int(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollOpacityChangeSpeed___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_setScrollOpacityChangeSpeed___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_growShrink___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+com_codename1_ui_Component_growShrink___int(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isAlwaysTensile___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isAlwaysTensile___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setAlwaysTensile___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setAlwaysTensile___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDraggable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isDraggable___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDraggable___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setDraggable___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isDropTarget___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isDropTarget___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setDropTarget___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setDropTarget___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isChildOf___com_codename1_ui_Container_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_isChildOf___com_codename1_ui_Container_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isHideInPortrait___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isHideInPortrait___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHideInPortrait___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setHideInPortrait___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBindablePropertyNames___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getBindablePropertyNames___R_java_lang_String_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBindablePropertyTypes___R_java_lang_Class_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getBindablePropertyTypes___R_java_lang_Class_1ARRAY(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getBoundPropertyValue___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_getBoundPropertyValue___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setBoundPropertyValue___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+com_codename1_ui_Component_setBoundPropertyValue___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getCloudBoundProperty___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getCloudBoundProperty___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setCloudBoundProperty___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setCloudBoundProperty___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getCloudDestinationProperty___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getCloudDestinationProperty___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setCloudDestinationProperty___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setCloudDestinationProperty___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getComponentState___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getComponentState___R_java_lang_Object(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHidden___boolean_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+com_codename1_ui_Component_setHidden___boolean_boolean(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setHidden___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+com_codename1_ui_Component_setHidden___boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isHidden___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_isHidden___R_boolean(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_isHidden___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    return com_codename1_ui_Component_isHidden___boolean_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setComponentState___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setComponentState___java_lang_Object(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getTooltip___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return com_codename1_ui_Component_getTooltip___R_java_lang_String(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setTooltip___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_codename1_ui_Component_setTooltip___java_lang_String(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7, JAVA_INT __cn1Arg8, JAVA_INT __cn1Arg9, JAVA_INT __cn1Arg10, JAVA_FLOAT __cn1Arg11) {
+com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4, __cn1Arg5, __cn1Arg6, __cn1Arg7, __cn1Arg8, __cn1Arg9, __cn1Arg10, __cn1Arg11);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$102___com_codename1_ui_Component_com_codename1_ui_Image_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_access$102___com_codename1_ui_Component_com_codename1_ui_Image_R_com_codename1_ui_Image(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$202___com_codename1_ui_Component_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_access$202___com_codename1_ui_Component_int_R_int(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$302___com_codename1_ui_Component_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_access$302___com_codename1_ui_Component_int_R_int(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$402___com_codename1_ui_Component_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_access$402___com_codename1_ui_Component_int_R_int(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$502___com_codename1_ui_Component_boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
+    return com_codename1_ui_Component_access$502___com_codename1_ui_Component_boolean_R_boolean(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$600___com_codename1_ui_Component_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$600___com_codename1_ui_Component_R_java_lang_Runnable(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$700___com_codename1_ui_Component_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$700___com_codename1_ui_Component_R_int(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$802___com_codename1_ui_Component_com_codename1_ui_plaf_Style_R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    return com_codename1_ui_Component_access$802___com_codename1_ui_Component_com_codename1_ui_plaf_Style_R_com_codename1_ui_plaf_Style(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$800___com_codename1_ui_Component_R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$800___com_codename1_ui_Component_R_com_codename1_ui_plaf_Style(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$900___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$900___com_codename1_ui_Component_R_boolean(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1000___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$1000___com_codename1_ui_Component_R_boolean(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1100___com_codename1_ui_Component_int_int_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
+com_codename1_ui_Component_access$1100___com_codename1_ui_Component_int_int_java_lang_Object(threadStateData, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1210___com_codename1_ui_Component_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    return com_codename1_ui_Component_access$1210___com_codename1_ui_Component_R_int(threadStateData, __cn1Arg1);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1300___com_codename1_ui_Component_com_codename1_ui_Form_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
+    return com_codename1_ui_Component_access$1300___com_codename1_ui_Component_com_codename1_ui_Form_int_R_boolean(threadStateData, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+}
+
+
+JAVA_INT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_access$1402___com_codename1_ui_Component_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    return com_codename1_ui_Component_access$1402___com_codename1_ui_Component_int_R_int(threadStateData, __cn1Arg1, __cn1Arg2);
+}
+
+
+JAVA_BOOLEAN com_codename1_ui_spinner_Spinner3D_ScrollingContainer_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    return java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return java_lang_Object_getClass___R_java_lang_Class(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+java_lang_Object_wait__(threadStateData, __cn1ThisObject);
+}
+
+
+JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
+java_lang_Object_wait___long(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_ScrollingContainer_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    return java_lang_Object_clone___R_java_lang_Object(threadStateData, __cn1ThisObject);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addScrollListener___com_codename1_ui_events_ScrollListener)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addScrollListener___com_codename1_ui_events_ScrollListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_addScrollListener___com_codename1_ui_events_ScrollListener)__cn1ThisObject->__codenameOneParentClsReference->vtable[76])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int)__cn1ThisObject->__codenameOneParentClsReference->vtable[138])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setShouldCalcPreferredSize___boolean)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setShouldCalcPreferredSize___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setShouldCalcPreferredSize___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[153])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUnselectedStyle___R_com_codename1_ui_plaf_Style)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUnselectedStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_getUnselectedStyle___R_com_codename1_ui_plaf_Style)__cn1ThisObject->__codenameOneParentClsReference->vtable[228])(threadStateData, __cn1ThisObject);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollVisible___boolean)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollVisible___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollVisible___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[257])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setName___java_lang_String)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setName___java_lang_String)__cn1ThisObject->__codenameOneParentClsReference->vtable[277])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSnapToGrid___boolean)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSnapToGrid___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setSnapToGrid___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[287])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollableY___boolean)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollableY___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollableY___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[378])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+void __INIT_VTABLE_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE, void** vtable) {
+        __INIT_VTABLE_com_codename1_ui_Container(threadStateData, vtable);
+    vtable[138] = &com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int;
+}
+
+static int __com_codename1_ui_spinner_Spinner3D_ScrollingContainer_LOADED__=0;
+void __STATIC_INITIALIZER_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(CODENAME_ONE_THREAD_STATE) {
+    if(__com_codename1_ui_spinner_Spinner3D_ScrollingContainer_LOADED__) return;
+
+    monitorEnter(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer);
+    if(class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer.initialized) {
+        monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer);
+        return;
+    }
+
+    class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer.vtable = malloc(sizeof(void*) *396);
+    __INIT_VTABLE_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(threadStateData, class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer.vtable);
+    class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer.initialized = JAVA_TRUE;
+monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_Spinner3D_ScrollingContainer);
+__com_codename1_ui_spinner_Spinner3D_ScrollingContainer_LOADED__=1;
+}
+

@@ -1,0 +1,117 @@
+#ifndef __COM_CODENAME1_IO_TAR_TARHEADER__
+#define __COM_CODENAME1_IO_TAR_TARHEADER__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_io_tar_TarHeader;
+extern void __INIT_VTABLE_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_io_tar_TarHeader(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_tar_TarHeader___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_tar_TarHeader_parseName___byte_1ARRAY_int_int_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_INT com_codename1_io_tar_TarHeader_getNameBytes___java_lang_StringBuffer_byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarHeader_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_tar_TarHeader_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarHeader_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarHeader_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarHeader_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_tar_TarHeader_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarHeader_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarHeader_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_tar_TarHeader_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_tar_TarHeader_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_NAMELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_MODELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_UIDLEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_GIDLEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_SIZELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_MODTIMELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_CHKSUMLEN();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_OLDNORM();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_NORMAL();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_LINK();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_SYMLINK();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_CHR();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_BLK();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_DIR();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_FIFO();
+extern JAVA_BYTE get_static_com_codename1_io_tar_TarHeader_LF_CONTIG();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_MAGICLEN();
+extern JAVA_OBJECT get_static_com_codename1_io_tar_TarHeader_TMAGIC();
+extern JAVA_OBJECT get_static_com_codename1_io_tar_TarHeader_GNU_TMAGIC();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_UNAMELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_GNAMELEN();
+extern JAVA_INT get_static_com_codename1_io_tar_TarHeader_DEVLEN();
+JAVA_OBJECT get_field_com_codename1_io_tar_TarHeader_name(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_name(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_mode(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_mode(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_userId(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_userId(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_groupId(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_groupId(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_tar_TarHeader_size(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_size(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_tar_TarHeader_modTime(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_modTime(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_checkSum(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_checkSum(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BYTE get_field_com_codename1_io_tar_TarHeader_linkFlag(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_linkFlag(CODENAME_ONE_THREAD_STATE, JAVA_BYTE __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_tar_TarHeader_linkName(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_linkName(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_tar_TarHeader_magic(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_magic(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_tar_TarHeader_userName(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_userName(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_tar_TarHeader_groupName(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_groupName(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_devMajor(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_devMajor(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_tar_TarHeader_devMinor(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarHeader_devMinor(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_io_tar_TarHeader {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_io_tar_TarHeader_name;
+    JAVA_INT com_codename1_io_tar_TarHeader_mode;
+    JAVA_INT com_codename1_io_tar_TarHeader_userId;
+    JAVA_INT com_codename1_io_tar_TarHeader_groupId;
+    JAVA_LONG com_codename1_io_tar_TarHeader_size;
+    JAVA_LONG com_codename1_io_tar_TarHeader_modTime;
+    JAVA_INT com_codename1_io_tar_TarHeader_checkSum;
+    JAVA_BYTE com_codename1_io_tar_TarHeader_linkFlag;
+    JAVA_OBJECT com_codename1_io_tar_TarHeader_linkName;
+    JAVA_OBJECT com_codename1_io_tar_TarHeader_magic;
+    JAVA_OBJECT com_codename1_io_tar_TarHeader_userName;
+    JAVA_OBJECT com_codename1_io_tar_TarHeader_groupName;
+    JAVA_INT com_codename1_io_tar_TarHeader_devMajor;
+    JAVA_INT com_codename1_io_tar_TarHeader_devMinor;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_TAR_TARHEADER__

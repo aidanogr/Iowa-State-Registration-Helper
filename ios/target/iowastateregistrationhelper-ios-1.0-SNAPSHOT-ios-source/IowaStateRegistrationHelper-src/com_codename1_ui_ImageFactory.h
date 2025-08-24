@@ -1,0 +1,63 @@
+#ifndef __COM_CODENAME1_UI_IMAGEFACTORY__
+#define __COM_CODENAME1_UI_IMAGEFACTORY__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_ui_ImageFactory;
+extern void __INIT_VTABLE_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+
+JAVA_VOID com_codename1_ui_ImageFactory___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_createImage___int_int_int_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_getImageFactory___com_codename1_ui_Component_R_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_setImageFactory___com_codename1_ui_Component_com_codename1_ui_ImageFactory_R_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_createImage___com_codename1_ui_Component_int_int_int_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID com_codename1_ui_ImageFactory___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_ui_ImageFactory_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_ui_ImageFactory_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_ImageFactory_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_ImageFactory_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_ImageFactory_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_ImageFactory_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_ImageFactory_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_ImageFactory_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_codename1_ui_ImageFactory_createImage___int_int_int_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+extern JAVA_OBJECT get_static_com_codename1_ui_ImageFactory_KEY();
+extern JAVA_OBJECT get_static_com_codename1_ui_ImageFactory_defaultFactory();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_ui_ImageFactory_defaultFactory;
+extern void set_static_com_codename1_ui_ImageFactory_defaultFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+
+
+struct obj__com_codename1_ui_ImageFactory {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_UI_IMAGEFACTORY__

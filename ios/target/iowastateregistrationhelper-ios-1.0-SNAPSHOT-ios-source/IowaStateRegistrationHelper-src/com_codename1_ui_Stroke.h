@@ -1,0 +1,95 @@
+#ifndef __COM_CODENAME1_UI_STROKE__
+#define __COM_CODENAME1_UI_STROKE__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_ui_Stroke;
+extern void __INIT_VTABLE_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_ui_Stroke___INIT_____float_int_int_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_FLOAT __cn1Arg4);
+
+JAVA_VOID com_codename1_ui_Stroke___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_setStroke___com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_ui_Stroke_getJoinStyle___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_setJoinStyle___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_ui_Stroke_getCapStyle___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_setCapStyle___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_FLOAT com_codename1_ui_Stroke_getLineWidth___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_setLineWidth___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1);
+
+JAVA_FLOAT com_codename1_ui_Stroke_getMiterLimit___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_setMiterLimit___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_ui_Stroke_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_Stroke_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_ui_Stroke_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_Stroke_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Stroke_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_Stroke_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_Stroke_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT virtual_com_codename1_ui_Stroke_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_ui_Stroke_setStroke___com_codename1_ui_Stroke com_codename1_ui_Stroke_setStroke___com_codename1_ui_Stroke
+#define virtual_com_codename1_ui_Stroke_getJoinStyle___R_int com_codename1_ui_Stroke_getJoinStyle___R_int
+#define virtual_com_codename1_ui_Stroke_getCapStyle___R_int com_codename1_ui_Stroke_getCapStyle___R_int
+#define virtual_com_codename1_ui_Stroke_getLineWidth___R_float com_codename1_ui_Stroke_getLineWidth___R_float
+#define virtual_com_codename1_ui_Stroke_setLineWidth___float com_codename1_ui_Stroke_setLineWidth___float
+#define virtual_com_codename1_ui_Stroke_getMiterLimit___R_float com_codename1_ui_Stroke_getMiterLimit___R_float
+extern JAVA_INT get_static_com_codename1_ui_Stroke_JOIN_MITER();
+extern JAVA_INT get_static_com_codename1_ui_Stroke_JOIN_ROUND();
+extern JAVA_INT get_static_com_codename1_ui_Stroke_JOIN_BEVEL();
+extern JAVA_INT get_static_com_codename1_ui_Stroke_CAP_BUTT();
+extern JAVA_INT get_static_com_codename1_ui_Stroke_CAP_ROUND();
+extern JAVA_INT get_static_com_codename1_ui_Stroke_CAP_SQUARE();
+JAVA_INT get_field_com_codename1_ui_Stroke_joinStyle(JAVA_OBJECT t);
+void set_field_com_codename1_ui_Stroke_joinStyle(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_ui_Stroke_capStyle(JAVA_OBJECT t);
+void set_field_com_codename1_ui_Stroke_capStyle(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_FLOAT get_field_com_codename1_ui_Stroke_lineWidth(JAVA_OBJECT t);
+void set_field_com_codename1_ui_Stroke_lineWidth(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_FLOAT get_field_com_codename1_ui_Stroke_miterLimit(JAVA_OBJECT t);
+void set_field_com_codename1_ui_Stroke_miterLimit(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_ui_Stroke {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT com_codename1_ui_Stroke_joinStyle;
+    JAVA_INT com_codename1_ui_Stroke_capStyle;
+    JAVA_FLOAT com_codename1_ui_Stroke_lineWidth;
+    JAVA_FLOAT com_codename1_ui_Stroke_miterLimit;
+};
+
+
+
+#endif //__COM_CODENAME1_UI_STROKE__

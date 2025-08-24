@@ -1,0 +1,85 @@
+#ifndef __COM_CODENAME1_IMPL_IOS_MATRIX_MATRIXUTIL__
+#define __COM_CODENAME1_IMPL_IOS_MATRIX_MATRIXUTIL__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_impl_ios_Matrix_MatrixUtil;
+extern void __INIT_VTABLE_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_impl_ios_Matrix_MatrixUtil(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_FLOAT com_codename1_impl_ios_Matrix_MatrixUtil_clamp___float_R_float(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_transformPoints___float_1ARRAY_int_float_1ARRAY_int_float_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_multiplyMM___float_1ARRAY_int_float_1ARRAY_int_float_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_INT __cn1Arg6);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_multiplyMV___float_1ARRAY_int_float_1ARRAY_int_float_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_INT __cn1Arg6);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_transposeM___float_1ARRAY_int_float_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_BOOLEAN com_codename1_impl_ios_Matrix_MatrixUtil_invertM___float_1ARRAY_int_float_1ARRAY_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_orthoM___float_1ARRAY_int_float_float_float_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6, JAVA_FLOAT __cn1Arg7, JAVA_FLOAT __cn1Arg8);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_frustumM___float_1ARRAY_int_float_float_float_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6, JAVA_FLOAT __cn1Arg7, JAVA_FLOAT __cn1Arg8);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_perspectiveM___float_1ARRAY_int_float_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6);
+
+JAVA_FLOAT com_codename1_impl_ios_Matrix_MatrixUtil_length___float_float_float_R_float(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1, JAVA_FLOAT __cn1Arg2, JAVA_FLOAT __cn1Arg3);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_setIdentityM___float_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_scaleM___float_1ARRAY_int_float_1ARRAY_int_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6, JAVA_FLOAT __cn1Arg7);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_scaleM___float_1ARRAY_int_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_translateM___float_1ARRAY_int_float_1ARRAY_int_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6, JAVA_FLOAT __cn1Arg7);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_translateM___float_1ARRAY_int_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_setRotateM___float_1ARRAY_int_float_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_setRotateEulerM___float_1ARRAY_int_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_setLookAtM___float_1ARRAY_int_float_float_float_float_float_float_float_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4, JAVA_FLOAT __cn1Arg5, JAVA_FLOAT __cn1Arg6, JAVA_FLOAT __cn1Arg7, JAVA_FLOAT __cn1Arg8, JAVA_FLOAT __cn1Arg9, JAVA_FLOAT __cn1Arg10, JAVA_FLOAT __cn1Arg11);
+
+JAVA_BOOLEAN com_codename1_impl_ios_Matrix_MatrixUtil_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_impl_ios_Matrix_MatrixUtil_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_impl_ios_Matrix_MatrixUtil_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_impl_ios_Matrix_MatrixUtil_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_impl_ios_Matrix_MatrixUtil_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_impl_ios_Matrix_MatrixUtil_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+
+struct obj__com_codename1_impl_ios_Matrix_MatrixUtil {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_IMPL_IOS_MATRIX_MATRIXUTIL__

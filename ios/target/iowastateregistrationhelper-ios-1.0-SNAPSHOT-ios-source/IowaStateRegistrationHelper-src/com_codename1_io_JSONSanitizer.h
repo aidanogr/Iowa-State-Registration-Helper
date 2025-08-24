@@ -1,0 +1,130 @@
+#ifndef __COM_CODENAME1_IO_JSONSANITIZER__
+#define __COM_CODENAME1_IO_JSONSANITIZER__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_io_JSONSanitizer;
+extern void __INIT_VTABLE_com_codename1_io_JSONSanitizer(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_JSONSanitizer(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_JSONSanitizer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_JSONSanitizer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_JSONSanitizer(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_sanitize___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_sanitize___java_lang_String_int_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_JSONSanitizer___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_JSONSanitizer___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_INT com_codename1_io_JSONSanitizer_getMaximumNestingDepth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_sanitize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_sanitizeString___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_requireValueState___int_com_codename1_io_JSONSanitizer_State_boolean_R_com_codename1_io_JSONSanitizer_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_insert___int_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_CHAR __cn1Arg2);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_insert___int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_elide___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_replace___int_int_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_CHAR __cn1Arg3);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_replace___int_int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_INT com_codename1_io_JSONSanitizer_endOfQuotedString___java_lang_String_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_elideTrailingComma___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_normalizeNumber___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_canonicalizeNumber___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_canonicalizeNumber___java_lang_StringBuilder_int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_regionMatches___java_lang_String_int_java_lang_String_int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_isKeyword___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_isOctAt___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_isHexAt___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_isJsonSpecialChar___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_appendHex___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_INT com_codename1_io_JSONSanitizer_endOfDigitRun___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_JSONSanitizer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_io_JSONSanitizer_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_JSONSanitizer_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_JSONSanitizer_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_JSONSanitizer_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_codename1_io_JSONSanitizer_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_io_JSONSanitizer_sanitize__ com_codename1_io_JSONSanitizer_sanitize__
+extern JAVA_INT get_static_com_codename1_io_JSONSanitizer_DEFAULT_NESTING_DEPTH();
+extern JAVA_INT get_static_com_codename1_io_JSONSanitizer_MAXIMUM_NESTING_DEPTH();
+extern JAVA_BOOLEAN get_static_com_codename1_io_JSONSanitizer_SUPER_VERBOSE_AND_SLOW_LOGGING();
+extern JAVA_OBJECT get_static_com_codename1_io_JSONSanitizer_HEX_DIGITS();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_JSONSanitizer_HEX_DIGITS;
+extern void set_static_com_codename1_io_JSONSanitizer_HEX_DIGITS(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_BOOLEAN get_static_com_codename1_io_JSONSanitizer__assertionsDisabled();
+extern JAVA_BOOLEAN STATIC_FIELD_com_codename1_io_JSONSanitizer__assertionsDisabled;
+extern void set_static_com_codename1_io_JSONSanitizer__assertionsDisabled(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+JAVA_INT get_field_com_codename1_io_JSONSanitizer_maximumNestingDepth(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_maximumNestingDepth(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_JSONSanitizer_jsonish(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_jsonish(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_JSONSanitizer_bracketDepth(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_bracketDepth(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_JSONSanitizer_isMap(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_isMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_io_JSONSanitizer_sanitizedJson(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_sanitizedJson(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_io_JSONSanitizer_cleaned(JAVA_OBJECT t);
+void set_field_com_codename1_io_JSONSanitizer_cleaned(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_io_JSONSanitizer {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT com_codename1_io_JSONSanitizer_maximumNestingDepth;
+    JAVA_OBJECT com_codename1_io_JSONSanitizer_jsonish;
+    JAVA_INT com_codename1_io_JSONSanitizer_bracketDepth;
+    JAVA_OBJECT com_codename1_io_JSONSanitizer_isMap;
+    JAVA_OBJECT com_codename1_io_JSONSanitizer_sanitizedJson;
+    JAVA_INT com_codename1_io_JSONSanitizer_cleaned;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_JSONSANITIZER__

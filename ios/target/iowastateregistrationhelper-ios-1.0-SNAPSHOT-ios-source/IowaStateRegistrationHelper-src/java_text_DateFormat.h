@@ -1,0 +1,99 @@
+#ifndef __JAVA_TEXT_DATEFORMAT__
+#define __JAVA_TEXT_DATEFORMAT__
+
+#include "cn1_globals.h"
+#include "java_text_Format.h"
+extern struct clazz class__java_text_DateFormat;
+extern void __INIT_VTABLE_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_text_DateFormat___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat___INIT_____int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_java_lang_StringBuffer_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT java_text_DateFormat_format___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_format___java_util_Date_java_lang_StringBuffer_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT java_text_DateFormat_parseObject___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_parse___java_lang_String_R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_getInstance___R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_text_DateFormat_getDateInstance___R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_text_DateFormat_getTimeInstance___R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_text_DateFormat_getDateInstance___int_R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_getTimeInstance___int_R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_getDateTimeInstance___int_int_R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_INT java_text_DateFormat_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_text_DateFormat_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_text_DateFormat_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_text_DateFormat_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_text_DateFormat_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_text_DateFormat_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_text_DateFormat_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT virtual_java_text_DateFormat_parseObject___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+#define virtual_java_text_DateFormat_format___java_lang_Object_java_lang_StringBuffer_R_java_lang_String java_text_DateFormat_format___java_lang_Object_java_lang_StringBuffer_R_java_lang_String
+#define virtual_java_text_DateFormat_format___java_util_Date_R_java_lang_String java_text_DateFormat_format___java_util_Date_R_java_lang_String
+#define virtual_java_text_DateFormat_format___java_util_Date_java_lang_StringBuffer_R_java_lang_String java_text_DateFormat_format___java_util_Date_java_lang_StringBuffer_R_java_lang_String
+#define virtual_java_text_DateFormat_parse___java_lang_String_R_java_util_Date java_text_DateFormat_parse___java_lang_String_R_java_util_Date
+extern JAVA_INT get_static_java_text_DateFormat_FULL();
+extern JAVA_INT get_static_java_text_DateFormat_LONG();
+extern JAVA_INT get_static_java_text_DateFormat_MEDIUM();
+extern JAVA_INT get_static_java_text_DateFormat_SHORT();
+extern JAVA_INT get_static_java_text_DateFormat_DEFAULT();
+extern JAVA_INT STATIC_FIELD_java_text_DateFormat_DEFAULT;
+extern void set_static_java_text_DateFormat_DEFAULT(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_java_text_DateFormat_NONE();
+extern JAVA_INT STATIC_FIELD_java_text_DateFormat_NONE;
+extern void set_static_java_text_DateFormat_NONE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+JAVA_INT get_field_java_text_DateFormat_dateStyle(JAVA_OBJECT t);
+void set_field_java_text_DateFormat_dateStyle(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_text_DateFormat_timeStyle(JAVA_OBJECT t);
+void set_field_java_text_DateFormat_timeStyle(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__java_text_DateFormat {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT java_text_DateFormat_dateStyle;
+    JAVA_INT java_text_DateFormat_timeStyle;
+};
+
+
+
+#endif //__JAVA_TEXT_DATEFORMAT__

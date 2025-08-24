@@ -1,0 +1,76 @@
+#ifndef __COM_CODENAME1_UI_CN1CONSTANTS__
+#define __COM_CODENAME1_UI_CN1CONSTANTS__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_ui_CN1Constants;
+extern void __INIT_VTABLE_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_ui_CN1Constants(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_ui_CN1Constants___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_CN1Constants_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_CN1Constants_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_ui_CN1Constants_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_CN1Constants_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_CN1Constants_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_CN1Constants_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_CN1Constants_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_CN1Constants_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_CN1Constants_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_CN1Constants_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_VERY_LOW();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_LOW();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_MEDIUM();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_HIGH();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_VERY_HIGH();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_HD();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_560();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_2HD();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_DENSITY_4K();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_DATE();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_TIME();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_DATE_AND_TIME();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_STRINGS();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_DURATION();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_DURATION_HOURS();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_DURATION_MINUTES();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_PICKER_TYPE_CALENDAR();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_SMS_NOT_SUPPORTED();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_SMS_SEAMLESS();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_SMS_INTERACTIVE();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_SMS_BOTH();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_IMAGE();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_VIDEO();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_ALL();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_IMAGE_MULTI();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_VIDEO_MULTI();
+extern JAVA_INT get_static_com_codename1_ui_CN1Constants_GALLERY_ALL_MULTI();
+
+
+struct obj__com_codename1_ui_CN1Constants {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_UI_CN1CONSTANTS__

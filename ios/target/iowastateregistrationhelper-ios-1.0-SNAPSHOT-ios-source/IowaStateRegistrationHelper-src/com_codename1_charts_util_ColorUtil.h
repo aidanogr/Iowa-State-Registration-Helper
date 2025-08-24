@@ -1,0 +1,90 @@
+#ifndef __COM_CODENAME1_CHARTS_UTIL_COLORUTIL__
+#define __COM_CODENAME1_CHARTS_UTIL_COLORUTIL__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_charts_util_ColorUtil;
+extern void __INIT_VTABLE_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_charts_util_ColorUtil(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_argb___int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_alpha___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_red___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_green___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_blue___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_rgb___int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_charts_util_ColorUtil_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_charts_util_ColorUtil_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_charts_util_ColorUtil_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_charts_util_ColorUtil_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_charts_util_ColorUtil_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_charts_util_ColorUtil_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_LTGRAY();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_LTGRAY;
+extern void set_static_com_codename1_charts_util_ColorUtil_LTGRAY(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_BLUE();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_BLUE;
+extern void set_static_com_codename1_charts_util_ColorUtil_BLUE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_BLACK();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_BLACK;
+extern void set_static_com_codename1_charts_util_ColorUtil_BLACK(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_WHITE();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_WHITE;
+extern void set_static_com_codename1_charts_util_ColorUtil_WHITE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_CYAN();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_CYAN;
+extern void set_static_com_codename1_charts_util_ColorUtil_CYAN(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_GREEN();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_GREEN;
+extern void set_static_com_codename1_charts_util_ColorUtil_GREEN(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_YELLOW();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_YELLOW;
+extern void set_static_com_codename1_charts_util_ColorUtil_YELLOW(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_MAGENTA();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_MAGENTA;
+extern void set_static_com_codename1_charts_util_ColorUtil_MAGENTA(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_codename1_charts_util_ColorUtil_GRAY();
+extern JAVA_INT STATIC_FIELD_com_codename1_charts_util_ColorUtil_GRAY;
+extern void set_static_com_codename1_charts_util_ColorUtil_GRAY(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+
+
+struct obj__com_codename1_charts_util_ColorUtil {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_CHARTS_UTIL_COLORUTIL__

@@ -1,0 +1,86 @@
+#ifndef __COM_CODENAME1_MEDIA_ASYNCMEDIA_STATE__
+#define __COM_CODENAME1_MEDIA_ASYNCMEDIA_STATE__
+
+#include "cn1_globals.h"
+#include "java_lang_Enum.h"
+extern struct clazz class__com_codename1_media_AsyncMedia_State;
+extern struct clazz class_array1__com_codename1_media_AsyncMedia_State;
+extern void __INIT_VTABLE_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __VALUE_OF_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT value);
+extern JAVA_OBJECT __NEW_ARRAY_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_INT size);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_values___R_com_codename1_media_AsyncMedia_State_1ARRAY(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_valueOf___java_lang_String_R_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_setEnumValues___java_lang_Object_1ARRAY_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_getEnumValues___java_lang_Class_R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_valueOf___java_lang_Class_java_lang_String_R_java_lang_Enum(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_media_AsyncMedia_State_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_media_AsyncMedia_State_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AsyncMedia_State_compareTo___java_lang_Enum_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_name___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AsyncMedia_State_ordinal___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_getDeclaringClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_media_AsyncMedia_State_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_media_AsyncMedia_State_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_media_AsyncMedia_State_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+extern JAVA_OBJECT get_static_com_codename1_media_AsyncMedia_State_Playing();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_media_AsyncMedia_State_Playing;
+extern void set_static_com_codename1_media_AsyncMedia_State_Playing(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_media_AsyncMedia_State_Paused();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_media_AsyncMedia_State_Paused;
+extern void set_static_com_codename1_media_AsyncMedia_State_Paused(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_media_AsyncMedia_State__VALUES();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_media_AsyncMedia_State__VALUES;
+extern void set_static_com_codename1_media_AsyncMedia_State__VALUES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+
+
+struct obj__com_codename1_media_AsyncMedia_State {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT java_lang_Enum_name;
+    JAVA_INT java_lang_Enum_ordinal;
+};
+
+
+
+#endif //__COM_CODENAME1_MEDIA_ASYNCMEDIA_STATE__

@@ -46,7 +46,6 @@ DialogBody {
 	height:100mm;
     font-family: "native:MainLight";
     font-size: 3mm;
-	width: 100%;
 }
 
 /** Style for Dialog title bar text */
@@ -55,17 +54,13 @@ DialogTitle {
     font-size: 4.5mm;
 	margin-right: 8mm;
 	margin-left: 8mm;
-	width: 100%;
-	text-align: center;
 }
 
 InstructionalDialog {
 	width: 100%;
 	height: 1000mm;
 	text-align: center;
-	
 }
-
 /** Style for the side menu */
 SideNavigationPanel {
     background: white;
@@ -89,6 +84,14 @@ SideCommand {
     font-family: "native:MainLight";
     font-size: 4mm;
     border-bottom: 2px solid #cccccc;
+}
+ClassButton {
+	width: 20%;
+}
+
+CalendarContainer {
+	height: 100%;
+	width: 100%;
 }
 
 /* end /Users/aidanogrady2/Desktop/iowastateregistrationhelper/javase/../common/src/main/css/theme.css*/

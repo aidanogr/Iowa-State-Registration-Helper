@@ -1,0 +1,127 @@
+#ifndef __COM_CODENAME1_PUSH_PUSHCONTENT__
+#define __COM_CODENAME1_PUSH_PUSHCONTENT__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_push_PushContent;
+extern void __INIT_VTABLE_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_push_PushContent___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_push_PushContent_keys___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_push_PushContent_exists___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_push_PushContent_get___R_com_codename1_push_PushContent(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_push_PushContent_p___java_lang_String_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_push_PushContent_setProperty___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_push_PushContent_clearAll___java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_push_PushContent_reset__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_push_PushContent_anyProperties___java_lang_String_1ARRAY_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getTitle___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setTitle___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getBody___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setBody___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getImageUrl___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setImageUrl___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getCategory___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setCategory___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getMetaData___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setMetaData___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_push_PushContent_getType___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setType___int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getActionId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_push_PushContent_getTextResponse___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_setActionId___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_push_PushContent_setTextResponse___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_push_PushContent___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_push_PushContent_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_push_PushContent_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_push_PushContent_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_push_PushContent_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_push_PushContent_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_push_PushContent_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_push_PushContent_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_push_PushContent_getTitle___R_java_lang_String com_codename1_push_PushContent_getTitle___R_java_lang_String
+extern JAVA_OBJECT get_static_com_codename1_push_PushContent_PROP_PREFIX();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_push_PushContent_PROP_PREFIX;
+extern void set_static_com_codename1_push_PushContent_PROP_PREFIX(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_title(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_title(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_body(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_body(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_imageUrl(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_imageUrl(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_category(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_category(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_metaData(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_metaData(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_actionId(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_actionId(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_push_PushContent_textResponse(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_textResponse(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_codename1_push_PushContent_type(JAVA_OBJECT t);
+void set_field_com_codename1_push_PushContent_type(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_push_PushContent {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_push_PushContent_title;
+    JAVA_OBJECT com_codename1_push_PushContent_body;
+    JAVA_OBJECT com_codename1_push_PushContent_imageUrl;
+    JAVA_OBJECT com_codename1_push_PushContent_category;
+    JAVA_OBJECT com_codename1_push_PushContent_metaData;
+    JAVA_OBJECT com_codename1_push_PushContent_actionId;
+    JAVA_OBJECT com_codename1_push_PushContent_textResponse;
+    JAVA_INT com_codename1_push_PushContent_type;
+};
+
+
+
+#endif //__COM_CODENAME1_PUSH_PUSHCONTENT__

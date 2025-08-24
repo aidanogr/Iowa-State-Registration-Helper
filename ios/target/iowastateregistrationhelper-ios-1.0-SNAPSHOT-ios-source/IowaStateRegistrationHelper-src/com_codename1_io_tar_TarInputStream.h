@@ -1,0 +1,158 @@
+#ifndef __COM_CODENAME1_IO_TAR_TARINPUTSTREAM__
+#define __COM_CODENAME1_IO_TAR_TARINPUTSTREAM__
+
+#include "cn1_globals.h"
+#include "com_codename1_io_BufferedInputStream.h"
+extern struct clazz class__com_codename1_io_tar_TarInputStream;
+extern void __INIT_VTABLE_com_codename1_io_tar_TarInputStream(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_tar_TarInputStream(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_tar_TarInputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_tar_TarInputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_tar_TarInputStream(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___INIT_____java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_markSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_mark___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_getNextEntry___R_com_codename1_io_tar_TarEntry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_closeCurrentEntry__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_skipPad__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_LONG com_codename1_io_tar_TarInputStream_skip___long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_isDefaultSkip___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setDefaultSkip___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___INIT_____java_io_InputStream_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___INIT_____java_io_InputStream_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___INIT_____java_io_InputStream_int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_getInternal___R_java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_available___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_LONG com_codename1_io_tar_TarInputStream_getLastActivityTime___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_getTotalBytesRead___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setProgressListener___com_codename1_io_IOProgressListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_read___byte_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_getDefaultBufferSize___R_int(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setDefaultBufferSize___int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_getConnection___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setConnection___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_isDisableBuffering___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setDisableBuffering___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_isPrintInput___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setPrintInput___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_getYield___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_setYield___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_stop__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_tar_TarInputStream_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_tar_TarInputStream_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_tar_TarInputStream_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT virtual_com_codename1_io_tar_TarInputStream_read___byte_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT virtual_com_codename1_io_tar_TarInputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_LONG virtual_com_codename1_io_tar_TarInputStream_skip___long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+#define virtual_com_codename1_io_tar_TarInputStream_getNextEntry___R_com_codename1_io_tar_TarEntry com_codename1_io_tar_TarInputStream_getNextEntry___R_com_codename1_io_tar_TarEntry
+#define virtual_com_codename1_io_tar_TarInputStream_closeCurrentEntry__ com_codename1_io_tar_TarInputStream_closeCurrentEntry__
+#define virtual_com_codename1_io_tar_TarInputStream_skipPad__ com_codename1_io_tar_TarInputStream_skipPad__
+extern JAVA_INT get_static_com_codename1_io_tar_TarInputStream_SKIP_BUFFER_SIZE();
+JAVA_OBJECT get_field_com_codename1_io_tar_TarInputStream_currentEntry(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarInputStream_currentEntry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_tar_TarInputStream_currentFileSize(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarInputStream_currentFileSize(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_com_codename1_io_tar_TarInputStream_bytesRead(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarInputStream_bytesRead(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_codename1_io_tar_TarInputStream_defaultSkip(JAVA_OBJECT t);
+void set_field_com_codename1_io_tar_TarInputStream_defaultSkip(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_io_tar_TarInputStream {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT com_codename1_io_BufferedInputStream_actualAvailable;
+    JAVA_OBJECT com_codename1_io_BufferedInputStream_connection;
+    JAVA_OBJECT com_codename1_io_BufferedInputStream_in;
+    JAVA_OBJECT com_codename1_io_BufferedInputStream_buf;
+    JAVA_OBJECT com_codename1_io_BufferedInputStream_progressListener;
+    JAVA_BOOLEAN com_codename1_io_BufferedInputStream_disableBuffering;
+    JAVA_BOOLEAN com_codename1_io_BufferedInputStream_closed;
+    JAVA_BOOLEAN com_codename1_io_BufferedInputStream_stopped;
+    JAVA_INT com_codename1_io_BufferedInputStream_count;
+    JAVA_LONG com_codename1_io_BufferedInputStream_lastActivityTime;
+    JAVA_INT com_codename1_io_BufferedInputStream_totalBytesRead;
+    JAVA_BOOLEAN com_codename1_io_BufferedInputStream_printInput;
+    JAVA_OBJECT com_codename1_io_BufferedInputStream_name;
+    JAVA_INT com_codename1_io_BufferedInputStream_yield;
+    JAVA_LONG com_codename1_io_BufferedInputStream_elapsedSinceLastYield;
+    JAVA_INT com_codename1_io_BufferedInputStream_pos;
+    JAVA_INT com_codename1_io_BufferedInputStream_markpos;
+    JAVA_INT com_codename1_io_BufferedInputStream_marklimit;
+    JAVA_OBJECT com_codename1_io_tar_TarInputStream_currentEntry;
+    JAVA_LONG com_codename1_io_tar_TarInputStream_currentFileSize;
+    JAVA_LONG com_codename1_io_tar_TarInputStream_bytesRead;
+    JAVA_BOOLEAN com_codename1_io_tar_TarInputStream_defaultSkip;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_TAR_TARINPUTSTREAM__

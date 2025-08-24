@@ -1,0 +1,90 @@
+#ifndef __COM_CODENAME1_CONTACTS_ADDRESS__
+#define __COM_CODENAME1_CONTACTS_ADDRESS__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_contacts_Address;
+extern void __INIT_VTABLE_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_contacts_Address(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_contacts_Address___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_getCountry___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_getLocality___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_getPostalCode___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_getRegion___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_getStreetAddress___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_contacts_Address_setCountry___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_contacts_Address_setLocality___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_contacts_Address_setPostalCode___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_contacts_Address_setRegion___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_contacts_Address_setStreetAddress___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_contacts_Address_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_contacts_Address_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_contacts_Address_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_contacts_Address_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_contacts_Address_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_contacts_Address_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_contacts_Address_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_contacts_Address_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_contacts_Address_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_contacts_Address_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_contacts_Address_getCountry___R_java_lang_String com_codename1_contacts_Address_getCountry___R_java_lang_String
+#define virtual_com_codename1_contacts_Address_setCountry___java_lang_String com_codename1_contacts_Address_setCountry___java_lang_String
+#define virtual_com_codename1_contacts_Address_setLocality___java_lang_String com_codename1_contacts_Address_setLocality___java_lang_String
+#define virtual_com_codename1_contacts_Address_setPostalCode___java_lang_String com_codename1_contacts_Address_setPostalCode___java_lang_String
+#define virtual_com_codename1_contacts_Address_setRegion___java_lang_String com_codename1_contacts_Address_setRegion___java_lang_String
+#define virtual_com_codename1_contacts_Address_setStreetAddress___java_lang_String com_codename1_contacts_Address_setStreetAddress___java_lang_String
+JAVA_OBJECT get_field_com_codename1_contacts_Address_streetAddress(JAVA_OBJECT t);
+void set_field_com_codename1_contacts_Address_streetAddress(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_contacts_Address_locality(JAVA_OBJECT t);
+void set_field_com_codename1_contacts_Address_locality(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_contacts_Address_region(JAVA_OBJECT t);
+void set_field_com_codename1_contacts_Address_region(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_contacts_Address_postalCode(JAVA_OBJECT t);
+void set_field_com_codename1_contacts_Address_postalCode(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_contacts_Address_country(JAVA_OBJECT t);
+void set_field_com_codename1_contacts_Address_country(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_contacts_Address {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_contacts_Address_streetAddress;
+    JAVA_OBJECT com_codename1_contacts_Address_locality;
+    JAVA_OBJECT com_codename1_contacts_Address_region;
+    JAVA_OBJECT com_codename1_contacts_Address_postalCode;
+    JAVA_OBJECT com_codename1_contacts_Address_country;
+};
+
+
+
+#endif //__COM_CODENAME1_CONTACTS_ADDRESS__

@@ -1,7 +1,11 @@
 package com.ogradytech.registration.gui;
 
+import java.io.IOException;
+
 import com.codename1.ui.Button;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
+import com.codename1.ui.Font;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.layouts.BoxLayout;
 
@@ -39,6 +43,9 @@ public class InstructionalDialog {
 		exitButton.addActionListener(evt -> {
 			d.dispose();
 		});
+		
+
+
 		dialog.add(title);
 		dialog.add(body);	
 		dialog.add(exitButton);
@@ -48,7 +55,6 @@ public class InstructionalDialog {
 	
 
 	public void show() {
-
 		this.dialog.show();
 	}
 

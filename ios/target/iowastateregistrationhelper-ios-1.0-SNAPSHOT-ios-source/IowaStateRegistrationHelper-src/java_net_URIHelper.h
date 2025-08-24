@@ -1,0 +1,129 @@
+#ifndef __JAVA_NET_URIHELPER__
+#define __JAVA_NET_URIHELPER__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__java_net_URIHelper;
+extern void __INIT_VTABLE_java_net_URIHelper(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_net_URIHelper(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_net_URIHelper(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_net_URIHelper(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_net_URIHelper(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_java_net_URIHelper(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_net_URIHelper___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_CHAR java_net_URIHelper_decodeEntity___java_lang_String_R_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_encodeEntity___char_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_CHAR __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_encodeEntities___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_encodeString___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_decodeString___java_lang_String_boolean_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2);
+
+JAVA_OBJECT java_net_URIHelper_decodeString___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_getParameters___java_net_URI_R_java_util_Hashtable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_parseQueryOrdered___java_lang_String_R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_buildQuery___java_util_List_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_buildQuery___java_util_Hashtable_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_parseQuery___java_lang_String_boolean_R_java_util_Hashtable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2);
+
+JAVA_INT java_net_URIHelper_getDefaultPort___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_toBytes___java_lang_String_R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_net_URIHelper_firstIllegalCharacter___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isLegal___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isLegalUnicode___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isASCII___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isSpace___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isLineBreak___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isISOControl___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isAlphaNum___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isAlpha___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_BOOLEAN java_net_URIHelper_isNumeric___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_net_URIHelper___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_net_URIHelper_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_net_URIHelper_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_net_URIHelper_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_net_URIHelper_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_net_URIHelper_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_net_URIHelper_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_net_URIHelper_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_net_URIHelper_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_net_URIHelper_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_net_URIHelper_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_CHAR get_static_java_net_URIHelper_QUOTE_MARKER();
+extern JAVA_CHAR get_static_java_net_URIHelper_ENCODING_ERROR_MARKER();
+extern JAVA_OBJECT get_static_java_net_URIHelper_ENCODED_AMPERSAND();
+extern JAVA_OBJECT get_static_java_net_URIHelper_HTML_ENCODED_ENTITIES();
+extern JAVA_OBJECT STATIC_FIELD_java_net_URIHelper_HTML_ENCODED_ENTITIES;
+extern void set_static_java_net_URIHelper_HTML_ENCODED_ENTITIES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_net_URIHelper_HTML_ENTITIES();
+extern JAVA_OBJECT STATIC_FIELD_java_net_URIHelper_HTML_ENTITIES;
+extern void set_static_java_net_URIHelper_HTML_ENTITIES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_CHAR get_static_java_net_URIHelper_HTML_ENTITY_INVALID();
+extern JAVA_CHAR get_static_java_net_URIHelper_HTML_ENTITY_START();
+extern JAVA_CHAR get_static_java_net_URIHelper_HTML_ENTITY_TERMINATE();
+extern JAVA_CHAR get_static_java_net_URIHelper_HTML_ENTITY_RAWVALUE();
+extern JAVA_CHAR get_static_java_net_URIHelper_HTML_ENTITY_RAWHEXVALUE();
+extern JAVA_OBJECT get_static_java_net_URIHelper_HTTP();
+extern JAVA_OBJECT get_static_java_net_URIHelper_HTTPS();
+extern JAVA_OBJECT get_static_java_net_URIHelper_FTP();
+extern JAVA_OBJECT get_static_java_net_URIHelper_FILE();
+extern JAVA_OBJECT get_static_java_net_URIHelper_JAR();
+extern JAVA_OBJECT get_static_java_net_URIHelper_MAILTO();
+extern JAVA_OBJECT get_static_java_net_URIHelper_SMS();
+extern JAVA_OBJECT get_static_java_net_URIHelper_TEL();
+extern JAVA_OBJECT get_static_java_net_URIHelper_SIP();
+extern JAVA_OBJECT get_static_java_net_URIHelper_SOCKET();
+extern JAVA_OBJECT get_static_java_net_URIHelper_DATAGRAM();
+extern JAVA_OBJECT get_static_java_net_URIHelper_MULTICAST();
+extern JAVA_OBJECT get_static_java_net_URIHelper_SCHEMES();
+extern JAVA_OBJECT STATIC_FIELD_java_net_URIHelper_SCHEMES;
+extern void set_static_java_net_URIHelper_SCHEMES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_net_URIHelper_SOCKET_SCHEMES();
+extern JAVA_OBJECT STATIC_FIELD_java_net_URIHelper_SOCKET_SCHEMES;
+extern void set_static_java_net_URIHelper_SOCKET_SCHEMES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+
+
+struct obj__java_net_URIHelper {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__JAVA_NET_URIHELPER__

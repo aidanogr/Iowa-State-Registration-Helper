@@ -1,0 +1,69 @@
+/*
+ * Copyright (c) 2012, Codename One and/or its affiliates. All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 only, as
+ * published by the Free Software Foundation.  Codename One designates this
+ * particular file as subject to the "Classpath" exception as provided
+ * by Oracle in the LICENSE file that accompanied this code.
+ *  
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * version 2 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ * 
+ * You should have received a copy of the GNU General Public License version
+ * 2 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ * 
+ * Please contact Codename One through http://www.codenameone.com/ if you 
+ * need additional information or have any questions.
+ */
+
+#import <Foundation/Foundation.h>
+
+#import <CommonCrypto/CommonDigest.h>
+
+@interface NetworkConnectionImpl : NSObject<NSURLConnectionDataDelegate> {
+    NSMutableURLRequest *request;
+    int contentLength;
+    int responseCode;
+    NSDictionary* allHeaderFields;
+    NSURLConnection *connection;
+    int chunkedStreamingLen;
+    NSString* sslCertificates;
+    NSMutableArray* pendingData;
+    int pendingDataPos;
+    JAVA_INT connectionId;
+    BOOL insecure;
+}
+
+- (void*)openConnection:(NSString*)url timeout:(int)timeout;
+- (void)connect;
+- (JAVA_INT)available;
+- (JAVA_INT)shiftByte;
+- (void)appendData:(NSData*)data;
+- (JAVA_INT)readData:(JAVA_OBJECT)buffer offset:(JAVA_INT)offset len:(JAVA_INT)len;
+- (void)setMethod:(NSString*)mtd;
+- (int)getResponseCode;
+- (NSString*)getResponseMessage;
+- (int)getContentLength;
+- (NSString*)getResponseHeader:(NSString*)name;
+- (void)addHeader:(NSString*)key value:(NSString*)value;
+- (void)setBody:(void*)body size:(int)size;
+- (void)setBody:(NSString*)file;
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error;
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;
+//- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge;
+-(void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(nonnull NSURLAuthenticationChallenge *)challenge;
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection;
+- (int)getResponseHeaderCount;
+- (NSString*)getResponseHeaderName:(int)offset;
+-(void)setChunkedStreamingLen:(int)len;
+-(JAVA_OBJECT)getSSLCertificates;
+-(void)setConnectionId:(JAVA_INT)connId;
+-(void)setInsecure:(BOOL)ins;
+
+@end

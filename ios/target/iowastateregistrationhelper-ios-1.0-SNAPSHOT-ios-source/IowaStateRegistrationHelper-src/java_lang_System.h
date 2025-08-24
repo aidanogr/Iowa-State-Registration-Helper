@@ -1,0 +1,114 @@
+#ifndef __JAVA_LANG_SYSTEM__
+#define __JAVA_LANG_SYSTEM__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__java_lang_System;
+extern void __INIT_VTABLE_java_lang_System(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_lang_System(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_lang_System(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_lang_System(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_lang_System(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_java_lang_System(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5);
+
+JAVA_VOID java_lang_System_startGCThread__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System_stopGC__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_isHighFrequencyGC___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_LONG java_lang_System_currentTimeMillis___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System_exit___int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_lang_System_gc__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System_gcLight__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System_gcMarkSweep__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_lang_System_getProperty___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_lang_System_identityHashCode___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_LONG java_lang_System_nanoTime___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_lang_System_access$000___R_java_lang_Object(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_access$102___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN java_lang_System_access$100___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_System_access$200__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_access$300___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_access$400___R_boolean(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_access$302___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_BOOLEAN java_lang_System_access$502___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_OBJECT java_lang_System_access$602___java_lang_Thread_R_java_lang_Thread(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID java_lang_System___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_lang_System_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_lang_System_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_lang_System_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_System_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_System_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_lang_System_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_System_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_System_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_lang_System_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_lang_System_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_java_lang_System_err();
+extern JAVA_OBJECT STATIC_FIELD_java_lang_System_err;
+extern void set_static_java_lang_System_err(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_lang_System_out();
+extern JAVA_OBJECT STATIC_FIELD_java_lang_System_out;
+extern void set_static_java_lang_System_out(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_lang_System_gcThreadInstance();
+extern JAVA_OBJECT STATIC_FIELD_java_lang_System_gcThreadInstance;
+extern void set_static_java_lang_System_gcThreadInstance(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_lang_System_LOCK();
+extern JAVA_OBJECT STATIC_FIELD_java_lang_System_LOCK;
+extern void set_static_java_lang_System_LOCK(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_BOOLEAN get_static_java_lang_System_startedGc();
+extern JAVA_BOOLEAN STATIC_FIELD_java_lang_System_startedGc;
+extern void set_static_java_lang_System_startedGc(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+extern JAVA_BOOLEAN get_static_java_lang_System_forceGc();
+extern JAVA_BOOLEAN STATIC_FIELD_java_lang_System_forceGc;
+extern void set_static_java_lang_System_forceGc(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+extern JAVA_BOOLEAN get_static_java_lang_System_gcShouldLoop();
+extern JAVA_BOOLEAN STATIC_FIELD_java_lang_System_gcShouldLoop;
+extern void set_static_java_lang_System_gcShouldLoop(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN v);
+
+
+struct obj__java_lang_System {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__JAVA_LANG_SYSTEM__

@@ -1,0 +1,120 @@
+#ifndef __COM_CODENAME1_IO_PREFERENCES__
+#define __COM_CODENAME1_IO_PREFERENCES__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_io_Preferences;
+extern void __INIT_VTABLE_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_io_Preferences(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Preferences___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Preferences_setPreferencesLocation___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Preferences_getPreferencesLocation___R_java_lang_String(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Preferences_get___R_java_util_Hashtable(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Preferences_save__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_delete___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Preferences_clearAll__(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT com_codename1_io_Preferences_keySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_io_Preferences_set___java_lang_String_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Preferences_get___java_lang_String_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Preferences_getAndSet___java_lang_String_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_INT com_codename1_io_Preferences_getAndSet___java_lang_String_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_INT com_codename1_io_Preferences_get___java_lang_String_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_LONG com_codename1_io_Preferences_getAndSet___java_lang_String_long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_LONG com_codename1_io_Preferences_get___java_lang_String_long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_io_Preferences_getAndSet___java_lang_String_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_io_Preferences_get___java_lang_String_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_FLOAT com_codename1_io_Preferences_getAndSet___java_lang_String_float_R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2);
+
+JAVA_FLOAT com_codename1_io_Preferences_get___java_lang_String_float_R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_Preferences_getAndSet___java_lang_String_boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_Preferences_get___java_lang_String_boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences_fireChange___java_lang_String_java_lang_Object_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_VOID com_codename1_io_Preferences_addPreferenceListener___java_lang_String_com_codename1_io_PreferenceListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_BOOLEAN com_codename1_io_Preferences_removePreferenceListener___java_lang_String_com_codename1_io_PreferenceListener_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_codename1_io_Preferences___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_io_Preferences_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_io_Preferences_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_io_Preferences_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Preferences_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Preferences_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_io_Preferences_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Preferences_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_io_Preferences_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_io_Preferences_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_io_Preferences_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_com_codename1_io_Preferences_p();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_Preferences_p;
+extern void set_static_com_codename1_io_Preferences_p(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_io_Preferences_listenerMap();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_Preferences_listenerMap;
+extern void set_static_com_codename1_io_Preferences_listenerMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_io_Preferences_preferencesLocation();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_io_Preferences_preferencesLocation;
+extern void set_static_com_codename1_io_Preferences_preferencesLocation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+
+
+struct obj__com_codename1_io_Preferences {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_IO_PREFERENCES__

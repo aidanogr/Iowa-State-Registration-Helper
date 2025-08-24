@@ -1,0 +1,5 @@
+{
+  "team": "Developers",
+  "members": ["Alice", "Bob", "Charlie"],
+  "active": true
+}

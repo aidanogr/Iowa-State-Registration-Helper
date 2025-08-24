@@ -1,0 +1,192 @@
+#ifndef __COM_CODENAME1_UTIL_MATHUTIL__
+#define __COM_CODENAME1_UTIL_MATHUTIL__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_util_MathUtil;
+extern void __INIT_VTABLE_com_codename1_util_MathUtil(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_util_MathUtil(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_util_MathUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_util_MathUtil(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+
+JAVA_VOID com_codename1_util_MathUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_exp___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_log___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_log10___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_pow___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_asin___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_acos___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_atan___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_atan2___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_exp___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_log___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_pow___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_acos___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_asin___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_atan___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_atan2___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_scalb___double_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_scalbn___double_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_copySign___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_copysign___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_ulp___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_util_MathUtil_isSameSign___double_double_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_DOUBLE com_codename1_util_MathUtil_nextAfter___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2);
+
+JAVA_INT com_codename1_util_MathUtil_round___float_R_int(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1);
+
+JAVA_LONG com_codename1_util_MathUtil_round___double_R_long(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_INT com_codename1_util_MathUtil_floor___float_R_int(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1);
+
+JAVA_LONG com_codename1_util_MathUtil_floor___double_R_long(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1);
+
+JAVA_VOID com_codename1_util_MathUtil___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_codename1_util_MathUtil_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_util_MathUtil_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_util_MathUtil_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_util_MathUtil_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_util_MathUtil_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_util_MathUtil_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_util_MathUtil_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_util_MathUtil_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_util_MathUtil_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_util_MathUtil_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_zero();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_one();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_two();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_tiny();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_huge();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_two53();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_two54();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_twom54();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_P1();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_P2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_P3();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_P4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_P5();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pio2_hi();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pio2_lo();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pio4_hi();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS0();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS1();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS3();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pS5();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_qS1();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_qS2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_qS3();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_qS4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pi_o_4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pi_o_2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pi();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_pi_lo();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_log10();
+extern JAVA_LONG get_static_com_codename1_util_MathUtil_HI_MASK();
+extern JAVA_LONG get_static_com_codename1_util_MathUtil_LO_MASK();
+extern JAVA_INT get_static_com_codename1_util_MathUtil_HI_SHIFT();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_twom1000();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_o_threshold();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_u_threshold();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_invln2();
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_halF();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_halF;
+extern void set_static_com_codename1_util_MathUtil_halF(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_ln2HI();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_ln2HI;
+extern void set_static_com_codename1_util_MathUtil_ln2HI(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_ln2LO();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_ln2LO;
+extern void set_static_com_codename1_util_MathUtil_ln2LO(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ln2_hi();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ln2_lo();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg1();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg3();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg5();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg6();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_Lg7();
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_bp();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_bp;
+extern void set_static_com_codename1_util_MathUtil_bp(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_dp_h();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_dp_h;
+extern void set_static_com_codename1_util_MathUtil_dp_h(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_dp_l();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_dp_l;
+extern void set_static_com_codename1_util_MathUtil_dp_l(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L1();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L3();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L4();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L5();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_L6();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_lg2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_lg2_h();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_lg2_l();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ovt();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_cp();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_cp_h();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_cp_l();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ivln2();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ivln2_h();
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_ivln2_l();
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_atanhi();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_atanhi;
+extern void set_static_com_codename1_util_MathUtil_atanhi(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_atanlo();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_atanlo;
+extern void set_static_com_codename1_util_MathUtil_atanlo(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_com_codename1_util_MathUtil_aT();
+extern JAVA_OBJECT STATIC_FIELD_com_codename1_util_MathUtil_aT;
+extern void set_static_com_codename1_util_MathUtil_aT(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_DOUBLE get_static_com_codename1_util_MathUtil_MAX_ULP();
+
+
+struct obj__com_codename1_util_MathUtil {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_CODENAME1_UTIL_MATHUTIL__

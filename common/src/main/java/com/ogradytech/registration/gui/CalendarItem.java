@@ -2,6 +2,7 @@ package com.ogradytech.registration.gui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.codename1.ui.Button;
@@ -14,12 +15,15 @@ public class CalendarItem {
 	private static int currentColorIndex = 0;
 
 	private String courseName;
-	private InstructionFormat type;
+	private InstructionFormat format;
 	private Map<String, MeetingInfo> sectionMeetingInfo;
 	private String currentSection; 	//could be number or letter,
-	public Button button;
+	public List<Button> buttons;
 	public int color;
-
+	private boolean areButtonsInitialized = false;
+	
+	
+	
 	public enum InstructionFormat {
 		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
 	}
@@ -28,9 +32,8 @@ public class CalendarItem {
 		this.courseName = courseName;
 		this.sectionMeetingInfo = new HashMap<>();
 		currentSection = "";
-		button = new Button(courseName);
-		button.setUIID("ClassButton");
-		button.getAllStyles().setBgColor(allColors[currentColorIndex]);
+		buttons = new ArrayList<>(3); 
+
 		color = allColors[currentColorIndex];
 		currentColorIndex++;
 		if(currentColorIndex >= allColors.length) {
@@ -41,7 +44,17 @@ public class CalendarItem {
 
 
 	public void addMeetingInfo(String section, MeetingInfo info) {
+		if(areButtonsInitialized == false) {
+			areButtonsInitialized = true;
+			for(int i = 0; i < info.getMeetingDays().length(); i++) {
+				Button button = new Button(courseName);
+				button.setUIID("ClassButton");
+				button.getAllStyles().setBgColor(allColors[currentColorIndex]);
+				this.buttons.add(button);
+			}
+		}
 		this.sectionMeetingInfo.put(section, info);
+		this.currentSection = section;
 	}
 	
 	public MeetingInfo getCurrentSectionMeetingInfo() {
@@ -52,11 +65,52 @@ public class CalendarItem {
 		return courseName;
 	}
 	
+	/**
+	 * Should only really be used to update if discussion / lab / etc.
+	 * <br><br>
+	 * Example usage: <br>
+	 *  String baseName = item.getCourseName(); <br>
+	 * item.setCourseName(baseName + " lab");
+	 * <br>
+	 * CalendarItem labSections = new CalendarItem(baseName + " discussion");
+	 */
+	public void setCourseName(String newName) {
+		this.courseName = newName;
+	}
+	
+	/**
+	 * @param format
+	 * @return -1 if the string cannot be mapped to a InstructionFormat type
+	 */
+	public int setInstructionFormat(String format) {
+		try {
+			this.format = InstructionFormat.valueOf(format.trim().toUpperCase());
+		}
+		catch (IllegalArgumentException e){
+			return -1;
+		}
+		return 0;
+	}
+	
+
+	public void setInstructionFormat(InstructionFormat format) {
+		this.format = format;
+	}
+	
+	
+	/**
+	 * 
+	 */
+	public InstructionFormat getInstructionFormat() {
+		return this.format;
+	}
+	
+	
 	public void debugPrint() {
 	    StringBuilder sb = new StringBuilder();
 	    sb.append("CalendarItem {");
 	    sb.append("\n  Course Name: ").append(courseName);
-	    sb.append("\n  Type: ").append(type);
+	    sb.append("\n  Format: ").append(format.name());
 	    sb.append("\n  Current Section: ").append(currentSection);
 	    sb.append("\n  Color Index: ").append(currentColorIndex)
 	      .append(" (0x").append(Integer.toHexString(allColors[currentColorIndex])).append(")");
@@ -81,7 +135,6 @@ public class CalendarItem {
 	        sb.append(" none");
 	    }
 
-	    sb.append("\n  Button: ").append(button != null ? button.getText() : "null");
 
 	    sb.append("\n}");
 	    System.out.println(sb.toString());

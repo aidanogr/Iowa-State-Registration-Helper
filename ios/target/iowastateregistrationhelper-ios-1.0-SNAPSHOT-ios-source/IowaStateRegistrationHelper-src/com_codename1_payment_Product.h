@@ -1,0 +1,84 @@
+#ifndef __COM_CODENAME1_PAYMENT_PRODUCT__
+#define __COM_CODENAME1_PAYMENT_PRODUCT__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_codename1_payment_Product;
+extern struct clazz class_array1__com_codename1_payment_Product;
+extern void __INIT_VTABLE_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_ARRAY_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE, JAVA_INT size);
+
+JAVA_VOID com_codename1_payment_Product___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_payment_Product_getDisplayName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_setDisplayName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_payment_Product_getDescription___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_setDescription___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_payment_Product_getLocalizedPrice___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_setLocalizedPrice___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_payment_Product_getSku___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_setSku___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_payment_Product_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_payment_Product_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_codename1_payment_Product_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_payment_Product_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_payment_Product_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_payment_Product_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_payment_Product_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_codename1_payment_Product_setDisplayName___java_lang_String com_codename1_payment_Product_setDisplayName___java_lang_String
+#define virtual_com_codename1_payment_Product_setDescription___java_lang_String com_codename1_payment_Product_setDescription___java_lang_String
+#define virtual_com_codename1_payment_Product_setLocalizedPrice___java_lang_String com_codename1_payment_Product_setLocalizedPrice___java_lang_String
+#define virtual_com_codename1_payment_Product_getSku___R_java_lang_String com_codename1_payment_Product_getSku___R_java_lang_String
+#define virtual_com_codename1_payment_Product_setSku___java_lang_String com_codename1_payment_Product_setSku___java_lang_String
+JAVA_OBJECT get_field_com_codename1_payment_Product_displayName(JAVA_OBJECT t);
+void set_field_com_codename1_payment_Product_displayName(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_payment_Product_description(JAVA_OBJECT t);
+void set_field_com_codename1_payment_Product_description(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_payment_Product_localizedPrice(JAVA_OBJECT t);
+void set_field_com_codename1_payment_Product_localizedPrice(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_codename1_payment_Product_sku(JAVA_OBJECT t);
+void set_field_com_codename1_payment_Product_sku(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_payment_Product {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_payment_Product_displayName;
+    JAVA_OBJECT com_codename1_payment_Product_description;
+    JAVA_OBJECT com_codename1_payment_Product_localizedPrice;
+    JAVA_OBJECT com_codename1_payment_Product_sku;
+};
+
+
+
+#endif //__COM_CODENAME1_PAYMENT_PRODUCT__

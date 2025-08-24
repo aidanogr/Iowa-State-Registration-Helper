@@ -1,0 +1,69 @@
+#ifndef __JAVA_LANG_STRINGTOREAL_STRINGEXPONENTPAIR__
+#define __JAVA_LANG_STRINGTOREAL_STRINGEXPONENTPAIR__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__java_lang_StringToReal_StringExponentPair;
+extern void __INIT_VTABLE_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_java_lang_StringToReal_StringExponentPair(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_FLOAT java_lang_StringToReal_StringExponentPair_specialValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair___INIT_____java_lang_StringToReal_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_lang_StringToReal_StringExponentPair_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_lang_StringToReal_StringExponentPair_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_lang_StringToReal_StringExponentPair_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_lang_StringToReal_StringExponentPair_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_lang_StringToReal_StringExponentPair_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_lang_StringToReal_StringExponentPair_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_java_lang_StringToReal_StringExponentPair_specialValue___R_float java_lang_StringToReal_StringExponentPair_specialValue___R_float
+JAVA_OBJECT get_field_java_lang_StringToReal_StringExponentPair_s(JAVA_OBJECT t);
+void set_field_java_lang_StringToReal_StringExponentPair_s(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_LONG get_field_java_lang_StringToReal_StringExponentPair_e(JAVA_OBJECT t);
+void set_field_java_lang_StringToReal_StringExponentPair_e(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_java_lang_StringToReal_StringExponentPair_negative(JAVA_OBJECT t);
+void set_field_java_lang_StringToReal_StringExponentPair_negative(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_java_lang_StringToReal_StringExponentPair_infinity(JAVA_OBJECT t);
+void set_field_java_lang_StringToReal_StringExponentPair_infinity(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_java_lang_StringToReal_StringExponentPair_zero(JAVA_OBJECT t);
+void set_field_java_lang_StringToReal_StringExponentPair_zero(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__java_lang_StringToReal_StringExponentPair {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT java_lang_StringToReal_StringExponentPair_s;
+    JAVA_LONG java_lang_StringToReal_StringExponentPair_e;
+    JAVA_BOOLEAN java_lang_StringToReal_StringExponentPair_negative;
+    JAVA_BOOLEAN java_lang_StringToReal_StringExponentPair_infinity;
+    JAVA_BOOLEAN java_lang_StringToReal_StringExponentPair_zero;
+};
+
+
+
+#endif //__JAVA_LANG_STRINGTOREAL_STRINGEXPONENTPAIR__

@@ -1,0 +1,213 @@
+#ifndef __JAVA_UTIL_SIMPLETIMEZONE__
+#define __JAVA_UTIL_SIMPLETIMEZONE__
+
+#include "cn1_globals.h"
+#include "java_util_TimeZone.h"
+extern struct clazz class__java_util_SimpleTimeZone;
+extern void __INIT_VTABLE_java_util_SimpleTimeZone(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_util_SimpleTimeZone(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_util_SimpleTimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_util_SimpleTimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_util_SimpleTimeZone(CODENAME_ONE_THREAD_STATE);
+
+JAVA_INT java_util_SimpleTimeZone_monthLength___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID java_util_SimpleTimeZone___INIT_____int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID java_util_SimpleTimeZone___INIT_____int_java_lang_String_int_int_int_int_int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7, JAVA_INT __cn1Arg8, JAVA_INT __cn1Arg9, JAVA_INT __cn1Arg10);
+
+JAVA_VOID java_util_SimpleTimeZone___INIT_____int_java_lang_String_int_int_int_int_int_int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7, JAVA_INT __cn1Arg8, JAVA_INT __cn1Arg9, JAVA_INT __cn1Arg10, JAVA_INT __cn1Arg11);
+
+JAVA_VOID java_util_SimpleTimeZone___INIT_____int_java_lang_String_int_int_int_int_int_int_int_int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6, JAVA_INT __cn1Arg7, JAVA_INT __cn1Arg8, JAVA_INT __cn1Arg9, JAVA_INT __cn1Arg10, JAVA_INT __cn1Arg11, JAVA_INT __cn1Arg12, JAVA_INT __cn1Arg13);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_util_SimpleTimeZone_getDSTSavings___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_util_SimpleTimeZone_getOffset___int_int_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6);
+
+JAVA_INT java_util_SimpleTimeZone_getOffset___long_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_OBJECT java_util_SimpleTimeZone_timeToFields___long_int_1ARRAY_R_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_LONG java_util_SimpleTimeZone_floorDivide___long_long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_LONG java_util_SimpleTimeZone_floorDivide___long_long_long_1ARRAY_R_long(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Arg1, JAVA_LONG __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_OBJECT java_util_SimpleTimeZone_dayToFields___long_int_1ARRAY_R_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_LONG __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_INT java_util_SimpleTimeZone_getRawOffset___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_util_SimpleTimeZone_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_hasSameRules___java_util_TimeZone_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_inDaylightTime___java_util_Date_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_isLeapYear___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1);
+
+JAVA_INT java_util_SimpleTimeZone_mod7___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_util_SimpleTimeZone_setDSTSavings___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_util_SimpleTimeZone_checkRange___int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_util_SimpleTimeZone_checkDay___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID java_util_SimpleTimeZone_setEndMode__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_setEndRule___int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_util_SimpleTimeZone_setEndRule___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID java_util_SimpleTimeZone_setEndRule___int_int_int_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_BOOLEAN __cn1Arg5);
+
+JAVA_VOID java_util_SimpleTimeZone_setRawOffset___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID java_util_SimpleTimeZone_setStartMode__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_setStartRule___int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3);
+
+JAVA_VOID java_util_SimpleTimeZone_setStartRule___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID java_util_SimpleTimeZone_setStartRule___int_int_int_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_BOOLEAN __cn1Arg5);
+
+JAVA_VOID java_util_SimpleTimeZone_setStartYear___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_OBJECT java_util_SimpleTimeZone_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_useDaylightTime___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_util_SimpleTimeZone___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_setID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_util_SimpleTimeZone_getAvailableIDs___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_SimpleTimeZone_getDefault___R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_SimpleTimeZone_getID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_util_SimpleTimeZone_getTimeZone___java_lang_String_R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT java_util_SimpleTimeZone_access$000___java_lang_String_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5);
+
+JAVA_INT java_util_SimpleTimeZone_access$100___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN java_util_SimpleTimeZone_access$200___java_lang_String_long_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2);
+
+JAVA_LONG java_util_SimpleTimeZone_access$300___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_LONG java_util_SimpleTimeZone_access$400___R_long(CODENAME_ONE_THREAD_STATE);
+
+JAVA_OBJECT java_util_SimpleTimeZone_access$500___java_util_TimeZone_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_util_SimpleTimeZone_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_SimpleTimeZone_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_util_SimpleTimeZone_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_util_SimpleTimeZone_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID virtual_java_util_SimpleTimeZone_setID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT virtual_java_util_SimpleTimeZone_getID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT virtual_java_util_SimpleTimeZone_getOffset___int_int_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6);
+
+JAVA_BOOLEAN virtual_java_util_SimpleTimeZone_useDaylightTime___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_java_util_SimpleTimeZone_getOffset___long_R_int java_util_SimpleTimeZone_getOffset___long_R_int
+#define virtual_java_util_SimpleTimeZone_setEndRule___int_int_int_int java_util_SimpleTimeZone_setEndRule___int_int_int_int
+#define virtual_java_util_SimpleTimeZone_setStartRule___int_int_int_int java_util_SimpleTimeZone_setStartRule___int_int_int_int
+#define virtual_java_util_SimpleTimeZone_setStartYear___int java_util_SimpleTimeZone_setStartYear___int
+extern JAVA_INT get_static_java_util_SimpleTimeZone_DOM_MODE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_DOW_IN_MONTH_MODE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_DOW_GE_DOM_MODE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_DOW_LE_DOM_MODE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_UTC_TIME();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_STANDARD_TIME();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_WALL_TIME();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_MILLIS_PER_SECOND();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_MILLIS_PER_MINUTE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_MILLIS_PER_HOUR();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_JULIAN_1_CE();
+extern JAVA_INT get_static_java_util_SimpleTimeZone_JULIAN_1970_CE();
+extern JAVA_OBJECT get_static_java_util_SimpleTimeZone_MONTH_LENGTH();
+extern JAVA_OBJECT STATIC_FIELD_java_util_SimpleTimeZone_MONTH_LENGTH;
+extern void set_static_java_util_SimpleTimeZone_MONTH_LENGTH(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+extern JAVA_OBJECT get_static_java_util_SimpleTimeZone_DAYS_BEFORE();
+extern JAVA_OBJECT STATIC_FIELD_java_util_SimpleTimeZone_DAYS_BEFORE;
+extern void set_static_java_util_SimpleTimeZone_DAYS_BEFORE(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+#define get_static_java_util_SimpleTimeZone_SHORT(threadStateArgument) get_static_java_util_TimeZone_SHORT(threadStateArgument)
+#define set_static_java_util_SimpleTimeZone_SHORT(threadStateArgument, valueArgument) set_static_java_util_TimeZone_SHORT(threadStateArgument, valueArgument)
+#define get_static_java_util_SimpleTimeZone_LONG(threadStateArgument) get_static_java_util_TimeZone_LONG(threadStateArgument)
+#define set_static_java_util_SimpleTimeZone_LONG(threadStateArgument, valueArgument) set_static_java_util_TimeZone_LONG(threadStateArgument, valueArgument)
+#define get_static_java_util_SimpleTimeZone_GMT(threadStateArgument) get_static_java_util_TimeZone_GMT(threadStateArgument)
+#define set_static_java_util_SimpleTimeZone_GMT(threadStateArgument, valueArgument) set_static_java_util_TimeZone_GMT(threadStateArgument, valueArgument)
+JAVA_INT get_field_java_util_SimpleTimeZone_rawOffset(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_rawOffset(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startYear(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startYear(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startMonth(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startMonth(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startDay(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startDay(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startDayOfWeek(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startDayOfWeek(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startTime(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startTime(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_endMonth(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_endMonth(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_endDay(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_endDay(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_endDayOfWeek(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_endDayOfWeek(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_endTime(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_endTime(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_startMode(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_startMode(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_endMode(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_endMode(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_java_util_SimpleTimeZone_useDaylight(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_useDaylight(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_java_util_SimpleTimeZone_dstSavings(JAVA_OBJECT t);
+void set_field_java_util_SimpleTimeZone_dstSavings(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__java_util_SimpleTimeZone {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT java_util_TimeZone_ID;
+    JAVA_INT java_util_SimpleTimeZone_rawOffset;
+    JAVA_INT java_util_SimpleTimeZone_startYear;
+    JAVA_INT java_util_SimpleTimeZone_startMonth;
+    JAVA_INT java_util_SimpleTimeZone_startDay;
+    JAVA_INT java_util_SimpleTimeZone_startDayOfWeek;
+    JAVA_INT java_util_SimpleTimeZone_startTime;
+    JAVA_INT java_util_SimpleTimeZone_endMonth;
+    JAVA_INT java_util_SimpleTimeZone_endDay;
+    JAVA_INT java_util_SimpleTimeZone_endDayOfWeek;
+    JAVA_INT java_util_SimpleTimeZone_endTime;
+    JAVA_INT java_util_SimpleTimeZone_startMode;
+    JAVA_INT java_util_SimpleTimeZone_endMode;
+    JAVA_BOOLEAN java_util_SimpleTimeZone_useDaylight;
+    JAVA_INT java_util_SimpleTimeZone_dstSavings;
+};
+
+
+
+#endif //__JAVA_UTIL_SIMPLETIMEZONE__
