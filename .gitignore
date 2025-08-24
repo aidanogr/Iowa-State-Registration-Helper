@@ -7,3 +7,5 @@ tmp/
 # Codename One temporary files
 codenameone_library.properties
 
+# Mac generated files
+.DS_Store
