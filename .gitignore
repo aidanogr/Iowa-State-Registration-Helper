@@ -1,0 +1,9 @@
+# Codename One generated build artifacts
+build/
+dist/
+gen/
+tmp/
+
+# Codename One temporary files
+codenameone_library.properties
+
