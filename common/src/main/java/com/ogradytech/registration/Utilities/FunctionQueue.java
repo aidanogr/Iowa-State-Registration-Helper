@@ -19,10 +19,12 @@ public class FunctionQueue {
             try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				// TODO handle this
 			}
-            System.out.println("Task run");
         }
     }	
+    
+    public int getNumberOfPendingTasks() {
+    	return queue.size();
+    }
 }

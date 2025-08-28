@@ -34,12 +34,12 @@ import com.ogradytech.registration.gui.*;
  * 
  */
 public class IowaStateRegistrationHelper extends Lifecycle {
-	public static int networkRequestCounter = 0;
+	public static int networkRequestCounter = 0;	//this is a debugging / DDOS prevention counter, although it it should be the same as networkRequestCompletionCounter
 	public static final int maxNumberOfClasses = 10; 
 	public static Form inputForm;
 	public static ArrayList<CalendarItem> calendarCourseInformation = new ArrayList<>(10);
-	public static int networkRequestCompletionCounter = 0;
-
+	public static int networkRequestCompletionCounter = 0;	//this is to poll for API request completion (so program knows we can move on to generating schedule)
+	public static int totalNumberOfValidClasses = 0;
     @Override
     public void runApp() {
     	showPreface();
@@ -155,7 +155,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				final int index = i;
 				queue.add(
 						() -> requestCourseInfo(
-								departmentFullName, courseIDString, classContainsDiscussionBoxes[index].isSelected()
+								departmentFullName, courseIDString, classContainsDiscussionBoxes[index].isSelected() 
 						)
 				);
 				
@@ -167,21 +167,12 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				throw e;
 			}
     	}
+    	
+    	totalNumberOfValidClasses = queue.getNumberOfPendingTasks(); //requestCourseInfo() checks to see if it has finished all network requests (based on global totalNumberOfValidClasses)
     	queue.begin();
     	
-    	//Waits for "requestCourseInfo" network events to finish
-    	while(networkRequestCompletionCounter < nonNullTextFieldIndecies.size()) {
-    		try {
-				Thread.sleep(500);
-				System.out.println(networkRequestCompletionCounter);
-				System.out.println(nonNullTextFieldIndecies.size());
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-    	}
     	
-    	createCalendarView();
+
     }
     
     //TODO this should probably throw something
@@ -217,18 +208,30 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	
     	//this should not need to be synchronized, only 1 current background thread worker. but if more desired we need to change this
     	r.addResponseListener(evt -> {
+
     		try {
     			System.out.println("CODE " + r.getResponseCode());
     			byte[] response = r.getResponseData();
     			if(response == null) throw new FormSubmissionException(ExceptionType.API_REQUEST_FAILED, "");
     			String body = new String(response);
-				parseAndStoreClassData(body);
-			} catch (IOException e) {
-				System.out.println("FUCK YOU");
+    			parseAndStoreClassData(body);
 			} catch (FormSubmissionException e) {
 				handleFormSubmissionException(e);
+			} catch (IOException e) { //TODO 
+				e.printStackTrace();
 			}
+
     	});
+
+    	NetworkManager.getInstance().addProgressListener(evt -> {
+			if(evt.getProgressType() == NetworkEvent.PROGRESS_TYPE_COMPLETED) {
+				networkRequestCompletionCounter++;
+				if(networkRequestCompletionCounter == totalNumberOfValidClasses) {
+					createCalendarView();
+				}
+			}
+
+    	//ignore this; 
     	// ============================ THIS IS FOR TESTING ONLY =============================== //
 //    	String body;
 //    	try {
@@ -241,29 +244,14 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 //		}
     	// ================= UNCOMMENT LINE BELOW FOR ACTUAL FUNCTIONALITY ===================== //
 
-    	NetworkManager.getInstance().addProgressListener(evt -> {
-    		if(evt.getProgressType() == NetworkEvent.PROGRESS_TYPE_COMPLETED) {
-    			System.out.println("Gate");
-    			networkRequestCompletionCounter++;
-    		}
-    		System.out.println("progress:" + evt.getProgressType());
+
 		});
-    	NetworkManager.getInstance().addErrorListener(evt -> {
-    		System.out.println("FUCK");
-    	});
+
 
     	NetworkManager.getInstance().addToQueue(r);
-    	while(true)
-    	{
-    		System.out.println( NetworkManager.getInstance().isQueueIdle());
-    		try {
-				Thread.sleep(400);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-    	}
-	}
+    	System.out.println("Gate 30234");
+
+    }
 
 
     private static void createCalendarView() {
@@ -302,7 +290,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				classItem = new CalendarItem(base);
 				meetingType = (String) section.get("instructionalFormat");
 				classItem.setInstructionFormat(meetingType);
-				System.err.println("poopy scoopy");
+				System.err.println("Created new course block for different format");
 			}
 			classItem.addMeetingInfo(
 					(String) section.get("number"),new MeetingInfo((String) section.get("meetingPatterns"))
