@@ -5,12 +5,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 
 import com.codename1.io.File;
 import com.codename1.io.JSONParser;
 import com.codename1.ui.Display;
+import com.codename1.ui.TextField;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 import com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionType;
 
@@ -18,12 +21,13 @@ public class ParsingUtilities {
 
 	
 	static List<Object> departments = null;
+
 	/**
 	 * Expects something like "COMS 2270" and returns something like "COMS - Computer Science", or null if department could not be found.
 	 * <br>
 	 * This is useful for classes.iastate.edu api where full department name is necessary to query course section info.
 	 * <br>
-	 * Requires a space between dept and courseID
+	 * Requires a space between dept and course IDs
 	 * 
 	 * @param fullCourseName
 	 * @return
@@ -39,7 +43,6 @@ public class ParsingUtilities {
 	            try {
 	                JSONParser parser = new JSONParser();
 
-	                // Use class literal because this is static
 	                InputStream is = Display.getInstance().getResourceAsStream(
 	                        ParsingUtilities.class, "/currentAvailableDepartments.json"
 	                );
@@ -63,7 +66,7 @@ public class ParsingUtilities {
 	        // Search for department
 	        String ret_fullDeptName = "";
 	        for (Object department : departments) {
-	            if (((String) department).contains(deptID + " ")) {
+	            if (((String) department).contains(deptID.toUpperCase() + " ")) {
 	                ret_fullDeptName = (String) department;
 	                break; // found, no need to continue
 	            }
@@ -76,7 +79,16 @@ public class ParsingUtilities {
 	        }
 	    }
 	  
-	  //TODO unit test this. String functions like s.stripLeading() dont work with codenameone ( > java 8 functions) so we eyeball it 
+	  
+	  
+	  
+	  
+	  //TODO unit test this	  
+	  /**
+	   * String function substitute for s.stripLeading(); (> Java 8)
+	   * @param s
+	   * @return
+	   */
 	  public static String stripLeadingAndTrailingWhiteSpace(String s) {
 		  int startStripIndex = 0;
 		  for(int i = 0; i < s.length(); i++) {
@@ -106,4 +118,21 @@ public class ParsingUtilities {
 		  
 		  
 	  }
+
+
+	/**
+	 * Checks for null or empty text fields (contains a character greater than 0x20)
+	 * @param classInputs
+	 * @return
+	 */
+	public static ArrayList<Integer> getNonNullTextFieldIndecies(TextField[] classInputs) {
+		ArrayList<Integer> notNullInputFieldIndecies = new ArrayList<Integer>();
+		for(int i = 0 ; i < classInputs.length; i++) {
+    		if(!classInputs[i].getText().trim().isEmpty()) notNullInputFieldIndecies.add(i);
+    	}	
+		return notNullInputFieldIndecies;
+	}
+	
+	
+
 }
