@@ -48,26 +48,26 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_35___INIT_____java_lang_Runna
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_35_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9636, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL743286356cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL743286356cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L743286356cn1_class_id_java_lang_Throwable1, label_L1495407511, restoreToL743286356cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1319115818cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1319115818cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1319115818cn1_class_id_java_lang_Throwable1, label_L953528583, restoreToL1319115818cn1_class_id_java_lang_Throwable1);
 
-label_L743286356:
- tryBlockOffsetL743286356cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L743286356cn1_class_id_java_lang_Throwable1);
-    restoreToL743286356cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1319115818:
+ tryBlockOffsetL1319115818cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1319115818cn1_class_id_java_lang_Throwable1);
+    restoreToL1319115818cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(8670);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 2000LL); 
 
-label_L1716423607:
+label_L2126520649:
 END_TRY(1);    __CN1_DEBUG_INFO(8671);
-    JUMP_TO(label_L1791267914, 0);
+    JUMP_TO(label_L1716551994, 0);
 
-label_L1495407511:
+label_L953528583:
     BC_ASTORE(1);
 
-label_L1791267914:
+label_L1716551994:
     __CN1_DEBUG_INFO(8672);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$6600___java_lang_Runnable(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_35_val_r(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(8673);

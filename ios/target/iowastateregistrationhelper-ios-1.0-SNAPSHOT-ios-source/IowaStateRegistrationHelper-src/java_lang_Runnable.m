@@ -81,6 +81,8 @@ void __STATIC_INITIALIZER_java_lang_Runnable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_java_lang_System_1][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_java_lang_Thread] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_java_lang_Thread][0] = 10;
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub][0] = 18;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub_1] = malloc(sizeof(int*) * 13);

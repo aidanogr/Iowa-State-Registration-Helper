@@ -100,29 +100,29 @@ JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_add___com
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(318);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1847252568;
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L81709688;
     __CN1_DEBUG_INFO(319);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1847252568:
+label_L81709688:
     __CN1_DEBUG_INFO(321);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Set_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_containers(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;
-label_L237492603:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1215157782;
+label_L2140101943:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1600512192;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(322);
-    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L169710187;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L169710187;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L917987811;
+    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1449969327;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1449969327;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L225500139;
 
-label_L169710187:
+label_L1449969327:
     __CN1_DEBUG_INFO(323);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L917987811:
+label_L225500139:
     __CN1_DEBUG_INFO(325);
-    goto label_L237492603;
+    goto label_L2140101943;
 
-label_L1215157782:
+label_L1600512192:
     __CN1_DEBUG_INFO(327);
     PUSH_POINTER(get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_anims(__cn1ThisObject));
     { /* ARRAYLENGTH */
@@ -151,7 +151,13 @@ label_L1215157782:
 
 
 JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_isLocked___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    return 0;
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8199, 1559);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(341);
+
+{
+    JAVA_INT ___returnValue=get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
+}
 }
 
 
@@ -306,7 +312,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_animations_ComponentAnimation_UIMutat
         return;
     }
 
-    class__com_codename1_ui_animations_ComponentAnimation_UIMutation.vtable = malloc(sizeof(void*) *19);
+    class__com_codename1_ui_animations_ComponentAnimation_UIMutation.vtable = malloc(sizeof(void*) *20);
     __INIT_VTABLE_com_codename1_ui_animations_ComponentAnimation_UIMutation(threadStateData, class__com_codename1_ui_animations_ComponentAnimation_UIMutation.vtable);
     class__com_codename1_ui_animations_ComponentAnimation_UIMutation.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_animations_ComponentAnimation_UIMutation);

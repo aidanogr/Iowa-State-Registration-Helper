@@ -120,14 +120,14 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_toString___R_java_lang_Strin
 JAVA_BOOLEAN com_codename1_ui_BrowserComponent_JSRef_isNull___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8116, 8121);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1601);
-    if (get_field_com_codename1_ui_BrowserComponent_JSRef_value(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L533698361;
+    if (get_field_com_codename1_ui_BrowserComponent_JSRef_value(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2052452680;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1531545666;
+    goto label_L48428832;
 
-label_L533698361:
+label_L2052452680:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1531545666:
+label_L48428832:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

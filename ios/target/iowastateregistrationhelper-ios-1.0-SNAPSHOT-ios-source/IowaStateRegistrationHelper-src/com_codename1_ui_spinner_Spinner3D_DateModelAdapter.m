@@ -106,7 +106,7 @@ JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, SP[-1].data.o);
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     BC_LCMP();
-    if(POP_INT() < 0) /* IFLT */ goto label_L967369466;
+    if(POP_INT() < 0) /* IFLT */ goto label_L936618636;
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, locals[2].data.o);
     PUSH_LONG(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Calendar_getTime___R_java_util_Date(threadStateData, locals[4].data.o);
@@ -114,11 +114,11 @@ JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, SP[-1].data.o);
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     BC_LCMP();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L967369466;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L936618636;
     __CN1_DEBUG_INFO(245);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9982);
 
-label_L967369466:
+label_L936618636:
     __CN1_DEBUG_INFO(247);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_l10n_DateFormat_format___java_util_Date_R_java_lang_String(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_fmt(__cn1ThisObject), locals[2].data.o);
     PUSH_OBJ(tmpResult); }

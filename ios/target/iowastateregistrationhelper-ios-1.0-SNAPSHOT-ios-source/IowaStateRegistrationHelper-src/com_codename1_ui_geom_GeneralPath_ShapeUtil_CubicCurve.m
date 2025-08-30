@@ -209,118 +209,118 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cross___double_1
     __CN1_DEBUG_INFO(2588);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L1122108119:
-    if (ilocals_8_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L1954745715;
+label_L512478459:
+    if (ilocals_8_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L693211959;
     __CN1_DEBUG_INFO(2589);
     /* VarOp.assignFrom */ dlocals_9_=CN1_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, ilocals_8_);
     __CN1_DEBUG_INFO(2592);
-    if (CN1_CMP_EXPR(dlocals_9_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L405273678;
-    if (CN1_CMP_EXPR(dlocals_9_, 1.00001)<=0) /* IFLE CustomJump */ goto label_L1279369591;
+    if (CN1_CMP_EXPR(dlocals_9_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L559087077;
+    if (CN1_CMP_EXPR(dlocals_9_, 1.00001)<=0) /* IFLE CustomJump */ goto label_L1566104673;
     __CN1_DEBUG_INFO(2593);
-    goto label_L405273678;
+    goto label_L559087077;
 
-label_L1279369591:
+label_L1566104673:
     __CN1_DEBUG_INFO(2596);
-    if (CN1_CMP_EXPR(dlocals_9_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L800026186;
+    if (CN1_CMP_EXPR(dlocals_9_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L842173892;
     __CN1_DEBUG_INFO(2597);
-    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L405273678;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1135281753;
+    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L559087077;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L400517278;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject));
-    goto label_L1682524142;
+    goto label_L559153749;
 
-label_L1135281753:
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L625088521;
+label_L400517278:
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L980707786;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
-    goto label_L1682524142;
+    goto label_L559153749;
 
-label_L625088521:
+label_L980707786:
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ax(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
 
-label_L1682524142:
+label_L559153749:
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L405273678;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L559087077;
     __CN1_DEBUG_INFO(2598);
     BC_IINC(7, -1);
-    goto label_L405273678;
+    goto label_L559087077;
 
-label_L800026186:
+label_L842173892:
     __CN1_DEBUG_INFO(2603);
-    if (CN1_CMP_EXPR(dlocals_9_, 0.99999)<=0) /* IFLE CustomJump */ goto label_L1900806101;
+    if (CN1_CMP_EXPR(dlocals_9_, 0.99999)<=0) /* IFLE CustomJump */ goto label_L479105005;
     __CN1_DEBUG_INFO(2604);
-    if (CN1_CMP_EXPR(dlocals_3_, get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ay(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L405273678;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ax(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1791604331;
+    if (CN1_CMP_EXPR(dlocals_3_, get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ay(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L559087077;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ax(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1895403386;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ax(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
-    goto label_L1150413547;
+    goto label_L1899920794;
 
-label_L1791604331:
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1898324000;
+label_L1895403386:
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1746759758;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_cx(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
-    goto label_L1150413547;
+    goto label_L1899920794;
 
-label_L1898324000:
+label_L1746759758:
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_bx(__cn1ThisObject));
 
-label_L1150413547:
+label_L1899920794:
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L405273678;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L559087077;
     __CN1_DEBUG_INFO(2605);
     BC_IINC(7, 1);
-    goto label_L405273678;
+    goto label_L559087077;
 
-label_L1900806101:
+label_L479105005:
     __CN1_DEBUG_INFO(2610);
     /* VarOp.assignFrom */ dlocals_11_=(dlocals_9_ * ((dlocals_9_ * ((dlocals_9_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Ay(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_By(__cn1ThisObject))) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Cy(__cn1ThisObject)));
     __CN1_DEBUG_INFO(2612);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)<=0) /* IFLE CustomJump */ goto label_L405273678;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)<=0) /* IFLE CustomJump */ goto label_L559087077;
     __CN1_DEBUG_INFO(2613);
     /* VarOp.assignFrom */ dlocals_13_=((dlocals_9_ * ((dlocals_9_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Ax3(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Bx2(__cn1ThisObject))) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Cx(__cn1ThisObject));
     __CN1_DEBUG_INFO(2615);
-    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1597889670;
-    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L1597889670;
+    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L8678215;
+    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L8678215;
     __CN1_DEBUG_INFO(2616);
     /* VarOp.assignFrom */ dlocals_13_=((dlocals_9_ * (get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Ax3(__cn1ThisObject) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Ax3(__cn1ThisObject))) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Bx2(__cn1ThisObject));
     __CN1_DEBUG_INFO(2618);
-    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L405273678;
-    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)<=0) /* IFLE CustomJump */ goto label_L2027963364;
+    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L559087077;
+    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1010480754;
     __CN1_DEBUG_INFO(2620);
-    goto label_L405273678;
+    goto label_L559087077;
 
-label_L2027963364:
+label_L1010480754:
     __CN1_DEBUG_INFO(2622);
     /* VarOp.assignFrom */ dlocals_13_ = get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_ax(__cn1ThisObject);
 
-label_L1597889670:
+label_L8678215:
     __CN1_DEBUG_INFO(2624);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
     SP++;
-    if (CN1_CMP_EXPR(dlocals_13_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L862791841;
+    if (CN1_CMP_EXPR(dlocals_13_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L1047187138;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1938438604;
+    goto label_L1031161409;
 
-label_L862791841:
+label_L1047187138:
     PUSH_INT(-1); /* ICONST_M1 */
 
-label_L1938438604:
+label_L1031161409:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(7);
 
-label_L405273678:
+label_L559087077:
     __CN1_DEBUG_INFO(2588);
     BC_IINC(8, 1);
-    goto label_L1122108119;
+    goto label_L512478459;
 
-label_L1954745715:
+label_L693211959:
     __CN1_DEBUG_INFO(2628);
 
 {
@@ -464,18 +464,18 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_addBound___doubl
     __CN1_DEBUG_INFO(2647);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L1081313350:
-    if (ilocals_11_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L954697228;
+label_L282375539:
+    if (ilocals_11_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L2011914366;
     __CN1_DEBUG_INFO(2648);
     /* VarOp.assignFrom */ dlocals_12_=CN1_ARRAY_ELEMENT_DOUBLE(locals[3].data.o, ilocals_11_);
     __CN1_DEBUG_INFO(2649);
-    if (CN1_CMP_EXPR(dlocals_12_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1645578641;
-    if (CN1_CMP_EXPR(dlocals_12_, 1.00001)>=0) /* IFGE CustomJump */ goto label_L1645578641;
+    if (CN1_CMP_EXPR(dlocals_12_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L522173599;
+    if (CN1_CMP_EXPR(dlocals_12_, 1.00001)>=0) /* IFGE CustomJump */ goto label_L522173599;
     __CN1_DEBUG_INFO(2650);
     /* VarOp.assignFrom */ dlocals_14_=(dlocals_12_ * ((dlocals_12_ * ((dlocals_12_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Ax(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Bx(__cn1ThisObject))) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_CubicCurve_Cx(__cn1ThisObject)));
     __CN1_DEBUG_INFO(2651);
-    if (CN1_CMP_EXPR(dlocals_5_, dlocals_14_)>0) /* IFGT CustomJump */ goto label_L1645578641;
-    if (CN1_CMP_EXPR(dlocals_14_, dlocals_7_)>0) /* IFGT CustomJump */ goto label_L1645578641;
+    if (CN1_CMP_EXPR(dlocals_5_, dlocals_14_)>0) /* IFGT CustomJump */ goto label_L522173599;
+    if (CN1_CMP_EXPR(dlocals_14_, dlocals_7_)>0) /* IFGT CustomJump */ goto label_L522173599;
     __CN1_DEBUG_INFO(2652);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -526,16 +526,16 @@ label_L1081313350:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* DASTORE */
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
     __CN1_DEBUG_INFO(2656);
-    if (ilocals_9_==0) /* IFEQ CustomJump */ goto label_L1645578641;
+    if (ilocals_9_==0) /* IFEQ CustomJump */ goto label_L522173599;
     __CN1_DEBUG_INFO(2657);
     BC_IINC(10, 1);
 
-label_L1645578641:
+label_L522173599:
     __CN1_DEBUG_INFO(2647);
     BC_IINC(11, 1);
-    goto label_L1081313350;
+    goto label_L282375539;
 
-label_L954697228:
+label_L2011914366:
     __CN1_DEBUG_INFO(2662);
 
 {

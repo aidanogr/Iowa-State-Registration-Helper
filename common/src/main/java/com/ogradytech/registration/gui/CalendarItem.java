@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.codename1.ui.Button;
+import com.codename1.ui.Font;
+import com.codename1.ui.TextArea;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 
@@ -17,12 +19,13 @@ public class CalendarItem {
 	private String courseName;
 	private InstructionFormat format;
 	private Map<String, MeetingInfo> sectionMeetingInfo;
+	private List<String> sections; //TODO change this structure
+	private int currentSectionIndex;
 	private String currentSection; 	//could be number or letter,
 	public List<Button> buttons;
 	public int color;
 	private boolean areButtonsInitialized = false;
-	
-	
+	private boolean isLocked = false;
 	
 	public enum InstructionFormat {
 		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
@@ -39,6 +42,8 @@ public class CalendarItem {
 		if(currentColorIndex >= allColors.length) {
 			currentColorIndex = 0;
 		}
+		sections = new ArrayList<String>(10);
+		currentSectionIndex = 0;
 	}
 	
 
@@ -49,12 +54,18 @@ public class CalendarItem {
 			for(int i = 0; i < info.getMeetingDays().length(); i++) {
 				Button button = new Button(courseName);
 				button.setUIID("ClassButton");
-				button.getAllStyles().setBgColor(allColors[currentColorIndex]);
+				button.getAllStyles().setBgColor(color);
+				button.getAllStyles().setBgTransparency(255);
+				button.addActionListener(evt -> {
+					isLocked = !isLocked;
+				});
 				this.buttons.add(button);
 			}
 		}
+		sections.add(section);
 		this.sectionMeetingInfo.put(section, info);
 		this.currentSection = section;
+		currentSectionIndex++;
 	}
 	
 	public MeetingInfo getCurrentSectionMeetingInfo() {
@@ -147,4 +158,29 @@ public class CalendarItem {
 	    return (n < 10 ? "0" : "") + n;
 	}
 
+	/**
+	 * Clicking button toggles lock on course section. If isLocked, 
+	 * section will not change on CalendarContainer.nextSections();. 
+	 * It is worth noting that this DOES NOT AFFECT CalendarItem.nextSection().
+	 * It will shift regardless of isLocked; This may be a bad design philosophy
+	 * @return isLocked
+	 */
+	public boolean isLocked() {
+		return isLocked;
+	}
+	
+	/**
+	 * Shifts the currentMeetingInfo field and returns self (for chaining). The new value
+	 * of currentMeetingInfo is changed
+	 */
+	public CalendarItem nextSection() {
+		if(currentSectionIndex >= sections.size()) {
+			currentSectionIndex = 0;
+		}
+		this.currentSection = sections.get(currentSectionIndex);
+		
+		currentSectionIndex++;
+		
+		return this;
+	}
 }

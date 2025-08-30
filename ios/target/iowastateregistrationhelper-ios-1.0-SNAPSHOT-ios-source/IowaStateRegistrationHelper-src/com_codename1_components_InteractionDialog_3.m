@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_components_InteractionDialog_3_actionPerformed___com_cod
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(596);
-    if (/* CustomInvoke */com_codename1_components_InteractionDialog_access$200___com_codename1_components_InteractionDialog_R_boolean(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1741034833;
+    if (/* CustomInvoke */com_codename1_components_InteractionDialog_access$200___com_codename1_components_InteractionDialog_R_boolean(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2116847138;
     __CN1_DEBUG_INFO(597);
     PUSH_POINTER(get_field_com_codename1_components_InteractionDialog_3_val_f(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_components_InteractionDialog_access$300___com_codename1_components_InteractionDialog_R_com_codename1_ui_events_ActionListener(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject)));
@@ -78,28 +78,28 @@ JAVA_VOID com_codename1_components_InteractionDialog_3_actionPerformed___com_cod
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1741034833:
+label_L2116847138:
     __CN1_DEBUG_INFO(601);
-    if (/* CustomInvoke */com_codename1_components_InteractionDialog_access$600___com_codename1_components_InteractionDialog_R_boolean(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2076874965;
+    if (/* CustomInvoke */com_codename1_components_InteractionDialog_access$600___com_codename1_components_InteractionDialog_R_boolean(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1258478670;
     PUSH_POINTER(get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject));
     __CN1_DEBUG_INFO(602);
     { JAVA_INT tmpResult = com_codename1_components_InteractionDialog_access$500___com_codename1_components_InteractionDialog_R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2076874965;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1258478670;
     PUSH_POINTER(get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject));
     __CN1_DEBUG_INFO(603);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_InteractionDialog_getContentPane___R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_Container_containsOrOwns___int_int_R_boolean(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_events_ActionEvent_getX___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_events_ActionEvent_getY___R_int(threadStateData, locals[1].data.o));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L2076874965;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1258478670;
     PUSH_POINTER(get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject));
     __CN1_DEBUG_INFO(604);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_InteractionDialog_getTitleComponent___R_com_codename1_ui_Label(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_Label_containsOrOwns___int_int_R_boolean(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_events_ActionEvent_getX___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_events_ActionEvent_getY___R_int(threadStateData, locals[1].data.o));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L2076874965;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1258478670;
     __CN1_DEBUG_INFO(605);
     virtual_com_codename1_ui_events_ActionEvent_consume__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(606);
@@ -113,7 +113,7 @@ label_L1741034833:
     __CN1_DEBUG_INFO(608);
     virtual_com_codename1_components_InteractionDialog_dispose__(threadStateData, get_field_com_codename1_components_InteractionDialog_3_this_0(__cn1ThisObject)); 
 
-label_L2076874965:
+label_L1258478670:
     __CN1_DEBUG_INFO(610);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -185,14 +185,14 @@ JAVA_VOID com_codename1_ui_InputComponent_2___INIT_____com_codename1_ui_InputCom
 JAVA_OBJECT com_codename1_ui_InputComponent_2_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4107, 1858);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(131);
-    if (virtual_com_codename1_ui_InputComponent_2_getText___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1929218620;
+    if (virtual_com_codename1_ui_InputComponent_2_getText___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1217434045;
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_InputComponent_2_getText___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_String_length___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L530528285;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1361931872;
 
-label_L1929218620:
+label_L1217434045:
     __CN1_DEBUG_INFO(132);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -200,7 +200,7 @@ label_L1929218620:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L530528285:
+label_L1361931872:
     __CN1_DEBUG_INFO(134);
     { JAVA_OBJECT tmpResult = com_codename1_ui_TextArea_calcPreferredSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }

@@ -38,30 +38,30 @@ JAVA_OBJECT __NEW_com_codename1_io_JSONSanitizer_1(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_VOID com_codename1_io_JSONSanitizer_1___CLINIT____(CODENAME_ONE_THREAD_STATE) {
     DEFINE_METHOD_STACK(3, 1, 0, 7592, 861);
-    int restoreToL1716288374cn1_class_id_java_lang_NoSuchFieldError1;
-    int tryBlockOffsetL1716288374cn1_class_id_java_lang_NoSuchFieldError1;
-    DEFINE_CATCH_BLOCK(catch_L1716288374cn1_class_id_java_lang_NoSuchFieldError1, label_L1801753119, restoreToL1716288374cn1_class_id_java_lang_NoSuchFieldError1);
-    int restoreToL1977202492cn1_class_id_java_lang_NoSuchFieldError2;
-    int tryBlockOffsetL1977202492cn1_class_id_java_lang_NoSuchFieldError2;
-    DEFINE_CATCH_BLOCK(catch_L1977202492cn1_class_id_java_lang_NoSuchFieldError2, label_L1134388380, restoreToL1977202492cn1_class_id_java_lang_NoSuchFieldError2);
-    int restoreToL99722180cn1_class_id_java_lang_NoSuchFieldError3;
-    int tryBlockOffsetL99722180cn1_class_id_java_lang_NoSuchFieldError3;
-    DEFINE_CATCH_BLOCK(catch_L99722180cn1_class_id_java_lang_NoSuchFieldError3, label_L1850169748, restoreToL99722180cn1_class_id_java_lang_NoSuchFieldError3);
-    int restoreToL1510527745cn1_class_id_java_lang_NoSuchFieldError4;
-    int tryBlockOffsetL1510527745cn1_class_id_java_lang_NoSuchFieldError4;
-    DEFINE_CATCH_BLOCK(catch_L1510527745cn1_class_id_java_lang_NoSuchFieldError4, label_L1436741771, restoreToL1510527745cn1_class_id_java_lang_NoSuchFieldError4);
-    int restoreToL1675886984cn1_class_id_java_lang_NoSuchFieldError5;
-    int tryBlockOffsetL1675886984cn1_class_id_java_lang_NoSuchFieldError5;
-    DEFINE_CATCH_BLOCK(catch_L1675886984cn1_class_id_java_lang_NoSuchFieldError5, label_L446264394, restoreToL1675886984cn1_class_id_java_lang_NoSuchFieldError5);
-    int restoreToL1530669727cn1_class_id_java_lang_NoSuchFieldError6;
-    int tryBlockOffsetL1530669727cn1_class_id_java_lang_NoSuchFieldError6;
-    DEFINE_CATCH_BLOCK(catch_L1530669727cn1_class_id_java_lang_NoSuchFieldError6, label_L839404033, restoreToL1530669727cn1_class_id_java_lang_NoSuchFieldError6);
-    int restoreToL1398492607cn1_class_id_java_lang_NoSuchFieldError7;
-    int tryBlockOffsetL1398492607cn1_class_id_java_lang_NoSuchFieldError7;
-    DEFINE_CATCH_BLOCK(catch_L1398492607cn1_class_id_java_lang_NoSuchFieldError7, label_L1725382189, restoreToL1398492607cn1_class_id_java_lang_NoSuchFieldError7);
-    int restoreToL1331108878cn1_class_id_java_lang_NoSuchFieldError8;
-    int tryBlockOffsetL1331108878cn1_class_id_java_lang_NoSuchFieldError8;
-    DEFINE_CATCH_BLOCK(catch_L1331108878cn1_class_id_java_lang_NoSuchFieldError8, label_L607370452, restoreToL1331108878cn1_class_id_java_lang_NoSuchFieldError8);
+    int restoreToL60305973cn1_class_id_java_lang_NoSuchFieldError1;
+    int tryBlockOffsetL60305973cn1_class_id_java_lang_NoSuchFieldError1;
+    DEFINE_CATCH_BLOCK(catch_L60305973cn1_class_id_java_lang_NoSuchFieldError1, label_L435030575, restoreToL60305973cn1_class_id_java_lang_NoSuchFieldError1);
+    int restoreToL2088857414cn1_class_id_java_lang_NoSuchFieldError2;
+    int tryBlockOffsetL2088857414cn1_class_id_java_lang_NoSuchFieldError2;
+    DEFINE_CATCH_BLOCK(catch_L2088857414cn1_class_id_java_lang_NoSuchFieldError2, label_L679046414, restoreToL2088857414cn1_class_id_java_lang_NoSuchFieldError2);
+    int restoreToL120617702cn1_class_id_java_lang_NoSuchFieldError3;
+    int tryBlockOffsetL120617702cn1_class_id_java_lang_NoSuchFieldError3;
+    DEFINE_CATCH_BLOCK(catch_L120617702cn1_class_id_java_lang_NoSuchFieldError3, label_L1019562230, restoreToL120617702cn1_class_id_java_lang_NoSuchFieldError3);
+    int restoreToL1237669315cn1_class_id_java_lang_NoSuchFieldError4;
+    int tryBlockOffsetL1237669315cn1_class_id_java_lang_NoSuchFieldError4;
+    DEFINE_CATCH_BLOCK(catch_L1237669315cn1_class_id_java_lang_NoSuchFieldError4, label_L1072499716, restoreToL1237669315cn1_class_id_java_lang_NoSuchFieldError4);
+    int restoreToL88256198cn1_class_id_java_lang_NoSuchFieldError5;
+    int tryBlockOffsetL88256198cn1_class_id_java_lang_NoSuchFieldError5;
+    DEFINE_CATCH_BLOCK(catch_L88256198cn1_class_id_java_lang_NoSuchFieldError5, label_L1446762148, restoreToL88256198cn1_class_id_java_lang_NoSuchFieldError5);
+    int restoreToL1917717111cn1_class_id_java_lang_NoSuchFieldError6;
+    int tryBlockOffsetL1917717111cn1_class_id_java_lang_NoSuchFieldError6;
+    DEFINE_CATCH_BLOCK(catch_L1917717111cn1_class_id_java_lang_NoSuchFieldError6, label_L894025840, restoreToL1917717111cn1_class_id_java_lang_NoSuchFieldError6);
+    int restoreToL1982708114cn1_class_id_java_lang_NoSuchFieldError7;
+    int tryBlockOffsetL1982708114cn1_class_id_java_lang_NoSuchFieldError7;
+    DEFINE_CATCH_BLOCK(catch_L1982708114cn1_class_id_java_lang_NoSuchFieldError7, label_L593341655, restoreToL1982708114cn1_class_id_java_lang_NoSuchFieldError7);
+    int restoreToL363172313cn1_class_id_java_lang_NoSuchFieldError8;
+    int tryBlockOffsetL363172313cn1_class_id_java_lang_NoSuchFieldError8;
+    DEFINE_CATCH_BLOCK(catch_L363172313cn1_class_id_java_lang_NoSuchFieldError8, label_L1946618260, restoreToL363172313cn1_class_id_java_lang_NoSuchFieldError8);
     __CN1_DEBUG_INFO(269);
     PUSH_OBJ(com_codename1_io_JSONSanitizer_State_values___R_com_codename1_io_JSONSanitizer_State_1ARRAY(threadStateData));
     { /* ARRAYLENGTH */
@@ -75,10 +75,10 @@ JAVA_VOID com_codename1_io_JSONSanitizer_1___CLINIT____(CODENAME_ONE_THREAD_STAT
     set_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1716288374:
- tryBlockOffsetL1716288374cn1_class_id_java_lang_NoSuchFieldError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1716288374cn1_class_id_java_lang_NoSuchFieldError1);
-    restoreToL1716288374cn1_class_id_java_lang_NoSuchFieldError1 = threadStateData->threadObjectStackOffset;
+label_L60305973:
+ tryBlockOffsetL60305973cn1_class_id_java_lang_NoSuchFieldError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L60305973cn1_class_id_java_lang_NoSuchFieldError1);
+    restoreToL60305973cn1_class_id_java_lang_NoSuchFieldError1 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_BEFORE_VALUE(threadStateData));
@@ -87,16 +87,16 @@ label_L1716288374:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L1993226485:
-END_TRY(1);    JUMP_TO(label_L1977202492, 0);
+label_L1736655004:
+END_TRY(1);    JUMP_TO(label_L2088857414, 0);
 
-label_L1801753119:
+label_L435030575:
     BC_ASTORE(0);
 
-label_L1977202492:
- tryBlockOffsetL1977202492cn1_class_id_java_lang_NoSuchFieldError2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1977202492cn1_class_id_java_lang_NoSuchFieldError2);
-    restoreToL1977202492cn1_class_id_java_lang_NoSuchFieldError2 = threadStateData->threadObjectStackOffset;
+label_L2088857414:
+ tryBlockOffsetL2088857414cn1_class_id_java_lang_NoSuchFieldError2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L2088857414cn1_class_id_java_lang_NoSuchFieldError2);
+    restoreToL2088857414cn1_class_id_java_lang_NoSuchFieldError2 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_BEFORE_ELEMENT(threadStateData));
@@ -105,16 +105,16 @@ label_L1977202492:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L722761564:
-END_TRY(1);    JUMP_TO(label_L99722180, 0);
+label_L1113072690:
+END_TRY(1);    JUMP_TO(label_L120617702, 0);
 
-label_L1134388380:
+label_L679046414:
     BC_ASTORE(0);
 
-label_L99722180:
- tryBlockOffsetL99722180cn1_class_id_java_lang_NoSuchFieldError3 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L99722180cn1_class_id_java_lang_NoSuchFieldError3);
-    restoreToL99722180cn1_class_id_java_lang_NoSuchFieldError3 = threadStateData->threadObjectStackOffset;
+label_L120617702:
+ tryBlockOffsetL120617702cn1_class_id_java_lang_NoSuchFieldError3 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L120617702cn1_class_id_java_lang_NoSuchFieldError3);
+    restoreToL120617702cn1_class_id_java_lang_NoSuchFieldError3 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_BEFORE_KEY(threadStateData));
@@ -123,16 +123,16 @@ label_L99722180:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L780545667:
-END_TRY(1);    JUMP_TO(label_L1510527745, 0);
+label_L1294294:
+END_TRY(1);    JUMP_TO(label_L1237669315, 0);
 
-label_L1850169748:
+label_L1019562230:
     BC_ASTORE(0);
 
-label_L1510527745:
- tryBlockOffsetL1510527745cn1_class_id_java_lang_NoSuchFieldError4 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1510527745cn1_class_id_java_lang_NoSuchFieldError4);
-    restoreToL1510527745cn1_class_id_java_lang_NoSuchFieldError4 = threadStateData->threadObjectStackOffset;
+label_L1237669315:
+ tryBlockOffsetL1237669315cn1_class_id_java_lang_NoSuchFieldError4 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1237669315cn1_class_id_java_lang_NoSuchFieldError4);
+    restoreToL1237669315cn1_class_id_java_lang_NoSuchFieldError4 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_AFTER_KEY(threadStateData));
@@ -141,16 +141,16 @@ label_L1510527745:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L688435766:
-END_TRY(1);    JUMP_TO(label_L1675886984, 0);
+label_L2112461032:
+END_TRY(1);    JUMP_TO(label_L88256198, 0);
 
-label_L1436741771:
+label_L1072499716:
     BC_ASTORE(0);
 
-label_L1675886984:
- tryBlockOffsetL1675886984cn1_class_id_java_lang_NoSuchFieldError5 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1675886984cn1_class_id_java_lang_NoSuchFieldError5);
-    restoreToL1675886984cn1_class_id_java_lang_NoSuchFieldError5 = threadStateData->threadObjectStackOffset;
+label_L88256198:
+ tryBlockOffsetL88256198cn1_class_id_java_lang_NoSuchFieldError5 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L88256198cn1_class_id_java_lang_NoSuchFieldError5);
+    restoreToL88256198cn1_class_id_java_lang_NoSuchFieldError5 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_START_MAP(threadStateData));
@@ -159,16 +159,16 @@ label_L1675886984:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L692861344:
-END_TRY(1);    JUMP_TO(label_L1530669727, 0);
+label_L1798536728:
+END_TRY(1);    JUMP_TO(label_L1917717111, 0);
 
-label_L446264394:
+label_L1446762148:
     BC_ASTORE(0);
 
-label_L1530669727:
- tryBlockOffsetL1530669727cn1_class_id_java_lang_NoSuchFieldError6 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1530669727cn1_class_id_java_lang_NoSuchFieldError6);
-    restoreToL1530669727cn1_class_id_java_lang_NoSuchFieldError6 = threadStateData->threadObjectStackOffset;
+label_L1917717111:
+ tryBlockOffsetL1917717111cn1_class_id_java_lang_NoSuchFieldError6 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1917717111cn1_class_id_java_lang_NoSuchFieldError6);
+    restoreToL1917717111cn1_class_id_java_lang_NoSuchFieldError6 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_START_ARRAY(threadStateData));
@@ -177,16 +177,16 @@ label_L1530669727:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L560596290:
-END_TRY(1);    JUMP_TO(label_L1398492607, 0);
+label_L1758052088:
+END_TRY(1);    JUMP_TO(label_L1982708114, 0);
 
-label_L839404033:
+label_L894025840:
     BC_ASTORE(0);
 
-label_L1398492607:
- tryBlockOffsetL1398492607cn1_class_id_java_lang_NoSuchFieldError7 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1398492607cn1_class_id_java_lang_NoSuchFieldError7);
-    restoreToL1398492607cn1_class_id_java_lang_NoSuchFieldError7 = threadStateData->threadObjectStackOffset;
+label_L1982708114:
+ tryBlockOffsetL1982708114cn1_class_id_java_lang_NoSuchFieldError7 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1982708114cn1_class_id_java_lang_NoSuchFieldError7);
+    restoreToL1982708114cn1_class_id_java_lang_NoSuchFieldError7 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_AFTER_ELEMENT(threadStateData));
@@ -195,16 +195,16 @@ label_L1398492607:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L1049089498:
-END_TRY(1);    JUMP_TO(label_L1331108878, 0);
+label_L1975075128:
+END_TRY(1);    JUMP_TO(label_L363172313, 0);
 
-label_L1725382189:
+label_L593341655:
     BC_ASTORE(0);
 
-label_L1331108878:
- tryBlockOffsetL1331108878cn1_class_id_java_lang_NoSuchFieldError8 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L1331108878cn1_class_id_java_lang_NoSuchFieldError8);
-    restoreToL1331108878cn1_class_id_java_lang_NoSuchFieldError8 = threadStateData->threadObjectStackOffset;
+label_L363172313:
+ tryBlockOffsetL363172313cn1_class_id_java_lang_NoSuchFieldError8 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NoSuchFieldError, catch_L363172313cn1_class_id_java_lang_NoSuchFieldError8);
+    restoreToL363172313cn1_class_id_java_lang_NoSuchFieldError8 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_static_com_codename1_io_JSONSanitizer_1__SwitchMap_com_codename1_io_JSONSanitizer_State(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_io_JSONSanitizer_State_ordinal___R_int(threadStateData, get_static_com_codename1_io_JSONSanitizer_State_AFTER_VALUE(threadStateData));
@@ -213,13 +213,13 @@ label_L1331108878:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
 
-label_L1391614270:
-END_TRY(1);    JUMP_TO(label_L209501229, 0);
+label_L1151777215:
+END_TRY(1);    JUMP_TO(label_L92350773, 0);
 
-label_L607370452:
+label_L1946618260:
     BC_ASTORE(0);
 
-label_L209501229:
+label_L92350773:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 }

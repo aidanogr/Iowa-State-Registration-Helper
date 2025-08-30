@@ -138,7 +138,7 @@ JAVA_VOID com_codename1_messaging_Message_setAttachment___java_lang_String(CODEN
 JAVA_OBJECT com_codename1_messaging_Message_getAttachments___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7405, 7408);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(99);
-    if (get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L983881109;
+    if (get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L580052883;
     __CN1_DEBUG_INFO(100);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
@@ -147,17 +147,17 @@ JAVA_OBJECT com_codename1_messaging_Message_getAttachments___R_java_util_Map(COD
     set_field_com_codename1_messaging_Message_attachments(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L983881109:
+label_L580052883:
     __CN1_DEBUG_INFO(102);
-    if (get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L240182024;
-    if (get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L240182024;
-    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L240182024;
-    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L240182024;
-    if (/* CustomInvoke */virtual_java_util_HashMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L240182024;
+    if (get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1490901066;
+    if (get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1490901066;
+    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1490901066;
+    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1490901066;
+    if (/* CustomInvoke */virtual_java_util_HashMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1490901066;
     __CN1_DEBUG_INFO(103);
     /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject), get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)); 
 
-label_L240182024:
+label_L1490901066:
     __CN1_DEBUG_INFO(105);
 
 {

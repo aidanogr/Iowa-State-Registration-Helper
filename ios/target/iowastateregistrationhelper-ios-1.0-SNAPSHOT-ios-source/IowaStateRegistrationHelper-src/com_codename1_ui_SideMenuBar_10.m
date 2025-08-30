@@ -231,7 +231,7 @@ JAVA_VOID com_codename1_ui_SideMenuBar_10_paint___com_codename1_ui_Graphics(CODE
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(1368);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L971256592;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2063275841;
     __CN1_DEBUG_INFO(1369);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(1370);
@@ -251,7 +251,7 @@ JAVA_VOID com_codename1_ui_SideMenuBar_10_paint___com_codename1_ui_Graphics(CODE
     __CN1_DEBUG_INFO(1377);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setVisible___boolean(threadStateData, locals[2].data.o, ilocals_3_); 
 
-label_L971256592:
+label_L2063275841:
     __CN1_DEBUG_INFO(1379);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

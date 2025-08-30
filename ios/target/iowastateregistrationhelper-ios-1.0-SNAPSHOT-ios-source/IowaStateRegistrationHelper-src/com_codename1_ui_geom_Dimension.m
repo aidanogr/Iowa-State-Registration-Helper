@@ -181,16 +181,16 @@ JAVA_BOOLEAN com_codename1_ui_geom_Dimension_equals___java_lang_Object_R_boolean
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(122);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L832219630;
-    if (get_field_com_codename1_ui_geom_Dimension_width(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_width(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L832219630;
-    if (get_field_com_codename1_ui_geom_Dimension_height(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_height(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L832219630;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L824781215;
+    if (get_field_com_codename1_ui_geom_Dimension_width(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_width(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L824781215;
+    if (get_field_com_codename1_ui_geom_Dimension_height(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_height(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L824781215;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L494956006;
+    goto label_L796127431;
 
-label_L832219630:
+label_L824781215:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L494956006:
+label_L796127431:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

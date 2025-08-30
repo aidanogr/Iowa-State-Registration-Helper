@@ -116,7 +116,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_toString___R_ja
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_getGraphics___R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9613, 1577);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5474);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1960253514;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1404834600;
     __CN1_DEBUG_INFO(5475);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData)); /* NEW */
@@ -127,7 +127,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_getGraphics___R
     __CN1_DEBUG_INFO(5476);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(threadStateData, __cn1ThisObject, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject));
 
-label_L1960253514:
+label_L1404834600:
     __CN1_DEBUG_INFO(5478);
 
 {
@@ -140,13 +140,13 @@ label_L1960253514:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeImage_deleteImage__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9613, 9614);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5482);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1370495328;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L653345773;
     __CN1_DEBUG_INFO(5483);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$5000___long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(5484);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(threadStateData, 0 /* LCONST_0 */, __cn1ThisObject);
 
-label_L1370495328:
+label_L653345773:
     __CN1_DEBUG_INFO(5486);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

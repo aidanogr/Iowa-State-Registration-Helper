@@ -91,7 +91,7 @@ class_array1__com_codename1_ui_Painter.vtable = initVtableForInterface();
     classToInterfaceMap_com_codename1_ui_Painter[cn1_class_id_com_codename1_ui_Component_BGPainter] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_com_codename1_ui_Painter[cn1_class_id_com_codename1_ui_Component_BGPainter][0] = 10;
     classToInterfaceMap_com_codename1_ui_Painter[cn1_class_id_com_codename1_ui_animations_Timeline] = malloc(sizeof(int*) * 13);
-    classToInterfaceMap_com_codename1_ui_Painter[cn1_class_id_com_codename1_ui_animations_Timeline][0] = 56;
+    classToInterfaceMap_com_codename1_ui_Painter[cn1_class_id_com_codename1_ui_animations_Timeline][0] = 57;
     class__com_codename1_ui_Painter.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_Painter);
 __com_codename1_ui_Painter_LOADED__=1;

@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_payment_Purchase_6_onSucess___com_codename1_payment_Rece
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(596);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1343957354;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2084234089;
     __CN1_DEBUG_INFO(597);
     PUSH_POINTER(get_field_com_codename1_payment_Purchase_6_this_0(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(java_util_Arrays_asList___java_lang_Object_1ARRAY_R_java_util_List(threadStateData, locals[1].data.o));
@@ -80,15 +80,15 @@ JAVA_VOID com_codename1_payment_Purchase_6_onSucess___com_codename1_payment_Rece
     /* CustomInvoke */com_codename1_payment_Purchase_access$502___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(600);
     /* CustomInvoke */virtual_com_codename1_util_SuccessCallback_onSucess___java_lang_Object(threadStateData, get_field_com_codename1_payment_Purchase_6_val_callback(__cn1ThisObject), get_static_java_lang_Boolean_TRUE(threadStateData)); 
-    goto label_L69214838;
+    goto label_L1231842708;
 
-label_L1343957354:
+label_L2084234089:
     __CN1_DEBUG_INFO(602);
     /* CustomInvoke */com_codename1_payment_Purchase_access$502___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(603);
     /* CustomInvoke */virtual_com_codename1_util_SuccessCallback_onSucess___java_lang_Object(threadStateData, get_field_com_codename1_payment_Purchase_6_val_callback(__cn1ThisObject), get_static_java_lang_Boolean_FALSE(threadStateData)); 
 
-label_L69214838:
+label_L1231842708:
     __CN1_DEBUG_INFO(605);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

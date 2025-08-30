@@ -48,11 +48,11 @@ JAVA_VOID com_codename1_ui_Toolbar_ToolbarSideMenu_1___INIT_____com_codename1_ui
 JAVA_VOID com_codename1_ui_Toolbar_ToolbarSideMenu_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7219, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2633);
-    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$1300___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_this_0(get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_1_this_1(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L1914740115;
+    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$1300___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_this_0(get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_1_this_1(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L1562249660;
     __CN1_DEBUG_INFO(2634);
     /* CustomInvoke */com_codename1_ui_Toolbar_access$1400___com_codename1_ui_Toolbar_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_this_0(get_field_com_codename1_ui_Toolbar_ToolbarSideMenu_1_this_1(__cn1ThisObject)), 1 /* ICONST_1 */); 
 
-label_L1914740115:
+label_L1562249660:
     __CN1_DEBUG_INFO(2636);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

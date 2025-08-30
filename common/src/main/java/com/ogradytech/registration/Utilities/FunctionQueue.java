@@ -17,7 +17,7 @@ public class FunctionQueue {
             Runnable task = queue.poll();
             task.run();
             try {
-				Thread.sleep(100);
+				Thread.sleep(150);	//try not to ddos server?
 			} catch (InterruptedException e) {
 				// TODO handle this
 			}

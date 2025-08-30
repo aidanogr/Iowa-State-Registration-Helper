@@ -620,9 +620,9 @@ JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_clone___R_java_lang_O
 
 void __INIT_VTABLE_com_codename1_ui_ComponentImage_EncodedWrapper(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_EncodedImage(threadStateData, vtable);
-    vtable[41] = &com_codename1_ui_ComponentImage_EncodedWrapper_scaled___int_int_R_com_codename1_ui_Image;
-    vtable[56] = &com_codename1_ui_ComponentImage_EncodedWrapper_getInternal___R_com_codename1_ui_Image;
-    vtable[57] = &com_codename1_ui_ComponentImage_EncodedWrapper_scaledEncoded___int_int_R_com_codename1_ui_EncodedImage;
+    vtable[42] = &com_codename1_ui_ComponentImage_EncodedWrapper_scaled___int_int_R_com_codename1_ui_Image;
+    vtable[57] = &com_codename1_ui_ComponentImage_EncodedWrapper_getInternal___R_com_codename1_ui_Image;
+    vtable[58] = &com_codename1_ui_ComponentImage_EncodedWrapper_scaledEncoded___int_int_R_com_codename1_ui_EncodedImage;
 }
 
 static int __com_codename1_ui_ComponentImage_EncodedWrapper_LOADED__=0;
@@ -635,7 +635,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_ComponentImage_EncodedWrapper(CODENAM
         return;
     }
 
-    class__com_codename1_ui_ComponentImage_EncodedWrapper.vtable = malloc(sizeof(void*) *58);
+    class__com_codename1_ui_ComponentImage_EncodedWrapper.vtable = malloc(sizeof(void*) *59);
     __INIT_VTABLE_com_codename1_ui_ComponentImage_EncodedWrapper(threadStateData, class__com_codename1_ui_ComponentImage_EncodedWrapper.vtable);
     class__com_codename1_ui_ComponentImage_EncodedWrapper.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_ComponentImage_EncodedWrapper);

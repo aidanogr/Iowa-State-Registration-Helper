@@ -543,7 +543,11 @@ JAVA_BOOLEAN java_util_LinkedList_remove___java_lang_Object_R_boolean(CODENAME_O
 
 
 JAVA_OBJECT java_util_LinkedList_removeFirst___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    return 0;
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 6345);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = java_util_LinkedList_removeFirstImpl___R_java_lang_Object(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_OBJ();
 }
 
 
@@ -763,7 +767,18 @@ JAVA_BOOLEAN java_util_LinkedList_offer___java_lang_Object_R_boolean(CODENAME_ON
 
 
 JAVA_OBJECT java_util_LinkedList_poll___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    return 0;
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 6336);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_size(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L310016558;
+    PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
+    goto label_L335580595;
+
+label_L310016558:
+    { JAVA_OBJECT tmpResult = virtual_java_util_LinkedList_removeFirst___R_java_lang_Object(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+
+label_L335580595:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_OBJ();
 }
 
 
@@ -998,15 +1013,6 @@ JAVA_BOOLEAN virtual_java_util_LinkedList_offer___java_lang_Object_R_boolean(COD
 }
 
 
-typedef JAVA_OBJECT (*functionPtr_java_util_LinkedList_poll___R_java_lang_Object)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
-
-JAVA_OBJECT virtual_java_util_LinkedList_poll___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    
-    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_java_util_LinkedList_poll___R_java_lang_Object)__cn1ThisObject->__codenameOneParentClsReference->vtable[35])(threadStateData, __cn1ThisObject);
-}
-
-
 typedef JAVA_OBJECT (*functionPtr_java_util_LinkedList_peek___R_java_lang_Object)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_OBJECT virtual_java_util_LinkedList_peek___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
@@ -1194,7 +1200,9 @@ void __INIT_VTABLE_java_util_LinkedList(CODENAME_ONE_THREAD_STATE, void** vtable
     vtable[29] = &java_util_LinkedList_listIterator___int_R_java_util_ListIterator;
     vtable[30] = &java_util_LinkedList_remove___int_R_java_lang_Object;
     vtable[31] = &java_util_LinkedList_set___int_java_lang_Object_R_java_lang_Object;
+    vtable[35] = &java_util_LinkedList_poll___R_java_lang_Object;
     vtable[36] = &java_util_LinkedList_remove___R_java_lang_Object;
+    vtable[43] = &java_util_LinkedList_removeFirst___R_java_lang_Object;
     vtable[44] = &java_util_LinkedList_removeLast___R_java_lang_Object;
 }
 

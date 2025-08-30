@@ -71,11 +71,11 @@ JAVA_VOID com_codename1_util_regex_StringReader___INIT_____java_lang_String(CODE
 JAVA_INT com_codename1_util_regex_StringReader_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 8165, 988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L661200616;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1973861638;
     __CN1_DEBUG_INFO(38);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L661200616:
+label_L1973861638:
     __CN1_DEBUG_INFO(40);
     PUSH_POINTER(get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject));
     BC_ALOAD(0);
@@ -103,11 +103,11 @@ JAVA_INT com_codename1_util_regex_StringReader_read___char_1ARRAY_int_int_R_int(
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(44);
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L2023967815;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1796671122;
     __CN1_DEBUG_INFO(45);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L2023967815:
+label_L1796671122:
     __CN1_DEBUG_INFO(47);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(48);
@@ -115,9 +115,9 @@ label_L2023967815:
     __CN1_DEBUG_INFO(49);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
 
-label_L1126178692:
-    if (ilocals_6_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L2003075873;
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L2003075873;
+label_L1989676149:
+    if (ilocals_6_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1296804950;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1296804950;
     __CN1_DEBUG_INFO(50);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -143,9 +143,9 @@ label_L1126178692:
     __CN1_DEBUG_INFO(49);
     BC_IINC(6, 1);
     BC_IINC(4, 1);
-    goto label_L1126178692;
+    goto label_L1989676149;
 
-label_L2003075873:
+label_L1296804950:
     __CN1_DEBUG_INFO(52);
 
 {

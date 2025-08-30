@@ -52,20 +52,20 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerNode_1_selectionChanged___int_int(CODE
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(45);
-    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L760125918;
-    if (get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L760125918;
+    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L620506240;
+    if (get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L620506240;
     __CN1_DEBUG_INFO(46);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_ui_list_ListModel_getSelectedIndex___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)));
 
-label_L760125918:
+label_L620506240:
     __CN1_DEBUG_INFO(48);
-    if (ilocals_2_<0) /* IFLT CustomJump */ goto label_L92340202;
-    if (ilocals_2_>=virtual_com_codename1_ui_list_ListModel_getSize___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)))) /* IF_ICMPGE CustomJump */ goto label_L92340202;
-    if (ilocals_2_==/* CustomInvoke */com_codename1_ui_spinner_SpinnerNode_access$000___com_codename1_ui_spinner_SpinnerNode_R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L92340202;
+    if (ilocals_2_<0) /* IFLT CustomJump */ goto label_L157662396;
+    if (ilocals_2_>=virtual_com_codename1_ui_list_ListModel_getSize___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)))) /* IF_ICMPGE CustomJump */ goto label_L157662396;
+    if (ilocals_2_==/* CustomInvoke */com_codename1_ui_spinner_SpinnerNode_access$000___com_codename1_ui_spinner_SpinnerNode_R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L157662396;
     __CN1_DEBUG_INFO(49);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_SpinnerNode_setSelectedIndex___int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject), ilocals_2_); 
 
-label_L92340202:
+label_L157662396:
     __CN1_DEBUG_INFO(51);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -113,6 +113,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     }
     
 
+
     /**
      * The submit action for the main input form. <br>
      * Tries to parse input form, and if all classes are valid course info is requested 
@@ -249,16 +250,22 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 
 
     	NetworkManager.getInstance().addToQueue(r);
-    	System.out.println("Gate 30234");
-
     }
 
 
     private static void createCalendarView() {
-		Form calendarView = new Form("Calendar View");
-		calendarView.add(new CalendarContainer(calendarCourseInformation).container);
+		Form calendarView = new Form("Calendar View", new BorderLayout());
+		CalendarContainer cc = new CalendarContainer(calendarCourseInformation);
+		calendarView.add(BorderLayout.CENTER, cc.parentContainer);
+		
+		Button arrowButton = new Button(">");
+		arrowButton.addActionListener(evt -> {
+			cc.nextSections();
+		});
+		calendarView.getToolbar().add(BorderLayout.EAST, arrowButton);
 		calendarView.show();
 	}
+
 
 
 	/**
@@ -287,6 +294,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 			if(!meetingType.equals((String) section.get("instructionalFormat"))) {
 				String base = classItem.getCourseName();
 				calendarCourseInformation.add(classItem);
+				classItem.debugPrint();
 				classItem = new CalendarItem(base);
 				meetingType = (String) section.get("instructionalFormat");
 				classItem.setInstructionFormat(meetingType);
@@ -295,14 +303,15 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 			classItem.addMeetingInfo(
 					(String) section.get("number"),new MeetingInfo((String) section.get("meetingPatterns"))
 				);
+
 		}
+		classItem.debugPrint();
 		calendarCourseInformation.add(classItem);
 			
 	}
 
 
 	public static void handleFormSubmissionException(FormSubmissionException e) {
-
 
     	InstructionalDialog d = new InstructionalDialog("DialogTitle", "DialogBody");
 

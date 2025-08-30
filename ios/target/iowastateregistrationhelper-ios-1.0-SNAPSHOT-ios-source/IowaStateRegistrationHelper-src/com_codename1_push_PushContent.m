@@ -302,16 +302,16 @@ JAVA_VOID com_codename1_push_PushContent_clearAll___java_lang_String_1ARRAY(CODE
 locals[1].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_2_ = CN1_ARRAY_LENGTH(locals[1].data.o);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1490885900:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L916019076;
+label_L502047593:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L341631013;
     /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;locals[4].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_);
 locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(98);
     /* CustomInvoke */com_codename1_push_PushContent_setProperty___java_lang_String_java_lang_String(threadStateData, locals[4].data.o, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(97);
     BC_IINC(3, 1);
-    goto label_L1490885900;
+    goto label_L502047593;
 
-label_L916019076:
+label_L341631013:
     __CN1_DEBUG_INFO(100);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -96,35 +96,35 @@ JAVA_VOID com_codename1_ui_Display_EdtException_throwRoot___java_lang_Throwable(
     __CN1_DEBUG_INFO(800);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = __cn1ThisObject;
 locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(801);
-    if (locals[3].data.o==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1303187181;
+    if (locals[3].data.o==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1636256669;
     __CN1_DEBUG_INFO(802);
     /* CustomInvoke */virtual_com_codename1_ui_Display_EdtException_setCause___java_lang_Throwable(threadStateData, locals[3].data.o, locals[1].data.o); 
     __CN1_DEBUG_INFO(803);
     /* CustomInvoke */virtual_java_util_HashSet_add___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, locals[3].data.o); 
-    goto label_L2142052682;
+    goto label_L224468764;
 
-label_L1303187181:
+label_L1636256669:
     __CN1_DEBUG_INFO(805);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = locals[1].data.o;
 locals[3].type=CN1_TYPE_OBJECT;
-label_L2142052682:
+label_L224468764:
     __CN1_DEBUG_INFO(807);
-    if (get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L373703332;
+    if (get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1328349514;
     __CN1_DEBUG_INFO(808);
-    if (/* CustomInvoke */virtual_java_util_HashSet_contains___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o))==0) /* IFEQ CustomJump */ goto label_L1976503781;
+    if (/* CustomInvoke */virtual_java_util_HashSet_contains___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o))==0) /* IFEQ CustomJump */ goto label_L1375503918;
     __CN1_DEBUG_INFO(809);
-    goto label_L373703332;
+    goto label_L1328349514;
 
-label_L1976503781:
+label_L1375503918:
     __CN1_DEBUG_INFO(811);
     /* CustomInvoke */virtual_com_codename1_ui_Display_EdtException_setCause___java_lang_Throwable(threadStateData, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o), locals[3].data.o); 
     __CN1_DEBUG_INFO(812);
     /* CustomInvoke */virtual_java_util_HashSet_add___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)); 
     __CN1_DEBUG_INFO(813);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o = get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o);
-locals[3].type=CN1_TYPE_OBJECT;    goto label_L2142052682;
+locals[3].type=CN1_TYPE_OBJECT;    goto label_L224468764;
 
-label_L373703332:
+label_L1328349514:
     __CN1_DEBUG_INFO(815);
     BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());

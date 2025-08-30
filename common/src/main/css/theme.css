@@ -31,6 +31,7 @@ Button {
 	height: 5mm;
 }
 
+
 /** Style for App Title Bar Text */
 Title {
     font-family: "native:MainLight";
@@ -59,6 +60,32 @@ InstructionalDialog {
 	height: 1000mm;
 	text-align: center;
 }
+
+ParentCalendarContainer {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+DayOfWeekContainer {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+CalendarContainer {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+TimeContainer {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+WeeekdayLabel {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
 /** Style for the side menu */
 SideNavigationPanel {
     background: white;
@@ -83,11 +110,6 @@ SideCommand {
     font-size: 4mm;
     border-bottom: 2px solid #cccccc;
 }
-ClassButton {
-	width: 20%;
-}
 
-CalendarContainer {
-	height: 100%;
-	width: 100%;
-}
+
+

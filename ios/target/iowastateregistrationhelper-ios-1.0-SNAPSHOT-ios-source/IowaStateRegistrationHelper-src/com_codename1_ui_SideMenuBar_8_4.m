@@ -68,11 +68,11 @@ JAVA_BOOLEAN com_codename1_ui_SideMenuBar_8_4_animate___R_boolean(CODENAME_ONE_T
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1300);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$102___com_codename1_ui_SideMenuBar_int_R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject)), virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(1301);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L521466380;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2141066548;
     __CN1_DEBUG_INFO(1302);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$202___com_codename1_ui_SideMenuBar_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject)), 0 /* ICONST_0 */); 
 
-label_L521466380:
+label_L2141066548:
     __CN1_DEBUG_INFO(1304);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -85,8 +85,8 @@ JAVA_VOID com_codename1_ui_SideMenuBar_8_4_paint___com_codename1_ui_Graphics(COD
     __CN1_DEBUG_INFO(1308);
     virtual_com_codename1_ui_SideMenuBar_8_repaint__(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1309);
-    if (/* CustomInvoke */com_codename1_ui_SideMenuBar_access$100___com_codename1_ui_SideMenuBar_R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject)))!=virtual_com_codename1_ui_animations_Motion_getDestinationValue___R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L2108318195;
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2108318195;
+    if (/* CustomInvoke */com_codename1_ui_SideMenuBar_access$100___com_codename1_ui_SideMenuBar_R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject)))!=virtual_com_codename1_ui_animations_Motion_getDestinationValue___R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L327840833;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_4_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L327840833;
     __CN1_DEBUG_INFO(1310);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_SideMenuBar_access$000___com_codename1_ui_SideMenuBar_R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_4_this_1(__cn1ThisObject))));
     PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createEmpty___R_com_codename1_ui_animations_CommonTransitions(threadStateData));
@@ -103,7 +103,7 @@ JAVA_VOID com_codename1_ui_SideMenuBar_8_4_paint___com_codename1_ui_Graphics(COD
     /* CustomInvoke */com_codename1_ui_SideMenuBar_8_4_1___INIT_____com_codename1_ui_SideMenuBar_8_4(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Display_callSerially___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L2108318195:
+label_L327840833:
     __CN1_DEBUG_INFO(1321);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

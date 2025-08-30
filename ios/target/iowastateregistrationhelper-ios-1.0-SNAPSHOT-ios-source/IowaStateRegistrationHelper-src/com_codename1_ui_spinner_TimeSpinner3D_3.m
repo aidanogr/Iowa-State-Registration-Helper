@@ -54,11 +54,11 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_3_format___java_lang_String_R
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[1].data.o));
     PUSH_DOUBLE(1); /* DCONST_1 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L2094809200;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L1525050520;
     __CN1_DEBUG_INFO(144);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(6657);
 
-label_L2094809200:
+label_L1525050520:
     __CN1_DEBUG_INFO(146);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(6658);
 }

@@ -79,15 +79,15 @@ JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback___INIT_____com_codename
     set_field_com_codename1_util_AsyncResource_AsyncCallback_t(threadStateData, locals[3].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(300);
     BC_ALOAD(0);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1401070431;
-    if (com_codename1_ui_CN_isEdt___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1401070431;
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1430509568;
+    if (com_codename1_ui_CN_isEdt___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1430509568;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2030151083;
+    goto label_L503527425;
 
-label_L1401070431:
+label_L1430509568:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2030151083:
+label_L503527425:
     set_field_com_codename1_util_AsyncResource_AsyncCallback_edt(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(301);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -100,8 +100,8 @@ JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback_onSucess___java_lang_Ob
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(305);
-    if (get_field_com_codename1_util_AsyncResource_AsyncCallback_edt(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2141012147;
-    if (com_codename1_ui_CN_isEdt___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L2141012147;
+    if (get_field_com_codename1_util_AsyncResource_AsyncCallback_edt(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1491380839;
+    if (com_codename1_ui_CN_isEdt___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1491380839;
     __CN1_DEBUG_INFO(306);
     PUSH_POINTER(__NEW_com_codename1_util_AsyncResource_AsyncCallback_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -111,10 +111,10 @@ JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback_onSucess___java_lang_Ob
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2141012147:
+label_L1491380839:
     __CN1_DEBUG_INFO(313);
-    if (get_field_com_codename1_util_AsyncResource_AsyncCallback_t(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L211984447;
-    if (virtual_com_codename1_util_EasyThread_isThisIt___R_boolean(threadStateData, get_field_com_codename1_util_AsyncResource_AsyncCallback_t(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L211984447;
+    if (get_field_com_codename1_util_AsyncResource_AsyncCallback_t(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1475186581;
+    if (virtual_com_codename1_util_EasyThread_isThisIt___R_boolean(threadStateData, get_field_com_codename1_util_AsyncResource_AsyncCallback_t(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1475186581;
     __CN1_DEBUG_INFO(314);
     PUSH_POINTER(get_field_com_codename1_util_AsyncResource_AsyncCallback_t(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_util_AsyncResource_AsyncCallback_2(threadStateData)); /* NEW */
@@ -125,7 +125,7 @@ label_L2141012147:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L211984447:
+label_L1475186581:
     __CN1_DEBUG_INFO(324);
     /* CustomInvoke */virtual_com_codename1_util_SuccessCallback_onSucess___java_lang_Object(threadStateData, get_field_com_codename1_util_AsyncResource_AsyncCallback_cb(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(326);

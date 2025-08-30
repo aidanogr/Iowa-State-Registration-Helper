@@ -53,12 +53,12 @@ JAVA_VOID com_codename1_ui_SideMenuBar_9_actionPerformed___com_codename1_ui_even
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1347);
-    if (get_field_com_codename1_ui_SideMenuBar_transitionRunning(get_field_com_codename1_ui_SideMenuBar_9_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2054997292;
+    if (get_field_com_codename1_ui_SideMenuBar_transitionRunning(get_field_com_codename1_ui_SideMenuBar_9_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L69670055;
     __CN1_DEBUG_INFO(1348);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2054997292:
+label_L69670055:
     __CN1_DEBUG_INFO(1350);
     virtual_com_codename1_ui_SideMenuBar_closeMenu__(threadStateData, get_field_com_codename1_ui_SideMenuBar_9_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1351);

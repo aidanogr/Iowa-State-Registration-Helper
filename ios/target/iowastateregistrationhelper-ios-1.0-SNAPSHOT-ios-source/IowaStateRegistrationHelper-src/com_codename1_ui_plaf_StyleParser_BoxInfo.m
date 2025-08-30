@@ -42,13 +42,13 @@ JAVA_VOID com_codename1_ui_plaf_StyleParser_BoxInfo___INIT_____com_codename1_ui_
     __CN1_DEBUG_INFO(894);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(895);
-    if (CN1_ARRAY_LENGTH(locals[1].data.o)==4/* ICONST_4 */) /* IF_ICMPEQ CustomJump */ goto label_L1609501721;
+    if (CN1_ARRAY_LENGTH(locals[1].data.o)==4/* ICONST_4 */) /* IF_ICMPEQ CustomJump */ goto label_L767794003;
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6758));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1609501721:
+label_L767794003:
     __CN1_DEBUG_INFO(896);
     set_field_com_codename1_ui_plaf_StyleParser_BoxInfo_values(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(897);

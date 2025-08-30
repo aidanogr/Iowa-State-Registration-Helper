@@ -157,8 +157,6 @@ JAVA_OBJECT virtual_java_util_LinkedList_remove___int_R_java_lang_Object(CODENAM
 
 JAVA_BOOLEAN virtual_java_util_LinkedList_offer___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
-JAVA_OBJECT virtual_java_util_LinkedList_poll___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
-
 JAVA_OBJECT virtual_java_util_LinkedList_peek___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_OBJECT virtual_java_util_LinkedList_element___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);

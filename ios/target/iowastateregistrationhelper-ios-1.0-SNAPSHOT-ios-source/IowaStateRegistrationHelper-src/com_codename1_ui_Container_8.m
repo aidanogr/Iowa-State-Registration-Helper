@@ -67,15 +67,15 @@ JAVA_INT com_codename1_ui_Container_8_compare___com_codename1_ui_Component_com_c
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(1937);
-    if (ilocals_3_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L352378889;
+    if (ilocals_3_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1647402786;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L352378889:
+label_L1647402786:
     __CN1_DEBUG_INFO(1938);
-    if (ilocals_3_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L533956291;
+    if (ilocals_3_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L1850646717;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L533956291:
+label_L1850646717:
     __CN1_DEBUG_INFO(1940);
 
 {

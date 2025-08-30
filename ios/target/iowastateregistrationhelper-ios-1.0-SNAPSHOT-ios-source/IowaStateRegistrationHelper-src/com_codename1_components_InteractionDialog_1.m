@@ -85,7 +85,7 @@ JAVA_VOID com_codename1_components_InteractionDialog_1___INIT_____com_codename1_
 JAVA_VOID com_codename1_components_InteractionDialog_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7167, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(506);
-    if (virtual_com_codename1_ui_Container_getParent___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_components_InteractionDialog_1_val_p(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1892828550;
+    if (virtual_com_codename1_ui_Container_getParent___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_components_InteractionDialog_1_val_p(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1539226083;
     __CN1_DEBUG_INFO(507);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_components_InteractionDialog_access$000___com_codename1_components_InteractionDialog_com_codename1_ui_Form_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_components_InteractionDialog_1_this_0(__cn1ThisObject), get_field_com_codename1_components_InteractionDialog_1_val_f(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(508);
     virtual_com_codename1_components_InteractionDialog_remove__(threadStateData, get_field_com_codename1_components_InteractionDialog_1_this_0(__cn1ThisObject)); 
@@ -98,13 +98,13 @@ JAVA_VOID com_codename1_components_InteractionDialog_1_run__(CODENAME_ONE_THREAD
     __CN1_DEBUG_INFO(512);
     /* CustomInvoke */com_codename1_components_InteractionDialog_access$100___com_codename1_components_InteractionDialog_com_codename1_ui_Form(threadStateData, get_field_com_codename1_components_InteractionDialog_1_this_0(__cn1ThisObject), get_field_com_codename1_components_InteractionDialog_1_val_f(__cn1ThisObject)); 
 
-label_L1892828550:
+label_L1539226083:
     __CN1_DEBUG_INFO(514);
-    if (get_field_com_codename1_components_InteractionDialog_1_val_onFinish(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1491724370;
+    if (get_field_com_codename1_components_InteractionDialog_1_val_onFinish(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1164700555;
     __CN1_DEBUG_INFO(515);
     virtual_java_lang_Runnable_run__(threadStateData, get_field_com_codename1_components_InteractionDialog_1_val_onFinish(__cn1ThisObject)); 
 
-label_L1491724370:
+label_L1164700555:
     __CN1_DEBUG_INFO(517);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

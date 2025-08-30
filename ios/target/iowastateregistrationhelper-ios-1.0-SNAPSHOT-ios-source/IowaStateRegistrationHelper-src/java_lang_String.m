@@ -479,19 +479,19 @@ label_L624795507:
 
 JAVA_OBJECT java_lang_String_getBytes___R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 868, 880);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL445763935cn1_class_id_java_io_UnsupportedEncodingException1;
-    int tryBlockOffsetL445763935cn1_class_id_java_io_UnsupportedEncodingException1;
-    DEFINE_CATCH_BLOCK(catch_L445763935cn1_class_id_java_io_UnsupportedEncodingException1, label_L1104422581, restoreToL445763935cn1_class_id_java_io_UnsupportedEncodingException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL92551864cn1_class_id_java_io_UnsupportedEncodingException1;
+    int tryBlockOffsetL92551864cn1_class_id_java_io_UnsupportedEncodingException1;
+    DEFINE_CATCH_BLOCK(catch_L92551864cn1_class_id_java_io_UnsupportedEncodingException1, label_L1104422581, restoreToL92551864cn1_class_id_java_io_UnsupportedEncodingException1);
 
-label_L445763935:
- tryBlockOffsetL445763935cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L445763935cn1_class_id_java_io_UnsupportedEncodingException1);
-    restoreToL445763935cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
+label_L92551864:
+ tryBlockOffsetL92551864cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L92551864cn1_class_id_java_io_UnsupportedEncodingException1);
+    restoreToL92551864cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(130));
     PUSH_OBJ(tmpResult); }
 
-label_L1368212791:
+label_L66484686:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
