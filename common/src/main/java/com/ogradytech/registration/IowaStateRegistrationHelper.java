@@ -45,7 +45,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     @Override
     public void runApp() {
     	showPreface();
-    	pollInputForm();	// calls "formSubmitted()" once complete. 
+    	awaitFormSubmission();	 
    }
     
 
@@ -57,12 +57,10 @@ public class IowaStateRegistrationHelper extends Lifecycle {
         		+ " If a class has a discussion section, make sure to click checkbox next to class. Course sections waitlisted or closed are not included"
         		+ "in generated schedules");
 
-        
         preface.show();
-        
     }
 
-    public static void pollInputForm() {
+    public static void awaitFormSubmission() {
     	inputForm = new Form("Class Input", BoxLayout.y());
 
         TableLayout classInputContainerLayout = new TableLayout(maxNumberOfClasses + 1, 2); // +1 for labels
@@ -86,7 +84,6 @@ public class IowaStateRegistrationHelper extends Lifecycle {
         TextField[] classInputs = new TextField[maxNumberOfClasses];
         CheckBox[] classContainsDiscussionBoxes = new CheckBox[maxNumberOfClasses];
         for(int i = 0; i < maxNumberOfClasses; i++) {
-
         	TextField classInput = new TextField("");
         	classInput.setMaxSize(15);
         	classInputs[i] = classInput;
