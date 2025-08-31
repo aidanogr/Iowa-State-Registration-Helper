@@ -1,16 +1,13 @@
 package com.ogradytech.registration.gui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import com.codename1.ui.Button;
-import com.codename1.ui.Component;
 import com.codename1.ui.Container;
+import com.codename1.ui.Image;
 import com.codename1.ui.Label;
-import com.codename1.ui.List;
-import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.LayeredLayout;
-import com.codename1.ui.layouts.Layout;
-import com.codename1.ui.table.TableLayout;
 import com.ogradytech.registration.Utilities.GUIUtilities;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 
@@ -21,6 +18,7 @@ public class CalendarContainer  {
 	private Container timeContainer;
 	private Container dayOfWeekContainer;
 	public Container calendarItemContainer; //TODO i dont think this needs to be public anymore
+	protected DropdownContainer dropdownContainer;
 
 	private LayeredLayout parentContainerLayout;
 	private LayeredLayout timeLayout;
@@ -40,8 +38,10 @@ public class CalendarContainer  {
 
 	
 	
-	public CalendarContainer(ArrayList<CalendarItem> courseSections) {
+	public CalendarContainer(ArrayList<CalendarItem> courseSections) throws IOException {
 		this.courseSections = courseSections;
+		
+		initializeDropdownContainer(); //handles its children's insets, etc
 
 		dayOfWeekLabels = new Label[5];
 		dayOfWeekLabels[0] = new Label("M");
@@ -50,7 +50,7 @@ public class CalendarContainer  {
 		dayOfWeekLabels[3] = new Label("R");
 		dayOfWeekLabels[4] = new Label("F");
 		
-		initializeTimeLabels();
+		initializeTimeLabels();	
 		
 		
 		//================ INITIALIZE CONTAINERS ================//
@@ -96,8 +96,10 @@ public class CalendarContainer  {
 			l.setUIID("WeekdayLabel");
 		}
 
+		calendarItemContainer.add(dropdownContainer);
 
-		//====================== SET INSETS =====================//
+
+		//=============== SET CONTAINER INSETS ==============//
 		parentContainerLayout.setInsets(calendarItemContainer, DAY_ROW_HEIGHT_MM + "mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
 
 		parentContainerLayout.setInsets(dayOfWeekContainer, "0mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
@@ -105,19 +107,64 @@ public class CalendarContainer  {
 
 		parentContainerLayout.setInsets(timeContainer, DAY_ROW_HEIGHT_MM + "mm 0mm 0mm 0mm");
 		parentContainerLayout.setReferenceComponentRight(timeContainer, calendarItemContainer, 1f);
-
+		
 		for(CalendarItem courseSection : this.courseSections) {
 			setButtonInsets(courseSection);
 		}
+		
 		setDayOfWeekLabelsInsets();
 		setTimeLabelsInsets();
 
 
-		//====================== REVALIDATE ====================//
+		//==================== REVALIDATE ==================//
 		parentContainer.revalidate();
 		calendarItemContainer.revalidate();
 		dayOfWeekContainer.revalidate();
 		
+	}
+
+	private void initializeDropdownContainer() throws IOException {
+		this.dropdownContainer = new DropdownContainer();
+		dropdownContainer.setUIID("DropdownContainer");
+		dropdownContainer.getAllStyles().setBgColor(0xFFFFFF);
+		dropdownContainer.getAllStyles().setBgTransparency(255);
+		LayeredLayout dropdownLayout = new LayeredLayout();
+		dropdownContainer.setLayout(dropdownLayout);
+
+		Button exitButton = new Button();
+		exitButton.setIcon(Image.createImage("/x.png").scaledWidth(100));
+		exitButton.setUIID("ExitButton");
+		dropdownContainer.add(exitButton);
+		dropdownLayout.setInsets(exitButton, "0 auto auto auto");
+		exitButton.addActionListener(evt -> {
+			exitButton.getParent().setVisible(false);
+			exitButton.getParent().setEnabled(false);
+			dayOfWeekContainer.revalidate();
+		});
+
+		Button lockButton = new Button();
+		dropdownContainer.lockButtonReference = lockButton;
+		dropdownContainer.lockButtonIcon = Image.createImage("/lock.png").scaledWidth(100);
+		dropdownContainer.unlockedButtonIcon = Image.createImage("/unlock.png").scaledWidth(100);
+		lockButton.setIcon(dropdownContainer.lockButtonIcon);
+		lockButton.setUIID("LockButton");
+		dropdownContainer.add(lockButton);
+		dropdownLayout.setInsets(lockButton, "0 auto auto auto");
+		dropdownLayout.setReferenceComponentTop(lockButton, exitButton, 1f);
+		lockButton.addActionListener(evt -> {
+			if(!dropdownContainer.selectedCourseSection.isLocked()) {
+				dropdownContainer.selectedCourseSection.lock();
+				lockButton.setIcon(dropdownContainer.lockButtonIcon);			
+			}
+			else {
+				dropdownContainer.selectedCourseSection.unlock();
+				lockButton.setIcon(dropdownContainer.unlockedButtonIcon);
+			}
+
+		});
+		
+		dropdownContainer.setVisible(false);
+		dropdownContainer.setEnabled(false);
 	}
 
 	private void setTimeLabelsInsets() {
@@ -126,13 +173,14 @@ public class CalendarContainer  {
 		}
 	}
 
+	//TODO handle insets in this function
 	private void initializeTimeLabels() {
 		timeLabels = new Label[MAX_NUMBER_OF_HOURS];
 		int timeIterator = HOURS_OFFSET;
 		for(int i = 0; i < MAX_NUMBER_OF_HOURS; i++) {
 			timeLabels[i] = new Label(String.valueOf(timeIterator));
 			timeIterator++;
-			if(timeIterator == 13) timeIterator = 0;
+			if(timeIterator == 13) timeIterator = 1;
 		}
 
 	}
@@ -150,8 +198,23 @@ public class CalendarContainer  {
 			int daysOfTheWeekIterator = 0;
 
 			for(Button button : courseSection.buttons) {
-
 				if(!calendarItemContainer.contains(button)) calendarItemContainer.add(button);
+
+				button.addActionListener(evt -> {
+					dropdownContainer.remove();
+					calendarItemContainer.add(dropdownContainer);
+					
+					calendarItemContainerLayout.setInsets(dropdownContainer, "0mm 0mm auto 0mm");
+					calendarItemContainerLayout.setReferenceComponentTop(dropdownContainer, button, 1f);
+					calendarItemContainerLayout.setReferenceComponentRight(dropdownContainer, button, 0f);
+					calendarItemContainerLayout.setReferenceComponentLeft(dropdownContainer, button, 0f);
+					dropdownContainer.selectedCourseSection = courseSection;
+					if(courseSection.isLocked()) dropdownContainer.lockButtonReference.setIcon(dropdownContainer.lockButtonIcon); 
+					else dropdownContainer.lockButtonReference.setIcon(dropdownContainer.unlockedButtonIcon);
+					dropdownContainer.setEnabled(true);
+					dropdownContainer.setVisible(true);
+					dayOfWeekContainer.revalidate();
+				}); 
 
 				double[] horizontalInsets = GUIUtilities.getHorizontalInsetPercentages(
 						daysOfTheWeek.charAt(daysOfTheWeekIterator)

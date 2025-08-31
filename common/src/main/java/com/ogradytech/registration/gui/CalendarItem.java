@@ -6,8 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 import com.codename1.ui.Button;
+import com.codename1.ui.Container;
 import com.codename1.ui.Font;
 import com.codename1.ui.TextArea;
+import com.codename1.ui.layouts.LayeredLayout;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 
@@ -56,9 +58,7 @@ public class CalendarItem {
 				button.setUIID("ClassButton");
 				button.getAllStyles().setBgColor(color);
 				button.getAllStyles().setBgTransparency(255);
-				button.addActionListener(evt -> {
-					isLocked = !isLocked;
-				});
+				
 				this.buttons.add(button);
 			}
 		}
@@ -68,6 +68,7 @@ public class CalendarItem {
 		currentSectionIndex++;
 	}
 	
+
 	public MeetingInfo getCurrentSectionMeetingInfo() {
 		return sectionMeetingInfo.get(currentSection);
 	}
@@ -158,11 +159,19 @@ public class CalendarItem {
 	    return (n < 10 ? "0" : "") + n;
 	}
 
+	public void lock() {
+		isLocked = true;
+	}
+	
+	public void unlock() {
+		isLocked = false;
+	}
+
 	/**
-	 * Clicking button toggles lock on course section. If isLocked, 
+	 * Clicking button toggles lock on course section. If isLocked, //TODO change this description it bad
 	 * section will not change on CalendarContainer.nextSections();. 
 	 * It is worth noting that this DOES NOT AFFECT CalendarItem.nextSection().
-	 * It will shift regardless of isLocked; This may be a bad design philosophy
+	 * It will shift regardless of isLocked; This may be a bad design philosophy (It was, i changed it)
 	 * @return isLocked
 	 */
 	public boolean isLocked() {
@@ -174,6 +183,7 @@ public class CalendarItem {
 	 * of currentMeetingInfo is changed
 	 */
 	public CalendarItem nextSection() {
+		if(isLocked) { return this; }
 		if(currentSectionIndex >= sections.size()) {
 			currentSectionIndex = 0;
 		}

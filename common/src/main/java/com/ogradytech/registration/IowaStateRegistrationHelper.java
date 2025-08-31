@@ -20,6 +20,7 @@ import com.ogradytech.registration.gui.CalendarItem;
 import com.ogradytech.registration.gui.InstructionalDialog;
 import com.ogradytech.registration.gui.*;
 
+//TODO handle arranged classes
 
 /**
  * 
@@ -40,6 +41,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 	public static ArrayList<CalendarItem> calendarCourseInformation = new ArrayList<>(10);
 	public static int networkRequestCompletionCounter = 0;	//this is to poll for API request completion (so program knows we can move on to generating schedule)
 	public static int totalNumberOfValidClasses = 0;
+
     @Override
     public void runApp() {
     	showPreface();
@@ -228,7 +230,11 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 			if(evt.getProgressType() == NetworkEvent.PROGRESS_TYPE_COMPLETED) {
 				networkRequestCompletionCounter++;
 				if(networkRequestCompletionCounter == totalNumberOfValidClasses) {
-					createCalendarView();
+					try {
+						createCalendarView();
+					} catch (IOException e) {
+						// TODO handle this
+					}
 				}
 			}
 
@@ -253,7 +259,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     }
 
 
-    private static void createCalendarView() {
+    private static void createCalendarView() throws IOException {
 		Form calendarView = new Form("Calendar View", new BorderLayout());
 		CalendarContainer cc = new CalendarContainer(calendarCourseInformation);
 		calendarView.add(BorderLayout.CENTER, cc.parentContainer);

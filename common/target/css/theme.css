@@ -33,6 +33,9 @@ Button {
 	height: 5mm;
 }
 
+LockButton {
+	width: 20%;
+}
 
 /** Style for App Title Bar Text */
 Title {
