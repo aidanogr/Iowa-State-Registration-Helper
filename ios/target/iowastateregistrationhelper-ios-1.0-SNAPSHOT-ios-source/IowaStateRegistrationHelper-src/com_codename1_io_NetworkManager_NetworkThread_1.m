@@ -62,11 +62,11 @@ JAVA_VOID com_codename1_io_NetworkManager_NetworkThread_1_run__(CODENAME_ONE_THR
     DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 3234, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(350);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_io_ConnectionRequest_getDisposeOnCompletion___R_com_codename1_ui_Dialog(threadStateData, get_field_com_codename1_io_NetworkManager_NetworkThread_1_val_finalReq(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(351);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1231029475;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1799201343;
     __CN1_DEBUG_INFO(352);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, locals[1].data.o); 
 
-label_L1231029475:
+label_L1799201343:
     __CN1_DEBUG_INFO(354);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

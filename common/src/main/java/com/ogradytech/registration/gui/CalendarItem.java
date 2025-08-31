@@ -19,7 +19,9 @@ public class CalendarItem {
 	private static int currentColorIndex = 0;
 
 	private String courseName;
+	private String instructor;
 	private InstructionFormat format;
+
 	private Map<String, MeetingInfo> sectionMeetingInfo;
 	private List<String> sections; //TODO change this structure
 	private int currentSectionIndex;
@@ -193,4 +195,27 @@ public class CalendarItem {
 		
 		return this;
 	}
+	public InstructionFormat getFormat() {
+		return format;
+	}
+
+
+
+	public void setFormat(InstructionFormat format) {
+		this.format = format;
+	}
+
+
+
+	public String getCurrentSection() {
+		return currentSection;
+	}
+
+
+
+	public void setCurrentSection(String currentSection) {
+		this.currentSection = currentSection;
+	}
+
+
 }

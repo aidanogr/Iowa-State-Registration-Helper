@@ -93,14 +93,14 @@ JAVA_BOOLEAN com_codename1_impl_ios_TextEditUtil_isLastEditComponent___R_boolean
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
     DEFINE_METHOD_STACK(1, 0, 0, 9744, 9747);
     __CN1_DEBUG_INFO(66);
-    if (com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L708926121;
+    if (com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1604616170;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1406004470;
+    goto label_L596779307;
 
-label_L708926121:
+label_L1604616170:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1406004470:
+label_L596779307:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

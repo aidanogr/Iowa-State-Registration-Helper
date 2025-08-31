@@ -44,7 +44,7 @@ com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___INIT____(thr
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10376, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10369, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -52,17 +52,17 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___IN
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10376, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10369, 3055);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper_lambda$3___com_codename1_io_NetworkEvent(threadStateData, locals[1].data.o); 
+    /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper_lambda$requestCourseInfo$3___com_codename1_io_NetworkEvent(threadStateData, locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 10376, 861);
+    DEFINE_METHOD_STACK(2, 0, 0, 10369, 861);
     PUSH_POINTER(__NEW_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -75,7 +75,7 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4___CL
 
 JAVA_OBJECT com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4_lambdaFactory$___R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 10376, 10373);
+    DEFINE_METHOD_STACK(1, 0, 0, 10369, 10366);
     PUSH_POINTER(get_static_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_4_instance(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();

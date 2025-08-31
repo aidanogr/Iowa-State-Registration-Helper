@@ -162,11 +162,11 @@ JAVA_VOID com_codename1_ui_Container_MorphAnimation___INIT_____com_codename1_ui_
     __CN1_DEBUG_INFO(4300);
     set_field_com_codename1_ui_Container_MorphAnimation_duration(threadStateData, ilocals_2_, __cn1ThisObject);
     __CN1_DEBUG_INFO(4301);
-    if (com_codename1_ui_animations_Motion_isSlowMotion___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L987263357;
+    if (com_codename1_ui_animations_Motion_isSlowMotion___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L304494063;
     __CN1_DEBUG_INFO(4302);
     set_field_com_codename1_ui_Container_MorphAnimation_duration(threadStateData, (get_field_com_codename1_ui_Container_MorphAnimation_duration(__cn1ThisObject) * 50), __cn1ThisObject);
 
-label_L987263357:
+label_L304494063:
     __CN1_DEBUG_INFO(4304);
     set_field_com_codename1_ui_Container_MorphAnimation_thisContainer(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(4305);
@@ -180,14 +180,14 @@ label_L987263357:
 JAVA_BOOLEAN com_codename1_ui_Container_MorphAnimation_isInProgress___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7229, 2799);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4310);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_finished(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1116987494;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_finished(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L717560284;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L219387406;
+    goto label_L1028908791;
 
-label_L1116987494:
+label_L717560284:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L219387406:
+label_L1028908791:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -203,33 +203,33 @@ JAVA_VOID com_codename1_ui_Container_MorphAnimation_flush__(CODENAME_ONE_THREAD_
 locals[1].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_2_ = CN1_ARRAY_LENGTH(locals[1].data.o);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L717560284:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L670299410;
+label_L640294829:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L501530336;
     /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;locals[4].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_);
 locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4316);
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;    locals[5].data.o = locals[4].data.o;
 locals[5].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_6_ = CN1_ARRAY_LENGTH(locals[5].data.o);
     /* VarOp.assignFrom */     ilocals_7_ = 0 /* ICONST_0 */; 
 
-label_L304494063:
-    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1582906120;
+label_L503427379:
+    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1053719038;
     /* VarOp.assignFrom */ locals[8].type=CN1_TYPE_INVALID;locals[8].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[5].data.o, ilocals_7_);
 locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4317);
-    if (locals[8].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L60055669;
+    if (locals[8].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1019714562;
     __CN1_DEBUG_INFO(4318);
     virtual_com_codename1_ui_animations_Motion_finish__(threadStateData, locals[8].data.o); 
 
-label_L60055669:
+label_L1019714562:
     __CN1_DEBUG_INFO(4316);
     BC_IINC(7, 1);
-    goto label_L304494063;
+    goto label_L503427379;
 
-label_L1582906120:
+label_L1053719038:
     __CN1_DEBUG_INFO(4315);
     BC_IINC(3, 1);
-    goto label_L717560284;
+    goto label_L640294829;
 
-label_L670299410:
+label_L501530336:
     __CN1_DEBUG_INFO(4322);
     virtual_com_codename1_ui_Container_MorphAnimation_updateState__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4323);
@@ -243,14 +243,14 @@ JAVA_VOID com_codename1_ui_Container_MorphAnimation_updateState__(CODENAME_ONE_T
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 7229, 2800);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4327);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_animatedComponents(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1028908791;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_animatedComponents(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1810273055;
     __CN1_DEBUG_INFO(4328);
     /* VarOp.assignFrom */ ilocals_1_ = virtual_java_util_Vector_size___R_int(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_animatedComponents(__cn1ThisObject));
     __CN1_DEBUG_INFO(4329);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
-label_L1019714562:
-    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L501530336;
+label_L242951774:
+    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1799431661;
     __CN1_DEBUG_INFO(4330);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_Vector_elementAt___int_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_animatedComponents(__cn1ThisObject), ilocals_2_);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4332);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setX___int(threadStateData, locals[3].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject), 0 /* ICONST_0 */), ilocals_2_))); 
@@ -261,42 +261,42 @@ label_L1019714562:
     __CN1_DEBUG_INFO(4335);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setHeight___int(threadStateData, locals[3].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject), 3 /* ICONST_3 */), ilocals_2_))); 
     __CN1_DEBUG_INFO(4336);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1053719038;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2027587999;
     __CN1_DEBUG_INFO(4337);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[3].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setOpacity___int_boolean(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject), ilocals_2_)), 0 /* ICONST_0 */);     SP -= 1;
 
-label_L1053719038:
+label_L2027587999:
     __CN1_DEBUG_INFO(4329);
     BC_IINC(2, 1);
-    goto label_L1019714562;
+    goto label_L242951774;
 
-label_L501530336:
+label_L1799431661:
     __CN1_DEBUG_INFO(4340);
-    goto label_L503427379;
+    goto label_L1373254373;
 
-label_L1028908791:
+label_L1810273055:
     __CN1_DEBUG_INFO(4341);
     /* VarOp.assignFrom */ ilocals_1_ = virtual_com_codename1_ui_Container_getComponentCount___R_int(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject));
     __CN1_DEBUG_INFO(4342);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L640294829;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L869665662;
     __CN1_DEBUG_INFO(4343);
     /* VarOp.assignFrom */ ilocals_1_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject), 0 /* ICONST_0 */)), ilocals_1_);
 
-label_L640294829:
+label_L869665662:
     __CN1_DEBUG_INFO(4345);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
-label_L2027587999:
-    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L503427379;
+label_L1212098670:
+    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1373254373;
     __CN1_DEBUG_INFO(4346);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_com_codename1_ui_Container_getComponentAt___int_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject), ilocals_2_);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4349);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1810273055;
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L535624426;
     __CN1_DEBUG_INFO(4350);
-    goto label_L1799431661;
+    goto label_L1215456927;
 
-label_L1810273055:
+label_L535624426:
     __CN1_DEBUG_INFO(4352);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setX___int(threadStateData, locals[3].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject), 0 /* ICONST_0 */), ilocals_2_))); 
     __CN1_DEBUG_INFO(4353);
@@ -306,20 +306,20 @@ label_L1810273055:
     __CN1_DEBUG_INFO(4355);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setHeight___int(threadStateData, locals[3].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_motions(__cn1ThisObject), 3 /* ICONST_3 */), ilocals_2_))); 
     __CN1_DEBUG_INFO(4356);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1799431661;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1215456927;
     __CN1_DEBUG_INFO(4357);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[3].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setOpacity___int_boolean(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Container_MorphAnimation_opacity(__cn1ThisObject), ilocals_2_)), 0 /* ICONST_0 */);     SP -= 1;
 
-label_L1799431661:
+label_L1215456927:
     __CN1_DEBUG_INFO(4345);
     BC_IINC(2, 1);
-    goto label_L2027587999;
+    goto label_L1212098670;
 
-label_L503427379:
+label_L1373254373:
     __CN1_DEBUG_INFO(4361);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_scrollTo(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L242951774;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_scrollTo(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1269909484;
     __CN1_DEBUG_INFO(4362);
     /* VarOp.assignFrom */ ilocals_1_ = virtual_com_codename1_ui_Container_isSmoothScrolling___R_boolean(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject));
     __CN1_DEBUG_INFO(4363);
@@ -329,7 +329,7 @@ label_L503427379:
     __CN1_DEBUG_INFO(4365);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setSmoothScrolling___boolean(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject), ilocals_1_); 
 
-label_L242951774:
+label_L1269909484:
     __CN1_DEBUG_INFO(4367);
     virtual_com_codename1_ui_Container_repaint__(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4368);
@@ -339,7 +339,7 @@ label_L242951774:
     PUSH_INT(get_field_com_codename1_ui_Container_MorphAnimation_duration(__cn1ThisObject));
     SP[-1].data.l = SP[-1].data.i; /* I2L */
     BC_LCMP();
-    if(POP_INT() < 0) /* IFLT */ goto label_L1373254373;
+    if(POP_INT() < 0) /* IFLT */ goto label_L871550938;
     __CN1_DEBUG_INFO(4369);
     set_static_com_codename1_ui_Container_enableLayoutOnPaint(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(4370);
@@ -348,18 +348,18 @@ label_L242951774:
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Container_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_Container_MorphAnimation_thisContainer(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4372);
     set_field_com_codename1_ui_Container_MorphAnimation_finished(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(4373);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L869665662;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1760493989;
     __CN1_DEBUG_INFO(4374);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L869665662:
+label_L1760493989:
     __CN1_DEBUG_INFO(4376);
-    if (get_field_com_codename1_ui_Container_MorphAnimation_dontRevalidate(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1373254373;
+    if (get_field_com_codename1_ui_Container_MorphAnimation_dontRevalidate(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L871550938;
     __CN1_DEBUG_INFO(4377);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, locals[1].data.o); 
 
-label_L1373254373:
+label_L871550938:
     __CN1_DEBUG_INFO(4380);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

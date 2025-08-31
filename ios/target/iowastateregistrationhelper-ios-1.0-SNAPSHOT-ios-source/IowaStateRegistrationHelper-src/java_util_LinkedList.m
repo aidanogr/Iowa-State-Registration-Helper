@@ -959,6 +959,15 @@ JAVA_OBJECT java_util_LinkedList_clone___R_java_lang_Object(CODENAME_ONE_THREAD_
 }
 
 
+typedef JAVA_OBJECT (*functionPtr_java_util_LinkedList_iterator___R_java_util_Iterator)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_java_util_LinkedList_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_java_util_LinkedList_iterator___R_java_util_Iterator)__cn1ThisObject->__codenameOneParentClsReference->vtable[10])(threadStateData, __cn1ThisObject);
+}
+
+
 typedef JAVA_BOOLEAN (*functionPtr_java_util_LinkedList_add___java_lang_Object_R_boolean)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
 JAVA_BOOLEAN virtual_java_util_LinkedList_add___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {

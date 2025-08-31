@@ -44,7 +44,7 @@ com_ogradytech_registration_Utilities_FunctionQueue___INIT____(threadStateData, 
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_FunctionQueue___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10441, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10479, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(7);
@@ -54,14 +54,13 @@ JAVA_VOID com_ogradytech_registration_Utilities_FunctionQueue___INIT____(CODENAM
     java_util_LinkedList___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_ogradytech_registration_Utilities_FunctionQueue_queue(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(6);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_FunctionQueue_add___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10441, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10479, 1228);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(11);
@@ -73,36 +72,39 @@ JAVA_VOID com_ogradytech_registration_Utilities_FunctionQueue_add___java_lang_Ru
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_FunctionQueue_begin__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10441, 10442);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1994773989cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL1994773989cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L1994773989cn1_class_id_java_lang_InterruptedException1, label_L1839206329, restoreToL1994773989cn1_class_id_java_lang_InterruptedException1);
-    __CN1_DEBUG_INFO(16);
-    JUMP_TO(label_L169880779, 0);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10479, 10480);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1272803296cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL1272803296cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L1272803296cn1_class_id_java_lang_InterruptedException1, label_L1198197478, restoreToL1272803296cn1_class_id_java_lang_InterruptedException1);
 
-label_L552674617:
+label_L1419332030:
+    __CN1_DEBUG_INFO(16);
+    if (virtual_java_util_Queue_isEmpty___R_boolean(threadStateData, get_field_com_ogradytech_registration_Utilities_FunctionQueue_queue(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L476579021, 0);
     __CN1_DEBUG_INFO(17);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_Queue_poll___R_java_lang_Object(threadStateData, get_field_com_ogradytech_registration_Utilities_FunctionQueue_queue(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(18);
     virtual_java_lang_Runnable_run__(threadStateData, locals[1].data.o); 
 
-label_L1994773989:
- tryBlockOffsetL1994773989cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1994773989cn1_class_id_java_lang_InterruptedException1);
-    restoreToL1994773989cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L1272803296:
+ tryBlockOffsetL1272803296cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1272803296cn1_class_id_java_lang_InterruptedException1);
+    restoreToL1272803296cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(20);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 150LL); 
 
-label_L453446119:
-END_TRY(1);    __CN1_DEBUG_INFO(21);
-    JUMP_TO(label_L169880779, 0);
+label_L984528475:
+END_TRY(1);    __CN1_DEBUG_INFO(23);
+    JUMP_TO(label_L106297322, 0);
 
-label_L1839206329:
+label_L1198197478:
+    __CN1_DEBUG_INFO(21);
     BC_ASTORE(2);
 
-label_L169880779:
-    __CN1_DEBUG_INFO(16);
-    if (virtual_java_util_Queue_isEmpty___R_boolean(threadStateData, get_field_com_ogradytech_registration_Utilities_FunctionQueue_queue(__cn1ThisObject))==0) /* IFEQ CustomJump */ JUMP_TO(label_L552674617, 0);
+label_L106297322:
+    __CN1_DEBUG_INFO(24);
+    JUMP_TO(label_L1419332030, 0);
+
+label_L476579021:
     __CN1_DEBUG_INFO(25);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -110,7 +112,7 @@ label_L169880779:
 
 
 JAVA_INT com_ogradytech_registration_Utilities_FunctionQueue_getNumberOfPendingTasks___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10441, 10443);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10479, 10481);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(28);
 
 {

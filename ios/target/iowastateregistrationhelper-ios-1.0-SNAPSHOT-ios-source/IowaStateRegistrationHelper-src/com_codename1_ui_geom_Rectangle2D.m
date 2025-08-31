@@ -381,8 +381,8 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     dlocals_5_ = __cn1Arg3;
     dlocals_7_ = __cn1Arg4;
     __CN1_DEBUG_INFO(231);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L1350066054;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L1350066054;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L374205056;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L374205056;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject));
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Dimension2D_getWidth___R_double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     PUSH_DOUBLE(tmpResult); }
@@ -391,7 +391,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     BC_DLOAD(5);
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L1350066054;
+    if(POP_INT() < 0) /* IFLT */ goto label_L374205056;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     __CN1_DEBUG_INFO(232);
@@ -402,14 +402,14 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     BC_DLOAD(7);
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L1350066054;
+    if(POP_INT() < 0) /* IFLT */ goto label_L374205056;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2084322663;
+    goto label_L1133655596;
 
-label_L1350066054:
+label_L374205056:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2084322663:
+label_L1133655596:
     __CN1_DEBUG_INFO(231);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -435,17 +435,17 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     dlocals_12_ = __cn1Arg7;
     dlocals_14_ = __cn1Arg8;
     __CN1_DEBUG_INFO(251);
-    if (CN1_CMP_EXPR(dlocals_0_, dlocals_8_)>0) /* IFGT CustomJump */ goto label_L505777467;
-    if (CN1_CMP_EXPR(dlocals_2_, dlocals_10_)>0) /* IFGT CustomJump */ goto label_L505777467;
-    if (CN1_CMP_EXPR((dlocals_0_ + dlocals_4_), (dlocals_8_ + dlocals_12_))<0) /* IFLT CustomJump */ goto label_L505777467;
-    if (CN1_CMP_EXPR((dlocals_2_ + dlocals_6_), (dlocals_10_ + dlocals_14_))<0) /* IFLT CustomJump */ goto label_L505777467;
+    if (CN1_CMP_EXPR(dlocals_0_, dlocals_8_)>0) /* IFGT CustomJump */ goto label_L864701537;
+    if (CN1_CMP_EXPR(dlocals_2_, dlocals_10_)>0) /* IFGT CustomJump */ goto label_L864701537;
+    if (CN1_CMP_EXPR((dlocals_0_ + dlocals_4_), (dlocals_8_ + dlocals_12_))<0) /* IFLT CustomJump */ goto label_L864701537;
+    if (CN1_CMP_EXPR((dlocals_2_ + dlocals_6_), (dlocals_10_ + dlocals_14_))<0) /* IFLT CustomJump */ goto label_L864701537;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L728747169;
+    goto label_L137983327;
 
-label_L505777467:
+label_L864701537:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L728747169:
+label_L137983327:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -457,15 +457,15 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_R_boolea
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(265);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L972632613;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L972632613;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L1910085426;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L1910085426;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject));
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Dimension2D_getWidth___R_double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     PUSH_DOUBLE(tmpResult); }
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DLOAD(1);
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L972632613;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1910085426;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     __CN1_DEBUG_INFO(266);
@@ -474,14 +474,14 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_R_boolea
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DLOAD(3);
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L972632613;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1910085426;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L615774072;
+    goto label_L589884531;
 
-label_L972632613:
+label_L1910085426:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L615774072:
+label_L589884531:
     __CN1_DEBUG_INFO(265);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -534,45 +534,45 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_intersection___double_double_doubl
     /* VarOp.assignFrom */     dlocals_23_ = dlocals_15_;
     /* VarOp.assignFrom */ dlocals_23_=(dlocals_23_ + dlocals_7_);
     __CN1_DEBUG_INFO(287);
-    if (CN1_CMP_EXPR(dlocals_9_, dlocals_13_)>=0) /* IFGE CustomJump */ goto label_L374205056;
+    if (CN1_CMP_EXPR(dlocals_9_, dlocals_13_)>=0) /* IFGE CustomJump */ goto label_L1117803827;
     __CN1_DEBUG_INFO(288);
     /* VarOp.assignFrom */     dlocals_9_ = dlocals_13_;
 
-label_L374205056:
+label_L1117803827:
     __CN1_DEBUG_INFO(290);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_15_)>=0) /* IFGE CustomJump */ goto label_L1133655596;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_15_)>=0) /* IFGE CustomJump */ goto label_L24138677;
     __CN1_DEBUG_INFO(291);
     /* VarOp.assignFrom */     dlocals_11_ = dlocals_15_;
 
-label_L1133655596:
+label_L24138677:
     __CN1_DEBUG_INFO(293);
-    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)<=0) /* IFLE CustomJump */ goto label_L864701537;
+    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)<=0) /* IFLE CustomJump */ goto label_L1017980078;
     __CN1_DEBUG_INFO(294);
     /* VarOp.assignFrom */     dlocals_17_ = dlocals_21_;
 
-label_L864701537:
+label_L1017980078:
     __CN1_DEBUG_INFO(296);
-    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)<=0) /* IFLE CustomJump */ goto label_L137983327;
+    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)<=0) /* IFLE CustomJump */ goto label_L1476533308;
     __CN1_DEBUG_INFO(297);
     /* VarOp.assignFrom */     dlocals_19_ = dlocals_23_;
 
-label_L137983327:
+label_L1476533308:
     __CN1_DEBUG_INFO(299);
     /* VarOp.assignFrom */ dlocals_17_=(dlocals_17_ - dlocals_9_);
     __CN1_DEBUG_INFO(300);
     /* VarOp.assignFrom */ dlocals_19_=(dlocals_19_ - dlocals_11_);
     __CN1_DEBUG_INFO(304);
-    if (CN1_CMP_EXPR(dlocals_17_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1910085426;
+    if (CN1_CMP_EXPR(dlocals_17_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L416007106;
     __CN1_DEBUG_INFO(305);
     /* VarOp.assignFrom */     dlocals_17_ = -2.147483648E9;
 
-label_L1910085426:
+label_L416007106:
     __CN1_DEBUG_INFO(307);
-    if (CN1_CMP_EXPR(dlocals_19_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L589884531;
+    if (CN1_CMP_EXPR(dlocals_19_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L455464597;
     __CN1_DEBUG_INFO(308);
     /* VarOp.assignFrom */     dlocals_19_ = -2.147483648E9;
 
-label_L589884531:
+label_L455464597:
     __CN1_DEBUG_INFO(310);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle2D(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -634,45 +634,45 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_intersection___double_double_double_
     /* VarOp.assignFrom */     dlocals_31_ = dlocals_23_;
     /* VarOp.assignFrom */ dlocals_31_=(dlocals_31_ + dlocals_6_);
     __CN1_DEBUG_INFO(337);
-    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)>=0) /* IFGE CustomJump */ goto label_L1117803827;
+    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)>=0) /* IFGE CustomJump */ goto label_L1324878091;
     __CN1_DEBUG_INFO(338);
     /* VarOp.assignFrom */     dlocals_17_ = dlocals_21_;
 
-label_L1117803827:
+label_L1324878091:
     __CN1_DEBUG_INFO(340);
-    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)>=0) /* IFGE CustomJump */ goto label_L24138677;
+    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)>=0) /* IFGE CustomJump */ goto label_L114499348;
     __CN1_DEBUG_INFO(341);
     /* VarOp.assignFrom */     dlocals_19_ = dlocals_23_;
 
-label_L24138677:
+label_L114499348:
     __CN1_DEBUG_INFO(343);
-    if (CN1_CMP_EXPR(dlocals_25_, dlocals_29_)<=0) /* IFLE CustomJump */ goto label_L1017980078;
+    if (CN1_CMP_EXPR(dlocals_25_, dlocals_29_)<=0) /* IFLE CustomJump */ goto label_L1077938655;
     __CN1_DEBUG_INFO(344);
     /* VarOp.assignFrom */     dlocals_25_ = dlocals_29_;
 
-label_L1017980078:
+label_L1077938655:
     __CN1_DEBUG_INFO(346);
-    if (CN1_CMP_EXPR(dlocals_27_, dlocals_31_)<=0) /* IFLE CustomJump */ goto label_L1476533308;
+    if (CN1_CMP_EXPR(dlocals_27_, dlocals_31_)<=0) /* IFLE CustomJump */ goto label_L1977941564;
     __CN1_DEBUG_INFO(347);
     /* VarOp.assignFrom */     dlocals_27_ = dlocals_31_;
 
-label_L1476533308:
+label_L1977941564:
     __CN1_DEBUG_INFO(349);
     /* VarOp.assignFrom */ dlocals_25_=(dlocals_25_ - dlocals_17_);
     __CN1_DEBUG_INFO(350);
     /* VarOp.assignFrom */ dlocals_27_=(dlocals_27_ - dlocals_19_);
     __CN1_DEBUG_INFO(355);
-    if (CN1_CMP_EXPR(dlocals_25_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L416007106;
+    if (CN1_CMP_EXPR(dlocals_25_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L2077884890;
     __CN1_DEBUG_INFO(356);
     /* VarOp.assignFrom */     dlocals_25_ = -2.147483648E9;
 
-label_L416007106:
+label_L2077884890:
     __CN1_DEBUG_INFO(358);
-    if (CN1_CMP_EXPR(dlocals_27_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L455464597;
+    if (CN1_CMP_EXPR(dlocals_27_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1710201354;
     __CN1_DEBUG_INFO(359);
     /* VarOp.assignFrom */     dlocals_27_ = -2.147483648E9;
 
-label_L455464597:
+label_L1710201354:
     __CN1_DEBUG_INFO(362);
     set_field_com_codename1_ui_geom_Rectangle2D_x(threadStateData, dlocals_17_, locals[16].data.o);
     __CN1_DEBUG_INFO(363);
@@ -719,7 +719,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___com_codename1_ui
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(448);
-    if (get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1553563112;
+    if (get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L148377842;
     __CN1_DEBUG_INFO(449);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_GeneralPath(threadStateData)); /* NEW */
@@ -759,7 +759,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___com_codename1_ui
     __CN1_DEBUG_INFO(454);
     virtual_com_codename1_ui_geom_GeneralPath_closePath__(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)); 
 
-label_L1553563112:
+label_L148377842:
     __CN1_DEBUG_INFO(457);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_geom_GeneralPath_getPathIterator___com_codename1_ui_Transform_R_com_codename1_ui_geom_PathIterator(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject), locals[1].data.o);
     PUSH_OBJ(tmpResult); }

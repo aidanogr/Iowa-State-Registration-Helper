@@ -109,56 +109,8 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BoxShadow___INIT_____com_codename1_ui_
 JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_spreadPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5815);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(568);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_spread(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1838584624;
+    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_spread(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2015215172;
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_spread(__cn1ThisObject));
-    PUSH_INT(tmpResult); }
-    goto label_L1214368937;
-
-label_L1838584624:
-    PUSH_INT(0); /* ICONST_0 */
-
-label_L1214368937:
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
-}
-
-
-JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_blurPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5816);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(572);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_blurRadius(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1821330375;
-    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_blurRadius(__cn1ThisObject));
-    PUSH_INT(tmpResult); }
-    goto label_L1900971551;
-
-label_L1821330375:
-    PUSH_INT(0); /* ICONST_0 */
-
-label_L1900971551:
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
-}
-
-
-JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffsetPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5817);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(576);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffset(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L681088021;
-    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffset(__cn1ThisObject));
-    PUSH_INT(tmpResult); }
-    goto label_L1859780907;
-
-label_L681088021:
-    PUSH_INT(0); /* ICONST_0 */
-
-label_L1859780907:
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
-}
-
-
-JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffsetPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5818);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(580);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffset(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2015215172;
-    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffset(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     goto label_L2103877926;
 
@@ -166,6 +118,54 @@ label_L2015215172:
     PUSH_INT(0); /* ICONST_0 */
 
 label_L2103877926:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
+}
+
+
+JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_blurPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5816);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(572);
+    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_blurRadius(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L288537251;
+    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_blurRadius(__cn1ThisObject));
+    PUSH_INT(tmpResult); }
+    goto label_L803152631;
+
+label_L288537251:
+    PUSH_INT(0); /* ICONST_0 */
+
+label_L803152631:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
+}
+
+
+JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffsetPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5817);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(576);
+    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffset(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L975521494;
+    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_vOffset(__cn1ThisObject));
+    PUSH_INT(tmpResult); }
+    goto label_L1921167141;
+
+label_L975521494:
+    PUSH_INT(0); /* ICONST_0 */
+
+label_L1921167141:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
+}
+
+
+JAVA_INT com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffsetPx___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5814, 5818);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(580);
+    if (get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffset(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1986126964;
+    { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ScalarUnit_px___R_int(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_hOffset(__cn1ThisObject));
+    PUSH_INT(tmpResult); }
+    goto label_L553629909;
+
+label_L1986126964:
+    PUSH_INT(0); /* ICONST_0 */
+
+label_L553629909:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -181,12 +181,12 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BoxShadow_paint___com_codename1_ui_Gra
     locals[2].type = CN1_TYPE_OBJECT;
     locals[3].data.o = __cn1Arg3;
     locals[3].type = CN1_TYPE_OBJECT;
-    int restoreToL87880074301;
-    int tryBlockOffsetL87880074301;
-    DEFINE_CATCH_BLOCK(catch_L87880074301, label_L288537251, restoreToL87880074301);
-    int restoreToL28853725102;
-    int tryBlockOffsetL28853725102;
-    DEFINE_CATCH_BLOCK(catch_L28853725102, label_L288537251, restoreToL28853725102);
+    int restoreToL169734756301;
+    int tryBlockOffsetL169734756301;
+    DEFINE_CATCH_BLOCK(catch_L169734756301, label_L813455850, restoreToL169734756301);
+    int restoreToL81345585002;
+    int tryBlockOffsetL81345585002;
+    DEFINE_CATCH_BLOCK(catch_L81345585002, label_L813455850, restoreToL81345585002);
     __CN1_DEBUG_INFO(585);
     /* VarOp.assignFrom */ ilocals_4_ = virtual_com_codename1_ui_Graphics_getAlpha___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(586);
@@ -197,10 +197,10 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BoxShadow_paint___com_codename1_ui_Gra
     /* CustomInvoke */com_codename1_ui_plaf_CSSBorder_access$400___com_codename1_ui_plaf_CSSBorder_com_codename1_ui_Graphics_com_codename1_ui_plaf_CSSBorder_Color(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_this_0(__cn1ThisObject), locals[1].data.o, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_color(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(589);
     /* VarOp.assignFrom */ locals[7].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[7].type=CN1_TYPE_OBJECT;
-label_L878800743:
- tryBlockOffsetL87880074301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L87880074301);
-    restoreToL87880074301 = threadStateData->threadObjectStackOffset;
+label_L1697347563:
+ tryBlockOffsetL169734756301 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L169734756301);
+    restoreToL169734756301 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(591);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_this_0(__cn1ThisObject));
@@ -239,7 +239,7 @@ label_L878800743:
     __CN1_DEBUG_INFO(600);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillShape___com_codename1_ui_geom_Shape(threadStateData, locals[1].data.o, locals[7].data.o); 
 
-label_L1935581348:
+label_L853345711:
 END_TRY(1);    __CN1_DEBUG_INFO(603);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[7].data.o); 
     __CN1_DEBUG_INFO(604);
@@ -249,17 +249,17 @@ END_TRY(1);    __CN1_DEBUG_INFO(603);
     __CN1_DEBUG_INFO(606);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, ilocals_6_); 
     __CN1_DEBUG_INFO(607);
-    JUMP_TO(label_L803152631, 0);
+    JUMP_TO(label_L1474310983, 0);
 
-label_L288537251:
- tryBlockOffsetL28853725102 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L28853725102);
-    restoreToL28853725102 = threadStateData->threadObjectStackOffset;
+label_L813455850:
+ tryBlockOffsetL81345585002 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L81345585002);
+    restoreToL81345585002 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(603);
     BC_ASTORE(8);
 
-label_L559884099:
+label_L887726799:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[7].data.o); 
     __CN1_DEBUG_INFO(604);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_4_); 
@@ -271,7 +271,7 @@ END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com
     BC_ALOAD(8);
     throwException(threadStateData, POP_OBJ());
 
-label_L803152631:
+label_L1474310983:
     __CN1_DEBUG_INFO(608);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

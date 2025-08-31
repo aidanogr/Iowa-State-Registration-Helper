@@ -58,17 +58,17 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_1___INIT_____com_codename
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8906, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(450);
-    if (/* CustomInvoke */com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1959708563;
+    if (/* CustomInvoke */com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L207988207;
     __CN1_DEBUG_INFO(451);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Component_repaint__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(452);
-    if (get_field_com_codename1_impl_CodenameOneImplementation_1_val_focus(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1959708563;
+    if (get_field_com_codename1_impl_CodenameOneImplementation_1_val_focus(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L207988207;
     __CN1_DEBUG_INFO(453);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Component_requestFocus__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L1959708563:
+label_L207988207:
     __CN1_DEBUG_INFO(456);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

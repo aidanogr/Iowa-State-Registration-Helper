@@ -84,14 +84,14 @@ JAVA_VOID com_codename1_media_AbstractMedia_6_actionPerformed___com_codename1_me
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$300___com_codename1_media_AbstractMedia_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_media_AbstractMedia_6_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_removeListener___java_lang_Object(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     __CN1_DEBUG_INFO(240);
-    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_6_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L464658113;
+    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_6_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1979088869;
     __CN1_DEBUG_INFO(241);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_6_val_out(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_media_AsyncMedia_MediaErrorEvent_getMediaException___R_com_codename1_media_AsyncMedia_MediaException(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_media_AsyncMedia_PlayRequest_error___java_lang_Throwable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L464658113:
+label_L1979088869:
     __CN1_DEBUG_INFO(243);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

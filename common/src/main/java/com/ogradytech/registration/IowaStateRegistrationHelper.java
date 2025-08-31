@@ -266,9 +266,14 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 		
 		Button arrowButton = new Button(">");
 		arrowButton.addActionListener(evt -> {
-			cc.nextSections();
+			try {
+				cc.nextSections();
+			} catch (IOException e) {
+				// TODO
+			}
 		});
 		calendarView.getToolbar().add(BorderLayout.EAST, arrowButton);
+		
 		calendarView.show();
 	}
 
@@ -306,8 +311,10 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				classItem.setInstructionFormat(meetingType);
 				System.err.println("Created new course block for different format");
 			}
+			String meetingPatterns = (String) section.get("meetingPatterns");
+			if(meetingPatterns == null) continue;
 			classItem.addMeetingInfo(
-					(String) section.get("number"),new MeetingInfo((String) section.get("meetingPatterns"))
+					(String) section.get("number"),new MeetingInfo(meetingPatterns)
 				);
 
 		}

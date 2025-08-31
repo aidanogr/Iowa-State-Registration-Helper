@@ -45,26 +45,26 @@ JAVA_VOID com_codename1_impl_ios_TextEditUtil_1_run__(CODENAME_ONE_THREAD_STATE,
     DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9750, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(78);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_impl_ios_TextEditUtil_access$000___R_com_codename1_ui_Component(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(79);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2011342562;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1538511917;
     __CN1_DEBUG_INFO(80);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_TextArea);
-    if(POP_INT() != 0) /* IFNE */ goto label_L1460696714;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1542856295;
     __CN1_DEBUG_INFO(81);
     com_codename1_impl_ios_IOSImplementation_foldKeyboard__(threadStateData); 
 
-label_L1460696714:
+label_L1542856295:
     __CN1_DEBUG_INFO(83);
     virtual_com_codename1_ui_Component_requestFocus__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(84);
     virtual_com_codename1_ui_Component_startEditingAsync__(threadStateData, locals[1].data.o); 
-    goto label_L429804587;
+    goto label_L46259342;
 
-label_L2011342562:
+label_L1538511917:
     __CN1_DEBUG_INFO(86);
     com_codename1_impl_ios_IOSImplementation_foldKeyboard__(threadStateData); 
 
-label_L429804587:
+label_L46259342:
     __CN1_DEBUG_INFO(88);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -163,14 +163,14 @@ JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRe
     __CN1_DEBUG_INFO(58);
     set_field_com_codename1_io_NetworkEvent_length(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(107);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1367544605;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1703353597;
     __CN1_DEBUG_INFO(108);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_io_ConnectionRequest_getResponseCode___R_int(threadStateData, locals[1].data.o);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_io_NetworkEvent_progressType(threadStateData, POP_INT(), POP_OBJ());
 
-label_L1367544605:
+label_L1703353597:
     __CN1_DEBUG_INFO(110);
     set_field_com_codename1_io_NetworkEvent_metaData(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(111);

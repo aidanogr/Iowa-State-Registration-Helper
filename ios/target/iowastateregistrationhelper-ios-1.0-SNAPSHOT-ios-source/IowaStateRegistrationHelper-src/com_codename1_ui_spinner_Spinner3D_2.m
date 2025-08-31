@@ -290,14 +290,14 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_2_getGridPosY___R_int(CODENAME_ONE_T
     __CN1_DEBUG_INFO(117);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_2_ % ilocals_1_);
     __CN1_DEBUG_INFO(118);
-    if (ilocals_3_<=(ilocals_1_ - ilocals_3_)) /* IF_ICMPLE CustomJump */ goto label_L1253332450;
+    if (ilocals_3_<=(ilocals_1_ - ilocals_3_)) /* IF_ICMPLE CustomJump */ goto label_L1266333611;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L718053924;
+    goto label_L217693470;
 
-label_L1253332450:
+label_L1266333611:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L718053924:
+label_L217693470:
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(119);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_Spinner3D_2_this_0(__cn1ThisObject));
@@ -312,7 +312,7 @@ label_L718053924:
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
     PUSH_INT(0); /* ICONST_0 */
-    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L2059830767;
+    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L967627249;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -324,9 +324,9 @@ label_L718053924:
     (*SP).data.i = ilocals_3_; 
     SP++;
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
-    goto label_L574406413;
+    goto label_L1367421029;
 
-label_L2059830767:
+label_L967627249:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -335,7 +335,7 @@ label_L2059830767:
     SP++;
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
 
-label_L574406413:
+label_L1367421029:
     __CN1_DEBUG_INFO(121);
     { JAVA_INT tmpResult = java_lang_Math_max___int_int_R_int(threadStateData, SP[-2].data.i, SP[-1].data.i);
     SP-=1;

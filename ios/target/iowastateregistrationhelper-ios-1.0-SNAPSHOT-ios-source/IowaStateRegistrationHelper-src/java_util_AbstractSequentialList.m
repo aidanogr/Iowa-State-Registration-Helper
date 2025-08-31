@@ -83,21 +83,21 @@ label_L1800031768:
 JAVA_OBJECT java_util_AbstractSequentialList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7347, 612);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
-    int restoreToL1515979807cn1_class_id_java_util_NoSuchElementException1;
-    int tryBlockOffsetL1515979807cn1_class_id_java_util_NoSuchElementException1;
-    DEFINE_CATCH_BLOCK(catch_L1515979807cn1_class_id_java_util_NoSuchElementException1, label_L667447085, restoreToL1515979807cn1_class_id_java_util_NoSuchElementException1);
+    int restoreToL427415062cn1_class_id_java_util_NoSuchElementException1;
+    int tryBlockOffsetL427415062cn1_class_id_java_util_NoSuchElementException1;
+    DEFINE_CATCH_BLOCK(catch_L427415062cn1_class_id_java_util_NoSuchElementException1, label_L667447085, restoreToL427415062cn1_class_id_java_util_NoSuchElementException1);
 
-label_L1515979807:
- tryBlockOffsetL1515979807cn1_class_id_java_util_NoSuchElementException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_util_NoSuchElementException, catch_L1515979807cn1_class_id_java_util_NoSuchElementException1);
-    restoreToL1515979807cn1_class_id_java_util_NoSuchElementException1 = threadStateData->threadObjectStackOffset;
+label_L427415062:
+ tryBlockOffsetL427415062cn1_class_id_java_util_NoSuchElementException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_util_NoSuchElementException, catch_L427415062cn1_class_id_java_util_NoSuchElementException1);
+    restoreToL427415062cn1_class_id_java_util_NoSuchElementException1 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_AbstractSequentialList_listIterator___int_R_java_util_ListIterator(threadStateData, __cn1ThisObject, ilocals_1_);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_ListIterator_next___R_java_lang_Object(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
 
-label_L2051973428:
+label_L1651676011:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -128,19 +128,19 @@ JAVA_OBJECT java_util_AbstractSequentialList_listIterator___int_R_java_util_List
 JAVA_OBJECT java_util_AbstractSequentialList_remove___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7347, 1233);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
-    int restoreToL370296980cn1_class_id_java_util_NoSuchElementException1;
-    int tryBlockOffsetL370296980cn1_class_id_java_util_NoSuchElementException1;
-    DEFINE_CATCH_BLOCK(catch_L370296980cn1_class_id_java_util_NoSuchElementException1, label_L26728049, restoreToL370296980cn1_class_id_java_util_NoSuchElementException1);
+    int restoreToL2108088874cn1_class_id_java_util_NoSuchElementException1;
+    int tryBlockOffsetL2108088874cn1_class_id_java_util_NoSuchElementException1;
+    DEFINE_CATCH_BLOCK(catch_L2108088874cn1_class_id_java_util_NoSuchElementException1, label_L26728049, restoreToL2108088874cn1_class_id_java_util_NoSuchElementException1);
 
-label_L370296980:
- tryBlockOffsetL370296980cn1_class_id_java_util_NoSuchElementException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_util_NoSuchElementException, catch_L370296980cn1_class_id_java_util_NoSuchElementException1);
-    restoreToL370296980cn1_class_id_java_util_NoSuchElementException1 = threadStateData->threadObjectStackOffset;
+label_L2108088874:
+ tryBlockOffsetL2108088874cn1_class_id_java_util_NoSuchElementException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_util_NoSuchElementException, catch_L2108088874cn1_class_id_java_util_NoSuchElementException1);
+    restoreToL2108088874cn1_class_id_java_util_NoSuchElementException1 = threadStateData->threadObjectStackOffset;
 
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_util_AbstractSequentialList_listIterator___int_R_java_util_ListIterator(threadStateData, __cn1ThisObject, ilocals_1_);locals[2].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_ListIterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    virtual_java_util_ListIterator_remove__(threadStateData, locals[2].data.o); 
     BC_ALOAD(3);
 
-label_L1305830291:
+label_L2109044070:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

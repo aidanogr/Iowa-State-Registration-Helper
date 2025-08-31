@@ -70,7 +70,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_getDefault___R_com_codename1_i
     __STATIC_INITIALIZER_com_codename1_impl_ios_Matrix_Factory(threadStateData);
     DEFINE_METHOD_STACK(2, 0, 0, 9721, 1277);
     __CN1_DEBUG_INFO(80);
-    if (get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1424497441;
+    if (get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L658281599;
     __CN1_DEBUG_INFO(81);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_Matrix_Factory(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -78,7 +78,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_getDefault___R_com_codename1_i
     set_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1424497441:
+label_L658281599:
     __CN1_DEBUG_INFO(84);
     PUSH_POINTER(get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

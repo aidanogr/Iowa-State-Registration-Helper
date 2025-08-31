@@ -1,12 +1,16 @@
 package com.ogradytech.registration.gui;
 
+import java.awt.BorderLayout;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
+import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.LayeredLayout;
 import com.ogradytech.registration.Utilities.GUIUtilities;
 import com.ogradytech.registration.Utilities.MeetingInfo;
@@ -19,6 +23,7 @@ public class CalendarContainer  {
 	private Container dayOfWeekContainer;
 	public Container calendarItemContainer; //TODO i dont think this needs to be public anymore
 	protected DropdownContainer dropdownContainer;
+	protected InfoDialog infoDialog;
 
 	private LayeredLayout parentContainerLayout;
 	private LayeredLayout timeLayout;
@@ -113,7 +118,7 @@ public class CalendarContainer  {
 		}
 		
 		setDayOfWeekLabelsInsets();
-		setTimeLabelsInsets();
+		setTimeLabelsInsets();//TODO these two can probably be put in their initializers
 
 
 		//==================== REVALIDATE ==================//
@@ -123,7 +128,10 @@ public class CalendarContainer  {
 		
 	}
 
+
+
 	private void initializeDropdownContainer() throws IOException {
+		//==================== DROPDOWN CONTAINER ==================//
 		this.dropdownContainer = new DropdownContainer();
 		dropdownContainer.setUIID("DropdownContainer");
 		dropdownContainer.getAllStyles().setBgColor(0xFFFFFF);
@@ -131,6 +139,8 @@ public class CalendarContainer  {
 		LayeredLayout dropdownLayout = new LayeredLayout();
 		dropdownContainer.setLayout(dropdownLayout);
 
+
+		//======================= EXIT BUTTON ========================//
 		Button exitButton = new Button();
 		exitButton.setIcon(Image.createImage("/x.png").scaledWidth(100));
 		exitButton.setUIID("ExitButton");
@@ -142,6 +152,8 @@ public class CalendarContainer  {
 			dayOfWeekContainer.revalidate();
 		});
 
+
+		//======================= LOCK BUTTON ========================//
 		Button lockButton = new Button();
 		dropdownContainer.lockButtonReference = lockButton;
 		dropdownContainer.lockButtonIcon = Image.createImage("/lock.png").scaledWidth(100);
@@ -163,8 +175,28 @@ public class CalendarContainer  {
 
 		});
 		
+
+		//======================== INFO BUTTON ==========================//
+		Button infoButton = new Button();
+		infoButton.setUIID("ClassInfoButton");
+		infoButton.setIcon(Image.createImage("/info.png").scaledWidth(100));
+		infoButton.addActionListener(evt -> {
+			toggleInfoDialog(dropdownContainer.selectedCourseSection);
+		});
+		dropdownContainer.add(infoButton);
+		dropdownLayout.setInsets(infoButton, "0 auto auto auto");
+		dropdownLayout.setReferenceComponentTop(infoButton, lockButton, 1f);
+		infoDialog = new InfoDialog();
+		
+
 		dropdownContainer.setVisible(false);
 		dropdownContainer.setEnabled(false);
+	}
+
+	
+	private void toggleInfoDialog(CalendarItem selectedCourseSection) {
+		infoDialog.toggleInfoDialog(selectedCourseSection);
+		infoDialog.show();
 	}
 
 	private void setTimeLabelsInsets() {
@@ -242,13 +274,53 @@ public class CalendarContainer  {
 	/**
 	 * updates UI to show all courses next section, unless
 	 * section is locked
+	 * @throws IOException 
 	 */
-	public void nextSections() {
+	public void nextSections() throws IOException {
 		for(CalendarItem courseSection : courseSections) {
 			if(!courseSection.isLocked()) {
 				setButtonInsets(courseSection.nextSection());
 			}
 		}
+		handleCollisions();
+
+	}
+
+
+	//TODO optimize?
+	private void handleCollisions() throws IOException {
+		boolean conflictDetected = false;
+		LinkedList<CalendarItem[]> conflictingSections = new LinkedList<>();
+		for(int i = 0 ; i < courseSections.size()-1; i++) {
+			for(int j = i+1; j < courseSections.size(); j++) {
+				if(isColliding(courseSections.get(i).getCurrentSectionMeetingInfo(), courseSections.get(j).getCurrentSectionMeetingInfo())) {
+					conflictingSections.add(new CalendarItem[] {courseSections.get(i), courseSections.get(j)});
+					conflictDetected = true;
+					System.out.println("collision");
+				}
+			}
+		}
+		if(conflictDetected) {
+			this.parentContainer.getParent().getComponentForm().setTitle("Conflict!");
+			this.parentContainer.getParent().getComponentForm().getToolbar().add(BorderLayout.SOUTH ,new ConflictInfoButton(conflictingSections));
+		}
+		else {
+			this.parentContainer.getParent().getComponentForm().setTitle("Calendar View");
+		}
+	}
+	
+	private boolean isColliding(MeetingInfo f1, MeetingInfo f2) {
+		for(int i = 0; i < f1.getMeetingDays().length(); i++) {
+			char meetingDay1 = f1.getMeetingDays().charAt(i);
+			if(f2.getMeetingDays().contains(meetingDay1 + "")) {
+				int start1 = f1.getStartHour()*60 + f1.getStartMinute();
+				int start2 = f2.getStartHour()*60 + f2.getStartMinute();
+				int end1 =  f1.getEndHour()*60 + f1.getEndMinute();
+				int end2 = f2.getEndHour()*60 + f2.getEndMinute();
+				if(start1 < end2 && end1 > start2) return true;
+			}
+		}
+		return false;
 	}
 
 

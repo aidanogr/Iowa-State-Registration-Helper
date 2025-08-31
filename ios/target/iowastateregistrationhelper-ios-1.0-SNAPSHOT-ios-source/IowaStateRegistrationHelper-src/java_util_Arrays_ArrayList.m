@@ -110,14 +110,14 @@ label_L110771485:
 JAVA_OBJECT java_util_Arrays_ArrayList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1223, 612);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
-    int restoreToL2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    int tryBlockOffsetL2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    DEFINE_CATCH_BLOCK(catch_L2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L710239027, restoreToL2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    int restoreToL886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    int tryBlockOffsetL886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    DEFINE_CATCH_BLOCK(catch_L886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L710239027, restoreToL886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
 
-label_L2090086723:
- tryBlockOffsetL2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    restoreToL2090086723cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
+label_L886081797:
+ tryBlockOffsetL886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    restoreToL886081797cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject));
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -128,7 +128,7 @@ label_L2090086723:
     SP[-1].data.o = ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     SP[-1].type = CN1_TYPE_OBJECT; 
 
-label_L1885218043:
+label_L1463948952:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -198,26 +198,26 @@ JAVA_OBJECT java_util_Arrays_ArrayList_set___int_java_lang_Object_R_java_lang_Ob
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    int tryBlockOffsetL1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    DEFINE_CATCH_BLOCK(catch_L1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L103887628, restoreToL1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    int restoreToL1011946373cn1_class_id_java_lang_ArrayStoreException2;
-    int tryBlockOffsetL1011946373cn1_class_id_java_lang_ArrayStoreException2;
-    DEFINE_CATCH_BLOCK(catch_L1011946373cn1_class_id_java_lang_ArrayStoreException2, label_L1123629720, restoreToL1011946373cn1_class_id_java_lang_ArrayStoreException2);
+    int restoreToL656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    int tryBlockOffsetL656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    DEFINE_CATCH_BLOCK(catch_L656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L103887628, restoreToL656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    int restoreToL656990981cn1_class_id_java_lang_ArrayStoreException2;
+    int tryBlockOffsetL656990981cn1_class_id_java_lang_ArrayStoreException2;
+    DEFINE_CATCH_BLOCK(catch_L656990981cn1_class_id_java_lang_ArrayStoreException2, label_L1123629720, restoreToL656990981cn1_class_id_java_lang_ArrayStoreException2);
 
-label_L1011946373:
- tryBlockOffsetL1011946373cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayStoreException, catch_L1011946373cn1_class_id_java_lang_ArrayStoreException2);
-    restoreToL1011946373cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->threadObjectStackOffset;
- tryBlockOffsetL1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    restoreToL1011946373cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
+label_L656990981:
+ tryBlockOffsetL656990981cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayStoreException, catch_L656990981cn1_class_id_java_lang_ArrayStoreException2);
+    restoreToL656990981cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->threadObjectStackOffset;
+ tryBlockOffsetL656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    restoreToL656990981cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
 
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o=CN1_ARRAY_ELEMENT_OBJECT(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject), ilocals_1_);
 locals[3].type=CN1_TYPE_OBJECT;    CN1_SET_ARRAY_ELEMENT_OBJECT(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject), ilocals_1_, locals[2].data.o);
     BC_ALOAD(3);
 
-label_L552069664:
+label_L1384201124:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

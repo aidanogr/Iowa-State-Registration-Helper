@@ -89,6 +89,9 @@ void __STATIC_INITIALIZER_com_codename1_ui_TextHolder(CODENAME_ONE_THREAD_STATE)
     class__com_codename1_ui_TextHolder.vtable = malloc(sizeof(void*) *12);
     class__com_codename1_ui_TextHolder.vtable = initVtableForInterface();
     classToInterfaceMap_com_codename1_ui_TextHolder = malloc(sizeof(int*) * cn1_array_start_offset);
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton] = malloc(sizeof(int*) * 14);
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][0] = 327;
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][1] = 328;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea][0] = 318;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea][1] = 319;

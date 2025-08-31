@@ -89,6 +89,9 @@ void __STATIC_INITIALIZER_com_codename1_ui_events_ActionSource(CODENAME_ONE_THRE
     class__com_codename1_ui_events_ActionSource.vtable = malloc(sizeof(void*) *12);
     class__com_codename1_ui_events_ActionSource.vtable = initVtableForInterface();
     classToInterfaceMap_com_codename1_ui_events_ActionSource = malloc(sizeof(int*) * cn1_array_start_offset);
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton] = malloc(sizeof(int*) * 14);
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][0] = 371;
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][1] = 372;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea][0] = 316;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea][1] = 317;

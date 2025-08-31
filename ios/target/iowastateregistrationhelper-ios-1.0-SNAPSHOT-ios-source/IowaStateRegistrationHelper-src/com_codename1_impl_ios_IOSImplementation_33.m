@@ -47,11 +47,11 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_33_run__(CODENAME_ONE_THREAD_
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(8595);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L54176060;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2111247080;
     __CN1_DEBUG_INFO(8596);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, locals[1].data.o); 
 
-label_L54176060:
+label_L2111247080:
     __CN1_DEBUG_INFO(8598);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

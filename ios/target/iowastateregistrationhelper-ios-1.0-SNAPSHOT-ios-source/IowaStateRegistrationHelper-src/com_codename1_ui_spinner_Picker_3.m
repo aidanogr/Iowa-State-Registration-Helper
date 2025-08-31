@@ -95,7 +95,7 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_actionPerformed___com_codename1_ui_e
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(1090);
-    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L442200980;
+    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L2118829464;
     __CN1_DEBUG_INFO(1091);
     /* LDC: '.SpinnerWrapper'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10227));
@@ -114,7 +114,7 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_actionPerformed___com_codename1_ui_e
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_ComponentSelector_setPadding___int_R_com_codename1_ui_ComponentSelector(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L442200980:
+label_L2118829464:
     __CN1_DEBUG_INFO(1093);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(1094);

@@ -52,19 +52,19 @@ JAVA_VOID com_codename1_ui_TextArea_1_actionPerformed___com_codename1_ui_events_
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(351);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_TextArea_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(352);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L123629835;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L184642382;
     __CN1_DEBUG_INFO(353);
-    if (virtual_com_codename1_ui_TextArea_isEditing___R_boolean(threadStateData, get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L123629835;
+    if (virtual_com_codename1_ui_TextArea_isEditing___R_boolean(threadStateData, get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L184642382;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Form_getComponentAt___int_int_R_com_codename1_ui_Component(threadStateData, locals[2].data.o, virtual_com_codename1_ui_events_ActionEvent_getX___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_events_ActionEvent_getY___R_int(threadStateData, locals[1].data.o));
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject));
-    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L123629835;
+    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L184642382;
     __CN1_DEBUG_INFO(354);
     virtual_com_codename1_ui_TextArea_fireActionEvent__(threadStateData, get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(355);
     /* CustomInvoke */virtual_com_codename1_ui_TextArea_setSuppressActionEvent___boolean(threadStateData, get_field_com_codename1_ui_TextArea_1_this_0(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L123629835:
+label_L184642382:
     __CN1_DEBUG_INFO(358);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

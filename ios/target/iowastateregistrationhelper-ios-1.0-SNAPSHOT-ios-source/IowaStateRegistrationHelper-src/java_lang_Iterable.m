@@ -150,6 +150,10 @@ void __STATIC_INITIALIZER_java_lang_Iterable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_Hashtable_6][0] = 10;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_TreeMap_1] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_TreeMap_1][0] = 10;
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_InfoDialog] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_InfoDialog][0] = 316;
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_DropdownContainer] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_DropdownContainer][0] = 316;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_codename1_impl_CodenameOneImplementation_7] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_codename1_impl_CodenameOneImplementation_7][0] = 316;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_codename1_ui_TextSelection_Spans] = malloc(sizeof(int*) * 13);

@@ -114,4 +114,11 @@ public class MeetingInfo {
 	public short getEndMinute() {
 		return endMinute;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder b = new StringBuilder();
+		b.append(meetingDays).append(" | ").append(startHour + " : " + startMinute).append(" - ").append(endHour + " : " + endMinute);
+		return b.toString();
+	}
 }

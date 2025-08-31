@@ -133,6 +133,12 @@ void __STATIC_INITIALIZER_com_codename1_ui_ReleasableComponent(CODENAME_ONE_THRE
     class__com_codename1_ui_ReleasableComponent.vtable = malloc(sizeof(void*) *15);
     class__com_codename1_ui_ReleasableComponent.vtable = initVtableForInterface();
     classToInterfaceMap_com_codename1_ui_ReleasableComponent = malloc(sizeof(int*) * cn1_array_start_offset);
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton] = malloc(sizeof(int*) * 17);
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][0] = 366;
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][1] = 367;
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][2] = 368;
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][3] = 369;
+    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton][4] = 370;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_HeavyButton] = malloc(sizeof(int*) * 17);
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_HeavyButton][0] = 366;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_HeavyButton][1] = 367;
