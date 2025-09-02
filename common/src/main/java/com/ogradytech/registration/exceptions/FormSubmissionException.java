@@ -14,6 +14,7 @@ public class FormSubmissionException extends Exception{
 		BAD_FORMAT, //message: attempted classname input
 		PARSING_EXCEPTION, //message: Program aborted unexpectedly. Please contact aidan@ogradytech.com
 		API_REQUEST_FAILED, //message: none
+		RESOURCE_FETCHING_EXCEPTION, //message: Resource
 	}
 	
 	private String message;

@@ -1,5 +1,5 @@
 
-/* /Users/aidanogrady2/Desktop/iowastateregistrationhelper/javase/../common/src/main/css/theme.css */
+/* /Users/aidanogrady2/Desktop/iowastateregistrationhelper/common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -91,6 +91,16 @@ WeeekdayLabel {
 	padding: 0 0 0 0;
 }
 
+MultiLine4 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+MultiLine3 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
 /** Style for the side menu */
 SideNavigationPanel {
     background: white;
@@ -119,4 +129,4 @@ SideCommand {
 
 
 
-/* end /Users/aidanogrady2/Desktop/iowastateregistrationhelper/javase/../common/src/main/css/theme.css*/
+/* end /Users/aidanogrady2/Desktop/iowastateregistrationhelper/common/src/main/css/theme.css*/

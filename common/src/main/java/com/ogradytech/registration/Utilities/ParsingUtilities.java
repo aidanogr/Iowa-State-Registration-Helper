@@ -35,6 +35,8 @@ public class ParsingUtilities {
 	 */
 	  @SuppressWarnings("unchecked") // parsing JSON into raw List<Object>
 	    public static String getDepartmentFromFullCourseName(String fullCourseName) throws IOException, FormSubmissionException {
+		  
+		  	//index is already checked in main
 	        int delimiterIndex = fullCourseName.indexOf(' ');
 	        String deptID = fullCourseName.substring(0, delimiterIndex);
 
@@ -54,8 +56,7 @@ public class ParsingUtilities {
 	                    reader.close();
 	                    is.close();
 	                } else {
-	                    System.out.println("File not found!");
-	                    departments = new ArrayList<Object>(); // fallback to empty list
+	                    throw new FormSubmissionException(ExceptionType.RESOURCE_FETCHING_EXCEPTION, "Department list JSON");
 	                }
 	            } catch (Exception e) {
 	                e.printStackTrace();
@@ -66,7 +67,9 @@ public class ParsingUtilities {
 	        // Search for department
 	        String ret_fullDeptName = "";
 	        for (Object department : departments) {
-	            if (((String) department).contains(deptID.toUpperCase() + " ")) {
+	        	String dept = (String) department;
+	        	String deptIDFile = dept.substring(0, dept.indexOf('-') -1);
+	            if (deptIDFile.equals(deptID.toUpperCase())) {
 	                ret_fullDeptName = (String) department;
 	                break; // found, no need to continue
 	            }
@@ -119,19 +122,16 @@ public class ParsingUtilities {
 		  
 	  }
 
+	  /**
+	   * @param textField
+	   * @return true if textfield does not container character > 0x20
+	   */
+	  public static boolean textFieldIsEmpty(TextField textField) {
+		  if(textField.getText().trim().isEmpty()) return true;
+		  return false;
+	  }
 
-	/**
-	 * Checks for null or empty text fields (contains a character greater than 0x20)
-	 * @param classInputs
-	 * @return
-	 */
-	public static ArrayList<Integer> getNonNullTextFieldIndecies(TextField[] classInputs) {
-		ArrayList<Integer> notNullInputFieldIndecies = new ArrayList<Integer>();
-		for(int i = 0 ; i < classInputs.length; i++) {
-    		if(!classInputs[i].getText().trim().isEmpty()) notNullInputFieldIndecies.add(i);
-    	}	
-		return notNullInputFieldIndecies;
-	}
+
 	
 	
 

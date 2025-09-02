@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BoxLayout;
@@ -51,6 +52,15 @@ public class InfoDialog extends Dialog{
 		this.meetingPattern.setText("Meeting Pattern: " + selectedCourseSection.getCurrentSectionMeetingInfo().toString());
 	}
 	
+	@Override 
+	public void show() {
+		//desired height: 780px;
+		int margin = (Display.getInstance().getDisplayHeight() - 780)/2;
+		super.show(margin, margin, 2, 2);
+	}
 	
+	public void showUnfixed() {
+		super.show();
+	}
 
 }

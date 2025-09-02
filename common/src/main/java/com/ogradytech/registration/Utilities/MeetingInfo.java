@@ -118,7 +118,20 @@ public class MeetingInfo {
 	@Override
 	public String toString() {
 		StringBuilder b = new StringBuilder();
-		b.append(meetingDays).append(" | ").append(startHour + " : " + startMinute).append(" - ").append(endHour + " : " + endMinute);
+		b.append(meetingDays).append(" | ");
+		
+		String startMinuteString = "";
+		if(startMinute < 10) startMinuteString += "0";
+		startMinuteString += startMinute;
+		b.append(startHour + ":" + startMinuteString);
+		
+		b.append(" - ");
+		
+		String endMinuteString = "";
+		if(endMinute < 10) endMinuteString += "0";
+		endMinuteString += endMinute;
+		b.append(endHour + ":" + endMinuteString);
+
 		return b.toString();
 	}
 }

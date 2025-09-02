@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Font;
@@ -215,6 +216,12 @@ public class CalendarItem {
 
 	public void setCurrentSection(String currentSection) {
 		this.currentSection = currentSection;
+	}
+
+
+
+	public Map<String, MeetingInfo> getSectionMeetingInfo() {
+		return sectionMeetingInfo;
 	}
 
 

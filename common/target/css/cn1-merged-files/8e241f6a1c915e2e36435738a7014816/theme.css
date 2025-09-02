@@ -89,6 +89,16 @@ WeeekdayLabel {
 	padding: 0 0 0 0;
 }
 
+MultiLine4 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+MultiLine3 {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
 /** Style for the side menu */
 SideNavigationPanel {
     background: white;

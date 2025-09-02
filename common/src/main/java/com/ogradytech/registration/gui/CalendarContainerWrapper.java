@@ -6,24 +6,27 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.LayeredLayout;
+import com.codename1.ui.plaf.Style;
 import com.ogradytech.registration.Utilities.GUIUtilities;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 
-public class CalendarContainer  {
+public class CalendarContainerWrapper  {
 
 	
 	public Container parentContainer;
 	private Container timeContainer;
 	private Container dayOfWeekContainer;
-	public Container calendarItemContainer; //TODO i dont think this needs to be public anymore
+	private Container calendarItemContainer; //TODO i dont think this needs to be public anymore
 	protected DropdownContainer dropdownContainer;
 	protected InfoDialog infoDialog;
+	private Container calendarToolbar;
 
 	private LayeredLayout parentContainerLayout;
 	private LayeredLayout timeLayout;
@@ -35,16 +38,26 @@ public class CalendarContainer  {
 
 	private ArrayList<CalendarItem> courseSections;
 
+	private Button findNextNonConflictingScheduleButton;
+	private ConflictInfoButton conflictButton;
+	public static boolean hasConflict = false;
 
 	private static final int TIME_COLUMN_WIDTH_MM = 5;
 	private static final int DAY_ROW_HEIGHT_MM = 3;
 	private static final int MAX_NUMBER_OF_HOURS = 15; //TODO change these in GUIUtilities
 	private static final int HOURS_OFFSET = 7;
+	private static final int TOOLBAR_HEIGHT_MM = 6;
 
 	
+
 	
-	public CalendarContainer(ArrayList<CalendarItem> courseSections) throws IOException {
+	public CalendarContainerWrapper(ArrayList<CalendarItem> courseSections) throws IOException {
 		this.courseSections = courseSections;
+		conflictButton = new ConflictInfoButton(null);
+		findNextNonConflictingScheduleButton = new Button();
+		findNextNonConflictingScheduleButton.addActionListener(evt -> {
+			findNextNonConflictingScheduleButton(this);
+		});
 		
 		initializeDropdownContainer(); //handles its children's insets, etc
 
@@ -71,6 +84,9 @@ public class CalendarContainer  {
 		calendarItemContainer = new Container();
 		calendarItemContainer.setUIID("CalendarContainer");
 		
+		calendarToolbar = new Container();
+		calendarToolbar.setUIID("CalendarToolbar");
+		
 
 		//================== INITIALIZE LAYOUTS ====================// 
 		parentContainerLayout = new LayeredLayout();
@@ -85,11 +101,13 @@ public class CalendarContainer  {
 		calendarItemContainerLayout = new LayeredLayout();
 		calendarItemContainer.setLayout(calendarItemContainerLayout);
 		
+		calendarToolbar.setLayout(new BoxLayout(BoxLayout.X_AXIS));
 
 		//=================== LINK COMPONENTS =====================//
 		parentContainer.add(dayOfWeekContainer);
 		parentContainer.add(calendarItemContainer);
 		parentContainer.add(timeContainer);
+		parentContainer.add(calendarToolbar);
 
 		for(Label l : dayOfWeekLabels) {
 			dayOfWeekContainer.add(l);
@@ -101,24 +119,30 @@ public class CalendarContainer  {
 			l.setUIID("WeekdayLabel");
 		}
 
+		calendarToolbar.add(conflictButton);
+		calendarToolbar.add(findNextNonConflictingScheduleButton);
 		calendarItemContainer.add(dropdownContainer);
 
 
 		//=============== SET CONTAINER INSETS ==============//
-		parentContainerLayout.setInsets(calendarItemContainer, DAY_ROW_HEIGHT_MM + "mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
+		parentContainerLayout.setInsets(calendarItemContainer, (DAY_ROW_HEIGHT_MM + TOOLBAR_HEIGHT_MM) + "mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
 
-		parentContainerLayout.setInsets(dayOfWeekContainer, "0mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
+		parentContainerLayout.setInsets(dayOfWeekContainer, TOOLBAR_HEIGHT_MM + "mm 0mm 0mm " + TIME_COLUMN_WIDTH_MM + "mm");
 		parentContainerLayout.setReferenceComponentBottom(dayOfWeekContainer, calendarItemContainer, 1f);
 
-		parentContainerLayout.setInsets(timeContainer, DAY_ROW_HEIGHT_MM + "mm 0mm 0mm 0mm");
+		parentContainerLayout.setInsets(timeContainer, (DAY_ROW_HEIGHT_MM + TOOLBAR_HEIGHT_MM) + "mm 0mm 0mm 0mm");
 		parentContainerLayout.setReferenceComponentRight(timeContainer, calendarItemContainer, 1f);
+		
+		parentContainerLayout.setInsets(calendarToolbar, "0 0 0 0");
+		parentContainerLayout.setReferenceComponentBottom(calendarToolbar, dayOfWeekContainer, 1f);
 		
 		for(CalendarItem courseSection : this.courseSections) {
 			setButtonInsets(courseSection);
 		}
 		
 		setDayOfWeekLabelsInsets();
-		setTimeLabelsInsets();//TODO these two can probably be put in their initializers
+		setTimeLabelsInsets();
+		handleCollisions();
 
 
 		//==================== REVALIDATE ==================//
@@ -128,6 +152,17 @@ public class CalendarContainer  {
 		
 	}
 
+
+
+	private void findNextNonConflictingScheduleButton(CalendarContainerWrapper calendarContainerWrapper) {
+/*		for(int i = calendarContainerWrapper.courseSections.size()-1; i >= 0; i++) {
+			CalendarItem anchorCourseSection = calendarContainerWrapper.courseSections.get(i);
+if()
+		}
+	}
+	
+	private 
+*/}
 
 
 	private void initializeDropdownContainer() throws IOException {
@@ -205,7 +240,6 @@ public class CalendarContainer  {
 		}
 	}
 
-	//TODO handle insets in this function
 	private void initializeTimeLabels() {
 		timeLabels = new Label[MAX_NUMBER_OF_HOURS];
 		int timeIterator = HOURS_OFFSET;
@@ -248,6 +282,10 @@ public class CalendarContainer  {
 					dayOfWeekContainer.revalidate();
 				}); 
 
+				if(daysOfTheWeek.length() == daysOfTheWeekIterator) {
+					button.setVisible(false);
+					break;
+				} 
 				double[] horizontalInsets = GUIUtilities.getHorizontalInsetPercentages(
 						daysOfTheWeek.charAt(daysOfTheWeekIterator)
 				); if(horizontalInsets == null) continue;	//in case of saturdays or something (only counts MTWRF)
@@ -287,7 +325,6 @@ public class CalendarContainer  {
 	}
 
 
-	//TODO optimize?
 	private void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
 		LinkedList<CalendarItem[]> conflictingSections = new LinkedList<>();
@@ -301,11 +338,18 @@ public class CalendarContainer  {
 			}
 		}
 		if(conflictDetected) {
-			this.parentContainer.getParent().getComponentForm().setTitle("Conflict!");
-			this.parentContainer.getParent().getComponentForm().getToolbar().add(BorderLayout.SOUTH ,new ConflictInfoButton(conflictingSections));
+			hasConflict = true;
+			conflictButton.updateConflictingSections(conflictingSections);
+			conflictButton.getAllStyles().setFgColor(0xFF0000);
+			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_UNDERLINE);
+			parentContainer.revalidate();
 		}
 		else {
-			this.parentContainer.getParent().getComponentForm().setTitle("Calendar View");
+			hasConflict = false;
+			conflictButton.updateConflictingSections(null);
+			conflictButton.getAllStyles().setFgColor(0x000000);
+			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_NONE);
+			parentContainer.revalidate();
 		}
 	}
 	

@@ -2,15 +2,19 @@ package com.ogradytech.registration;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import com.codename1.system.Lifecycle;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.*;
+import com.codename1.ui.spinner.Picker;
 import com.codename1.io.*;
 import com.codename1.ui.table.TableLayout;
 import com.codename1.util.regex.StringReader;
 import com.ogradytech.registration.Utilities.MeetingInfo;
+import com.ogradytech.registration.Utilities.NetworkUtilities;
 import com.ogradytech.registration.Utilities.ParsingUtilities;
 import com.ogradytech.registration.Utilities.TestingUtilities;
 import com.ogradytech.registration.Utilities.FunctionQueue;
@@ -41,7 +45,10 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 	public static ArrayList<CalendarItem> calendarCourseInformation = new ArrayList<>(10);
 	public static int networkRequestCompletionCounter = 0;	//this is to poll for API request completion (so program knows we can move on to generating schedule)
 	public static int totalNumberOfValidClasses = 0;
-
+	public static boolean academicPeriodsFetchCompleted = false;
+	public static LinkedList<String> arrangedSections = new LinkedList<>();
+	
+	
     @Override
     public void runApp() {
     	showPreface();
@@ -54,51 +61,57 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	InstructionalDialog preface = new InstructionalDialog("DialogTitle", "DialogBody");
         preface.title.setText("Iowa State\nRegistration Tools");
         preface.body.setText("Enter up to " + maxNumberOfClasses + " desired classes and hit generate to view potential schedules."
-        		+ " If a class has a discussion section, make sure to click checkbox next to class. Course sections waitlisted or closed are not included"
+        		+ "Course sections waitlisted or closed are not included in the results. Make sure to include lab sections separately"
+        		+ "if they have a different course ID (e.g PHYS 2310 and PHYS 2310L) "
         		+ "in generated schedules");
 
         preface.show();
     }
 
+    /**
+     * handles form GUI and waits until submit button is pressed
+     */
     public static void awaitFormSubmission() {
     	inputForm = new Form("Class Input", BoxLayout.y());
 
-        TableLayout classInputContainerLayout = new TableLayout(maxNumberOfClasses + 1, 2); // +1 for labels
+    	//================== ACADEMIC PERIOD PICKER ===================//
+    	Picker academicPeriodPicker = new Picker();
+    	academicPeriodPicker.setType(Display.PICKER_TYPE_STRINGS);
+    	academicPeriodPicker.setStrings("Loading ...");
+    	academicPeriodPicker.setSelectedString("Loading ...");
+    	academicPeriodPicker.setEndsWith3Points(true);
+    	inputForm.add(academicPeriodPicker);
+    	NetworkUtilities.fetchAcademicPeriods(academicPeriodPicker);
+    	
+    	
+    	//================== CLASS INPUT ===================//
+        TableLayout classInputContainerLayout = new TableLayout(maxNumberOfClasses + 1, 1); // +1 for labels
         Container classInputContainer = new Container(classInputContainerLayout);
-        
+
         TableLayout.Constraint textCol = classInputContainerLayout.createConstraint();
-        textCol.widthPercentage(70);
+        textCol.widthPercentage(100);
         textCol.setHorizontalAlign(Component.CENTER);
         textCol.setVerticalAlign(Component.CENTER);
-        
-        TableLayout.Constraint checkCol = classInputContainerLayout.createConstraint();
-        checkCol.widthPercentage(30);
-        checkCol.setHorizontalAlign(Component.CENTER);
-        checkCol.setVerticalAlign(Component.CENTER);
 
-        Label classNameLabel = new Label("Course ID (i.e ENGL 2500)");
+        Label classNameLabel = new Label("Course ID (e.g ENGL 2500)");
         classInputContainer.add(textCol, classNameLabel);
-        Label classHasDiscussionLabel = new Label("Discussion?");
-        classInputContainer.add(checkCol, classHasDiscussionLabel);
         
         TextField[] classInputs = new TextField[maxNumberOfClasses];
-        CheckBox[] classContainsDiscussionBoxes = new CheckBox[maxNumberOfClasses];
         for(int i = 0; i < maxNumberOfClasses; i++) {
         	TextField classInput = new TextField("");
         	classInput.setMaxSize(15);
         	classInputs[i] = classInput;
         	classInputContainer.add(textCol, classInput);
-        	
-        	CheckBox classContainsDiscussionBox = new CheckBox();
-        	classContainsDiscussionBoxes[i] = classContainsDiscussionBox;
-        	classInputContainer.add(checkCol, classContainsDiscussionBox);
         }
         inputForm.add(classInputContainer);
 
+        
+        //================== SUBMIT BUTTON =======================//
         Button submitFormButton = new Button("Generate Schedules");
         submitFormButton.addActionListener(evt -> { 
+        	if(!academicPeriodsFetchCompleted) {return;} 
         	try {
-        		formSubmitted(classInputs, classContainsDiscussionBoxes); 
+        		formSubmitted(classInputs, academicPeriodPicker.getSelectedStringIndex()); 
         	} catch(FormSubmissionException e) {
         		handleFormSubmissionException(e);
         	} catch(Exception e) {
@@ -115,7 +128,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 
     /**
      * The submit action for the main input form. <br>
-     * Tries to parse input form, and if all classes are valid course info is requested 
+     * Tries to parse input form; if all classes are valid, course info is requested 
      * 	via {@link #requestCourseInfo(String, String, boolean)}. If input is bad,
      * a FormSubmissionException is thrown (handled by {@link #handleFormSubmissionException(FormSubmissionException)}
      * 
@@ -123,39 +136,47 @@ public class IowaStateRegistrationHelper extends Lifecycle {
      * @param classInputs 
      * @throws FormSubmissionException
      */
-    public static void formSubmitted(TextField[] classInputs, CheckBox[] classContainsDiscussionBoxes) throws FormSubmissionException {
+	public static void formSubmitted(TextField[] classInputs, int selectedAcademicPeriodIndex) throws FormSubmissionException {
     	
-     	ArrayList<Integer> nonNullTextFieldIndecies = ParsingUtilities.getNonNullTextFieldIndecies(classInputs);
-    	if(nonNullTextFieldIndecies.size() == 0) {
-    		throw new FormSubmissionException(ExceptionType.NO_CLASSES_SUBMITTED, "");
-    	}
-    	
-    	@SuppressWarnings("unused")
+		@SuppressWarnings("unused")
 		ArrayList<String> departmentFullNames = new ArrayList<String>(10);
-    	FunctionQueue queue = new FunctionQueue();
-    	for(int i = 0; i < nonNullTextFieldIndecies.size(); i++) {
-    		try {
+		int emptyTextFieldCounter = 0;
 
-    			String validClassName = ParsingUtilities.stripLeadingAndTrailingWhiteSpace(
-    						classInputs[nonNullTextFieldIndecies.get(i)].getText()
+		//Waits for all classes to be checked for validity before starting queue
+    	FunctionQueue networkRequestQueue = new FunctionQueue(); 
+    	for(int i = 0; i < classInputs.length; i++) {
+    		try {
+    			if(ParsingUtilities.textFieldIsEmpty(classInputs[i])) {
+    				emptyTextFieldCounter++;
+    				continue;
+    			}
+
+    			String formatedClassName = ParsingUtilities.stripLeadingAndTrailingWhiteSpace(
+    						classInputs[i].getText()
     					);
-				int delimiterIndex = validClassName.indexOf(" ");
+				int delimiterIndex = formatedClassName.indexOf(" ");
 				if(delimiterIndex == -1) {
-					throw new FormSubmissionException(ExceptionType.BAD_FORMAT, validClassName);
+					throw new FormSubmissionException(ExceptionType.BAD_FORMAT, formatedClassName);
 				}				
 
-				String departmentFullName = ParsingUtilities.getDepartmentFromFullCourseName(validClassName);
-				String courseIDString = validClassName.substring(delimiterIndex + 1, validClassName.length()).trim();
-				
-				int courseID = Integer.valueOf(courseIDString); //exception can be thrown here
-				if(courseID < 101 || courseID > 7000) {
-					throw new NumberFormatException();
+				String departmentFullName = ParsingUtilities.getDepartmentFromFullCourseName(formatedClassName);
+				String courseIDString = formatedClassName.substring(delimiterIndex + 1, formatedClassName.length()).trim();
+				int labIndicatorIndex = courseIDString.indexOf('L');
+				if(labIndicatorIndex == -1) {
+					int courseID = Integer.valueOf(courseIDString); //exception can be thrown here
+					if(courseID < 101 || courseID > 7000) {
+						throw new NumberFormatException();
+					}
+				} else {
+					int courseID = Integer.valueOf(courseIDString.substring(0, labIndicatorIndex)); //exception can be thrown here?
+					if(courseID < 101 || courseID > 7000) {
+						throw new NumberFormatException();
+					}				
 				}
 
-				final int index = i;
-				queue.add(
+				networkRequestQueue.add(
 						() -> requestCourseInfo(
-								departmentFullName, courseIDString, classContainsDiscussionBoxes[index].isSelected() 
+								departmentFullName, courseIDString, selectedAcademicPeriodIndex
 						)
 				);
 				
@@ -167,20 +188,27 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 				throw e;
 			}
     	}
+     	if(emptyTextFieldCounter == 10) {
+    		throw new FormSubmissionException(ExceptionType.NO_CLASSES_SUBMITTED, "");
+    	}
     	
-    	totalNumberOfValidClasses = queue.getNumberOfPendingTasks(); //requestCourseInfo() checks to see if it has finished all network requests (based on global totalNumberOfValidClasses)
-    	queue.begin();
+    	totalNumberOfValidClasses = networkRequestQueue.getNumberOfPendingTasks(); //requestCourseInfo() checks to see if it has finished all network requests (based on global totalNumberOfValidClasses)
+    	networkRequestQueue.begin();
     	
-    	
-
     }
+
     
-    //TODO this should probably throw something
-    private static void requestCourseInfo(String departmentFullName, String courseIDString, boolean classContainsDiscussion) {
+    /**
+     * Uses {@link ConnectionRequest} to ask class.iastate.edu API for course information (like sections, etc.)
+     * @param departmentFullName - this must be exact (see {@link ParsingUtilities#getDepartmentFromFullCourseName(String)}}
+     * @param courseIDString
+     * @param selectedAcademicPeriodIndex - index of selected academic period for {@link NetworkUtilities#academicPeriods}
+     */
+    private static void requestCourseInfo(String departmentFullName, String courseIDString, int selectedAcademicPeriodIndex) {
 		networkRequestCounter++;
 		System.out.println("\nNetwork request counter: " + networkRequestCounter);
     	String template = " {\n" +
-    			  "\"academicPeriodId\": \"ACADEMIC_PERIOD-2025Fall\",\n" + //TODO make academic period programatic...
+    			  "\"academicPeriodId\": \"" + NetworkUtilities.academicPeriods[selectedAcademicPeriodIndex].getID() + "\",\n" + 
     			  "\"department\": \"" + departmentFullName + "\",\n" + 
     			  "\"courseId\": \""+ courseIDString + "\",\n" +
     			  "\"level\": null,\n" +
@@ -196,29 +224,33 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     			  "\"deliveryMode\": null,\n" +
     			  "\"allowedGradingBases\": []\n" +
     			  "} ";
-    	ConnectionRequest r = new ConnectionRequest();
-    	r.setPost(true);
-    	r.setUrl("https://api.classes.iastate.edu/api/courses/search");
-    	r.setRequestBody(template);
-    	r.addRequestHeader("Accept", "application/json, text/plain, */*");
-    	r.addRequestHeader("Accept-Encoding", "gzip, deflate, br, zstd");
-    	r.addRequestHeader("Accept-Language", "en-US,en;q=0.9");
-    	r.addRequestHeader("Content-Length", String.valueOf(template.length()));
-    	r.addRequestHeader("Content-Type", "application/json");
+    	ConnectionRequest courseInfoAPI = new ConnectionRequest();
+    	courseInfoAPI.setPost(true);
+    	courseInfoAPI.setUrl("https://api.classes.iastate.edu/api/courses/search");
+    	courseInfoAPI.setRequestBody(template);
+    	courseInfoAPI.addRequestHeader("Accept", "application/json, text/plain, */*");
+    	courseInfoAPI.addRequestHeader("Accept-Encoding", "gzip, deflate, br, zstd");
+    	courseInfoAPI.addRequestHeader("Accept-Language", "en-US,en;q=0.9");
+    	courseInfoAPI.addRequestHeader("Content-Length", String.valueOf(template.length()));
+    	courseInfoAPI.addRequestHeader("Content-Type", "application/json");
     	
     	//this should not need to be synchronized, only 1 current background thread worker. but if more desired we need to change this
-    	r.addResponseListener(evt -> {
+    	courseInfoAPI.addResponseListener(evt -> {
 
     		try {
-    			System.out.println("CODE " + r.getResponseCode());
-    			byte[] response = r.getResponseData();
-    			if(response == null) throw new FormSubmissionException(ExceptionType.API_REQUEST_FAILED, "");
-    			String body = new String(response);
-    			parseAndStoreClassData(body);
-			} catch (FormSubmissionException e) {
-				handleFormSubmissionException(e);
-			} catch (IOException e) { //TODO 
-				e.printStackTrace();
+				//this can probably just be == 200 but idk if they could change that for some reason??
+    			if(courseInfoAPI.getResponseCode() > 299 || courseInfoAPI.getResponseCode() < 200) {
+					IowaStateRegistrationHelper.handleFormSubmissionException(new FormSubmissionException(ExceptionType.API_REQUEST_FAILED, ""));
+
+    			}
+    			byte[] rawResponse = courseInfoAPI.getResponseData();
+    			if(rawResponse == null) handleFormSubmissionException(new FormSubmissionException(ExceptionType.API_REQUEST_FAILED, ""));
+    			else {
+					String body = new String(rawResponse);
+					parseAndStoreCourseAPIResponse(body);
+    			}
+			} catch (IOException e) {
+				handleFormSubmissionException(new FormSubmissionException(ExceptionType.IO_EXCEPTION, ""));
 			}
 
     	});
@@ -226,97 +258,105 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     	NetworkManager.getInstance().addProgressListener(evt -> {
 			if(evt.getProgressType() == NetworkEvent.PROGRESS_TYPE_COMPLETED) {
 				networkRequestCompletionCounter++;
+				
+				//if last request finishes...
 				if(networkRequestCompletionCounter == totalNumberOfValidClasses) {
 					try {
 						createCalendarView();
 					} catch (IOException e) {
-						// TODO handle this
+						handleFormSubmissionException(new FormSubmissionException(ExceptionType.IO_EXCEPTION, ""));
 					}
 				}
 			}
-
-    	//ignore this; 
-    	// ============================ THIS IS FOR TESTING ONLY =============================== //
-//    	String body;
-//    	try {
-//			body = TestingUtilities.getStringFromJSONFile();
-//			parseAndStoreClassData(body);
-//			createCalendarView();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-    	// ================= UNCOMMENT LINE BELOW FOR ACTUAL FUNCTIONALITY ===================== //
+    	});
 
 
-		});
-
-
-    	NetworkManager.getInstance().addToQueue(r);
+    	NetworkManager.getInstance().addToQueue(courseInfoAPI);
     }
 
 
+    /**
+     * CalendarContainer handler
+     * @throws IOException
+     */
     private static void createCalendarView() throws IOException {
 		Form calendarView = new Form("Calendar View", new BorderLayout());
-		CalendarContainer cc = new CalendarContainer(calendarCourseInformation);
-		calendarView.add(BorderLayout.CENTER, cc.parentContainer);
+		CalendarContainerWrapper calendarContainerWrapper = new CalendarContainerWrapper(calendarCourseInformation);
+		
+		LayeredLayout calendarViewLayout = new LayeredLayout();
+		calendarView.setLayout(calendarViewLayout);
+
+		calendarView.add(calendarContainerWrapper.parentContainer);
+		calendarViewLayout.setInsets(calendarView, "5mm 0 0 0");
 		
 		Button arrowButton = new Button(">");
 		arrowButton.addActionListener(evt -> {
 			try {
-				cc.nextSections();
+				calendarContainerWrapper.nextSections();
 			} catch (IOException e) {
-				// TODO
+				handleFormSubmissionException(new FormSubmissionException(ExceptionType.IO_EXCEPTION, ""));
 			}
 		});
 		calendarView.getToolbar().add(BorderLayout.EAST, arrowButton);
+
+		
 		
 		calendarView.show();
 	}
 
 
 
+
 	/**
      * Stores parsed JSON in global  "calendarCourseInformation" list (see top of file)
-     * @param body JSON of the request body, specifically for api.classes.iastate.edu/api/courses/search
+     * @param courseAPIResponseBody JSON of the request body, specifically for api.classes.iastate.edu/api/courses/search
 	 * @throws IOException 
      */
 	@SuppressWarnings("unchecked")
-	private static void parseAndStoreClassData(String body) throws IOException {
-		// TODO this function sucks.
-		JSONParser bodyParser = new JSONParser();
-		StringReader reader = new StringReader(body);
-		Map<String, Object> parsedJSON = bodyParser.parseJSON(reader);
-		Map<String, Object> classFound =  ((java.util.List<Map<String, Object>>)parsedJSON.get("data")).get(0);
-		CalendarItem classItem = new CalendarItem((String) classFound.get("courseId"));
+	private static void parseAndStoreCourseAPIResponse(String courseAPIResponseBody) throws IOException {
+		JSONParser courseAPIResponseParser = new JSONParser();
+		StringReader reader = new StringReader(courseAPIResponseBody);
+		Map<String, Object> parsedResponse = courseAPIResponseParser.parseJSON(reader);
+		
+		//response is in a "data" array with one object (the course found)
+		//i dont think multiple courses can be returned but if so just use the first one
+		List<Map<String, Object>> temp = ((List<Map<String, Object>>)parsedResponse.get("data"));
+		if(temp.size() <= 0) return;
+		Map<String, Object> courseFound =  temp.get(0);
 
-		java.util.List<Map<String,Object>> sections = (List<Map<String, Object>>) classFound.get("sections");
-		if(sections.size() < 1) { System.err.println("Assertion failed; sections size < 1"); return; } //TODO throw exception here?
+		CalendarItem courseCalendarItem = new CalendarItem((String) courseFound.get("courseId")); 
+
+		java.util.List<Map<String,Object>> sections = (List<Map<String, Object>>) courseFound.get("sections");
+		if(sections.size() < 1) { System.err.println("Assertion failed; sections size < 1"); return; } //TODO throw exception here? eh its probably fine
 
 		//we need to check if there are multiple instruction formats under the same class (i.e COMS 2270 has lecture and discussion)
 		String meetingType = (String) sections.get(0).get("instructionalFormat"); 
-		classItem.setInstructionFormat(meetingType);
+		courseCalendarItem.setInstructionFormat(meetingType);
 		
 		for(int i = 0; i < sections.size(); i++) {
 			Map<String,Object> section = sections.get(i);
 			if(!meetingType.equals((String) section.get("instructionalFormat"))) {
-				String base = classItem.getCourseName();
-				calendarCourseInformation.add(classItem);
-				classItem.debugPrint();
-				classItem = new CalendarItem(base);
+				String base = courseCalendarItem.getCourseName(); //TODO im not sure if these should be different names or not
+				if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
+				calendarCourseInformation.add(courseCalendarItem);
+				courseCalendarItem.debugPrint();
+				courseCalendarItem = new CalendarItem(base);
 				meetingType = (String) section.get("instructionalFormat");
-				classItem.setInstructionFormat(meetingType);
+				courseCalendarItem.setInstructionFormat(meetingType);
 				System.err.println("Created new course block for different format");
 			}
 			String meetingPatterns = (String) section.get("meetingPatterns");
-			if(meetingPatterns == null) continue;
-			classItem.addMeetingInfo(
+			if(meetingPatterns == null) {
+				arrangedSections.add(courseCalendarItem.getCourseName() + " section " + (String) section.get("number") + " " + meetingType);
+			} else {
+			courseCalendarItem.addMeetingInfo(
 					(String) section.get("number"),new MeetingInfo(meetingPatterns)
-				);
+			); }
 
 		}
-		classItem.debugPrint();
-		calendarCourseInformation.add(classItem);
+
+		if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
+		calendarCourseInformation.add(courseCalendarItem);
 			
 	}
 
