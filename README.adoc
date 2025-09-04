@@ -34,8 +34,12 @@ https://www.youtube.com/shorts/3Vi4C1HuLZw
 
 -Missing features list:
  * Ability to save schedules (and output sections as txt file)
+
  * Notification for when there are no schedules for the current classes
+
  * Ability to remove a course section from the data structure entirely (should be easy but...)
+
  * The "Toolbar" in the calendar view should probably be a nav bar so we have a place to put these features
+
  *Ability to add a new class in the list
 
