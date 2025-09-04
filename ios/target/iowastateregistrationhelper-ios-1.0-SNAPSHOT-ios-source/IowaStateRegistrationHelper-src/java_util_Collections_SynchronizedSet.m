@@ -70,9 +70,9 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedSet_equals___java_lang_Object_R_b
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1997, 878);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL88837294801;
-    int tryBlockOffsetL88837294801;
-    DEFINE_CATCH_BLOCK(catch_L88837294801, label_L1877453512, restoreToL88837294801);
+    int restoreToL44682933701;
+    int tryBlockOffsetL44682933701;
+    DEFINE_CATCH_BLOCK(catch_L44682933701, label_L1877453512, restoreToL44682933701);
     int restoreToL187745351202;
     int tryBlockOffsetL187745351202;
     DEFINE_CATCH_BLOCK(catch_L187745351202, label_L1877453512, restoreToL187745351202);
@@ -81,17 +81,17 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedSet_equals___java_lang_Object_R_b
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L888372948:
- tryBlockOffsetL88837294801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L88837294801);
-    restoreToL88837294801 = threadStateData->threadObjectStackOffset;
+label_L446829337:
+ tryBlockOffsetL44682933701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L44682933701);
+    restoreToL44682933701 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Collection_equals___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Collections_SynchronizedSet_c(__cn1ThisObject), locals[1].data.o);
     PUSH_INT(tmpResult); }
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1336837205:
+label_L1036986037:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L1877453512:
@@ -103,7 +103,7 @@ label_L1877453512:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L383521487:
+label_L446408386:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -112,9 +112,9 @@ END_TRY(1);    BC_ALOAD(3);
 
 JAVA_INT java_util_Collections_SynchronizedSet_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1997, 883);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL153914600801;
-    int tryBlockOffsetL153914600801;
-    DEFINE_CATCH_BLOCK(catch_L153914600801, label_L487694075, restoreToL153914600801);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL78145480001;
+    int tryBlockOffsetL78145480001;
+    DEFINE_CATCH_BLOCK(catch_L78145480001, label_L487694075, restoreToL78145480001);
     int restoreToL48769407502;
     int tryBlockOffsetL48769407502;
     DEFINE_CATCH_BLOCK(catch_L48769407502, label_L487694075, restoreToL48769407502);
@@ -123,17 +123,17 @@ JAVA_INT java_util_Collections_SynchronizedSet_hashCode___R_int(CODENAME_ONE_THR
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1539146008:
- tryBlockOffsetL153914600801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L153914600801);
-    restoreToL153914600801 = threadStateData->threadObjectStackOffset;
+label_L781454800:
+ tryBlockOffsetL78145480001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L78145480001);
+    restoreToL78145480001 = threadStateData->threadObjectStackOffset;
 
     { JAVA_INT tmpResult = virtual_java_util_Collection_hashCode___R_int(threadStateData, get_field_java_util_Collections_SynchronizedSet_c(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1956069733:
+label_L614787520:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L487694075:
@@ -145,7 +145,7 @@ label_L487694075:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1327562638:
+label_L1620744559:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;

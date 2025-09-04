@@ -77,7 +77,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_6_run__(CODENAME_ONE_THREAD_STATE, J
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(483);
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_callback(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_util_Callback);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L889640998;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1531545666;
     __CN1_DEBUG_INFO(484);
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_callback(__cn1ThisObject));
     BC_ALOAD(0);
@@ -88,7 +88,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_6_run__(CODENAME_ONE_THREAD_STATE, J
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_errorMessage(__cn1ThisObject));
     virtual_com_codename1_util_Callback_onError___java_lang_Object_java_lang_Throwable_int_java_lang_String(threadStateData, SP[-5].data.o, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.o);     SP-= 5;
 
-label_L889640998:
+label_L1531545666:
     __CN1_DEBUG_INFO(487);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

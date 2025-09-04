@@ -612,11 +612,11 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_u
     flocals_3_ = __cn1Arg3;
     flocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(375);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L79791382;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1739986996;
     __CN1_DEBUG_INFO(376);
     com_codename1_ui_plaf_LookAndFeel_initScroll__(threadStateData, __cn1ThisObject); 
 
-label_L79791382:
+label_L1739986996:
     __CN1_DEBUG_INFO(378);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(379);
@@ -624,7 +624,7 @@ label_L79791382:
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_Style_getBorder___R_com_codename1_ui_plaf_Border(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L705400860;
+    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L990722659;
     __CN1_DEBUG_INFO(380);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
@@ -634,11 +634,11 @@ label_L79791382:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(5);
 
-label_L705400860:
+label_L990722659:
     __CN1_DEBUG_INFO(382);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(383);
-    if (virtual_com_codename1_ui_Component_isRTL___R_boolean(threadStateData, locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1024478363;
+    if (virtual_com_codename1_ui_Component_isRTL___R_boolean(threadStateData, locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1348045338;
     __CN1_DEBUG_INFO(384);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
@@ -654,13 +654,13 @@ label_L705400860:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(6);
-    goto label_L1698990491;
+    goto label_L350099713;
 
-label_L1024478363:
+label_L1348045338:
     __CN1_DEBUG_INFO(386);
     /* VarOp.assignFrom */ ilocals_6_=(ilocals_6_ + ilocals_5_);
 
-label_L1698990491:
+label_L350099713:
     __CN1_DEBUG_INFO(388);
     /* VarOp.assignFrom */ ilocals_7_ = virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(389);
@@ -670,19 +670,19 @@ label_L1698990491:
     __CN1_DEBUG_INFO(391);
     /* CustomInvoke */com_codename1_ui_plaf_LookAndFeel_drawScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float_boolean_int_int_int_int_com_codename1_ui_Component_com_codename1_ui_Component(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o, flocals_3_, flocals_4_, 1 /* ICONST_1 */, ilocals_6_, ilocals_7_, ilocals_9_, ilocals_8_, get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject), get_field_com_codename1_ui_plaf_LookAndFeel_verticalScrollThumb(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(392);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollEdge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1839548688;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollEdge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1132385302;
     __CN1_DEBUG_INFO(393);
-    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L467185608;
+    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L301084728;
     __CN1_DEBUG_INFO(394);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L605244604;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L233271622;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayWidth___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Image_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(__cn1ThisObject));
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1708786164;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1763010538;
 
-label_L605244604:
+label_L233271622:
     __CN1_DEBUG_INFO(395);
     BC_ALOAD(0);
     BC_ALOAD(0);
@@ -705,13 +705,13 @@ label_L605244604:
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1708786164:
+label_L1763010538:
     __CN1_DEBUG_INFO(398);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int(threadStateData, locals[1].data.o, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(__cn1ThisObject), virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o), virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)); 
 
-label_L467185608:
+label_L301084728:
     __CN1_DEBUG_INFO(400);
-    if (CN1_CMP_EXPR(flocals_3_, (1 /* FCONST_1 */ - flocals_4_))>=0) /* IFGE CustomJump */ goto label_L1839548688;
+    if (CN1_CMP_EXPR(flocals_3_, (1 /* FCONST_1 */ - flocals_4_))>=0) /* IFGE CustomJump */ goto label_L1132385302;
     __CN1_DEBUG_INFO(403);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getScrollY___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -740,22 +740,22 @@ label_L467185608:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(11);
     __CN1_DEBUG_INFO(408);
-    if (ilocals_10_<ilocals_11_) /* IF_IMPLT CustomJump */ goto label_L586164630;
+    if (ilocals_10_<ilocals_11_) /* IF_IMPLT CustomJump */ goto label_L1560203450;
     __CN1_DEBUG_INFO(409);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L586164630:
+label_L1560203450:
     __CN1_DEBUG_INFO(411);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBottom(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2089317615;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBottom(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1552767213;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayWidth___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Image_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBottom(__cn1ThisObject));
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1119920494;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1784053627;
 
-label_L2089317615:
+label_L1552767213:
     __CN1_DEBUG_INFO(412);
     BC_ALOAD(0);
     BC_ALOAD(0);
@@ -778,7 +778,7 @@ label_L2089317615:
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBottom(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1119920494:
+label_L1784053627:
     __CN1_DEBUG_INFO(415);
     BC_ALOAD(1);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBottom(__cn1ThisObject));
@@ -794,7 +794,7 @@ label_L1119920494:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 4;
 
-label_L1839548688:
+label_L1132385302:
     __CN1_DEBUG_INFO(418);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -853,11 +853,11 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1
     flocals_3_ = __cn1Arg3;
     flocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(440);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2007031139;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L683573228;
     __CN1_DEBUG_INFO(441);
     com_codename1_ui_plaf_LookAndFeel_initScroll__(threadStateData, __cn1ThisObject); 
 
-label_L2007031139:
+label_L683573228:
     __CN1_DEBUG_INFO(443);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(444);
@@ -865,7 +865,7 @@ label_L2007031139:
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_Style_getBorder___R_com_codename1_ui_plaf_Border(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L1413473944;
+    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L40829249;
     __CN1_DEBUG_INFO(445);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
@@ -875,7 +875,7 @@ label_L2007031139:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(5);
 
-label_L1413473944:
+label_L40829249:
     __CN1_DEBUG_INFO(447);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(448);
@@ -899,19 +899,19 @@ label_L1413473944:
     __CN1_DEBUG_INFO(452);
     /* CustomInvoke */com_codename1_ui_plaf_LookAndFeel_drawScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float_boolean_int_int_int_int_com_codename1_ui_Component_com_codename1_ui_Component(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o, flocals_3_, flocals_4_, 0 /* ICONST_0 */, ilocals_6_, ilocals_7_, ilocals_8_, ilocals_9_, get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject), get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScrollThumb(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(453);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollEdge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1798299644;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollEdge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L873688017;
     __CN1_DEBUG_INFO(454);
-    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L748935206;
+    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L1843885967;
     __CN1_DEBUG_INFO(455);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollLeft(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1561936660;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollLeft(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L914175168;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollLeft(__cn1ThisObject));
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1983472905;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1289903687;
 
-label_L1561936660:
+label_L914175168:
     __CN1_DEBUG_INFO(456);
     BC_ALOAD(0);
     BC_ALOAD(0);
@@ -934,13 +934,13 @@ label_L1561936660:
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollLeft(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1983472905:
+label_L1289903687:
     __CN1_DEBUG_INFO(459);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int(threadStateData, locals[1].data.o, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollLeft(__cn1ThisObject), virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o), virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)); 
 
-label_L748935206:
+label_L1843885967:
     __CN1_DEBUG_INFO(461);
-    if (CN1_CMP_EXPR(flocals_3_, (1 /* FCONST_1 */ - flocals_4_))>=0) /* IFGE CustomJump */ goto label_L1798299644;
+    if (CN1_CMP_EXPR(flocals_3_, (1 /* FCONST_1 */ - flocals_4_))>=0) /* IFGE CustomJump */ goto label_L873688017;
     __CN1_DEBUG_INFO(464);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getScrollX___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -969,22 +969,22 @@ label_L748935206:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(11);
     __CN1_DEBUG_INFO(468);
-    if (ilocals_10_<ilocals_11_) /* IF_IMPLT CustomJump */ goto label_L1669104653;
+    if (ilocals_10_<ilocals_11_) /* IF_IMPLT CustomJump */ goto label_L1669392873;
     __CN1_DEBUG_INFO(469);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1669104653:
+label_L1669392873:
     __CN1_DEBUG_INFO(471);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollRight(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1370231468;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollRight(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L890085657;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollRight(__cn1ThisObject));
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1178270318;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1778993228;
 
-label_L1370231468:
+label_L890085657:
     __CN1_DEBUG_INFO(472);
     BC_ALOAD(0);
     BC_ALOAD(0);
@@ -1007,7 +1007,7 @@ label_L1370231468:
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollRight(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1178270318:
+label_L1778993228:
     __CN1_DEBUG_INFO(475);
     BC_ALOAD(1);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollRight(__cn1ThisObject));
@@ -1023,7 +1023,7 @@ label_L1178270318:
     PUSH_INT(tmpResult); }
     virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 4;
 
-label_L1798299644:
+label_L873688017:
     __CN1_DEBUG_INFO(478);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1082,19 +1082,19 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_drawScroll___com_codename1_ui_Graphi
     __CN1_DEBUG_INFO(488);
     /* VarOp.assignFrom */ ilocals_16_ = virtual_com_codename1_ui_Graphics_getAlpha___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(489);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBar(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2073484941;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBar(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L885465900;
     __CN1_DEBUG_INFO(490);
-    if (virtual_com_codename1_ui_plaf_Style_getBgTransparency___R_byte(threadStateData, locals[12].data.o)==0) /* IFEQ CustomJump */ goto label_L2093834526;
+    if (virtual_com_codename1_ui_plaf_Style_getBgTransparency___R_byte(threadStateData, locals[12].data.o)==0) /* IFEQ CustomJump */ goto label_L1357663228;
     __CN1_DEBUG_INFO(491);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBgTransparency___int_boolean(threadStateData, locals[12].data.o, virtual_com_codename1_ui_Component_getScrollOpacity___R_int(threadStateData, locals[2].data.o), 1 /* ICONST_1 */); 
 
-label_L2093834526:
+label_L1357663228:
     __CN1_DEBUG_INFO(493);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBgTransparency___int_boolean(threadStateData, locals[13].data.o, virtual_com_codename1_ui_Component_getScrollOpacity___R_int(threadStateData, locals[2].data.o), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(494);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, virtual_com_codename1_ui_Component_getScrollOpacity___R_int(threadStateData, locals[2].data.o)); 
 
-label_L2073484941:
+label_L885465900:
     __CN1_DEBUG_INFO(497);
     /* VarOp.assignFrom */ ilocals_17_ = /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_getMarginLeft___boolean_R_int(threadStateData, locals[12].data.o, virtual_com_codename1_ui_Component_isRTL___R_boolean(threadStateData, locals[2].data.o));
     __CN1_DEBUG_INFO(498);
@@ -1178,7 +1178,7 @@ label_L2073484941:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(9);
     __CN1_DEBUG_INFO(525);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1304765785;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L145833361;
     __CN1_DEBUG_INFO(526);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -1197,9 +1197,9 @@ label_L2073484941:
     SP--; SP[-1].data.f = SP[-1].data.f * (*SP).data.f; /* FMUL */
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     BC_ISTORE(23);
-    goto label_L1547521797;
+    goto label_L677007331;
 
-label_L1304765785:
+label_L145833361:
     __CN1_DEBUG_INFO(529);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -1219,9 +1219,9 @@ label_L1304765785:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     BC_ISTORE(23);
 
-label_L1547521797:
+label_L677007331:
     __CN1_DEBUG_INFO(533);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L294817977;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L629790599;
     __CN1_DEBUG_INFO(534);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setX___int(threadStateData, locals[11].data.o, ilocals_6_); 
     __CN1_DEBUG_INFO(535);
@@ -1230,9 +1230,9 @@ label_L1547521797:
     /* CustomInvoke */virtual_com_codename1_ui_Component_setWidth___int(threadStateData, locals[11].data.o, ilocals_8_); 
     __CN1_DEBUG_INFO(537);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setHeight___int(threadStateData, locals[11].data.o, ilocals_24_); 
-    goto label_L104912388;
+    goto label_L394840929;
 
-label_L294817977:
+label_L629790599:
     __CN1_DEBUG_INFO(539);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setX___int(threadStateData, locals[11].data.o, (ilocals_6_ + ilocals_23_)); 
     __CN1_DEBUG_INFO(540);
@@ -1242,7 +1242,7 @@ label_L294817977:
     __CN1_DEBUG_INFO(542);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setHeight___int(threadStateData, locals[11].data.o, ilocals_9_); 
 
-label_L104912388:
+label_L394840929:
     __CN1_DEBUG_INFO(545);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setClip___int_int_int_int(threadStateData, locals[1].data.o, ilocals_19_, ilocals_20_, ilocals_21_, ilocals_22_); 
     __CN1_DEBUG_INFO(546);
@@ -1250,7 +1250,7 @@ label_L104912388:
     __CN1_DEBUG_INFO(547);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setClip___int_int_int_int(threadStateData, locals[1].data.o, ilocals_19_, ilocals_20_, ilocals_21_, ilocals_22_); 
     __CN1_DEBUG_INFO(548);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBar(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1657521272;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollBar(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L383005108;
     __CN1_DEBUG_INFO(549);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBgTransparency___int_boolean(threadStateData, locals[12].data.o, ilocals_14_, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(550);
@@ -1258,7 +1258,7 @@ label_L104912388:
     __CN1_DEBUG_INFO(551);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_16_); 
 
-label_L1657521272:
+label_L383005108:
     __CN1_DEBUG_INFO(553);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1288,11 +1288,11 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_co
 JAVA_INT com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3902, 3930);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(575);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1413020227;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1812681178;
     __CN1_DEBUG_INFO(576);
     com_codename1_ui_plaf_LookAndFeel_initScroll__(threadStateData, __cn1ThisObject); 
 
-label_L1413020227:
+label_L1812681178:
     __CN1_DEBUG_INFO(578);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_verticalScroll(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(581);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_Style_getMarginLeftNoRTL___R_int(threadStateData, locals[1].data.o);
@@ -1316,11 +1316,11 @@ label_L1413020227:
 JAVA_INT com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3902, 3931);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(591);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1361755941;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L123045427;
     __CN1_DEBUG_INFO(592);
     com_codename1_ui_plaf_LookAndFeel_initScroll__(threadStateData, __cn1ThisObject); 
 
-label_L1361755941:
+label_L123045427:
     __CN1_DEBUG_INFO(594);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_horizontalScroll(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(597);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_Style_getMarginTop___R_int(threadStateData, locals[1].data.o);
@@ -1654,9 +1654,9 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean(CODENAME_ONE_
     volatile JAVA_INT ilocals_12_ = 0; /* v12 */
     DEFINE_INSTANCE_METHOD_STACK(7, 14, 0, 3902, 2681);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
-    int restoreToL748517748cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL748517748cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L748517748cn1_class_id_java_lang_NumberFormatException1, label_L1364898802, restoreToL748517748cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL141847253cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL141847253cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L141847253cn1_class_id_java_lang_NumberFormatException1, label_L1448580731, restoreToL141847253cn1_class_id_java_lang_NumberFormatException1);
     __CN1_DEBUG_INFO(934);
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(935);
@@ -1668,15 +1668,15 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean(CODENAME_ONE_
     __CN1_DEBUG_INFO(938);
     com_codename1_ui_plaf_LookAndFeel_initScroll__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(939);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_menuRenderer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1829651877, 0);
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_menuRenderer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1631143060, 0);
     __CN1_DEBUG_INFO(940);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_menuRenderer(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Component);
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1829651877, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1631143060, 0);
     __CN1_DEBUG_INFO(941);
     virtual_com_codename1_ui_Component_refreshTheme__(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_menuRenderer(__cn1ThisObject)); 
 
-label_L1829651877:
+label_L1631143060:
     __CN1_DEBUG_INFO(945);
     /* CustomInvoke */com_codename1_ui_Toolbar_setGlobalToolbar___boolean(threadStateData, /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3968), com_codename1_ui_Toolbar_isGlobalToolbar___R_boolean(threadStateData))); 
     __CN1_DEBUG_INFO(947);
@@ -1707,10 +1707,10 @@ label_L1829651877:
     __CN1_DEBUG_INFO(953);
     /* CustomInvoke */com_codename1_ui_InputComponent_setMultiLineErrorMessage___boolean(threadStateData, /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3973), 0 /* ICONST_0 */)); 
 
-label_L748517748:
- tryBlockOffsetL748517748cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L748517748cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL748517748cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L141847253:
+ tryBlockOffsetL141847253cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L141847253cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL141847253cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(956);
     BC_ALOAD(0);
@@ -1733,26 +1733,26 @@ label_L748517748:
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     set_field_com_codename1_ui_plaf_LookAndFeel_tickerSpeed(threadStateData, POP_LONG(), POP_OBJ());
     __CN1_DEBUG_INFO(957);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_LookAndFeel_tickerSpeed(__cn1ThisObject), 1 /* LCONST_1 */)>=0) /* IFGE CustomJump */ JUMP_TO(label_L2121744549, 1);
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_LookAndFeel_tickerSpeed(__cn1ThisObject), 1 /* LCONST_1 */)>=0) /* IFGE CustomJump */ JUMP_TO(label_L1468685544, 1);
     __CN1_DEBUG_INFO(958);
     /* CustomInvoke */com_codename1_ui_Label_setDefaultTickerEnabled___boolean(threadStateData, 0 /* ICONST_0 */); 
-    JUMP_TO(label_L2057313241, 1);
+    JUMP_TO(label_L2084912180, 1);
 
-label_L2121744549:
+label_L1468685544:
     __CN1_DEBUG_INFO(960);
     /* CustomInvoke */com_codename1_ui_Label_setDefaultTickerEnabled___boolean(threadStateData, 1 /* ICONST_1 */); 
 
-label_L2057313241:
+label_L2084912180:
 END_TRY(1);    __CN1_DEBUG_INFO(964);
-    JUMP_TO(label_L2120344156, 0);
+    JUMP_TO(label_L382441865, 0);
 
-label_L1364898802:
+label_L1448580731:
     __CN1_DEBUG_INFO(962);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(963);
     /* CustomInvoke */com_codename1_io_Log_e___java_lang_Throwable(threadStateData, locals[3].data.o); 
 
-label_L2120344156:
+label_L382441865:
     __CN1_DEBUG_INFO(966);
     /* CustomInvoke */com_codename1_ui_Button_setCapsTextDefault___boolean(threadStateData, /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3975), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(967);
@@ -1811,7 +1811,7 @@ label_L2120344156:
     __CN1_DEBUG_INFO(975);
     /* CustomInvoke */com_codename1_ui_List_setDefaultIgnoreFocusComponentWhenUnfocused___boolean(threadStateData, /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3982), com_codename1_ui_List_isDefaultIgnoreFocusComponentWhenUnfocused___R_boolean(threadStateData))); 
     __CN1_DEBUG_INFO(977);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ JUMP_TO(label_L1633530712, 0);
+    if (ilocals_2_==0) /* IFEQ CustomJump */ JUMP_TO(label_L1040015904, 0);
     __CN1_DEBUG_INFO(978);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject));
@@ -1825,7 +1825,7 @@ label_L2120344156:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     virtual_com_codename1_ui_Display_setPureTouch___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L1633530712:
+label_L1040015904:
     __CN1_DEBUG_INFO(981);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeConstant___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3984), STRING_FROM_CONSTANT_POOL_OFFSET(3985));
     PUSH_OBJ(tmpResult); }
@@ -1903,14 +1903,14 @@ label_L1633530712:
     set_field_com_codename1_ui_plaf_LookAndFeel_textFieldCursorColor(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(1001);
     /* VarOp.assignFrom */ locals[13].data.o = /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_getThemeConstant___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4006), JAVA_NULL /* ACONST_NULL */);locals[13].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1002);
-    if (locals[13].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L627815870, 0);
+    if (locals[13].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L940905579, 0);
     __CN1_DEBUG_INFO(1003);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_Display_convertToPixels___float_R_int(threadStateData, SP[-1].data.o, /* CustomInvoke */com_codename1_io_Util_toFloatValue___java_lang_Object_R_float(threadStateData, locals[13].data.o));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     com_codename1_ui_Label_setDefaultGap___int(threadStateData, SP[-1].data.i);     SP-= 1;
 
-label_L627815870:
+label_L940905579:
     __CN1_DEBUG_INFO(1006);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject));
     /* LDC: 'infiniteProgressMaterialModeBool'*/
@@ -1965,7 +1965,7 @@ label_L627815870:
     __CN1_DEBUG_INFO(1018);
     set_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(1019);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_defaultTensileHighlight(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1609501721, 0);
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_defaultTensileHighlight(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1843674049, 0);
     __CN1_DEBUG_INFO(1020);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeImageConstant___java_lang_String_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4015));
@@ -1991,19 +1991,19 @@ label_L627815870:
     set_field_com_codename1_ui_plaf_LookAndFeel_tensileGlowTopImage(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(1024);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L778925754, 0);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L778925754, 0);
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L665448485, 0);
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L665448485, 0);
     __CN1_DEBUG_INFO(1025);
     set_field_com_codename1_ui_plaf_LookAndFeel_defaultTensileDrag(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(1026);
     set_field_com_codename1_ui_plaf_LookAndFeel_defaultAlwaysTensile(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
-    JUMP_TO(label_L1609501721, 0);
+    JUMP_TO(label_L1843674049, 0);
 
-label_L778925754:
+label_L665448485:
     __CN1_DEBUG_INFO(1028);
     set_field_com_codename1_ui_plaf_LookAndFeel_defaultTensileHighlight(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1609501721:
+label_L1843674049:
     __CN1_DEBUG_INFO(1031);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4019), 0 /* ICONST_0 */);
@@ -2022,9 +2022,9 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_initCommandBehaviorConstant___java_l
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(1035);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L581359452;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1905486482;
     __CN1_DEBUG_INFO(1036);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4021))==0) /* IFEQ CustomJump */ goto label_L1519927539;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4021))==0) /* IFEQ CustomJump */ goto label_L1630903943;
     __CN1_DEBUG_INFO(1037);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
@@ -2032,9 +2032,9 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_initCommandBehaviorConstant___java_l
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1519927539:
+label_L1630903943:
     __CN1_DEBUG_INFO(1040);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4022))==0) /* IFEQ CustomJump */ goto label_L2100297853;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4022))==0) /* IFEQ CustomJump */ goto label_L767794003;
     __CN1_DEBUG_INFO(1041);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 3 /* ICONST_3 */);     SP -= 1;
@@ -2042,9 +2042,9 @@ label_L1519927539:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2100297853:
+label_L767794003:
     __CN1_DEBUG_INFO(1044);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(172))==0) /* IFEQ CustomJump */ goto label_L942502343;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(172))==0) /* IFEQ CustomJump */ goto label_L1157856790;
     __CN1_DEBUG_INFO(1045);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 4/* ICONST_4 */);     SP -= 1;
@@ -2052,9 +2052,9 @@ label_L2100297853:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L942502343:
+label_L1157856790:
     __CN1_DEBUG_INFO(1048);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2812))==0) /* IFEQ CustomJump */ goto label_L749030825;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2812))==0) /* IFEQ CustomJump */ goto label_L791563230;
     __CN1_DEBUG_INFO(1049);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 5 /* ICONST_5 */);     SP -= 1;
@@ -2062,9 +2062,9 @@ label_L942502343:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L749030825:
+label_L791563230:
     __CN1_DEBUG_INFO(1052);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4023))==0) /* IFEQ CustomJump */ goto label_L883035926;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4023))==0) /* IFEQ CustomJump */ goto label_L1646410010;
     __CN1_DEBUG_INFO(1053);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 6);     SP -= 1;
@@ -2072,9 +2072,9 @@ label_L749030825:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L883035926:
+label_L1646410010:
     __CN1_DEBUG_INFO(1056);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4024))==0) /* IFEQ CustomJump */ goto label_L1231864343;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4024))==0) /* IFEQ CustomJump */ goto label_L1401564942;
     __CN1_DEBUG_INFO(1057);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 10);     SP -= 1;
@@ -2082,9 +2082,9 @@ label_L883035926:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1231864343:
+label_L1401564942:
     __CN1_DEBUG_INFO(1060);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4025))==0) /* IFEQ CustomJump */ goto label_L438051252;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4025))==0) /* IFEQ CustomJump */ goto label_L220661927;
     __CN1_DEBUG_INFO(1061);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 7);     SP -= 1;
@@ -2092,9 +2092,9 @@ label_L1231864343:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L438051252:
+label_L220661927:
     __CN1_DEBUG_INFO(1064);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4026))==0) /* IFEQ CustomJump */ goto label_L483589979;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4026))==0) /* IFEQ CustomJump */ goto label_L1351275110;
     __CN1_DEBUG_INFO(1065);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String_int(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(4027), 3 /* ICONST_3 */); 
     __CN1_DEBUG_INFO(1066);
@@ -2106,14 +2106,14 @@ label_L438051252:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L581359452:
+label_L1905486482:
     __CN1_DEBUG_INFO(1071);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L483589979;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1351275110;
     __CN1_DEBUG_INFO(1072);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setCommandBehavior___int(threadStateData, SP[-1].data.o, 1 /* ICONST_1 */);     SP -= 1;
 
-label_L483589979:
+label_L1351275110:
     __CN1_DEBUG_INFO(1075);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2148,16 +2148,16 @@ JAVA_OBJECT com_codename1_ui_plaf_LookAndFeel_getTransitionConstant___com_codena
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(6);
     __CN1_DEBUG_INFO(1079);
-    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L950831464;
+    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L588503940;
     __CN1_DEBUG_INFO(1080);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createTimeline___com_codename1_ui_Image_R_com_codename1_ui_animations_CommonTransitions(threadStateData, locals[6].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L950831464:
+label_L588503940:
     __CN1_DEBUG_INFO(1082);
     /* VarOp.assignFrom */ locals[7].data.o = /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_getThemeConstant___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), locals[2].data.o, JAVA_NULL /* ACONST_NULL */);locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1083);
-    if (locals[7].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L402622480;
+    if (locals[7].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L560165559;
     __CN1_DEBUG_INFO(1084);
 
 {
@@ -2165,105 +2165,105 @@ label_L950831464:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L402622480:
+label_L560165559:
     __CN1_DEBUG_INFO(1086);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4030))==0) /* IFEQ CustomJump */ goto label_L1821711066;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4030))==0) /* IFEQ CustomJump */ goto label_L347354124;
     __CN1_DEBUG_INFO(1087);
     PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createEmpty___R_com_codename1_ui_animations_CommonTransitions(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1821711066:
+label_L347354124:
     __CN1_DEBUG_INFO(1089);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4031))==0) /* IFEQ CustomJump */ goto label_L1739986996;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4031))==0) /* IFEQ CustomJump */ goto label_L313249054;
     __CN1_DEBUG_INFO(1090);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L990722659;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L802814772;
     __CN1_DEBUG_INFO(1091);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 0 /* ICONST_0 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L990722659:
+label_L802814772:
     __CN1_DEBUG_INFO(1093);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 1 /* ICONST_1 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1739986996:
+label_L313249054:
     __CN1_DEBUG_INFO(1096);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4032))==0) /* IFEQ CustomJump */ goto label_L1348045338;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4032))==0) /* IFEQ CustomJump */ goto label_L362140338;
     __CN1_DEBUG_INFO(1097);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L350099713;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L540315736;
     __CN1_DEBUG_INFO(1098);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createCover___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 0 /* ICONST_0 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L350099713:
+label_L540315736:
     __CN1_DEBUG_INFO(1100);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createCover___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 1 /* ICONST_1 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1348045338:
+label_L362140338:
     __CN1_DEBUG_INFO(1103);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4033))==0) /* IFEQ CustomJump */ goto label_L1132385302;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4033))==0) /* IFEQ CustomJump */ goto label_L1824225917;
     __CN1_DEBUG_INFO(1104);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L301084728;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L215694469;
     __CN1_DEBUG_INFO(1105);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createUncover___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 0 /* ICONST_0 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L301084728:
+label_L215694469:
     __CN1_DEBUG_INFO(1107);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createUncover___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 1 /* ICONST_1 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1132385302:
+label_L1824225917:
     __CN1_DEBUG_INFO(1110);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4034))==0) /* IFEQ CustomJump */ goto label_L233271622;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4034))==0) /* IFEQ CustomJump */ goto label_L929066990;
     __CN1_DEBUG_INFO(1111);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L1763010538;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3987))==0) /* IFEQ CustomJump */ goto label_L869437194;
     __CN1_DEBUG_INFO(1112);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createFastSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 0 /* ICONST_0 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1763010538:
+label_L869437194:
     __CN1_DEBUG_INFO(1114);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createFastSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, 1 /* ICONST_1 */, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L233271622:
+label_L929066990:
     __CN1_DEBUG_INFO(1117);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4035))==0) /* IFEQ CustomJump */ goto label_L1560203450;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4035))==0) /* IFEQ CustomJump */ goto label_L76379039;
     __CN1_DEBUG_INFO(1118);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createFade___int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1560203450:
+label_L76379039:
     __CN1_DEBUG_INFO(1120);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4036))==0) /* IFEQ CustomJump */ goto label_L1552767213;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4036))==0) /* IFEQ CustomJump */ goto label_L1374115999;
     __CN1_DEBUG_INFO(1121);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createSlideFadeTitle___boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, ilocals_5_, ilocals_4_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1552767213:
+label_L1374115999:
     __CN1_DEBUG_INFO(1123);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4037))==0) /* IFEQ CustomJump */ goto label_L1784053627;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4037))==0) /* IFEQ CustomJump */ goto label_L1707889234;
     __CN1_DEBUG_INFO(1124);
     PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createDialogPulsate___R_com_codename1_ui_animations_CommonTransitions(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1784053627:
+label_L1707889234:
     __CN1_DEBUG_INFO(1126);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4038))==0) /* IFEQ CustomJump */ goto label_L683573228;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4038))==0) /* IFEQ CustomJump */ goto label_L1119955774;
     __CN1_DEBUG_INFO(1127);
     PUSH_POINTER(__NEW_com_codename1_ui_animations_BubbleTransition(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -2278,7 +2278,7 @@ label_L1784053627:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L683573228:
+label_L1119955774:
     __CN1_DEBUG_INFO(1131);
 
 {
@@ -2297,22 +2297,22 @@ JAVA_BOOLEAN com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean(CODENAME
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(1);
     __CN1_DEBUG_INFO(1143);
-    if (ilocals_1_==3 /* ICONST_3 */) /* IF_ICMPEQ CustomJump */ goto label_L40829249;
-    if (ilocals_1_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L873688017;
+    if (ilocals_1_==3 /* ICONST_3 */) /* IF_ICMPEQ CustomJump */ goto label_L767535474;
+    if (ilocals_1_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L1190608890;
     __CN1_DEBUG_INFO(1144);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isTouchScreenDevice___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L873688017;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1190608890;
 
-label_L40829249:
+label_L767535474:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1843885967;
+    goto label_L1101970356;
 
-label_L873688017:
+label_L1190608890:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1843885967:
+label_L1101970356:
     __CN1_DEBUG_INFO(1143);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -2328,16 +2328,16 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_setRTL___boolean(CODENAME_ONE_THREAD
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3902, 2724);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(1168);
-    if (get_static_com_codename1_ui_plaf_UIManager_localeAccessible(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1669392873;
+    if (get_static_com_codename1_ui_plaf_UIManager_localeAccessible(threadStateData)==0) /* IFEQ CustomJump */ goto label_L623820846;
     __CN1_DEBUG_INFO(1169);
     set_field_com_codename1_ui_plaf_LookAndFeel_rtl(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(1170);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1669392873;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L623820846;
     __CN1_DEBUG_INFO(1171);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_setBidiAlgorithm___boolean(threadStateData, SP[-1].data.o, 1 /* ICONST_1 */);     SP -= 1;
 
-label_L1669392873:
+label_L623820846:
     __CN1_DEBUG_INFO(1174);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2530,15 +2530,15 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(1383);
-    if (ilocals_4_<=0) /* IFLE CustomJump */ goto label_L890085657;
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L890085657;
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L890085657;
+    if (ilocals_4_<=0) /* IFLE CustomJump */ goto label_L300526628;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L300526628;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L300526628;
     __CN1_DEBUG_INFO(1384);
     /* VarOp.assignFrom */ ilocals_5_ = virtual_com_codename1_ui_Component_getAbsoluteX___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(1385);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_Component_getAbsoluteY___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(1386);
-    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileGlowTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1778993228;
+    if (get_field_com_codename1_ui_plaf_LookAndFeel_tensileGlowTopImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1962049725;
     __CN1_DEBUG_INFO(1387);
     /* VarOp.assignFrom */ ilocals_7_ = virtual_com_codename1_ui_Graphics_getAlpha___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(1388);
@@ -2560,14 +2560,14 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     BC_ISTORE(9);
     __CN1_DEBUG_INFO(1390);
-    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L885465900;
+    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L1734023423;
     __CN1_DEBUG_INFO(1392);
-    if (virtual_com_codename1_ui_Component_isAlwaysTensile___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1357663228;
+    if (virtual_com_codename1_ui_Component_isAlwaysTensile___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L875010954;
     __CN1_DEBUG_INFO(1393);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1357663228:
+label_L875010954:
     __CN1_DEBUG_INFO(1395);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[2].data.o, get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject), ilocals_5_, ilocals_6_, virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(1396);
@@ -2576,9 +2576,9 @@ label_L1357663228:
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[2].data.o, get_field_com_codename1_ui_plaf_LookAndFeel_tensileGlowTopImage(__cn1ThisObject), ilocals_5_, ilocals_6_, virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, locals[1].data.o), ilocals_9_); 
     __CN1_DEBUG_INFO(1398);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[2].data.o, ilocals_7_); 
-    goto label_L145833361;
+    goto label_L1752402342;
 
-label_L885465900:
+label_L1734023423:
     __CN1_DEBUG_INFO(1400);
     BC_ALOAD(2);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject));
@@ -2632,26 +2632,26 @@ label_L885465900:
     __CN1_DEBUG_INFO(1403);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[2].data.o, ilocals_7_); 
 
-label_L145833361:
+label_L1752402342:
     __CN1_DEBUG_INFO(1405);
-    goto label_L890085657;
+    goto label_L300526628;
 
-label_L1778993228:
+label_L1962049725:
     __CN1_DEBUG_INFO(1406);
     /* VarOp.assignFrom */ ilocals_7_ = virtual_com_codename1_ui_Graphics_getAlpha___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(1407);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[2].data.o, ilocals_4_); 
     __CN1_DEBUG_INFO(1408);
-    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L677007331;
+    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L140778365;
     __CN1_DEBUG_INFO(1410);
-    if (virtual_com_codename1_ui_Component_isAlwaysTensile___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L629790599;
+    if (virtual_com_codename1_ui_Component_isAlwaysTensile___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L935818862;
     __CN1_DEBUG_INFO(1411);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[2].data.o, ilocals_7_); 
     __CN1_DEBUG_INFO(1412);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L629790599:
+label_L935818862:
     __CN1_DEBUG_INFO(1414);
     BC_ALOAD(2);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject));
@@ -2667,9 +2667,9 @@ label_L629790599:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightTopImage(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, SP[-6].data.o, SP[-5].data.o, SP[-4].data.i, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);     SP-= 6;
-    goto label_L394840929;
+    goto label_L1068781783;
 
-label_L677007331:
+label_L140778365:
     __CN1_DEBUG_INFO(1416);
     BC_ALOAD(2);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_LookAndFeel_tensileHighlightBottomImage(__cn1ThisObject));
@@ -2695,11 +2695,11 @@ label_L677007331:
     PUSH_INT(tmpResult); }
     virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, SP[-6].data.o, SP[-5].data.o, SP[-4].data.i, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);     SP-= 6;
 
-label_L394840929:
+label_L1068781783:
     __CN1_DEBUG_INFO(1418);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[2].data.o, ilocals_7_); 
 
-label_L890085657:
+label_L300526628:
     __CN1_DEBUG_INFO(1421);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2818,21 +2818,12 @@ JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawButton___com_codename1_u
 }
 
 
-typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawCheckBox___com_codename1_ui_Graphics_com_codename1_ui_Button)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
-
-JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawCheckBox___com_codename1_ui_Graphics_com_codename1_ui_Button(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    
-    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawCheckBox___com_codename1_ui_Graphics_com_codename1_ui_Button)__cn1ThisObject->__codenameOneParentClsReference->vtable[12])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
-}
-
-
 typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
 
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List)__cn1ThisObject->__codenameOneParentClsReference->vtable[13])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List)__cn1ThisObject->__codenameOneParentClsReference->vtable[12])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2841,7 +2832,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawLabel___co
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawLabel___com_codename1_ui_Graphics_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawLabel___com_codename1_ui_Graphics_com_codename1_ui_Label)__cn1ThisObject->__codenameOneParentClsReference->vtable[14])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawLabel___com_codename1_ui_Graphics_com_codename1_ui_Label)__cn1ThisObject->__codenameOneParentClsReference->vtable[13])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2850,7 +2841,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateLab
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_calculateLabelSpan___com_codename1_ui_TextSelection_com_codename1_ui_Label_R_com_codename1_ui_TextSelection_Span(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateLabelSpan___com_codename1_ui_TextSelection_com_codename1_ui_Label_R_com_codename1_ui_TextSelection_Span)__cn1ThisObject->__codenameOneParentClsReference->vtable[15])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateLabelSpan___com_codename1_ui_TextSelection_com_codename1_ui_Label_R_com_codename1_ui_TextSelection_Span)__cn1ThisObject->__codenameOneParentClsReference->vtable[14])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2859,7 +2850,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawList___com
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawList___com_codename1_ui_Graphics_com_codename1_ui_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawList___com_codename1_ui_Graphics_com_codename1_ui_List)__cn1ThisObject->__codenameOneParentClsReference->vtable[16])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawList___com_codename1_ui_Graphics_com_codename1_ui_List)__cn1ThisObject->__codenameOneParentClsReference->vtable[15])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2868,7 +2859,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextArea__
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawTextArea___com_codename1_ui_Graphics_com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextArea___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[17])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextArea___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[16])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2877,7 +2868,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTex
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_calculateTextAreaSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTextAreaSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans)__cn1ThisObject->__codenameOneParentClsReference->vtable[18])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTextAreaSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans)__cn1ThisObject->__codenameOneParentClsReference->vtable[17])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2886,7 +2877,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextField_
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawTextField___com_codename1_ui_Graphics_com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextField___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[19])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextField___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[18])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2895,7 +2886,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTex
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_calculateTextFieldSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTextFieldSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans)__cn1ThisObject->__codenameOneParentClsReference->vtable[20])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_calculateTextFieldSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans)__cn1ThisObject->__codenameOneParentClsReference->vtable[19])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2904,7 +2895,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextFieldC
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawTextFieldCursor___com_codename1_ui_Graphics_com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextFieldCursor___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[21])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawTextFieldCursor___com_codename1_ui_Graphics_com_codename1_ui_TextArea)__cn1ThisObject->__codenameOneParentClsReference->vtable[20])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2913,16 +2904,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getButtonPre
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getButtonPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getButtonPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[22])(threadStateData, __cn1ThisObject, __cn1Arg1);
-}
-
-
-typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getCheckBoxPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
-
-JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getCheckBoxPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    
-    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getCheckBoxPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[23])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getButtonPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[21])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2931,7 +2913,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getLabelPref
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getLabelPreferredSize___com_codename1_ui_Label_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getLabelPreferredSize___com_codename1_ui_Label_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[24])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getLabelPreferredSize___com_codename1_ui_Label_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[22])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2940,7 +2922,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getListPrefe
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getListPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getListPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[25])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getListPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[23])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2949,7 +2931,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextAreaS
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getTextAreaSize___com_codename1_ui_TextArea_boolean_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextAreaSize___com_codename1_ui_TextArea_boolean_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[26])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextAreaSize___com_codename1_ui_TextArea_boolean_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[24])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -2958,7 +2940,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextField
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getTextFieldPreferredSize___com_codename1_ui_TextArea_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextFieldPreferredSize___com_codename1_ui_TextArea_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[27])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTextFieldPreferredSize___com_codename1_ui_TextArea_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[25])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2967,7 +2949,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getComboBoxP
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getComboBoxPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getComboBoxPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[28])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getComboBoxPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension)__cn1ThisObject->__codenameOneParentClsReference->vtable[26])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2976,7 +2958,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawVerticalSc
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float)__cn1ThisObject->__codenameOneParentClsReference->vtable[29])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float)__cn1ThisObject->__codenameOneParentClsReference->vtable[27])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
 }
 
 
@@ -2985,7 +2967,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawHorizontal
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_FLOAT __cn1Arg3, JAVA_FLOAT __cn1Arg4) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float)__cn1ThisObject->__codenameOneParentClsReference->vtable[30])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float)__cn1ThisObject->__codenameOneParentClsReference->vtable[28])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
 }
 
 
@@ -2994,7 +2976,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_setFG___com_co
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_com_codename1_ui_Component)__cn1ThisObject->__codenameOneParentClsReference->vtable[31])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_com_codename1_ui_Component)__cn1ThisObject->__codenameOneParentClsReference->vtable[29])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
 
@@ -3003,7 +2985,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getVerticalScro
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[32])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[30])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3012,7 +2994,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getHorizontalSc
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[33])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[31])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3021,7 +3003,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFo
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionIn___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[34])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[32])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3030,7 +3012,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFo
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionOut___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[35])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[33])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3039,7 +3021,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMe
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[36])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[34])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3048,7 +3030,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMe
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[37])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[35])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3057,7 +3039,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDi
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionIn___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[38])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionIn___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[36])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3066,7 +3048,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDi
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionOut___R_com_codename1_ui_animations_Transition(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[39])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionOut___R_com_codename1_ui_animations_Transition)__cn1ThisObject->__codenameOneParentClsReference->vtable[37])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3075,7 +3057,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormT
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTintColor___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTintColor___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[40])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultFormTintColor___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[38])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3084,7 +3066,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDisableColor
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getDisableColor___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDisableColor___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[41])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDisableColor___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[39])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3093,7 +3075,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSm
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultSmoothScrolling___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSmoothScrolling___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[42])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSmoothScrolling___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[40])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3102,7 +3084,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultSmoot
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultSmoothScrollingSpeed___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultSmoothScrollingSpeed___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[43])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getDefaultSmoothScrollingSpeed___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[41])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3111,7 +3093,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isReverseSo
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isReverseSoftButtons___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isReverseSoftButtons___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[44])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isReverseSoftButtons___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[42])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3120,7 +3102,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuBarCl
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getMenuBarClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuBarClass___R_java_lang_Class)__cn1ThisObject->__codenameOneParentClsReference->vtable[45])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuBarClass___R_java_lang_Class)__cn1ThisObject->__codenameOneParentClsReference->vtable[43])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3129,7 +3111,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_setMenuBarClas
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_setMenuBarClass___java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setMenuBarClass___java_lang_Class)__cn1ThisObject->__codenameOneParentClsReference->vtable[46])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setMenuBarClass___java_lang_Class)__cn1ThisObject->__codenameOneParentClsReference->vtable[44])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -3138,7 +3120,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuRende
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getMenuRenderer___R_com_codename1_ui_list_ListCellRenderer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuRenderer___R_com_codename1_ui_list_ListCellRenderer)__cn1ThisObject->__codenameOneParentClsReference->vtable[47])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuRenderer___R_com_codename1_ui_list_ListCellRenderer)__cn1ThisObject->__codenameOneParentClsReference->vtable[45])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3147,7 +3129,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuIcons
 JAVA_OBJECT virtual_com_codename1_ui_plaf_LookAndFeel_getMenuIcons___R_com_codename1_ui_Image_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuIcons___R_com_codename1_ui_Image_1ARRAY)__cn1ThisObject->__codenameOneParentClsReference->vtable[48])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getMenuIcons___R_com_codename1_ui_Image_1ARRAY)__cn1ThisObject->__codenameOneParentClsReference->vtable[46])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3156,7 +3138,7 @@ typedef JAVA_LONG (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getTickerSpeed
 JAVA_LONG virtual_com_codename1_ui_plaf_LookAndFeel_getTickerSpeed___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTickerSpeed___R_long)__cn1ThisObject->__codenameOneParentClsReference->vtable[49])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTickerSpeed___R_long)__cn1ThisObject->__codenameOneParentClsReference->vtable[47])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3165,7 +3147,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_refreshTheme__
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[50])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[48])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -3174,7 +3156,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isTouchMenu
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[51])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[49])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3183,7 +3165,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_setRTL___boole
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_setRTL___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setRTL___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[52])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_setRTL___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[50])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -3192,7 +3174,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isRTL___R_b
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isRTL___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isRTL___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[53])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isRTL___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[51])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3201,7 +3183,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getTactileTouch
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getTactileTouchDuration___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTactileTouchDuration___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[54])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getTactileTouchDuration___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[52])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3210,7 +3192,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultEn
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultEndsWith3Points___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultEndsWith3Points___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[55])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultEndsWith3Points___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[53])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3219,7 +3201,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTe
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileDrag___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileDrag___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[56])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileDrag___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[54])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3228,7 +3210,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isFocusScro
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isFocusScrolling___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isFocusScrolling___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[57])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isFocusScrolling___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[55])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3237,7 +3219,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isFadeScrol
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isFadeScrollBar___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isFadeScrollBar___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[58])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isFadeScrollBar___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[56])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3246,7 +3228,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSn
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultSnapToGrid___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSnapToGrid___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[60])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultSnapToGrid___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[58])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3255,7 +3237,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultAl
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultAlwaysTensile___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultAlwaysTensile___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[61])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultAlwaysTensile___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[59])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3264,7 +3246,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTe
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileHighlight___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileHighlight___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[62])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isDefaultTensileHighlight___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[60])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3273,7 +3255,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_paintTensileHi
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename1_ui_Component_com_codename1_ui_Graphics_boolean_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3, JAVA_INT __cn1Arg4) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename1_ui_Component_com_codename1_ui_Graphics_boolean_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[63])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename1_ui_Component_com_codename1_ui_Graphics_boolean_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[61])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3, __cn1Arg4);
 }
 
 
@@ -3282,7 +3264,7 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getFadeScrollBa
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getFadeScrollBarSpeed___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getFadeScrollBarSpeed___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[65])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getFadeScrollBarSpeed___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[63])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3291,7 +3273,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isScrollVis
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isScrollVisible___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isScrollVisible___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[66])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isScrollVisible___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[64])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3300,7 +3282,7 @@ typedef JAVA_BOOLEAN (*functionPtr_com_codename1_ui_plaf_LookAndFeel_isBackgroun
 JAVA_BOOLEAN virtual_com_codename1_ui_plaf_LookAndFeel_isBackgroundImageDetermineSize___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isBackgroundImageDetermineSize___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[67])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_isBackgroundImageDetermineSize___R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[65])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -3309,7 +3291,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_plaf_LookAndFeel_drawPullToRefr
 JAVA_VOID virtual_com_codename1_ui_plaf_LookAndFeel_drawPullToRefresh___com_codename1_ui_Graphics_com_codename1_ui_Component_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawPullToRefresh___com_codename1_ui_Graphics_com_codename1_ui_Component_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[68])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
+    (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_drawPullToRefresh___com_codename1_ui_Graphics_com_codename1_ui_Component_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[66])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2, __cn1Arg3);
 }
 
 
@@ -3318,71 +3300,69 @@ typedef JAVA_INT (*functionPtr_com_codename1_ui_plaf_LookAndFeel_getPullToRefres
 JAVA_INT virtual_com_codename1_ui_plaf_LookAndFeel_getPullToRefreshHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getPullToRefreshHeight___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[69])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_plaf_LookAndFeel_getPullToRefreshHeight___R_int)__cn1ThisObject->__codenameOneParentClsReference->vtable[67])(threadStateData, __cn1ThisObject);
 }
 
 void __INIT_VTABLE_com_codename1_ui_plaf_LookAndFeel(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_java_lang_Object(threadStateData, vtable);
     vtable[10] = &com_codename1_ui_plaf_LookAndFeel_bind___com_codename1_ui_Component;
     vtable[11] = &com_codename1_ui_plaf_LookAndFeel_drawButton___com_codename1_ui_Graphics_com_codename1_ui_Button;
-    vtable[12] = &com_codename1_ui_plaf_LookAndFeel_drawCheckBox___com_codename1_ui_Graphics_com_codename1_ui_Button;
-    vtable[13] = &com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List;
-    vtable[14] = &com_codename1_ui_plaf_LookAndFeel_drawLabel___com_codename1_ui_Graphics_com_codename1_ui_Label;
-    vtable[15] = &com_codename1_ui_plaf_LookAndFeel_calculateLabelSpan___com_codename1_ui_TextSelection_com_codename1_ui_Label_R_com_codename1_ui_TextSelection_Span;
-    vtable[16] = &com_codename1_ui_plaf_LookAndFeel_drawList___com_codename1_ui_Graphics_com_codename1_ui_List;
-    vtable[17] = &com_codename1_ui_plaf_LookAndFeel_drawTextArea___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
-    vtable[18] = &com_codename1_ui_plaf_LookAndFeel_calculateTextAreaSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans;
-    vtable[19] = &com_codename1_ui_plaf_LookAndFeel_drawTextField___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
-    vtable[20] = &com_codename1_ui_plaf_LookAndFeel_calculateTextFieldSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans;
-    vtable[21] = &com_codename1_ui_plaf_LookAndFeel_drawTextFieldCursor___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
-    vtable[22] = &com_codename1_ui_plaf_LookAndFeel_getButtonPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension;
-    vtable[23] = &com_codename1_ui_plaf_LookAndFeel_getCheckBoxPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension;
-    vtable[24] = &com_codename1_ui_plaf_LookAndFeel_getLabelPreferredSize___com_codename1_ui_Label_R_com_codename1_ui_geom_Dimension;
-    vtable[25] = &com_codename1_ui_plaf_LookAndFeel_getListPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension;
-    vtable[26] = &com_codename1_ui_plaf_LookAndFeel_getTextAreaSize___com_codename1_ui_TextArea_boolean_R_com_codename1_ui_geom_Dimension;
-    vtable[27] = &com_codename1_ui_plaf_LookAndFeel_getTextFieldPreferredSize___com_codename1_ui_TextArea_R_com_codename1_ui_geom_Dimension;
-    vtable[28] = &com_codename1_ui_plaf_LookAndFeel_getComboBoxPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension;
-    vtable[29] = &com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float;
-    vtable[30] = &com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float;
-    vtable[31] = &com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_com_codename1_ui_Component;
-    vtable[32] = &com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int;
-    vtable[33] = &com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int;
-    vtable[34] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionIn___R_com_codename1_ui_animations_Transition;
-    vtable[35] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionOut___R_com_codename1_ui_animations_Transition;
-    vtable[36] = &com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition;
-    vtable[37] = &com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition;
-    vtable[38] = &com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionIn___R_com_codename1_ui_animations_Transition;
-    vtable[39] = &com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionOut___R_com_codename1_ui_animations_Transition;
-    vtable[40] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTintColor___R_int;
-    vtable[41] = &com_codename1_ui_plaf_LookAndFeel_getDisableColor___R_int;
-    vtable[42] = &com_codename1_ui_plaf_LookAndFeel_isDefaultSmoothScrolling___R_boolean;
-    vtable[43] = &com_codename1_ui_plaf_LookAndFeel_getDefaultSmoothScrollingSpeed___R_int;
-    vtable[44] = &com_codename1_ui_plaf_LookAndFeel_isReverseSoftButtons___R_boolean;
-    vtable[45] = &com_codename1_ui_plaf_LookAndFeel_getMenuBarClass___R_java_lang_Class;
-    vtable[46] = &com_codename1_ui_plaf_LookAndFeel_setMenuBarClass___java_lang_Class;
-    vtable[47] = &com_codename1_ui_plaf_LookAndFeel_getMenuRenderer___R_com_codename1_ui_list_ListCellRenderer;
-    vtable[48] = &com_codename1_ui_plaf_LookAndFeel_getMenuIcons___R_com_codename1_ui_Image_1ARRAY;
-    vtable[49] = &com_codename1_ui_plaf_LookAndFeel_getTickerSpeed___R_long;
-    vtable[50] = &com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean;
-    vtable[51] = &com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean;
-    vtable[52] = &com_codename1_ui_plaf_LookAndFeel_setRTL___boolean;
-    vtable[53] = &com_codename1_ui_plaf_LookAndFeel_isRTL___R_boolean;
-    vtable[54] = &com_codename1_ui_plaf_LookAndFeel_getTactileTouchDuration___R_int;
-    vtable[55] = &com_codename1_ui_plaf_LookAndFeel_isDefaultEndsWith3Points___R_boolean;
-    vtable[56] = &com_codename1_ui_plaf_LookAndFeel_isDefaultTensileDrag___R_boolean;
-    vtable[57] = &com_codename1_ui_plaf_LookAndFeel_isFocusScrolling___R_boolean;
-    vtable[58] = &com_codename1_ui_plaf_LookAndFeel_isFadeScrollBar___R_boolean;
-    vtable[59] = &com_codename1_ui_plaf_LookAndFeel_getTextFieldCursorColor___R_int;
-    vtable[60] = &com_codename1_ui_plaf_LookAndFeel_isDefaultSnapToGrid___R_boolean;
-    vtable[61] = &com_codename1_ui_plaf_LookAndFeel_isDefaultAlwaysTensile___R_boolean;
-    vtable[62] = &com_codename1_ui_plaf_LookAndFeel_isDefaultTensileHighlight___R_boolean;
-    vtable[63] = &com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename1_ui_Component_com_codename1_ui_Graphics_boolean_int;
-    vtable[64] = &com_codename1_ui_plaf_LookAndFeel_getUIManager___R_com_codename1_ui_plaf_UIManager;
-    vtable[65] = &com_codename1_ui_plaf_LookAndFeel_getFadeScrollBarSpeed___R_int;
-    vtable[66] = &com_codename1_ui_plaf_LookAndFeel_isScrollVisible___R_boolean;
-    vtable[67] = &com_codename1_ui_plaf_LookAndFeel_isBackgroundImageDetermineSize___R_boolean;
-    vtable[68] = &com_codename1_ui_plaf_LookAndFeel_drawPullToRefresh___com_codename1_ui_Graphics_com_codename1_ui_Component_boolean;
-    vtable[69] = &com_codename1_ui_plaf_LookAndFeel_getPullToRefreshHeight___R_int;
+    vtable[12] = &com_codename1_ui_plaf_LookAndFeel_drawComboBox___com_codename1_ui_Graphics_com_codename1_ui_List;
+    vtable[13] = &com_codename1_ui_plaf_LookAndFeel_drawLabel___com_codename1_ui_Graphics_com_codename1_ui_Label;
+    vtable[14] = &com_codename1_ui_plaf_LookAndFeel_calculateLabelSpan___com_codename1_ui_TextSelection_com_codename1_ui_Label_R_com_codename1_ui_TextSelection_Span;
+    vtable[15] = &com_codename1_ui_plaf_LookAndFeel_drawList___com_codename1_ui_Graphics_com_codename1_ui_List;
+    vtable[16] = &com_codename1_ui_plaf_LookAndFeel_drawTextArea___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
+    vtable[17] = &com_codename1_ui_plaf_LookAndFeel_calculateTextAreaSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans;
+    vtable[18] = &com_codename1_ui_plaf_LookAndFeel_drawTextField___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
+    vtable[19] = &com_codename1_ui_plaf_LookAndFeel_calculateTextFieldSpan___com_codename1_ui_TextSelection_com_codename1_ui_TextArea_R_com_codename1_ui_TextSelection_Spans;
+    vtable[20] = &com_codename1_ui_plaf_LookAndFeel_drawTextFieldCursor___com_codename1_ui_Graphics_com_codename1_ui_TextArea;
+    vtable[21] = &com_codename1_ui_plaf_LookAndFeel_getButtonPreferredSize___com_codename1_ui_Button_R_com_codename1_ui_geom_Dimension;
+    vtable[22] = &com_codename1_ui_plaf_LookAndFeel_getLabelPreferredSize___com_codename1_ui_Label_R_com_codename1_ui_geom_Dimension;
+    vtable[23] = &com_codename1_ui_plaf_LookAndFeel_getListPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension;
+    vtable[24] = &com_codename1_ui_plaf_LookAndFeel_getTextAreaSize___com_codename1_ui_TextArea_boolean_R_com_codename1_ui_geom_Dimension;
+    vtable[25] = &com_codename1_ui_plaf_LookAndFeel_getTextFieldPreferredSize___com_codename1_ui_TextArea_R_com_codename1_ui_geom_Dimension;
+    vtable[26] = &com_codename1_ui_plaf_LookAndFeel_getComboBoxPreferredSize___com_codename1_ui_List_R_com_codename1_ui_geom_Dimension;
+    vtable[27] = &com_codename1_ui_plaf_LookAndFeel_drawVerticalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float;
+    vtable[28] = &com_codename1_ui_plaf_LookAndFeel_drawHorizontalScroll___com_codename1_ui_Graphics_com_codename1_ui_Component_float_float;
+    vtable[29] = &com_codename1_ui_plaf_LookAndFeel_setFG___com_codename1_ui_Graphics_com_codename1_ui_Component;
+    vtable[30] = &com_codename1_ui_plaf_LookAndFeel_getVerticalScrollWidth___R_int;
+    vtable[31] = &com_codename1_ui_plaf_LookAndFeel_getHorizontalScrollHeight___R_int;
+    vtable[32] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionIn___R_com_codename1_ui_animations_Transition;
+    vtable[33] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTransitionOut___R_com_codename1_ui_animations_Transition;
+    vtable[34] = &com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition;
+    vtable[35] = &com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition;
+    vtable[36] = &com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionIn___R_com_codename1_ui_animations_Transition;
+    vtable[37] = &com_codename1_ui_plaf_LookAndFeel_getDefaultDialogTransitionOut___R_com_codename1_ui_animations_Transition;
+    vtable[38] = &com_codename1_ui_plaf_LookAndFeel_getDefaultFormTintColor___R_int;
+    vtable[39] = &com_codename1_ui_plaf_LookAndFeel_getDisableColor___R_int;
+    vtable[40] = &com_codename1_ui_plaf_LookAndFeel_isDefaultSmoothScrolling___R_boolean;
+    vtable[41] = &com_codename1_ui_plaf_LookAndFeel_getDefaultSmoothScrollingSpeed___R_int;
+    vtable[42] = &com_codename1_ui_plaf_LookAndFeel_isReverseSoftButtons___R_boolean;
+    vtable[43] = &com_codename1_ui_plaf_LookAndFeel_getMenuBarClass___R_java_lang_Class;
+    vtable[44] = &com_codename1_ui_plaf_LookAndFeel_setMenuBarClass___java_lang_Class;
+    vtable[45] = &com_codename1_ui_plaf_LookAndFeel_getMenuRenderer___R_com_codename1_ui_list_ListCellRenderer;
+    vtable[46] = &com_codename1_ui_plaf_LookAndFeel_getMenuIcons___R_com_codename1_ui_Image_1ARRAY;
+    vtable[47] = &com_codename1_ui_plaf_LookAndFeel_getTickerSpeed___R_long;
+    vtable[48] = &com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean;
+    vtable[49] = &com_codename1_ui_plaf_LookAndFeel_isTouchMenus___R_boolean;
+    vtable[50] = &com_codename1_ui_plaf_LookAndFeel_setRTL___boolean;
+    vtable[51] = &com_codename1_ui_plaf_LookAndFeel_isRTL___R_boolean;
+    vtable[52] = &com_codename1_ui_plaf_LookAndFeel_getTactileTouchDuration___R_int;
+    vtable[53] = &com_codename1_ui_plaf_LookAndFeel_isDefaultEndsWith3Points___R_boolean;
+    vtable[54] = &com_codename1_ui_plaf_LookAndFeel_isDefaultTensileDrag___R_boolean;
+    vtable[55] = &com_codename1_ui_plaf_LookAndFeel_isFocusScrolling___R_boolean;
+    vtable[56] = &com_codename1_ui_plaf_LookAndFeel_isFadeScrollBar___R_boolean;
+    vtable[57] = &com_codename1_ui_plaf_LookAndFeel_getTextFieldCursorColor___R_int;
+    vtable[58] = &com_codename1_ui_plaf_LookAndFeel_isDefaultSnapToGrid___R_boolean;
+    vtable[59] = &com_codename1_ui_plaf_LookAndFeel_isDefaultAlwaysTensile___R_boolean;
+    vtable[60] = &com_codename1_ui_plaf_LookAndFeel_isDefaultTensileHighlight___R_boolean;
+    vtable[61] = &com_codename1_ui_plaf_LookAndFeel_paintTensileHighlight___com_codename1_ui_Component_com_codename1_ui_Graphics_boolean_int;
+    vtable[62] = &com_codename1_ui_plaf_LookAndFeel_getUIManager___R_com_codename1_ui_plaf_UIManager;
+    vtable[63] = &com_codename1_ui_plaf_LookAndFeel_getFadeScrollBarSpeed___R_int;
+    vtable[64] = &com_codename1_ui_plaf_LookAndFeel_isScrollVisible___R_boolean;
+    vtable[65] = &com_codename1_ui_plaf_LookAndFeel_isBackgroundImageDetermineSize___R_boolean;
+    vtable[66] = &com_codename1_ui_plaf_LookAndFeel_drawPullToRefresh___com_codename1_ui_Graphics_com_codename1_ui_Component_boolean;
+    vtable[67] = &com_codename1_ui_plaf_LookAndFeel_getPullToRefreshHeight___R_int;
 }
 
 static int __com_codename1_ui_plaf_LookAndFeel_LOADED__=0;
@@ -3395,7 +3375,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_plaf_LookAndFeel(CODENAME_ONE_THREAD_
         return;
     }
 
-    class__com_codename1_ui_plaf_LookAndFeel.vtable = malloc(sizeof(void*) *70);
+    class__com_codename1_ui_plaf_LookAndFeel.vtable = malloc(sizeof(void*) *68);
     __INIT_VTABLE_com_codename1_ui_plaf_LookAndFeel(threadStateData, class__com_codename1_ui_plaf_LookAndFeel.vtable);
     class__com_codename1_ui_plaf_LookAndFeel.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_plaf_LookAndFeel);

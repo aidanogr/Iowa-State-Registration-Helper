@@ -3,7 +3,7 @@
 #include "com_codename1_ui_Dialog.h"
 #include "com_codename1_ui_TextArea.h"
 #include "com_codename1_ui_events_ActionEvent.h"
-#include "com_codename1_ui_layouts_BoxLayout.h"
+#include "com_codename1_ui_layouts_LayeredLayout.h"
 #include "com_ogradytech_registration_gui_InstructionalDialog.h"
 #include "com_ogradytech_registration_gui_InstructionalDialog__Lambda_2.h"
 #include "java_lang_NullPointerException.h"
@@ -45,6 +45,14 @@ void set_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(CO
     (*(struct obj__com_ogradytech_registration_gui_InstructionalDialog*)__cn1T).com_ogradytech_registration_gui_InstructionalDialog_exitButton = __cn1Val;
 }
 
+JAVA_OBJECT get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_ogradytech_registration_gui_InstructionalDialog*)__cn1T).com_ogradytech_registration_gui_InstructionalDialog_dialogLayout;
+}
+
+void set_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_ogradytech_registration_gui_InstructionalDialog*)__cn1T).com_ogradytech_registration_gui_InstructionalDialog_dialogLayout = __cn1Val;
+}
+
 JAVA_VOID __FINALIZER_com_ogradytech_registration_gui_InstructionalDialog(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
     __FINALIZER_java_lang_Object(threadStateData, objToDelete);
 }
@@ -55,6 +63,7 @@ void __GC_MARK_com_ogradytech_registration_gui_InstructionalDialog(CODENAME_ONE_
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_InstructionalDialog_title, force);
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_InstructionalDialog_body, force);
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_InstructionalDialog_exitButton, force);
+    gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_InstructionalDialog_dialogLayout, force);
     __GC_MARK_java_lang_Object(threadStateData, objToMark, force);
 }
 
@@ -66,83 +75,101 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_gui_InstructionalDialog(CODENAME_O
 
 
 JAVA_VOID com_ogradytech_registration_gui_InstructionalDialog___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 10466, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 10481, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(19);
-    java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(21);
+    java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
+    __CN1_DEBUG_INFO(23);
     PUSH_POINTER(__NEW_com_codename1_ui_Dialog(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    PUSH_OBJ(com_codename1_ui_layouts_BoxLayout_y___R_com_codename1_ui_layouts_BoxLayout(threadStateData));
-    com_codename1_ui_Dialog___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    com_codename1_ui_Dialog___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(3);
-    __CN1_DEBUG_INFO(23);
-    /* CustomInvoke */virtual_com_codename1_ui_Dialog_setUIID___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10467)); 
+    __CN1_DEBUG_INFO(24);
+    BC_ALOAD(0);
+    PUSH_POINTER(__NEW_com_codename1_ui_layouts_LayeredLayout(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_codename1_ui_layouts_LayeredLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
     __CN1_DEBUG_INFO(25);
+    /* CustomInvoke */virtual_com_codename1_ui_Dialog_setLayout___com_codename1_ui_layouts_Layout(threadStateData, locals[3].data.o, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject)); 
+    __CN1_DEBUG_INFO(27);
+    /* CustomInvoke */virtual_com_codename1_ui_Dialog_setUIID___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10482)); 
+    __CN1_DEBUG_INFO(29);
     PUSH_POINTER(__NEW_com_codename1_ui_TextArea(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_TextArea___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(4);
-    __CN1_DEBUG_INFO(26);
+    __CN1_DEBUG_INFO(30);
     /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEditable___boolean(threadStateData, locals[4].data.o, 0 /* ICONST_0 */); 
-    __CN1_DEBUG_INFO(27);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setFocusable___boolean(threadStateData, locals[4].data.o, 0 /* ICONST_0 */); 
-    __CN1_DEBUG_INFO(28);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setUIID___java_lang_String(threadStateData, locals[4].data.o, locals[1].data.o); 
-    __CN1_DEBUG_INFO(29);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEndsWith3Points___boolean(threadStateData, locals[4].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(31);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setFocusable___boolean(threadStateData, locals[4].data.o, 0 /* ICONST_0 */); 
+    __CN1_DEBUG_INFO(32);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setUIID___java_lang_String(threadStateData, locals[4].data.o, locals[1].data.o); 
+    __CN1_DEBUG_INFO(33);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEndsWith3Points___boolean(threadStateData, locals[4].data.o, 0 /* ICONST_0 */); 
+    __CN1_DEBUG_INFO(35);
     PUSH_POINTER(__NEW_com_codename1_ui_TextArea(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_TextArea___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(5);
-    __CN1_DEBUG_INFO(32);
+    __CN1_DEBUG_INFO(36);
     /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEditable___boolean(threadStateData, locals[5].data.o, 0 /* ICONST_0 */); 
-    __CN1_DEBUG_INFO(33);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setFocusable___boolean(threadStateData, locals[5].data.o, 0 /* ICONST_0 */); 
-    __CN1_DEBUG_INFO(34);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setUIID___java_lang_String(threadStateData, locals[5].data.o, locals[2].data.o); 
-    __CN1_DEBUG_INFO(35);
-    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEndsWith3Points___boolean(threadStateData, locals[5].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(37);
-    set_field_com_ogradytech_registration_gui_InstructionalDialog_title(threadStateData, locals[4].data.o, __cn1ThisObject);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setFocusable___boolean(threadStateData, locals[5].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(38);
-    set_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(threadStateData, locals[3].data.o, __cn1ThisObject);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setUIID___java_lang_String(threadStateData, locals[5].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(39);
-    set_field_com_ogradytech_registration_gui_InstructionalDialog_body(threadStateData, locals[5].data.o, __cn1ThisObject);
+    /* CustomInvoke */virtual_com_codename1_ui_TextArea_setEndsWith3Points___boolean(threadStateData, locals[5].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(41);
+    set_field_com_ogradytech_registration_gui_InstructionalDialog_title(threadStateData, locals[4].data.o, __cn1ThisObject);
+    __CN1_DEBUG_INFO(42);
+    set_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(threadStateData, locals[3].data.o, __cn1ThisObject);
+    __CN1_DEBUG_INFO(43);
+    set_field_com_ogradytech_registration_gui_InstructionalDialog_body(threadStateData, locals[5].data.o, __cn1ThisObject);
+    __CN1_DEBUG_INFO(45);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10468));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10483));     SP -= 1;
     set_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(42);
+    __CN1_DEBUG_INFO(46);
     /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3014)); 
-    __CN1_DEBUG_INFO(43);
+    __CN1_DEBUG_INFO(47);
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_ogradytech_registration_gui_InstructionalDialog__Lambda_2_lambdaFactory$___com_codename1_ui_Dialog_R_com_codename1_ui_events_ActionListener(threadStateData, locals[3].data.o));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(49);
+    __CN1_DEBUG_INFO(53);
     /* CustomInvoke */virtual_com_codename1_ui_Dialog_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(__cn1ThisObject), locals[4].data.o); 
-    __CN1_DEBUG_INFO(50);
+    __CN1_DEBUG_INFO(54);
     /* CustomInvoke */virtual_com_codename1_ui_Dialog_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(__cn1ThisObject), locals[5].data.o); 
-    __CN1_DEBUG_INFO(51);
+    __CN1_DEBUG_INFO(55);
     /* CustomInvoke */virtual_com_codename1_ui_Dialog_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(52);
+    __CN1_DEBUG_INFO(57);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject), locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10398)); 
+    __CN1_DEBUG_INFO(58);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject), locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10484)); 
+    __CN1_DEBUG_INFO(59);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setReferenceComponentTop___com_codename1_ui_Component_com_codename1_ui_Component_float_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject), locals[5].data.o, locals[4].data.o, 1 /* FCONST_1 */); 
+    __CN1_DEBUG_INFO(61);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10484)); 
+    __CN1_DEBUG_INFO(62);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setReferenceComponentTop___com_codename1_ui_Component_com_codename1_ui_Component_float_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(__cn1ThisObject), locals[5].data.o, 1 /* FCONST_1 */); 
+    __CN1_DEBUG_INFO(66);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_ogradytech_registration_gui_InstructionalDialog_show__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10466, 2935);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(58);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10481, 2935);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(74);
     virtual_com_codename1_ui_Dialog_show__(threadStateData, get_field_com_ogradytech_registration_gui_InstructionalDialog_dialog(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(59);
+    __CN1_DEBUG_INFO(75);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -150,14 +177,14 @@ JAVA_VOID com_ogradytech_registration_gui_InstructionalDialog_show__(CODENAME_ON
 
 JAVA_VOID com_ogradytech_registration_gui_InstructionalDialog_lambda$new$0___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_ogradytech_registration_gui_InstructionalDialog(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10466, 10462);
+    DEFINE_METHOD_STACK(1, 2, 0, 10481, 10422);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(44);
+    __CN1_DEBUG_INFO(48);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, locals[0].data.o); 
-    __CN1_DEBUG_INFO(45);
+    __CN1_DEBUG_INFO(49);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

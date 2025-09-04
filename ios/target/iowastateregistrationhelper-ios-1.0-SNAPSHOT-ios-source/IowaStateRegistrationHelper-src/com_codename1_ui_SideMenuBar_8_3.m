@@ -66,7 +66,7 @@ JAVA_BOOLEAN com_codename1_ui_SideMenuBar_8_3_animate___R_boolean(CODENAME_ONE_T
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1267);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$102___com_codename1_ui_SideMenuBar_int_R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_3_this_1(__cn1ThisObject)), virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_3_val_motion(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(1268);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_3_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1929447269;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_3_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1332439166;
     __CN1_DEBUG_INFO(1269);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$202___com_codename1_ui_SideMenuBar_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_3_this_1(__cn1ThisObject)), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1270);
@@ -77,7 +77,7 @@ JAVA_BOOLEAN com_codename1_ui_SideMenuBar_8_3_animate___R_boolean(CODENAME_ONE_T
     __CN1_DEBUG_INFO(1271);
     /* CustomInvoke */virtual_com_codename1_ui_SideMenuBar_8_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_3_this_1(__cn1ThisObject), __cn1ThisObject); 
 
-label_L1929447269:
+label_L1332439166:
     __CN1_DEBUG_INFO(1273);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }

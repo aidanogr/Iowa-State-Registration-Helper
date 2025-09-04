@@ -63,11 +63,11 @@ JAVA_VOID com_codename1_media_AbstractMedia_8_onSucess___java_lang_Throwable(COD
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(301);
-    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_8_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L69062608;
+    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_8_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L780408810;
     __CN1_DEBUG_INFO(302);
     /* CustomInvoke */com_codename1_media_AbstractMedia_access$500___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_8_this_0(__cn1ThisObject), get_field_com_codename1_media_AbstractMedia_8_val_out(__cn1ThisObject)); 
 
-label_L69062608:
+label_L780408810:
     __CN1_DEBUG_INFO(304);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

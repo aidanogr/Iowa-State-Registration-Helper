@@ -601,16 +601,16 @@ JAVA_VOID com_codename1_ui_Toolbar___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OB
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2842), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L516934601;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L739703515;
     __CN1_DEBUG_INFO(222);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String_java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4618), STRING_FROM_CONSTANT_POOL_OFFSET(7072)); 
-    goto label_L426070939;
+    goto label_L613281005;
 
-label_L516934601:
+label_L739703515:
     __CN1_DEBUG_INFO(224);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4618)); 
 
-label_L426070939:
+label_L613281005:
     __CN1_DEBUG_INFO(226);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_ToolbarSideMenu(threadStateData)); /* NEW */
@@ -619,7 +619,7 @@ label_L426070939:
     set_field_com_codename1_ui_Toolbar_sideMenu(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(227);
-    if (get_static_com_codename1_ui_Toolbar_centeredDefault(threadStateData)==0) /* IFEQ CustomJump */ goto label_L801142660;
+    if (get_static_com_codename1_ui_Toolbar_centeredDefault(threadStateData)==0) /* IFEQ CustomJump */ goto label_L573023937;
     __CN1_DEBUG_INFO(228);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getComponentStyle___java_lang_String_R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2812));
@@ -627,11 +627,11 @@ label_L426070939:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_Style_getAlignment___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L801142660;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L573023937;
     __CN1_DEBUG_INFO(229);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setTitleCentered___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
 
-label_L801142660:
+label_L573023937:
     __CN1_DEBUG_INFO(231);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -689,12 +689,12 @@ JAVA_VOID com_codename1_ui_Toolbar_setTitle___java_lang_String(CODENAME_ONE_THRE
     __CN1_DEBUG_INFO(278);
     BC_ALOAD(2);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Label);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L893320639;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L513279161;
     __CN1_DEBUG_INFO(279);
     /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[2].data.o, locals[1].data.o); 
-    goto label_L1439693138;
+    goto label_L88335763;
 
-label_L893320639:
+label_L513279161:
     __CN1_DEBUG_INFO(281);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
@@ -705,16 +705,16 @@ label_L893320639:
     __CN1_DEBUG_INFO(282);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_Toolbar_titleComponent(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(2812)); 
     __CN1_DEBUG_INFO(283);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1711641083;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1315081042;
     __CN1_DEBUG_INFO(284);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_replace___com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_animations_Transition(threadStateData, __cn1ThisObject, locals[2].data.o, get_field_com_codename1_ui_Toolbar_titleComponent(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
-    goto label_L1439693138;
+    goto label_L88335763;
 
-label_L1711641083:
+label_L1315081042:
     __CN1_DEBUG_INFO(286);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(136), get_field_com_codename1_ui_Toolbar_titleComponent(__cn1ThisObject)); 
 
-label_L1439693138:
+label_L88335763:
     __CN1_DEBUG_INFO(289);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -726,20 +726,20 @@ JAVA_VOID com_codename1_ui_Toolbar_setTitleCentered___boolean(CODENAME_ONE_THREA
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7065, 7075);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(298);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1247127272;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1374432753;
     __CN1_DEBUG_INFO(299);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_layouts_BorderLayout_setCenterBehavior___int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
-    goto label_L147089688;
+    goto label_L261052089;
 
-label_L1247127272:
+label_L1374432753:
     __CN1_DEBUG_INFO(301);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_layouts_BorderLayout_setCenterBehavior___int(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L147089688:
+label_L261052089:
     __CN1_DEBUG_INFO(303);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -754,14 +754,14 @@ JAVA_BOOLEAN com_codename1_ui_Toolbar_isTitleCentered___R_boolean(CODENAME_ONE_T
     { JAVA_INT tmpResult = virtual_com_codename1_ui_layouts_BorderLayout_getCenterBehavior___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(2); /* ICONST_2 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L577442875;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L368727462;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1747702724;
+    goto label_L1326998608;
 
-label_L577442875:
+label_L368727462:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1747702724:
+label_L1326998608:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -806,21 +806,21 @@ JAVA_VOID com_codename1_ui_Toolbar_closeSideMenu__(CODENAME_ONE_THREAD_STATE, JA
 JAVA_VOID com_codename1_ui_Toolbar_closeLeftSideMenu__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7065, 7083);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(382);
-    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1449987177;
+    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1936670366;
     __CN1_DEBUG_INFO(383);
-    if (get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L948650013;
-    if (virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L948650013;
+    if (get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L199000084;
+    if (virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L199000084;
     __CN1_DEBUG_INFO(384);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L734971558;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L524566446;
     __CN1_DEBUG_INFO(385);
     virtual_com_codename1_components_InteractionDialog_disposeToTheLeft__(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)); 
-    goto label_L2007138812;
+    goto label_L1941598182;
 
-label_L734971558:
+label_L524566446:
     __CN1_DEBUG_INFO(387);
     virtual_com_codename1_components_InteractionDialog_disposeToTheRight__(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)); 
 
-label_L2007138812:
+label_L1941598182:
     __CN1_DEBUG_INFO(389);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -833,13 +833,13 @@ label_L2007138812:
     __CN1_DEBUG_INFO(392);
     virtual_com_codename1_ui_Container_remove__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(393);
-    goto label_L948650013;
+    goto label_L199000084;
 
-label_L1449987177:
+label_L1936670366:
     __CN1_DEBUG_INFO(395);
     com_codename1_ui_SideMenuBar_closeCurrentMenu__(threadStateData); 
 
-label_L948650013:
+label_L199000084:
     __CN1_DEBUG_INFO(397);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -849,21 +849,21 @@ label_L948650013:
 JAVA_VOID com_codename1_ui_Toolbar_closeRightSideMenu__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7065, 7084);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(403);
-    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1225970981;
+    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L2041263297;
     __CN1_DEBUG_INFO(404);
-    if (get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1225970981;
-    if (virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1225970981;
+    if (get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2041263297;
+    if (virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2041263297;
     __CN1_DEBUG_INFO(405);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L737935282;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L379115456;
     __CN1_DEBUG_INFO(406);
     virtual_com_codename1_components_InteractionDialog_disposeToTheRight__(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)); 
-    goto label_L1985869725;
+    goto label_L673129458;
 
-label_L737935282:
+label_L379115456:
     __CN1_DEBUG_INFO(408);
     virtual_com_codename1_components_InteractionDialog_disposeToTheLeft__(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)); 
 
-label_L1985869725:
+label_L673129458:
     __CN1_DEBUG_INFO(410);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -876,7 +876,7 @@ label_L1985869725:
     __CN1_DEBUG_INFO(413);
     virtual_com_codename1_ui_Container_remove__(threadStateData, locals[1].data.o); 
 
-label_L1225970981:
+label_L2041263297:
     __CN1_DEBUG_INFO(416);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -935,11 +935,11 @@ JAVA_VOID com_codename1_ui_Toolbar_setBackCommand___com_codename1_ui_Command_com
     locals[2].type = CN1_TYPE_OBJECT;
     flocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(543);
-    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L1249337777;
+    if (CN1_CMP_EXPR(flocals_3_, 0 /* FCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L685219002;
     __CN1_DEBUG_INFO(544);
     /* VarOp.assignFrom */     flocals_3_ = 3.0;
 
-label_L1249337777:
+label_L685219002:
     __CN1_DEBUG_INFO(546);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -953,42 +953,42 @@ label_L1249337777:
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1048903970;
-        case 2: goto label_L670951536;
-        case 3: goto label_L726416425;
-        case 4: goto label_L1523034648;
-        case 5: goto label_L1289563251;
-        case 6: goto label_L78377968;
-        default: goto label_L78377968;
+        case 1: goto label_L2015455415;
+        case 2: goto label_L703644914;
+        case 3: goto label_L1949672824;
+        case 4: goto label_L1620301064;
+        case 5: goto label_L319061373;
+        case 6: goto label_L1014824123;
+        default: goto label_L1014824123;
     }
 
-label_L1048903970:
+label_L2015455415:
     __CN1_DEBUG_INFO(549);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2842), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1313618488;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1706790953;
     __CN1_DEBUG_INFO(550);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6991), STRING_FROM_CONSTANT_POOL_OFFSET(7086)); 
 
-label_L1313618488:
+label_L1706790953:
     __CN1_DEBUG_INFO(552);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5824), STRING_FROM_CONSTANT_POOL_OFFSET(4623)); 
     __CN1_DEBUG_INFO(553);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addCommandToLeftBar___com_codename1_ui_Command(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(554);
-    goto label_L78377968;
+    goto label_L1014824123;
 
-label_L670951536:
+label_L703644914:
     __CN1_DEBUG_INFO(556);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2842), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L691854979;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L469643779;
     __CN1_DEBUG_INFO(557);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6991), STRING_FROM_CONSTANT_POOL_OFFSET(7086)); 
 
-label_L691854979:
+label_L469643779:
     __CN1_DEBUG_INFO(559);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5824), STRING_FROM_CONSTANT_POOL_OFFSET(4623)); 
     __CN1_DEBUG_INFO(560);
@@ -996,67 +996,67 @@ label_L691854979:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7087), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L726416425;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1949672824;
     __CN1_DEBUG_INFO(561);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7088), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L203936099;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L723602324;
     __CN1_DEBUG_INFO(562);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setIconGapMM___float(threadStateData, locals[1].data.o, 0.5); 
     __CN1_DEBUG_INFO(563);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setMaterialIcon___char(threadStateData, locals[1].data.o, 58132); 
 
-label_L203936099:
+label_L723602324:
     __CN1_DEBUG_INFO(565);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addCommandToLeftBar___com_codename1_ui_Command(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(566);
-    goto label_L78377968;
+    goto label_L1014824123;
 
-label_L726416425:
+label_L1949672824:
     __CN1_DEBUG_INFO(570);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setCommandName___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218)); 
     __CN1_DEBUG_INFO(571);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1472759652;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1893987183;
     __CN1_DEBUG_INFO(572);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setMaterialIcon___char(threadStateData, locals[1].data.o, 58820); 
-    goto label_L2029709919;
+    goto label_L1231036290;
 
-label_L1472759652:
+label_L1893987183:
     __CN1_DEBUG_INFO(574);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setMaterialIcon___char(threadStateData, locals[1].data.o, 58824); 
 
-label_L2029709919:
+label_L1231036290:
     __CN1_DEBUG_INFO(576);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setMaterialIconSize___float(threadStateData, locals[1].data.o, flocals_3_); 
     __CN1_DEBUG_INFO(577);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addCommandToLeftBar___com_codename1_ui_Command(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(578);
-    goto label_L78377968;
+    goto label_L1014824123;
 
-label_L1523034648:
+label_L1620301064:
     __CN1_DEBUG_INFO(580);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addCommandToLeftBar___com_codename1_ui_Command(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(581);
-    goto label_L78377968;
+    goto label_L1014824123;
 
-label_L1289563251:
+label_L319061373:
     __CN1_DEBUG_INFO(583);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7087), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L78377968;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1014824123;
     __CN1_DEBUG_INFO(584);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2842), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L939391749;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L602161799;
     __CN1_DEBUG_INFO(585);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6991), STRING_FROM_CONSTANT_POOL_OFFSET(7086)); 
 
-label_L939391749:
+label_L602161799:
     __CN1_DEBUG_INFO(587);
     /* CustomInvoke */virtual_com_codename1_ui_Command_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5824), STRING_FROM_CONSTANT_POOL_OFFSET(4623)); 
     __CN1_DEBUG_INFO(588);
@@ -1064,18 +1064,18 @@ label_L939391749:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7088), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L98801744;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L45666436;
     __CN1_DEBUG_INFO(589);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setIconGapMM___float(threadStateData, locals[1].data.o, 0.5); 
     __CN1_DEBUG_INFO(590);
     /* CustomInvoke */virtual_com_codename1_ui_Command_setMaterialIcon___char(threadStateData, locals[1].data.o, 58132); 
 
-label_L98801744:
+label_L45666436:
     __CN1_DEBUG_INFO(592);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addCommandToLeftBar___com_codename1_ui_Command(threadStateData, __cn1ThisObject, locals[1].data.o); 
-    goto label_L78377968;
+    goto label_L1014824123;
 
-label_L78377968:
+label_L1014824123:
     __CN1_DEBUG_INFO(598);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1317,10 +1317,10 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopSidemenu___int_boolean(CODENAME_ONE_
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(1545);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1625111587;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L989520513;
     __CN1_DEBUG_INFO(1546);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_Form_findCurrentlyEditingComponent___R_com_codename1_ui_Component(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1547);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1387671967;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L648972298;
     __CN1_DEBUG_INFO(1548);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_10(threadStateData)); /* NEW */
@@ -1331,7 +1331,7 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopSidemenu___int_boolean(CODENAME_ONE_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1387671967:
+label_L648972298:
     __CN1_DEBUG_INFO(1568);
     BC_ALOAD(3);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_11(threadStateData)); /* NEW */
@@ -1339,10 +1339,10 @@ label_L1387671967:
     /* CustomInvoke */com_codename1_ui_Toolbar_11___INIT_____com_codename1_ui_Toolbar(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Form_stopEditing___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1625111587:
+label_L989520513:
     __CN1_DEBUG_INFO(1571);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_Toolbar_getAnimationManager___R_com_codename1_ui_AnimationManager(threadStateData, __cn1ThisObject);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1572);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1586779822;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L638525764;
     __CN1_DEBUG_INFO(1573);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_12(threadStateData)); /* NEW */
@@ -1350,7 +1350,7 @@ label_L1625111587:
     /* CustomInvoke */com_codename1_ui_Toolbar_12___INIT_____com_codename1_ui_Toolbar_int_boolean(threadStateData, SP[-1].data.o, __cn1ThisObject, ilocals_1_, ilocals_2_);     SP -= 1;
     virtual_com_codename1_ui_AnimationManager_flushAnimation___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1586779822:
+label_L638525764:
     __CN1_DEBUG_INFO(1582);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1378,12 +1378,12 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopSidemenuImpl___int_boolean(CODENAME_
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isPortrait___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L380216561;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1006727288;
     __CN1_DEBUG_INFO(1588);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isTablet___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L521973283;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1367503763;
     __CN1_DEBUG_INFO(1589);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1391,17 +1391,17 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopSidemenuImpl___int_boolean(CODENAME_
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1590);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L2084920982;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L62803825;
     __CN1_DEBUG_INFO(1591);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 2 /* ICONST_2 */) / 3 /* ICONST_3 */);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L2084920982:
+label_L62803825:
     __CN1_DEBUG_INFO(1593);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L521973283:
+label_L1367503763:
     __CN1_DEBUG_INFO(1596);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1409,7 +1409,7 @@ label_L521973283:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1597);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1540219992;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1808884231;
     __CN1_DEBUG_INFO(1598);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
@@ -1419,19 +1419,19 @@ label_L521973283:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L1540219992:
+label_L1808884231:
     __CN1_DEBUG_INFO(1600);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L380216561:
+label_L1006727288:
     __CN1_DEBUG_INFO(1604);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isTablet___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L559559860;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L697145861;
     __CN1_DEBUG_INFO(1605);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1439,17 +1439,17 @@ label_L380216561:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1606);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L2008907751;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1480170882;
     __CN1_DEBUG_INFO(1607);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 3 /* ICONST_3 */) / 4/* ICONST_4 */);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L2008907751:
+label_L1480170882:
     __CN1_DEBUG_INFO(1609);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L559559860:
+label_L697145861:
     __CN1_DEBUG_INFO(1612);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1457,71 +1457,71 @@ label_L559559860:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1613);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L903064416;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L653880197;
     __CN1_DEBUG_INFO(1614);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 4/* ICONST_4 */) / 10);
-    goto label_L9983638;
+    goto label_L1550080835;
 
-label_L903064416:
+label_L653880197:
     __CN1_DEBUG_INFO(1616);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
 
-label_L9983638:
+label_L1550080835:
     __CN1_DEBUG_INFO(1620);
     /* VarOp.assignFrom */     ilocals_5_ = ilocals_3_;
     __CN1_DEBUG_INFO(1621);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L17331878;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L1188623367;
     __CN1_DEBUG_INFO(1622);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, ilocals_3_, ilocals_1_);
     __CN1_DEBUG_INFO(1623);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1624);
     virtual_com_codename1_components_InteractionDialog_dispose__(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)); 
-    goto label_L1904676263;
+    goto label_L62915435;
 
-label_L17331878:
+label_L1188623367:
     __CN1_DEBUG_INFO(1626);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L1904676263:
+label_L62915435:
     __CN1_DEBUG_INFO(1630);
-    if (/* CustomInvoke */virtual_com_codename1_components_InteractionDialog_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7117))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1842943543;
+    if (/* CustomInvoke */virtual_com_codename1_components_InteractionDialog_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7117))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L394349340;
     __CN1_DEBUG_INFO(1631);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1632);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setVisible___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1633);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1165568071;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L2060037930;
     __CN1_DEBUG_INFO(1634);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_3_)); 
     __CN1_DEBUG_INFO(1635);
     virtual_com_codename1_components_InteractionDialog_disposeToTheLeft__(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)); 
-    goto label_L117885704;
+    goto label_L2075133112;
 
-label_L1165568071:
+label_L2060037930:
     __CN1_DEBUG_INFO(1637);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_3_), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1638);
     virtual_com_codename1_components_InteractionDialog_disposeToTheRight__(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject)); 
 
-label_L117885704:
+label_L2075133112:
     __CN1_DEBUG_INFO(1640);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setVisible___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(1641);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_putClientProperty___java_lang_String_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7117), get_static_java_lang_Boolean_TRUE(threadStateData)); 
     __CN1_DEBUG_INFO(1642);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject));
-    if (ilocals_1_>=1 /* ICONST_1 */) /* IF_ICMPGE CustomJump */ goto label_L1311052922;
+    if (ilocals_1_>=1 /* ICONST_1 */) /* IF_ICMPGE CustomJump */ goto label_L2028510206;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1802029863;
+    goto label_L1697441364;
 
-label_L1311052922:
+label_L2028510206:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1802029863:
+label_L1697441364:
     virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L1842943543:
+label_L394349340:
     __CN1_DEBUG_INFO(1644);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -1531,14 +1531,14 @@ label_L1842943543:
     __CN1_DEBUG_INFO(1645);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setWidth___int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), ilocals_3_); 
     __CN1_DEBUG_INFO(1646);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1734343965;
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1378592036;
     __CN1_DEBUG_INFO(1647);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1445999733;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L700837405;
     __CN1_DEBUG_INFO(1648);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), (-(ilocals_3_))); 
-    goto label_L1734343965;
+    goto label_L1378592036;
 
-label_L1445999733:
+label_L700837405:
     __CN1_DEBUG_INFO(1650);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -1550,7 +1550,7 @@ label_L1445999733:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L1734343965:
+label_L1378592036:
     __CN1_DEBUG_INFO(1653);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setRepositionAnimation___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1654);
@@ -1560,13 +1560,13 @@ label_L1734343965:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7023), 1 /* ICONST_1 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L810576909;
+    if(POP_INT() != 0) /* IFNE */ goto label_L365864880;
     __CN1_DEBUG_INFO(1656);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_InteractionDialog_getContentPane___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_Container_setTensileDragEnabled___boolean(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L810576909:
+label_L365864880:
     __CN1_DEBUG_INFO(1659);
     /* VarOp.assignFrom */ flocals_6_=((((JAVA_FLOAT)ilocals_3_) / ((JAVA_FLOAT)ilocals_4_)) * 80.0);
     __CN1_DEBUG_INFO(1660);
@@ -1583,20 +1583,20 @@ label_L810576909:
     __CN1_DEBUG_INFO(1665);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_5_)); 
     __CN1_DEBUG_INFO(1666);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L499951827;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L399699227;
     __CN1_DEBUG_INFO(1667);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L90380642;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L408909888;
     __CN1_DEBUG_INFO(1668);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, 0 /* ICONST_0 */, (ilocals_1_ - ilocals_5_))); 
-    goto label_L90380642;
+    goto label_L408909888;
 
-label_L499951827:
+label_L399699227:
     __CN1_DEBUG_INFO(1671);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L90380642;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L408909888;
     __CN1_DEBUG_INFO(1672);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_sidemenuDialog(__cn1ThisObject), /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, (ilocals_4_ - ilocals_1_), (ilocals_4_ - ilocals_5_))); 
 
-label_L90380642:
+label_L408909888:
     __CN1_DEBUG_INFO(1675);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1615,10 +1615,10 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopRightSidemenu___int_boolean(CODENAME
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(1679);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1386677799;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L510445648;
     __CN1_DEBUG_INFO(1680);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_Form_findCurrentlyEditingComponent___R_com_codename1_ui_Component(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1681);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1629759610;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2122256138;
     __CN1_DEBUG_INFO(1682);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_13(threadStateData)); /* NEW */
@@ -1629,7 +1629,7 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopRightSidemenu___int_boolean(CODENAME
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1629759610:
+label_L2122256138:
     __CN1_DEBUG_INFO(1702);
     BC_ALOAD(3);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_14(threadStateData)); /* NEW */
@@ -1637,10 +1637,10 @@ label_L1629759610:
     /* CustomInvoke */com_codename1_ui_Toolbar_14___INIT_____com_codename1_ui_Toolbar(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Form_stopEditing___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1386677799:
+label_L510445648:
     __CN1_DEBUG_INFO(1705);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_Toolbar_getAnimationManager___R_com_codename1_ui_AnimationManager(threadStateData, __cn1ThisObject);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1706);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L425107133;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2126876651;
     __CN1_DEBUG_INFO(1707);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_15(threadStateData)); /* NEW */
@@ -1648,7 +1648,7 @@ label_L1386677799:
     /* CustomInvoke */com_codename1_ui_Toolbar_15___INIT_____com_codename1_ui_Toolbar_int_boolean(threadStateData, SP[-1].data.o, __cn1ThisObject, ilocals_1_, ilocals_2_);     SP -= 1;
     virtual_com_codename1_ui_AnimationManager_flushAnimation___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L425107133:
+label_L2126876651:
     __CN1_DEBUG_INFO(1717);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1676,12 +1676,12 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopRightSidemenuImpl___int_boolean(CODE
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isPortrait___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L73608444;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L498820363;
     __CN1_DEBUG_INFO(1723);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isTablet___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1847559273;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1701646500;
     __CN1_DEBUG_INFO(1724);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1689,17 +1689,17 @@ JAVA_VOID com_codename1_ui_Toolbar_showOnTopRightSidemenuImpl___int_boolean(CODE
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1725);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L775423528;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1676428380;
     __CN1_DEBUG_INFO(1726);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 1 /* ICONST_1 */) / 3 /* ICONST_3 */);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L775423528:
+label_L1676428380:
     __CN1_DEBUG_INFO(1728);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L1847559273:
+label_L1701646500:
     __CN1_DEBUG_INFO(1731);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1707,7 +1707,7 @@ label_L1847559273:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1732);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L514793058;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L2010221835;
     __CN1_DEBUG_INFO(1733);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
@@ -1717,19 +1717,19 @@ label_L1847559273:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L514793058:
+label_L2010221835:
     __CN1_DEBUG_INFO(1735);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L73608444:
+label_L498820363:
     __CN1_DEBUG_INFO(1739);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isTablet___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L209845522;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L2050247525;
     __CN1_DEBUG_INFO(1740);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1737,17 +1737,17 @@ label_L73608444:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1741);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1659282412;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L2071674587;
     __CN1_DEBUG_INFO(1742);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 1 /* ICONST_1 */) / 4/* ICONST_4 */);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L1659282412:
+label_L2071674587:
     __CN1_DEBUG_INFO(1744);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L209845522:
+label_L2050247525:
     __CN1_DEBUG_INFO(1747);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1755,71 +1755,71 @@ label_L209845522:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(1748);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1465179762;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1799831668;
     __CN1_DEBUG_INFO(1749);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * 4/* ICONST_4 */) / 10);
-    goto label_L62309924;
+    goto label_L822359325;
 
-label_L1465179762:
+label_L1799831668:
     __CN1_DEBUG_INFO(1751);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_4_ * (100 - ilocals_3_)) / 100);
 
-label_L62309924:
+label_L822359325:
     __CN1_DEBUG_INFO(1755);
     /* VarOp.assignFrom */     ilocals_5_ = ilocals_3_;
     __CN1_DEBUG_INFO(1756);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L837719796;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L277164482;
     __CN1_DEBUG_INFO(1757);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, ilocals_3_, ilocals_1_);
     __CN1_DEBUG_INFO(1758);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1759);
     virtual_com_codename1_components_InteractionDialog_dispose__(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)); 
-    goto label_L839161014;
+    goto label_L1219637204;
 
-label_L837719796:
+label_L277164482:
     __CN1_DEBUG_INFO(1761);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L839161014:
+label_L1219637204:
     __CN1_DEBUG_INFO(1765);
-    if (/* CustomInvoke */virtual_com_codename1_components_InteractionDialog_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7120))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1697298649;
+    if (/* CustomInvoke */virtual_com_codename1_components_InteractionDialog_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7120))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1788698111;
     __CN1_DEBUG_INFO(1766);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1767);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setVisible___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1768);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L352083264;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L990442552;
     __CN1_DEBUG_INFO(1769);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_3_), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1770);
     virtual_com_codename1_components_InteractionDialog_disposeToTheRight__(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)); 
-    goto label_L1373646877;
+    goto label_L45795770;
 
-label_L352083264:
+label_L990442552:
     __CN1_DEBUG_INFO(1772);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_3_)); 
     __CN1_DEBUG_INFO(1773);
     virtual_com_codename1_components_InteractionDialog_disposeToTheLeft__(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject)); 
 
-label_L1373646877:
+label_L45795770:
     __CN1_DEBUG_INFO(1775);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setVisible___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(1776);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_putClientProperty___java_lang_String_java_lang_Object(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(7120), get_static_java_lang_Boolean_TRUE(threadStateData)); 
     __CN1_DEBUG_INFO(1777);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject));
-    if (ilocals_1_>=1 /* ICONST_1 */) /* IF_ICMPGE CustomJump */ goto label_L1205321651;
+    if (ilocals_1_>=1 /* ICONST_1 */) /* IF_ICMPGE CustomJump */ goto label_L1529842358;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1997224928;
+    goto label_L1541232265;
 
-label_L1205321651:
+label_L1529842358:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1997224928:
+label_L1541232265:
     virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L1697298649:
+label_L1788698111:
     __CN1_DEBUG_INFO(1779);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -1829,9 +1829,9 @@ label_L1697298649:
     __CN1_DEBUG_INFO(1780);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setWidth___int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), ilocals_3_); 
     __CN1_DEBUG_INFO(1781);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L32206364;
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L663277822;
     __CN1_DEBUG_INFO(1782);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1373361892;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1940601516;
     __CN1_DEBUG_INFO(1783);
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -1842,13 +1842,13 @@ label_L1697298649:
     SP++;
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
-    goto label_L32206364;
+    goto label_L663277822;
 
-label_L1373361892:
+label_L1940601516:
     __CN1_DEBUG_INFO(1785);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), (-(ilocals_3_))); 
 
-label_L32206364:
+label_L663277822:
     __CN1_DEBUG_INFO(1788);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setRepositionAnimation___boolean(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1789);
@@ -1858,13 +1858,13 @@ label_L32206364:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7023), 1 /* ICONST_1 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L730583371;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1425433685;
     __CN1_DEBUG_INFO(1791);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_InteractionDialog_getContentPane___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_Container_setTensileDragEnabled___boolean(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L730583371:
+label_L1425433685:
     __CN1_DEBUG_INFO(1794);
     /* VarOp.assignFrom */ flocals_6_=((((JAVA_FLOAT)ilocals_3_) / ((JAVA_FLOAT)ilocals_4_)) * 80.0);
     __CN1_DEBUG_INFO(1795);
@@ -1881,20 +1881,20 @@ label_L730583371:
     __CN1_DEBUG_INFO(1800);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_show___int_int_int_int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, (ilocals_4_ - ilocals_5_), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1801);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L99695585;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1705904476;
     __CN1_DEBUG_INFO(1802);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L1596997325;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L79706679;
     __CN1_DEBUG_INFO(1803);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, (ilocals_4_ - ilocals_1_), (ilocals_4_ - ilocals_5_))); 
-    goto label_L1596997325;
+    goto label_L79706679;
 
-label_L99695585:
+label_L1705904476:
     __CN1_DEBUG_INFO(1806);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L1596997325;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L79706679;
     __CN1_DEBUG_INFO(1807);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setX___int(threadStateData, get_field_com_codename1_ui_Toolbar_rightSidemenuDialog(__cn1ThisObject), /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, 0 /* ICONST_0 */, (ilocals_1_ - ilocals_5_))); 
 
-label_L1596997325:
+label_L79706679:
     __CN1_DEBUG_INFO(1810);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1936,15 +1936,15 @@ JAVA_OBJECT com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Com
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1994);
-    if (get_static_com_codename1_ui_Toolbar_permanentSideMenu(threadStateData)!=0) /* IFNE CustomJump */ goto label_L2060037930;
-    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L2075133112;
+    if (get_static_com_codename1_ui_Toolbar_permanentSideMenu(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1893736577;
+    if (get_static_com_codename1_ui_Toolbar_onTopSideMenu(threadStateData)==0) /* IFEQ CustomJump */ goto label_L164757726;
 
-label_L2060037930:
+label_L1893736577:
     __CN1_DEBUG_INFO(1995);
-    if (get_field_com_codename1_ui_Toolbar_permanentSideMenuContainer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2028510206;
+    if (get_field_com_codename1_ui_Toolbar_permanentSideMenuContainer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1360332263;
     __CN1_DEBUG_INFO(1996);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Command_com_codename1_ui_Container_R_com_codename1_ui_Button(threadStateData, __cn1ThisObject, locals[1].data.o, get_field_com_codename1_ui_Toolbar_permanentSideMenuContainer(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1997);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2028510206;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1360332263;
     __CN1_DEBUG_INFO(1998);
 
 {
@@ -1952,12 +1952,12 @@ label_L2060037930:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2028510206:
+label_L1360332263:
     __CN1_DEBUG_INFO(2001);
-    if (get_field_com_codename1_ui_Toolbar_permanentRightSideMenuContainer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2075133112;
+    if (get_field_com_codename1_ui_Toolbar_permanentRightSideMenuContainer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L164757726;
     __CN1_DEBUG_INFO(2002);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Command_com_codename1_ui_Container_R_com_codename1_ui_Button(threadStateData, __cn1ThisObject, locals[1].data.o, get_field_com_codename1_ui_Toolbar_permanentRightSideMenuContainer(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2003);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2075133112;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L164757726;
     __CN1_DEBUG_INFO(2004);
 
 {
@@ -1965,10 +1965,10 @@ label_L2028510206:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2075133112:
+label_L164757726:
     __CN1_DEBUG_INFO(2008);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_com_codename1_ui_Toolbar_ToolbarSideMenu_findCommandComponent___com_codename1_ui_Command_R_com_codename1_ui_Button(threadStateData, get_field_com_codename1_ui_Toolbar_sideMenu(__cn1ThisObject), locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2009);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1697441364;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1684541910;
     __CN1_DEBUG_INFO(2010);
 
 {
@@ -1976,7 +1976,7 @@ label_L2075133112:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1697441364:
+label_L1684541910:
     __CN1_DEBUG_INFO(2012);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Command_com_codename1_ui_Container_R_com_codename1_ui_Button(threadStateData, __cn1ThisObject, locals[1].data.o, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1998,20 +1998,20 @@ JAVA_OBJECT com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Com
     __CN1_DEBUG_INFO(2017);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L510445648:
-    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1378592036;
+label_L557342904:
+    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L368955890;
     __CN1_DEBUG_INFO(2018);
     /* VarOp.assignFrom */ locals[5].data.o = /* CustomInvoke */virtual_com_codename1_ui_Container_getComponentAt___int_R_com_codename1_ui_Component(threadStateData, locals[2].data.o, ilocals_4_);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2019);
     BC_ALOAD(5);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Button);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L700837405;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L212924259;
     __CN1_DEBUG_INFO(2020);
     /* VarOp.assignFrom */ locals[6].type=CN1_TYPE_INVALID;    locals[6].data.o = locals[5].data.o;
 locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2021);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Button_getCommand___R_com_codename1_ui_Command(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
     BC_ALOAD(1);
-    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L365864880;
+    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L1970528559;
     PUSH_POINTER(get_field_com_codename1_ui_Toolbar_sideMenu(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Button_getCommand___R_com_codename1_ui_Command(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -2019,9 +2019,9 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2021);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ALOAD(1);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L399699227;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1370597622;
 
-label_L365864880:
+label_L1970528559:
     __CN1_DEBUG_INFO(2022);
 
 {
@@ -2029,18 +2029,18 @@ label_L365864880:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L399699227:
+label_L1370597622:
     __CN1_DEBUG_INFO(2024);
-    goto label_L408909888;
+    goto label_L708350323;
 
-label_L700837405:
+label_L212924259:
     __CN1_DEBUG_INFO(2025);
     BC_ALOAD(5);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Container);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L408909888;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L708350323;
     __CN1_DEBUG_INFO(2026);
     /* VarOp.assignFrom */ locals[6].data.o = /* CustomInvoke */com_codename1_ui_Toolbar_findCommandComponent___com_codename1_ui_Command_com_codename1_ui_Container_R_com_codename1_ui_Button(threadStateData, __cn1ThisObject, locals[1].data.o, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2027);
-    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L408909888;
+    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L708350323;
     __CN1_DEBUG_INFO(2028);
 
 {
@@ -2048,12 +2048,12 @@ label_L700837405:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L408909888:
+label_L708350323:
     __CN1_DEBUG_INFO(2017);
     BC_IINC(4, 1);
-    goto label_L510445648;
+    goto label_L557342904;
 
-label_L1378592036:
+label_L368955890:
     __CN1_DEBUG_INFO(2033);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -2169,7 +2169,7 @@ JAVA_OBJECT com_codename1_ui_Toolbar_showOverflowMenu___com_codename1_ui_Dialog_
     __CN1_DEBUG_INFO(2174);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, 0 /* ICONST_0 */, ilocals_4_);
     __CN1_DEBUG_INFO(2175);
-    if (virtual_com_codename1_ui_Form_getSoftButtonCount___R_int(threadStateData, locals[2].data.o)<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L2050247525;
+    if (virtual_com_codename1_ui_Form_getSoftButtonCount___R_int(threadStateData, locals[2].data.o)<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L239937174;
     __CN1_DEBUG_INFO(2176);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Form_getHeight___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -2184,9 +2184,9 @@ JAVA_OBJECT com_codename1_ui_Toolbar_showOverflowMenu___com_codename1_ui_Dialog_
     PUSH_INT(tmpResult); }
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
-    goto label_L2071674587;
+    goto label_L1846508205;
 
-label_L2050247525:
+label_L239937174:
     __CN1_DEBUG_INFO(2178);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Form_getHeight___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
@@ -2195,7 +2195,7 @@ label_L2050247525:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
 
-label_L2071674587:
+label_L1846508205:
     __CN1_DEBUG_INFO(2180);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, 0 /* ICONST_0 */, ilocals_3_);
     __CN1_DEBUG_INFO(2181);
@@ -2203,39 +2203,39 @@ label_L2071674587:
     __CN1_DEBUG_INFO(2184);
     /* VarOp.assignFrom */ locals[10].data.o = virtual_com_codename1_ui_Form_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, locals[2].data.o);locals[10].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2185);
     /* VarOp.assignFrom */ locals[11].data.o = virtual_com_codename1_ui_plaf_UIManager_getLookAndFeel___R_com_codename1_ui_plaf_LookAndFeel(threadStateData, locals[10].data.o);locals[11].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2186);
-    if (virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1799831668;
-    if (virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L277164482;
+    if (virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L368802354;
+    if (virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L628933116;
 
-label_L1799831668:
+label_L368802354:
     __CN1_DEBUG_INFO(2187);
     /* VarOp.assignFrom */ locals[8].data.o = virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionIn___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2188);
     BC_ALOAD(8);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_animations_BubbleTransition);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1219637204;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1122118227;
     __CN1_DEBUG_INFO(2189);
     /* CustomInvoke */virtual_com_codename1_ui_animations_BubbleTransition_setComponentName___java_lang_String(threadStateData, locals[8].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7132)); 
 
-label_L1219637204:
+label_L1122118227:
     __CN1_DEBUG_INFO(2191);
-    /* VarOp.assignFrom */ locals[9].data.o = virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o);locals[9].type=CN1_TYPE_OBJECT;    goto label_L1788698111;
+    /* VarOp.assignFrom */ locals[9].data.o = virtual_com_codename1_ui_plaf_LookAndFeel_getDefaultMenuTransitionOut___R_com_codename1_ui_animations_Transition(threadStateData, locals[11].data.o);locals[9].type=CN1_TYPE_OBJECT;    goto label_L1471019696;
 
-label_L277164482:
+label_L628933116:
     __CN1_DEBUG_INFO(2193);
     /* VarOp.assignFrom */ locals[8].data.o = com_codename1_ui_animations_CommonTransitions_createEmpty___R_com_codename1_ui_animations_CommonTransitions(threadStateData);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2194);
     /* VarOp.assignFrom */ locals[9].data.o = com_codename1_ui_animations_CommonTransitions_createEmpty___R_com_codename1_ui_animations_CommonTransitions(threadStateData);locals[9].type=CN1_TYPE_OBJECT;
-label_L1788698111:
+label_L1471019696:
     __CN1_DEBUG_INFO(2196);
     /* CustomInvoke */virtual_com_codename1_ui_Dialog_setTransitionInAnimator___com_codename1_ui_animations_Transition(threadStateData, locals[1].data.o, locals[8].data.o); 
     __CN1_DEBUG_INFO(2197);
     /* CustomInvoke */virtual_com_codename1_ui_Dialog_setTransitionOutAnimator___com_codename1_ui_animations_Transition(threadStateData, locals[1].data.o, locals[9].data.o); 
     __CN1_DEBUG_INFO(2199);
-    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L990442552;
+    if (virtual_com_codename1_ui_Toolbar_isRTL___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L424226973;
     __CN1_DEBUG_INFO(2200);
     /* VarOp.assignFrom */     ilocals_5_ = ilocals_4_;
     __CN1_DEBUG_INFO(2201);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L990442552:
+label_L424226973:
     __CN1_DEBUG_INFO(2203);
     /* VarOp.assignFrom */ ilocals_12_ = virtual_com_codename1_ui_Form_getTintColor___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(2204);
@@ -2253,7 +2253,7 @@ label_L990442552:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(15);
     __CN1_DEBUG_INFO(2209);
-    if (locals[15].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L45795770;
+    if (locals[15].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1526296937;
     __CN1_DEBUG_INFO(2210);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getAbsoluteY___R_int(threadStateData, locals[15].data.o);
     PUSH_INT(tmpResult); }
@@ -2262,13 +2262,13 @@ label_L990442552:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(14);
 
-label_L45795770:
+label_L1526296937:
     __CN1_DEBUG_INFO(2212);
-    if (ilocals_13_==0) /* IFEQ CustomJump */ goto label_L1529842358;
+    if (ilocals_13_==0) /* IFEQ CustomJump */ goto label_L161118423;
     __CN1_DEBUG_INFO(2213);
     /* VarOp.assignFrom */     ilocals_14_ = ilocals_7_;
 
-label_L1529842358:
+label_L161118423:
     __CN1_DEBUG_INFO(2216);
     /* VarOp.assignFrom */ locals[16].data.o = /* CustomInvoke */virtual_com_codename1_ui_Dialog_show___int_int_int_int_boolean_R_com_codename1_ui_Command(threadStateData, locals[1].data.o, ilocals_14_, /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, ilocals_14_, (ilocals_3_ - ilocals_14_)), ilocals_4_, ilocals_5_, 1 /* ICONST_1 */);locals[16].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2217);
     /* CustomInvoke */virtual_com_codename1_ui_Form_setTintColor___int(threadStateData, locals[2].data.o, ilocals_12_); 
@@ -2328,27 +2328,27 @@ JAVA_VOID com_codename1_ui_Toolbar_initTitleBarStatus__(CODENAME_ONE_THREAD_STAT
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7065, 2845);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2248);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2249);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1541232265;
-    if (virtual_com_codename1_ui_Form_shouldPaintStatusBar___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1541232265;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L836397870;
+    if (virtual_com_codename1_ui_Form_shouldPaintStatusBar___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L836397870;
     __CN1_DEBUG_INFO(2250);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setSafeArea___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(2251);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1541232265:
+label_L836397870:
     __CN1_DEBUG_INFO(2253);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2839), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L663277822;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1640458320;
     __CN1_DEBUG_INFO(2255);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_layouts_BorderLayout_getNorth___R_com_codename1_ui_Component(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    if(POP_OBJ() != JAVA_NULL) /* IFNONNULL */ goto label_L1940601516;
+    if(POP_OBJ() != JAVA_NULL) /* IFNONNULL */ goto label_L1881419576;
     __CN1_DEBUG_INFO(2256);
     PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -2359,16 +2359,16 @@ label_L1541232265:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2842), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1425433685;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L706915627;
     __CN1_DEBUG_INFO(2258);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String_java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2843), STRING_FROM_CONSTANT_POOL_OFFSET(2844)); 
-    goto label_L1705904476;
+    goto label_L1220747354;
 
-label_L1425433685:
+label_L706915627:
     __CN1_DEBUG_INFO(2260);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2843)); 
 
-label_L1705904476:
+label_L1220747354:
     __CN1_DEBUG_INFO(2262);
     /* CustomInvoke */com_codename1_ui_Toolbar_reallocateVerticalPaddingAndMarginsToTop___com_codename1_ui_Component(threadStateData, __cn1ThisObject, locals[2].data.o); 
     __CN1_DEBUG_INFO(2263);
@@ -2376,13 +2376,13 @@ label_L1705904476:
     __CN1_DEBUG_INFO(2264);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(61), locals[2].data.o); 
     __CN1_DEBUG_INFO(2265);
-    goto label_L1940601516;
+    goto label_L1881419576;
 
-label_L663277822:
+label_L1640458320:
     __CN1_DEBUG_INFO(2267);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setSafeArea___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
 
-label_L1940601516:
+label_L1881419576:
     __CN1_DEBUG_INFO(2269);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2432,14 +2432,14 @@ JAVA_VOID com_codename1_ui_Toolbar_reallocateVerticalPaddingAndMarginsToTop___co
 JAVA_VOID com_codename1_ui_Toolbar_checkIfInitialized__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7065, 7137);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2299);
-    if (get_field_com_codename1_ui_Toolbar_initialized(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L79706679;
+    if (get_field_com_codename1_ui_Toolbar_initialized(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L303846650;
     __CN1_DEBUG_INFO(2300);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7138));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L79706679:
+label_L303846650:
     __CN1_DEBUG_INFO(2303);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2460,7 +2460,7 @@ JAVA_VOID com_codename1_ui_Toolbar_hideToolbar__(CODENAME_ONE_THREAD_STATE, JAVA
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L1235686146;
+    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L2086945474;
     __CN1_DEBUG_INFO(2325);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setVisible___boolean(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(2326);
@@ -2469,19 +2469,19 @@ JAVA_VOID com_codename1_ui_Toolbar_hideToolbar__(CODENAME_ONE_THREAD_STATE, JAVA
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1235686146:
+label_L2086945474:
     __CN1_DEBUG_INFO(2329);
-    if (get_field_com_codename1_ui_Toolbar_actualPaneInitialH(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1557534595;
+    if (get_field_com_codename1_ui_Toolbar_actualPaneInitialH(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L762604772;
     __CN1_DEBUG_INFO(2330);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2331);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1557534595;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L762604772;
     __CN1_DEBUG_INFO(2332);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Form_getActualPane___R_com_codename1_ui_Container(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_ui_Toolbar_initVars___com_codename1_ui_Container(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1557534595:
+label_L762604772:
     __CN1_DEBUG_INFO(2335);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Toolbar_getY___R_int(threadStateData, __cn1ThisObject);
@@ -2512,7 +2512,7 @@ JAVA_VOID com_codename1_ui_Toolbar_showToolbar__(CODENAME_ONE_THREAD_STATE, JAVA
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2344);
     set_field_com_codename1_ui_Toolbar_showing(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2345);
-    if (virtual_com_codename1_ui_Toolbar_isVisible___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1497538476;
+    if (virtual_com_codename1_ui_Toolbar_isVisible___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1572820532;
     __CN1_DEBUG_INFO(2346);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setVisible___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(2347);
@@ -2525,7 +2525,7 @@ JAVA_VOID com_codename1_ui_Toolbar_showToolbar__(CODENAME_ONE_THREAD_STATE, JAVA
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1497538476:
+label_L1572820532:
     __CN1_DEBUG_INFO(2351);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_Motion_createSplineMotion___int_int_int_R_com_codename1_ui_animations_Motion(threadStateData, virtual_com_codename1_ui_Toolbar_getY___R_int(threadStateData, __cn1ThisObject), get_field_com_codename1_ui_Toolbar_initialY(__cn1ThisObject), 300));
@@ -2548,7 +2548,7 @@ JAVA_BOOLEAN com_codename1_ui_Toolbar_animate___R_boolean(CODENAME_ONE_THREAD_ST
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7065, 1590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2357);
-    if (get_field_com_codename1_ui_Toolbar_hideShowMotion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1470772251;
+    if (get_field_com_codename1_ui_Toolbar_hideShowMotion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L424209001;
     __CN1_DEBUG_INFO(2358);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2359);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_Form_getActualPane___R_com_codename1_ui_Container(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2360);
@@ -2556,48 +2556,48 @@ JAVA_BOOLEAN com_codename1_ui_Toolbar_animate___R_boolean(CODENAME_ONE_THREAD_ST
     __CN1_DEBUG_INFO(2361);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setY___int(threadStateData, __cn1ThisObject, ilocals_3_); 
     __CN1_DEBUG_INFO(2362);
-    if (get_field_com_codename1_ui_Toolbar_layered(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L652481263;
+    if (get_field_com_codename1_ui_Toolbar_layered(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1206180304;
     __CN1_DEBUG_INFO(2363);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setY___int(threadStateData, locals[2].data.o, (get_field_com_codename1_ui_Toolbar_actualPaneInitialY(__cn1ThisObject) + ilocals_3_)); 
     __CN1_DEBUG_INFO(2364);
-    if (get_field_com_codename1_ui_Toolbar_showing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1256350655;
+    if (get_field_com_codename1_ui_Toolbar_showing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1232703108;
     __CN1_DEBUG_INFO(2365);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setHeight___int(threadStateData, locals[2].data.o, (get_field_com_codename1_ui_Toolbar_actualPaneInitialH(__cn1ThisObject) - ilocals_3_)); 
-    goto label_L118504112;
+    goto label_L1859153769;
 
-label_L1256350655:
+label_L1232703108:
     __CN1_DEBUG_INFO(2367);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setHeight___int(threadStateData, locals[2].data.o, (get_field_com_codename1_ui_Toolbar_actualPaneInitialH(__cn1ThisObject) - ilocals_3_)); 
 
-label_L118504112:
+label_L1859153769:
     __CN1_DEBUG_INFO(2369);
     virtual_com_codename1_ui_Container_doLayout__(threadStateData, locals[2].data.o); 
 
-label_L652481263:
+label_L1206180304:
     __CN1_DEBUG_INFO(2371);
     virtual_com_codename1_ui_Form_repaint__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(2372);
     /* VarOp.assignFrom */ ilocals_4_ = virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_hideShowMotion(__cn1ThisObject));
     __CN1_DEBUG_INFO(2373);
-    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L27053221;
+    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L806738808;
     __CN1_DEBUG_INFO(2374);
     /* CustomInvoke */virtual_com_codename1_ui_Form_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(2375);
     set_field_com_codename1_ui_Toolbar_hideShowMotion(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L27053221:
+label_L806738808:
     __CN1_DEBUG_INFO(2377);
-    if (ilocals_4_!=0) /* IFNE CustomJump */ goto label_L124376339;
+    if (ilocals_4_!=0) /* IFNE CustomJump */ goto label_L1365163763;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1582277082;
+    goto label_L1414924274;
 
-label_L124376339:
+label_L1365163763:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1582277082:
+label_L1414924274:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1470772251:
+label_L424209001:
     __CN1_DEBUG_INFO(2379);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -2634,11 +2634,11 @@ JAVA_VOID com_codename1_ui_Toolbar_bindScrollListener___boolean(CODENAME_ONE_THR
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(2392);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_Toolbar_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2393);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1485624601;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L957387062;
     __CN1_DEBUG_INFO(2394);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Form_getActualPane___R_com_codename1_ui_Container(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2395);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_Form_getContentPane___R_com_codename1_ui_Container(threadStateData, locals[2].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2396);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1066582857;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L666911607;
     __CN1_DEBUG_INFO(2397);
     /* CustomInvoke */com_codename1_ui_Toolbar_initVars___com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[3].data.o); 
     __CN1_DEBUG_INFO(2398);
@@ -2659,17 +2659,17 @@ JAVA_VOID com_codename1_ui_Toolbar_bindScrollListener___boolean(CODENAME_ONE_THR
     POP_MANY(2);
     __CN1_DEBUG_INFO(2457);
     /* CustomInvoke */virtual_com_codename1_ui_Container_addPointerReleasedListener___com_codename1_ui_events_ActionListener(threadStateData, locals[4].data.o, get_field_com_codename1_ui_Toolbar_releasedListener(__cn1ThisObject)); 
-    goto label_L1485624601;
+    goto label_L957387062;
 
-label_L1066582857:
+label_L666911607:
     __CN1_DEBUG_INFO(2459);
-    if (get_field_com_codename1_ui_Toolbar_scrollListener(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1485624601;
+    if (get_field_com_codename1_ui_Toolbar_scrollListener(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L957387062;
     __CN1_DEBUG_INFO(2460);
     /* CustomInvoke */virtual_com_codename1_ui_Container_removeScrollListener___com_codename1_ui_events_ScrollListener(threadStateData, locals[4].data.o, get_field_com_codename1_ui_Toolbar_scrollListener(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(2461);
     /* CustomInvoke */virtual_com_codename1_ui_Container_removePointerReleasedListener___com_codename1_ui_events_ActionListener(threadStateData, locals[4].data.o, get_field_com_codename1_ui_Toolbar_releasedListener(__cn1ThisObject)); 
 
-label_L1485624601:
+label_L957387062:
     __CN1_DEBUG_INFO(2467);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

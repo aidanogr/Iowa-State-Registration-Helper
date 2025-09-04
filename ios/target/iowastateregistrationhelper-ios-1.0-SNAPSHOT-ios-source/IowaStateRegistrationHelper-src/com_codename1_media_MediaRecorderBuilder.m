@@ -161,14 +161,14 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_redirectToAudioBuffer___boo
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_build___R_com_codename1_media_Media(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8709, 1312);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
-    if (get_field_com_codename1_media_MediaRecorderBuilder_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1333063103;
+    if (get_field_com_codename1_media_MediaRecorderBuilder_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L424953383;
     __CN1_DEBUG_INFO(116);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8716));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1333063103:
+label_L424953383:
     __CN1_DEBUG_INFO(119);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_createMediaRecorder___com_codename1_media_MediaRecorderBuilder_R_com_codename1_media_Media(threadStateData, SP[-1].data.o, __cn1ThisObject);

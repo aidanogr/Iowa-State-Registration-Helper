@@ -115,11 +115,11 @@ JAVA_VOID com_codename1_ui_NavigationCommand_actionPerformed___com_codename1_ui_
     /* CustomInvoke */com_codename1_ui_Command_actionPerformed___com_codename1_ui_events_ActionEvent(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(103);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_NavigationCommand_getNextForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(104);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L452817647;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1475982439;
     __CN1_DEBUG_INFO(105);
     virtual_com_codename1_ui_Form_show__(threadStateData, locals[2].data.o); 
 
-label_L452817647:
+label_L1475982439:
     __CN1_DEBUG_INFO(107);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

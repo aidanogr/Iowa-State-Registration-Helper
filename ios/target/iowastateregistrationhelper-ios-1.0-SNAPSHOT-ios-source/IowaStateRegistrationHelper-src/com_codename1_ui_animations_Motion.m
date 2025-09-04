@@ -266,11 +266,11 @@ JAVA_VOID com_codename1_ui_animations_Motion___INIT_____int_int_int(CODENAME_ONE
     __CN1_DEBUG_INFO(96);
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(97);
-    if (get_static_com_codename1_ui_animations_Motion_slowMotion(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1816583170;
+    if (get_static_com_codename1_ui_animations_Motion_slowMotion(threadStateData)==0) /* IFEQ CustomJump */ goto label_L2025644484;
     __CN1_DEBUG_INFO(98);
     set_field_com_codename1_ui_animations_Motion_duration(threadStateData, (get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject) * 50), __cn1ThisObject);
 
-label_L1816583170:
+label_L2025644484:
     __CN1_DEBUG_INFO(100);
     CN1_SET_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), 0 /* ICONST_0 */, -1 /* ICONST_M1 */);
     __CN1_DEBUG_INFO(101);
@@ -284,7 +284,7 @@ label_L1816583170:
 JAVA_VOID com_codename1_ui_animations_Motion_finish__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 4553, 4556);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(108);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1443288375;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L413046447;
     __CN1_DEBUG_INFO(109);
     BC_ALOAD(0);
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
@@ -297,7 +297,7 @@ JAVA_VOID com_codename1_ui_animations_Motion_finish__(CODENAME_ONE_THREAD_STATE,
     __CN1_DEBUG_INFO(111);
     set_field_com_codename1_ui_animations_Motion_previousCurrentMotionTime(threadStateData, -1LL, __cn1ThisObject);
 
-label_L1443288375:
+label_L413046447:
     __CN1_DEBUG_INFO(113);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -661,7 +661,7 @@ JAVA_VOID com_codename1_ui_animations_Motion_start__(CODENAME_ONE_THREAD_STATE, 
 JAVA_LONG com_codename1_ui_animations_Motion_getCurrentMotionTime___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 4553, 4570);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(333);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L58683880;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L2143645025;
     __CN1_DEBUG_INFO(334);
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
     PUSH_LONG(get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject));
@@ -669,7 +669,7 @@ JAVA_LONG com_codename1_ui_animations_Motion_getCurrentMotionTime___R_long(CODEN
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_LONG();
 
-label_L58683880:
+label_L2143645025:
     __CN1_DEBUG_INFO(336);
 
 {
@@ -688,11 +688,11 @@ JAVA_VOID com_codename1_ui_animations_Motion_setCurrentMotionTime___long(CODENAM
     __CN1_DEBUG_INFO(347);
     set_field_com_codename1_ui_animations_Motion_currentMotionTime(threadStateData, llocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(350);
-    if (get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)!=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1672524765;
+    if (get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)!=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L327329752;
     __CN1_DEBUG_INFO(351);
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject), __cn1ThisObject);
 
-label_L1672524765:
+label_L327329752:
     __CN1_DEBUG_INFO(353);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -704,14 +704,14 @@ JAVA_BOOLEAN com_codename1_ui_animations_Motion_isDecayMotion___R_boolean(CODENA
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(356);
     PUSH_INT(get_field_com_codename1_ui_animations_Motion_motionType(__cn1ThisObject));
     PUSH_INT(6);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L964557800;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1618269752;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2017419121;
+    goto label_L1076882309;
 
-label_L964557800:
+label_L1618269752:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2017419121:
+label_L1076882309:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -736,21 +736,21 @@ JAVA_BOOLEAN com_codename1_ui_animations_Motion_isFinished___R_boolean(CODENAME_
     PUSH_INT(get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     SP[-1].data.l = SP[-1].data.i; /* I2L */
     BC_LCMP();
-    if(POP_INT() > 0) /* IFGT */ goto label_L3641775;
-    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)==get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L3641775;
+    if(POP_INT() > 0) /* IFGT */ goto label_L349517956;
+    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)==get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L349517956;
     PUSH_INT(6);
     PUSH_INT(get_field_com_codename1_ui_animations_Motion_motionType(__cn1ThisObject));
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1728050223;
-    if (CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), 0 /* ICONST_0 */)!=get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1728050223;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L309326241;
+    if (CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), 0 /* ICONST_0 */)!=get_field_com_codename1_ui_animations_Motion_lastReturnedValue(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L309326241;
 
-label_L3641775:
+label_L349517956:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L814473635;
+    goto label_L1416376514;
 
-label_L1728050223:
+label_L309326241:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L814473635:
+label_L1416376514:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -764,7 +764,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getSplineValue___R_int(CODENAME_ONE_
     volatile JAVA_FLOAT flocals_2_ = 0; /* v2 */
     DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 4553, 4575);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(380);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L852354068;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1805683209;
     __CN1_DEBUG_INFO(381);
 
 {
@@ -772,7 +772,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getSplineValue___R_int(CODENAME_ONE_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L852354068:
+label_L1805683209:
     __CN1_DEBUG_INFO(383);
     /* VarOp.assignFrom */ flocals_1_=((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     __CN1_DEBUG_INFO(384);
@@ -782,13 +782,13 @@ label_L852354068:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     BC_FSTORE(2);
     __CN1_DEBUG_INFO(385);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L239841547;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1452056289;
     __CN1_DEBUG_INFO(386);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(387);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L239841547:
+label_L1452056289:
     __CN1_DEBUG_INFO(389);
     /* VarOp.assignFrom */ flocals_2_ = /* CustomInvoke */java_lang_Math_min___float_float_R_float(threadStateData, flocals_2_, flocals_1_);
     __CN1_DEBUG_INFO(390);
@@ -798,32 +798,32 @@ label_L239841547:
     __CN1_DEBUG_INFO(392);
     /* VarOp.assignFrom */ flocals_5_=(((JAVA_FLOAT)ilocals_3_) / (flocals_4_ * flocals_4_));
     __CN1_DEBUG_INFO(394);
-    if (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L395076193;
+    if (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L998481768;
     __CN1_DEBUG_INFO(395);
-    if (CN1_CMP_EXPR(flocals_2_, flocals_4_)<=0) /* IFLE CustomJump */ goto label_L2028277706;
+    if (CN1_CMP_EXPR(flocals_2_, flocals_4_)<=0) /* IFLE CustomJump */ goto label_L240931578;
     __CN1_DEBUG_INFO(396);
     /* VarOp.assignFrom */ ilocals_6_=(get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) + ((JAVA_INT)(flocals_5_ * ((((-(flocals_4_)) * flocals_4_) + ((2 /* FCONST_2 */ * flocals_4_) * flocals_2_)) - ((flocals_2_ * flocals_2_) / 2 /* FCONST_2 */)))));
-    goto label_L626370950;
+    goto label_L1631805946;
 
-label_L2028277706:
+label_L240931578:
     __CN1_DEBUG_INFO(399);
     /* VarOp.assignFrom */ ilocals_6_=(get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) + ((JAVA_INT)(((flocals_5_ * flocals_2_) * flocals_2_) / 2 /* FCONST_2 */)));
-    goto label_L626370950;
+    goto label_L1631805946;
 
-label_L395076193:
+label_L998481768:
     __CN1_DEBUG_INFO(402);
     /* VarOp.assignFrom */ flocals_2_=(flocals_1_ - flocals_2_);
     __CN1_DEBUG_INFO(403);
-    if (CN1_CMP_EXPR(flocals_2_, flocals_4_)<=0) /* IFLE CustomJump */ goto label_L1992656846;
+    if (CN1_CMP_EXPR(flocals_2_, flocals_4_)<=0) /* IFLE CustomJump */ goto label_L1401589925;
     __CN1_DEBUG_INFO(404);
     /* VarOp.assignFrom */ ilocals_6_=(get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject) + ((JAVA_INT)(flocals_5_ * ((((-(flocals_4_)) * flocals_4_) + ((2 /* FCONST_2 */ * flocals_4_) * flocals_2_)) - ((flocals_2_ * flocals_2_) / 2 /* FCONST_2 */)))));
-    goto label_L626370950;
+    goto label_L1631805946;
 
-label_L1992656846:
+label_L1401589925:
     __CN1_DEBUG_INFO(407);
     /* VarOp.assignFrom */ ilocals_6_=(get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject) + ((JAVA_INT)(((flocals_5_ * flocals_2_) * flocals_2_) / 2 /* FCONST_2 */)));
 
-label_L626370950:
+label_L1631805946:
     __CN1_DEBUG_INFO(410);
 
 {
@@ -846,7 +846,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getCubicValue___R_int(CODENAME_ONE_T
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
     DEFINE_INSTANCE_METHOD_STACK(4, 11, 0, 4553, 4576);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(416);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L44989469;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1960131939;
     __CN1_DEBUG_INFO(417);
 
 {
@@ -854,7 +854,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getCubicValue___R_int(CODENAME_ONE_T
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L44989469:
+label_L1960131939:
     __CN1_DEBUG_INFO(419);
     /* VarOp.assignFrom */ flocals_1_=((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     __CN1_DEBUG_INFO(420);
@@ -864,23 +864,23 @@ label_L44989469:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     BC_FSTORE(2);
     __CN1_DEBUG_INFO(421);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1382394077;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L418544257;
     __CN1_DEBUG_INFO(422);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(423);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L1382394077:
+label_L418544257:
     __CN1_DEBUG_INFO(425);
     /* VarOp.assignFrom */ flocals_2_ = /* CustomInvoke */java_lang_Math_min___float_float_R_float(threadStateData, flocals_2_, flocals_1_);
     __CN1_DEBUG_INFO(426);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1525953166;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1648661716;
     __CN1_DEBUG_INFO(427);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(428);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L1525953166:
+label_L1648661716:
     __CN1_DEBUG_INFO(430);
     /* CustomInvoke */PUSH_INT(java_lang_Math_abs___int_R_int(threadStateData, (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject) - get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject))));
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
@@ -896,18 +896,18 @@ label_L1525953166:
     __CN1_DEBUG_INFO(435);
     /* VarOp.assignFrom */ flocals_8_=(((flocals_4_ * flocals_4_) * flocals_4_) * get_field_com_codename1_ui_animations_Motion_p3(__cn1ThisObject));
     __CN1_DEBUG_INFO(437);
-    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L5584361;
+    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L1699491713;
     __CN1_DEBUG_INFO(438);
     /* VarOp.assignFrom */ ilocals_9_=(get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) + ((JAVA_INT)((((flocals_5_ + flocals_6_) + flocals_7_) + flocals_8_) * flocals_3_)));
-    goto label_L1911222122;
+    goto label_L951007342;
 
-label_L5584361:
+label_L1699491713:
     __CN1_DEBUG_INFO(440);
     /* VarOp.assignFrom */ ilocals_10_=((JAVA_INT)((((flocals_5_ + flocals_6_) + flocals_7_) + flocals_8_) * flocals_3_));
     __CN1_DEBUG_INFO(441);
     /* VarOp.assignFrom */ ilocals_9_=(get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) - ilocals_10_);
 
-label_L1911222122:
+label_L951007342:
     __CN1_DEBUG_INFO(443);
 
 {
@@ -920,12 +920,12 @@ label_L1911222122:
 JAVA_INT com_codename1_ui_animations_Motion_getValue___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 4553, 2008);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(453);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L238457546;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L864189320;
     PUSH_LONG(get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject));
     { JAVA_LONG tmpResult = virtual_com_codename1_ui_animations_Motion_getCurrentMotionTime___R_long(threadStateData, __cn1ThisObject);
     PUSH_LONG(tmpResult); }
     BC_LCMP();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L238457546;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L864189320;
     __CN1_DEBUG_INFO(454);
 
 {
@@ -933,7 +933,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getValue___R_int(CODENAME_ONE_THREAD
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L238457546:
+label_L864189320:
     __CN1_DEBUG_INFO(457);
     CN1_SET_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), 0 /* ICONST_0 */, CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), 1 /* ICONST_1 */));
     __CN1_DEBUG_INFO(458);
@@ -947,89 +947,89 @@ label_L238457546:
     __CN1_DEBUG_INFO(462);
     CN1_SET_ARRAY_ELEMENT_LONG(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValueTime(__cn1ThisObject), 2 /* ICONST_2 */, get_field_com_codename1_ui_animations_Motion_previousCurrentMotionTime(__cn1ThisObject));
     __CN1_DEBUG_INFO(463);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_previousCurrentMotionTime(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L1974317504;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_previousCurrentMotionTime(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L1965472536;
     __CN1_DEBUG_INFO(464);
     BC_ALOAD(0);
     { JAVA_LONG tmpResult = virtual_com_codename1_ui_animations_Motion_getCurrentMotionTime___R_long(threadStateData, __cn1ThisObject);
     PUSH_LONG(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_previousCurrentMotionTime(threadStateData, POP_LONG(), POP_OBJ());
 
-label_L1974317504:
+label_L1965472536:
     __CN1_DEBUG_INFO(466);
     PUSH_INT(get_field_com_codename1_ui_animations_Motion_motionType(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1560160481;
-        case 2: goto label_L2059996587;
-        case 3: goto label_L1087598842;
-        case 4: goto label_L1483270801;
-        case 5: goto label_L1971087453;
-        case 6: goto label_L1198167820;
-        default: goto label_L484801467;
+        case 1: goto label_L1897050650;
+        case 2: goto label_L817858590;
+        case 3: goto label_L272755642;
+        case 4: goto label_L1350532305;
+        case 5: goto label_L882480806;
+        case 6: goto label_L2024413011;
+        default: goto label_L1730752455;
     }
 
-label_L1560160481:
+label_L1897050650:
     __CN1_DEBUG_INFO(468);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getSplineValue___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(469);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L1483270801:
+label_L1350532305:
     __CN1_DEBUG_INFO(471);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getCubicValue___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(472);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L2059996587:
+label_L817858590:
     __CN1_DEBUG_INFO(474);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getFriction___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(475);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L1087598842:
+label_L272755642:
     __CN1_DEBUG_INFO(477);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getRubber___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(478);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L1971087453:
+label_L882480806:
     __CN1_DEBUG_INFO(480);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getColorLinear___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(481);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L1198167820:
+label_L2024413011:
     __CN1_DEBUG_INFO(483);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getExponentialDecay___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(484);
-    goto label_L54929108;
+    goto label_L1276857863;
 
-label_L484801467:
+label_L1730752455:
     __CN1_DEBUG_INFO(486);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = com_codename1_ui_animations_Motion_getLinear___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_animations_Motion_lastReturnedValue(threadStateData, POP_INT(), POP_OBJ());
 
-label_L54929108:
+label_L1276857863:
     __CN1_DEBUG_INFO(489);
 
 {
@@ -1060,42 +1060,42 @@ JAVA_DOUBLE com_codename1_ui_animations_Motion_getVelocity___R_double(CODENAME_O
     __CN1_DEBUG_INFO(506);
     /* VarOp.assignFrom */     ilocals_7_ = 2 /* ICONST_2 */; 
 
-label_L1655630081:
-    if (ilocals_7_<0) /* IFLT CustomJump */ goto label_L367954017;
+label_L1847252568:
+    if (ilocals_7_<0) /* IFLT CustomJump */ goto label_L886037892;
     __CN1_DEBUG_INFO(507);
     /* VarOp.assignFrom */ llocals_8_=CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValueTime(__cn1ThisObject), ilocals_7_);
     __CN1_DEBUG_INFO(508);
-    if (CN1_CMP_EXPR(llocals_8_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L367954017;
-    if (CN1_CMP_EXPR(llocals_1_, llocals_8_)!=0) /* IFNE CustomJump */ goto label_L112176935;
+    if (CN1_CMP_EXPR(llocals_8_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L886037892;
+    if (CN1_CMP_EXPR(llocals_1_, llocals_8_)!=0) /* IFNE CustomJump */ goto label_L477578433;
     __CN1_DEBUG_INFO(509);
-    goto label_L367954017;
+    goto label_L886037892;
 
-label_L112176935:
+label_L477578433:
     __CN1_DEBUG_INFO(511);
     /* VarOp.assignFrom */ ilocals_10_=CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValue(__cn1ThisObject), ilocals_7_);
     __CN1_DEBUG_INFO(512);
     /* VarOp.assignFrom */ dlocals_11_=(((JAVA_DOUBLE)(ilocals_3_ - ilocals_10_)) / ((JAVA_DOUBLE)(llocals_1_ - llocals_8_)));
     __CN1_DEBUG_INFO(513);
-    if (ilocals_6_==0) /* IFEQ CustomJump */ goto label_L832578794;
+    if (ilocals_6_==0) /* IFEQ CustomJump */ goto label_L839784351;
     BC_DLOAD(11);
-    goto label_L56804492;
+    goto label_L611523759;
 
-label_L832578794:
+label_L839784351:
     BC_DLOAD(4);
     BC_DLOAD(11);
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     PUSH_DOUBLE(2.0); /* LDC */
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
 
-label_L56804492:
+label_L611523759:
     BC_DSTORE(4);
     __CN1_DEBUG_INFO(514);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(506);
     BC_IINC(7, -1);
-    goto label_L1655630081;
+    goto label_L1847252568;
 
-label_L367954017:
+label_L886037892:
     __CN1_DEBUG_INFO(517);
 
 {
@@ -1118,24 +1118,24 @@ JAVA_INT com_codename1_ui_animations_Motion_countAvailableVelocitySamplingPoints
     __CN1_DEBUG_INFO(530);
     /* VarOp.assignFrom */     ilocals_4_ = 2 /* ICONST_2 */; 
 
-label_L1021813588:
-    if (ilocals_4_<0) /* IFLT CustomJump */ goto label_L428057828;
+label_L917987811:
+    if (ilocals_4_<0) /* IFLT CustomJump */ goto label_L1215157782;
     __CN1_DEBUG_INFO(531);
     /* VarOp.assignFrom */ llocals_5_=CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_ui_animations_Motion_previousLastReturnedValueTime(__cn1ThisObject), ilocals_4_);
     __CN1_DEBUG_INFO(532);
-    if (CN1_CMP_EXPR(llocals_5_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L428057828;
-    if (CN1_CMP_EXPR(llocals_2_, llocals_5_)!=0) /* IFNE CustomJump */ goto label_L699679818;
+    if (CN1_CMP_EXPR(llocals_5_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L1215157782;
+    if (CN1_CMP_EXPR(llocals_2_, llocals_5_)!=0) /* IFNE CustomJump */ goto label_L169710187;
     __CN1_DEBUG_INFO(533);
-    goto label_L428057828;
+    goto label_L1215157782;
 
-label_L699679818:
+label_L169710187:
     __CN1_DEBUG_INFO(535);
     BC_IINC(1, 1);
     __CN1_DEBUG_INFO(530);
     BC_IINC(4, -1);
-    goto label_L1021813588;
+    goto label_L917987811;
 
-label_L428057828:
+label_L1215157782:
     __CN1_DEBUG_INFO(538);
 
 {
@@ -1152,7 +1152,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getLinear___R_int(CODENAME_ONE_THREA
     volatile JAVA_FLOAT flocals_2_ = 0; /* v2 */
     DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 4553, 4579);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(543);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L689218344;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L237492603;
     __CN1_DEBUG_INFO(544);
 
 {
@@ -1160,7 +1160,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getLinear___R_int(CODENAME_ONE_THREA
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L689218344:
+label_L237492603:
     __CN1_DEBUG_INFO(546);
     /* VarOp.assignFrom */ flocals_1_=((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     __CN1_DEBUG_INFO(547);
@@ -1170,19 +1170,19 @@ label_L689218344:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     BC_FSTORE(2);
     __CN1_DEBUG_INFO(548);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L758417002;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L677143503;
     __CN1_DEBUG_INFO(549);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(550);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L758417002:
+label_L677143503:
     __CN1_DEBUG_INFO(552);
     /* VarOp.assignFrom */ ilocals_3_=(get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject) - get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject));
     __CN1_DEBUG_INFO(553);
     /* VarOp.assignFrom */ ilocals_4_=((JAVA_INT)(((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) + ((flocals_2_ / flocals_1_) * ((JAVA_FLOAT)ilocals_3_))));
     __CN1_DEBUG_INFO(555);
-    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L640225682;
+    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1312043621;
     __CN1_DEBUG_INFO(556);
 
 {
@@ -1190,7 +1190,7 @@ label_L758417002:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L640225682:
+label_L1312043621:
     __CN1_DEBUG_INFO(558);
 
 {
@@ -1217,7 +1217,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getColorLinear___R_int(CODENAME_ONE_
     volatile JAVA_INT ilocals_14_ = 0; /* v14 */
     DEFINE_INSTANCE_METHOD_STACK(4, 15, 0, 4553, 4580);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(563);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L668330752;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1124203065;
     __CN1_DEBUG_INFO(564);
 
 {
@@ -1225,7 +1225,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getColorLinear___R_int(CODENAME_ONE_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L668330752:
+label_L1124203065:
     __CN1_DEBUG_INFO(566);
     /* VarOp.assignFrom */ flocals_1_=((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     __CN1_DEBUG_INFO(567);
@@ -1235,13 +1235,13 @@ label_L668330752:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     BC_FSTORE(2);
     __CN1_DEBUG_INFO(568);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L726925617;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1943867171;
     __CN1_DEBUG_INFO(569);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(570);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L726925617:
+label_L1943867171:
     __CN1_DEBUG_INFO(573);
     /* VarOp.assignFrom */ ilocals_3_=(BC_ISHR_EXPR(get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject), 16) & 255);
     __CN1_DEBUG_INFO(574);
@@ -1267,38 +1267,38 @@ label_L726925617:
     __CN1_DEBUG_INFO(585);
     /* VarOp.assignFrom */ ilocals_14_=((JAVA_INT)(((JAVA_FLOAT)ilocals_7_) + ((flocals_2_ / flocals_1_) * ((JAVA_FLOAT)ilocals_11_))));
     __CN1_DEBUG_INFO(587);
-    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L576374247;
+    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L953436300;
     __CN1_DEBUG_INFO(588);
     /* VarOp.assignFrom */ ilocals_12_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, ilocals_4_, ilocals_12_);
-    goto label_L1284634047;
+    goto label_L1469899497;
 
-label_L576374247:
+label_L953436300:
     __CN1_DEBUG_INFO(590);
     /* VarOp.assignFrom */ ilocals_12_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, ilocals_4_, ilocals_12_);
 
-label_L1284634047:
+label_L1469899497:
     __CN1_DEBUG_INFO(593);
-    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1150585542;
+    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L461376017;
     __CN1_DEBUG_INFO(594);
     /* VarOp.assignFrom */ ilocals_13_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, ilocals_6_, ilocals_13_);
-    goto label_L1338136300;
+    goto label_L4172373;
 
-label_L1150585542:
+label_L461376017:
     __CN1_DEBUG_INFO(596);
     /* VarOp.assignFrom */ ilocals_13_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, ilocals_6_, ilocals_13_);
 
-label_L1338136300:
+label_L4172373:
     __CN1_DEBUG_INFO(599);
-    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L1002690318;
+    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L448070390;
     __CN1_DEBUG_INFO(600);
     /* VarOp.assignFrom */ ilocals_14_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, ilocals_8_, ilocals_14_);
-    goto label_L2025644484;
+    goto label_L713961699;
 
-label_L1002690318:
+label_L448070390:
     __CN1_DEBUG_INFO(602);
     /* VarOp.assignFrom */ ilocals_14_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, ilocals_8_, ilocals_14_);
 
-label_L2025644484:
+label_L713961699:
     __CN1_DEBUG_INFO(604);
 
 {
@@ -1343,15 +1343,15 @@ JAVA_INT com_codename1_ui_animations_Motion_getFriction___R_int(CODENAME_ONE_THR
     SP[-1].data.i = (JAVA_INT)SP[-1].data.d; /* D2I */
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(612);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_initVelocity(__cn1ThisObject), 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L413046447;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_initVelocity(__cn1ThisObject), 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L835020577;
     __CN1_DEBUG_INFO(613);
     /* VarOp.assignFrom */ ilocals_2_=(ilocals_2_ * -1 /* ICONST_M1 */);
 
-label_L413046447:
+label_L835020577:
     __CN1_DEBUG_INFO(615);
     /* VarOp.assignFrom */ ilocals_2_=(ilocals_2_ + get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject));
     __CN1_DEBUG_INFO(616);
-    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L1169606246;
+    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L1289035342;
     __CN1_DEBUG_INFO(617);
 
 {
@@ -1359,7 +1359,7 @@ label_L413046447:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1169606246:
+label_L1289035342:
     __CN1_DEBUG_INFO(619);
 
 {
@@ -1396,7 +1396,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getExponentialDecay___R_int(CODENAME
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
     BC_ISTORE(7);
     __CN1_DEBUG_INFO(628);
-    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L1625817721;
+    if (get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)<=get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L2118457232;
     __CN1_DEBUG_INFO(629);
 
 {
@@ -1404,7 +1404,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getExponentialDecay___R_int(CODENAME
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1625817721:
+label_L2118457232:
     __CN1_DEBUG_INFO(631);
 
 {
@@ -1424,7 +1424,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getRubber___R_int(CODENAME_ONE_THREA
     volatile JAVA_FLOAT flocals_2_ = 0; /* v2 */
     DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 4553, 4583);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(635);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2143645025;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L622274963;
     __CN1_DEBUG_INFO(636);
 
 {
@@ -1432,7 +1432,7 @@ JAVA_INT com_codename1_ui_animations_Motion_getRubber___R_int(CODENAME_ONE_THREA
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2143645025:
+label_L622274963:
     __CN1_DEBUG_INFO(638);
     /* VarOp.assignFrom */ flocals_1_=((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_duration(__cn1ThisObject));
     __CN1_DEBUG_INFO(639);
@@ -1442,13 +1442,13 @@ label_L2143645025:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     BC_FSTORE(2);
     __CN1_DEBUG_INFO(640);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L327329752;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_animations_Motion_currentMotionTime(__cn1ThisObject), -1LL)<=0) /* IFLE CustomJump */ goto label_L1064414847;
     __CN1_DEBUG_INFO(641);
     /* VarOp.assignFrom */ flocals_2_=(flocals_2_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
     __CN1_DEBUG_INFO(642);
     /* VarOp.assignFrom */ flocals_1_=(flocals_1_ - ((JAVA_FLOAT)get_field_com_codename1_ui_animations_Motion_startTime(__cn1ThisObject)));
 
-label_L327329752:
+label_L1064414847:
     __CN1_DEBUG_INFO(644);
     /* VarOp.assignFrom */ flocals_2_ = /* CustomInvoke */java_lang_Math_min___float_float_R_float(threadStateData, flocals_2_, flocals_1_);
     __CN1_DEBUG_INFO(645);
@@ -1460,20 +1460,20 @@ label_L327329752:
     __CN1_DEBUG_INFO(649);
     /* VarOp.assignFrom */ ilocals_7_=((JAVA_INT)(flocals_5_ * ((((-(flocals_4_)) * flocals_4_) + ((2 /* FCONST_2 */ * flocals_4_) * flocals_2_)) - ((flocals_2_ * flocals_2_) / 2 /* FCONST_2 */))));
     __CN1_DEBUG_INFO(652);
-    if (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1618269752;
+    if (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject)>=get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1530060977;
     __CN1_DEBUG_INFO(653);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject), (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) + ilocals_7_));
     __CN1_DEBUG_INFO(654);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject), ilocals_6_);
-    goto label_L1076882309;
+    goto label_L220038608;
 
-label_L1618269752:
+label_L1530060977:
     __CN1_DEBUG_INFO(657);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */java_lang_Math_min___int_int_R_int(threadStateData, get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject), (get_field_com_codename1_ui_animations_Motion_sourceValue(__cn1ThisObject) - ilocals_7_));
     __CN1_DEBUG_INFO(658);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */java_lang_Math_max___int_int_R_int(threadStateData, get_field_com_codename1_ui_animations_Motion_destinationValue(__cn1ThisObject), ilocals_6_);
 
-label_L1076882309:
+label_L220038608:
     __CN1_DEBUG_INFO(660);
 
 {

@@ -110,9 +110,6 @@ void __STATIC_INITIALIZER_com_codename1_ui_TextHolder(CODENAME_ONE_THREAD_STATE)
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_2] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_2][0] = 318;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_2][1] = 319;
-    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_CheckBox] = malloc(sizeof(int*) * 14);
-    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_CheckBox][0] = 327;
-    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_CheckBox][1] = 328;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_1] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_1][0] = 327;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_InputComponent_1][1] = 328;

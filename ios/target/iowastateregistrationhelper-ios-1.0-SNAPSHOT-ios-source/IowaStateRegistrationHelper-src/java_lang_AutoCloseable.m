@@ -79,6 +79,8 @@ void __STATIC_INITIALIZER_java_lang_AutoCloseable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_Reader][0] = 10;
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_ByteArrayInputStream] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_ByteArrayInputStream][0] = 10;
+    classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_StringReader] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_StringReader][0] = 10;
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_FilterOutputStream] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_FilterOutputStream][0] = 10;
     classToInterfaceMap_java_lang_AutoCloseable[cn1_class_id_java_io_NSLogOutputStream] = malloc(sizeof(int*) * 13);

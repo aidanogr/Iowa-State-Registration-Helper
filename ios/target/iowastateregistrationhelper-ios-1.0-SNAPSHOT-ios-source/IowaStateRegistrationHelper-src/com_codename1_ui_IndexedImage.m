@@ -118,38 +118,38 @@ JAVA_VOID com_codename1_ui_IndexedImage_initOpaque__(CODENAME_ONE_THREAD_STATE, 
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9198, 9199);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(71);
-    if (get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L300104620;
+    if (get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L560041895;
     __CN1_DEBUG_INFO(72);
     /* VarOp.assignFrom */ ilocals_1_ = CN1_ARRAY_LENGTH(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject));
     __CN1_DEBUG_INFO(73);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
-label_L1955948959:
-    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L810557024;
+label_L1299885218:
+    if (ilocals_2_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L368242083;
     __CN1_DEBUG_INFO(74);
-    if ((CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_2_) & -16777216)==-16777216) /* IF_ICMPEQ CustomJump */ goto label_L681015501;
+    if ((CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_2_) & -16777216)==-16777216) /* IF_ICMPEQ CustomJump */ goto label_L885991756;
     __CN1_DEBUG_INFO(75);
     /* CustomInvoke */virtual_com_codename1_ui_IndexedImage_setOpaque___boolean(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(76);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L681015501:
+label_L885991756:
     __CN1_DEBUG_INFO(73);
     BC_IINC(2, 1);
-    goto label_L1955948959;
+    goto label_L1299885218;
 
-label_L810557024:
+label_L368242083:
     __CN1_DEBUG_INFO(79);
     /* CustomInvoke */virtual_com_codename1_ui_IndexedImage_setOpaque___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(80);
-    goto label_L2082673402;
+    goto label_L1615535645;
 
-label_L300104620:
+label_L560041895:
     __CN1_DEBUG_INFO(81);
     /* CustomInvoke */virtual_com_codename1_ui_IndexedImage_setOpaque___boolean(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
 
-label_L2082673402:
+label_L1615535645:
     __CN1_DEBUG_INFO(83);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -193,8 +193,8 @@ JAVA_VOID com_codename1_ui_IndexedImage___INIT_____int_int_int_1ARRAY_int_1ARRAY
     __CN1_DEBUG_INFO(98);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
 
-label_L1609754699:
-    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1286643712;
+label_L790538253:
+    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1649829954;
     __CN1_DEBUG_INFO(99);
     PUSH_POINTER(get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject));
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -207,9 +207,9 @@ label_L1609754699:
     ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
     __CN1_DEBUG_INFO(98);
     BC_IINC(6, 1);
-    goto label_L1609754699;
+    goto label_L790538253;
 
-label_L1286643712:
+label_L1649829954:
     __CN1_DEBUG_INFO(101);
     com_codename1_ui_IndexedImage_initOpaque__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(102);
@@ -229,10 +229,10 @@ JAVA_INT com_codename1_ui_IndexedImage_paletteOffset___int_R_int(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(112);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L769507769:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L7646139;
+label_L1591683105:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L924393200;
     __CN1_DEBUG_INFO(113);
-    if (ilocals_1_!=CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_3_)) /* IF_ICMPNE CustomJump */ goto label_L1688526221;
+    if (ilocals_1_!=CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_3_)) /* IF_ICMPNE CustomJump */ goto label_L253380088;
     __CN1_DEBUG_INFO(114);
 
 {
@@ -240,12 +240,12 @@ label_L769507769:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1688526221:
+label_L253380088:
     __CN1_DEBUG_INFO(112);
     BC_IINC(3, 1);
-    goto label_L769507769;
+    goto label_L1591683105;
 
-label_L7646139:
+label_L924393200:
     __CN1_DEBUG_INFO(117);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -292,8 +292,8 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_subImage___int_int_int_int_boolean_R_c
     __CN1_DEBUG_INFO(137);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L1076462213:
-    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L1705366777;
+label_L2068499906:
+    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L81505591;
     __CN1_DEBUG_INFO(138);
     /* VarOp.assignFrom */ ilocals_9_=(ilocals_8_ / ilocals_3_);
     __CN1_DEBUG_INFO(139);
@@ -304,9 +304,9 @@ label_L1076462213:
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[6].data.o, ilocals_8_, CN1_ARRAY_ELEMENT_BYTE(get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject), ilocals_11_));
     __CN1_DEBUG_INFO(137);
     BC_IINC(8, 1);
-    goto label_L1076462213;
+    goto label_L2068499906;
 
-label_L1705366777:
+label_L81505591:
     __CN1_DEBUG_INFO(144);
     PUSH_POINTER(__NEW_com_codename1_ui_IndexedImage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -356,19 +356,19 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_modifyAlpha___byte_R_com_codename1_ui_
     __CN1_DEBUG_INFO(162);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L184133791:
-    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L35874744;
+label_L1492156162:
+    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L648176342;
     __CN1_DEBUG_INFO(163);
-    if ((CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_5_) & -16777216)==0) /* IFEQ CustomJump */ goto label_L1102097996;
+    if ((CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_5_) & -16777216)==0) /* IFEQ CustomJump */ goto label_L18601987;
     __CN1_DEBUG_INFO(164);
     CN1_SET_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_5_, ((CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_5_) & 16777215) | ilocals_3_));
 
-label_L1102097996:
+label_L18601987:
     __CN1_DEBUG_INFO(162);
     BC_IINC(5, 1);
-    goto label_L184133791;
+    goto label_L1492156162;
 
-label_L35874744:
+label_L648176342:
     __CN1_DEBUG_INFO(167);
     PUSH_POINTER(__NEW_com_codename1_ui_IndexedImage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -413,31 +413,31 @@ JAVA_VOID com_codename1_ui_IndexedImage_getRGB___int_1ARRAY_int_int_int_int_int(
     __CN1_DEBUG_INFO(188);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L481525476:
-    if (ilocals_8_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L105393903;
+label_L1143968486:
+    if (ilocals_8_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1970900227;
     __CN1_DEBUG_INFO(189);
     /* VarOp.assignFrom */ ilocals_9_=(ilocals_8_ * ilocals_5_);
     __CN1_DEBUG_INFO(190);
     /* VarOp.assignFrom */     ilocals_10_ = 0 /* ICONST_0 */; 
 
-label_L1531545666:
-    if (ilocals_10_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L533698361;
+label_L536671860:
+    if (ilocals_10_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1090057640;
     __CN1_DEBUG_INFO(191);
     /* VarOp.assignFrom */ ilocals_11_=(CN1_ARRAY_ELEMENT_BYTE(get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject), (ilocals_7_ + ilocals_10_)) & 255);
     __CN1_DEBUG_INFO(192);
     CN1_SET_ARRAY_ELEMENT_INT(locals[1].data.o, ((ilocals_2_ + ilocals_9_) + ilocals_10_), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_11_));
     __CN1_DEBUG_INFO(190);
     BC_IINC(10, 1);
-    goto label_L1531545666;
+    goto label_L536671860;
 
-label_L533698361:
+label_L1090057640:
     __CN1_DEBUG_INFO(194);
     /* VarOp.assignFrom */ ilocals_7_=(ilocals_7_ + get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject));
     __CN1_DEBUG_INFO(188);
     BC_IINC(8, 1);
-    goto label_L481525476;
+    goto label_L1143968486;
 
-label_L105393903:
+label_L1970900227:
     __CN1_DEBUG_INFO(196);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -480,10 +480,10 @@ JAVA_VOID com_codename1_ui_IndexedImage_drawImage___com_codename1_ui_Graphics_ja
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(275);
-    if (get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1070740013;
-    if (CN1_ARRAY_LENGTH(get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData))>=(get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject) * 3 /* ICONST_3 */)) /* IF_ICMPGE CustomJump */ goto label_L1454136448;
+    if (get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L338765435;
+    if (CN1_ARRAY_LENGTH(get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData))>=(get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject) * 3 /* ICONST_3 */)) /* IF_ICMPGE CustomJump */ goto label_L874981105;
 
-label_L1070740013:
+label_L338765435:
     __CN1_DEBUG_INFO(276);
     PUSH_INT(get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject));
     PUSH_INT(3); /* ICONST_3 */
@@ -492,7 +492,7 @@ label_L1070740013:
     set_static_com_codename1_ui_IndexedImage_lineCache(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1454136448:
+label_L874981105:
     __CN1_DEBUG_INFO(281);
     /* VarOp.assignFrom */ ilocals_5_ = virtual_com_codename1_ui_Graphics_getClipY___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(282);
@@ -508,22 +508,22 @@ label_L1454136448:
     __CN1_DEBUG_INFO(284);
     /* VarOp.assignFrom */ ilocals_8_ = get_field_com_codename1_ui_IndexedImage_height(__cn1ThisObject);
     __CN1_DEBUG_INFO(285);
-    if (ilocals_5_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L1776589441;
+    if (ilocals_5_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L209748487;
     __CN1_DEBUG_INFO(286);
     /* VarOp.assignFrom */ ilocals_7_=(ilocals_5_ - ilocals_4_);
 
-label_L1776589441:
+label_L209748487:
     __CN1_DEBUG_INFO(288);
-    if (ilocals_6_>=(ilocals_4_ + get_field_com_codename1_ui_IndexedImage_height(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L270734602;
+    if (ilocals_6_>=(ilocals_4_ + get_field_com_codename1_ui_IndexedImage_height(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1997753864;
     __CN1_DEBUG_INFO(289);
     /* VarOp.assignFrom */ ilocals_8_=(ilocals_6_ - ilocals_4_);
 
-label_L270734602:
+label_L1997753864:
     __CN1_DEBUG_INFO(293);
     /* VarOp.assignFrom */     ilocals_9_ = ilocals_7_;
 
-label_L1330411679:
-    if (ilocals_9_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1053695609;
+label_L34032089:
+    if (ilocals_9_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1779219567;
     __CN1_DEBUG_INFO(294);
     /* VarOp.assignFrom */ ilocals_10_=(ilocals_9_ * get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject));
     __CN1_DEBUG_INFO(295);
@@ -533,24 +533,24 @@ label_L1330411679:
     __CN1_DEBUG_INFO(297);
     /* VarOp.assignFrom */     ilocals_13_ = 0 /* ICONST_0 */; 
 
-label_L1196404281:
-    if (ilocals_13_>=ilocals_12_) /* IF_ICMPGE CustomJump */ goto label_L179441020;
+label_L1871259950:
+    if (ilocals_13_>=ilocals_12_) /* IF_ICMPGE CustomJump */ goto label_L1729171313;
     __CN1_DEBUG_INFO(298);
     /* VarOp.assignFrom */ ilocals_14_=(CN1_ARRAY_ELEMENT_BYTE(get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject), (ilocals_13_ + ilocals_10_)) & 255);
     __CN1_DEBUG_INFO(299);
     CN1_SET_ARRAY_ELEMENT_INT(get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData), ilocals_13_, CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_14_));
     __CN1_DEBUG_INFO(297);
     BC_IINC(13, 1);
-    goto label_L1196404281;
+    goto label_L1871259950;
 
-label_L179441020:
+label_L1729171313:
     __CN1_DEBUG_INFO(301);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawRGB___int_1ARRAY_int_int_int_int_int_boolean(threadStateData, locals[1].data.o, get_static_com_codename1_ui_IndexedImage_lineCache(threadStateData), 0 /* ICONST_0 */, ilocals_3_, (ilocals_4_ + ilocals_9_), get_field_com_codename1_ui_IndexedImage_width(__cn1ThisObject), ilocals_11_, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(293);
     BC_IINC(9, 3);
-    goto label_L1330411679;
+    goto label_L34032089;
 
-label_L1053695609:
+label_L1779219567:
     __CN1_DEBUG_INFO(303);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -611,8 +611,8 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_scaled___int_int_R_com_codename1_ui_Im
     __CN1_DEBUG_INFO(335);
     /* VarOp.assignFrom */ ilocals_4_ = virtual_com_codename1_ui_IndexedImage_getHeight___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(338);
-    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L20945625;
-    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L20945625;
+    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L233271858;
+    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L233271858;
     __CN1_DEBUG_INFO(339);
 
 {
@@ -620,7 +620,7 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_scaled___int_int_R_com_codename1_ui_Im
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L20945625:
+label_L233271858:
     __CN1_DEBUG_INFO(341);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -677,8 +677,8 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_scaleArray___byte_1ARRAY_int_int_R_byt
     __CN1_DEBUG_INFO(351);
     /* VarOp.assignFrom */ ilocals_5_ = virtual_com_codename1_ui_IndexedImage_getHeight___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(354);
-    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L461155951;
-    if (ilocals_5_!=ilocals_3_) /* IF_ICMPNE CustomJump */ goto label_L461155951;
+    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L1650626168;
+    if (ilocals_5_!=ilocals_3_) /* IF_ICMPNE CustomJump */ goto label_L1650626168;
     __CN1_DEBUG_INFO(355);
 
 {
@@ -686,7 +686,7 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_scaleArray___byte_1ARRAY_int_int_R_byt
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L461155951:
+label_L1650626168:
     __CN1_DEBUG_INFO(357);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -708,15 +708,15 @@ label_L461155951:
     __CN1_DEBUG_INFO(364);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L1745701482:
-    if (ilocals_11_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L569959775;
+label_L1491623023:
+    if (ilocals_11_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L1149508419;
     __CN1_DEBUG_INFO(365);
     /* VarOp.assignFrom */ ilocals_12_=BC_ISHR_EXPR(ilocals_9_, 16);
     __CN1_DEBUG_INFO(366);
     /* VarOp.assignFrom */     ilocals_13_ = 0 /* ICONST_0 */; 
 
-label_L238654703:
-    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L224192895;
+label_L1020397237:
+    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L2088098699;
     __CN1_DEBUG_INFO(367);
     /* VarOp.assignFrom */ ilocals_14_=BC_ISHR_EXPR(ilocals_10_, 16);
     __CN1_DEBUG_INFO(368);
@@ -724,30 +724,30 @@ label_L238654703:
     __CN1_DEBUG_INFO(369);
     /* VarOp.assignFrom */ ilocals_16_=(ilocals_12_ + (ilocals_14_ * ilocals_4_));
     __CN1_DEBUG_INFO(370);
-    if (ilocals_15_<0) /* IFLT CustomJump */ goto label_L1883788127;
-    if (ilocals_15_>=CN1_ARRAY_LENGTH(locals[6].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1883788127;
-    if (ilocals_16_<0) /* IFLT CustomJump */ goto label_L1883788127;
-    if (ilocals_16_>=CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1883788127;
+    if (ilocals_15_<0) /* IFLT CustomJump */ goto label_L1253396693;
+    if (ilocals_15_>=CN1_ARRAY_LENGTH(locals[6].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1253396693;
+    if (ilocals_16_<0) /* IFLT CustomJump */ goto label_L1253396693;
+    if (ilocals_16_>=CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1253396693;
     __CN1_DEBUG_INFO(372);
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[6].data.o, ilocals_15_, CN1_ARRAY_ELEMENT_BYTE(locals[1].data.o, ilocals_16_));
 
-label_L1883788127:
+label_L1253396693:
     __CN1_DEBUG_INFO(374);
     /* VarOp.assignFrom */ ilocals_10_=(ilocals_10_ + ilocals_7_);
     __CN1_DEBUG_INFO(366);
     BC_IINC(13, 1);
-    goto label_L238654703;
+    goto label_L1020397237;
 
-label_L224192895:
+label_L2088098699:
     __CN1_DEBUG_INFO(376);
     /* VarOp.assignFrom */ ilocals_10_=(ilocals_7_ / 2 /* ICONST_2 */);
     __CN1_DEBUG_INFO(377);
     /* VarOp.assignFrom */ ilocals_9_=(ilocals_9_ + ilocals_8_);
     __CN1_DEBUG_INFO(364);
     BC_IINC(11, 1);
-    goto label_L1745701482;
+    goto label_L1491623023;
 
-label_L569959775:
+label_L1149508419:
     __CN1_DEBUG_INFO(379);
 
 {
@@ -773,17 +773,17 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_getRGBImpl___R_int_1ARRAY(CODENAME_ONE
     __CN1_DEBUG_INFO(389);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L814753967:
-    if (ilocals_3_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L49299717;
+label_L1791014677:
+    if (ilocals_3_>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L169049466;
     __CN1_DEBUG_INFO(390);
     /* VarOp.assignFrom */ ilocals_4_=(CN1_ARRAY_ELEMENT_BYTE(get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject), ilocals_3_) & 255);
     __CN1_DEBUG_INFO(391);
     CN1_SET_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_3_, CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_4_));
     __CN1_DEBUG_INFO(389);
     BC_IINC(3, 1);
-    goto label_L814753967;
+    goto label_L1791014677;
 
-label_L49299717:
+label_L169049466:
     __CN1_DEBUG_INFO(393);
 
 {
@@ -813,14 +813,14 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_toByteArray___R_byte_1ARRAY(CODENAME_O
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9198, 303);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1326853624cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1326853624cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1326853624cn1_class_id_java_io_IOException1, label_L1917607102, restoreToL1326853624cn1_class_id_java_io_IOException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1071751935cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1071751935cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1071751935cn1_class_id_java_io_IOException1, label_L1183572822, restoreToL1071751935cn1_class_id_java_io_IOException1);
 
-label_L1326853624:
- tryBlockOffsetL1326853624cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1326853624cn1_class_id_java_io_IOException1);
-    restoreToL1326853624cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1071751935:
+ tryBlockOffsetL1071751935cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1071751935cn1_class_id_java_io_IOException1);
+    restoreToL1071751935cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(422);
     PUSH_POINTER(__NEW_java_io_ByteArrayOutputStream(threadStateData)); /* NEW */
@@ -843,15 +843,15 @@ label_L1326853624:
     __CN1_DEBUG_INFO(428);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L1894287849:
-    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1880102535, 1);
+label_L1307810440:
+    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1553646796, 1);
     __CN1_DEBUG_INFO(429);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeInt___int(threadStateData, locals[2].data.o, CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_IndexedImage_palette(__cn1ThisObject), ilocals_4_)); 
     __CN1_DEBUG_INFO(428);
     BC_IINC(4, 1);
-    JUMP_TO(label_L1894287849, 1);
+    JUMP_TO(label_L1307810440, 1);
 
-label_L1880102535:
+label_L1553646796:
     __CN1_DEBUG_INFO(431);
     /* CustomInvoke */virtual_java_io_DataOutputStream_write___byte_1ARRAY(threadStateData, locals[2].data.o, get_field_com_codename1_ui_IndexedImage_imageDataByte(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(432);
@@ -860,11 +860,11 @@ label_L1880102535:
     { JAVA_OBJECT tmpResult = virtual_java_io_ByteArrayOutputStream_toByteArray___R_byte_1ARRAY(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L264958250:
+label_L250410347:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1917607102:
+label_L1183572822:
     __CN1_DEBUG_INFO(434);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(436);

@@ -1,5 +1,4 @@
 #include "com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2.h"
-#include "com_codename1_ui_CheckBox.h"
 #include "com_ogradytech_registration_IowaStateRegistrationHelper.h"
 #include "com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2.h"
 #include "java_lang_NullPointerException.h"
@@ -25,20 +24,12 @@ void set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2
     (*(struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)__cn1T).com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_2 = __cn1Val;
 }
 
-JAVA_OBJECT get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(JAVA_OBJECT __cn1T) {
+JAVA_INT get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(JAVA_OBJECT __cn1T) {
   return (*(struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)__cn1T).com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3;
 }
 
-void set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
+void set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T) {
     (*(struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)__cn1T).com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3 = __cn1Val;
-}
-
-JAVA_INT get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4(JAVA_OBJECT __cn1T) {
-  return (*(struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)__cn1T).com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4;
-}
-
-void set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T) {
-    (*(struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)__cn1T).com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4 = __cn1Val;
 }
 
 JAVA_VOID __FINALIZER_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
@@ -49,7 +40,6 @@ void __GC_MARK_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2
     struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2* objInstance = (struct obj__com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2*)objToMark;
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_1, force);
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_2, force);
-    gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3, force);
     __GC_MARK_java_lang_Object(threadStateData, objToMark, force);
 }
 
@@ -60,46 +50,41 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_IowaStateRegistrationHelper__Lambd
 }
 
 
-JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2___INIT_____java_lang_String_java_lang_String_com_codename1_ui_CheckBox_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10367, 200);
+JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2___INIT_____java_lang_String_java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10376, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    locals[3].data.o = __cn1Arg3;
-    locals[3].type = CN1_TYPE_OBJECT;
-    JAVA_INT ilocals_4_ = __cn1Arg4;
+    JAVA_INT ilocals_3_ = __cn1Arg3;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_1(threadStateData, locals[1].data.o, __cn1ThisObject);
     set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_2(threadStateData, locals[2].data.o, __cn1ThisObject);
-    set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(threadStateData, locals[3].data.o, __cn1ThisObject);
-    set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4(threadStateData, ilocals_4_, __cn1ThisObject);
+    set_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(threadStateData, ilocals_3_, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10367, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper_lambda$formSubmitted$1___java_lang_String_java_lang_String_com_codename1_ui_CheckBox_1ARRAY_int(threadStateData, get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_1(__cn1ThisObject), get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_2(__cn1ThisObject), get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(__cn1ThisObject), get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_4(__cn1ThisObject)); 
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10376, 202);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper_lambda$1___java_lang_String_java_lang_String_int(threadStateData, get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_1(__cn1ThisObject), get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_2(__cn1ThisObject), get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_arg_3(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_lambdaFactory$___java_lang_String_java_lang_String_com_codename1_ui_CheckBox_1ARRAY_int_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
+JAVA_OBJECT com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2_lambdaFactory$___java_lang_String_java_lang_String_int_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
     __STATIC_INITIALIZER_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2(threadStateData);
-    DEFINE_METHOD_STACK(6, 4, 0, 10367, 10366);
+    DEFINE_METHOD_STACK(5, 3, 0, 10376, 10375);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    locals[2].data.o = __cn1Arg3;
-    locals[2].type = CN1_TYPE_OBJECT;
-    JAVA_INT ilocals_3_ = __cn1Arg4;
+    JAVA_INT ilocals_2_ = __cn1Arg3;
     PUSH_POINTER(__NEW_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2___INIT_____java_lang_String_java_lang_String_com_codename1_ui_CheckBox_1ARRAY_int(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o, locals[2].data.o, ilocals_3_);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_2___INIT_____java_lang_String_java_lang_String_int(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o, ilocals_2_);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }

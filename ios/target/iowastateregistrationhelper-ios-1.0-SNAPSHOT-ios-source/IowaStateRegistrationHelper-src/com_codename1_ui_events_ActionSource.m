@@ -131,9 +131,6 @@ void __STATIC_INITIALIZER_com_codename1_ui_events_ActionSource(CODENAME_ONE_THRE
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_InputComponent_2] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_InputComponent_2][0] = 316;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_InputComponent_2][1] = 317;
-    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_CheckBox] = malloc(sizeof(int*) * 14);
-    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_CheckBox][0] = 371;
-    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_CheckBox][1] = 372;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_FontImage] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_FontImage][0] = 10;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_FontImage][1] = 11;

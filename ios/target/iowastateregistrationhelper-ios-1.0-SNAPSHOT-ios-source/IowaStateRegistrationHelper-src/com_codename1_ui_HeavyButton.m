@@ -179,7 +179,7 @@ JAVA_VOID com_codename1_ui_HeavyButton___INIT_____java_lang_String(CODENAME_ONE_
     __CN1_DEBUG_INFO(42);
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(43);
-    if (virtual_com_codename1_impl_CodenameOneImplementation_requiresHeavyButtonForCopyToClipboard___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1850301256;
+    if (virtual_com_codename1_impl_CodenameOneImplementation_requiresHeavyButtonForCopyToClipboard___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))==0) /* IFEQ CustomJump */ goto label_L810557024;
     __CN1_DEBUG_INFO(44);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_createHeavyButton___com_codename1_ui_Button_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), __cn1ThisObject);
@@ -187,7 +187,7 @@ JAVA_VOID com_codename1_ui_HeavyButton___INIT_____java_lang_String(CODENAME_ONE_
     set_field_com_codename1_ui_HeavyButton_peer(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1850301256:
+label_L810557024:
     __CN1_DEBUG_INFO(47);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -201,11 +201,11 @@ JAVA_VOID com_codename1_ui_HeavyButton_addActionListener___com_codename1_ui_even
     __CN1_DEBUG_INFO(51);
     /* CustomInvoke */com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(52);
-    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L492947164;
+    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L681015501;
     __CN1_DEBUG_INFO(53);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_addHeavyActionListener___java_lang_Object_com_codename1_ui_events_ActionListener(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject), locals[1].data.o); 
 
-label_L492947164:
+label_L681015501:
     __CN1_DEBUG_INFO(55);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -219,11 +219,11 @@ JAVA_VOID com_codename1_ui_HeavyButton_removeActionListener___com_codename1_ui_e
     __CN1_DEBUG_INFO(59);
     /* CustomInvoke */com_codename1_ui_Button_removeActionListener___com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(60);
-    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L87845070;
+    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1955948959;
     __CN1_DEBUG_INFO(61);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_removeHeavyActionListener___java_lang_Object_com_codename1_ui_events_ActionListener(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject), locals[1].data.o); 
 
-label_L87845070:
+label_L1955948959:
     __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -233,11 +233,11 @@ label_L87845070:
 JAVA_VOID com_codename1_ui_HeavyButton_updateHeavyBounds__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 6414, 6415);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(66);
-    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1872417052;
+    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2082673402;
     __CN1_DEBUG_INFO(67);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_updateHeavyButtonBounds___java_lang_Object_int_int_int_int(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject), virtual_com_codename1_ui_HeavyButton_getAbsoluteX___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_ui_HeavyButton_getAbsoluteY___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_ui_HeavyButton_getWidth___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_ui_HeavyButton_getHeight___R_int(threadStateData, __cn1ThisObject)); 
 
-label_L1872417052:
+label_L2082673402:
     __CN1_DEBUG_INFO(69);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -305,11 +305,11 @@ JAVA_VOID com_codename1_ui_HeavyButton_initComponent__(CODENAME_ONE_THREAD_STATE
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(93);
     com_codename1_ui_Button_initComponent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(95);
-    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1261257916;
+    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1286643712;
     __CN1_DEBUG_INFO(96);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_initHeavyButton___java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)); 
 
-label_L1261257916:
+label_L1286643712:
     __CN1_DEBUG_INFO(98);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -319,11 +319,11 @@ label_L1261257916:
 JAVA_VOID com_codename1_ui_HeavyButton_deinitialize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6414, 1328);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(102);
-    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1491676195;
+    if (get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1609754699;
     __CN1_DEBUG_INFO(103);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_deinitializeHeavyButton___java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_HeavyButton_peer(__cn1ThisObject)); 
 
-label_L1491676195:
+label_L1609754699:
     __CN1_DEBUG_INFO(105);
     com_codename1_ui_Button_deinitialize__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(106);

@@ -78,27 +78,27 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_11___INIT_____boolean_int_jav
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_11_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9512, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL124389238701;
-    int tryBlockOffsetL124389238701;
-    DEFINE_CATCH_BLOCK(catch_L124389238701, label_L274100821, restoreToL124389238701);
-    int restoreToL27410082102;
-    int tryBlockOffsetL27410082102;
-    DEFINE_CATCH_BLOCK(catch_L27410082102, label_L274100821, restoreToL27410082102);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL16062542801;
+    int tryBlockOffsetL16062542801;
+    DEFINE_CATCH_BLOCK(catch_L16062542801, label_L1986581856, restoreToL16062542801);
+    int restoreToL198658185602;
+    int tryBlockOffsetL198658185602;
+    DEFINE_CATCH_BLOCK(catch_L198658185602, label_L1986581856, restoreToL198658185602);
     __CN1_DEBUG_INFO(1002);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L238431319, 0);
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1177101170, 0);
     __CN1_DEBUG_INFO(1003);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_11_val_finished(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L474933596, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_11_val_finished(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L309060377, 0);
     __CN1_DEBUG_INFO(1004);
     PUSH_INT(get_field_com_codename1_impl_ios_IOSImplementation_11_val_cursorPositon(__cn1ThisObject));
     PUSH_INT(-2);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L2042917213, 0);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1816397102, 0);
     PUSH_INT(1); /* ICONST_1 */
-    JUMP_TO(label_L1520656618, 0);
+    JUMP_TO(label_L1547116051, 0);
 
-label_L2042917213:
+label_L1816397102:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1520656618:
+label_L1547116051:
     { JAVA_INT tmpResult = com_codename1_impl_ios_IOSImplementation_access$802___boolean_R_boolean(threadStateData, SP[-1].data.i);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
@@ -108,10 +108,10 @@ label_L1520656618:
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1243892387:
- tryBlockOffsetL124389238701 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L124389238701);
-    restoreToL124389238701 = threadStateData->threadObjectStackOffset;
+label_L160625428:
+ tryBlockOffsetL16062542801 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L16062542801);
+    restoreToL16062542801 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(1006);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
@@ -122,33 +122,33 @@ label_L1243892387:
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_11_val_s(__cn1ThisObject));
     virtual_com_codename1_ui_Display_onEditingComplete___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(1008);
-    if (com_codename1_impl_ios_IOSImplementation_access$800___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1699265405, 1);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1699265405, 1);
+    if (com_codename1_impl_ios_IOSImplementation_access$800___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1393198164, 1);
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1393198164, 1);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_TextArea);
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1699265405, 1);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1393198164, 1);
     __CN1_DEBUG_INFO(1009);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     virtual_com_codename1_ui_TextArea_fireDoneEvent__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L1699265405:
+label_L1393198164:
     __CN1_DEBUG_INFO(1011);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1012);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$202___com_codename1_impl_ios_IOSImplementation_com_codename1_ui_TextArea_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(1013);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$900___com_codename1_impl_ios_IOSImplementation(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)); 
     __CN1_DEBUG_INFO(1014);
-    if (virtual_com_codename1_impl_ios_IOSNative_isAsyncEditMode___R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData))==0) /* IFEQ CustomJump */ JUMP_TO(label_L237484673, 1);
+    if (virtual_com_codename1_impl_ios_IOSNative_isAsyncEditMode___R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData))==0) /* IFEQ CustomJump */ JUMP_TO(label_L506775047, 1);
     __CN1_DEBUG_INFO(1015);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_setNativeEditingComponentVisible___boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), 0 /* ICONST_0 */); 
 
-label_L237484673:
+label_L506775047:
     __CN1_DEBUG_INFO(1017);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1412656257, 1);
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1377160602, 1);
     __CN1_DEBUG_INFO(1018);
     /* CustomInvoke */virtual_com_codename1_ui_Component_putClientProperty___java_lang_String_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(41), JAVA_NULL /* ACONST_NULL */); 
 
-label_L1412656257:
+label_L1377160602:
     __CN1_DEBUG_INFO(1020);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$700___R_java_lang_Object(threadStateData));
     virtual_java_lang_Object_notify__(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -156,58 +156,58 @@ label_L1412656257:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1061755858:
-END_TRY(1);    JUMP_TO(label_L358019805, 0);
+label_L96441914:
+END_TRY(1);    JUMP_TO(label_L917935693, 0);
 
-label_L274100821:
- tryBlockOffsetL27410082102 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L27410082102);
-    restoreToL27410082102 = threadStateData->threadObjectStackOffset;
+label_L1986581856:
+ tryBlockOffsetL198658185602 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L198658185602);
+    restoreToL198658185602 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L482348886:
+label_L147230591:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L358019805:
+label_L917935693:
     __CN1_DEBUG_INFO(1022);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(1023);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L904208473, 0);
-    if (virtual_com_codename1_ui_Form_isFormBottomPaddingEditingMode___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L904208473, 0);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L823758059, 0);
+    if (virtual_com_codename1_ui_Form_isFormBottomPaddingEditingMode___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L823758059, 0);
     __CN1_DEBUG_INFO(1024);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$000___com_codename1_ui_Form_R_com_codename1_ui_Container(threadStateData, locals[1].data.o));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L904208473:
+label_L823758059:
     __CN1_DEBUG_INFO(1026);
-    JUMP_TO(label_L103118806, 0);
+    JUMP_TO(label_L153448497, 0);
 
-label_L474933596:
+label_L309060377:
     __CN1_DEBUG_INFO(1027);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     /* CustomInvoke */virtual_com_codename1_ui_TextArea_setText___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_11_val_s(__cn1ThisObject));     SP -= 1;
 
-label_L103118806:
+label_L153448497:
     __CN1_DEBUG_INFO(1029);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_TextField);
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1237144823, 0);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_11_val_cursorPositon(__cn1ThisObject)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L1237144823, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1965036946, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_11_val_cursorPositon(__cn1ThisObject)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L1965036946, 0);
     __CN1_DEBUG_INFO(1030);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     /* CustomInvoke */virtual_com_codename1_ui_TextField_setCursorPosition___int(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_11_val_cursorPositon(__cn1ThisObject));     SP -= 1;
-    JUMP_TO(label_L1237144823, 0);
+    JUMP_TO(label_L1965036946, 0);
 
-label_L238431319:
+label_L1177101170:
     __CN1_DEBUG_INFO(1033);
     PUSH_POINTER(get_static_java_lang_System_out(threadStateData));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -221,7 +221,7 @@ label_L238431319:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_io_PrintStream_println___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1237144823:
+label_L1965036946:
     __CN1_DEBUG_INFO(1035);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

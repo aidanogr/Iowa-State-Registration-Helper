@@ -67,16 +67,16 @@ JAVA_VOID com_codename1_l10n_ParseException___INIT_____java_lang_Throwable_java_
     ilocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(47);
     BC_ALOAD(0);
-    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L531076772;
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L531076772;
+    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L220667244;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L220667244;
     { JAVA_OBJECT tmpResult = virtual_java_lang_Throwable_getMessage___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
-    goto label_L1759413538;
+    goto label_L170929968;
 
-label_L531076772:
+label_L220667244:
     BC_ALOAD(2);
 
-label_L1759413538:
+label_L170929968:
     java_lang_Exception___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(48);
     set_field_com_codename1_l10n_ParseException_causedBy(threadStateData, locals[1].data.o, __cn1ThisObject);

@@ -70,11 +70,11 @@ JAVA_VOID com_codename1_media_AbstractMedia_7_complete___com_codename1_media_Asy
     __CN1_DEBUG_INFO(264);
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$400___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_7_this_0(__cn1ThisObject)));
     BC_ALOAD(0);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1008674385;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1570900854;
     __CN1_DEBUG_INFO(265);
     /* CustomInvoke */com_codename1_media_AbstractMedia_access$402___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_7_this_0(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L1008674385:
+label_L1570900854:
     __CN1_DEBUG_INFO(267);
     /* CustomInvoke */com_codename1_media_AsyncMedia_PauseRequest_complete___java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(268);
@@ -90,11 +90,11 @@ JAVA_VOID com_codename1_media_AbstractMedia_7_error___java_lang_Throwable(CODENA
     __CN1_DEBUG_INFO(272);
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$400___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_7_this_0(__cn1ThisObject)));
     BC_ALOAD(0);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1558825448;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L2122245047;
     __CN1_DEBUG_INFO(273);
     /* CustomInvoke */com_codename1_media_AbstractMedia_access$402___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_7_this_0(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L1558825448:
+label_L2122245047:
     __CN1_DEBUG_INFO(275);
     /* CustomInvoke */com_codename1_media_AsyncMedia_PauseRequest_error___java_lang_Throwable(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(276);

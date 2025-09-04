@@ -101,8 +101,8 @@ class_array1__com_codename1_ui_events_FocusListener.vtable = initVtableForInterf
     class__com_codename1_ui_events_FocusListener.vtable = initVtableForInterface();
     classToInterfaceMap_com_codename1_ui_events_FocusListener = malloc(sizeof(int*) * cn1_array_start_offset);
     classToInterfaceMap_com_codename1_ui_events_FocusListener[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel] = malloc(sizeof(int*) * 14);
-    classToInterfaceMap_com_codename1_ui_events_FocusListener[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel][0] = 70;
-    classToInterfaceMap_com_codename1_ui_events_FocusListener[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel][1] = 71;
+    classToInterfaceMap_com_codename1_ui_events_FocusListener[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel][0] = 68;
+    classToInterfaceMap_com_codename1_ui_events_FocusListener[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel][1] = 69;
     class__com_codename1_ui_events_FocusListener.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_events_FocusListener);
 __com_codename1_ui_events_FocusListener_LOADED__=1;

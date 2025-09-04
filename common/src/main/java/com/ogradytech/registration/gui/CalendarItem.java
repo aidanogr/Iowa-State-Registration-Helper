@@ -12,9 +12,10 @@ import com.codename1.ui.Font;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.layouts.LayeredLayout;
 import com.ogradytech.registration.Utilities.MeetingInfo;
+import com.ogradytech.registration.Utilities.BikeLock.MinimallyIterable;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 
-public class CalendarItem {
+public class CalendarItem implements MinimallyIterable{
 
 	private static int allColors[] = {0x000, 0x005C09, 0x540085, 0x850009, 0x850098, 0x000098, 0xCE7800, 0x00787A, 0x007185, 0xFF6200, };
 	private static int currentColorIndex = 0;
@@ -196,6 +197,12 @@ public class CalendarItem {
 		
 		return this;
 	}
+	
+	//to implement MinimallyIterable...
+	public void next() {
+		this.nextSection();
+	}
+	
 	public InstructionFormat getFormat() {
 		return format;
 	}
@@ -222,6 +229,20 @@ public class CalendarItem {
 
 	public Map<String, MeetingInfo> getSectionMeetingInfo() {
 		return sectionMeetingInfo;
+	}
+
+
+
+	@Override
+	public int getSize() {
+		return this.sections.size();
+	}
+
+
+
+	@Override
+	public boolean condition() {
+		return !CalendarContainerWrapper.hasConflict;
 	}
 
 

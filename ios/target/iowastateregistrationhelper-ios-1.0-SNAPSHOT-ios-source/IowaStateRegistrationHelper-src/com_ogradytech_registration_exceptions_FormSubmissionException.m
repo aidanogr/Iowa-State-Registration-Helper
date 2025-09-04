@@ -47,26 +47,26 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_exceptions_FormSubmissionException
 
 
 JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException___INIT_____com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10488, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10505, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(26);
-    java_lang_Exception___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(27);
-    set_field_com_ogradytech_registration_exceptions_FormSubmissionException_exceptionType(threadStateData, locals[1].data.o, __cn1ThisObject);
+    java_lang_Exception___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(28);
-    set_field_com_ogradytech_registration_exceptions_FormSubmissionException_message(threadStateData, locals[2].data.o, __cn1ThisObject);
+    set_field_com_ogradytech_registration_exceptions_FormSubmissionException_exceptionType(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(29);
+    set_field_com_ogradytech_registration_exceptions_FormSubmissionException_message(threadStateData, locals[2].data.o, __cn1ThisObject);
+    __CN1_DEBUG_INFO(30);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getMessage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10488, 913);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(36);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10505, 913);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_ogradytech_registration_exceptions_FormSubmissionException_message(__cn1ThisObject);
@@ -76,8 +76,8 @@ JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getMe
 
 
 JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getExceptionType___R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10488, 10489);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(40);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10505, 10506);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_ogradytech_registration_exceptions_FormSubmissionException_exceptionType(__cn1ThisObject);

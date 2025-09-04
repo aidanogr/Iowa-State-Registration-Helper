@@ -16,6 +16,7 @@ import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.plaf.Style;
 import com.ogradytech.registration.Utilities.GUIUtilities;
 import com.ogradytech.registration.Utilities.MeetingInfo;
+import com.ogradytech.registration.Utilities.BikeLock.BikeLockList;
 
 public class CalendarContainerWrapper  {
 
@@ -53,10 +54,13 @@ public class CalendarContainerWrapper  {
 	
 	public CalendarContainerWrapper(ArrayList<CalendarItem> courseSections) throws IOException {
 		this.courseSections = courseSections;
+		
+		//toolbar buttons
+
 		conflictButton = new ConflictInfoButton(null);
-		findNextNonConflictingScheduleButton = new Button();
+		findNextNonConflictingScheduleButton = new Button("Next non-conflicting schedule");
 		findNextNonConflictingScheduleButton.addActionListener(evt -> {
-			findNextNonConflictingScheduleButton(this);
+			findNextNonConflictingSchedule(this);
 		});
 		
 		initializeDropdownContainer(); //handles its children's insets, etc
@@ -154,15 +158,19 @@ public class CalendarContainerWrapper  {
 
 
 
-	private void findNextNonConflictingScheduleButton(CalendarContainerWrapper calendarContainerWrapper) {
-/*		for(int i = calendarContainerWrapper.courseSections.size()-1; i >= 0; i++) {
-			CalendarItem anchorCourseSection = calendarContainerWrapper.courseSections.get(i);
-if()
+	private void findNextNonConflictingSchedule(CalendarContainerWrapper calendarContainerWrapper) {
+		BikeLockList<CalendarItem> b = new BikeLockList<CalendarItem>(this);
+		for(CalendarItem i : courseSections) {
+			b.add(i);
 		}
+		b.executeUntilCondition();
+		for(CalendarItem i : courseSections) {
+			this.setButtonInsets(i);
+		}
+		this.calendarItemContainer.revalidate();
+		this.parentContainer.revalidate();
+		
 	}
-	
-	private 
-*/}
 
 
 	private void initializeDropdownContainer() throws IOException {
@@ -264,23 +272,25 @@ if()
 			int daysOfTheWeekIterator = 0;
 
 			for(Button button : courseSection.buttons) {
-				if(!calendarItemContainer.contains(button)) calendarItemContainer.add(button);
-
-				button.addActionListener(evt -> {
-					dropdownContainer.remove();
-					calendarItemContainer.add(dropdownContainer);
-					
-					calendarItemContainerLayout.setInsets(dropdownContainer, "0mm 0mm auto 0mm");
-					calendarItemContainerLayout.setReferenceComponentTop(dropdownContainer, button, 1f);
-					calendarItemContainerLayout.setReferenceComponentRight(dropdownContainer, button, 0f);
-					calendarItemContainerLayout.setReferenceComponentLeft(dropdownContainer, button, 0f);
-					dropdownContainer.selectedCourseSection = courseSection;
-					if(courseSection.isLocked()) dropdownContainer.lockButtonReference.setIcon(dropdownContainer.lockButtonIcon); 
-					else dropdownContainer.lockButtonReference.setIcon(dropdownContainer.unlockedButtonIcon);
-					dropdownContainer.setEnabled(true);
-					dropdownContainer.setVisible(true);
-					dayOfWeekContainer.revalidate();
-				}); 
+				if(!calendarItemContainer.contains(button)) {
+					calendarItemContainer.add(button);
+				
+					button.addActionListener(evt -> {
+						dropdownContainer.remove();
+						calendarItemContainer.add(dropdownContainer);
+						
+						calendarItemContainerLayout.setInsets(dropdownContainer, "0mm 0mm auto 0mm");
+						calendarItemContainerLayout.setReferenceComponentTop(dropdownContainer, button, 1f);
+						calendarItemContainerLayout.setReferenceComponentRight(dropdownContainer, button, 0f);
+						calendarItemContainerLayout.setReferenceComponentLeft(dropdownContainer, button, 0f);
+						dropdownContainer.selectedCourseSection = courseSection;
+						if(courseSection.isLocked()) dropdownContainer.lockButtonReference.setIcon(dropdownContainer.lockButtonIcon); 
+						else dropdownContainer.lockButtonReference.setIcon(dropdownContainer.unlockedButtonIcon);
+						dropdownContainer.setEnabled(true);
+						dropdownContainer.setVisible(true);
+						dayOfWeekContainer.revalidate();
+					}); 
+				}
 
 				if(daysOfTheWeek.length() == daysOfTheWeekIterator) {
 					button.setVisible(false);
@@ -325,7 +335,7 @@ if()
 	}
 
 
-	private void handleCollisions() throws IOException {
+	public void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
 		LinkedList<CalendarItem[]> conflictingSections = new LinkedList<>();
 		for(int i = 0 ; i < courseSections.size()-1; i++) {

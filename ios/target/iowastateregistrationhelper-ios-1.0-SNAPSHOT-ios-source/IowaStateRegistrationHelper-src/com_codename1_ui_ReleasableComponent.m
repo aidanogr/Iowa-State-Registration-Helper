@@ -151,12 +151,6 @@ void __STATIC_INITIALIZER_com_codename1_ui_ReleasableComponent(CODENAME_ONE_THRE
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_TextSelection_DragHandle][2] = 368;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_TextSelection_DragHandle][3] = 369;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_TextSelection_DragHandle][4] = 370;
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox] = malloc(sizeof(int*) * 17);
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox][0] = 366;
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox][1] = 367;
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox][2] = 368;
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox][3] = 369;
-    classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_CheckBox][4] = 370;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_InputComponent_1] = malloc(sizeof(int*) * 17);
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_InputComponent_1][0] = 366;
     classToInterfaceMap_com_codename1_ui_ReleasableComponent[cn1_class_id_com_codename1_ui_InputComponent_1][1] = 367;

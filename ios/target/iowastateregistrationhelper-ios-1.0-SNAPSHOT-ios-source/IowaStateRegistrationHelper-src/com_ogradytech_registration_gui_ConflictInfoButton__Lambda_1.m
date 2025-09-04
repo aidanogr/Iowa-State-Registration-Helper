@@ -3,7 +3,6 @@
 #include "com_ogradytech_registration_gui_ConflictInfoButton.h"
 #include "com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1.h"
 #include "java_lang_NullPointerException.h"
-#include "java_util_LinkedList.h"
 const struct clazz *base_interfaces_for_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1[] = {&class__com_codename1_ui_events_ActionListener};
 struct clazz class__com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1 = {
   DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1 ,0 , &__GC_MARK_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1,  0, cn1_class_id_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1, "com.ogradytech.registration.gui.ConflictInfoButton..Lambda.1", 0, 0, 0, JAVA_FALSE, &class__java_lang_Object, base_interfaces_for_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1, 1, 0, 0
@@ -34,8 +33,8 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1(C
 }
 
 
-JAVA_VOID com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1___INIT_____java_util_LinkedList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10465, 200);
+JAVA_VOID com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1___INIT_____com_ogradytech_registration_gui_ConflictInfoButton(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10480, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -46,23 +45,23 @@ JAVA_VOID com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1___INIT___
 
 
 JAVA_VOID com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10465, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10480, 3055);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */com_ogradytech_registration_gui_ConflictInfoButton_lambda$new$0___java_util_LinkedList_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1_arg_1(__cn1ThisObject), locals[1].data.o); 
+    /* CustomInvoke */com_ogradytech_registration_gui_ConflictInfoButton_lambda$new$0___com_ogradytech_registration_gui_ConflictInfoButton_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1_arg_1(__cn1ThisObject), locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1_lambdaFactory$___java_util_LinkedList_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_OBJECT com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1_lambdaFactory$___com_ogradytech_registration_gui_ConflictInfoButton_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10465, 10366);
+    DEFINE_METHOD_STACK(3, 1, 0, 10480, 10375);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1___INIT_____java_util_LinkedList(threadStateData, SP[-1].data.o, locals[0].data.o);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_gui_ConflictInfoButton__Lambda_1___INIT_____com_ogradytech_registration_gui_ConflictInfoButton(threadStateData, SP[-1].data.o, locals[0].data.o);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }

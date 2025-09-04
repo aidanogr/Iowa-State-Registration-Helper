@@ -53,8 +53,8 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_RPush_run__(CODENAME_ONE_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6936);
     /* VarOp.assignFrom */ llocals_1_ = /* CustomInvoke */com_codename1_io_Preferences_get___java_lang_String_long_R_long(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(1487), -1LL);
     __CN1_DEBUG_INFO(6937);
-    if (CN1_CMP_EXPR(llocals_1_, -1LL)<=0) /* IFLE CustomJump */ goto label_L118555812;
-    if (com_codename1_impl_CodenameOneImplementation_access$100___R_com_codename1_push_PushCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L118555812;
+    if (CN1_CMP_EXPR(llocals_1_, -1LL)<=0) /* IFLE CustomJump */ goto label_L1990733619;
+    if (com_codename1_impl_CodenameOneImplementation_access$100___R_com_codename1_push_PushCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1990733619;
     __CN1_DEBUG_INFO(6938);
     PUSH_OBJ(com_codename1_impl_CodenameOneImplementation_access$100___R_com_codename1_push_PushCallback(threadStateData));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -68,7 +68,7 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_RPush_run__(CODENAME_ONE_
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_push_PushCallback_registeredForPush___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L118555812:
+label_L1990733619:
     __CN1_DEBUG_INFO(6940);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

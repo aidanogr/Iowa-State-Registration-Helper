@@ -254,11 +254,6 @@ void __STATIC_INITIALIZER_com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_Form][1] = 14;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_Form][2] = 15;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_Form][3] = 16;
-    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_CheckBox] = malloc(sizeof(int*) * 16);
-    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_CheckBox][0] = 13;
-    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_CheckBox][1] = 14;
-    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_CheckBox][2] = 15;
-    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_CheckBox][3] = 16;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_SideMenuBar] = malloc(sizeof(int*) * 16);
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_SideMenuBar][0] = 13;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_codename1_ui_SideMenuBar][1] = 14;

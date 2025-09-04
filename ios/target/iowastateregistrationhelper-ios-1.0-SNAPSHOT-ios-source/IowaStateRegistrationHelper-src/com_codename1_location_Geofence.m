@@ -160,24 +160,24 @@ JAVA_BOOLEAN com_codename1_location_Geofence_equals___java_lang_Object_R_boolean
     __CN1_DEBUG_INFO(167);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_location_Geofence);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1521510441;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L224447405;
     __CN1_DEBUG_INFO(168);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(169);
-    if (/* CustomInvoke */com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_id(__cn1ThisObject), get_field_com_codename1_location_Geofence_id(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1618322666;
-    if (get_field_com_codename1_location_Geofence_radius(locals[2].data.o)!=get_field_com_codename1_location_Geofence_radius(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1618322666;
-    if (/* CustomInvoke */com_codename1_location_Geofence_eq___com_codename1_location_Location_com_codename1_location_Location_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_loc(__cn1ThisObject), get_field_com_codename1_location_Geofence_loc(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1618322666;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Geofence_expiration(locals[2].data.o), get_field_com_codename1_location_Geofence_expiration(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1618322666;
+    if (/* CustomInvoke */com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_id(__cn1ThisObject), get_field_com_codename1_location_Geofence_id(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1373194140;
+    if (get_field_com_codename1_location_Geofence_radius(locals[2].data.o)!=get_field_com_codename1_location_Geofence_radius(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1373194140;
+    if (/* CustomInvoke */com_codename1_location_Geofence_eq___com_codename1_location_Location_com_codename1_location_Location_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_loc(__cn1ThisObject), get_field_com_codename1_location_Geofence_loc(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1373194140;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Geofence_expiration(locals[2].data.o), get_field_com_codename1_location_Geofence_expiration(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1373194140;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1527597068;
+    goto label_L1965129924;
 
-label_L1618322666:
+label_L1373194140:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1527597068:
+label_L1965129924:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1521510441:
+label_L224447405:
     __CN1_DEBUG_INFO(171);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -190,7 +190,7 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Obj
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(175);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1059154409;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L322202212;
     __CN1_DEBUG_INFO(176);
 
 {
@@ -198,9 +198,9 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Obj
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1059154409:
+label_L322202212:
     __CN1_DEBUG_INFO(177);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1720303364;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L402847244;
     __CN1_DEBUG_INFO(178);
 
 {
@@ -208,7 +208,7 @@ label_L1059154409:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1720303364:
+label_L402847244:
     __CN1_DEBUG_INFO(180);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -221,7 +221,7 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___com_codename1_location_Locatio
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(185);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L731256267;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L66893623;
     __CN1_DEBUG_INFO(186);
 
 {
@@ -229,9 +229,9 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___com_codename1_location_Locatio
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L731256267:
+label_L66893623:
     __CN1_DEBUG_INFO(187);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L451573149;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2049060908;
     __CN1_DEBUG_INFO(188);
 
 {
@@ -239,7 +239,7 @@ label_L731256267:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L451573149:
+label_L2049060908:
     __CN1_DEBUG_INFO(190);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }

@@ -82,8 +82,8 @@ JAVA_VOID com_codename1_ui_plaf_RoundBorder_1___INIT_____com_codename1_ui_plaf_R
 JAVA_VOID com_codename1_ui_plaf_RoundBorder_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 5850, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(510);
-    if (get_field_com_codename1_ui_plaf_RoundBorder_1_val_w(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L560165559;
-    if (get_field_com_codename1_ui_plaf_RoundBorder_1_val_h(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L560165559;
+    if (get_field_com_codename1_ui_plaf_RoundBorder_1_val_w(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1675999402;
+    if (get_field_com_codename1_ui_plaf_RoundBorder_1_val_h(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1675999402;
     __CN1_DEBUG_INFO(511);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_plaf_RoundBorder_access$000___com_codename1_ui_plaf_RoundBorder_com_codename1_ui_Component_int_int_boolean_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_this_0(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundBorder_1_val_w(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundBorder_1_val_h(__cn1ThisObject), 0 /* ICONST_0 */);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(512);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject));
@@ -103,7 +103,7 @@ JAVA_VOID com_codename1_ui_plaf_RoundBorder_1_run__(CODENAME_ONE_THREAD_STATE, J
     __CN1_DEBUG_INFO(513);
     virtual_com_codename1_ui_Component_repaint__(threadStateData, get_field_com_codename1_ui_plaf_RoundBorder_1_val_c(__cn1ThisObject)); 
 
-label_L560165559:
+label_L1675999402:
     __CN1_DEBUG_INFO(515);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

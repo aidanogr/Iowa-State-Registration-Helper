@@ -87,14 +87,14 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureCache_get___com_code
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
     __CN1_DEBUG_INFO(2321);
-    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L428245792;
+    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L996533593;
     __CN1_DEBUG_INFO(2323);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_extractHardRef___java_lang_Object_R_java_lang_Object(threadStateData, SP[-1].data.o, locals[5].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
     __CN1_DEBUG_INFO(2325);
-    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1353759820;
+    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L195970976;
     __CN1_DEBUG_INFO(2326);
     /* VarOp.assignFrom */ locals[6].type=CN1_TYPE_INVALID;    locals[6].data.o = locals[5].data.o;
 locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2327);
@@ -105,7 +105,7 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2327);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1353759820:
+label_L195970976:
     __CN1_DEBUG_INFO(2331);
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_TextureCache_textures(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(java_lang_Long_valueOf___long_R_java_lang_Long(threadStateData, llocals_3_));
@@ -114,7 +114,7 @@ label_L1353759820:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
 
-label_L428245792:
+label_L996533593:
     __CN1_DEBUG_INFO(2334);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -187,14 +187,14 @@ JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureCache_getShapeID___com
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
 
-label_L1028811481:
+label_L474933596:
     __CN1_DEBUG_INFO(2370);
-    if (virtual_com_codename1_ui_geom_PathIterator_isDone___R_boolean(threadStateData, locals[8].data.o)!=0) /* IFNE CustomJump */ goto label_L203472514;
+    if (virtual_com_codename1_ui_geom_PathIterator_isDone___R_boolean(threadStateData, locals[8].data.o)!=0) /* IFNE CustomJump */ goto label_L1957282992;
     __CN1_DEBUG_INFO(2371);
     /* VarOp.assignFrom */ ilocals_10_ = /* CustomInvoke */virtual_com_codename1_ui_geom_PathIterator_currentSegment___float_1ARRAY_R_int(threadStateData, locals[8].data.o, locals[9].data.o);
     __CN1_DEBUG_INFO(2373);
-    if (ilocals_7_!=0) /* IFNE CustomJump */ goto label_L331748029;
-    if (ilocals_10_==4/* ICONST_4 */) /* IF_ICMPEQ CustomJump */ goto label_L331748029;
+    if (ilocals_7_!=0) /* IFNE CustomJump */ goto label_L140428850;
+    if (ilocals_10_==4/* ICONST_4 */) /* IF_ICMPEQ CustomJump */ goto label_L140428850;
     __CN1_DEBUG_INFO(2374);
     /* VarOp.assignFrom */     ilocals_7_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(2375);
@@ -202,22 +202,22 @@ label_L1028811481:
     __CN1_DEBUG_INFO(2376);
     /* VarOp.assignFrom */ flocals_6_=CN1_ARRAY_ELEMENT_FLOAT(locals[9].data.o, 1 /* ICONST_1 */);
 
-label_L331748029:
+label_L140428850:
     __CN1_DEBUG_INFO(2381);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_10_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L1056185446;
-        case 1: goto label_L1802736936;
-        case 2: goto label_L1647243882;
-        case 3: goto label_L1105090408;
-        case 4: goto label_L1599566873;
-        default: goto label_L687501326;
+        case 0: goto label_L470132045;
+        case 1: goto label_L1710191146;
+        case 2: goto label_L1608103523;
+        case 3: goto label_L558404860;
+        case 4: goto label_L274100821;
+        default: goto label_L238431319;
     }
 
-label_L1056185446:
+label_L470132045:
     __CN1_DEBUG_INFO(2383);
     /* VarOp.assignFrom */ flocals_11_=(CN1_ARRAY_ELEMENT_FLOAT(locals[9].data.o, 0 /* ICONST_0 */) - flocals_5_);
     __CN1_DEBUG_INFO(2384);
@@ -239,9 +239,9 @@ label_L1056185446:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
     __CN1_DEBUG_INFO(2387);
-    goto label_L687501326;
+    goto label_L238431319;
 
-label_L1802736936:
+label_L1710191146:
     __CN1_DEBUG_INFO(2389);
     /* VarOp.assignFrom */ flocals_11_=(CN1_ARRAY_ELEMENT_FLOAT(locals[9].data.o, 0 /* ICONST_0 */) - flocals_5_);
     __CN1_DEBUG_INFO(2390);
@@ -263,9 +263,9 @@ label_L1802736936:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
     __CN1_DEBUG_INFO(2393);
-    goto label_L687501326;
+    goto label_L238431319;
 
-label_L1647243882:
+label_L1608103523:
     __CN1_DEBUG_INFO(2395);
     /* VarOp.assignFrom */ flocals_11_=(CN1_ARRAY_ELEMENT_FLOAT(locals[9].data.o, 0 /* ICONST_0 */) - flocals_5_);
     __CN1_DEBUG_INFO(2396);
@@ -307,9 +307,9 @@ label_L1647243882:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
     __CN1_DEBUG_INFO(2403);
-    goto label_L687501326;
+    goto label_L238431319;
 
-label_L1105090408:
+label_L558404860:
     __CN1_DEBUG_INFO(2405);
     /* VarOp.assignFrom */ flocals_11_=(CN1_ARRAY_ELEMENT_FLOAT(locals[9].data.o, 0 /* ICONST_0 */) - flocals_5_);
     __CN1_DEBUG_INFO(2406);
@@ -371,21 +371,21 @@ label_L1105090408:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
     __CN1_DEBUG_INFO(2417);
-    goto label_L687501326;
+    goto label_L238431319;
 
-label_L1599566873:
+label_L274100821:
     __CN1_DEBUG_INFO(2419);
     /* VarOp.assignFrom */ llocals_3_=((31LL * llocals_3_) + ((JAVA_LONG)ilocals_10_));
 
-label_L687501326:
+label_L238431319:
     __CN1_DEBUG_INFO(2423);
     virtual_com_codename1_ui_geom_PathIterator_next__(threadStateData, locals[8].data.o); 
     __CN1_DEBUG_INFO(2424);
-    goto label_L1028811481;
+    goto label_L474933596;
 
-label_L203472514:
+label_L1957282992:
     __CN1_DEBUG_INFO(2426);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L235151116;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2042917213;
     __CN1_DEBUG_INFO(2427);
     PUSH_LONG(31LL); /* LDC */
     BC_LLOAD(3);
@@ -396,7 +396,7 @@ label_L203472514:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(3);
 
-label_L235151116:
+label_L2042917213:
     __CN1_DEBUG_INFO(2430);
 
 {

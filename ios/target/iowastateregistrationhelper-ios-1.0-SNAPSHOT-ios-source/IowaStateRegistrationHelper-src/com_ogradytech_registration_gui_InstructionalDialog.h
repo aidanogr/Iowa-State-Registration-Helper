@@ -46,6 +46,8 @@ JAVA_OBJECT get_field_com_ogradytech_registration_gui_InstructionalDialog_body(J
 void set_field_com_ogradytech_registration_gui_InstructionalDialog_body(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_OBJECT get_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(JAVA_OBJECT t);
 void set_field_com_ogradytech_registration_gui_InstructionalDialog_exitButton(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(JAVA_OBJECT t);
+void set_field_com_ogradytech_registration_gui_InstructionalDialog_dialogLayout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 
 
 struct obj__com_ogradytech_registration_gui_InstructionalDialog {
@@ -60,6 +62,7 @@ struct obj__com_ogradytech_registration_gui_InstructionalDialog {
     JAVA_OBJECT com_ogradytech_registration_gui_InstructionalDialog_title;
     JAVA_OBJECT com_ogradytech_registration_gui_InstructionalDialog_body;
     JAVA_OBJECT com_ogradytech_registration_gui_InstructionalDialog_exitButton;
+    JAVA_OBJECT com_ogradytech_registration_gui_InstructionalDialog_dialogLayout;
 };
 
 

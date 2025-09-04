@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_IowaStateRegistrationHelperStub_1(
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_1___INIT_____com_ogradytech_registration_IowaStateRegistrationHelperStub_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10490, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10524, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_LONG llocals_2_ = __cn1Arg2;
@@ -57,7 +57,7 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_1___INIT__
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10490, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10524, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(38);
     /* CustomInvoke */PUSH_OBJ(com_ogradytech_registration_IowaStateRegistrationHelperStub_access$000___com_ogradytech_registration_IowaStateRegistrationHelperStub_R_com_ogradytech_registration_IowaStateRegistrationHelper(threadStateData, get_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_1_this_0(__cn1ThisObject)));
     virtual_com_ogradytech_registration_IowaStateRegistrationHelper_stop__(threadStateData, SP[-1].data.o);     SP -= 1;
