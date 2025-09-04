@@ -75,7 +75,7 @@ JAVA_VOID com_codename1_payment_Purchase_1_onSucess___java_lang_Boolean(CODENAME
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(454);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L2083660714;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1045343603;
     __CN1_DEBUG_INFO(455);
     PUSH_POINTER(get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, get_field_com_codename1_payment_Purchase_1_val_receipt(__cn1ThisObject));
@@ -88,15 +88,15 @@ JAVA_VOID com_codename1_payment_Purchase_1_onSucess___java_lang_Boolean(CODENAME
     /* CustomInvoke */com_codename1_payment_Purchase_access$102___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(460);
     /* CustomInvoke */virtual_com_codename1_payment_Purchase_synchronizeReceipts___long_com_codename1_util_SuccessCallback(threadStateData, get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject), 0 /* LCONST_0 */, get_field_com_codename1_payment_Purchase_1_val_callback(__cn1ThisObject)); 
-    goto label_L1988351538;
+    goto label_L1692311460;
 
-label_L2083660714:
+label_L1045343603:
     __CN1_DEBUG_INFO(462);
     /* CustomInvoke */com_codename1_payment_Purchase_access$102___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(463);
     /* CustomInvoke */com_codename1_payment_Purchase_access$200___com_codename1_payment_Purchase_boolean(threadStateData, get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
 
-label_L1988351538:
+label_L1692311460:
     __CN1_DEBUG_INFO(465);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

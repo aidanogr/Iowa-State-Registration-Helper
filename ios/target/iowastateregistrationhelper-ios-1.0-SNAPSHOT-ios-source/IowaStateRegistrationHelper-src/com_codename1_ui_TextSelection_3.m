@@ -65,12 +65,12 @@ JAVA_VOID com_codename1_ui_TextSelection_3_call___com_codename1_ui_Component(COD
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(843);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_Component_getTextSelectionSupport___R_com_codename1_ui_TextSelection_TextSelectionSupport(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(844);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1454366618;
-    if (/* CustomInvoke */virtual_com_codename1_ui_TextSelection_TextSelectionSupport_isTextSelectionEnabled___com_codename1_ui_TextSelection_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_TextSelection_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1454366618;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L886343183;
+    if (/* CustomInvoke */virtual_com_codename1_ui_TextSelection_TextSelectionSupport_isTextSelectionEnabled___com_codename1_ui_TextSelection_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_TextSelection_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L886343183;
     __CN1_DEBUG_INFO(845);
     /* CustomInvoke */virtual_java_util_TreeSet_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_TextSelection_3_val_selectedComponents(__cn1ThisObject), locals[1].data.o); 
 
-label_L1454366618:
+label_L886343183:
     __CN1_DEBUG_INFO(847);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

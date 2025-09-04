@@ -64,12 +64,12 @@ JAVA_VOID com_codename1_ui_TextField_CommandHandler_actionPerformed___com_codena
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1030384622;
-        case 2: goto label_L920497855;
-        default: goto label_L557593923;
+        case 1: goto label_L299162582;
+        case 2: goto label_L1867177582;
+        default: goto label_L971256592;
     }
 
-label_L1030384622:
+label_L299162582:
     __CN1_DEBUG_INFO(191);
     /* CustomInvoke */PUSH_LONG(com_codename1_ui_TextField_access$002___com_codename1_ui_TextField_long_R_long(threadStateData, get_field_com_codename1_ui_TextField_CommandHandler_this_0(__cn1ThisObject), java_lang_System_currentTimeMillis___R_long(threadStateData)));
     popMany(threadStateData, 2, &SP); /* POP2 */
@@ -80,15 +80,15 @@ label_L1030384622:
     __CN1_DEBUG_INFO(194);
     virtual_com_codename1_ui_TextField_deleteChar__(threadStateData, get_field_com_codename1_ui_TextField_CommandHandler_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(195);
-    goto label_L557593923;
+    goto label_L971256592;
 
-label_L920497855:
+label_L1867177582:
     __CN1_DEBUG_INFO(197);
     virtual_com_codename1_ui_events_ActionEvent_consume__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(198);
     virtual_com_codename1_ui_TextField_editString__(threadStateData, get_field_com_codename1_ui_TextField_CommandHandler_this_0(__cn1ThisObject)); 
 
-label_L557593923:
+label_L971256592:
     __CN1_DEBUG_INFO(201);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

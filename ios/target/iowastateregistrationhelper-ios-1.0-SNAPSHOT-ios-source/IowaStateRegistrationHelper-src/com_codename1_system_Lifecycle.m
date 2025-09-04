@@ -135,13 +135,13 @@ JAVA_VOID com_codename1_system_Lifecycle_handleNetworkError___com_codename1_io_N
     __CN1_DEBUG_INFO(112);
     virtual_com_codename1_io_NetworkEvent_consume__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(113);
-    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L849515361;
+    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1139208287;
     __CN1_DEBUG_INFO(114);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_io_Log_e___java_lang_Throwable(threadStateData, SP[-1].data.o);     SP-= 1;
 
-label_L849515361:
+label_L1139208287:
     __CN1_DEBUG_INFO(116);
     com_codename1_io_Log_sendLogAsync__(threadStateData); 
     __CN1_DEBUG_INFO(117);
@@ -177,14 +177,14 @@ label_L849515361:
 JAVA_VOID com_codename1_system_Lifecycle_start__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10297, 1168);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(124);
-    if (get_field_com_codename1_system_Lifecycle_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2104281815;
+    if (get_field_com_codename1_system_Lifecycle_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L801963227;
     __CN1_DEBUG_INFO(125);
     virtual_com_codename1_ui_Form_show__(threadStateData, get_field_com_codename1_system_Lifecycle_current(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(126);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2104281815:
+label_L801963227:
     __CN1_DEBUG_INFO(129);
     virtual_com_codename1_system_Lifecycle_runApp__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(130);
@@ -230,7 +230,7 @@ JAVA_VOID com_codename1_system_Lifecycle_stop__(CODENAME_ONE_THREAD_STATE, JAVA_
     __CN1_DEBUG_INFO(148);
     PUSH_POINTER(get_field_com_codename1_system_Lifecycle_current(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Dialog);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1301992318;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1812214031;
     __CN1_DEBUG_INFO(149);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, get_field_com_codename1_system_Lifecycle_current(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(150);
@@ -239,7 +239,7 @@ JAVA_VOID com_codename1_system_Lifecycle_stop__(CODENAME_ONE_THREAD_STATE, JAVA_
     set_field_com_codename1_system_Lifecycle_current(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1301992318:
+label_L1812214031:
     __CN1_DEBUG_INFO(152);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -57,15 +57,15 @@ JAVA_OBJECT com_codename1_ui_plaf_StyleParser_MarginInfo_createMargin___com_code
     __CN1_DEBUG_INFO(1038);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1114681666:
-    if (ilocals_3_>=4/* ICONST_4 */) /* IF_ICMPGE CustomJump */ goto label_L747833043;
+label_L1796154990:
+    if (ilocals_3_>=4/* ICONST_4 */) /* IF_ICMPGE CustomJump */ goto label_L398777435;
     __CN1_DEBUG_INFO(1039);
     CN1_SET_ARRAY_ELEMENT_FLOAT(locals[2].data.o, ilocals_3_, /* CustomInvoke */virtual_com_codename1_ui_plaf_StyleParser_MarginInfo_createMargin___com_codename1_ui_plaf_Style_int_R_float(threadStateData, __cn1ThisObject, locals[1].data.o, ilocals_3_));
     __CN1_DEBUG_INFO(1038);
     BC_IINC(3, 1);
-    goto label_L1114681666;
+    goto label_L1796154990;
 
-label_L747833043:
+label_L398777435:
     __CN1_DEBUG_INFO(1041);
 
 {
@@ -88,16 +88,16 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1047);
     /* CustomInvoke */PUSH_INT(com_codename1_ui_plaf_StyleParser_ScalarValue_access$600___com_codename1_ui_plaf_StyleParser_ScalarValue_R_byte(threadStateData, locals[3].data.o));
     SP--;
     switch((*SP).data.i) {
-        case 99: goto label_L771359425;
-        default: goto label_L1662312252;
+        case 99: goto label_L1211627902;
+        default: goto label_L1395740534;
     }
 
-label_L771359425:
+label_L1211627902:
     __CN1_DEBUG_INFO(1049);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_getPadding___int_R_int(threadStateData, locals[1].data.o, ilocals_2_);
     __CN1_DEBUG_INFO(1050);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_plaf_Style_getMarginUnit___R_byte_1ARRAY(threadStateData, locals[1].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1051);
-    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1468393491;
+    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1655072591;
     __CN1_DEBUG_INFO(1052);
 
 {
@@ -105,7 +105,7 @@ label_L771359425:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1468393491:
+label_L1655072591:
     __CN1_DEBUG_INFO(1054);
     BC_ALOAD(5);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -117,11 +117,11 @@ label_L1468393491:
     }
     SP--;
     switch((*SP).data.i) {
-        case 2: goto label_L280541440;
-        default: goto label_L1831423452;
+        case 2: goto label_L1887965475;
+        default: goto label_L117701189;
     }
 
-label_L280541440:
+label_L1887965475:
     __CN1_DEBUG_INFO(1056);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
@@ -135,7 +135,7 @@ label_L280541440:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_FLOAT();
 
-label_L1831423452:
+label_L117701189:
     __CN1_DEBUG_INFO(1058);
 
 {
@@ -143,7 +143,7 @@ label_L1831423452:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1662312252:
+label_L1395740534:
     __CN1_DEBUG_INFO(1062);
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_ui_plaf_StyleParser_ScalarValue_access$700___com_codename1_ui_plaf_StyleParser_ScalarValue_R_double(threadStateData, locals[3].data.o));
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.d; /* D2F */
@@ -164,15 +164,15 @@ JAVA_OBJECT com_codename1_ui_plaf_StyleParser_MarginInfo_createMarginUnit___com_
     __CN1_DEBUG_INFO(1070);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1354510873:
-    if (ilocals_3_>=4/* ICONST_4 */) /* IF_ICMPGE CustomJump */ goto label_L671187578;
+label_L266196910:
+    if (ilocals_3_>=4/* ICONST_4 */) /* IF_ICMPGE CustomJump */ goto label_L1586519852;
     __CN1_DEBUG_INFO(1071);
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[2].data.o, ilocals_3_, /* CustomInvoke */virtual_com_codename1_ui_plaf_StyleParser_MarginInfo_createMarginUnit___com_codename1_ui_plaf_Style_int_R_byte(threadStateData, __cn1ThisObject, locals[1].data.o, ilocals_3_));
     __CN1_DEBUG_INFO(1070);
     BC_IINC(3, 1);
-    goto label_L1354510873;
+    goto label_L266196910;
 
-label_L671187578:
+label_L1586519852:
     __CN1_DEBUG_INFO(1073);
 
 {
@@ -194,18 +194,18 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1079);
     /* CustomInvoke */PUSH_INT(com_codename1_ui_plaf_StyleParser_ScalarValue_access$600___com_codename1_ui_plaf_StyleParser_ScalarValue_R_byte(threadStateData, locals[3].data.o));
     SP--;
     switch((*SP).data.i) {
-        case 99: goto label_L93974967;
-        default: goto label_L578362229;
+        case 99: goto label_L1064095359;
+        default: goto label_L656787973;
     }
 
-label_L93974967:
+label_L1064095359:
     __CN1_DEBUG_INFO(1081);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_plaf_Style_getMarginUnit___R_byte_1ARRAY(threadStateData, locals[1].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1082);
-    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L105860882;
+    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2073069810;
     __CN1_DEBUG_INFO(1083);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L105860882:
+label_L2073069810:
     __CN1_DEBUG_INFO(1086);
 
 {
@@ -213,7 +213,7 @@ label_L105860882:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L578362229:
+label_L656787973:
     __CN1_DEBUG_INFO(1089);
 
 {

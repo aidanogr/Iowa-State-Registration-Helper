@@ -153,15 +153,15 @@ JAVA_OBJECT com_codename1_payment_Purchase_getReceiptStore___R_com_codename1_pay
 
 JAVA_OBJECT com_codename1_payment_Purchase_getReceipts___R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9090, 9093);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL609957874cn1_class_id_java_lang_Exception1;
-    int tryBlockOffsetL609957874cn1_class_id_java_lang_Exception1;
-    DEFINE_CATCH_BLOCK(catch_L609957874cn1_class_id_java_lang_Exception1, label_L1558857633, restoreToL609957874cn1_class_id_java_lang_Exception1);
-    int restoreToL42867231702;
-    int tryBlockOffsetL42867231702;
-    DEFINE_CATCH_BLOCK(catch_L42867231702, label_L760378182, restoreToL42867231702);
-    int restoreToL76037818203;
-    int tryBlockOffsetL76037818203;
-    DEFINE_CATCH_BLOCK(catch_L76037818203, label_L760378182, restoreToL76037818203);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL535701223cn1_class_id_java_lang_Exception1;
+    int tryBlockOffsetL535701223cn1_class_id_java_lang_Exception1;
+    DEFINE_CATCH_BLOCK(catch_L535701223cn1_class_id_java_lang_Exception1, label_L1650828616, restoreToL535701223cn1_class_id_java_lang_Exception1);
+    int restoreToL88474899002;
+    int tryBlockOffsetL88474899002;
+    DEFINE_CATCH_BLOCK(catch_L88474899002, label_L777121249, restoreToL88474899002);
+    int restoreToL77712124903;
+    int tryBlockOffsetL77712124903;
+    DEFINE_CATCH_BLOCK(catch_L77712124903, label_L777121249, restoreToL77712124903);
     __CN1_DEBUG_INFO(81);
     /* LDC: 'CN1SubscriptionsData.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(157));
@@ -169,25 +169,25 @@ JAVA_OBJECT com_codename1_payment_Purchase_getReceipts___R_java_util_List(CODENA
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L428672317:
- tryBlockOffsetL42867231702 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L42867231702);
-    restoreToL42867231702 = threadStateData->threadObjectStackOffset;
+label_L884748990:
+ tryBlockOffsetL88474899002 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L88474899002);
+    restoreToL88474899002 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(82);
-    if (get_static_com_codename1_payment_Purchase_receipts(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1159524199, 1);
+    if (get_static_com_codename1_payment_Purchase_receipts(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L302325048, 1);
     __CN1_DEBUG_INFO(83);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(157));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L301667985, 1);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L687055384, 1);
     __CN1_DEBUG_INFO(84);
     com_codename1_payment_Receipt_registerExternalizable__(threadStateData); 
 
-label_L609957874:
- tryBlockOffsetL609957874cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L609957874cn1_class_id_java_lang_Exception1);
-    restoreToL609957874cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
+label_L535701223:
+ tryBlockOffsetL535701223cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L535701223cn1_class_id_java_lang_Exception1);
+    restoreToL535701223cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(86);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
@@ -196,11 +196,11 @@ label_L609957874:
     set_static_com_codename1_payment_Purchase_receipts(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L2004026698:
+label_L1545893342:
 END_TRY(1);    __CN1_DEBUG_INFO(92);
-    JUMP_TO(label_L1159524199, 1);
+    JUMP_TO(label_L302325048, 1);
 
-label_L1558857633:
+label_L1650828616:
     __CN1_DEBUG_INFO(87);
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(88);
@@ -214,9 +214,9 @@ label_L1558857633:
     set_static_com_codename1_payment_Purchase_receipts(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(92);
-    JUMP_TO(label_L1159524199, 1);
+    JUMP_TO(label_L302325048, 1);
 
-label_L301667985:
+label_L687055384:
     __CN1_DEBUG_INFO(94);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -224,27 +224,27 @@ label_L301667985:
     set_static_com_codename1_payment_Purchase_receipts(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1159524199:
+label_L302325048:
     __CN1_DEBUG_INFO(97);
     PUSH_POINTER(get_static_com_codename1_payment_Purchase_receipts(threadStateData));
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L601771229:
+label_L363290489:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L760378182:
- tryBlockOffsetL76037818203 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L76037818203);
-    restoreToL76037818203 = threadStateData->threadObjectStackOffset;
+label_L777121249:
+ tryBlockOffsetL77712124903 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L77712124903);
+    restoreToL77712124903 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(98);
     BC_ASTORE(3);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1451615455:
+label_L626637138:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -258,15 +258,15 @@ JAVA_OBJECT com_codename1_payment_Purchase_getReceipts___java_lang_String_1ARRAY
 
 JAVA_OBJECT com_codename1_payment_Purchase_getReceiptsRefreshTime___R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9090, 9095);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL161868974801;
-    int tryBlockOffsetL161868974801;
-    DEFINE_CATCH_BLOCK(catch_L161868974801, label_L1251438918, restoreToL161868974801);
-    int restoreToL110495047202;
-    int tryBlockOffsetL110495047202;
-    DEFINE_CATCH_BLOCK(catch_L110495047202, label_L1251438918, restoreToL110495047202);
-    int restoreToL125143891803;
-    int tryBlockOffsetL125143891803;
-    DEFINE_CATCH_BLOCK(catch_L125143891803, label_L1251438918, restoreToL125143891803);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL168536313101;
+    int tryBlockOffsetL168536313101;
+    DEFINE_CATCH_BLOCK(catch_L168536313101, label_L1231842708, restoreToL168536313101);
+    int restoreToL90683783102;
+    int tryBlockOffsetL90683783102;
+    DEFINE_CATCH_BLOCK(catch_L90683783102, label_L1231842708, restoreToL90683783102);
+    int restoreToL123184270803;
+    int tryBlockOffsetL123184270803;
+    DEFINE_CATCH_BLOCK(catch_L123184270803, label_L1231842708, restoreToL123184270803);
     __CN1_DEBUG_INFO(122);
     /* LDC: 'CN1SubscriptionsData.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(157));
@@ -274,27 +274,27 @@ JAVA_OBJECT com_codename1_payment_Purchase_getReceiptsRefreshTime___R_java_util_
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1618689748:
- tryBlockOffsetL161868974801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L161868974801);
-    restoreToL161868974801 = threadStateData->threadObjectStackOffset;
+label_L1685363131:
+ tryBlockOffsetL168536313101 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L168536313101);
+    restoreToL168536313101 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(123);
-    if (get_static_com_codename1_payment_Purchase_receiptsRefreshTime(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1104950472, 0);
+    if (get_static_com_codename1_payment_Purchase_receiptsRefreshTime(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L906837831, 0);
     __CN1_DEBUG_INFO(124);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(158));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1076642142, 1);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L378787077, 1);
     __CN1_DEBUG_INFO(125);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_Storage_readObject___java_lang_String_R_java_lang_Object(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(158));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     set_static_com_codename1_payment_Purchase_receiptsRefreshTime(threadStateData, PEEK_OBJ(1));
     SP--;
-    JUMP_TO(label_L1104950472, 0);
+    JUMP_TO(label_L906837831, 0);
 
-label_L1076642142:
+label_L378787077:
     __CN1_DEBUG_INFO(127);
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -302,35 +302,35 @@ label_L1076642142:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1185341396:
+label_L256079699:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1104950472:
- tryBlockOffsetL110495047202 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L110495047202);
-    restoreToL110495047202 = threadStateData->threadObjectStackOffset;
+label_L906837831:
+ tryBlockOffsetL90683783102 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L90683783102);
+    restoreToL90683783102 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(130);
     PUSH_POINTER(get_static_com_codename1_payment_Purchase_receiptsRefreshTime(threadStateData));
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1846721597:
+label_L1075932728:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1251438918:
- tryBlockOffsetL125143891803 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L125143891803);
-    restoreToL125143891803 = threadStateData->threadObjectStackOffset;
+label_L1231842708:
+ tryBlockOffsetL123184270803 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L123184270803);
+    restoreToL123184270803 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(131);
     BC_ASTORE(2);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L854911836:
+label_L1633612848:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -341,12 +341,12 @@ JAVA_VOID com_codename1_payment_Purchase_setReceipts___java_util_List(CODENAME_O
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9090, 9096);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL72801671601;
-    int tryBlockOffsetL72801671601;
-    DEFINE_CATCH_BLOCK(catch_L72801671601, label_L1311908104, restoreToL72801671601);
-    int restoreToL131190810402;
-    int tryBlockOffsetL131190810402;
-    DEFINE_CATCH_BLOCK(catch_L131190810402, label_L1311908104, restoreToL131190810402);
+    int restoreToL185357615901;
+    int tryBlockOffsetL185357615901;
+    DEFINE_CATCH_BLOCK(catch_L185357615901, label_L1025072405, restoreToL185357615901);
+    int restoreToL102507240502;
+    int tryBlockOffsetL102507240502;
+    DEFINE_CATCH_BLOCK(catch_L102507240502, label_L1025072405, restoreToL102507240502);
     __CN1_DEBUG_INFO(139);
     /* LDC: 'CN1SubscriptionsData.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(157));
@@ -354,10 +354,10 @@ JAVA_VOID com_codename1_payment_Purchase_setReceipts___java_util_List(CODENAME_O
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L728016716:
- tryBlockOffsetL72801671601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L72801671601);
-    restoreToL72801671601 = threadStateData->threadObjectStackOffset;
+label_L1853576159:
+ tryBlockOffsetL185357615901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L185357615901);
+    restoreToL185357615901 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(140);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
@@ -374,23 +374,23 @@ label_L728016716:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1349260617:
-END_TRY(1);    JUMP_TO(label_L1063150793, 0);
+label_L627089542:
+END_TRY(1);    JUMP_TO(label_L397641711, 0);
 
-label_L1311908104:
- tryBlockOffsetL131190810402 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L131190810402);
-    restoreToL131190810402 = threadStateData->threadObjectStackOffset;
+label_L1025072405:
+ tryBlockOffsetL102507240502 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L102507240502);
+    restoreToL102507240502 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1418863004:
+label_L11143846:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1063150793:
+label_L397641711:
     __CN1_DEBUG_INFO(144);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -401,12 +401,12 @@ JAVA_VOID com_codename1_payment_Purchase_setReceiptsRefreshTime___java_util_Date
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9090, 9097);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL158693314301;
-    int tryBlockOffsetL158693314301;
-    DEFINE_CATCH_BLOCK(catch_L158693314301, label_L528776606, restoreToL158693314301);
-    int restoreToL52877660602;
-    int tryBlockOffsetL52877660602;
-    DEFINE_CATCH_BLOCK(catch_L52877660602, label_L528776606, restoreToL52877660602);
+    int restoreToL105437991901;
+    int tryBlockOffsetL105437991901;
+    DEFINE_CATCH_BLOCK(catch_L105437991901, label_L1218147673, restoreToL105437991901);
+    int restoreToL121814767302;
+    int tryBlockOffsetL121814767302;
+    DEFINE_CATCH_BLOCK(catch_L121814767302, label_L1218147673, restoreToL121814767302);
     __CN1_DEBUG_INFO(151);
     /* LDC: 'CN1SubscriptionsData.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(157));
@@ -414,10 +414,10 @@ JAVA_VOID com_codename1_payment_Purchase_setReceiptsRefreshTime___java_util_Date
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1586933143:
- tryBlockOffsetL158693314301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L158693314301);
-    restoreToL158693314301 = threadStateData->threadObjectStackOffset;
+label_L1054379919:
+ tryBlockOffsetL105437991901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L105437991901);
+    restoreToL105437991901 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(152);
     set_static_com_codename1_payment_Purchase_receiptsRefreshTime(threadStateData, locals[1].data.o);
@@ -428,23 +428,23 @@ label_L1586933143:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L448156532:
-END_TRY(1);    JUMP_TO(label_L1023469953, 0);
+label_L1440205863:
+END_TRY(1);    JUMP_TO(label_L1076406962, 0);
 
-label_L528776606:
- tryBlockOffsetL52877660602 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L52877660602);
-    restoreToL52877660602 = threadStateData->threadObjectStackOffset;
+label_L1218147673:
+ tryBlockOffsetL121814767302 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L121814767302);
+    restoreToL121814767302 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L11478005:
+label_L808949114:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1023469953:
+label_L1076406962:
     __CN1_DEBUG_INFO(155);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -530,14 +530,14 @@ JAVA_VOID com_codename1_payment_Purchase_subscribe___java_lang_String(CODENAME_O
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(293);
-    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1650828616;
+    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L934192727;
     __CN1_DEBUG_INFO(294);
     /* CustomInvoke */virtual_com_codename1_payment_Purchase_purchase___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(295);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1650828616:
+label_L934192727:
     __CN1_DEBUG_INFO(297);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -559,15 +559,15 @@ JAVA_VOID com_codename1_payment_Purchase_unsubscribe___java_lang_String(CODENAME
 
 JAVA_OBJECT com_codename1_payment_Purchase_getPendingPurchases___R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9090, 9108);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL151066980701;
-    int tryBlockOffsetL151066980701;
-    DEFINE_CATCH_BLOCK(catch_L151066980701, label_L302325048, restoreToL151066980701);
-    int restoreToL68705538402;
-    int tryBlockOffsetL68705538402;
-    DEFINE_CATCH_BLOCK(catch_L68705538402, label_L302325048, restoreToL68705538402);
-    int restoreToL30232504803;
-    int tryBlockOffsetL30232504803;
-    DEFINE_CATCH_BLOCK(catch_L30232504803, label_L302325048, restoreToL30232504803);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL150571543501;
+    int tryBlockOffsetL150571543501;
+    DEFINE_CATCH_BLOCK(catch_L150571543501, label_L797657283, restoreToL150571543501);
+    int restoreToL72057516202;
+    int tryBlockOffsetL72057516202;
+    DEFINE_CATCH_BLOCK(catch_L72057516202, label_L797657283, restoreToL72057516202);
+    int restoreToL79765728303;
+    int tryBlockOffsetL79765728303;
+    DEFINE_CATCH_BLOCK(catch_L79765728303, label_L797657283, restoreToL79765728303);
     __CN1_DEBUG_INFO(339);
     /* LDC: 'PendingPurchases.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(159));
@@ -575,10 +575,10 @@ JAVA_OBJECT com_codename1_payment_Purchase_getPendingPurchases___R_java_util_Lis
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1510669807:
- tryBlockOffsetL151066980701 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L151066980701);
-    restoreToL151066980701 = threadStateData->threadObjectStackOffset;
+label_L1505715435:
+ tryBlockOffsetL150571543501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L150571543501);
+    restoreToL150571543501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(340);
     /* VarOp.assignFrom */ locals[2].data.o = com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(341);
@@ -587,21 +587,21 @@ label_L1510669807:
     com_codename1_payment_Receipt___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     com_codename1_io_Util_register___com_codename1_io_Externalizable(threadStateData, SP[-1].data.o);     SP-= 1;
     __CN1_DEBUG_INFO(342);
-    if (/* CustomInvoke */virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(159))==0) /* IFEQ CustomJump */ JUMP_TO(label_L687055384, 0);
+    if (/* CustomInvoke */virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(159))==0) /* IFEQ CustomJump */ JUMP_TO(label_L720575162, 0);
     __CN1_DEBUG_INFO(343);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_Storage_readObject___java_lang_String_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(159));
     PUSH_OBJ(tmpResult); }
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1569448035:
+label_L1689696890:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L687055384:
- tryBlockOffsetL68705538402 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L68705538402);
-    restoreToL68705538402 = threadStateData->threadObjectStackOffset;
+label_L720575162:
+ tryBlockOffsetL72057516202 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L72057516202);
+    restoreToL72057516202 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(345);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
@@ -610,21 +610,21 @@ label_L687055384:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L722365839:
+label_L1322929166:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L302325048:
- tryBlockOffsetL30232504803 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L30232504803);
-    restoreToL30232504803 = threadStateData->threadObjectStackOffset;
+label_L797657283:
+ tryBlockOffsetL79765728303 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L79765728303);
+    restoreToL79765728303 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(347);
     BC_ASTORE(3);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1333784258:
+label_L936450936:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -635,12 +635,12 @@ JAVA_VOID com_codename1_payment_Purchase_addPendingPurchase___com_codename1_paym
     DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 9090, 9109);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL51474491001;
-    int tryBlockOffsetL51474491001;
-    DEFINE_CATCH_BLOCK(catch_L51474491001, label_L1735593387, restoreToL51474491001);
-    int restoreToL173559338702;
-    int tryBlockOffsetL173559338702;
-    DEFINE_CATCH_BLOCK(catch_L173559338702, label_L1735593387, restoreToL173559338702);
+    int restoreToL118505217001;
+    int tryBlockOffsetL118505217001;
+    DEFINE_CATCH_BLOCK(catch_L118505217001, label_L1747815853, restoreToL118505217001);
+    int restoreToL174781585302;
+    int tryBlockOffsetL174781585302;
+    DEFINE_CATCH_BLOCK(catch_L174781585302, label_L1747815853, restoreToL174781585302);
     __CN1_DEBUG_INFO(355);
     /* LDC: 'PendingPurchases.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(159));
@@ -648,10 +648,10 @@ JAVA_VOID com_codename1_payment_Purchase_addPendingPurchase___com_codename1_paym
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L514744910:
- tryBlockOffsetL51474491001 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L51474491001);
-    restoreToL51474491001 = threadStateData->threadObjectStackOffset;
+label_L1185052170:
+ tryBlockOffsetL118505217001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L118505217001);
+    restoreToL118505217001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(356);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(357);
@@ -663,23 +663,23 @@ label_L514744910:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1184110081:
-END_TRY(1);    JUMP_TO(label_L1181534785, 0);
+label_L1518659820:
+END_TRY(1);    JUMP_TO(label_L451667801, 0);
 
-label_L1735593387:
- tryBlockOffsetL173559338702 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L173559338702);
-    restoreToL173559338702 = threadStateData->threadObjectStackOffset;
+label_L1747815853:
+ tryBlockOffsetL174781585302 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L174781585302);
+    restoreToL174781585302 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(5);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1374734033:
+label_L1008261936:
 END_TRY(1);    BC_ALOAD(5);
     throwException(threadStateData, POP_OBJ());
 
-label_L1181534785:
+label_L451667801:
     __CN1_DEBUG_INFO(361);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -690,15 +690,15 @@ JAVA_OBJECT com_codename1_payment_Purchase_removePendingPurchase___java_lang_Str
     DEFINE_INSTANCE_METHOD_STACK(3, 9, 0, 9090, 9110);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL64047056801;
-    int tryBlockOffsetL64047056801;
-    DEFINE_CATCH_BLOCK(catch_L64047056801, label_L2084234089, restoreToL64047056801);
-    int restoreToL102507240502;
-    int tryBlockOffsetL102507240502;
-    DEFINE_CATCH_BLOCK(catch_L102507240502, label_L2084234089, restoreToL102507240502);
-    int restoreToL208423408903;
-    int tryBlockOffsetL208423408903;
-    DEFINE_CATCH_BLOCK(catch_L208423408903, label_L2084234089, restoreToL208423408903);
+    int restoreToL85697009701;
+    int tryBlockOffsetL85697009701;
+    DEFINE_CATCH_BLOCK(catch_L85697009701, label_L1876130199, restoreToL85697009701);
+    int restoreToL176135334302;
+    int tryBlockOffsetL176135334302;
+    DEFINE_CATCH_BLOCK(catch_L176135334302, label_L1876130199, restoreToL176135334302);
+    int restoreToL187613019903;
+    int tryBlockOffsetL187613019903;
+    DEFINE_CATCH_BLOCK(catch_L187613019903, label_L1876130199, restoreToL187613019903);
     __CN1_DEBUG_INFO(369);
     /* LDC: 'PendingPurchases.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(159));
@@ -706,10 +706,10 @@ JAVA_OBJECT com_codename1_payment_Purchase_removePendingPurchase___java_lang_Str
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L640470568:
- tryBlockOffsetL64047056801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L64047056801);
-    restoreToL64047056801 = threadStateData->threadObjectStackOffset;
+label_L856970097:
+ tryBlockOffsetL85697009701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L85697009701);
+    restoreToL85697009701 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(370);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(371);
@@ -717,27 +717,27 @@ label_L640470568:
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;    locals[5].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(373);
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, locals[4].data.o);locals[6].type=CN1_TYPE_OBJECT;
-label_L378787077:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[6].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1231842708, 1);
+label_L479708091:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[6].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1573357597, 1);
     /* VarOp.assignFrom */ locals[7].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[6].data.o);locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(374);
-    if (virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, locals[7].data.o)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L906837831, 1);
+    if (virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, locals[7].data.o)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1493382893, 1);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, locals[7].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L906837831, 1);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1493382893, 1);
     __CN1_DEBUG_INFO(375);
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;    locals[5].data.o = locals[7].data.o;
 locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(376);
-    JUMP_TO(label_L1231842708, 1);
+    JUMP_TO(label_L1573357597, 1);
 
-label_L906837831:
+label_L1493382893:
     __CN1_DEBUG_INFO(379);
-    JUMP_TO(label_L378787077, 1);
+    JUMP_TO(label_L479708091, 1);
 
-label_L1231842708:
+label_L1573357597:
     __CN1_DEBUG_INFO(380);
-    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1025072405, 0);
+    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1761353343, 0);
     __CN1_DEBUG_INFO(381);
     /* CustomInvoke */virtual_java_util_List_remove___java_lang_Object_R_boolean(threadStateData, locals[4].data.o, locals[5].data.o); 
     __CN1_DEBUG_INFO(382);
@@ -747,35 +747,35 @@ label_L1231842708:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1688868596:
+label_L405383749:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1025072405:
- tryBlockOffsetL102507240502 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L102507240502);
-    restoreToL102507240502 = threadStateData->threadObjectStackOffset;
+label_L1761353343:
+ tryBlockOffsetL176135334302 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L176135334302);
+    restoreToL176135334302 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(385);
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L225737134:
+label_L1295694624:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L2084234089:
- tryBlockOffsetL208423408903 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L208423408903);
-    restoreToL208423408903 = threadStateData->threadObjectStackOffset;
+label_L1876130199:
+ tryBlockOffsetL187613019903 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L187613019903);
+    restoreToL187613019903 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(387);
     BC_ASTORE(8);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1922841304:
+label_L669219027:
 END_TRY(1);    BC_ALOAD(8);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -785,12 +785,12 @@ END_TRY(1);    BC_ALOAD(8);
 JAVA_VOID com_codename1_payment_Purchase_synchronizeReceipts__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9090, 9111);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(402);
-    if (get_static_com_codename1_payment_Purchase_syncInProgress(threadStateData)==0) /* IFEQ CustomJump */ goto label_L397641711;
+    if (get_static_com_codename1_payment_Purchase_syncInProgress(threadStateData)==0) /* IFEQ CustomJump */ goto label_L161149981;
     __CN1_DEBUG_INFO(403);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L397641711:
+label_L161149981:
     __CN1_DEBUG_INFO(405);
     /* CustomInvoke */virtual_com_codename1_payment_Purchase_synchronizeReceipts___long_com_codename1_util_SuccessCallback(threadStateData, __cn1ThisObject, 0 /* LCONST_0 */, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(406);
@@ -803,76 +803,76 @@ JAVA_VOID com_codename1_payment_Purchase_fireSynchronizeReceiptsCallbacks___bool
     volatile JAVA_INT ilocals_1_ = 0; /* result */
     DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 9090, 9112);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
-    int restoreToL208077810401;
-    int tryBlockOffsetL208077810401;
-    DEFINE_CATCH_BLOCK(catch_L208077810401, label_L1218147673, restoreToL208077810401);
-    int restoreToL107640696202;
-    int tryBlockOffsetL107640696202;
-    DEFINE_CATCH_BLOCK(catch_L107640696202, label_L1218147673, restoreToL107640696202);
-    int restoreToL121814767303;
-    int tryBlockOffsetL121814767303;
-    DEFINE_CATCH_BLOCK(catch_L121814767303, label_L1218147673, restoreToL121814767303);
+    int restoreToL134984115201;
+    int tryBlockOffsetL134984115201;
+    DEFINE_CATCH_BLOCK(catch_L134984115201, label_L1231949725, restoreToL134984115201);
+    int restoreToL179978420802;
+    int tryBlockOffsetL179978420802;
+    DEFINE_CATCH_BLOCK(catch_L179978420802, label_L1231949725, restoreToL179978420802);
+    int restoreToL123194972503;
+    int tryBlockOffsetL123194972503;
+    DEFINE_CATCH_BLOCK(catch_L123194972503, label_L1231949725, restoreToL123194972503);
     __CN1_DEBUG_INFO(412);
     PUSH_POINTER(get_static_com_codename1_payment_Purchase_synchronizationLock(threadStateData));
     BC_DUP(); /* DUP */
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L2080778104:
- tryBlockOffsetL208077810401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L208077810401);
-    restoreToL208077810401 = threadStateData->threadObjectStackOffset;
+label_L1349841152:
+ tryBlockOffsetL134984115201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L134984115201);
+    restoreToL134984115201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(413);
-    if (get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1076406962, 0);
+    if (get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1799784208, 0);
     __CN1_DEBUG_INFO(414);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L135937179:
+label_L1379211265:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L1076406962:
- tryBlockOffsetL107640696202 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L107640696202);
-    restoreToL107640696202 = threadStateData->threadObjectStackOffset;
+label_L1799784208:
+ tryBlockOffsetL179978420802 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L179978420802);
+    restoreToL179978420802 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(416);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData));locals[3].type=CN1_TYPE_OBJECT;
-label_L1017762738:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L934192727, 1);
+label_L1034246552:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1673618401, 1);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(417);
     BC_ALOAD(4);
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, ilocals_1_));
     virtual_com_codename1_util_SuccessCallback_onSucess___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(418);
-    JUMP_TO(label_L1017762738, 1);
+    JUMP_TO(label_L1034246552, 1);
 
-label_L934192727:
+label_L1673618401:
     __CN1_DEBUG_INFO(419);
     virtual_java_util_List_clear__(threadStateData, get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData)); 
     __CN1_DEBUG_INFO(420);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L2072736567:
-END_TRY(1);    JUMP_TO(label_L797657283, 0);
+label_L1124870261:
+END_TRY(1);    JUMP_TO(label_L68074326, 0);
 
-label_L1218147673:
- tryBlockOffsetL121814767303 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L121814767303);
-    restoreToL121814767303 = threadStateData->threadObjectStackOffset;
+label_L1231949725:
+ tryBlockOffsetL123194972503 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L123194972503);
+    restoreToL123194972503 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(5);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1855948792:
+label_L4024703:
 END_TRY(1);    BC_ALOAD(5);
     throwException(threadStateData, POP_OBJ());
 
-label_L797657283:
+label_L68074326:
     __CN1_DEBUG_INFO(421);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -885,36 +885,36 @@ JAVA_VOID com_codename1_payment_Purchase_synchronizeReceipts___long_com_codename
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
-    int restoreToL101831532901;
-    int tryBlockOffsetL101831532901;
-    DEFINE_CATCH_BLOCK(catch_L101831532901, label_L720575162, restoreToL101831532901);
-    int restoreToL157335759702;
-    int tryBlockOffsetL157335759702;
-    DEFINE_CATCH_BLOCK(catch_L157335759702, label_L720575162, restoreToL157335759702);
-    int restoreToL72057516203;
-    int tryBlockOffsetL72057516203;
-    DEFINE_CATCH_BLOCK(catch_L72057516203, label_L720575162, restoreToL72057516203);
-    int restoreToL98925190604;
-    int tryBlockOffsetL98925190604;
-    DEFINE_CATCH_BLOCK(catch_L98925190604, label_L1747815853, restoreToL98925190604);
-    int restoreToL174781585305;
-    int tryBlockOffsetL174781585305;
-    DEFINE_CATCH_BLOCK(catch_L174781585305, label_L1747815853, restoreToL174781585305);
+    int restoreToL48761743401;
+    int tryBlockOffsetL48761743401;
+    DEFINE_CATCH_BLOCK(catch_L48761743401, label_L1529856704, restoreToL48761743401);
+    int restoreToL188525367002;
+    int tryBlockOffsetL188525367002;
+    DEFINE_CATCH_BLOCK(catch_L188525367002, label_L1529856704, restoreToL188525367002);
+    int restoreToL152985670403;
+    int tryBlockOffsetL152985670403;
+    DEFINE_CATCH_BLOCK(catch_L152985670403, label_L1529856704, restoreToL152985670403);
+    int restoreToL154825957604;
+    int tryBlockOffsetL154825957604;
+    DEFINE_CATCH_BLOCK(catch_L154825957604, label_L857308207, restoreToL154825957604);
+    int restoreToL85730820705;
+    int tryBlockOffsetL85730820705;
+    DEFINE_CATCH_BLOCK(catch_L85730820705, label_L857308207, restoreToL85730820705);
     __CN1_DEBUG_INFO(432);
     PUSH_POINTER(get_static_com_codename1_payment_Purchase_synchronizationLock(threadStateData));
     BC_DUP(); /* DUP */
     BC_ASTORE(4);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1018315329:
- tryBlockOffsetL101831532901 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L101831532901);
-    restoreToL101831532901 = threadStateData->threadObjectStackOffset;
+label_L487617434:
+ tryBlockOffsetL48761743401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L48761743401);
+    restoreToL48761743401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(433);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L451667801, 1);
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L619158093, 1);
     __CN1_DEBUG_INFO(434);
-    if (get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1876130199, 1);
+    if (get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1430405516, 1);
     __CN1_DEBUG_INFO(435);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -922,25 +922,25 @@ label_L1018315329:
     set_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1876130199:
+label_L1430405516:
     __CN1_DEBUG_INFO(437);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_static_com_codename1_payment_Purchase_synchronizeReceiptsCallbacks(threadStateData), locals[3].data.o); 
 
-label_L451667801:
+label_L619158093:
     __CN1_DEBUG_INFO(439);
-    if (get_static_com_codename1_payment_Purchase_syncInProgress(threadStateData)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1573357597, 0);
+    if (get_static_com_codename1_payment_Purchase_syncInProgress(threadStateData)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1885253670, 0);
     __CN1_DEBUG_INFO(440);
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L402983257:
+label_L980485338:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L1573357597:
- tryBlockOffsetL157335759702 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L157335759702);
-    restoreToL157335759702 = threadStateData->threadObjectStackOffset;
+label_L1885253670:
+ tryBlockOffsetL188525367002 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L188525367002);
+    restoreToL188525367002 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(442);
     set_static_com_codename1_payment_Purchase_syncInProgress(threadStateData, 1 /* ICONST_1 */);
@@ -948,23 +948,23 @@ label_L1573357597:
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L328686435:
-END_TRY(1);    JUMP_TO(label_L1493382893, 0);
+label_L1627738668:
+END_TRY(1);    JUMP_TO(label_L148783622, 0);
 
-label_L720575162:
- tryBlockOffsetL72057516203 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L72057516203);
-    restoreToL72057516203 = threadStateData->threadObjectStackOffset;
+label_L1529856704:
+ tryBlockOffsetL152985670403 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L152985670403);
+    restoreToL152985670403 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(5);
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1244138594:
+label_L1855628925:
 END_TRY(1);    BC_ALOAD(5);
     throwException(threadStateData, POP_OBJ());
 
-label_L1493382893:
+label_L148783622:
     __CN1_DEBUG_INFO(445);
     /* LDC: 'PendingPurchases.dat'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(159));
@@ -972,15 +972,15 @@ label_L1493382893:
     BC_ASTORE(4);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L989251906:
- tryBlockOffsetL98925190604 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L98925190604);
-    restoreToL98925190604 = threadStateData->threadObjectStackOffset;
+label_L1548259576:
+ tryBlockOffsetL154825957604 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L154825957604);
+    restoreToL154825957604 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(447);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_payment_Purchase_getPendingPurchases___R_java_util_List(threadStateData, __cn1ThisObject);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(448);
-    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, locals[5].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L479708091, 1);
-    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L479708091, 1);
+    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, locals[5].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L284394658, 1);
+    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L284394658, 1);
     __CN1_DEBUG_INFO(450);
     /* VarOp.assignFrom */ locals[6].data.o = /* CustomInvoke */virtual_java_util_List_get___int_R_java_lang_Object(threadStateData, locals[5].data.o, 0 /* ICONST_0 */);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(451);
     PUSH_POINTER(get_static_com_codename1_payment_Purchase_receiptStore(threadStateData));
@@ -991,9 +991,9 @@ label_L989251906:
     /* CustomInvoke */com_codename1_payment_Purchase_1___INIT_____com_codename1_payment_Purchase_com_codename1_payment_Receipt_com_codename1_util_SuccessCallback(threadStateData, SP[-1].data.o, __cn1ThisObject, locals[6].data.o, locals[3].data.o);     SP -= 1;
     virtual_com_codename1_payment_ReceiptStore_submitReceipt___com_codename1_payment_Receipt_com_codename1_util_SuccessCallback(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(468);
-    JUMP_TO(label_L1761353343, 1);
+    JUMP_TO(label_L1476061457, 1);
 
-label_L479708091:
+label_L284394658:
     __CN1_DEBUG_INFO(469);
     BC_ALOAD(0);
     BC_LLOAD(1);
@@ -1002,28 +1002,28 @@ label_L479708091:
     /* CustomInvoke */com_codename1_payment_Purchase_2___INIT_____com_codename1_payment_Purchase(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     com_codename1_payment_Purchase_loadReceipts___long_com_codename1_util_SuccessCallback(threadStateData, SP[-3].data.o, SP[-2].data.l, SP[-1].data.o);     SP-= 3;
 
-label_L1761353343:
+label_L1476061457:
     __CN1_DEBUG_INFO(479);
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L320065852:
-END_TRY(1);    JUMP_TO(label_L161149981, 0);
+label_L395787631:
+END_TRY(1);    JUMP_TO(label_L1386265672, 0);
 
-label_L1747815853:
- tryBlockOffsetL174781585305 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L174781585305);
-    restoreToL174781585305 = threadStateData->threadObjectStackOffset;
+label_L857308207:
+ tryBlockOffsetL85730820705 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L85730820705);
+    restoreToL85730820705 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(7);
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L183742683:
+label_L1705898735:
 END_TRY(1);    BC_ALOAD(7);
     throwException(threadStateData, POP_OBJ());
 
-label_L161149981:
+label_L1386265672:
     __CN1_DEBUG_INFO(480);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1075,16 +1075,16 @@ JAVA_VOID com_codename1_payment_Purchase_postReceipt___java_lang_String_java_lan
     __CN1_DEBUG_INFO(512);
     /* CustomInvoke */virtual_com_codename1_payment_Receipt_setStoreCode___java_lang_String(threadStateData, locals[6].data.o, locals[0].data.o); 
     __CN1_DEBUG_INFO(513);
-    if (CN1_CMP_EXPR(llocals_3_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L1231949725;
+    if (CN1_CMP_EXPR(llocals_3_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L680794728;
     __CN1_DEBUG_INFO(514);
     BC_ALOAD(6);
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_Date___INIT_____long(threadStateData, SP[-1].data.o, llocals_3_);     SP -= 1;
     virtual_com_codename1_payment_Receipt_setPurchaseDate___java_util_Date(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    goto label_L1799784208;
+    goto label_L617504076;
 
-label_L1231949725:
+label_L680794728:
     __CN1_DEBUG_INFO(516);
     BC_ALOAD(6);
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
@@ -1092,7 +1092,7 @@ label_L1231949725:
     java_util_Date___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     virtual_com_codename1_payment_Receipt_setPurchaseDate___java_util_Date(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1799784208:
+label_L617504076:
     __CN1_DEBUG_INFO(518);
     PUSH_OBJ(com_codename1_payment_Purchase_getInAppPurchase___R_com_codename1_payment_Purchase(threadStateData));
     /* CustomInvoke */com_codename1_payment_Purchase_postReceipt___com_codename1_payment_Receipt(threadStateData, SP[-1].data.o, locals[6].data.o);     SP -= 1;
@@ -1114,7 +1114,7 @@ JAVA_VOID com_codename1_payment_Purchase_loadReceipts___long_com_codename1_util_
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(576);
-    if (get_static_com_codename1_payment_Purchase_loadInProgress(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1034246552;
+    if (get_static_com_codename1_payment_Purchase_loadInProgress(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1936269454;
     __CN1_DEBUG_INFO(577);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9116)); 
     __CN1_DEBUG_INFO(578);
@@ -1125,7 +1125,7 @@ JAVA_VOID com_codename1_payment_Purchase_loadReceipts___long_com_codename1_util_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1034246552:
+label_L1936269454:
     __CN1_DEBUG_INFO(581);
     set_static_com_codename1_payment_Purchase_loadInProgress(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(582);
@@ -1142,7 +1142,7 @@ label_L1034246552:
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, locals[5].data.o);
     PUSH_LONG(tmpResult); }
     BC_LCMP();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L68074326;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L2074485713;
     __CN1_DEBUG_INFO(585);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1166,7 +1166,7 @@ label_L1034246552:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L68074326:
+label_L2074485713:
     __CN1_DEBUG_INFO(590);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1186,12 +1186,12 @@ label_L68074326:
     /* CustomInvoke */com_codename1_payment_Purchase_6___INIT_____com_codename1_payment_Purchase_com_codename1_util_SuccessCallback(threadStateData, SP[-1].data.o, __cn1ThisObject, locals[3].data.o);     SP -= 1;
     BC_ASTORE(7);
     __CN1_DEBUG_INFO(608);
-    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1529856704;
+    if (get_static_com_codename1_payment_Purchase_receiptStore(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L760493524;
     __CN1_DEBUG_INFO(609);
     /* CustomInvoke */virtual_com_codename1_payment_ReceiptStore_fetchReceipts___com_codename1_util_SuccessCallback(threadStateData, get_static_com_codename1_payment_Purchase_receiptStore(threadStateData), locals[7].data.o); 
-    goto label_L857308207;
+    goto label_L1841150825;
 
-label_L1529856704:
+label_L760493524:
     __CN1_DEBUG_INFO(612);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9119)); 
     __CN1_DEBUG_INFO(613);
@@ -1199,7 +1199,7 @@ label_L1529856704:
     __CN1_DEBUG_INFO(614);
     /* CustomInvoke */virtual_com_codename1_util_SuccessCallback_onSucess___java_lang_Object(threadStateData, locals[3].data.o, get_static_java_lang_Boolean_FALSE(threadStateData)); 
 
-label_L857308207:
+label_L1841150825:
     __CN1_DEBUG_INFO(616);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

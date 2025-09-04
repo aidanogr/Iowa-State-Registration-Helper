@@ -126,13 +126,13 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_dispose__(CO
     PUSH_LONG(tmpResult); }
     PUSH_LONG(0); /* LCONST_0 */
     BC_LCMP();
-    if(POP_INT() == 0) /* IFEQ */ goto label_L930317866;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1911168986;
     __CN1_DEBUG_INFO(4245);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_nativeDeleteTexture___long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_this_0(__cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getTextureName___R_long(threadStateData, __cn1ThisObject)); 
     __CN1_DEBUG_INFO(4246);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setTextureName___long(threadStateData, __cn1ThisObject, 0 /* LCONST_0 */); 
 
-label_L930317866:
+label_L1911168986:
     __CN1_DEBUG_INFO(4248);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

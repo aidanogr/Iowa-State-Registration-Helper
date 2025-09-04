@@ -44,7 +44,7 @@ com_ogradytech_registration_Utilities_GUIUtilities___INIT____(threadStateData, o
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_GUIUtilities___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10423, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10427, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -55,7 +55,7 @@ JAVA_VOID com_ogradytech_registration_Utilities_GUIUtilities___INIT____(CODENAME
 JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getVerticalInsetPercentages___com_ogradytech_registration_Utilities_MeetingInfo_R_double_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_GUIUtilities(threadStateData);
-    DEFINE_METHOD_STACK(8, 4, 0, 10423, 10424);
+    DEFINE_METHOD_STACK(8, 4, 0, 10427, 10428);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(20);
@@ -122,7 +122,7 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getHorizontalInse
     volatile JAVA_INT ilocals_0_ = 0; /* dayOfTheWeek */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_GUIUtilities(threadStateData);
-    DEFINE_METHOD_STACK(8, 3, 0, 10423, 10425);
+    DEFINE_METHOD_STACK(8, 3, 0, 10427, 10429);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(44);
     PUSH_INT(2); /* ICONST_2 */
@@ -193,7 +193,7 @@ label_L893523498:
 
 label_L1723290893:
     __CN1_DEBUG_INFO(65);
-    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_err(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10426)); 
+    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_err(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10430)); 
 
 label_L511354923:
     __CN1_DEBUG_INFO(69);

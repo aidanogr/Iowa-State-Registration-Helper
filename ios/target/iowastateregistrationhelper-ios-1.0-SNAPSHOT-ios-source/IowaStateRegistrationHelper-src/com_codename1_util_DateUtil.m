@@ -193,15 +193,15 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_inDaylightTime___java_util_Date_R_boole
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(214);
-    if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L433992395;
-    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_getOffset___long_R_int(threadStateData, __cn1ThisObject, virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o))==virtual_java_util_TimeZone_getRawOffset___R_int(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L433992395;
+    if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L274720798;
+    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_getOffset___long_R_int(threadStateData, __cn1ThisObject, virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o))==virtual_java_util_TimeZone_getRawOffset___R_int(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L274720798;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2020796703;
+    goto label_L184109835;
 
-label_L433992395:
+label_L274720798:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2020796703:
+label_L184109835:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -213,14 +213,14 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_ut
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(228);
-    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 1 /* ICONST_1 */)) /* IF_ICMPNE CustomJump */ goto label_L280150479;
+    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 1 /* ICONST_1 */)) /* IF_ICMPNE CustomJump */ goto label_L545359296;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L547512166;
+    goto label_L405881980;
 
-label_L280150479:
+label_L545359296:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L547512166:
+label_L405881980:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -237,7 +237,7 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_isSameMonth___java_util_Calendar_java_u
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(260);
-    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_util_Calendar_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1216510419;
+    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_util_Calendar_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L2000769148;
     BC_ALOAD(1);
     PUSH_INT(2); /* ICONST_2 */
     __CN1_DEBUG_INFO(261);
@@ -246,14 +246,14 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_isSameMonth___java_util_Calendar_java_u
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 2 /* ICONST_2 */);
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1216510419;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L2000769148;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L660036557;
+    goto label_L933297292;
 
-label_L1216510419:
+label_L2000769148:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L660036557:
+label_L933297292:
     __CN1_DEBUG_INFO(260);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }

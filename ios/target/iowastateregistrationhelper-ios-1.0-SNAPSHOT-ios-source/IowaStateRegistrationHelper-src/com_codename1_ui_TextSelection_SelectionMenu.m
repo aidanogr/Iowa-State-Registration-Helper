@@ -339,16 +339,16 @@ JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu_actionPerformed___com_cod
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_SelectionMenu_selectAll(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1077464378;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L161938368;
     __CN1_DEBUG_INFO(1320);
     virtual_com_codename1_ui_TextSelection_selectAll__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
-    goto label_L346847161;
+    goto label_L203401172;
 
-label_L1077464378:
+label_L161938368:
     __CN1_DEBUG_INFO(1322);
     virtual_com_codename1_ui_TextSelection_copy__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
 
-label_L346847161:
+label_L203401172:
     __CN1_DEBUG_INFO(1324);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

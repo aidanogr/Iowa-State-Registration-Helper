@@ -188,7 +188,7 @@ JAVA_VOID com_codename1_ui_TextSelection_Span_calculateBounds__(CODENAME_ONE_THR
     DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 6158, 6163);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(447);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_TextSelection_Span_first___R_com_codename1_ui_TextSelection_Char(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(448);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L326692514;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L440815523;
     __CN1_DEBUG_INFO(450);
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_Span_bounds(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_TextSelection_Char_R_com_codename1_ui_geom_Rectangle(threadStateData, locals[1].data.o));
@@ -206,8 +206,8 @@ JAVA_VOID com_codename1_ui_TextSelection_Span_calculateBounds__(CODENAME_ONE_THR
     virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, SP[-5].data.o, SP[-4].data.i, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);     SP-= 5;
     __CN1_DEBUG_INFO(451);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;
-label_L1716661933:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L104136534;
+label_L1556841942:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1108730163;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(452);
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_Span_bounds(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_TextSelection_Char_R_com_codename1_ui_geom_Rectangle(threadStateData, locals[3].data.o));
@@ -222,16 +222,16 @@ label_L1716661933:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     virtual_com_codename1_ui_geom_Rectangle_setWidth___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(454);
-    goto label_L1716661933;
+    goto label_L1556841942;
 
-label_L104136534:
-    goto label_L1514687713;
+label_L1108730163:
+    goto label_L227080339;
 
-label_L326692514:
+label_L440815523:
     __CN1_DEBUG_INFO(457);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_bounds(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */); 
 
-label_L1514687713:
+label_L227080339:
     __CN1_DEBUG_INFO(459);
     set_field_com_codename1_ui_TextSelection_Span_boundsDirty(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(461);
@@ -247,7 +247,7 @@ JAVA_VOID com_codename1_ui_TextSelection_Span_add___com_codename1_ui_TextSelecti
     __CN1_DEBUG_INFO(468);
     set_field_com_codename1_ui_TextSelection_Span_boundsDirty(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(469);
-    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L244430068;
+    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L630949334;
     __CN1_DEBUG_INFO(470);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_INT(com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[1].data.o));
@@ -258,9 +258,9 @@ JAVA_VOID com_codename1_ui_TextSelection_Span_add___com_codename1_ui_TextSelecti
     PUSH_INT(1); /* ICONST_1 */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     set_field_com_codename1_ui_TextSelection_Span_endPos(threadStateData, POP_INT(), POP_OBJ());
-    goto label_L805184575;
+    goto label_L1223357487;
 
-label_L244430068:
+label_L630949334:
     __CN1_DEBUG_INFO(473);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_INT(java_lang_Math_min___int_int_R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_startPos(__cn1ThisObject), /* CustomInvoke */com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[1].data.o)));
@@ -272,7 +272,7 @@ label_L244430068:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     set_field_com_codename1_ui_TextSelection_Span_endPos(threadStateData, POP_INT(), POP_OBJ());
 
-label_L805184575:
+label_L1223357487:
     __CN1_DEBUG_INFO(476);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(477);
@@ -306,7 +306,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_getIntersection___int_int_int_in
     /* CustomInvoke */com_codename1_ui_TextSelection_Span___INIT_____com_codename1_ui_TextSelection_com_codename1_ui_Component(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_TextSelection_Span_this_0(__cn1ThisObject), get_field_com_codename1_ui_TextSelection_Span_component(__cn1ThisObject));     SP -= 1;
     BC_ASTORE(6);
     __CN1_DEBUG_INFO(504);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1487814699;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1217347025;
     __CN1_DEBUG_INFO(505);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -315,7 +315,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_getIntersection___int_int_int_in
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1083777179;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L34150451;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -334,7 +334,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_getIntersection___int_int_int_in
     PUSH_INT(2); /* ICONST_2 */
     SP--; SP[-1].data.i = SP[-1].data.i / (*SP).data.i; /* IDIV */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1083777179;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L34150451;
     __CN1_DEBUG_INFO(508);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_Span_getBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -356,9 +356,9 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_getIntersection___int_int_int_in
     __CN1_DEBUG_INFO(511);
     /* VarOp.assignFrom */     ilocals_3_ = ilocals_8_;
     __CN1_DEBUG_INFO(512);
-    goto label_L1487814699;
+    goto label_L1217347025;
 
-label_L1083777179:
+label_L34150451:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -366,7 +366,7 @@ label_L1083777179:
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1135348328;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L2076543121;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -378,7 +378,7 @@ label_L1083777179:
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1135348328;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L2076543121;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -395,7 +395,7 @@ label_L1083777179:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1135348328;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L2076543121;
     __CN1_DEBUG_INFO(515);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_Span_getBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -409,9 +409,9 @@ label_L1083777179:
     __CN1_DEBUG_INFO(518);
     /* VarOp.assignFrom */     ilocals_3_ = ilocals_8_;
     __CN1_DEBUG_INFO(520);
-    goto label_L1487814699;
+    goto label_L1217347025;
 
-label_L1135348328:
+label_L2076543121:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -424,7 +424,7 @@ label_L1135348328:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1487814699;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1217347025;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
@@ -443,7 +443,7 @@ label_L1135348328:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     /* CustomInvoke */PUSH_INT(com_codename1_ui_CN_convertToPixels___float_R_int(threadStateData, 2 /* FCONST_2 */));
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1487814699;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1217347025;
     __CN1_DEBUG_INFO(523);
     PUSH_INT(0); /* ICONST_0 */
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_Span_getBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, __cn1ThisObject);
@@ -464,24 +464,24 @@ label_L1135348328:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L1487814699:
+label_L1217347025:
     __CN1_DEBUG_INFO(526);
     /* VarOp.assignFrom */ locals[7].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));locals[7].type=CN1_TYPE_OBJECT;
-label_L1044174590:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[7].data.o)==0) /* IFEQ CustomJump */ goto label_L497877502;
+label_L524536503:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[7].data.o)==0) /* IFEQ CustomJump */ goto label_L1678856266;
     /* VarOp.assignFrom */ locals[8].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(527);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_TextSelection_Char_R_com_codename1_ui_geom_Rectangle(threadStateData, locals[8].data.o));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_intersects___int_int_int_int_R_boolean(threadStateData, SP[-1].data.o, ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L925410680;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1430358188;
     __CN1_DEBUG_INFO(528);
     /* CustomInvoke */virtual_com_codename1_ui_TextSelection_Span_add___com_codename1_ui_TextSelection_Char(threadStateData, locals[6].data.o, locals[8].data.o); 
 
-label_L925410680:
+label_L1430358188:
     __CN1_DEBUG_INFO(530);
-    goto label_L1044174590;
+    goto label_L524536503;
 
-label_L497877502:
+label_L1678856266:
     __CN1_DEBUG_INFO(531);
 
 {
@@ -530,13 +530,13 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_charAt___int_int_R_com_codename1
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(567);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;
-label_L440815523:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L501244955;
+label_L2134194703:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1209358542;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(568);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_TextSelection_Char_R_com_codename1_ui_geom_Rectangle(threadStateData, locals[4].data.o));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_contains___int_int_R_boolean(threadStateData, SP[-1].data.o, ilocals_1_, ilocals_2_);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1756837032;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L644399750;
     __CN1_DEBUG_INFO(569);
 
 {
@@ -544,11 +544,11 @@ label_L440815523:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1756837032:
+label_L644399750:
     __CN1_DEBUG_INFO(571);
-    goto label_L440815523;
+    goto label_L2134194703;
 
-label_L501244955:
+label_L1209358542:
     __CN1_DEBUG_INFO(572);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -557,11 +557,11 @@ label_L501244955:
 JAVA_OBJECT com_codename1_ui_TextSelection_Span_first___R_com_codename1_ui_TextSelection_Char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6158, 5971);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(580);
-    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1108730163;
+    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L2124562732;
     __CN1_DEBUG_INFO(581);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1108730163:
+label_L2124562732:
     __CN1_DEBUG_INFO(583);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_List_get___int_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject), 0 /* ICONST_0 */);
     PUSH_OBJ(tmpResult); }
@@ -573,11 +573,11 @@ label_L1108730163:
 JAVA_OBJECT com_codename1_ui_TextSelection_Span_last___R_com_codename1_ui_TextSelection_Char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6158, 6165);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(591);
-    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1556841942;
+    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L479442206;
     __CN1_DEBUG_INFO(592);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1556841942:
+label_L479442206:
     __CN1_DEBUG_INFO(594);
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));
@@ -616,19 +616,19 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_subspan___int_int_R_com_codename
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(613);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;
-label_L1223357487:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L227080339;
+label_L1182469998:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L2081368312;
     /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(614);
-    if (/* CustomInvoke */com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[5].data.o)<ilocals_1_) /* IF_IMPLT CustomJump */ goto label_L630949334;
-    if (/* CustomInvoke */com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[5].data.o)>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L630949334;
+    if (/* CustomInvoke */com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[5].data.o)<ilocals_1_) /* IF_IMPLT CustomJump */ goto label_L716996660;
+    if (/* CustomInvoke */com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(threadStateData, locals[5].data.o)>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L716996660;
     __CN1_DEBUG_INFO(616);
     /* CustomInvoke */virtual_com_codename1_ui_TextSelection_Span_add___com_codename1_ui_TextSelection_Char(threadStateData, locals[3].data.o, locals[5].data.o); 
 
-label_L630949334:
+label_L716996660:
     __CN1_DEBUG_INFO(618);
-    goto label_L1223357487;
+    goto label_L1182469998;
 
-label_L227080339:
+label_L2081368312:
     __CN1_DEBUG_INFO(619);
 
 {
@@ -641,11 +641,11 @@ label_L227080339:
 JAVA_OBJECT com_codename1_ui_TextSelection_Span_getBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6158, 2556);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(627);
-    if (get_field_com_codename1_ui_TextSelection_Span_boundsDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1217347025;
+    if (get_field_com_codename1_ui_TextSelection_Span_boundsDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1195473402;
     __CN1_DEBUG_INFO(628);
     com_codename1_ui_TextSelection_Span_calculateBounds__(threadStateData, __cn1ThisObject); 
 
-label_L1217347025:
+label_L1195473402:
     __CN1_DEBUG_INFO(630);
 
 {
@@ -670,17 +670,17 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Span_translate___int_int_R_com_codena
     set_field_com_codename1_ui_TextSelection_Span_component(threadStateData, get_field_com_codename1_ui_TextSelection_Span_component(__cn1ThisObject), locals[3].data.o);
     __CN1_DEBUG_INFO(642);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_Span_chars(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;
-label_L2076543121:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L34150451;
+label_L209667159:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1108136194;
     /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(643);
     BC_ALOAD(3);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_Char_translate___int_int_R_com_codename1_ui_TextSelection_Char(threadStateData, locals[5].data.o, ilocals_1_, ilocals_2_);
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_TextSelection_Span_add___com_codename1_ui_TextSelection_Char(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(644);
-    goto label_L2076543121;
+    goto label_L209667159;
 
-label_L34150451:
+label_L1108136194:
     __CN1_DEBUG_INFO(645);
 
 {

@@ -52,11 +52,11 @@ JAVA_VOID com_codename1_io_Log_4_actionPerformed___com_codename1_ui_events_Actio
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(577);
-    if (get_field_com_codename1_io_Log_4_val_consumeError(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1731877543;
+    if (get_field_com_codename1_io_Log_4_val_consumeError(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L510536150;
     __CN1_DEBUG_INFO(578);
     virtual_com_codename1_ui_events_ActionEvent_consume__(threadStateData, locals[1].data.o); 
 
-label_L1731877543:
+label_L510536150:
     __CN1_DEBUG_INFO(580);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -113,7 +113,7 @@ label_L1731877543:
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L21247289;
+    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L1935274924;
     __CN1_DEBUG_INFO(584);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -131,23 +131,23 @@ label_L1731877543:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     com_codename1_io_Log_p___java_lang_String(threadStateData, SP[-1].data.o);     SP-= 1;
-    goto label_L1528168968;
+    goto label_L1526336282;
 
-label_L21247289:
+label_L1935274924:
     __CN1_DEBUG_INFO(586);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8590)); 
 
-label_L1528168968:
+label_L1526336282:
     __CN1_DEBUG_INFO(588);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_io_Log_e___java_lang_Throwable(threadStateData, SP[-1].data.o);     SP-= 1;
     __CN1_DEBUG_INFO(589);
-    if (com_codename1_io_Log_getUniqueDeviceKey___R_java_lang_String(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L595319755;
+    if (com_codename1_io_Log_getUniqueDeviceKey___R_java_lang_String(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L64605090;
     __CN1_DEBUG_INFO(590);
     com_codename1_io_Log_sendLog__(threadStateData); 
 
-label_L595319755:
+label_L64605090:
     __CN1_DEBUG_INFO(592);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

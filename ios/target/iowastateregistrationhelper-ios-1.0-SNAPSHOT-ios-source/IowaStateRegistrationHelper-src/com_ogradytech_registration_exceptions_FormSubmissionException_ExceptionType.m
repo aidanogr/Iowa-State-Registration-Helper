@@ -2,6 +2,7 @@
 #include "com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_String.h"
+#include "java_lang_System.h"
 const struct clazz *base_interfaces_for_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType[] = {};
 struct clazz class__com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType = {
   DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType ,0 , &__GC_MARK_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType,  0, cn1_class_id_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType, "com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionType", 0, 0, 0, JAVA_FALSE, &class__java_lang_Enum, base_interfaces_for_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType, 0, 0, 0
@@ -88,15 +89,15 @@ void set_static_com_ogradytech_registration_exceptions_FormSubmissionException_E
     STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_RESOURCE_FETCHING_EXCEPTION = __cn1StaticVal;
 }
 
-JAVA_OBJECT STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES = 0;
-JAVA_OBJECT get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES(CODENAME_ONE_THREAD_STATE) {
+JAVA_OBJECT STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES = 0;
+JAVA_OBJECT get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
-     return STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES;
+     return STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES;
 }
 
-void set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
+void set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
     __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
-    STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES = __cn1StaticVal;
+    STATIC_FIELD_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES = __cn1StaticVal;
 }
 
 JAVA_VOID __FINALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
@@ -121,82 +122,48 @@ JAVA_OBJECT __NEW_ARRAY_com_ogradytech_registration_exceptions_FormSubmissionExc
 }
 
 
-JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_values___R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_1ARRAY(CODENAME_ONE_THREAD_STATE) {
-    __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 10507, 1865);
-    __CN1_DEBUG_INFO(10);
-    PUSH_OBJ(cloneArray(get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES(threadStateData)));
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return POP_OBJ();
-}
-
-
-JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_valueOf___java_lang_String_R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
-    __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 10507, 900);
-    locals[0].data.o = __cn1Arg1;
-    locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(10);
-    /* CustomInvoke */PUSH_OBJ(java_lang_Enum_valueOf___java_lang_Class_java_lang_String_R_java_lang_Enum(threadStateData, (JAVA_OBJECT)&class__com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType, locals[0].data.o));
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return POP_OBJ();
-}
-
-
-JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10507, 200);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
-    locals[1].type = CN1_TYPE_OBJECT;
-    JAVA_INT ilocals_2_ = __cn1Arg2;
-    __CN1_DEBUG_INFO(10);
-    /* CustomInvoke */java_lang_Enum___INIT_____java_lang_String_int(threadStateData, __cn1ThisObject, locals[1].data.o, ilocals_2_); 
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return;
-}
-
-
 JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 10507, 861);
+    DEFINE_METHOD_STACK(4, 0, 0, 10510, 861);
     __CN1_DEBUG_INFO(11);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10508), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10511), 0 /* ICONST_0 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_CLASS_NOT_FOUND(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(12);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10509), 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10512), 1 /* ICONST_1 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_NO_CLASSES_SUBMITTED(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(13);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10510), 2 /* ICONST_2 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10513), 2 /* ICONST_2 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_IO_EXCEPTION(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(14);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10511), 3 /* ICONST_3 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10514), 3 /* ICONST_3 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_BAD_FORMAT(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(15);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10512), 4/* ICONST_4 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10515), 4/* ICONST_4 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_PARSING_EXCEPTION(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(16);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10513), 5 /* ICONST_5 */);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10516), 5 /* ICONST_5 */);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_API_REQUEST_FAILED(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(17);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10514), 6);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10517), 6);     SP -= 1;
     set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_RESOURCE_FETCHING_EXCEPTION(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(10);
@@ -252,10 +219,68 @@ JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException_Excepti
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
     SP -= 3; }
-    set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES(threadStateData, PEEK_OBJ(1));
+    set_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES(threadStateData, PEEK_OBJ(1));
     SP--;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
+}
+
+
+JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10510, 200);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    JAVA_INT ilocals_2_ = __cn1Arg2;
+    __CN1_DEBUG_INFO(10);
+    /* CustomInvoke */java_lang_Enum___INIT_____java_lang_String_int(threadStateData, __cn1ThisObject, locals[1].data.o, ilocals_2_); 
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_values___R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_1ARRAY(CODENAME_ONE_THREAD_STATE) {
+    volatile JAVA_INT ilocals_1_ = 0; /* v1 */
+    __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
+    DEFINE_METHOD_STACK(5, 3, 0, 10510, 1865);
+    __CN1_DEBUG_INFO(1);
+    PUSH_POINTER(get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES(threadStateData));
+    BC_DUP(); /* DUP */
+    BC_ASTORE(0);
+    PUSH_INT(0); /* ICONST_0 */
+    BC_ALOAD(0);
+    { /* ARRAYLENGTH */
+        if(SP[-1].data.o == JAVA_NULL) { 
+            throwException(threadStateData, __NEW_INSTANCE_java_lang_NullPointerException(threadStateData)); 
+        }; 
+        SP[-1].type = CN1_TYPE_INT; 
+        SP[-1].data.i = (*((JAVA_ARRAY)SP[-1].data.o)).length; 
+    }
+    BC_DUP(); /* DUP */
+    BC_ISTORE(1);
+    SP--;
+    PUSH_POINTER(__NEW_ARRAY_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData, SP[0].data.i));
+    BC_DUP(); /* DUP */
+    BC_ASTORE(2);
+    PUSH_INT(0); /* ICONST_0 */
+    (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
+    (*SP).data.i = ilocals_1_; 
+    SP++;
+    java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(threadStateData, SP[-5].data.o, SP[-4].data.i, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 5;
+    BC_ALOAD(2);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_OBJ();
+}
+
+
+JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_valueOf___java_lang_String_R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    __STATIC_INITIALIZER_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(threadStateData);
+    DEFINE_METHOD_STACK(2, 1, 0, 10510, 900);
+    locals[0].data.o = __cn1Arg1;
+    locals[0].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(1);
+    /* CustomInvoke */PUSH_OBJ(java_lang_Enum_valueOf___java_lang_Class_java_lang_String_R_java_lang_Enum(threadStateData, (JAVA_OBJECT)&class__com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType, locals[0].data.o));
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_OBJ();
 }
 
 
@@ -356,7 +381,7 @@ void __INIT_VTABLE_com_ogradytech_registration_exceptions_FormSubmissionExceptio
 }
 
 JAVA_OBJECT __VALUE_OF_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT value) {
-        JAVA_ARRAY values = (JAVA_ARRAY)get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType__VALUES(threadStateData);
+        JAVA_ARRAY values = (JAVA_ARRAY)get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_ENUM_VALUES(threadStateData);
     JAVA_ARRAY_OBJECT* data = (JAVA_ARRAY_OBJECT*)values->data;
     int len = values->length;
     for (int i=0; i<len; i++) {

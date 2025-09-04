@@ -67,14 +67,14 @@ JAVA_BOOLEAN com_codename1_properties_PropertyIndex_1_hasNext___R_boolean(CODENA
         SP[-1].type = CN1_TYPE_INT; 
         SP[-1].data.i = (*((JAVA_ARRAY)SP[-1].data.o)).length; 
     }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L2128665553;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1277271172;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1734514802;
+    goto label_L721534548;
 
-label_L2128665553:
+label_L1277271172:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1734514802:
+label_L721534548:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

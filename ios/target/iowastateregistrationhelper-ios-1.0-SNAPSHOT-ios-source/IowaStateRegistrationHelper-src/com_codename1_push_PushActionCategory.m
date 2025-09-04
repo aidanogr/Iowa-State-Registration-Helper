@@ -110,8 +110,8 @@ JAVA_OBJECT com_codename1_push_PushActionCategory_getAllActions___com_codename1_
 locals[2].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_3_ = CN1_ARRAY_LENGTH(locals[2].data.o);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L1082789522:
-    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L762100699;
+label_L163399548:
+    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1789843584;
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;locals[5].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[2].data.o, ilocals_4_);
 locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     BC_ALOAD(1);
@@ -125,9 +125,9 @@ locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     SP--; /* POP */
     __CN1_DEBUG_INFO(72);
     BC_IINC(4, 1);
-    goto label_L1082789522;
+    goto label_L163399548;
 
-label_L762100699:
+label_L1789843584:
     __CN1_DEBUG_INFO(75);
     BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_java_util_Set_size___R_int(threadStateData, locals[1].data.o);

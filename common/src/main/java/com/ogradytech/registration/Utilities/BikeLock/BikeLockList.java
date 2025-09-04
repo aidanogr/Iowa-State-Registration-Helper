@@ -37,7 +37,7 @@ public class BikeLockList<E extends MinimallyIterable> implements List<E> {
 			action = () -> {
 				if(terminated) return;
 				int size = this.item.getSize();
-				for(int i = 0; i < size; i++) {
+				for(int i = 0; i < item.getSize(); i++) {
 					item.next();
 					if(prev != null) {
 						this.prev.action.run();

@@ -53,16 +53,16 @@ JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_2_call___com_codename1_ui_Com
     __CN1_DEBUG_INFO(2340);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_components_InfiniteProgress);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L889346570;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1383031847;
     __CN1_DEBUG_INFO(2341);
     /* CustomInvoke */virtual_com_codename1_components_InfiniteProgress_animate___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    goto label_L947069796;
+    goto label_L1327169167;
 
-label_L889346570:
+label_L1383031847:
     __CN1_DEBUG_INFO(2343);
     virtual_com_codename1_ui_Component_animate___R_boolean(threadStateData, locals[1].data.o); 
 
-label_L947069796:
+label_L1327169167:
     __CN1_DEBUG_INFO(2345);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

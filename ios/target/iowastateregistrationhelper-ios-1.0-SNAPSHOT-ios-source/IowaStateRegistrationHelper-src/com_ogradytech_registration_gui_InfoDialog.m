@@ -322,7 +322,7 @@ com_ogradytech_registration_gui_InfoDialog___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_ogradytech_registration_gui_InfoDialog___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10487, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10491, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(24);
     com_codename1_ui_Dialog___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(25);
@@ -380,7 +380,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog___INIT____(CODENAME_ONE_THR
     /* CustomInvoke */virtual_com_ogradytech_registration_gui_InfoDialog_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, get_field_com_ogradytech_registration_gui_InfoDialog_exitButton(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(34);
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InfoDialog_exitButton(__cn1ThisObject));
-    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Image_createImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10396)));
+    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Image_createImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10398)));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Image_scaledWidth___int_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, 100);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_Button_setIcon___com_codename1_ui_Image(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
@@ -400,9 +400,9 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog___INIT____(CODENAME_ONE_THR
     __CN1_DEBUG_INFO(42);
     /* CustomInvoke */virtual_com_ogradytech_registration_gui_InfoDialog_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, get_field_com_ogradytech_registration_gui_InfoDialog_infoContainer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(44);
-    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InfoDialog_layout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InfoDialog_infoContainer(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10392)); 
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InfoDialog_layout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InfoDialog_infoContainer(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10394)); 
     __CN1_DEBUG_INFO(45);
-    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InfoDialog_layout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InfoDialog_exitButton(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10488)); 
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_LayeredLayout_setInsets___com_codename1_ui_Component_java_lang_String_R_com_codename1_ui_layouts_LayeredLayout(threadStateData, get_field_com_ogradytech_registration_gui_InfoDialog_layout(__cn1ThisObject), get_field_com_ogradytech_registration_gui_InfoDialog_exitButton(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10492)); 
     __CN1_DEBUG_INFO(46);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -410,16 +410,14 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog___INIT____(CODENAME_ONE_THR
 
 
 JAVA_VOID com_ogradytech_registration_gui_InfoDialog_toggleInfoDialog___com_ogradytech_registration_gui_CalendarItem(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10487, 10404);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10491, 10406);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InfoDialog_courseName(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10489));
-    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10493));     SP -= 1;
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_gui_CalendarItem_getCourseName___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
@@ -432,9 +430,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog_toggleInfoDialog___com_ogra
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InfoDialog_section(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10490));
-    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10494));     SP -= 1;
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_gui_CalendarItem_getCurrentSection___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
@@ -447,9 +443,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog_toggleInfoDialog___com_ogra
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InfoDialog_instructionFormat(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10491));
-    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10495));     SP -= 1;
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_gui_CalendarItem_getInstructionFormat___R_com_ogradytech_registration_gui_CalendarItem_InstructionFormat(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_gui_CalendarItem_InstructionFormat_name___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -464,9 +458,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog_toggleInfoDialog___com_ogra
     PUSH_POINTER(get_field_com_ogradytech_registration_gui_InfoDialog_meetingPattern(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10492));
-    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10496));     SP -= 1;
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_gui_CalendarItem_getCurrentSectionMeetingInfo___R_com_ogradytech_registration_Utilities_MeetingInfo(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -485,7 +477,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog_toggleInfoDialog___com_ogra
 
 JAVA_VOID com_ogradytech_registration_gui_InfoDialog_show__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10487, 2935);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10491, 2935);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(58);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayHeight___R_int(threadStateData, SP[-1].data.o);
@@ -508,9 +500,9 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog_showUnfixed__(CODENAME_ONE_
 }
 
 
-JAVA_VOID com_ogradytech_registration_gui_InfoDialog_lambda$new$0___com_ogradytech_registration_gui_InfoDialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+JAVA_VOID com_ogradytech_registration_gui_InfoDialog_lambda$0___com_ogradytech_registration_gui_InfoDialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_ogradytech_registration_gui_InfoDialog(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10487, 10422);
+    DEFINE_METHOD_STACK(1, 2, 0, 10491, 10292);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

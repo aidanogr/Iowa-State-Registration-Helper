@@ -68,11 +68,11 @@ JAVA_VOID com_codename1_ui_TextSelection_4_4_run__(CODENAME_ONE_THREAD_STATE, JA
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(1033);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2055967078;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1138356642;
     __CN1_DEBUG_INFO(1034);
     /* CustomInvoke */virtual_com_codename1_ui_Form_pointerDragged___int_int(threadStateData, locals[1].data.o, virtual_com_codename1_ui_events_ActionEvent_getX___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_4_4_val_evt(__cn1ThisObject)), virtual_com_codename1_ui_events_ActionEvent_getY___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_4_4_val_evt(__cn1ThisObject))); 
 
-label_L2055967078:
+label_L1138356642:
     __CN1_DEBUG_INFO(1036);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

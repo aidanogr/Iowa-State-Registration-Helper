@@ -50,32 +50,32 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_4___INIT_____com_codename1_ui
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_4_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9642, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL119841067201;
-    int tryBlockOffsetL119841067201;
-    DEFINE_CATCH_BLOCK(catch_L119841067201, label_L1237264838, restoreToL119841067201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL105062324701;
+    int tryBlockOffsetL105062324701;
+    DEFINE_CATCH_BLOCK(catch_L105062324701, label_L1965036946, restoreToL105062324701);
     __CN1_DEBUG_INFO(639);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_4_val_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L2128961136, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_4_val_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1999036805, 0);
     __CN1_DEBUG_INFO(640);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L2128961136, 0);
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1999036805, 0);
     __CN1_DEBUG_INFO(641);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$308___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)); 
 
-label_L1198410672:
- tryBlockOffsetL119841067201 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L119841067201);
-    restoreToL119841067201 = threadStateData->threadObjectStackOffset;
+label_L1050623247:
+ tryBlockOffsetL105062324701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L105062324701);
+    restoreToL105062324701 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(643);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     virtual_com_codename1_ui_TextArea_requestFocus__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L864016033:
+label_L1101699580:
 END_TRY(1);    __CN1_DEBUG_INFO(645);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$310___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)); 
     __CN1_DEBUG_INFO(646);
-    JUMP_TO(label_L4181455, 0);
+    JUMP_TO(label_L178603358, 0);
 
-label_L1237264838:
+label_L1965036946:
     __CN1_DEBUG_INFO(645);
     BC_ASTORE(1);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$310___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)); 
@@ -83,7 +83,7 @@ label_L1237264838:
     BC_ALOAD(1);
     throwException(threadStateData, POP_OBJ());
 
-label_L4181455:
+label_L178603358:
     __CN1_DEBUG_INFO(647);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_4_val_current(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(648);
@@ -93,7 +93,7 @@ label_L4181455:
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_4_1___INIT_____com_codename1_impl_ios_IOSImplementation_4(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Display_callSerially___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L2128961136:
+label_L1999036805:
     __CN1_DEBUG_INFO(656);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

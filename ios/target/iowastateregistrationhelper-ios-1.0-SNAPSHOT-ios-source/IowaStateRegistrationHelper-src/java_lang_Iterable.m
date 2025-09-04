@@ -150,6 +150,8 @@ void __STATIC_INITIALIZER_java_lang_Iterable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_Hashtable_6][0] = 10;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_TreeMap_1] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_java_util_TreeMap_1][0] = 10;
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_Utilities_BikeLock_BikeLockList] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_Utilities_BikeLock_BikeLockList][0] = 10;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_InfoDialog] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_InfoDialog][0] = 316;
     classToInterfaceMap_java_lang_Iterable[cn1_class_id_com_ogradytech_registration_gui_DropdownContainer] = malloc(sizeof(int*) * 13);

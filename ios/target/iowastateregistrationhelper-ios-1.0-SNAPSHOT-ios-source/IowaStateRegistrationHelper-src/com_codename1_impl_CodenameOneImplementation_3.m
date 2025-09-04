@@ -98,14 +98,14 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_3___INIT_____com_codename
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8908, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1482169014cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1482169014cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1482169014cn1_class_id_java_lang_Throwable1, label_L49318987, restoreToL1482169014cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL300474755cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL300474755cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L300474755cn1_class_id_java_lang_Throwable1, label_L1006624255, restoreToL300474755cn1_class_id_java_lang_Throwable1);
 
-label_L1482169014:
- tryBlockOffsetL1482169014cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1482169014cn1_class_id_java_lang_Throwable1);
-    restoreToL1482169014cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L300474755:
+ tryBlockOffsetL300474755cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L300474755cn1_class_id_java_lang_Throwable1);
+    restoreToL300474755cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3908);
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_3_val_out(__cn1ThisObject));
@@ -113,17 +113,17 @@ label_L1482169014:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_util_AsyncResource_complete___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1020514155:
+label_L208341157:
 END_TRY(1);    __CN1_DEBUG_INFO(3911);
-    JUMP_TO(label_L1058650291, 0);
+    JUMP_TO(label_L1721180011, 0);
 
-label_L49318987:
+label_L1006624255:
     __CN1_DEBUG_INFO(3909);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(3910);
     /* CustomInvoke */virtual_com_codename1_util_AsyncResource_error___java_lang_Throwable(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_3_val_out(__cn1ThisObject), locals[1].data.o); 
 
-label_L1058650291:
+label_L1721180011:
     __CN1_DEBUG_INFO(3912);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

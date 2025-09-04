@@ -58,7 +58,8 @@ public class CalendarContainerWrapper  {
 		//toolbar buttons
 
 		conflictButton = new ConflictInfoButton(null);
-		findNextNonConflictingScheduleButton = new Button("Next non-conflicting schedule");
+		findNextNonConflictingScheduleButton = new Button("Next (non-conflicting) | ");
+		findNextNonConflictingScheduleButton.setUIID("InfoButton");
 		findNextNonConflictingScheduleButton.addActionListener(evt -> {
 			findNextNonConflictingSchedule(this);
 		});

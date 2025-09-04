@@ -99,11 +99,11 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerDateModel_setValue___java_util_Date(CO
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     set_field_com_codename1_ui_spinner_SpinnerDateModel_currentValue(threadStateData, POP_LONG(), POP_OBJ());
     __CN1_DEBUG_INFO(60);
-    if (ilocals_2_==virtual_com_codename1_ui_spinner_SpinnerDateModel_getSelectedIndex___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L260115480;
+    if (ilocals_2_==virtual_com_codename1_ui_spinner_SpinnerDateModel_getSelectedIndex___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L220144544;
     __CN1_DEBUG_INFO(61);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireSelectionEvent___int_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerDateModel_selectionListener(__cn1ThisObject), ilocals_2_, virtual_com_codename1_ui_spinner_SpinnerDateModel_getSelectedIndex___R_int(threadStateData, __cn1ThisObject)); 
 
-label_L260115480:
+label_L220144544:
     __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -12,7 +12,7 @@ public class ConflictInfoButton extends Button {
 	private LinkedList<CalendarItem[]> conflictingSections;
 
 	public ConflictInfoButton(LinkedList<CalendarItem[]> conflictingSections) throws IOException {
-		this.setText("Conflicts");
+		this.setText("Conflicts | ");
 		this.setUIID("InfoButton");
 		this.addActionListener(evt ->{
 			InstructionalDialog d = new InstructionalDialog("DialogTitle", "DialogBody"); 
