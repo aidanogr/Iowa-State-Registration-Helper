@@ -33,6 +33,7 @@ https://www.youtube.com/shorts/3Vi4C1HuLZw
 -Unit tests are missing on just about everything
 
 -Missing features list:
+
  * Ability to save schedules (and output sections as txt file)
 
  * Notification for when there are no schedules for the current classes
@@ -41,5 +42,5 @@ https://www.youtube.com/shorts/3Vi4C1HuLZw
 
  * The "Toolbar" in the calendar view should probably be a nav bar so we have a place to put these features
 
- *Ability to add a new class in the list
+ * Ability to add a new class in the list
 
