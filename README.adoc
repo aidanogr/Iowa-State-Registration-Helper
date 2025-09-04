@@ -21,7 +21,21 @@ https://www.youtube.com/shorts/3Vi4C1HuLZw
 - A working Java 8+ installation.
 
 ### Running the Project
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/iowa-state-registration-helper.git
+1. Clone this repository: git clone https://github.com/aidanogr/iowastateregistrationhelper.git
 2. How you run the project depends on your IDE. Follow [The Developer Guide](https://www.codenameone.com/developer-guide.html) 
+
+
+---
+
+## Current bugs and TODOs
+-"BikeLock" algorithm to find next non conflicting course section is very slow (O(n^m)), a lower complexity algorithm would be nice (or even just less overhead on the current algorithm, which is Action based)
+
+-Unit tests are missing on just about everything
+
+-Missing features list:
+ * Ability to save schedules (and output sections as txt file)
+ * Notification for when there are no schedules for the current classes
+ * Ability to remove a course section from the data structure entirely (should be easy but...)
+ * The "Toolbar" in the calendar view should probably be a nav bar so we have a place to put these features
+ *Ability to add a new class in the list
+
