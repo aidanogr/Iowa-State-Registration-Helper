@@ -139,15 +139,15 @@ JAVA_BOOLEAN com_codename1_io_URL_equals___java_lang_Object_R_boolean(CODENAME_O
     __CN1_DEBUG_INFO(92);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_io_URL);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1012707347;
-    if (/* CustomInvoke */virtual_java_net_URI_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_URL_u(locals[1].data.o), locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1012707347;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L256186736;
+    if (/* CustomInvoke */virtual_java_net_URI_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_URL_u(locals[1].data.o), locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L256186736;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1600734767;
+    goto label_L1249676471;
 
-label_L1012707347:
+label_L256186736:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1600734767:
+label_L1249676471:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

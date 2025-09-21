@@ -71,7 +71,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18___INIT_____com_codename1_i
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_playImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9537, 8667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3330);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1625901537;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L37268876;
     __CN1_DEBUG_INFO(3331);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_startAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3332);
@@ -79,7 +79,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_playImpl__(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(3333);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Playing(threadStateData)); 
 
-label_L1625901537:
+label_L37268876:
     __CN1_DEBUG_INFO(3335);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -89,7 +89,7 @@ label_L1625901537:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_pauseImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9537, 8668);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3339);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1011599868;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1125098735;
     __CN1_DEBUG_INFO(3340);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3341);
@@ -97,7 +97,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_pauseImpl__(CODENAME_ONE_T
     __CN1_DEBUG_INFO(3342);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Paused(threadStateData)); 
 
-label_L1011599868:
+label_L1125098735:
     __CN1_DEBUG_INFO(3344);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -107,11 +107,11 @@ label_L1011599868:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9537, 903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3347);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L109065770;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L392289808;
     __CN1_DEBUG_INFO(3348);
     virtual_com_codename1_impl_ios_IOSImplementation_18_cleanup__(threadStateData, __cn1ThisObject); 
 
-label_L109065770:
+label_L392289808:
     __CN1_DEBUG_INFO(3350);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -121,13 +121,13 @@ label_L109065770:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_cleanup__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9537, 1728);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3354);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_18_playing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L896134613;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_18_playing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L585074510;
     __CN1_DEBUG_INFO(3355);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3356);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Paused(threadStateData)); 
 
-label_L896134613:
+label_L585074510:
     __CN1_DEBUG_INFO(3358);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_cleanupAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3359);

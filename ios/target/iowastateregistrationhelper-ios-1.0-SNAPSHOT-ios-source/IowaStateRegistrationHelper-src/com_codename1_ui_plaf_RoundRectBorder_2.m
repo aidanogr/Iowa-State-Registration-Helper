@@ -81,8 +81,8 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_2___INIT_____com_codename1_ui_pl
 JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 5888, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(836);
-    if (get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_w(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L942714988;
-    if (get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_h(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L942714988;
+    if (get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_w(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L894746048;
+    if (get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_h(__cn1ThisObject)!=virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L894746048;
     __CN1_DEBUG_INFO(837);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$1100___com_codename1_ui_plaf_RoundRectBorder_com_codename1_ui_Component_int_int_boolean_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_this_0(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_w(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_h(__cn1ThisObject), 0 /* ICONST_0 */);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(838);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject));
@@ -100,7 +100,7 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_2_run__(CODENAME_ONE_THREAD_STAT
     __CN1_DEBUG_INFO(839);
     virtual_com_codename1_ui_Component_repaint__(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_2_val_c(__cn1ThisObject)); 
 
-label_L942714988:
+label_L894746048:
     __CN1_DEBUG_INFO(841);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

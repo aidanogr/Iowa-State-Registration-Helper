@@ -469,13 +469,13 @@ JAVA_VOID com_codename1_payment_Receipt_registerExternalizable__(CODENAME_ONE_TH
     __STATIC_INITIALIZER_com_codename1_payment_Receipt(threadStateData);
     DEFINE_METHOD_STACK(2, 0, 0, 9143, 8467);
     __CN1_DEBUG_INFO(241);
-    if (com_codename1_payment_Receipt_isExternalizableRegistered___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1023469953;
+    if (com_codename1_payment_Receipt_isExternalizableRegistered___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L378787077;
     __CN1_DEBUG_INFO(242);
     /* CustomInvoke */com_codename1_io_Util_register___java_lang_String_java_lang_Class(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9155), (JAVA_OBJECT)&class__com_codename1_payment_Receipt); 
     __CN1_DEBUG_INFO(243);
     /* CustomInvoke */com_codename1_payment_Receipt_setExternalizableRegistered___boolean(threadStateData, 1 /* ICONST_1 */); 
 
-label_L1023469953:
+label_L378787077:
     __CN1_DEBUG_INFO(246);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

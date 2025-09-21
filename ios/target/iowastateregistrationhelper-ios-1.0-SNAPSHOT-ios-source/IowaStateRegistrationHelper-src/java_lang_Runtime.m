@@ -43,7 +43,7 @@ java_lang_Runtime___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_Runtime___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10528, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10531, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -51,7 +51,7 @@ JAVA_VOID java_lang_Runtime___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
 
 
 JAVA_VOID java_lang_Runtime_exit___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10528, 1142);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10531, 1142);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */java_lang_System_exit___int(threadStateData, ilocals_1_); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -65,7 +65,7 @@ JAVA_LONG java_lang_Runtime_freeMemory___R_long(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_VOID java_lang_Runtime_gc__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(0, 1, 0, 10528, 1143);
+    DEFINE_INSTANCE_METHOD_STACK(0, 1, 0, 10531, 1143);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_System_gc__(threadStateData); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -83,7 +83,7 @@ JAVA_LONG java_lang_Runtime_totalMemory___R_long(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID java_lang_Runtime___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 10528, 861);
+    DEFINE_METHOD_STACK(2, 0, 0, 10531, 861);
     PUSH_POINTER(__NEW_java_lang_Runtime(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_Runtime___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;

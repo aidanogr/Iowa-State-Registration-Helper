@@ -84,18 +84,18 @@ JAVA_VOID com_codename1_ui_scene_TextPainter_paint___com_codename1_ui_Graphics_c
     locals[3].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(57);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_scene_Node_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(58);
-    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L58683880;
+    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2028277706;
     __CN1_DEBUG_INFO(59);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L58683880:
+label_L2028277706:
     __CN1_DEBUG_INFO(61);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_plaf_Style_getFont___R_com_codename1_ui_Font(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(62);
-    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1672524765;
+    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L626370950;
     __CN1_DEBUG_INFO(63);
     /* VarOp.assignFrom */ locals[5].data.o = com_codename1_ui_Font_getDefaultFont___R_com_codename1_ui_Font(threadStateData);locals[5].type=CN1_TYPE_OBJECT;
-label_L1672524765:
+label_L626370950:
     __CN1_DEBUG_INFO(65);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */virtual_com_codename1_ui_Font_stringWidth___java_lang_String_R_int(threadStateData, locals[5].data.o, get_field_com_codename1_ui_scene_TextPainter_text(__cn1ThisObject));
     __CN1_DEBUG_INFO(66);
@@ -137,42 +137,42 @@ label_L1672524765:
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 3: goto label_L964557800;
-        case 4: goto label_L2017419121;
-        default: goto label_L3641775;
+        case 3: goto label_L1992656846;
+        case 4: goto label_L44989469;
+        default: goto label_L1382394077;
     }
 
-label_L2017419121:
+label_L44989469:
     __CN1_DEBUG_INFO(76);
     /* VarOp.assignFrom */ ilocals_12_=((ilocals_8_ + (ilocals_10_ / 2 /* ICONST_2 */)) - (ilocals_6_ / 2 /* ICONST_2 */));
     __CN1_DEBUG_INFO(77);
-    goto label_L3641775;
+    goto label_L1382394077;
 
-label_L964557800:
+label_L1992656846:
     __CN1_DEBUG_INFO(79);
     /* VarOp.assignFrom */ ilocals_12_=((ilocals_8_ + ilocals_10_) - ilocals_6_);
 
-label_L3641775:
+label_L1382394077:
     __CN1_DEBUG_INFO(83);
     PUSH_INT(get_field_com_codename1_ui_scene_TextPainter_vAlign(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 2: goto label_L1728050223;
-        case 4: goto label_L814473635;
-        default: goto label_L852354068;
+        case 2: goto label_L1525953166;
+        case 4: goto label_L5584361;
+        default: goto label_L1911222122;
     }
 
-label_L814473635:
+label_L5584361:
     __CN1_DEBUG_INFO(85);
     /* VarOp.assignFrom */ ilocals_13_=((ilocals_9_ + (ilocals_11_ / 2 /* ICONST_2 */)) - (ilocals_7_ / 2 /* ICONST_2 */));
     __CN1_DEBUG_INFO(86);
-    goto label_L852354068;
+    goto label_L1911222122;
 
-label_L1728050223:
+label_L1525953166:
     __CN1_DEBUG_INFO(88);
     /* VarOp.assignFrom */ ilocals_13_=((ilocals_9_ + ilocals_11_) - ilocals_7_);
 
-label_L852354068:
+label_L1911222122:
     __CN1_DEBUG_INFO(91);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setFont___com_codename1_ui_Font(threadStateData, locals[1].data.o, locals[5].data.o); 
     __CN1_DEBUG_INFO(92);

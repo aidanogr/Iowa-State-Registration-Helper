@@ -60,7 +60,7 @@ JAVA_VOID com_codename1_ui_Form_1_actionPerformed___com_codename1_ui_events_Acti
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(610);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1190941229;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1655939830;
     __CN1_DEBUG_INFO(611);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle(threadStateData)); /* NEW */
@@ -69,7 +69,7 @@ JAVA_VOID com_codename1_ui_Form_1_actionPerformed___com_codename1_ui_events_Acti
     BC_ALOAD(2);
     virtual_com_codename1_ui_Component_scrollRectToVisible___com_codename1_ui_geom_Rectangle_com_codename1_ui_Component(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L1190941229:
+label_L1655939830:
     __CN1_DEBUG_INFO(613);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

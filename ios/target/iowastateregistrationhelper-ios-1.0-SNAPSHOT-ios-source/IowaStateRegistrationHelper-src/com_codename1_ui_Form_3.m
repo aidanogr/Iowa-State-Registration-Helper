@@ -213,9 +213,9 @@ JAVA_VOID com_codename1_ui_Form_3_paintBackground___com_codename1_ui_Graphics(CO
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1536);
-    if (virtual_com_codename1_ui_Form_3_getComponentCount___R_int(threadStateData, __cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L1094446968;
+    if (virtual_com_codename1_ui_Form_3_getComponentCount___R_int(threadStateData, __cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L61041877;
     __CN1_DEBUG_INFO(1537);
-    if (virtual_com_codename1_ui_Form_3_isVisible___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1094446968;
+    if (virtual_com_codename1_ui_Form_3_isVisible___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L61041877;
     __CN1_DEBUG_INFO(1538);
     /* CustomInvoke */virtual_com_codename1_ui_Form_3_setVisible___boolean(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1539);
@@ -223,7 +223,7 @@ JAVA_VOID com_codename1_ui_Form_3_paintBackground___com_codename1_ui_Graphics(CO
     __CN1_DEBUG_INFO(1540);
     /* CustomInvoke */virtual_com_codename1_ui_Form_3_setVisible___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
 
-label_L1094446968:
+label_L61041877:
     __CN1_DEBUG_INFO(1543);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

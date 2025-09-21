@@ -87,8 +87,6 @@ void __STATIC_INITIALIZER_java_lang_Runnable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub][0] = 18;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub_1] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_IowaStateRegistrationHelperStub_1][0] = 10;
-    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_Utilities_BikeLock_BikeLockList_Node__Lambda_1] = malloc(sizeof(int*) * 13);
-    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_ogradytech_registration_Utilities_BikeLock_BikeLockList_Node__Lambda_1][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_codename1_impl_CodenameOneThread] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_codename1_impl_CodenameOneThread][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_codename1_impl_CodenameOneImplementation_RPush] = malloc(sizeof(int*) * 13);

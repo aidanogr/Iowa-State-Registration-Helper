@@ -44,7 +44,7 @@ com_ogradytech_registration_Utilities_GUIUtilities___INIT____(threadStateData, o
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_GUIUtilities___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10427, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10428, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -55,7 +55,7 @@ JAVA_VOID com_ogradytech_registration_Utilities_GUIUtilities___INIT____(CODENAME
 JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getVerticalInsetPercentages___com_ogradytech_registration_Utilities_MeetingInfo_R_double_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_GUIUtilities(threadStateData);
-    DEFINE_METHOD_STACK(8, 4, 0, 10427, 10428);
+    DEFINE_METHOD_STACK(8, 4, 0, 10428, 10429);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(20);
@@ -65,10 +65,9 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getVerticalInsetP
     __CN1_DEBUG_INFO(23);
     BC_ALOAD(1);
     PUSH_INT(0); /* ICONST_0 */
-    BC_ALOAD(0);
     __CN1_DEBUG_INFO(24);
-    { JAVA_INT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_getStartHour___R_short(threadStateData, SP[-1].data.o);
-    SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
+    { JAVA_INT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_getStartHour___R_short(threadStateData, locals[0].data.o);
+    PUSH_INT(tmpResult); }
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     PUSH_DOUBLE(7.0); /* LDC */
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
@@ -79,16 +78,17 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getVerticalInsetP
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     PUSH_DOUBLE(15.0); /* LDC */
+    __CN1_DEBUG_INFO(23);
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
+    __CN1_DEBUG_INFO(25);
     PUSH_DOUBLE(100.0); /* LDC */
+    __CN1_DEBUG_INFO(23);
     SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* DASTORE */
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
-    __CN1_DEBUG_INFO(28);
-    BC_ALOAD(0);
     __CN1_DEBUG_INFO(29);
-    { JAVA_INT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_getEndHour___R_short(threadStateData, SP[-1].data.o);
-    SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
+    { JAVA_INT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_getEndHour___R_short(threadStateData, locals[0].data.o);
+    PUSH_INT(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_ogradytech_registration_Utilities_MeetingInfo_getStartHour___R_short(threadStateData, locals[0].data.o);
     PUSH_INT(tmpResult); }
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
@@ -103,8 +103,11 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getVerticalInsetP
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     PUSH_DOUBLE(15.0); /* LDC */
+    __CN1_DEBUG_INFO(28);
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
+    __CN1_DEBUG_INFO(30);
     PUSH_DOUBLE(100.0); /* LDC */
+    __CN1_DEBUG_INFO(28);
     SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
     BC_DSTORE(2);
     __CN1_DEBUG_INFO(32);
@@ -122,7 +125,7 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getHorizontalInse
     volatile JAVA_INT ilocals_0_ = 0; /* dayOfTheWeek */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_GUIUtilities(threadStateData);
-    DEFINE_METHOD_STACK(8, 3, 0, 10427, 10429);
+    DEFINE_METHOD_STACK(8, 3, 0, 10428, 10430);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(44);
     PUSH_INT(2); /* ICONST_2 */
@@ -136,66 +139,54 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_GUIUtilities_getHorizontalInse
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 70: goto label_L751608431;
-        case 71: goto label_L1723290893;
-        case 72: goto label_L1723290893;
-        case 73: goto label_L1723290893;
-        case 74: goto label_L1723290893;
-        case 75: goto label_L1723290893;
-        case 76: goto label_L1723290893;
-        case 77: goto label_L893640573;
-        case 78: goto label_L1723290893;
-        case 79: goto label_L1723290893;
-        case 80: goto label_L1723290893;
-        case 81: goto label_L1723290893;
-        case 82: goto label_L2085886997;
-        case 83: goto label_L893523498;
-        case 84: goto label_L1770070706;
-        case 85: goto label_L1723290893;
-        case 86: goto label_L1723290893;
-        case 87: goto label_L1108517064;
-        default: goto label_L1723290893;
+        case 70: goto label_L1429483328;
+        case 77: goto label_L172794870;
+        case 82: goto label_L1927963027;
+        case 83: goto label_L833240229;
+        case 84: goto label_L1167088639;
+        case 87: goto label_L707531688;
+        default: goto label_L191568263;
     }
 
-label_L893640573:
+label_L172794870:
     __CN1_DEBUG_INFO(48);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(49);
-    goto label_L511354923;
+    goto label_L1799635803;
 
-label_L1770070706:
+label_L1167088639:
     __CN1_DEBUG_INFO(51);
     /* VarOp.assignFrom */     ilocals_2_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(52);
-    goto label_L511354923;
+    goto label_L1799635803;
 
-label_L1108517064:
+label_L707531688:
     __CN1_DEBUG_INFO(54);
     /* VarOp.assignFrom */     ilocals_2_ = 2 /* ICONST_2 */; 
     __CN1_DEBUG_INFO(55);
-    goto label_L511354923;
+    goto label_L1799635803;
 
-label_L2085886997:
+label_L1927963027:
     __CN1_DEBUG_INFO(57);
     /* VarOp.assignFrom */     ilocals_2_ = 3 /* ICONST_3 */; 
     __CN1_DEBUG_INFO(58);
-    goto label_L511354923;
+    goto label_L1799635803;
 
-label_L751608431:
+label_L1429483328:
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */     ilocals_2_ = 4/* ICONST_4 */; 
     __CN1_DEBUG_INFO(61);
-    goto label_L511354923;
+    goto label_L1799635803;
 
-label_L893523498:
+label_L833240229:
     __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1723290893:
+label_L191568263:
     __CN1_DEBUG_INFO(65);
-    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_err(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10430)); 
+    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_err(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10431)); 
 
-label_L511354923:
+label_L1799635803:
     __CN1_DEBUG_INFO(69);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, 0 /* ICONST_0 */, ((((JAVA_DOUBLE)ilocals_2_) / 5.0) * 100.0));
     __CN1_DEBUG_INFO(72);

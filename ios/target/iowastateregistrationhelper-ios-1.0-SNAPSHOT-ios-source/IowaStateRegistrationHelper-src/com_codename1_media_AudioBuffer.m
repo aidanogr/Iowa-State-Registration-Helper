@@ -116,22 +116,22 @@ JAVA_OBJECT __NEW_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_INT com_codename1_media_AudioBuffer_retain___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8646, 219);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL40963968101;
-    int tryBlockOffsetL40963968101;
-    DEFINE_CATCH_BLOCK(catch_L40963968101, label_L1984549712, restoreToL40963968101);
-    int restoreToL198454971202;
-    int tryBlockOffsetL198454971202;
-    DEFINE_CATCH_BLOCK(catch_L198454971202, label_L1984549712, restoreToL198454971202);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL110553120001;
+    int tryBlockOffsetL110553120001;
+    DEFINE_CATCH_BLOCK(catch_L110553120001, label_L924835651, restoreToL110553120001);
+    int restoreToL92483565102;
+    int tryBlockOffsetL92483565102;
+    DEFINE_CATCH_BLOCK(catch_L92483565102, label_L924835651, restoreToL92483565102);
     __CN1_DEBUG_INFO(39);
     PUSH_POINTER(get_field_com_codename1_media_AudioBuffer_refLock(__cn1ThisObject));
     BC_DUP(); /* DUP */
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L409639681:
- tryBlockOffsetL40963968101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L40963968101);
-    restoreToL40963968101 = threadStateData->threadObjectStackOffset;
+label_L1105531200:
+ tryBlockOffsetL110553120001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L110553120001);
+    restoreToL110553120001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(40);
     set_field_com_codename1_media_AudioBuffer_refCounter(threadStateData, (get_field_com_codename1_media_AudioBuffer_refCounter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
@@ -140,20 +140,20 @@ label_L409639681:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L663256318:
+label_L782042179:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
-label_L1984549712:
- tryBlockOffsetL198454971202 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L198454971202);
-    restoreToL198454971202 = threadStateData->threadObjectStackOffset;
+label_L924835651:
+ tryBlockOffsetL92483565102 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L92483565102);
+    restoreToL92483565102 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(42);
     BC_ASTORE(2);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1339999655:
+label_L547873137:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -162,22 +162,22 @@ END_TRY(1);    BC_ALOAD(2);
 
 JAVA_INT com_codename1_media_AudioBuffer_release___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8646, 220);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL156178229101;
-    int tryBlockOffsetL156178229101;
-    DEFINE_CATCH_BLOCK(catch_L156178229101, label_L937943177, restoreToL156178229101);
-    int restoreToL93794317702;
-    int tryBlockOffsetL93794317702;
-    DEFINE_CATCH_BLOCK(catch_L93794317702, label_L937943177, restoreToL93794317702);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL103153807701;
+    int tryBlockOffsetL103153807701;
+    DEFINE_CATCH_BLOCK(catch_L103153807701, label_L938903489, restoreToL103153807701);
+    int restoreToL93890348902;
+    int tryBlockOffsetL93890348902;
+    DEFINE_CATCH_BLOCK(catch_L93890348902, label_L938903489, restoreToL93890348902);
     __CN1_DEBUG_INFO(45);
     PUSH_POINTER(get_field_com_codename1_media_AudioBuffer_refLock(__cn1ThisObject));
     BC_DUP(); /* DUP */
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1561782291:
- tryBlockOffsetL156178229101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L156178229101);
-    restoreToL156178229101 = threadStateData->threadObjectStackOffset;
+label_L1031538077:
+ tryBlockOffsetL103153807701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L103153807701);
+    restoreToL103153807701 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(46);
     set_field_com_codename1_media_AudioBuffer_refCounter(threadStateData, (get_field_com_codename1_media_AudioBuffer_refCounter(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
@@ -186,20 +186,20 @@ label_L1561782291:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1494228380:
+label_L2015933696:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
-label_L937943177:
- tryBlockOffsetL93794317702 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L93794317702);
-    restoreToL93794317702 = threadStateData->threadObjectStackOffset;
+label_L938903489:
+ tryBlockOffsetL93890348902 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L93890348902);
+    restoreToL93890348902 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(48);
     BC_ASTORE(2);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L138993059:
+label_L778905934:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -291,7 +291,7 @@ JAVA_VOID com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY_int_in
     ilocals_4_ = __cn1Arg4;
     ilocals_5_ = __cn1Arg5;
     __CN1_DEBUG_INFO(137);
-    if (ilocals_5_<=CN1_ARRAY_LENGTH(get_field_com_codename1_media_AudioBuffer_buffer(__cn1ThisObject))) /* IF_ICMPLE CustomJump */ goto label_L1492144742;
+    if (ilocals_5_<=CN1_ARRAY_LENGTH(get_field_com_codename1_media_AudioBuffer_buffer(__cn1ThisObject))) /* IF_ICMPLE CustomJump */ goto label_L696099523;
     __CN1_DEBUG_INFO(138);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -313,7 +313,7 @@ JAVA_VOID com_codename1_media_AudioBuffer_copyFrom___int_int_float_1ARRAY_int_in
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1492144742:
+label_L696099523:
     __CN1_DEBUG_INFO(140);
     set_field_com_codename1_media_AudioBuffer_sampleRate(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(141);
@@ -369,59 +369,59 @@ JAVA_INT com_codename1_media_AudioBuffer_getMaxSize___R_int(CODENAME_ONE_THREAD_
 
 JAVA_VOID com_codename1_media_AudioBuffer_fireFrameReceived__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 8646, 8654);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL210887452801;
-    int tryBlockOffsetL210887452801;
-    DEFINE_CATCH_BLOCK(catch_L210887452801, label_L324097801, restoreToL210887452801);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL170660143201;
+    int tryBlockOffsetL170660143201;
+    DEFINE_CATCH_BLOCK(catch_L170660143201, label_L731622584, restoreToL170660143201);
     __CN1_DEBUG_INFO(198);
     set_field_com_codename1_media_AudioBuffer_inFireFrame(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L2108874528:
- tryBlockOffsetL210887452801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L210887452801);
-    restoreToL210887452801 = threadStateData->threadObjectStackOffset;
+label_L1706601432:
+ tryBlockOffsetL170660143201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L170660143201);
+    restoreToL170660143201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(201);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_media_AudioBuffer_callbacks(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;
-label_L1090718753:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L456793666, 1);
+label_L1820277494:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L676396677, 1);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(202);
     /* CustomInvoke */virtual_com_codename1_media_AudioBuffer_AudioBufferCallback_frameReceived___com_codename1_media_AudioBuffer(threadStateData, locals[2].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(203);
-    JUMP_TO(label_L1090718753, 1);
+    JUMP_TO(label_L1820277494, 1);
 
-label_L456793666:
+label_L676396677:
 END_TRY(1);    __CN1_DEBUG_INFO(205);
     set_field_com_codename1_media_AudioBuffer_inFireFrame(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L623343194:
+label_L1141720517:
     __CN1_DEBUG_INFO(206);
-    if (virtual_java_util_ArrayList_isEmpty___R_boolean(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L1012373446, 0);
+    if (virtual_java_util_ArrayList_isEmpty___R_boolean(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L847626561, 0);
     __CN1_DEBUG_INFO(207);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject), 0 /* ICONST_0 */);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(208);
     virtual_java_lang_Runnable_run__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(209);
-    JUMP_TO(label_L623343194, 0);
+    JUMP_TO(label_L1141720517, 0);
 
-label_L324097801:
+label_L731622584:
     __CN1_DEBUG_INFO(205);
     BC_ASTORE(3);
     set_field_com_codename1_media_AudioBuffer_inFireFrame(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L924835651:
+label_L2117799963:
     __CN1_DEBUG_INFO(206);
-    if (virtual_java_util_ArrayList_isEmpty___R_boolean(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L1856287922, 0);
+    if (virtual_java_util_ArrayList_isEmpty___R_boolean(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L1803955991, 0);
     __CN1_DEBUG_INFO(207);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_codename1_media_AudioBuffer_pendingOps(__cn1ThisObject), 0 /* ICONST_0 */);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(208);
     virtual_java_lang_Runnable_run__(threadStateData, locals[4].data.o); 
     __CN1_DEBUG_INFO(209);
-    JUMP_TO(label_L924835651, 0);
+    JUMP_TO(label_L2117799963, 0);
 
-label_L1856287922:
+label_L1803955991:
     __CN1_DEBUG_INFO(210);
     BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1012373446:
+label_L847626561:
     __CN1_DEBUG_INFO(211);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

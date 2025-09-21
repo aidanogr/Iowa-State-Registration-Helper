@@ -52,23 +52,23 @@ JAVA_VOID com_codename1_ui_BrowserComponent_9_run__(CODENAME_ONE_THREAD_STATE, J
     DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8142, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(557);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_createBrowserComponent___java_lang_Object_R_com_codename1_ui_PeerComponent(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), get_field_com_codename1_ui_BrowserComponent_9_this_0(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(558);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L73878928;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2027308154;
     __CN1_DEBUG_INFO(559);
-    if (com_codename1_ui_CN_isSimulator___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1618489605;
+    if (com_codename1_ui_CN_isSimulator___R_boolean(threadStateData)==0) /* IFEQ CustomJump */ goto label_L2054332292;
     __CN1_DEBUG_INFO(560);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8143)); 
-    goto label_L311559967;
+    goto label_L507944445;
 
-label_L1618489605:
+label_L2054332292:
     __CN1_DEBUG_INFO(562);
     /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8144)); 
 
-label_L311559967:
+label_L507944445:
     __CN1_DEBUG_INFO(564);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L73878928:
+label_L2027308154:
     __CN1_DEBUG_INFO(566);
     /* CustomInvoke */com_codename1_ui_BrowserComponent_access$302___com_codename1_ui_BrowserComponent_com_codename1_ui_PeerComponent_R_com_codename1_ui_PeerComponent(threadStateData, get_field_com_codename1_ui_BrowserComponent_9_this_0(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(567);

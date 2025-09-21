@@ -74,7 +74,7 @@ JAVA_INT com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(COD
     __CN1_DEBUG_INFO(185);
     /* VarOp.assignFrom */     ilocals_2_ = -1 /* ICONST_M1 */; 
     __CN1_DEBUG_INFO(186);
-    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffer(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L663535450;
+    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffer(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1014071026;
     __CN1_DEBUG_INFO(187);
     BC_ALOAD(0);
     PUSH_INT(8192);
@@ -82,27 +82,27 @@ JAVA_INT com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(COD
     set_field_com_codename1_io_JSONParser_ReaderClass_buffer(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L663535450:
+label_L1014071026:
     __CN1_DEBUG_INFO(190);
-    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)<0) /* IFLT CustomJump */ goto label_L474059546;
-    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffOffset(__cn1ThisObject)<get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)) /* IF_IMPLT CustomJump */ goto label_L1657509754;
+    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)<0) /* IFLT CustomJump */ goto label_L2090905694;
+    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffOffset(__cn1ThisObject)<get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)) /* IF_IMPLT CustomJump */ goto label_L1046401236;
 
-label_L474059546:
+label_L2090905694:
     __CN1_DEBUG_INFO(191);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_io_Reader_read___char_1ARRAY_int_int_R_int(threadStateData, locals[1].data.o, get_field_com_codename1_io_JSONParser_ReaderClass_buffer(__cn1ThisObject), 0 /* ICONST_0 */, CN1_ARRAY_LENGTH(get_field_com_codename1_io_JSONParser_ReaderClass_buffer(__cn1ThisObject)));
     PUSH_INT(tmpResult); }
     set_field_com_codename1_io_JSONParser_ReaderClass_buffSize(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(192);
-    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L2109146260;
+    if (get_field_com_codename1_io_JSONParser_ReaderClass_buffSize(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L1640037138;
     __CN1_DEBUG_INFO(193);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L2109146260:
+label_L1640037138:
     __CN1_DEBUG_INFO(195);
     set_field_com_codename1_io_JSONParser_ReaderClass_buffOffset(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1657509754:
+label_L1046401236:
     __CN1_DEBUG_INFO(197);
     /* VarOp.assignFrom */ ilocals_2_=CN1_ARRAY_ELEMENT_CHAR(get_field_com_codename1_io_JSONParser_ReaderClass_buffer(__cn1ThisObject), get_field_com_codename1_io_JSONParser_ReaderClass_buffOffset(__cn1ThisObject));
     __CN1_DEBUG_INFO(198);

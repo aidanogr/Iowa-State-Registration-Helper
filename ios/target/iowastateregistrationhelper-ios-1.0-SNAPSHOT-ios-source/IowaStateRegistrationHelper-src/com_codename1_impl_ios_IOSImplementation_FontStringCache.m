@@ -90,15 +90,15 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_FontStringCache_equals___j
     __CN1_DEBUG_INFO(2513);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2514);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_peer(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_peer(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1439361845;
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_txt(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_txt(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1439361845;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_peer(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_peer(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L13918250;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_txt(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_FontStringCache_txt(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L13918250;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1837533591;
+    goto label_L565079667;
 
-label_L1439361845:
+label_L13918250:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1837533591:
+label_L565079667:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

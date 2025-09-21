@@ -202,14 +202,14 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerNode_4___INIT_____com_codename1_ui_spi
 JAVA_OBJECT com_codename1_ui_spinner_SpinnerNode_4_getStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10140, 559);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(299);
-    if (/* CustomInvoke */virtual_com_codename1_ui_scene_Node_hasTag___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_4_val_n(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4360))==0) /* IFEQ CustomJump */ goto label_L1219735992;
+    if (/* CustomInvoke */virtual_com_codename1_ui_scene_Node_hasTag___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_4_val_n(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4360))==0) /* IFEQ CustomJump */ goto label_L1684958471;
     __CN1_DEBUG_INFO(300);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_SpinnerNode_4_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1219735992:
+label_L1684958471:
     __CN1_DEBUG_INFO(302);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_SpinnerNode_4_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }

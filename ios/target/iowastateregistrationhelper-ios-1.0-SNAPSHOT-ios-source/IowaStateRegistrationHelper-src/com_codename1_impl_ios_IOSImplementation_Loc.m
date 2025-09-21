@@ -157,11 +157,11 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_Loc_isGPSEnabled___R_boole
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9516, 903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2701);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L497479191;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1617937669;
     __CN1_DEBUG_INFO(2702);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_releasePeer___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject)); 
 
-label_L497479191:
+label_L1617937669:
     __CN1_DEBUG_INFO(2704);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -170,19 +170,19 @@ label_L497479191:
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListenerInstance___R_com_codename1_location_LocationListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9516, 9517);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL2029750886cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL2029750886cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L2029750886cn1_class_id_java_lang_Throwable1, label_L2027133545, restoreToL2029750886cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL331361516cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL331361516cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L331361516cn1_class_id_java_lang_Throwable1, label_L78265654, restoreToL331361516cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(2707);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationListenerInstance(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1015122628, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationListenerInstance(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L47268007, 0);
     __CN1_DEBUG_INFO(2708);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListener___R_java_lang_Class(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2709);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1015122628, 0);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L47268007, 0);
 
-label_L2029750886:
- tryBlockOffsetL2029750886cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L2029750886cn1_class_id_java_lang_Throwable1);
-    restoreToL2029750886cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L331361516:
+ tryBlockOffsetL331361516cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L331361516cn1_class_id_java_lang_Throwable1);
+    restoreToL331361516cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2711);
     BC_ALOAD(0);
@@ -191,11 +191,11 @@ label_L2029750886:
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationListenerInstance(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1548218207:
+label_L1340048315:
 END_TRY(1);    __CN1_DEBUG_INFO(2715);
-    JUMP_TO(label_L1015122628, 0);
+    JUMP_TO(label_L47268007, 0);
 
-label_L2027133545:
+label_L78265654:
     __CN1_DEBUG_INFO(2712);
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(2713);
@@ -208,7 +208,7 @@ label_L2027133545:
     java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1015122628:
+label_L47268007:
     __CN1_DEBUG_INFO(2718);
 
 {
@@ -220,38 +220,38 @@ label_L1015122628:
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListener___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9516, 9028);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1552753374cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1552753374cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1552753374cn1_class_id_java_lang_Throwable1, label_L1533662221, restoreToL1552753374cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1808800526cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1808800526cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1808800526cn1_class_id_java_lang_Throwable1, label_L880533231, restoreToL1808800526cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(2723);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_location_LocationManager_getBackgroundLocationListener___R_java_lang_Class(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2724);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1897221921, 0);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L715289224, 0);
     /* LDC: ''*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(218));
     /* CustomInvoke */PUSH_OBJ(com_codename1_io_Preferences_get___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(43), STRING_FROM_CONSTANT_POOL_OFFSET(218)));
     { JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ JUMP_TO(label_L1897221921, 0);
+    if(POP_INT() != 0) /* IFNE */ JUMP_TO(label_L715289224, 0);
     __CN1_DEBUG_INFO(2725);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_io_Preferences_get___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(43), STRING_FROM_CONSTANT_POOL_OFFSET(218));locals[2].type=CN1_TYPE_OBJECT;
-label_L1552753374:
- tryBlockOffsetL1552753374cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1552753374cn1_class_id_java_lang_Throwable1);
-    restoreToL1552753374cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1808800526:
+ tryBlockOffsetL1808800526cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1808800526cn1_class_id_java_lang_Throwable1);
+    restoreToL1808800526cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2727);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */java_lang_Class_forName___java_lang_String_R_java_lang_Class(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2728);
     /* CustomInvoke */com_codename1_location_LocationManager_setBackgroundLocationListener___java_lang_Class(threadStateData, __cn1ThisObject, locals[3].data.o); 
 
-label_L1911504652:
+label_L587433505:
 END_TRY(1);    __CN1_DEBUG_INFO(2729);
-    JUMP_TO(label_L1897221921, 0);
+    JUMP_TO(label_L715289224, 0);
 
-label_L1533662221:
+label_L880533231:
     BC_ASTORE(3);
 
-label_L1897221921:
+label_L715289224:
     __CN1_DEBUG_INFO(2731);
     { JAVA_OBJECT tmpResult = com_codename1_location_LocationManager_getBackgroundLocationListener___R_java_lang_Class(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -265,20 +265,20 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_setBackgroundLocationList
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2736);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L368153528;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2134157671;
     __CN1_DEBUG_INFO(2737);
     /* LDC: 'ios.backgroundLocationListener'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(43));
     { JAVA_OBJECT tmpResult = virtual_java_lang_Class_getCanonicalName___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_io_Preferences_set___java_lang_String_java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    goto label_L622263400;
+    goto label_L2011695710;
 
-label_L368153528:
+label_L2134157671:
     __CN1_DEBUG_INFO(2739);
     /* CustomInvoke */com_codename1_io_Preferences_set___java_lang_String_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(43), JAVA_NULL /* ACONST_NULL */); 
 
-label_L622263400:
+label_L2011695710:
     __CN1_DEBUG_INFO(2741);
     /* CustomInvoke */com_codename1_location_LocationManager_setBackgroundLocationListener___java_lang_Class(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(2742);
@@ -290,7 +290,7 @@ label_L622263400:
 JAVA_LONG com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9516, 9518);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2745);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L810196347;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L495857386;
     __CN1_DEBUG_INFO(2746);
 
 {
@@ -298,22 +298,22 @@ JAVA_LONG com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(CODE
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L810196347:
+label_L495857386:
     __CN1_DEBUG_INFO(2748);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1811787796;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L604060129;
     __CN1_DEBUG_INFO(2749);
     BC_ALOAD(0);
     { JAVA_LONG tmpResult = virtual_com_codename1_impl_ios_IOSNative_createCLLocation___R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData));
     PUSH_LONG(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(threadStateData, POP_LONG(), POP_OBJ());
 
-label_L1811787796:
+label_L604060129:
     __CN1_DEBUG_INFO(2751);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1921553024;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L2124731287;
     __CN1_DEBUG_INFO(2752);
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(threadStateData, -1LL, __cn1ThisObject);
 
-label_L1921553024:
+label_L2124731287:
     __CN1_DEBUG_INFO(2754);
 
 {
@@ -329,7 +329,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getActiveLocationListen
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isMinimized___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1617937669;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1227459815;
     /* LDC: 'ios.backgroundLocationUpdating'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(44));
     PUSH_INT(0); /* ICONST_0 */
@@ -337,19 +337,19 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getActiveLocationListen
     { JAVA_INT tmpResult = com_codename1_io_Preferences_get___java_lang_String_boolean_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1617937669;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1227459815;
     BC_ALOAD(0);
     __CN1_DEBUG_INFO(2766);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListenerInstance___R_com_codename1_location_LocationListener(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L1617937669;
+    if(POP_OBJ() == JAVA_NULL) /* IFNULL */ goto label_L1227459815;
     __CN1_DEBUG_INFO(2767);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListenerInstance___R_com_codename1_location_LocationListener(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1617937669:
+label_L1227459815:
     __CN1_DEBUG_INFO(2769);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getLocationListener___R_com_codename1_location_LocationListener(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -375,11 +375,11 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getCurrentLocation___R_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2779);
     /* VarOp.assignFrom */ llocals_1_ = com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(2780);
-    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L78265654;
+    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L624693846;
     __CN1_DEBUG_INFO(2781);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L78265654:
+label_L624693846:
     __CN1_DEBUG_INFO(2783);
     virtual_com_codename1_impl_ios_IOSImplementation_Loc_bindListener__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(2784);
@@ -408,16 +408,16 @@ label_L78265654:
     __CN1_DEBUG_INFO(2790);
     /* CustomInvoke */virtual_com_codename1_location_Location_setLongitude___double(threadStateData, locals[3].data.o, /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_getLocationLongtitude___long_R_double(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_4_)); 
     __CN1_DEBUG_INFO(2791);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_isGoodLocation___long_R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_)==0) /* IFEQ CustomJump */ goto label_L47268007;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_isGoodLocation___long_R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_)==0) /* IFEQ CustomJump */ goto label_L148891937;
     __CN1_DEBUG_INFO(2792);
     /* CustomInvoke */virtual_com_codename1_location_Location_setStatus___int(threadStateData, locals[3].data.o, 0 /* ICONST_0 */); 
-    goto label_L880533231;
+    goto label_L1346354118;
 
-label_L47268007:
+label_L148891937:
     __CN1_DEBUG_INFO(2794);
     /* CustomInvoke */virtual_com_codename1_location_Location_setStatus___int(threadStateData, locals[3].data.o, 2 /* ICONST_2 */); 
 
-label_L880533231:
+label_L1346354118:
     __CN1_DEBUG_INFO(2796);
     /* CustomInvoke */virtual_com_codename1_location_Location_setTimeStamp___long(threadStateData, locals[3].data.o, /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_getLocationTimeStamp___long_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_4_)); 
     __CN1_DEBUG_INFO(2797);
@@ -440,20 +440,20 @@ label_L880533231:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_setStatus__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9516, 9017);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2805);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_statusInitialized(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L715289224;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_statusInitialized(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1442077586;
     __CN1_DEBUG_INFO(2806);
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_statusInitialized(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2807);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_isGoodLocation___long_R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2134157671;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_isGoodLocation___long_R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L278879704;
     __CN1_DEBUG_INFO(2808);
     /* CustomInvoke */com_codename1_location_LocationManager_setStatus___int(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
-    goto label_L715289224;
+    goto label_L1442077586;
 
-label_L2134157671:
+label_L278879704:
     __CN1_DEBUG_INFO(2810);
     /* CustomInvoke */com_codename1_location_LocationManager_setStatus___int(threadStateData, __cn1ThisObject, 2 /* ICONST_2 */); 
 
-label_L715289224:
+label_L1442077586:
     __CN1_DEBUG_INFO(2813);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -463,12 +463,12 @@ label_L715289224:
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9516, 9520);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2816);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2011695710;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1744713739;
     __CN1_DEBUG_INFO(2817);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9521));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L495857386;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1244815033;
     __CN1_DEBUG_INFO(2818);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
@@ -476,9 +476,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners___R_j
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L2011695710;
+    goto label_L1744713739;
 
-label_L495857386:
+label_L1244815033:
     __CN1_DEBUG_INFO(2820);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
@@ -487,7 +487,7 @@ label_L495857386:
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L2011695710:
+label_L1744713739:
     __CN1_DEBUG_INFO(2823);
 
 {
@@ -500,12 +500,12 @@ label_L2011695710:
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9516, 9522);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2827);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L604060129;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1038988454;
     __CN1_DEBUG_INFO(2828);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9523));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2124731287;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1475759966;
     __CN1_DEBUG_INFO(2829);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
@@ -513,9 +513,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations___R
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L604060129;
+    goto label_L1038988454;
 
-label_L2124731287:
+label_L1475759966:
     __CN1_DEBUG_INFO(2831);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
@@ -524,7 +524,7 @@ label_L2124731287:
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L604060129:
+label_L1038988454:
     __CN1_DEBUG_INFO(2834);
 
 {
@@ -537,12 +537,12 @@ label_L604060129:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_synchronizeGeofenceListeners__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9516, 9524);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2838);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1227459815;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1096682443;
     __CN1_DEBUG_INFO(2839);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */virtual_com_codename1_io_Storage_writeObject___java_lang_String_java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9521), get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject));     SP -= 1;
 
-label_L1227459815:
+label_L1096682443:
     __CN1_DEBUG_INFO(2841);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -552,12 +552,12 @@ label_L1227459815:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_synchronizeGeofenceExpirations__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9516, 9525);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2843);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L624693846;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L423711439;
     __CN1_DEBUG_INFO(2844);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
     /* CustomInvoke */virtual_com_codename1_io_Storage_writeObject___java_lang_String_java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9523), get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations(__cn1ThisObject));     SP -= 1;
 
-label_L624693846:
+label_L423711439:
     __CN1_DEBUG_INFO(2846);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -568,25 +568,25 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getGeofenceListener___j
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9516, 9526);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1702081349cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1702081349cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1702081349cn1_class_id_java_lang_Throwable1, label_L148891937, restoreToL1702081349cn1_class_id_java_lang_Throwable1);
-    int restoreToL1442077586cn1_class_id_java_lang_Throwable2;
-    int tryBlockOffsetL1442077586cn1_class_id_java_lang_Throwable2;
-    DEFINE_CATCH_BLOCK(catch_L1442077586cn1_class_id_java_lang_Throwable2, label_L148891937, restoreToL1442077586cn1_class_id_java_lang_Throwable2);
+    int restoreToL248893225cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL248893225cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L248893225cn1_class_id_java_lang_Throwable1, label_L1238994373, restoreToL248893225cn1_class_id_java_lang_Throwable1);
+    int restoreToL495051009cn1_class_id_java_lang_Throwable2;
+    int tryBlockOffsetL495051009cn1_class_id_java_lang_Throwable2;
+    DEFINE_CATCH_BLOCK(catch_L495051009cn1_class_id_java_lang_Throwable2, label_L1238994373, restoreToL495051009cn1_class_id_java_lang_Throwable2);
     __CN1_DEBUG_INFO(2849);
     { JAVA_OBJECT tmpResult = com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Map_containsKey___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1346354118, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L741390111, 0);
     __CN1_DEBUG_INFO(2850);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;
-label_L1702081349:
- tryBlockOffsetL1702081349cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1702081349cn1_class_id_java_lang_Throwable1);
-    restoreToL1702081349cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L248893225:
+ tryBlockOffsetL248893225cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L248893225cn1_class_id_java_lang_Throwable1);
+    restoreToL248893225cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2852);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject), locals[1].data.o);
@@ -595,34 +595,34 @@ label_L1702081349:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(2853);
-    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1442077586, 0);
+    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L495051009, 0);
     __CN1_DEBUG_INFO(2854);
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
 
-label_L1544052042:
+label_L1304579464:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1442077586:
- tryBlockOffsetL1442077586cn1_class_id_java_lang_Throwable2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1442077586cn1_class_id_java_lang_Throwable2);
-    restoreToL1442077586cn1_class_id_java_lang_Throwable2 = threadStateData->threadObjectStackOffset;
+label_L495051009:
+ tryBlockOffsetL495051009cn1_class_id_java_lang_Throwable2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L495051009cn1_class_id_java_lang_Throwable2);
+    restoreToL495051009cn1_class_id_java_lang_Throwable2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2856);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Class_newInstance___R_java_lang_Object(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L1393359655:
+label_L1631408038:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L148891937:
+label_L1238994373:
     __CN1_DEBUG_INFO(2857);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(2858);
     /* CustomInvoke */com_codename1_io_Log_e___java_lang_Throwable(threadStateData, locals[3].data.o); 
 
-label_L1346354118:
+label_L741390111:
     __CN1_DEBUG_INFO(2862);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -645,8 +645,8 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_clearExpiredGeofences__(C
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L1244815033:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L278879704;
+label_L584501954:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L247795540;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2868);
     { JAVA_OBJECT tmpResult = com_codename1_impl_ios_IOSImplementation_Loc_geofenceExpirations___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -656,19 +656,19 @@ label_L1244815033:
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
     BC_LCMP();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L1744713739;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L200744172;
     __CN1_DEBUG_INFO(2869);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, locals[3].data.o); 
 
-label_L1744713739:
+label_L200744172:
     __CN1_DEBUG_INFO(2871);
-    goto label_L1244815033;
+    goto label_L584501954;
 
-label_L278879704:
+label_L247795540:
     __CN1_DEBUG_INFO(2872);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;
-label_L1475759966:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1038988454;
+label_L374646930:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L818785904;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2873);
     { JAVA_OBJECT tmpResult = com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -680,17 +680,17 @@ label_L1475759966:
     __CN1_DEBUG_INFO(2875);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_removeGeofencing___long_java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject), locals[3].data.o); 
     __CN1_DEBUG_INFO(2876);
-    goto label_L1475759966;
+    goto label_L374646930;
 
-label_L1038988454:
+label_L818785904:
     __CN1_DEBUG_INFO(2877);
-    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1096682443;
+    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L628610760;
     __CN1_DEBUG_INFO(2878);
     com_codename1_impl_ios_IOSImplementation_Loc_synchronizeGeofenceExpirations__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(2879);
     com_codename1_impl_ios_IOSImplementation_Loc_synchronizeGeofenceListeners__(threadStateData, __cn1ThisObject); 
 
-label_L1096682443:
+label_L628610760:
     __CN1_DEBUG_INFO(2882);
     monitorExitBlock(threadStateData, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -712,7 +712,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_addGeoFencing___java_lang
     PUSH_LONG(tmpResult); }
     PUSH_LONG(0); /* LCONST_0 */
     BC_LCMP();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L423711439;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L828610686;
     __CN1_DEBUG_INFO(2889);
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
     { JAVA_LONG tmpResult = virtual_com_codename1_location_Geofence_getExpiration___R_long(threadStateData, locals[2].data.o);
@@ -732,7 +732,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_addGeoFencing___java_lang
     __CN1_DEBUG_INFO(2891);
     com_codename1_impl_ios_IOSImplementation_Loc_synchronizeGeofenceExpirations__(threadStateData, __cn1ThisObject); 
 
-label_L423711439:
+label_L828610686:
     __CN1_DEBUG_INFO(2893);
     { JAVA_OBJECT tmpResult = com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -749,14 +749,14 @@ label_L423711439:
     __CN1_DEBUG_INFO(2895);
     /* VarOp.assignFrom */ llocals_3_ = com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(2896);
-    if (CN1_CMP_EXPR(llocals_3_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1238994373;
+    if (CN1_CMP_EXPR(llocals_3_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1811942924;
     __CN1_DEBUG_INFO(2897);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9528));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1238994373:
+label_L1811942924:
     __CN1_DEBUG_INFO(2899);
     PUSH_POINTER(get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData));
     PUSH_LONG(get_field_com_codename1_impl_ios_IOSImplementation_Loc_peer(__cn1ThisObject));
@@ -799,22 +799,22 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_bindListener__(CODENAME_O
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
     DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9516, 3019);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2923);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_locationUpdating(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L495051009;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_locationUpdating(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1157199772;
     __CN1_DEBUG_INFO(2924);
     /* VarOp.assignFrom */ llocals_1_ = com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(2925);
-    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L247795540;
+    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1769252629;
     __CN1_DEBUG_INFO(2926);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L247795540:
+label_L1769252629:
     __CN1_DEBUG_INFO(2928);
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_locationUpdating(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2929);
     /* VarOp.assignFrom */ ilocals_3_ = get_static_com_codename1_location_LocationRequest_PRIORITY_MEDIUM_ACCUARCY(threadStateData);
     __CN1_DEBUG_INFO(2930);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_Loc_getRequest___R_com_codename1_location_LocationRequest(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L200744172;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_Loc_getRequest___R_com_codename1_location_LocationRequest(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L99132505;
     __CN1_DEBUG_INFO(2931);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getRequest___R_com_codename1_location_LocationRequest(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -822,11 +822,11 @@ label_L247795540:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L200744172:
+label_L99132505:
     __CN1_DEBUG_INFO(2933);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_startUpdatingLocation___long_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_, ilocals_3_); 
 
-label_L495051009:
+label_L1157199772:
     __CN1_DEBUG_INFO(2935);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -842,16 +842,16 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_bindBackgroundListener__(
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
     DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9516, 9030);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2952);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationUpdating(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L374646930;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationUpdating(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L10405169;
     __CN1_DEBUG_INFO(2953);
     /* VarOp.assignFrom */ llocals_1_ = com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(2954);
-    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L628610760;
+    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1075082007;
     __CN1_DEBUG_INFO(2955);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L628610760:
+label_L1075082007:
     __CN1_DEBUG_INFO(2957);
     /* CustomInvoke */com_codename1_io_Preferences_set___java_lang_String_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(44), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(2958);
@@ -859,7 +859,7 @@ label_L628610760:
     __CN1_DEBUG_INFO(2959);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_startUpdatingBackgroundLocation___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_); 
 
-label_L374646930:
+label_L10405169:
     __CN1_DEBUG_INFO(2961);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -880,16 +880,16 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_Loc_clearBackgroundListener__
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
     DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9516, 9031);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2978);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationUpdating(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L828610686;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationUpdating(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L554634433;
     __CN1_DEBUG_INFO(2979);
     /* VarOp.assignFrom */ llocals_1_ = com_codename1_impl_ios_IOSImplementation_Loc_getLocation___R_long(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(2980);
-    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1811942924;
+    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L424944647;
     __CN1_DEBUG_INFO(2981);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1811942924:
+label_L424944647:
     __CN1_DEBUG_INFO(2983);
     /* CustomInvoke */com_codename1_io_Preferences_set___java_lang_String_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(44), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(2984);
@@ -897,7 +897,7 @@ label_L1811942924:
     __CN1_DEBUG_INFO(2985);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_stopUpdatingBackgroundLocation___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_); 
 
-label_L828610686:
+label_L554634433:
     __CN1_DEBUG_INFO(2987);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

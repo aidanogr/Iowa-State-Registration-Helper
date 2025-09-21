@@ -112,7 +112,7 @@ label_L1089504328:
     set_field_java_util_AbstractList_FullListIterator_expectedModCount(threadStateData, get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject)), __cn1ThisObject);
     set_field_java_util_AbstractList_FullListIterator_lastPosition(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);
 
-label_L684484877:
+label_L1478800517:
 END_TRY(1);    JUMP_TO(label_L660879561, 0);
 
 label_L376416077:
@@ -180,7 +180,7 @@ label_L1904324159:
     set_field_java_util_AbstractList_FullListIterator_lastPosition(threadStateData, ilocals_1_, __cn1ThisObject);
     BC_ALOAD(2);
 
-label_L602679582:
+label_L1277922807:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -226,7 +226,7 @@ label_L1848415041:
 
     /* CustomInvoke */virtual_java_util_AbstractList_set___int_java_lang_Object_R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject), get_field_java_util_AbstractList_FullListIterator_lastPosition(__cn1ThisObject), locals[1].data.o); 
 
-label_L445763935:
+label_L1999953336:
 END_TRY(1);    JUMP_TO(label_L843467284, 0);
 
 label_L1176735295:

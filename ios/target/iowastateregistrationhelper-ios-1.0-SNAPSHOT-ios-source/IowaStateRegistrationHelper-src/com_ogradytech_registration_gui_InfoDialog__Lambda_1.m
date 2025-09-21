@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_gui_InfoDialog__Lambda_1(CODENAME_
 
 
 JAVA_VOID com_ogradytech_registration_gui_InfoDialog__Lambda_1___INIT_____com_ogradytech_registration_gui_InfoDialog(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10498, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10501, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -45,7 +45,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog__Lambda_1___INIT_____com_og
 
 
 JAVA_VOID com_ogradytech_registration_gui_InfoDialog__Lambda_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10498, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10501, 3055);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_ogradytech_registration_gui_InfoDialog_lambda$0___com_ogradytech_registration_gui_InfoDialog_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_ogradytech_registration_gui_InfoDialog__Lambda_1_arg_1(__cn1ThisObject), locals[1].data.o); 
@@ -56,7 +56,7 @@ JAVA_VOID com_ogradytech_registration_gui_InfoDialog__Lambda_1_actionPerformed__
 
 JAVA_OBJECT com_ogradytech_registration_gui_InfoDialog__Lambda_1_lambdaFactory$___com_ogradytech_registration_gui_InfoDialog_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_ogradytech_registration_gui_InfoDialog__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10498, 10375);
+    DEFINE_METHOD_STACK(3, 1, 0, 10501, 10375);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_ogradytech_registration_gui_InfoDialog__Lambda_1(threadStateData)); /* NEW */

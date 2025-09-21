@@ -60,7 +60,7 @@ com_ogradytech_registration_Utilities_NetworkUtilities___INIT____(threadStateDat
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10503, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10506, 200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(19);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -70,7 +70,7 @@ JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities___INIT____(CODE
 
 JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities_fetchAcademicPeriods___com_codename1_ui_spinner_Picker(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_NetworkUtilities(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10503, 10504);
+    DEFINE_METHOD_STACK(4, 2, 0, 10506, 10507);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(24);
@@ -93,7 +93,7 @@ JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities_fetchAcademicPe
     __CN1_DEBUG_INFO(28);
     /* CustomInvoke */virtual_com_codename1_io_ConnectionRequest_setPost___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(29);
-    /* CustomInvoke */virtual_com_codename1_io_ConnectionRequest_setUrl___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10505)); 
+    /* CustomInvoke */virtual_com_codename1_io_ConnectionRequest_setUrl___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10508)); 
     __CN1_DEBUG_INFO(30);
     /* CustomInvoke */virtual_com_codename1_io_ConnectionRequest_addRequestHeader___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8752), STRING_FROM_CONSTANT_POOL_OFFSET(10263)); 
     __CN1_DEBUG_INFO(31);
@@ -119,12 +119,12 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_NetworkUtilities_parseAcademic
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_NetworkUtilities(threadStateData);
-    DEFINE_METHOD_STACK(7, 9, 0, 10503, 10506);
+    DEFINE_METHOD_STACK(7, 9, 0, 10506, 10509);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL741550370cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL741550370cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L741550370cn1_class_id_java_io_IOException1, label_L270661321, restoreToL741550370cn1_class_id_java_io_IOException1);
+    int restoreToL1131918171cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1131918171cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1131918171cn1_class_id_java_io_IOException1, label_L2007599722, restoreToL1131918171cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(66);
     PUSH_POINTER(__NEW_java_lang_String(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -141,10 +141,10 @@ JAVA_OBJECT com_ogradytech_registration_Utilities_NetworkUtilities_parseAcademic
     com_codename1_io_JSONParser___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(3);
 
-label_L741550370:
- tryBlockOffsetL741550370cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L741550370cn1_class_id_java_io_IOException1);
-    restoreToL741550370cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1131918171:
+ tryBlockOffsetL1131918171cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1131918171cn1_class_id_java_io_IOException1);
+    restoreToL1131918171cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(71);
     BC_ALOAD(3);
@@ -159,21 +159,21 @@ label_L741550370:
     /* VarOp.assignFrom */ locals[5].data.o = /* CustomInvoke */virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8941));locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(75);
-    if (virtual_java_util_List_size___R_int(threadStateData, locals[5].data.o)<3 /* ICONST_3 */) /* IF_IMPLT CustomJump */ JUMP_TO(label_L1964434661, 1);
+    if (virtual_java_util_List_size___R_int(threadStateData, locals[5].data.o)<3 /* ICONST_3 */) /* IF_IMPLT CustomJump */ JUMP_TO(label_L2029780820, 1);
     { JAVA_INT tmpResult = virtual_java_util_List_size___R_int(threadStateData, locals[5].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(3); /* ICONST_3 */
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
-    JUMP_TO(label_L1217312754, 1);
+    JUMP_TO(label_L65080774, 1);
 
-label_L1964434661:
+label_L2029780820:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1217312754:
+label_L65080774:
     BC_ISTORE(7);
-    JUMP_TO(label_L1585571244, 1);
+    JUMP_TO(label_L2116179210, 1);
 
-label_L1099552523:
+label_L1172535934:
     __CN1_DEBUG_INFO(76);
     /* VarOp.assignFrom */ locals[8].data.o = /* CustomInvoke */virtual_java_util_List_get___int_R_java_lang_Object(threadStateData, locals[5].data.o, ilocals_7_);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(77);
     BC_ALOAD(2);
@@ -196,17 +196,17 @@ label_L1099552523:
     __CN1_DEBUG_INFO(75);
     BC_IINC(7, 1);
 
-label_L1585571244:
-    if (ilocals_7_<virtual_java_util_List_size___R_int(threadStateData, locals[5].data.o)) /* IF_IMPLT CustomJump */ JUMP_TO(label_L1099552523, 1);
+label_L2116179210:
+    if (ilocals_7_<virtual_java_util_List_size___R_int(threadStateData, locals[5].data.o)) /* IF_IMPLT CustomJump */ JUMP_TO(label_L1172535934, 1);
 
-label_L1804039111:
+label_L551300593:
 END_TRY(1);    __CN1_DEBUG_INFO(81);
-    JUMP_TO(label_L66724371, 0);
+    JUMP_TO(label_L1648700617, 0);
 
-label_L270661321:
+label_L2007599722:
     BC_ASTORE(4);
 
-label_L66724371:
+label_L1648700617:
     __CN1_DEBUG_INFO(82);
 
 {
@@ -219,7 +219,7 @@ label_L66724371:
 JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities_lambda$0___com_codename1_io_ConnectionRequest_com_codename1_ui_spinner_Picker_com_codename1_io_NetworkEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_com_ogradytech_registration_Utilities_NetworkUtilities(threadStateData);
-    DEFINE_METHOD_STACK(6, 5, 0, 10503, 10292);
+    DEFINE_METHOD_STACK(6, 5, 0, 10506, 10292);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -230,13 +230,13 @@ JAVA_VOID com_ogradytech_registration_Utilities_NetworkUtilities_lambda$0___com_
     { JAVA_INT tmpResult = virtual_com_codename1_io_ConnectionRequest_getResponseCode___R_int(threadStateData, locals[0].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(300);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1047934137;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1765900922;
     { JAVA_INT tmpResult = virtual_com_codename1_io_ConnectionRequest_getResponseCode___R_int(threadStateData, locals[0].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(199);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1862994526;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L94830685;
 
-label_L1047934137:
+label_L1765900922:
     __CN1_DEBUG_INFO(38);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_ConnectionRequest_getResponseData___R_byte_1ARRAY(threadStateData, locals[0].data.o);
     PUSH_OBJ(tmpResult); }
@@ -258,23 +258,23 @@ label_L1047934137:
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(41);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
-    goto label_L1614133563;
+    goto label_L1539947037;
 
-label_L180316302:
+label_L1217312754:
     __CN1_DEBUG_INFO(42);
-    if (CN1_ARRAY_ELEMENT_OBJECT(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData), ilocals_4_)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L839771540;
-    goto label_L1037163664;
+    if (CN1_ARRAY_ELEMENT_OBJECT(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData), ilocals_4_)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L270661321;
+    goto label_L1964434661;
 
-label_L839771540:
+label_L270661321:
     __CN1_DEBUG_INFO(43);
     CN1_SET_ARRAY_ELEMENT_OBJECT(locals[3].data.o, ilocals_4_, /* CustomInvoke */virtual_java_lang_String_substring___int_int_R_java_lang_String(threadStateData, get_field_com_ogradytech_registration_Utilities_AcademicPeriod_name(CN1_ARRAY_ELEMENT_OBJECT(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData), ilocals_4_)), 0 /* ICONST_0 */, /* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, get_field_com_ogradytech_registration_Utilities_AcademicPeriod_name(CN1_ARRAY_ELEMENT_OBJECT(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData), ilocals_4_)), 40)));
     __CN1_DEBUG_INFO(41);
     BC_IINC(4, 1);
 
-label_L1614133563:
-    if (ilocals_4_<CN1_ARRAY_LENGTH(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData))) /* IF_IMPLT CustomJump */ goto label_L180316302;
+label_L1539947037:
+    if (ilocals_4_<CN1_ARRAY_LENGTH(get_static_com_ogradytech_registration_Utilities_NetworkUtilities_academicPeriods(threadStateData))) /* IF_IMPLT CustomJump */ goto label_L1217312754;
 
-label_L1037163664:
+label_L1964434661:
     __CN1_DEBUG_INFO(45);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_Picker_setStrings___java_lang_String_1ARRAY(threadStateData, locals[1].data.o, locals[3].data.o); 
     __CN1_DEBUG_INFO(46);
@@ -286,16 +286,16 @@ label_L1037163664:
     __CN1_DEBUG_INFO(48);
     set_static_com_ogradytech_registration_IowaStateRegistrationHelper_academicPeriodsFetchCompleted(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(49);
-    goto label_L1200546947;
+    goto label_L1585571244;
 
-label_L1862994526:
+label_L94830685:
     __CN1_DEBUG_INFO(51);
     PUSH_POINTER(__NEW_com_ogradytech_registration_exceptions_FormSubmissionException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_ogradytech_registration_exceptions_FormSubmissionException___INIT_____com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_java_lang_String(threadStateData, SP[-1].data.o, get_static_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_API_REQUEST_FAILED(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(218));     SP -= 1;
     com_ogradytech_registration_IowaStateRegistrationHelper_handleFormSubmissionException___com_ogradytech_registration_exceptions_FormSubmissionException(threadStateData, SP[-1].data.o);     SP-= 1;
 
-label_L1200546947:
+label_L1585571244:
     __CN1_DEBUG_INFO(53);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

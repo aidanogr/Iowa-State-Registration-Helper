@@ -50,16 +50,16 @@ JAVA_VOID com_codename1_ui_Label_1_actionPerformed___com_codename1_ui_events_Act
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(59);
-    if (virtual_com_codename1_ui_Label_isInitialized___R_boolean(threadStateData, get_field_com_codename1_ui_Label_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1063494931;
+    if (virtual_com_codename1_ui_Label_isInitialized___R_boolean(threadStateData, get_field_com_codename1_ui_Label_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1602154134;
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getIcon___R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_Label_1_this_0(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1063494931;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1602154134;
     __CN1_DEBUG_INFO(60);
     virtual_com_codename1_ui_Label_repaint__(threadStateData, get_field_com_codename1_ui_Label_1_this_0(__cn1ThisObject)); 
 
-label_L1063494931:
+label_L1602154134:
     __CN1_DEBUG_INFO(62);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

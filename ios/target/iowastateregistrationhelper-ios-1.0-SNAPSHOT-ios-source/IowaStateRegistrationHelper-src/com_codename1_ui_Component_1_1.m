@@ -50,11 +50,11 @@ JAVA_VOID com_codename1_ui_Component_1_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_O
     DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8202, 202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2615);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Component_findSurface___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Component_1_this_0(get_field_com_codename1_ui_Component_1_1_this_1(__cn1ThisObject)));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2616);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1994634331;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L584262389;
     __CN1_DEBUG_INFO(2617);
     virtual_com_codename1_ui_Container_repaint__(threadStateData, locals[1].data.o); 
 
-label_L1994634331:
+label_L584262389:
     __CN1_DEBUG_INFO(2619);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

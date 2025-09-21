@@ -56,19 +56,19 @@ JAVA_VOID java_util_Timer_T___INIT_____java_util_Timer(CODENAME_ONE_THREAD_STATE
 
 JAVA_VOID java_util_Timer_T_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3166, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1264940541cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL1264940541cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L1264940541cn1_class_id_java_lang_InterruptedException1, label_L411506101, restoreToL1264940541cn1_class_id_java_lang_InterruptedException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL131052117cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL131052117cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L131052117cn1_class_id_java_lang_InterruptedException1, label_L411506101, restoreToL131052117cn1_class_id_java_lang_InterruptedException1);
     set_field_java_util_TimerTask_parent(threadStateData, get_field_java_util_Timer_T_this_0(__cn1ThisObject), get_field_java_util_Timer_T_task(__cn1ThisObject));
 
-label_L1264940541:
- tryBlockOffsetL1264940541cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1264940541cn1_class_id_java_lang_InterruptedException1);
-    restoreToL1264940541cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L131052117:
+ tryBlockOffsetL131052117cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L131052117cn1_class_id_java_lang_InterruptedException1);
+    restoreToL131052117cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     virtual_java_util_TimerTask_runImpl__(threadStateData, get_field_java_util_Timer_T_task(__cn1ThisObject)); 
 
-label_L248271105:
+label_L558883463:
 END_TRY(1);    JUMP_TO(label_L514455215, 0);
 
 label_L411506101:

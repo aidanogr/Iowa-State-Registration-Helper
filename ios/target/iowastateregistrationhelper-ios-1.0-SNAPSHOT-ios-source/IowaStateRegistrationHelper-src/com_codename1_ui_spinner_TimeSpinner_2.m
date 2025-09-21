@@ -204,23 +204,23 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner_2_getListCellRendererComponent_
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(115);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2108125957;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L547647542;
     BC_ALOAD(2);
     BC_INSTANCEOF(cn1_class_id_java_lang_Integer);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2108125957;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L547647542;
     __CN1_DEBUG_INFO(116);
     /* VarOp.assignFrom */ ilocals_5_ = virtual_java_lang_Integer_intValue___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(117);
-    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L1021295599;
+    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L1891763647;
     __CN1_DEBUG_INFO(118);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(6657);
-locals[2].type=CN1_TYPE_OBJECT;    goto label_L2108125957;
+locals[2].type=CN1_TYPE_OBJECT;    goto label_L547647542;
 
-label_L1021295599:
+label_L1891763647:
     __CN1_DEBUG_INFO(120);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(6658);
 locals[2].type=CN1_TYPE_OBJECT;
-label_L2108125957:
+label_L547647542:
     __CN1_DEBUG_INFO(123);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_spinner_SpinnerRenderer_getListCellRendererComponent___com_codename1_ui_List_java_lang_Object_int_boolean_R_com_codename1_ui_Component(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o, ilocals_3_, ilocals_4_);
     PUSH_OBJ(tmpResult); }
