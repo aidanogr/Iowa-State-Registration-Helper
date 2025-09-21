@@ -55,9 +55,9 @@ public class CalendarContainerWrapper  {
 		//toolbar buttons
 
 		conflictButton = new ConflictInfoButton(null);
-		nextScheduleButton = new Button("Next non-conflicting schedule");
+		nextScheduleButton = new Button("Next no-conflict schedule");
 		nextScheduleButton.addActionListener(evt -> advanceToNextSchedule());
-		
+		nextScheduleButton.setUIID("InfoButton");
 		initializeDropdownContainer(); //handles its children's insets, etc
 
 		dayOfWeekLabels = new Label[5];
