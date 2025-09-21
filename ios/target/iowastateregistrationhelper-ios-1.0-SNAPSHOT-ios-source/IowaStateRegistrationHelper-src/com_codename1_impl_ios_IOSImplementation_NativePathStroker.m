@@ -81,7 +81,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathStroker___INIT_____
     volatile JAVA_INT ilocals_3_ = 0; /* capStyle */
     volatile JAVA_INT ilocals_4_ = 0; /* joinStyle */
     volatile JAVA_FLOAT flocals_2_ = 0; /* lineWidth */
-    DEFINE_INSTANCE_METHOD_STACK(8, 6, 0, 9701, 200);
+    DEFINE_INSTANCE_METHOD_STACK(8, 6, 0, 9702, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     flocals_2_ = __cn1Arg2;
@@ -116,7 +116,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathStroker_reset___flo
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathStroker_destroy__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9701, 7233);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9702, 7234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4107);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativePathStrokerCleanup___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativePathStroker_ptr(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4108);

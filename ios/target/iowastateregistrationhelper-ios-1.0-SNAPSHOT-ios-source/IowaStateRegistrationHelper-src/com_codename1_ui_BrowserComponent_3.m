@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_3(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_3___INIT_____com_codename1_ui_BrowserComponent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8109, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8110, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(325);
@@ -45,7 +45,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_3___INIT_____com_codename1_ui_Browse
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8109, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8110, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(327);
     /* CustomInvoke */com_codename1_ui_BrowserComponent_access$000___com_codename1_ui_BrowserComponent(threadStateData, get_field_com_codename1_ui_BrowserComponent_3_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(328);

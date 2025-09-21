@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_SideMenuBar_6(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_SideMenuBar_6___INIT_____com_codename1_ui_SideMenuBar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7048, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7049, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(867);
@@ -46,11 +46,11 @@ JAVA_VOID com_codename1_ui_SideMenuBar_6___INIT_____com_codename1_ui_SideMenuBar
 
 
 JAVA_VOID com_codename1_ui_SideMenuBar_6_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7048, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7049, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(870);
-    /* CustomInvoke */virtual_com_codename1_ui_SideMenuBar_openMenu___java_lang_String(threadStateData, get_field_com_codename1_ui_SideMenuBar_6_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(73)); 
+    /* CustomInvoke */virtual_com_codename1_ui_SideMenuBar_openMenu___java_lang_String(threadStateData, get_field_com_codename1_ui_SideMenuBar_6_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(74)); 
     __CN1_DEBUG_INFO(871);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

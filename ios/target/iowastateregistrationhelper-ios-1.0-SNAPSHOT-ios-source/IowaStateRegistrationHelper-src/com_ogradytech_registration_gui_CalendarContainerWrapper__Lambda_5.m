@@ -1,9 +1,8 @@
 #include "com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5.h"
-#include "com_codename1_ui_Button.h"
+#include "com_codename1_ui_Dialog.h"
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_ogradytech_registration_gui_CalendarContainerWrapper.h"
 #include "com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5.h"
-#include "com_ogradytech_registration_gui_CalendarItem.h"
 #include "java_lang_NullPointerException.h"
 const struct clazz *base_interfaces_for_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5[] = {&class__com_codename1_ui_events_ActionListener};
 struct clazz class__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5 = {
@@ -26,14 +25,6 @@ void set_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_
     (*(struct obj__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5*)__cn1T).com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_2 = __cn1Val;
 }
 
-JAVA_OBJECT get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3(JAVA_OBJECT __cn1T) {
-  return (*(struct obj__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5*)__cn1T).com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3;
-}
-
-void set_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
-    (*(struct obj__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5*)__cn1T).com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3 = __cn1Val;
-}
-
 JAVA_VOID __FINALIZER_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
     __FINALIZER_java_lang_Object(threadStateData, objToDelete);
 }
@@ -42,7 +33,6 @@ void __GC_MARK_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_
     struct obj__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5* objInstance = (struct obj__com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5*)objToMark;
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_1, force);
     gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_2, force);
-    gcMarkObject(threadStateData, objInstance->com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3, force);
     __GC_MARK_java_lang_Object(threadStateData, objToMark, force);
 }
 
@@ -53,45 +43,40 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_gui_CalendarContainerWrapper__Lamb
 }
 
 
-JAVA_VOID com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5___INIT_____com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Button_com_ogradytech_registration_gui_CalendarItem(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10444, 200);
+JAVA_VOID com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5___INIT_____com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Dialog(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10548, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    locals[3].data.o = __cn1Arg3;
-    locals[3].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_1(threadStateData, locals[1].data.o, __cn1ThisObject);
     set_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_2(threadStateData, locals[2].data.o, __cn1ThisObject);
-    set_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3(threadStateData, locals[3].data.o, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10444, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10548, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */com_ogradytech_registration_gui_CalendarContainerWrapper_lambda$setButtonInsets$4___com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Button_com_ogradytech_registration_gui_CalendarItem_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_1(__cn1ThisObject), get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_2(__cn1ThisObject), get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_3(__cn1ThisObject), locals[1].data.o); 
+    /* CustomInvoke */com_ogradytech_registration_gui_CalendarContainerWrapper_lambda$showNavigationDialog$4___com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_1(__cn1ThisObject), get_field_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_arg_2(__cn1ThisObject), locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_lambdaFactory$___com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Button_com_ogradytech_registration_gui_CalendarItem_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+JAVA_OBJECT com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5_lambdaFactory$___com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Dialog_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5(threadStateData);
-    DEFINE_METHOD_STACK(5, 3, 0, 10444, 10375);
+    DEFINE_METHOD_STACK(4, 2, 0, 10548, 10375);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    locals[2].data.o = __cn1Arg3;
-    locals[2].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5___INIT_____com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Button_com_ogradytech_registration_gui_CalendarItem(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o, locals[2].data.o);     SP -= 1;
+    /* CustomInvoke */com_ogradytech_registration_gui_CalendarContainerWrapper__Lambda_5___INIT_____com_ogradytech_registration_gui_CalendarContainerWrapper_com_codename1_ui_Dialog(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }

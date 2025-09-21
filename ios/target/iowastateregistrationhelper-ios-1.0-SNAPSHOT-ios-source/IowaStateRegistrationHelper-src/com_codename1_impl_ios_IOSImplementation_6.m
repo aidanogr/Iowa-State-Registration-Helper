@@ -78,7 +78,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_6(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_6___INIT_____com_codename1_impl_ios_IOSImplementation_com_codename1_ui_Component_int_int_java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_INT __cn1Arg6) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 9659, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 9660, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -102,7 +102,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_6___INIT_____com_codename1_im
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_6_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 9659, 202);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 9660, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(746);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$502___com_codename1_impl_ios_IOSImplementation_boolean_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_6_this_0(__cn1ThisObject), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(747);

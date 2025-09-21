@@ -66,7 +66,7 @@ JAVA_OBJECT __NEW_java_util_HashMap_ValueIterator(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_HashMap_ValueIterator___INIT_____java_util_HashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5749, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5750, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_HashMap_AbstractMapIterator___INIT_____java_util_HashMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -76,7 +76,7 @@ JAVA_VOID java_util_HashMap_ValueIterator___INIT_____java_util_HashMap(CODENAME_
 
 
 JAVA_OBJECT java_util_HashMap_ValueIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5749, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5750, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_HashMap_ValueIterator_makeNext__(threadStateData, __cn1ThisObject); 
     PUSH_POINTER(get_field_java_util_HashMap_Entry_value(get_field_java_util_HashMap_ValueIterator_currentEntry(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

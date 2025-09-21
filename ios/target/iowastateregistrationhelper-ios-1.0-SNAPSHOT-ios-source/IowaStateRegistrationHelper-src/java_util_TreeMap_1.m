@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_TreeMap_1___INIT_____java_util_TreeMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6246, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6247, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_TreeMap_1_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -47,7 +47,7 @@ JAVA_VOID java_util_TreeMap_1___INIT_____java_util_TreeMap(CODENAME_ONE_THREAD_S
 
 
 JAVA_BOOLEAN java_util_TreeMap_1_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6246, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6247, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_TreeMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_java_util_TreeMap_1_this_0(__cn1ThisObject), locals[1].data.o);
@@ -57,14 +57,14 @@ JAVA_BOOLEAN java_util_TreeMap_1_contains___java_lang_Object_R_boolean(CODENAME_
 
 
 JAVA_INT java_util_TreeMap_1_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6246, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6247, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_TreeMap_size(get_field_java_util_TreeMap_1_this_0(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID java_util_TreeMap_1_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6246, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6247, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_TreeMap_clear__(threadStateData, get_field_java_util_TreeMap_1_this_0(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -72,7 +72,7 @@ JAVA_VOID java_util_TreeMap_1_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 
 JAVA_OBJECT java_util_TreeMap_1_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6246, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6247, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_TreeMap_UnboundedKeyIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_TreeMap_UnboundedKeyIterator___INIT_____java_util_TreeMap(threadStateData, SP[-1].data.o, get_field_java_util_TreeMap_1_this_0(__cn1ThisObject));     SP -= 1;

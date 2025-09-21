@@ -99,8 +99,8 @@ void __STATIC_INITIALIZER_java_lang_Comparable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_java_nio_charset_Charset][0] = 10;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType][0] = 10;
-    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_gui_CalendarItem_InstructionFormat] = malloc(sizeof(int*) * 13);
-    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_gui_CalendarItem_InstructionFormat][0] = 10;
+    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_gui_ClassItem_InstructionFormat] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_ogradytech_registration_gui_ClassItem_InstructionFormat][0] = 10;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_BrowserComponent_JSType] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_BrowserComponent_JSType][0] = 10;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_Toolbar_BackCommandPolicy] = malloc(sizeof(int*) * 13);

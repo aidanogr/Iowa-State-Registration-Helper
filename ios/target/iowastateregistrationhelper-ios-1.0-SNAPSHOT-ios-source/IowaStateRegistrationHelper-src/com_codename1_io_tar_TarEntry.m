@@ -53,7 +53,7 @@ com_codename1_io_tar_TarEntry___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_io_tar_TarEntry___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8984, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8985, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(38);
@@ -72,7 +72,7 @@ JAVA_VOID com_codename1_io_tar_TarEntry___INIT____(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID com_codename1_io_tar_TarEntry___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8984, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8985, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -90,7 +90,7 @@ JAVA_VOID com_codename1_io_tar_TarEntry___INIT_____java_lang_String_java_lang_St
 
 
 JAVA_VOID com_codename1_io_tar_TarEntry___INIT_____byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8984, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8985, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
@@ -104,7 +104,7 @@ JAVA_VOID com_codename1_io_tar_TarEntry___INIT_____byte_1ARRAY(CODENAME_ONE_THRE
 
 
 JAVA_BOOLEAN com_codename1_io_tar_TarEntry_equals___com_codename1_io_tar_TarEntry_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8984, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8985, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(54);
@@ -130,7 +130,7 @@ JAVA_OBJECT com_codename1_io_tar_TarEntry_getHeader___R_com_codename1_io_tar_Tar
 
 
 JAVA_OBJECT com_codename1_io_tar_TarEntry_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8984, 953);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8985, 954);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(66);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuffer_toString___R_java_lang_String(threadStateData, get_field_com_codename1_io_tar_TarHeader_name(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)));
     PUSH_OBJ(tmpResult); }
@@ -140,7 +140,7 @@ JAVA_OBJECT com_codename1_io_tar_TarEntry_getName___R_java_lang_String(CODENAME_
 
 
 JAVA_VOID com_codename1_io_tar_TarEntry_setName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 8984, 2721);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 8985, 2722);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(70);
@@ -217,7 +217,7 @@ JAVA_OBJECT com_codename1_io_tar_TarEntry_getModTime___R_java_util_Date(CODENAME
 
 
 JAVA_OBJECT com_codename1_io_tar_TarEntry_getFile___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8984, 6752);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8985, 6753);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(123);
 
 {
@@ -228,7 +228,7 @@ JAVA_OBJECT com_codename1_io_tar_TarEntry_getFile___R_java_lang_String(CODENAME_
 
 
 JAVA_LONG com_codename1_io_tar_TarEntry_getSize___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8984, 558);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8985, 559);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(127);
 
 {
@@ -244,43 +244,43 @@ JAVA_VOID com_codename1_io_tar_TarEntry_setSize___long(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_BOOLEAN com_codename1_io_tar_TarEntry_isDirectory___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8984, 689);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8985, 690);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(140);
-    if (get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1603529730;
+    if (get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1959449975;
     __CN1_DEBUG_INFO(141);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1603529730:
+label_L1959449975:
     __CN1_DEBUG_INFO(143);
-    if (get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1472987955;
+    if (get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L55635425;
     __CN1_DEBUG_INFO(144);
     PUSH_INT(get_field_com_codename1_io_tar_TarHeader_linkFlag(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)));
     PUSH_INT(53);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1310907099;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L733671868;
     __CN1_DEBUG_INFO(145);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L1310907099:
+label_L733671868:
     __CN1_DEBUG_INFO(147);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuffer_toString___R_java_lang_String(threadStateData, get_field_com_codename1_io_tar_TarHeader_name(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)));
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1472987955;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L55635425;
     __CN1_DEBUG_INFO(148);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L1472987955:
+label_L55635425:
     __CN1_DEBUG_INFO(151);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_VOID com_codename1_io_tar_TarEntry_extractTarHeader___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8984, 8997);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8985, 8998);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(160);
@@ -288,15 +288,15 @@ JAVA_VOID com_codename1_io_tar_TarEntry_extractTarHeader___java_lang_String(CODE
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(162);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(164);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_lang_String_replace___char_char_R_java_lang_String(threadStateData, locals[2].data.o, virtual_com_codename1_io_FileSystemStorage_getFileSystemSeparator___R_char(threadStateData, locals[3].data.o), 47);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(166);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1520596362;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1703226629;
     __CN1_DEBUG_INFO(167);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_lang_String_substring___int_R_java_lang_String(threadStateData, locals[2].data.o, 1 /* ICONST_1 */);locals[2].type=CN1_TYPE_OBJECT;
-label_L1520596362:
+label_L1703226629:
     __CN1_DEBUG_INFO(169);
     PUSH_POINTER(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuffer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_StringBuffer___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));     SP -= 1;
+    /* CustomInvoke */java_lang_StringBuffer___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));     SP -= 1;
     set_field_com_codename1_io_tar_TarHeader_linkName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(171);
@@ -307,7 +307,7 @@ label_L1520596362:
     set_field_com_codename1_io_tar_TarHeader_name(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(173);
-    if (/* CustomInvoke */virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, locals[3].data.o, get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L445735200;
+    if (/* CustomInvoke */virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, locals[3].data.o, get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1195781551;
     __CN1_DEBUG_INFO(174);
     PUSH_POINTER(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject));
     PUSH_INT(16877);
@@ -326,16 +326,16 @@ label_L1520596362:
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(47);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L762522842;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1140715331;
     __CN1_DEBUG_INFO(177);
     /* CustomInvoke */virtual_java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(threadStateData, get_field_com_codename1_io_tar_TarHeader_name(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject)), STRING_FROM_CONSTANT_POOL_OFFSET(18)); 
 
-label_L762522842:
+label_L1140715331:
     __CN1_DEBUG_INFO(179);
     set_field_com_codename1_io_tar_TarHeader_size(threadStateData, 0 /* LCONST_0 */, get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject));
-    goto label_L1969217453;
+    goto label_L1060553105;
 
-label_L445735200:
+label_L1195781551:
     __CN1_DEBUG_INFO(181);
     PUSH_POINTER(get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject));
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_com_codename1_io_FileSystemStorage_getLength___java_lang_String_R_long(threadStateData, locals[3].data.o, get_field_com_codename1_io_tar_TarEntry_file(__cn1ThisObject));
@@ -348,7 +348,7 @@ label_L445735200:
     PUSH_INT(48);
     set_field_com_codename1_io_tar_TarHeader_linkFlag(threadStateData, POP_INT(), POP_OBJ());
 
-label_L1969217453:
+label_L1060553105:
     __CN1_DEBUG_INFO(187);
     set_field_com_codename1_io_tar_TarHeader_modTime(threadStateData, 0 /* LCONST_0 */, get_field_com_codename1_io_tar_TarEntry_header(__cn1ThisObject));
     __CN1_DEBUG_INFO(188);
@@ -375,7 +375,7 @@ JAVA_VOID com_codename1_io_tar_TarEntry_writeEntryHeader___byte_1ARRAY(CODENAME_
 
 JAVA_VOID com_codename1_io_tar_TarEntry_parseTarHeader___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8984, 9000);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8985, 9001);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(256);

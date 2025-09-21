@@ -77,7 +77,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_CSSBorder_RadialGradient(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_plaf_CSSBorder_RadialGradient___INIT_____com_codename1_ui_plaf_CSSBorder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5760, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5761, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1006);
@@ -89,11 +89,11 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_RadialGradient___INIT_____com_codename
 
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_RadialGradient_toCSSString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5760, 5632);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5761, 5633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1013);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5761));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5762));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
@@ -101,7 +101,7 @@ JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_RadialGradient_toCSSString___R_java_
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_RadialGradient_access$1600___com_codename1_ui_plaf_CSSBorder_RadialGradient_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_plaf_CSSBorder_RadialGradient(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 5760, 5762);
+    DEFINE_METHOD_STACK(1, 1, 0, 5761, 5763);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1006);

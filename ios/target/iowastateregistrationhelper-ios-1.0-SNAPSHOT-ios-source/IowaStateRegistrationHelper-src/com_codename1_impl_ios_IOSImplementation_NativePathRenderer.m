@@ -56,7 +56,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer___INIT____
     volatile JAVA_INT ilocals_3_ = 0; /* pix_boundsWidth */
     volatile JAVA_INT ilocals_4_ = 0; /* pix_boundsHeight */
     volatile JAVA_INT ilocals_5_ = 0; /* windingRule */
-    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 9696, 200);
+    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 9697, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -93,7 +93,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_reset___in
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_destroy__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9696, 7233);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9697, 7234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4192);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativePathRendererCleanup___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativePathRenderer_ptr(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4193);
@@ -103,7 +103,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_destroy__(
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_getOutputBounds___int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9696, 9698);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9697, 9699);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4196);
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_getOutputB
 
 
 JAVA_LONG com_codename1_impl_ios_IOSImplementation_NativePathRenderer_createTexture___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9696, 9699);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9697, 9700);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4204);
 
 {
@@ -127,7 +127,7 @@ JAVA_LONG com_codename1_impl_ios_IOSImplementation_NativePathRenderer_createText
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativePathRenderer_toARGB___int_R_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* color */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9696, 9700);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9697, 9701);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4209);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSNative_nativePathRendererToARGB___long_int_R_int_1ARRAY(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativePathRenderer_ptr(__cn1ThisObject), ilocals_1_);
@@ -139,7 +139,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativePathRenderer_toARGB__
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathRenderer_access$1100___com_codename1_impl_ios_IOSImplementation_NativePathRenderer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_NativePathRenderer(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9696, 1862);
+    DEFINE_METHOD_STACK(1, 1, 0, 9697, 1863);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4154);

@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_NativePathConsumer(CO
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer___INIT_____long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* ptr */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9694, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9695, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4122);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -49,7 +49,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer___INIT____
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_moveTo___float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* x */
     volatile JAVA_FLOAT flocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9694, 3665);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9695, 3666);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(4126);
@@ -63,7 +63,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_moveTo___f
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_lineTo___float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* x */
     volatile JAVA_FLOAT flocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9694, 3666);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9695, 3667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(4130);
@@ -79,7 +79,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_quadTo___f
     volatile JAVA_FLOAT flocals_4_ = 0; /* y1 */
     volatile JAVA_FLOAT flocals_1_ = 0; /* xc */
     volatile JAVA_FLOAT flocals_2_ = 0; /* yc */
-    DEFINE_INSTANCE_METHOD_STACK(7, 5, 0, 9694, 3667);
+    DEFINE_INSTANCE_METHOD_STACK(7, 5, 0, 9695, 3668);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -99,7 +99,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_curveTo___
     volatile JAVA_FLOAT flocals_6_ = 0; /* y1 */
     volatile JAVA_FLOAT flocals_1_ = 0; /* xc1 */
     volatile JAVA_FLOAT flocals_2_ = 0; /* yc1 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 7, 0, 9694, 3668);
+    DEFINE_INSTANCE_METHOD_STACK(9, 7, 0, 9695, 3669);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_curveTo___
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9694, 931);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9695, 932);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4142);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativePathConsumerClose___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativePathConsumer_ptr(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4143);
@@ -125,7 +125,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_close__(CO
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativePathConsumer_done__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9694, 9695);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9695, 9696);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4146);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativePathConsumerDone___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativePathConsumer_ptr(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4147);

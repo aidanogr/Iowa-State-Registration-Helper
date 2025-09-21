@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_1___INIT_____com_codename1_ui_BrowserComponent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8083, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8084, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
@@ -46,7 +46,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_1___INIT_____com_codename1_ui_Browse
 
 
 JAVA_BOOLEAN com_codename1_ui_BrowserComponent_1_shouldNavigate___java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8083, 8084);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8084, 8085);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(141);

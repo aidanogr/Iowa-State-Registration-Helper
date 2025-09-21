@@ -134,7 +134,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_io_JSONSanitizer_State(CODENAME_ONE_THREAD
 
 JAVA_OBJECT com_codename1_io_JSONSanitizer_State_values___R_com_codename1_io_JSONSanitizer_State_1ARRAY(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_io_JSONSanitizer_State(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 7593, 1865);
+    DEFINE_METHOD_STACK(1, 0, 0, 7594, 1866);
     __CN1_DEBUG_INFO(130);
     PUSH_OBJ(cloneArray(get_static_com_codename1_io_JSONSanitizer_State__VALUES(threadStateData)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -144,7 +144,7 @@ JAVA_OBJECT com_codename1_io_JSONSanitizer_State_values___R_com_codename1_io_JSO
 
 JAVA_OBJECT com_codename1_io_JSONSanitizer_State_valueOf___java_lang_String_R_com_codename1_io_JSONSanitizer_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_io_JSONSanitizer_State(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 7593, 900);
+    DEFINE_METHOD_STACK(2, 1, 0, 7594, 901);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(130);
@@ -155,7 +155,7 @@ JAVA_OBJECT com_codename1_io_JSONSanitizer_State_valueOf___java_lang_String_R_co
 
 
 JAVA_VOID com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7593, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7594, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -167,53 +167,53 @@ JAVA_VOID com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(C
 
 
 JAVA_VOID com_codename1_io_JSONSanitizer_State___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 7593, 861);
+    DEFINE_METHOD_STACK(4, 0, 0, 7594, 862);
     __CN1_DEBUG_INFO(135);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7594), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7595), 0 /* ICONST_0 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_START_ARRAY(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(137);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7595), 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7596), 1 /* ICONST_1 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_BEFORE_ELEMENT(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(142);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7596), 2 /* ICONST_2 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7597), 2 /* ICONST_2 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_AFTER_ELEMENT(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(144);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7597), 3 /* ICONST_3 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7598), 3 /* ICONST_3 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_START_MAP(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(146);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7598), 4/* ICONST_4 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7599), 4/* ICONST_4 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_BEFORE_KEY(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(148);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7599), 5 /* ICONST_5 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7600), 5 /* ICONST_5 */);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_AFTER_KEY(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(150);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7600), 6);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7601), 6);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_BEFORE_VALUE(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(155);
     PUSH_POINTER(__NEW_com_codename1_io_JSONSanitizer_State(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7601), 7);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_JSONSanitizer_State___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7602), 7);     SP -= 1;
     set_static_com_codename1_io_JSONSanitizer_State_AFTER_VALUE(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(130);

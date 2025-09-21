@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_CodeScannerImpl(CODEN
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_CodeScannerImpl___INIT_____com_codename1_impl_ios_IOSImplementation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9651, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9652, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8881);
@@ -66,7 +66,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_scanBarCode__
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_access$7000___com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_R_com_codename1_codescan_ScanResult(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_CodeScannerImpl(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9651, 9652);
+    DEFINE_METHOD_STACK(1, 1, 0, 9652, 9653);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8881);
@@ -80,7 +80,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_access$7000
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_access$7002___com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_com_codename1_codescan_ScanResult_R_com_codename1_codescan_ScanResult(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_CodeScannerImpl(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 9651, 9653);
+    DEFINE_METHOD_STACK(3, 2, 0, 9652, 9654);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

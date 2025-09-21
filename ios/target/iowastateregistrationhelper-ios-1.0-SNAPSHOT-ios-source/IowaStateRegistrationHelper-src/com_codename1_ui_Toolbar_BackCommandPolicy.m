@@ -112,7 +112,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_Toolbar_BackCommandPolicy(CODENAME_ONE_
 
 JAVA_OBJECT com_codename1_ui_Toolbar_BackCommandPolicy_values___R_com_codename1_ui_Toolbar_BackCommandPolicy_1ARRAY(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 7183, 1865);
+    DEFINE_METHOD_STACK(1, 0, 0, 7184, 1866);
     __CN1_DEBUG_INFO(460);
     PUSH_OBJ(cloneArray(get_static_com_codename1_ui_Toolbar_BackCommandPolicy__VALUES(threadStateData)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -122,7 +122,7 @@ JAVA_OBJECT com_codename1_ui_Toolbar_BackCommandPolicy_values___R_com_codename1_
 
 JAVA_OBJECT com_codename1_ui_Toolbar_BackCommandPolicy_valueOf___java_lang_String_R_com_codename1_ui_Toolbar_BackCommandPolicy(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 7183, 900);
+    DEFINE_METHOD_STACK(2, 1, 0, 7184, 901);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(460);
@@ -133,7 +133,7 @@ JAVA_OBJECT com_codename1_ui_Toolbar_BackCommandPolicy_valueOf___java_lang_Strin
 
 
 JAVA_VOID com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7183, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7184, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -145,41 +145,41 @@ JAVA_VOID com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String
 
 
 JAVA_VOID com_codename1_ui_Toolbar_BackCommandPolicy___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 7183, 861);
+    DEFINE_METHOD_STACK(4, 0, 0, 7184, 862);
     __CN1_DEBUG_INFO(465);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7184), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7185), 0 /* ICONST_0 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_ALWAYS(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(469);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7185), 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7186), 1 /* ICONST_1 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_AS_REGULAR_COMMAND(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(474);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7186), 2 /* ICONST_2 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7187), 2 /* ICONST_2 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_AS_ARROW(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(479);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7187), 3 /* ICONST_3 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7188), 3 /* ICONST_3 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_ONLY_WHEN_USES_TITLE(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(485);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7188), 4/* ICONST_4 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7189), 4/* ICONST_4 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_WHEN_USES_TITLE_OTHERWISE_ARROW(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(490);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar_BackCommandPolicy(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7189), 5 /* ICONST_5 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Toolbar_BackCommandPolicy___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7190), 5 /* ICONST_5 */);     SP -= 1;
     set_static_com_codename1_ui_Toolbar_BackCommandPolicy_NEVER(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(460);

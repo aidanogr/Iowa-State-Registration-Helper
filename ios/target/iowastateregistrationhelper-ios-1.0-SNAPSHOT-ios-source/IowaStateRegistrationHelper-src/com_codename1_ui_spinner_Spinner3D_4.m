@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_4(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_4___INIT_____com_codename1_ui_spinner_Spinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10144, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(144);
@@ -50,7 +50,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_4_scrollChanged___int_int_int_int(C
     volatile JAVA_INT ilocals_2_ = 0; /* scrollY */
     volatile JAVA_INT ilocals_3_ = 0; /* oldscrollX */
     volatile JAVA_INT ilocals_4_ = 0; /* oldscrollY */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10144, 2810);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10145, 2811);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;

@@ -46,7 +46,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_47(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_47___INIT_____int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9654, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9655, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -60,7 +60,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_47___INIT_____int_java_lang_S
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_47_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9654, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9655, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8861);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6900___com_codename1_impl_ios_IOSImplementation_R_com_codename1_impl_ios_IOSImplementation_CodeScannerImpl(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
     { JAVA_OBJECT tmpResult = com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_access$7000___com_codename1_impl_ios_IOSImplementation_CodeScannerImpl_R_com_codename1_codescan_ScanResult(threadStateData, SP[-1].data.o);

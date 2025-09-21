@@ -63,7 +63,7 @@ com_codename1_io_JSONParser_KeyStack___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_io_JSONParser_KeyStack___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7560, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7561, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(239);
     java_util_Vector___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -72,7 +72,7 @@ JAVA_VOID com_codename1_io_JSONParser_KeyStack___INIT____(CODENAME_ONE_THREAD_ST
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_KeyStack_peek___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7560, 6335);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7561, 6336);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(241);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_JSONParser_KeyStack_elementAt___int_R_java_lang_Object(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */);
     PUSH_OBJ(tmpResult); }
@@ -82,7 +82,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_KeyStack_peek___R_java_lang_String(CODEN
 
 
 JAVA_VOID com_codename1_io_JSONParser_KeyStack_push___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7560, 1943);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7561, 1944);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(245);
@@ -94,13 +94,13 @@ JAVA_VOID com_codename1_io_JSONParser_KeyStack_push___java_lang_String(CODENAME_
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_KeyStack_pop___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7560, 1944);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7561, 1945);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(249);
-    if (virtual_com_codename1_io_JSONParser_KeyStack_isEmpty___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L626071701;
+    if (virtual_com_codename1_io_JSONParser_KeyStack_isEmpty___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L21247289;
     __CN1_DEBUG_INFO(250);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L626071701:
+label_L21247289:
     __CN1_DEBUG_INFO(252);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_io_JSONParser_KeyStack_peek___R_java_lang_String(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(253);
     /* CustomInvoke */virtual_com_codename1_io_JSONParser_KeyStack_removeElementAt___int(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 

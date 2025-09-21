@@ -87,7 +87,7 @@ void __GC_MARK_java_util_TreeMap_AscendingSubMapIterator(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID java_util_TreeMap_AscendingSubMapIterator___INIT_____java_util_TreeMap_NavigableSubMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6261, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6262, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_TreeMap_AbstractSubMapIterator___INIT_____java_util_TreeMap_NavigableSubMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -97,7 +97,7 @@ JAVA_VOID java_util_TreeMap_AscendingSubMapIterator___INIT_____java_util_TreeMap
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapIterator_getBoundaryNode___R_java_util_TreeMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6261, 6262);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6262, 6263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[1].type=CN1_TYPE_OBJECT;    if (get_field_java_util_TreeMap_NavigableSubMap_toEnd(get_field_java_util_TreeMap_AscendingSubMapIterator_subMap(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L157683534;
     if (get_field_java_util_TreeMap_NavigableSubMap_hiInclusive(get_field_java_util_TreeMap_AscendingSubMapIterator_subMap(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1518864111;
@@ -131,7 +131,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapIterator_getStartNode___R_java_util
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapIterator_getNext___R_java_util_TreeMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6261, 6264);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6262, 6265);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_TreeMap_AscendingSubMapIterator_expectedModCount(__cn1ThisObject)==get_field_java_util_TreeMap_modCount(get_field_java_util_TreeMap_NavigableSubMap_m(get_field_java_util_TreeMap_AscendingSubMapIterator_subMap(__cn1ThisObject)))) /* IF_ICMPEQ CustomJump */ goto label_L1325808650;
     PUSH_POINTER(__NEW_java_util_ConcurrentModificationException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -183,7 +183,7 @@ label_L525683462:
 
 
 JAVA_BOOLEAN java_util_TreeMap_AscendingSubMapIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6261, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6262, 1252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (JAVA_NULL /* ACONST_NULL */==get_field_java_util_TreeMap_AscendingSubMapIterator_node(__cn1ThisObject)) /* IF_ACMPEQ CustomJump */ goto label_L473581465;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L319977154;

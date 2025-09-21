@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_IowaStateRegistrationHelper__Lambd
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_3___INIT_____com_codename1_io_ConnectionRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10377, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10377, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -47,7 +47,7 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_3___IN
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_3_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10377, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10377, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_ogradytech_registration_IowaStateRegistrationHelper_lambda$2___com_codename1_io_ConnectionRequest_com_codename1_io_NetworkEvent(threadStateData, get_field_com_ogradytech_registration_IowaStateRegistrationHelper__Lambda_3_arg_1(__cn1ThisObject), locals[1].data.o); 

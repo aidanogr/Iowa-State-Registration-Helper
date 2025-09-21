@@ -32,7 +32,7 @@ JAVA_OBJECT __NEW_java_io_FilterInputStream(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_io_FilterInputStream___INIT_____java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1974, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1975, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_io_InputStream___INIT____(threadStateData, __cn1ThisObject); 
@@ -43,7 +43,7 @@ JAVA_VOID java_io_FilterInputStream___INIT_____java_io_InputStream(CODENAME_ONE_
 
 
 JAVA_INT java_io_FilterInputStream_available___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1974, 985);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1975, 986);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_io_InputStream_available___R_int(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -51,7 +51,7 @@ JAVA_INT java_io_FilterInputStream_available___R_int(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID java_io_FilterInputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1974, 931);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1975, 932);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_InputStream_close__(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -59,7 +59,7 @@ JAVA_VOID java_io_FilterInputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_io_FilterInputStream_mark___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1974, 986);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1975, 987);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_io_InputStream_mark___int(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject), ilocals_1_); 
@@ -70,7 +70,7 @@ JAVA_VOID java_io_FilterInputStream_mark___int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_BOOLEAN java_io_FilterInputStream_markSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1974, 987);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1975, 988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_io_InputStream_markSupported___R_boolean(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -78,7 +78,7 @@ JAVA_BOOLEAN java_io_FilterInputStream_markSupported___R_boolean(CODENAME_ONE_TH
 
 
 JAVA_INT java_io_FilterInputStream_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1974, 988);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1975, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_io_InputStream_read___R_int(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -86,7 +86,7 @@ JAVA_INT java_io_FilterInputStream_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_INT java_io_FilterInputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1974, 988);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1975, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -98,7 +98,7 @@ JAVA_INT java_io_FilterInputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE
 
 
 JAVA_VOID java_io_FilterInputStream_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1974, 989);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1975, 990);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_InputStream_reset__(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject)); 
     monitorExitBlock(threadStateData, __cn1ThisObject);
@@ -108,7 +108,7 @@ JAVA_VOID java_io_FilterInputStream_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_LONG java_io_FilterInputStream_skip___long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1974, 990);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1975, 991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_java_io_InputStream_skip___long_R_long(threadStateData, get_field_java_io_FilterInputStream_in(__cn1ThisObject), llocals_1_);
     PUSH_LONG(tmpResult); }

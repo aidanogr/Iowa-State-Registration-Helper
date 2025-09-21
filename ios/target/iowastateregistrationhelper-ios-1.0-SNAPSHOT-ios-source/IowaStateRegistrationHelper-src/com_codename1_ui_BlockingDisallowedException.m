@@ -29,9 +29,9 @@ com_codename1_ui_BlockingDisallowedException___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_BlockingDisallowedException___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9221, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9222, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(39);
-    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(9222)); 
+    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(9223)); 
     __CN1_DEBUG_INFO(40);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

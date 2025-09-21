@@ -101,7 +101,7 @@ java_lang_Thread___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_Thread___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1156, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1157, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_lang_Thread_priority(threadStateData, 5 /* ICONST_5 */, __cn1ThisObject);
     set_field_java_lang_Thread_target(threadStateData, __cn1ThisObject, __cn1ThisObject);
@@ -111,7 +111,7 @@ JAVA_VOID java_lang_Thread___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 
 JAVA_VOID java_lang_Thread___INIT_____java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1156, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1157, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -123,7 +123,7 @@ JAVA_VOID java_lang_Thread___INIT_____java_lang_Runnable(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID java_lang_Thread___INIT_____java_lang_Runnable_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1156, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1157, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -138,7 +138,7 @@ JAVA_VOID java_lang_Thread___INIT_____java_lang_Runnable_java_lang_String(CODENA
 
 
 JAVA_VOID java_lang_Thread___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1156, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1157, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -156,7 +156,7 @@ JAVA_INT java_lang_Thread_activeCount___R_int(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_OBJECT java_lang_Thread_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1156, 953);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1157, 954);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_lang_Thread_name(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -164,7 +164,7 @@ JAVA_OBJECT java_lang_Thread_getName___R_java_lang_String(CODENAME_ONE_THREAD_ST
 
 
 JAVA_INT java_lang_Thread_getPriority___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1156, 1160);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1157, 1161);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Thread_priority(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -176,7 +176,7 @@ JAVA_VOID java_lang_Thread_interrupt__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
 
 
 JAVA_BOOLEAN java_lang_Thread_isAlive___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1156, 1162);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1157, 1163);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Thread_alive(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -188,11 +188,11 @@ JAVA_VOID java_lang_Thread_join__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1T
 
 
 JAVA_VOID java_lang_Thread_runImpl___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 1156, 1164);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 1157, 1165);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
-    int restoreToL1335066989cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1335066989cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1335066989cn1_class_id_java_lang_Throwable1, label_L1097897234, restoreToL1335066989cn1_class_id_java_lang_Throwable1);
+    int restoreToL481334087cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL481334087cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L481334087cn1_class_id_java_lang_Throwable1, label_L1097897234, restoreToL481334087cn1_class_id_java_lang_Throwable1);
     set_field_java_lang_Thread_alive(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     set_field_java_lang_Thread_nativeThreadId(threadStateData, llocals_1_, __cn1ThisObject);
     PUSH_POINTER(__NEW_java_lang_Long(threadStateData)); /* NEW */
@@ -201,14 +201,14 @@ JAVA_VOID java_lang_Thread_runImpl___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
     BC_ASTORE(3);
     set_static_java_lang_Thread_activeThreads(threadStateData, (get_static_java_lang_Thread_activeThreads(threadStateData) + 1 /* ICONST_1 */));
 
-label_L1335066989:
- tryBlockOffsetL1335066989cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1335066989cn1_class_id_java_lang_Throwable1);
-    restoreToL1335066989cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L481334087:
+ tryBlockOffsetL481334087cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L481334087cn1_class_id_java_lang_Throwable1);
+    restoreToL481334087cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     virtual_java_lang_Runnable_run__(threadStateData, get_field_java_lang_Thread_target(__cn1ThisObject)); 
 
-label_L1543005080:
+label_L1731336370:
 END_TRY(1);    JUMP_TO(label_L1107530534, 0);
 
 label_L1097897234:
@@ -224,7 +224,7 @@ label_L1107530534:
 
 
 JAVA_VOID java_lang_Thread_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1156, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1157, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_lang_Thread_alive(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L858818438;
     if (get_field_java_lang_Thread_target(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L858818438;
     virtual_java_lang_Runnable_run__(threadStateData, get_field_java_lang_Thread_target(__cn1ThisObject)); 
@@ -236,7 +236,7 @@ label_L858818438:
 
 
 JAVA_VOID java_lang_Thread_setPriority___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1156, 1165);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1157, 1166);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     set_field_java_lang_Thread_priority(threadStateData, ilocals_1_, __cn1ThisObject);
     /* CustomInvoke */java_lang_Thread_setPriorityImpl___int(threadStateData, __cn1ThisObject, get_field_java_lang_Thread_priority(__cn1ThisObject)); 
@@ -246,11 +246,11 @@ JAVA_VOID java_lang_Thread_setPriority___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_OBJECT java_lang_Thread_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1156, 897);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1157, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1169));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1170));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_lang_Thread_name(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -262,7 +262,7 @@ JAVA_OBJECT java_lang_Thread_toString___R_java_lang_String(CODENAME_ONE_THREAD_S
 
 
 JAVA_OBJECT java_lang_Thread_getStackTrace___R_java_lang_StackTraceElement_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1156, 918);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1157, 919);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_java_lang_StackTraceElement(threadStateData, SP[0].data.i));
@@ -277,7 +277,7 @@ JAVA_VOID java_lang_Thread_yield__(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_lang_Thread_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1156, 903);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1157, 904);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */java_lang_Thread_releaseThreadNativeResources___long(threadStateData, get_field_java_lang_Thread_nativeThreadId(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -285,7 +285,7 @@ JAVA_VOID java_lang_Thread_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 
 JAVA_VOID java_lang_Thread___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 1156, 861);
+    DEFINE_METHOD_STACK(1, 0, 0, 1157, 862);
     set_static_java_lang_Thread_activeThreads(threadStateData, 0 /* ICONST_0 */);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

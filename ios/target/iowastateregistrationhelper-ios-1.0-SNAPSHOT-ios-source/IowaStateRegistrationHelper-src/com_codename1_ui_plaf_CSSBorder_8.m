@@ -31,7 +31,7 @@ com_codename1_ui_plaf_CSSBorder_8___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_plaf_CSSBorder_8___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5704, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5705, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(180);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -40,7 +40,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_8___INIT____(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_8_decorate___com_codename1_ui_plaf_CSSBorder_java_lang_String_java_lang_String_R_com_codename1_ui_plaf_CSSBorder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5704, 5695);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5705, 5696);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

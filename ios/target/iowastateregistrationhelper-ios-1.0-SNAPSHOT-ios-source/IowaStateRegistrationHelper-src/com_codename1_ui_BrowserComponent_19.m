@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_19(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_19___INIT_____com_codename1_ui_BrowserComponent_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8097, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8098, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -60,30 +60,30 @@ JAVA_VOID com_codename1_ui_BrowserComponent_19___INIT_____com_codename1_ui_Brows
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_19_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8097, 202);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL231012984cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL231012984cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L231012984cn1_class_id_java_io_IOException1, label_L1475982439, restoreToL231012984cn1_class_id_java_io_IOException1);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8098, 203);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1619932351cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1619932351cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1619932351cn1_class_id_java_io_IOException1, label_L768669591, restoreToL1619932351cn1_class_id_java_io_IOException1);
 
-label_L231012984:
- tryBlockOffsetL231012984cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L231012984cn1_class_id_java_io_IOException1);
-    restoreToL231012984cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1619932351:
+ tryBlockOffsetL1619932351cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1619932351cn1_class_id_java_io_IOException1);
+    restoreToL1619932351cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(827);
     /* CustomInvoke */virtual_com_codename1_ui_BrowserComponent_setURLHierarchy___java_lang_String(threadStateData, get_field_com_codename1_ui_BrowserComponent_19_this_0(__cn1ThisObject), get_field_com_codename1_ui_BrowserComponent_19_val_url(__cn1ThisObject)); 
 
-label_L762166508:
+label_L977990184:
 END_TRY(1);    __CN1_DEBUG_INFO(830);
-    JUMP_TO(label_L1834755909, 0);
+    JUMP_TO(label_L1728465884, 0);
 
-label_L1475982439:
+label_L768669591:
     __CN1_DEBUG_INFO(828);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(829);
     /* CustomInvoke */com_codename1_io_Log_e___java_lang_Throwable(threadStateData, locals[1].data.o); 
 
-label_L1834755909:
+label_L1728465884:
     __CN1_DEBUG_INFO(831);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

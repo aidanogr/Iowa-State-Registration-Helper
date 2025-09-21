@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_DefaultLookAndFeel_1_1(CODENAME_ONE_THRE
 
 
 JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_1_1___INIT_____com_codename1_ui_plaf_DefaultLookAndFeel_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6839, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6840, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2301);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_1_1___INIT_____com_codename1_
 
 
 JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_1_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6839, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6840, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2303);
     PUSH_POINTER(get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_val_cmp(get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_1_this_1(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getAbsoluteX___R_int(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_val_cmp(get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_1_this_1(__cn1ThisObject)));

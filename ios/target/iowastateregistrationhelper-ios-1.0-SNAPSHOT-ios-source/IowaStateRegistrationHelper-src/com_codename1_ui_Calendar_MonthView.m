@@ -260,7 +260,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Calendar_MonthView(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_LONG com_codename1_ui_Calendar_MonthView_getCurrentDay___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9932, 9933);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9933, 9934);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(973);
 
 {
@@ -273,7 +273,7 @@ JAVA_LONG com_codename1_ui_Calendar_MonthView_getCurrentDay___R_long(CODENAME_ON
 JAVA_VOID com_codename1_ui_Calendar_MonthView___INIT_____com_codename1_ui_Calendar_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_LONG llocals_2_ = 0; /* time */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9932, 200);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9933, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     llocals_2_ = __cn1Arg2;
@@ -293,7 +293,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView___INIT_____com_codename1_ui_Calend
     set_field_com_codename1_ui_Calendar_MonthView_components(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(978);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(9934)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(9935)); 
     __CN1_DEBUG_INFO(979);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
@@ -320,19 +320,19 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView___INIT_____com_codename1_ui_Calend
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_addComponent___com_codename1_ui_Component(threadStateData, __cn1ThisObject, get_field_com_codename1_ui_Calendar_MonthView_days(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(983);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
-    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9935), 0 /* ICONST_0 */);
+    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9936), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L355920448;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L145664926;
     __CN1_DEBUG_INFO(984);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_titles(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9936)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_titles(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9937)); 
     __CN1_DEBUG_INFO(985);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_days(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9937)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_days(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9938)); 
 
-label_L355920448:
+label_L145664926:
     __CN1_DEBUG_INFO(987);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L2006112337:
+label_L973123933:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
     SP++;
@@ -344,7 +344,7 @@ label_L2006112337:
         SP[-1].type = CN1_TYPE_INT; 
         SP[-1].data.i = (*((JAVA_ARRAY)SP[-1].data.o)).length; 
     }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L913796146;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L44227594;
     __CN1_DEBUG_INFO(988);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_titles(__cn1ThisObject));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Calendar_createDayTitle___int_R_com_codename1_ui_Label(threadStateData, locals[1].data.o, ilocals_4_);
@@ -352,14 +352,14 @@ label_L2006112337:
     virtual_com_codename1_ui_Container_addComponent___com_codename1_ui_Component(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(987);
     BC_IINC(4, 1);
-    goto label_L2006112337;
+    goto label_L973123933;
 
-label_L913796146:
+label_L44227594:
     __CN1_DEBUG_INFO(990);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L94500728:
-    if (ilocals_4_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1557752641;
+label_L784961589:
+    if (ilocals_4_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L921640293;
     __CN1_DEBUG_INFO(991);
     CN1_SET_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_4_, virtual_com_codename1_ui_Calendar_createDayComponent___R_com_codename1_ui_Component(threadStateData, locals[1].data.o));
     __CN1_DEBUG_INFO(992);
@@ -369,7 +369,7 @@ label_L94500728:
     (*SP).data.i = ilocals_4_; 
     SP++;
     PUSH_INT(7);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L2116025968;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1273012861;
     __CN1_DEBUG_INFO(994);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject));
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -382,7 +382,7 @@ label_L94500728:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$700___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, locals[1].data.o));
     virtual_com_codename1_ui_Component_setNextFocusUp___com_codename1_ui_Component(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L2116025968:
+label_L1273012861:
     __CN1_DEBUG_INFO(996);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_bindDayListener___com_codename1_ui_Component_com_codename1_ui_events_ActionListener(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_4_), __cn1ThisObject); 
     __CN1_DEBUG_INFO(997);
@@ -391,19 +391,19 @@ label_L2116025968:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
 
-label_L305468700:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1929649021;
+label_L1610853733:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1597400455;
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(998);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_bindDayListener___com_codename1_ui_Component_com_codename1_ui_events_ActionListener(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_4_), locals[6].data.o); 
     __CN1_DEBUG_INFO(999);
-    goto label_L305468700;
+    goto label_L1610853733;
 
-label_L1929649021:
+label_L1597400455:
     __CN1_DEBUG_INFO(990);
     BC_IINC(4, 1);
-    goto label_L94500728;
+    goto label_L784961589;
 
-label_L1557752641:
+label_L921640293:
     __CN1_DEBUG_INFO(1001);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_setCurrentDay___long(threadStateData, __cn1ThisObject, llocals_2_); 
     __CN1_DEBUG_INFO(1003);
@@ -414,7 +414,7 @@ label_L1557752641:
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_setCurrentDay___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* day */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9932, 9938);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9933, 9939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(1006);
     /* CustomInvoke */com_codename1_ui_Calendar_MonthView_setCurrentDay___long_boolean(threadStateData, __cn1ThisObject, llocals_1_, 0 /* ICONST_0 */); 
@@ -440,7 +440,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_setCurrentDay___long_boolean(CODEN
     volatile JAVA_INT ilocals_18_ = 0; /* v18 */
     volatile JAVA_INT ilocals_19_ = 0; /* v19 */
     volatile JAVA_LONG llocals_1_ = 0; /* day */
-    DEFINE_INSTANCE_METHOD_STACK(7, 21, 0, 9932, 9938);
+    DEFINE_INSTANCE_METHOD_STACK(7, 21, 0, 9933, 9939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(1010);
@@ -496,13 +496,13 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_setCurrentDay___long_boolean(CODEN
     __CN1_DEBUG_INFO(1031);
     /* VarOp.assignFrom */ ilocals_11_ = /* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[4].data.o, 5 /* ICONST_5 */);
     __CN1_DEBUG_INFO(1032);
-    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1000___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L80504258;
+    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1000___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1618230491;
     __CN1_DEBUG_INFO(1033);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$700___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_9_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -512,11 +512,11 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_setCurrentDay___long_boolean(CODEN
     __CN1_DEBUG_INFO(1034);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1000___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_ComboBox_setSelectedIndex___int(threadStateData, SP[-1].data.o, ilocals_10_);     SP -= 1;
-    goto label_L1463835093;
+    goto label_L201484047;
 
-label_L80504258:
+label_L1618230491:
     __CN1_DEBUG_INFO(1036);
-    if (/* CustomInvoke */com_codename1_ui_Calendar_access$300___com_codename1_ui_Calendar_R_com_codename1_ui_Label(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1463835093;
+    if (/* CustomInvoke */com_codename1_ui_Calendar_access$300___com_codename1_ui_Calendar_R_com_codename1_ui_Label(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L201484047;
     __CN1_DEBUG_INFO(1037);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$300___com_codename1_ui_Calendar_R_com_codename1_ui_Label(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -526,7 +526,7 @@ label_L80504258:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(615));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(616));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_9_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -534,14 +534,14 @@ label_L80504258:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1463835093:
+label_L201484047:
     __CN1_DEBUG_INFO(1041);
-    if (ilocals_9_!=ilocals_5_) /* IF_ICMPNE CustomJump */ goto label_L1835477972;
-    if (ilocals_10_!=ilocals_6_) /* IF_ICMPNE CustomJump */ goto label_L1835477972;
-    if (ilocals_11_!=ilocals_7_) /* IF_ICMPNE CustomJump */ goto label_L1835477972;
-    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L1735854903;
+    if (ilocals_9_!=ilocals_5_) /* IF_ICMPNE CustomJump */ goto label_L1897372527;
+    if (ilocals_10_!=ilocals_6_) /* IF_ICMPNE CustomJump */ goto label_L1897372527;
+    if (ilocals_11_!=ilocals_7_) /* IF_ICMPNE CustomJump */ goto label_L1897372527;
+    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L331216192;
 
-label_L1835477972:
+label_L1897372527:
     __CN1_DEBUG_INFO(1042);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_util_Calendar_getTime___R_java_util_Date(threadStateData, locals[4].data.o);
@@ -553,12 +553,12 @@ label_L1835477972:
     /* CustomInvoke */PUSH_LONG(com_codename1_ui_Calendar_access$1100___com_codename1_ui_Calendar_R_long(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_LONG(-1LL); /* LDC */
     BC_LCMP();
-    if(POP_INT() != 0) /* IFNE */ goto label_L7508078;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1382973704;
     __CN1_DEBUG_INFO(1044);
     /* CustomInvoke */PUSH_LONG(com_codename1_ui_Calendar_access$1102___com_codename1_ui_Calendar_long_R_long(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), get_field_com_codename1_ui_Calendar_MonthView_currentDay(__cn1ThisObject)));
     popMany(threadStateData, 2, &SP); /* POP2 */
 
-label_L7508078:
+label_L1382973704:
     __CN1_DEBUG_INFO(1046);
     /* VarOp.assignFrom */ ilocals_12_ = /* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[4].data.o, 2 /* ICONST_2 */);
     __CN1_DEBUG_INFO(1047);
@@ -598,11 +598,11 @@ label_L7508078:
     __CN1_DEBUG_INFO(1057);
     /* VarOp.assignFrom */     ilocals_17_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(1058);
-    if (ilocals_15_<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L1428815684;
+    if (ilocals_15_<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L1305194069;
 
-label_L1588976146:
+label_L2090953436:
     __CN1_DEBUG_INFO(1061);
-    if (ilocals_15_<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L21252030;
+    if (ilocals_15_<=1 /* ICONST_1 */) /* IF_ICMPLE CustomJump */ goto label_L4888672;
     __CN1_DEBUG_INFO(1062);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
@@ -617,17 +617,17 @@ label_L1588976146:
     virtual_java_util_Calendar_setTime___java_util_Date(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(1063);
     /* VarOp.assignFrom */ ilocals_15_ = /* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[4].data.o, 7);
-    goto label_L1588976146;
+    goto label_L2090953436;
 
-label_L21252030:
+label_L4888672:
     __CN1_DEBUG_INFO(1065);
     /* VarOp.assignFrom */ ilocals_18_ = /* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[4].data.o, 5 /* ICONST_5 */);
 
-label_L1246810186:
+label_L1524744833:
     __CN1_DEBUG_INFO(1066);
-    if (ilocals_17_>(ilocals_16_ - ilocals_18_)) /* IF_ICMPGT CustomJump */ goto label_L1428815684;
+    if (ilocals_17_>(ilocals_16_ - ilocals_18_)) /* IF_ICMPGT CustomJump */ goto label_L1305194069;
     __CN1_DEBUG_INFO(1067);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_17_), STRING_FROM_CONSTANT_POOL_OFFSET(4781)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_17_), STRING_FROM_CONSTANT_POOL_OFFSET(4782)); 
     __CN1_DEBUG_INFO(1068);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayEnabled___com_codename1_ui_Component_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_17_), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1069);
@@ -643,7 +643,7 @@ label_L1246810186:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, (ilocals_18_ + ilocals_17_));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -652,9 +652,9 @@ label_L1246810186:
     virtual_com_codename1_ui_Calendar_setDayText___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(1066);
     BC_IINC(17, 1);
-    goto label_L1246810186;
+    goto label_L1524744833;
 
-label_L1428815684:
+label_L1305194069:
     __CN1_DEBUG_INFO(1073);
     /* CustomInvoke */virtual_java_util_Calendar_set___int_int(threadStateData, locals[4].data.o, 2 /* ICONST_2 */, ((ilocals_12_ + 1 /* ICONST_1 */) % 12)); 
     __CN1_DEBUG_INFO(1074);
@@ -676,10 +676,10 @@ label_L1428815684:
     __CN1_DEBUG_INFO(1079);
     /* VarOp.assignFrom */     ilocals_18_ = ilocals_17_;
 
-label_L74633460:
+label_L1560243060:
     __CN1_DEBUG_INFO(1080);
-    if (ilocals_18_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1352254875;
-    if (((ilocals_18_ - ilocals_17_) + 1 /* ICONST_1 */)>ilocals_16_) /* IF_ICMPGT CustomJump */ goto label_L1352254875;
+    if (ilocals_18_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1254651534;
+    if (((ilocals_18_ - ilocals_17_) + 1 /* ICONST_1 */)>ilocals_16_) /* IF_ICMPGT CustomJump */ goto label_L1254651534;
     __CN1_DEBUG_INFO(1081);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayEnabled___com_codename1_ui_Component_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(1082);
@@ -700,18 +700,18 @@ label_L74633460:
     SP[-1].data.l = LONG_ARRAY_LOOKUP((JAVA_ARRAY)SP[-1].data.o, (*SP).data.i);
     /* CustomInvoke */PUSH_LONG(com_codename1_ui_Calendar_access$1100___com_codename1_ui_Calendar_R_long(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     BC_LCMP();
-    if(POP_INT() != 0) /* IFNE */ goto label_L1942163841;
+    if(POP_INT() != 0) /* IFNE */ goto label_L513113647;
     __CN1_DEBUG_INFO(1084);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4777)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4778)); 
     __CN1_DEBUG_INFO(1085);
     set_field_com_codename1_ui_Calendar_MonthView_selected(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), __cn1ThisObject);
-    goto label_L64364705;
+    goto label_L1762984107;
 
-label_L1942163841:
+label_L513113647:
     __CN1_DEBUG_INFO(1087);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4781)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4782)); 
 
-label_L64364705:
+label_L1762984107:
     __CN1_DEBUG_INFO(1090);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1300___com_codename1_ui_Calendar_R_java_util_Map(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_entrySet___R_java_util_Set(threadStateData, SP[-1].data.o);
@@ -720,8 +720,8 @@ label_L64364705:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(19);
 
-label_L977772506:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[19].data.o)==0) /* IFEQ CustomJump */ goto label_L1330143761;
+label_L26229597:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[19].data.o)==0) /* IFEQ CustomJump */ goto label_L1035219650;
     /* VarOp.assignFrom */ locals[20].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[19].data.o);locals[20].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1091);
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getValue___R_java_lang_Object(threadStateData, locals[20].data.o);
     PUSH_OBJ(tmpResult); }
@@ -738,7 +738,7 @@ label_L977772506:
     { JAVA_INT tmpResult = virtual_java_util_Collection_contains___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1373885310;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L876695548;
     __CN1_DEBUG_INFO(1092);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject));
@@ -753,13 +753,13 @@ label_L977772506:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L1373885310:
+label_L876695548:
     __CN1_DEBUG_INFO(1094);
-    goto label_L977772506;
+    goto label_L26229597;
 
-label_L1330143761:
+label_L1035219650:
     __CN1_DEBUG_INFO(1096);
-    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1400___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L145122075;
+    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1400___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1078031260;
     __CN1_DEBUG_INFO(1097);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1500___com_codename1_ui_Calendar_R_java_util_Collection(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
@@ -775,7 +775,7 @@ label_L1330143761:
     { JAVA_INT tmpResult = virtual_java_util_Collection_contains___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L145122075;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1078031260;
     __CN1_DEBUG_INFO(1098);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject));
@@ -789,24 +789,24 @@ label_L1330143761:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1600___com_codename1_ui_Calendar_R_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L145122075:
+label_L1078031260:
     __CN1_DEBUG_INFO(1101);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_updateButtonDayDate___com_codename1_ui_Component_int_int_int(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), ilocals_9_, ilocals_12_, ((ilocals_18_ - ilocals_17_) + 1 /* ICONST_1 */)); 
     __CN1_DEBUG_INFO(1102);
     /* VarOp.assignFrom */ llocals_13_=(llocals_13_ + 86400000LL);
     __CN1_DEBUG_INFO(1080);
     BC_IINC(18, 1);
-    goto label_L74633460;
+    goto label_L1560243060;
 
-label_L1352254875:
+label_L1254651534:
     __CN1_DEBUG_INFO(1104);
     /* VarOp.assignFrom */     ilocals_19_ = 1 /* ICONST_1 */; 
 
-label_L1271241511:
+label_L1652552120:
     __CN1_DEBUG_INFO(1105);
-    if (ilocals_18_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1735854903;
+    if (ilocals_18_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L331216192;
     __CN1_DEBUG_INFO(1106);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4781)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), STRING_FROM_CONSTANT_POOL_OFFSET(4782)); 
     __CN1_DEBUG_INFO(1107);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayEnabled___com_codename1_ui_Component_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_18_), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1108);
@@ -822,7 +822,7 @@ label_L1271241511:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_19_; 
@@ -836,9 +836,9 @@ label_L1271241511:
     virtual_com_codename1_ui_Calendar_setDayText___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(1105);
     BC_IINC(18, 1);
-    goto label_L1271241511;
+    goto label_L1652552120;
 
-label_L1735854903:
+label_L331216192:
     __CN1_DEBUG_INFO(1111);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -846,7 +846,7 @@ label_L1735854903:
 
 
 JAVA_INT com_codename1_ui_Calendar_MonthView_getDayOfMonth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9932, 9939);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9933, 9940);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1114);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$900___com_codename1_ui_Calendar_R_java_util_TimeZone(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(threadStateData, SP[-1].data.o);
@@ -868,7 +868,7 @@ JAVA_INT com_codename1_ui_Calendar_MonthView_getDayOfMonth___R_int(CODENAME_ONE_
 
 
 JAVA_INT com_codename1_ui_Calendar_MonthView_getMonth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9932, 9940);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9933, 9941);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1120);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$900___com_codename1_ui_Calendar_R_java_util_TimeZone(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(threadStateData, SP[-1].data.o);
@@ -895,7 +895,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_incrementMonth__(CODENAME_ONE_THRE
 
 
 JAVA_LONG com_codename1_ui_Calendar_MonthView_getSelectedDay___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9932, 9869);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9933, 9870);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1137);
 
 {
@@ -907,7 +907,7 @@ JAVA_LONG com_codename1_ui_Calendar_MonthView_getSelectedDay___R_long(CODENAME_O
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_setSelectedDay___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* selectedDay */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9932, 9942);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9933, 9943);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(1141);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$900___com_codename1_ui_Calendar_R_java_util_TimeZone(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
@@ -950,7 +950,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_setMonth___int_int(CODENAME_ONE_TH
     volatile JAVA_INT ilocals_1_ = 0; /* year */
     volatile JAVA_INT ilocals_2_ = 0; /* month */
     volatile JAVA_LONG llocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 9932, 9943);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 9933, 9944);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(1152);
@@ -974,9 +974,9 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_setMonth___int_int(CODENAME_ONE_TH
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Calendar_getTime___R_java_util_Date(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1160);
     /* VarOp.assignFrom */ llocals_5_ = virtual_java_util_Date_getTime___R_long(threadStateData, locals[4].data.o);
 
-label_L1679352734:
+label_L245386411:
     __CN1_DEBUG_INFO(1164);
-    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[3].data.o, 2 /* ICONST_2 */)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L1996449989;
+    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[3].data.o, 2 /* ICONST_2 */)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L698562080;
     __CN1_DEBUG_INFO(1165);
     /* VarOp.assignFrom */ llocals_5_=(llocals_5_ - 86400000LL);
     __CN1_DEBUG_INFO(1166);
@@ -985,9 +985,9 @@ label_L1679352734:
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_Date___INIT_____long(threadStateData, SP[-1].data.o, llocals_5_);     SP -= 1;
     virtual_java_util_Calendar_setTime___java_util_Date(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    goto label_L1679352734;
+    goto label_L245386411;
 
-label_L1996449989:
+label_L698562080:
     __CN1_DEBUG_INFO(1168);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_setCurrentDay___long(threadStateData, __cn1ThisObject, llocals_5_); 
     __CN1_DEBUG_INFO(1169);
@@ -1002,7 +1002,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_decrementMonth__(CODENAME_ONE_THRE
 
 
 JAVA_INT com_codename1_ui_Calendar_MonthView_getYear___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9932, 9945);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9933, 9946);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1183);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$900___com_codename1_ui_Calendar_R_java_util_TimeZone(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(threadStateData, SP[-1].data.o);
@@ -1024,7 +1024,7 @@ JAVA_INT com_codename1_ui_Calendar_MonthView_getYear___R_int(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_addActionListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9932, 1599);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9933, 1600);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1189);
@@ -1037,7 +1037,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_addActionListener___com_codename1_
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_removeActionListener___com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9932, 1600);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9933, 1601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1193);
@@ -1070,7 +1070,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_removeDayActionListener___com_code
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_addDataChangedListener___com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9932, 4188);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9933, 4189);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1224);
@@ -1083,7 +1083,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_addDataChangedListener___com_coden
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_removeDataChangedListener___com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9932, 4189);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9933, 4190);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1233);
@@ -1096,7 +1096,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_removeDataChangedListener___com_co
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_fireActionEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9932, 2484);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9933, 2485);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1237);
     virtual_com_codename1_ui_Calendar_componentChanged__(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1238);
@@ -1114,7 +1114,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_fireActionEvent__(CODENAME_ONE_THR
 
 
 JAVA_VOID com_codename1_ui_Calendar_MonthView_fireMonthChangedEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9932, 9946);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9933, 9947);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1243);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1800___com_codename1_ui_Calendar_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent(threadStateData)); /* NEW */
@@ -1130,14 +1130,14 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_fireMonthChangedEvent__(CODENAME_O
 JAVA_VOID com_codename1_ui_Calendar_MonthView_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 8, 0, 9932, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(5, 8, 0, 9933, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1247);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1248);
     BC_ALOAD(2);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_ComboBox);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1043970800;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1381341801;
     __CN1_DEBUG_INFO(1249);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$700___com_codename1_ui_Calendar_R_com_codename1_ui_ComboBox(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
@@ -1155,14 +1155,14 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_actionPerformed___com_codename1_ui
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1043970800:
+label_L1381341801:
     __CN1_DEBUG_INFO(1253);
-    if (/* CustomInvoke */com_codename1_ui_Calendar_access$2100___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L8633103;
+    if (/* CustomInvoke */com_codename1_ui_Calendar_access$2100___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L676692948;
     __CN1_DEBUG_INFO(1254);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1252165500:
-    if (ilocals_3_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L8633103;
+label_L1940906679:
+    if (ilocals_3_>=CN1_ARRAY_LENGTH(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L676692948;
     __CN1_DEBUG_INFO(1255);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(1256);
@@ -1175,18 +1175,18 @@ label_L1252165500:
     SP[-1].data.o = ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     SP[-1].type = CN1_TYPE_OBJECT; 
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Container);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L631851861;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L272220100;
     __CN1_DEBUG_INFO(1257);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), locals[2].data.o);
 
-label_L631851861:
+label_L272220100:
     __CN1_DEBUG_INFO(1260);
-    if (locals[2].data.o==CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_)) /* IF_ACMPEQ CustomJump */ goto label_L1792826268;
-    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L432112141;
+    if (locals[2].data.o==CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_)) /* IF_ACMPEQ CustomJump */ goto label_L2139431292;
+    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L33389111;
 
-label_L1792826268:
+label_L2139431292:
     __CN1_DEBUG_INFO(1261);
-    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1400___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L67570169;
+    if (/* CustomInvoke */com_codename1_ui_Calendar_access$1400___com_codename1_ui_Calendar_R_boolean(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L95552255;
     __CN1_DEBUG_INFO(1262);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1500___com_codename1_ui_Calendar_R_java_util_Collection(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
@@ -1202,7 +1202,7 @@ label_L1792826268:
     { JAVA_INT tmpResult = virtual_java_util_Collection_contains___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1796938191;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1487424018;
     __CN1_DEBUG_INFO(1263);
     /* CustomInvoke */PUSH_LONG(com_codename1_ui_Calendar_access$1100___com_codename1_ui_Calendar_R_long(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1200___com_codename1_ui_Calendar_R_long_1ARRAY(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
@@ -1213,21 +1213,21 @@ label_L1792826268:
     SP--; SP[-1].type = CN1_TYPE_LONG; 
     SP[-1].data.l = LONG_ARRAY_LOOKUP((JAVA_ARRAY)SP[-1].data.o, (*SP).data.i);
     BC_LCMP();
-    if(POP_INT() != 0) /* IFNE */ goto label_L1670627211;
+    if(POP_INT() != 0) /* IFNE */ goto label_L242224826;
     __CN1_DEBUG_INFO(1264);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4777)); 
-    goto label_L1993836574;
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4778)); 
+    goto label_L1681318273;
 
-label_L1670627211:
+label_L242224826:
     __CN1_DEBUG_INFO(1266);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4781)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4782)); 
 
-label_L1993836574:
+label_L1681318273:
     __CN1_DEBUG_INFO(1268);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1300___com_codename1_ui_Calendar_R_java_util_Map(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_java_util_Map_isEmpty___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L1252204540;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1904652802;
     __CN1_DEBUG_INFO(1269);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1300___com_codename1_ui_Calendar_R_java_util_Map(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_entrySet___R_java_util_Set(threadStateData, SP[-1].data.o);
@@ -1236,8 +1236,8 @@ label_L1993836574:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
 
-label_L131343682:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1252204540;
+label_L1710180594:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1904652802;
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1270);
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getValue___R_java_lang_Object(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -1254,7 +1254,7 @@ label_L131343682:
     { JAVA_INT tmpResult = virtual_java_util_Collection_contains___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2034610694;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1801756410;
     __CN1_DEBUG_INFO(1271);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject));
@@ -1269,13 +1269,13 @@ label_L131343682:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(1272);
-    goto label_L1252204540;
+    goto label_L1904652802;
 
-label_L2034610694:
+label_L1801756410:
     __CN1_DEBUG_INFO(1274);
-    goto label_L131343682;
+    goto label_L1710180594;
 
-label_L1252204540:
+label_L1904652802:
     __CN1_DEBUG_INFO(1277);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1500___com_codename1_ui_Calendar_R_java_util_Collection(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
@@ -1292,9 +1292,9 @@ label_L1252204540:
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
-    goto label_L1292487390;
+    goto label_L906397479;
 
-label_L1796938191:
+label_L1487424018:
     __CN1_DEBUG_INFO(1279);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject));
@@ -1323,13 +1323,13 @@ label_L1796938191:
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
-    goto label_L1292487390;
+    goto label_L906397479;
 
-label_L67570169:
+label_L95552255:
     __CN1_DEBUG_INFO(1283);
-    if (get_field_com_codename1_ui_Calendar_MonthView_selected(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L528965756;
+    if (get_field_com_codename1_ui_Calendar_MonthView_selected(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1918121287;
     __CN1_DEBUG_INFO(1284);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), get_field_com_codename1_ui_Calendar_MonthView_selected(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4781)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), get_field_com_codename1_ui_Calendar_MonthView_selected(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4782)); 
     __CN1_DEBUG_INFO(1285);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$900___com_codename1_ui_Calendar_R_java_util_TimeZone(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(threadStateData, SP[-1].data.o);
@@ -1365,7 +1365,7 @@ label_L67570169:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1300___com_codename1_ui_Calendar_R_java_util_Map(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_java_util_Map_isEmpty___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L528965756;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1918121287;
     __CN1_DEBUG_INFO(1294);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1300___com_codename1_ui_Calendar_R_java_util_Map(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_entrySet___R_java_util_Set(threadStateData, SP[-1].data.o);
@@ -1374,8 +1374,8 @@ label_L67570169:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(6);
 
-label_L1843324431:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[6].data.o)==0) /* IFEQ CustomJump */ goto label_L528965756;
+label_L582979874:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[6].data.o)==0) /* IFEQ CustomJump */ goto label_L1918121287;
     /* VarOp.assignFrom */ locals[7].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[6].data.o);locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1295);
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getValue___R_java_lang_Object(threadStateData, locals[7].data.o);
     PUSH_OBJ(tmpResult); }
@@ -1384,7 +1384,7 @@ label_L1843324431:
     { JAVA_INT tmpResult = virtual_java_util_Collection_contains___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1267082248;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1032382137;
     __CN1_DEBUG_INFO(1296);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_selected(__cn1ThisObject));
@@ -1392,15 +1392,15 @@ label_L1843324431:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(1297);
-    goto label_L528965756;
+    goto label_L1918121287;
 
-label_L1267082248:
+label_L1032382137:
     __CN1_DEBUG_INFO(1299);
-    goto label_L1843324431;
+    goto label_L582979874;
 
-label_L528965756:
+label_L1918121287:
     __CN1_DEBUG_INFO(1302);
-    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4777)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Calendar_setDayUIID___com_codename1_ui_Component_java_lang_String(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), STRING_FROM_CONSTANT_POOL_OFFSET(4778)); 
     __CN1_DEBUG_INFO(1304);
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$1200___com_codename1_ui_Calendar_R_long_1ARRAY(threadStateData, get_field_com_codename1_ui_Calendar_MonthView_this_0(__cn1ThisObject)));
@@ -1417,7 +1417,7 @@ label_L528965756:
     __CN1_DEBUG_INFO(1305);
     set_field_com_codename1_ui_Calendar_MonthView_selected(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(get_field_com_codename1_ui_Calendar_MonthView_components(__cn1ThisObject), ilocals_3_), __cn1ThisObject);
 
-label_L1292487390:
+label_L906397479:
     __CN1_DEBUG_INFO(1307);
     virtual_com_codename1_ui_Calendar_MonthView_fireActionEvent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(1308);
@@ -1425,23 +1425,23 @@ label_L1292487390:
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Form_isSingleFocusMode___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L1854053968;
+    if(POP_INT() != 0) /* IFNE */ goto label_L545392109;
     __CN1_DEBUG_INFO(1309);
     /* CustomInvoke */virtual_com_codename1_ui_Calendar_MonthView_setHandlesInput___boolean(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */); 
 
-label_L1854053968:
+label_L545392109:
     __CN1_DEBUG_INFO(1311);
     virtual_com_codename1_ui_Calendar_MonthView_revalidate__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(1312);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L432112141:
+label_L33389111:
     __CN1_DEBUG_INFO(1254);
     BC_IINC(3, 1);
-    goto label_L1252165500;
+    goto label_L1940906679;
 
-label_L8633103:
+label_L676692948:
     __CN1_DEBUG_INFO(1316);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1452,7 +1452,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_access$100___com_codename1_ui_Cale
     volatile JAVA_INT ilocals_1_ = 0; /* x1 */
     volatile JAVA_INT ilocals_2_ = 0; /* x2 */
     __STATIC_INITIALIZER_com_codename1_ui_Calendar_MonthView(threadStateData);
-    DEFINE_METHOD_STACK(3, 3, 0, 9932, 800);
+    DEFINE_METHOD_STACK(3, 3, 0, 9933, 801);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
@@ -1466,7 +1466,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_access$100___com_codename1_ui_Cale
 
 JAVA_LONG com_codename1_ui_Calendar_MonthView_access$400___com_codename1_ui_Calendar_MonthView_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Calendar_MonthView(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 9932, 1151);
+    DEFINE_METHOD_STACK(2, 1, 0, 9933, 1152);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(964);
@@ -1482,7 +1482,7 @@ JAVA_VOID com_codename1_ui_Calendar_MonthView_access$500___com_codename1_ui_Cale
     volatile JAVA_LONG llocals_1_ = 0; /* x1 */
     volatile JAVA_INT ilocals_3_ = 0; /* x2 */
     __STATIC_INITIALIZER_com_codename1_ui_Calendar_MonthView(threadStateData);
-    DEFINE_METHOD_STACK(4, 4, 0, 9932, 1859);
+    DEFINE_METHOD_STACK(4, 4, 0, 9933, 1860);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     llocals_1_ = __cn1Arg2;

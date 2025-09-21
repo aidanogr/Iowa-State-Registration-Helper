@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_34(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_34___INIT_____com_codename1_ui_Display(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9635, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9636, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8605);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_34___INIT_____com_codename1_u
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_34_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9635, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9636, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8608);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_34_val_d(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(8609);
     BC_ALOAD(1);

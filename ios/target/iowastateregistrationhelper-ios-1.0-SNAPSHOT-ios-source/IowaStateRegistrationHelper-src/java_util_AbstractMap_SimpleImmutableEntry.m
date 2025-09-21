@@ -47,7 +47,7 @@ JAVA_OBJECT __NEW_java_util_AbstractMap_SimpleImmutableEntry(CODENAME_ONE_THREAD
 
 
 JAVA_VOID java_util_AbstractMap_SimpleImmutableEntry___INIT_____java_lang_Object_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6245, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6246, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -61,7 +61,7 @@ JAVA_VOID java_util_AbstractMap_SimpleImmutableEntry___INIT_____java_lang_Object
 
 
 JAVA_VOID java_util_AbstractMap_SimpleImmutableEntry___INIT_____java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6245, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6246, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -81,7 +81,7 @@ JAVA_VOID java_util_AbstractMap_SimpleImmutableEntry___INIT_____java_util_Map_En
 
 
 JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_getKey___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6245, 2007);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6246, 2008);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_AbstractMap_SimpleImmutableEntry_key(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -89,7 +89,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_getKey___R_java_lang_Obje
 
 
 JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_getValue___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6245, 2008);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6246, 2009);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_AbstractMap_SimpleImmutableEntry_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -102,7 +102,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_setValue___java_lang_Obje
 
 
 JAVA_BOOLEAN java_util_AbstractMap_SimpleImmutableEntry_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6245, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6246, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L125881207;
@@ -157,7 +157,7 @@ label_L1763344271:
 
 
 JAVA_INT java_util_AbstractMap_SimpleImmutableEntry_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6245, 883);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6246, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_AbstractMap_SimpleImmutableEntry_key(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L351028485;
     PUSH_INT(0); /* ICONST_0 */
     goto label_L1405747618;
@@ -182,13 +182,13 @@ label_L1054932644:
 
 
 JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6245, 897);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6246, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_util_AbstractMap_SimpleImmutableEntry_key(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(782));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(783));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_util_AbstractMap_SimpleImmutableEntry_value(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }

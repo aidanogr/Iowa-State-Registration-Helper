@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_AscendingSubMapKeySet(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID java_util_TreeMap_AscendingSubMapKeySet___INIT_____java_util_TreeMap_NavigableSubMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6395, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6396, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_AbstractSet___INIT____(threadStateData, __cn1ThisObject); 
@@ -54,7 +54,7 @@ JAVA_VOID java_util_TreeMap_AscendingSubMapKeySet___INIT_____java_util_TreeMap_N
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6395, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6396, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_TreeMap_AscendingSubMapKeyIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_TreeMap_AscendingSubMapKeyIterator___INIT_____java_util_TreeMap_NavigableSubMap(threadStateData, SP[-1].data.o, get_field_java_util_TreeMap_AscendingSubMapKeySet_map(__cn1ThisObject));     SP -= 1;
@@ -70,7 +70,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_descendingIterator___R_java_
 
 JAVA_INT java_util_TreeMap_AscendingSubMapKeySet_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6395, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6396, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
     PUSH_POINTER(__NEW_java_util_TreeMap_AscendingSubMapEntryIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -109,7 +109,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_floor___java_lang_Object_R_j
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_headSet___java_lang_Object_boolean_R_java_util_NavigableSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6395, 6185);
+    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6396, 6186);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -247,7 +247,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_pollLast___R_java_lang_Objec
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_subSet___java_lang_Object_boolean_java_lang_Object_boolean_R_java_util_NavigableSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_BOOLEAN __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6395, 6184);
+    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6396, 6185);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -305,7 +305,7 @@ label_L1898220577:
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_tailSet___java_lang_Object_boolean_R_java_util_NavigableSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6395, 6186);
+    DEFINE_INSTANCE_METHOD_STACK(9, 5, 0, 6396, 6187);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -423,7 +423,7 @@ label_L513700442:
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_comparator___R_java_util_Comparator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6395, 6176);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6396, 6177);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_TreeMap_comparator(get_field_java_util_TreeMap_NavigableSubMap_m(get_field_java_util_TreeMap_AscendingSubMapKeySet_map(__cn1ThisObject))));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -436,7 +436,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_first___R_java_lang_Object(C
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_headSet___java_lang_Object_R_java_util_SortedSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6395, 6185);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6396, 6186);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_TreeMap_AscendingSubMapKeySet_headSet___java_lang_Object_boolean_R_java_util_NavigableSet(threadStateData, __cn1ThisObject, locals[1].data.o, 0 /* ICONST_0 */);
@@ -452,7 +452,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_last___R_java_lang_Object(CO
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_subSet___java_lang_Object_java_lang_Object_R_java_util_SortedSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6395, 6184);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6396, 6185);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -465,7 +465,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_subSet___java_lang_Object_ja
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_tailSet___java_lang_Object_R_java_util_SortedSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6395, 6186);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6396, 6187);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_TreeMap_AscendingSubMapKeySet_tailSet___java_lang_Object_boolean_R_java_util_NavigableSet(threadStateData, __cn1ThisObject, locals[1].data.o, 1 /* ICONST_1 */);
@@ -476,7 +476,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeySet_tailSet___java_lang_Object_R
 
 
 JAVA_BOOLEAN java_util_TreeMap_AscendingSubMapKeySet_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6395, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6396, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_TreeMap_NavigableSubMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_java_util_TreeMap_AscendingSubMapKeySet_map(__cn1ThisObject), locals[1].data.o);
@@ -486,7 +486,7 @@ JAVA_BOOLEAN java_util_TreeMap_AscendingSubMapKeySet_contains___java_lang_Object
 
 
 JAVA_BOOLEAN java_util_TreeMap_AscendingSubMapKeySet_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6395, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6396, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (/* CustomInvoke */virtual_java_util_TreeMap_NavigableSubMap_remove___java_lang_Object_R_java_lang_Object(threadStateData, get_field_java_util_TreeMap_AscendingSubMapKeySet_map(__cn1ThisObject), locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1195067075;

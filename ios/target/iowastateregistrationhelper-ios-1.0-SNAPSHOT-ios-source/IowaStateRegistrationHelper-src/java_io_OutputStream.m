@@ -17,7 +17,7 @@ void __GC_MARK_java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objTo
 
 
 JAVA_VOID java_io_OutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 940, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 941, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -25,7 +25,7 @@ JAVA_VOID java_io_OutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_VOID java_io_OutputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 940, 931);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 941, 932);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_OutputStream_flush__(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -38,7 +38,7 @@ JAVA_VOID java_io_OutputStream_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
 
 
 JAVA_VOID java_io_OutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 940, 937);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 941, 938);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_io_OutputStream_write___byte_1ARRAY_int_int(threadStateData, __cn1ThisObject, locals[1].data.o, 0 /* ICONST_0 */, CN1_ARRAY_LENGTH(locals[1].data.o)); 
@@ -49,7 +49,7 @@ JAVA_VOID java_io_OutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JA
 
 JAVA_VOID java_io_OutputStream_write___byte_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 940, 937);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 941, 938);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;

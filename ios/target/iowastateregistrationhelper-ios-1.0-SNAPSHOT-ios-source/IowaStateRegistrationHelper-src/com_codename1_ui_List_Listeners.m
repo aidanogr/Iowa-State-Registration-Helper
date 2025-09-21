@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_List_Listeners(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_List_Listeners___INIT_____com_codename1_ui_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4548, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4549, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(768);
@@ -48,7 +48,7 @@ JAVA_VOID com_codename1_ui_List_Listeners___INIT_____com_codename1_ui_List(CODEN
 JAVA_VOID com_codename1_ui_List_Listeners_dataChanged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* status */
     volatile JAVA_INT ilocals_2_ = 0; /* index */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4548, 4495);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4549, 4496);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(771);
@@ -62,7 +62,7 @@ JAVA_VOID com_codename1_ui_List_Listeners_dataChanged___int_int(CODENAME_ONE_THR
 JAVA_VOID com_codename1_ui_List_Listeners_selectionChanged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* oldSelected */
     volatile JAVA_INT ilocals_2_ = 0; /* newSelected */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4548, 4549);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4549, 4550);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(775);
@@ -76,7 +76,7 @@ JAVA_VOID com_codename1_ui_List_Listeners_selectionChanged___int_int(CODENAME_ON
 
 
 JAVA_VOID com_codename1_ui_List_Listeners___INIT_____com_codename1_ui_List_com_codename1_ui_List_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4548, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4549, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

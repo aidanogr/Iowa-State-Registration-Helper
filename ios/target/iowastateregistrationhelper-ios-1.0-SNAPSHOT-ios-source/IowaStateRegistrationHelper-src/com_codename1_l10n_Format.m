@@ -17,7 +17,7 @@ void __GC_MARK_com_codename1_l10n_Format(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
 
 
 JAVA_VOID com_codename1_l10n_Format___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7726, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7727, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(31);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

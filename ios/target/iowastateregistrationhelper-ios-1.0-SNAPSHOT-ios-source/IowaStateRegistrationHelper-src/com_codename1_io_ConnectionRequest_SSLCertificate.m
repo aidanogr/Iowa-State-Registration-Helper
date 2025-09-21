@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_io_ConnectionRequest_SSLCertificate(CODENA
 
 
 JAVA_VOID com_codename1_io_ConnectionRequest_SSLCertificate___INIT_____com_codename1_io_ConnectionRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8554, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8555, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1380);
@@ -85,7 +85,7 @@ JAVA_OBJECT com_codename1_io_ConnectionRequest_SSLCertificate_getCertificteAlgor
 
 JAVA_OBJECT com_codename1_io_ConnectionRequest_SSLCertificate_access$002___com_codename1_io_ConnectionRequest_SSLCertificate_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_io_ConnectionRequest_SSLCertificate(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8554, 1524);
+    DEFINE_METHOD_STACK(3, 2, 0, 8555, 1525);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -103,7 +103,7 @@ JAVA_OBJECT com_codename1_io_ConnectionRequest_SSLCertificate_access$002___com_c
 
 JAVA_OBJECT com_codename1_io_ConnectionRequest_SSLCertificate_access$102___com_codename1_io_ConnectionRequest_SSLCertificate_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_io_ConnectionRequest_SSLCertificate(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8554, 1149);
+    DEFINE_METHOD_STACK(3, 2, 0, 8555, 1150);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

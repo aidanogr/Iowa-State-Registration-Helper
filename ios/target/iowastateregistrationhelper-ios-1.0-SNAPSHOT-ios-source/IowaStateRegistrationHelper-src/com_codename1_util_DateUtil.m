@@ -70,7 +70,7 @@ com_codename1_util_DateUtil___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_util_DateUtil___INIT_____java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7729, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7730, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(50);
@@ -104,7 +104,7 @@ JAVA_OBJECT com_codename1_util_DateUtil_max___java_util_Date_1ARRAY_R_java_util_
 
 
 JAVA_VOID com_codename1_util_DateUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7729, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7730, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(178);
     BC_ALOAD(0);
     PUSH_OBJ(java_util_TimeZone_getDefault___R_java_util_TimeZone(threadStateData));
@@ -117,7 +117,7 @@ JAVA_VOID com_codename1_util_DateUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 
 JAVA_INT com_codename1_util_DateUtil_getOffset___long_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* date */
-    DEFINE_INSTANCE_METHOD_STACK(10, 5, 0, 7729, 6686);
+    DEFINE_INSTANCE_METHOD_STACK(10, 5, 0, 7730, 6687);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(187);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(188);
@@ -189,38 +189,38 @@ JAVA_INT com_codename1_util_DateUtil_getOffset___long_R_int(CODENAME_ONE_THREAD_
 
 
 JAVA_BOOLEAN com_codename1_util_DateUtil_inDaylightTime___java_util_Date_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7729, 6697);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7730, 6698);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(214);
-    if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1104102002;
-    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_getOffset___long_R_int(threadStateData, __cn1ThisObject, virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o))==virtual_java_util_TimeZone_getRawOffset___R_int(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L1104102002;
+    if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1673971173;
+    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_getOffset___long_R_int(threadStateData, __cn1ThisObject, virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o))==virtual_java_util_TimeZone_getRawOffset___R_int(threadStateData, get_field_com_codename1_util_DateUtil_tz(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L1673971173;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1406318631;
+    goto label_L1859857531;
 
-label_L1104102002:
+label_L1673971173:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1406318631:
+label_L1859857531:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_BOOLEAN com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_util_Calendar_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7729, 7731);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7730, 7732);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(228);
-    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 1 /* ICONST_1 */)) /* IF_ICMPNE CustomJump */ goto label_L1198084986;
+    if (/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=/* CustomInvoke */virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 1 /* ICONST_1 */)) /* IF_ICMPNE CustomJump */ goto label_L1889879857;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1157932269;
+    goto label_L919978702;
 
-label_L1198084986:
+label_L1889879857:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1157932269:
+label_L919978702:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -231,13 +231,13 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_isSameYear___java_util_Date_java_util_D
 
 
 JAVA_BOOLEAN com_codename1_util_DateUtil_isSameMonth___java_util_Calendar_java_util_Calendar_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7729, 7732);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7730, 7733);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(260);
-    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_util_Calendar_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L2128847597;
+    if (/* CustomInvoke */virtual_com_codename1_util_DateUtil_isSameYear___java_util_Calendar_java_util_Calendar_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1667878940;
     BC_ALOAD(1);
     PUSH_INT(2); /* ICONST_2 */
     __CN1_DEBUG_INFO(261);
@@ -246,14 +246,14 @@ JAVA_BOOLEAN com_codename1_util_DateUtil_isSameMonth___java_util_Calendar_java_u
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Calendar_get___int_R_int(threadStateData, locals[2].data.o, 2 /* ICONST_2 */);
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L2128847597;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1667878940;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L943079062;
+    goto label_L1424392446;
 
-label_L2128847597:
+label_L1667878940:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L943079062:
+label_L1424392446:
     __CN1_DEBUG_INFO(260);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }

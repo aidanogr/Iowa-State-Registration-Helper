@@ -56,7 +56,7 @@ JAVA_OBJECT __NEW_com_codename1_media_AbstractMedia_12(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_12___INIT_____com_codename1_media_AbstractMedia_com_codename1_media_AbstractMedia_2StateChangeListener_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8675, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8676, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -74,7 +74,7 @@ JAVA_VOID com_codename1_media_AbstractMedia_12___INIT_____com_codename1_media_Ab
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_12_actionPerformed___com_codename1_media_AsyncMedia_MediaErrorEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8675, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8676, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(359);
@@ -84,14 +84,14 @@ JAVA_VOID com_codename1_media_AbstractMedia_12_actionPerformed___com_codename1_m
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$300___com_codename1_media_AbstractMedia_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_media_AbstractMedia_12_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_removeListener___java_lang_Object(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     __CN1_DEBUG_INFO(361);
-    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_12_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L970346571;
+    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_12_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1011399667;
     __CN1_DEBUG_INFO(362);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_12_val_out(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_media_AsyncMedia_MediaErrorEvent_getMediaException___R_com_codename1_media_AsyncMedia_MediaException(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_media_AsyncMedia_PauseRequest_error___java_lang_Throwable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L970346571:
+label_L1011399667:
     __CN1_DEBUG_INFO(364);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -99,7 +99,7 @@ label_L970346571:
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_12_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8675, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8676, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(356);

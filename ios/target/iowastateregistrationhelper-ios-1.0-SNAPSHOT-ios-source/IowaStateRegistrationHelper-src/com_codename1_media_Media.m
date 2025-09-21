@@ -8,31 +8,31 @@ struct clazz class__com_codename1_media_Media = {
 , 0, 0, JAVA_TRUE, 0, 0, 0};
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_TITLE(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(192) /* bgTitle */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(193) /* bgTitle */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_ARTIST(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(193) /* bgArtist */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(194) /* bgArtist */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_DURATION(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(194) /* bgDuration */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(195) /* bgDuration */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_ALBUM_COVER(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(195) /* bgCover */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(196) /* bgCover */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_POSITION(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(196) /* bgPosition */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(197) /* bgPosition */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_BACKGROUND_SUPPORTED(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(197) /* bgInfoSupported */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(198) /* bgInfoSupported */;
 }
 
 JAVA_OBJECT get_static_com_codename1_media_Media_VARIABLE_NATIVE_CONTRLOLS_EMBEDDED(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(198) /* nativeControlsVisible */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(199) /* nativeControlsVisible */;
 }
 
 int **classToInterfaceMap_com_codename1_media_Media;

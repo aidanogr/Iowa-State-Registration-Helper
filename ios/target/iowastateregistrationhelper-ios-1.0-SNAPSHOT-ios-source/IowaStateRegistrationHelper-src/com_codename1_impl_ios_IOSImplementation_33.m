@@ -31,7 +31,7 @@ com_codename1_impl_ios_IOSImplementation_33___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_33___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9634, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9635, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8591);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -40,18 +40,18 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_33___INIT____(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_33_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9634, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9635, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8594);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(8595);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2042917213;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1517116047;
     __CN1_DEBUG_INFO(8596);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, locals[1].data.o); 
 
-label_L2042917213:
+label_L1517116047:
     __CN1_DEBUG_INFO(8598);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

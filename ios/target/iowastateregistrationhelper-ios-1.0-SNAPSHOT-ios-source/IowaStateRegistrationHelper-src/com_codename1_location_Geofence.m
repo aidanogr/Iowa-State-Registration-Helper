@@ -71,7 +71,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_location_Geofence(CODENAME_ONE_THREAD_STAT
 JAVA_VOID com_codename1_location_Geofence___INIT_____java_lang_String_com_codename1_location_Location_int_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_LONG __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* radius */
     volatile JAVA_LONG llocals_4_ = 0; /* expiration */
-    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 9037, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 9038, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -95,7 +95,7 @@ JAVA_VOID com_codename1_location_Geofence___INIT_____java_lang_String_com_codena
 
 
 JAVA_OBJECT com_codename1_location_Geofence_getId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9037, 1531);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9038, 1532);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(86);
 
 {
@@ -106,7 +106,7 @@ JAVA_OBJECT com_codename1_location_Geofence_getId___R_java_lang_String(CODENAME_
 
 
 JAVA_OBJECT com_codename1_location_Geofence_getLoc___R_com_codename1_location_Location(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9037, 9038);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9038, 9039);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
 
 {
@@ -117,7 +117,7 @@ JAVA_OBJECT com_codename1_location_Geofence_getLoc___R_com_codename1_location_Lo
 
 
 JAVA_LONG com_codename1_location_Geofence_getExpiration___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9037, 9039);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9038, 9040);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(104);
 
 {
@@ -128,7 +128,7 @@ JAVA_LONG com_codename1_location_Geofence_getExpiration___R_long(CODENAME_ONE_TH
 
 
 JAVA_INT com_codename1_location_Geofence_getRadius___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9037, 9040);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9038, 9041);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
 
 {
@@ -154,43 +154,43 @@ JAVA_OBJECT com_codename1_location_Geofence_createDistanceComparator___com_coden
 
 
 JAVA_BOOLEAN com_codename1_location_Geofence_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9037, 878);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9038, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(167);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_location_Geofence);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1845927081;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1380728404;
     __CN1_DEBUG_INFO(168);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(169);
-    if (/* CustomInvoke */com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_id(__cn1ThisObject), get_field_com_codename1_location_Geofence_id(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1172953975;
-    if (get_field_com_codename1_location_Geofence_radius(locals[2].data.o)!=get_field_com_codename1_location_Geofence_radius(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1172953975;
-    if (/* CustomInvoke */com_codename1_location_Geofence_eq___com_codename1_location_Location_com_codename1_location_Location_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_loc(__cn1ThisObject), get_field_com_codename1_location_Geofence_loc(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L1172953975;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Geofence_expiration(locals[2].data.o), get_field_com_codename1_location_Geofence_expiration(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1172953975;
+    if (/* CustomInvoke */com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_id(__cn1ThisObject), get_field_com_codename1_location_Geofence_id(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L494769804;
+    if (get_field_com_codename1_location_Geofence_radius(locals[2].data.o)!=get_field_com_codename1_location_Geofence_radius(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L494769804;
+    if (/* CustomInvoke */com_codename1_location_Geofence_eq___com_codename1_location_Location_com_codename1_location_Location_R_boolean(threadStateData, __cn1ThisObject, get_field_com_codename1_location_Geofence_loc(__cn1ThisObject), get_field_com_codename1_location_Geofence_loc(locals[2].data.o))==0) /* IFEQ CustomJump */ goto label_L494769804;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Geofence_expiration(locals[2].data.o), get_field_com_codename1_location_Geofence_expiration(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L494769804;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1821576830;
+    goto label_L283057972;
 
-label_L1172953975:
+label_L494769804:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1821576830:
+label_L283057972:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1845927081:
+label_L1380728404:
     __CN1_DEBUG_INFO(171);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_BOOLEAN com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9037, 9043);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9038, 9044);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(175);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2120859512;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1877441175;
     __CN1_DEBUG_INFO(176);
 
 {
@@ -198,9 +198,9 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___java_lang_Object_java_lang_Obj
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2120859512:
+label_L1877441175:
     __CN1_DEBUG_INFO(177);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L617650120;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1558857633;
     __CN1_DEBUG_INFO(178);
 
 {
@@ -208,20 +208,20 @@ label_L2120859512:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L617650120:
+label_L1558857633:
     __CN1_DEBUG_INFO(180);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_BOOLEAN com_codename1_location_Geofence_eq___com_codename1_location_Location_com_codename1_location_Location_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9037, 9043);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9038, 9044);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(185);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L795464262;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L760378182;
     __CN1_DEBUG_INFO(186);
 
 {
@@ -229,9 +229,9 @@ JAVA_BOOLEAN com_codename1_location_Geofence_eq___com_codename1_location_Locatio
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L795464262:
+label_L760378182:
     __CN1_DEBUG_INFO(187);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1543358763;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1159524199;
     __CN1_DEBUG_INFO(188);
 
 {
@@ -239,7 +239,7 @@ label_L795464262:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1543358763:
+label_L1159524199:
     __CN1_DEBUG_INFO(190);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }

@@ -190,7 +190,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_TextSelection_DragHandle(CODENAME_ONE_THREAD_
 
 JAVA_VOID com_codename1_ui_TextSelection_DragHandle___INIT_____com_codename1_ui_TextSelection_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* start */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6406, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6407, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -212,7 +212,7 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle___INIT_____com_codename1_ui_
 
 
 JAVA_OBJECT com_codename1_ui_TextSelection_DragHandle_getDragImage___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6406, 2603);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6407, 2604);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1339);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -231,7 +231,7 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_drawDraggedImage___com_coden
 JAVA_INT com_codename1_ui_TextSelection_DragHandle_getDragRegionStatus___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 6406, 2428);
+    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 6407, 2429);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(1354);
@@ -251,7 +251,7 @@ JAVA_INT com_codename1_ui_TextSelection_DragHandle_getAbsolutePointerY___R_int(C
 
 
 JAVA_VOID com_codename1_ui_TextSelection_DragHandle_initComponent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6406, 1850);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6407, 1851);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1372);
     com_codename1_ui_Button_initComponent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(1373);
@@ -281,7 +281,7 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_initComponent__(CODENAME_ONE
 
 
 JAVA_VOID com_codename1_ui_TextSelection_DragHandle_deinitialize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6406, 1328);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6407, 1329);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1382);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_access$1600___com_codename1_ui_TextSelection_R_com_codename1_ui_events_ActionListener(threadStateData, get_field_com_codename1_ui_TextSelection_DragHandle_this_0(__cn1ThisObject)));
@@ -311,7 +311,7 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_deinitialize__(CODENAME_ONE_
 
 
 JAVA_OBJECT com_codename1_ui_TextSelection_DragHandle_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6406, 1858);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6407, 1859);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1394);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -327,7 +327,7 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_paint___com_codename1_ui_Gra
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 6406, 2357);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 6407, 2358);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1399);
@@ -355,16 +355,16 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_paint___com_codename1_ui_Gra
     __CN1_DEBUG_INFO(1406);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_TextSelection_DragHandle_getPreferredH___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(1407);
-    if (get_field_com_codename1_ui_TextSelection_DragHandle_start(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L20945625;
+    if (get_field_com_codename1_ui_TextSelection_DragHandle_start(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2062209967;
     __CN1_DEBUG_INFO(1408);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillArc___int_int_int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, ilocals_5_, ilocals_6_, 0 /* ICONST_0 */, 360); 
     __CN1_DEBUG_INFO(1409);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRect___int_int_int_int(threadStateData, locals[1].data.o, (ilocals_3_ + (ilocals_5_ / 2 /* ICONST_2 */)), ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
     __CN1_DEBUG_INFO(1410);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawRect___int_int_int_int(threadStateData, locals[1].data.o, (ilocals_3_ + (ilocals_5_ / 2 /* ICONST_2 */)), ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
-    goto label_L461155951;
+    goto label_L986238875;
 
-label_L20945625:
+label_L2062209967:
     __CN1_DEBUG_INFO(1412);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillArc___int_int_int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, ilocals_5_, ilocals_6_, 0 /* ICONST_0 */, 360); 
     __CN1_DEBUG_INFO(1413);
@@ -372,7 +372,7 @@ label_L20945625:
     __CN1_DEBUG_INFO(1414);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawRect___int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
 
-label_L461155951:
+label_L986238875:
     __CN1_DEBUG_INFO(1416);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, ilocals_2_); 
     __CN1_DEBUG_INFO(1417);

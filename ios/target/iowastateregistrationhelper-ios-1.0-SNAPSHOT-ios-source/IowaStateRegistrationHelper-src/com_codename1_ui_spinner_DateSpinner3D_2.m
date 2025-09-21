@@ -37,7 +37,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_DateSpinner3D_2(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_2___INIT_____com_codename1_ui_spinner_DateSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10044, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10045, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(116);
@@ -49,11 +49,11 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_2___INIT_____com_codename1_ui_s
 
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_2_format___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10044, 905);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10045, 906);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(119);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1978980520;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1606542587;
     __CN1_DEBUG_INFO(120);
     /* VarOp.assignFrom */ locals[2].data.o = java_util_Calendar_getInstance___R_java_util_Calendar(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(121);
     BC_ALOAD(2);
@@ -78,7 +78,7 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_2_format___java_lang_String_R
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1978980520:
+label_L1606542587:
     __CN1_DEBUG_INFO(125);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }

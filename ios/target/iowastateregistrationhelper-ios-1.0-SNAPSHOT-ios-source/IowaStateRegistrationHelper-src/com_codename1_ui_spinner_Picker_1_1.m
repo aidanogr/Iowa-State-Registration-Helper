@@ -216,7 +216,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Picker_1_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_1_1___INIT_____com_codename1_ui_spinner_Picker_1_com_codename1_ui_spinner_InternalPickerWidget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10216, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10217, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -231,13 +231,13 @@ JAVA_VOID com_codename1_ui_spinner_Picker_1_1___INIT_____com_codename1_ui_spinne
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_1_1_initComponent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10216, 1850);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10217, 1851);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(653);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = __cn1ThisObject;
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(654);
     com_codename1_components_InteractionDialog_initComponent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(655);
-    if (get_field_com_codename1_ui_spinner_Picker_1_1_keyListener(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1980377966;
+    if (get_field_com_codename1_ui_spinner_Picker_1_1_keyListener(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1446527985;
     __CN1_DEBUG_INFO(656);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_Picker_1_1_1(threadStateData)); /* NEW */
@@ -246,7 +246,7 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(654);
     set_field_com_codename1_ui_spinner_Picker_1_1_keyListener(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1980377966:
+label_L1446527985:
     __CN1_DEBUG_INFO(670);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_Picker_1_1_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -258,24 +258,24 @@ label_L1980377966:
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_1_1_deinitialize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10216, 1328);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10217, 1329);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(675);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_spinner_Picker_1_1_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(676);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L548009467;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L952833542;
     __CN1_DEBUG_INFO(677);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
 
-label_L548009467:
+label_L952833542:
     __CN1_DEBUG_INFO(679);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1835105031;
-    if (get_field_com_codename1_ui_spinner_Picker_1_1_keyListener(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1835105031;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1640287933;
+    if (get_field_com_codename1_ui_spinner_Picker_1_1_keyListener(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1640287933;
     __CN1_DEBUG_INFO(680);
     /* CustomInvoke */virtual_com_codename1_ui_Form_removeKeyListener___int_com_codename1_ui_events_ActionListener(threadStateData, locals[1].data.o, 9, get_field_com_codename1_ui_spinner_Picker_1_1_keyListener(__cn1ThisObject)); 
 
-label_L1835105031:
+label_L1640287933:
     __CN1_DEBUG_INFO(682);
     com_codename1_components_InteractionDialog_deinitialize__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(683);

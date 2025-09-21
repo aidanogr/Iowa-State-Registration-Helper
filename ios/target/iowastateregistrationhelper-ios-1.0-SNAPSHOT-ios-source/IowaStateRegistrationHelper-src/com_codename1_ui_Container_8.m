@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Container_8(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Container_8___INIT_____com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3437, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3438, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1932);
@@ -49,7 +49,7 @@ JAVA_VOID com_codename1_ui_Container_8___INIT_____com_codename1_ui_Container(COD
 JAVA_INT com_codename1_ui_Container_8_compare___com_codename1_ui_Component_com_codename1_ui_Component_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3437, 1033);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3438, 1034);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -67,15 +67,15 @@ JAVA_INT com_codename1_ui_Container_8_compare___com_codename1_ui_Component_com_c
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(1937);
-    if (ilocals_3_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L2027701910;
+    if (ilocals_3_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L667680223;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L2027701910:
+label_L667680223:
     __CN1_DEBUG_INFO(1938);
-    if (ilocals_3_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L1345293143;
+    if (ilocals_3_<=ilocals_4_) /* IF_ICMPLE CustomJump */ goto label_L669700766;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L1345293143:
+label_L669700766:
     __CN1_DEBUG_INFO(1940);
 
 {
@@ -86,7 +86,7 @@ label_L1345293143:
 
 
 JAVA_INT com_codename1_ui_Container_8_compare___java_lang_Object_java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3437, 1033);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3438, 1034);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

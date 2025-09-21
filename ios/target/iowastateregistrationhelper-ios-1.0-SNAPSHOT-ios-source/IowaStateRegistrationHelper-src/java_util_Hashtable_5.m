@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_java_util_Hashtable_5(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Hashtable_5___INIT_____java_util_Hashtable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2019, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2020, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Hashtable_5_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -45,7 +45,7 @@ JAVA_VOID java_util_Hashtable_5___INIT_____java_util_Hashtable(CODENAME_ONE_THRE
 
 
 JAVA_OBJECT java_util_Hashtable_5_get___java_util_MapEntry_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 2019, 612);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 2020, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(get_field_java_util_MapEntry_key(locals[1].data.o));

@@ -160,7 +160,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_IOSMedia(CODENAME_ONE
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String_boolean_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* isVideo */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9679, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9680, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -178,11 +178,11 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_coden
     __CN1_DEBUG_INFO(3632);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(threadStateData, ilocals_3_, __cn1ThisObject);
     __CN1_DEBUG_INFO(3633);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1733619456;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1182758821;
     __CN1_DEBUG_INFO(3634);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_IOSMedia_addCompletionHandler___java_lang_Runnable(threadStateData, __cn1ThisObject, locals[4].data.o); 
 
-label_L1733619456:
+label_L1182758821:
     __CN1_DEBUG_INFO(3636);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_IOSMedia_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -194,14 +194,14 @@ label_L1733619456:
     PUSH_INT(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_onCompletionCallbackId(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(3648);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1637601612;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L465152579;
     __CN1_DEBUG_INFO(3649);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_com_codename1_impl_ios_IOSNative_createAudio___java_lang_String_java_lang_Runnable_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), locals[2].data.o, locals[4].data.o);
     PUSH_LONG(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, POP_LONG(), POP_OBJ());
 
-label_L1637601612:
+label_L465152579:
     __CN1_DEBUG_INFO(3651);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -209,7 +209,7 @@ label_L1637601612:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_codename1_impl_ios_IOSImplementation_java_io_InputStream_java_lang_String_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9679, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9680, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -218,9 +218,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_coden
     locals[3].type = CN1_TYPE_OBJECT;
     locals[4].data.o = __cn1Arg4;
     locals[4].type = CN1_TYPE_OBJECT;
-    int restoreToL519941824cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL519941824cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L519941824cn1_class_id_java_io_IOException1, label_L842957574, restoreToL519941824cn1_class_id_java_io_IOException1);
+    int restoreToL729881884cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL729881884cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L729881884cn1_class_id_java_io_IOException1, label_L1108066952, restoreToL729881884cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(3653);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
     com_codename1_media_AbstractMedia___INIT____(threadStateData, __cn1ThisObject); 
@@ -231,11 +231,11 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_coden
     __CN1_DEBUG_INFO(3655);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_mimeType(threadStateData, locals[3].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(3656);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L170106909, 0);
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L234223040, 0);
     __CN1_DEBUG_INFO(3657);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_IOSMedia_addCompletionHandler___java_lang_Runnable(threadStateData, __cn1ThisObject, locals[4].data.o); 
 
-label_L170106909:
+label_L234223040:
     __CN1_DEBUG_INFO(3659);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_IOSMedia_2(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -248,22 +248,22 @@ label_L170106909:
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_onCompletionCallbackId(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(3671);
     BC_ALOAD(0);
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___java_lang_String_R_int(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9680))<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L1255109302, 0);
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___java_lang_String_R_int(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9681))<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L814377348, 0);
     PUSH_INT(1); /* ICONST_1 */
-    JUMP_TO(label_L1969347346, 0);
+    JUMP_TO(label_L1723278948, 0);
 
-label_L1255109302:
+label_L814377348:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1969347346:
+label_L1723278948:
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(3672);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L855724043, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L2050275256, 0);
 
-label_L519941824:
- tryBlockOffsetL519941824cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L519941824cn1_class_id_java_io_IOException1);
-    restoreToL519941824cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L729881884:
+ tryBlockOffsetL729881884cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L729881884cn1_class_id_java_io_IOException1);
+    restoreToL729881884cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3674);
     BC_ALOAD(0);
@@ -277,11 +277,11 @@ label_L519941824:
     __CN1_DEBUG_INFO(3675);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_retainPeer___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L1122492719:
+label_L922274138:
 END_TRY(1);    __CN1_DEBUG_INFO(3683);
-    JUMP_TO(label_L855724043, 0);
+    JUMP_TO(label_L2050275256, 0);
 
-label_L842957574:
+label_L1108066952:
     __CN1_DEBUG_INFO(3676);
     BC_ASTORE(5);
     __CN1_DEBUG_INFO(3677);
@@ -292,7 +292,7 @@ label_L842957574:
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_IOSMedia_3___INIT_____com_codename1_impl_ios_IOSImplementation_IOSMedia_com_codename1_impl_ios_IOSImplementation_java_io_IOException(threadStateData, SP[-1].data.o, __cn1ThisObject, locals[1].data.o, locals[5].data.o);     SP -= 1;
     com_codename1_ui_CN_callSerially___java_lang_Runnable(threadStateData, SP[-1].data.o);     SP-= 1;
 
-label_L855724043:
+label_L2050275256:
     __CN1_DEBUG_INFO(3686);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -300,9 +300,9 @@ label_L855724043:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_markActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9679, 9681);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9680, 9682);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3689);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L615853374;
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject))!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1489831627;
     __CN1_DEBUG_INFO(3690);
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
@@ -315,7 +315,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_markActive__(CODENAM
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
 
-label_L615853374:
+label_L1489831627:
     __CN1_DEBUG_INFO(3694);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
@@ -326,10 +326,10 @@ label_L615853374:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_fireCompletionHandlers__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9679, 9682);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9680, 9683);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3698);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L366916060;
-    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L366916060;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1005093407;
+    if (virtual_java_util_List_isEmpty___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1005093407;
     __CN1_DEBUG_INFO(3699);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_IOSMedia_4(threadStateData)); /* NEW */
@@ -337,7 +337,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_fireCompletionHandle
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_IOSMedia_4___INIT_____com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Display_callSerially___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L366916060:
+label_L1005093407:
     __CN1_DEBUG_INFO(3717);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -345,27 +345,27 @@ label_L366916060:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_addCompletionHandler___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9679, 489);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9680, 490);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL109512895601;
-    int tryBlockOffsetL109512895601;
-    DEFINE_CATCH_BLOCK(catch_L109512895601, label_L1855734078, restoreToL109512895601);
-    int restoreToL185573407802;
-    int tryBlockOffsetL185573407802;
-    DEFINE_CATCH_BLOCK(catch_L185573407802, label_L1855734078, restoreToL185573407802);
+    int restoreToL176885710801;
+    int tryBlockOffsetL176885710801;
+    DEFINE_CATCH_BLOCK(catch_L176885710801, label_L1689458432, restoreToL176885710801);
+    int restoreToL168945843202;
+    int tryBlockOffsetL168945843202;
+    DEFINE_CATCH_BLOCK(catch_L168945843202, label_L1689458432, restoreToL168945843202);
     __CN1_DEBUG_INFO(3720);
     BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1095128956:
- tryBlockOffsetL109512895601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L109512895601);
-    restoreToL109512895601 = threadStateData->threadObjectStackOffset;
+label_L1768857108:
+ tryBlockOffsetL176885710801 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L176885710801);
+    restoreToL176885710801 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3721);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1470420462, 1);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L996533593, 1);
     __CN1_DEBUG_INFO(3722);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
@@ -374,30 +374,30 @@ label_L1095128956:
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1470420462:
+label_L996533593:
     __CN1_DEBUG_INFO(3725);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(3726);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1526376570:
-END_TRY(1);    JUMP_TO(label_L1526062841, 0);
+label_L256822207:
+END_TRY(1);    JUMP_TO(label_L195970976, 0);
 
-label_L1855734078:
- tryBlockOffsetL185573407802 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L185573407802);
-    restoreToL185573407802 = threadStateData->threadObjectStackOffset;
+label_L1689458432:
+ tryBlockOffsetL168945843202 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L168945843202);
+    restoreToL168945843202 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1297192701:
+label_L1636854705:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1526062841:
+label_L195970976:
     __CN1_DEBUG_INFO(3727);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -405,26 +405,26 @@ label_L1526062841:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_removeCompletionHandler___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9679, 490);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9680, 491);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL192743674601;
-    int tryBlockOffsetL192743674601;
-    DEFINE_CATCH_BLOCK(catch_L192743674601, label_L977650730, restoreToL192743674601);
-    int restoreToL97765073002;
-    int tryBlockOffsetL97765073002;
-    DEFINE_CATCH_BLOCK(catch_L97765073002, label_L977650730, restoreToL97765073002);
+    int restoreToL21088226501;
+    int tryBlockOffsetL21088226501;
+    DEFINE_CATCH_BLOCK(catch_L21088226501, label_L1957282992, restoreToL21088226501);
+    int restoreToL195728299202;
+    int tryBlockOffsetL195728299202;
+    DEFINE_CATCH_BLOCK(catch_L195728299202, label_L1957282992, restoreToL195728299202);
     __CN1_DEBUG_INFO(3730);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L920446957, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L140428850, 0);
     __CN1_DEBUG_INFO(3731);
     BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1927436746:
- tryBlockOffsetL192743674601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L192743674601);
-    restoreToL192743674601 = threadStateData->threadObjectStackOffset;
+label_L210882265:
+ tryBlockOffsetL21088226501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L21088226501);
+    restoreToL21088226501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3732);
     /* CustomInvoke */virtual_java_util_List_remove___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject), locals[1].data.o); 
@@ -432,23 +432,23 @@ label_L1927436746:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L176200290:
-END_TRY(1);    JUMP_TO(label_L920446957, 0);
+label_L1189100593:
+END_TRY(1);    JUMP_TO(label_L140428850, 0);
 
-label_L977650730:
- tryBlockOffsetL97765073002 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L97765073002);
-    restoreToL97765073002 = threadStateData->threadObjectStackOffset;
+label_L1957282992:
+ tryBlockOffsetL195728299202 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L195728299202);
+    restoreToL195728299202 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1855412326:
+label_L505894008:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L920446957:
+label_L140428850:
     __CN1_DEBUG_INFO(3735);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -457,33 +457,33 @@ label_L920446957:
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_playImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9679, 8667);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1989332276cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1989332276cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1989332276cn1_class_id_java_io_IOException1, label_L1202081661, restoreToL1989332276cn1_class_id_java_io_IOException1);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9680, 8668);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL558404860cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL558404860cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L558404860cn1_class_id_java_io_IOException1, label_L470132045, restoreToL558404860cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(3739);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L869290854, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1710191146, 0);
     __CN1_DEBUG_INFO(3740);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_component(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L664839586, 0);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_nativePlayer(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L664839586, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_component(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1608103523, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_nativePlayer(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1608103523, 0);
     __CN1_DEBUG_INFO(3743);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_uri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1989332276, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_uri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L558404860, 0);
     __CN1_DEBUG_INFO(3744);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_com_codename1_impl_ios_IOSNative_createNativeVideoComponent___java_lang_String_int_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_uri(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_onCompletionCallbackId(__cn1ThisObject));
     PUSH_LONG(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, POP_LONG(), POP_OBJ());
-    JUMP_TO(label_L54176060, 0);
+    JUMP_TO(label_L274100821, 0);
 
-label_L1989332276:
- tryBlockOffsetL1989332276cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1989332276cn1_class_id_java_io_IOException1);
-    restoreToL1989332276cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L558404860:
+ tryBlockOffsetL558404860cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L558404860cn1_class_id_java_io_IOException1);
+    restoreToL558404860cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3747);
     /* VarOp.assignFrom */ llocals_1_ = /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2200___com_codename1_impl_ios_IOSImplementation_java_io_InputStream_R_long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_stream(__cn1ThisObject));
     __CN1_DEBUG_INFO(3748);
-    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ JUMP_TO(label_L851480926, 1);
+    if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)<=0) /* IFLE CustomJump */ JUMP_TO(label_L238431319, 1);
     __CN1_DEBUG_INFO(3749);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_com_codename1_impl_ios_IOSNative_createNativeVideoComponentNSData___long_int_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_onCompletionCallbackId(__cn1ThisObject));
@@ -491,9 +491,9 @@ label_L1989332276:
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, POP_LONG(), POP_OBJ());
     __CN1_DEBUG_INFO(3750);
     /* CustomInvoke */com_codename1_io_Util_cleanup___java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_stream(__cn1ThisObject)); 
-    JUMP_TO(label_L275754769, 1);
+    JUMP_TO(label_L474933596, 1);
 
-label_L851480926:
+label_L238431319:
     __CN1_DEBUG_INFO(3752);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */com_codename1_io_Util_readInputStream___java_io_InputStream_R_byte_1ARRAY(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_stream(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(3753);
     /* CustomInvoke */com_codename1_io_Util_cleanup___java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_stream(__cn1ThisObject)); 
@@ -503,11 +503,11 @@ label_L851480926:
     PUSH_LONG(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, POP_LONG(), POP_OBJ());
 
-label_L275754769:
+label_L474933596:
 END_TRY(1);    __CN1_DEBUG_INFO(3758);
-    JUMP_TO(label_L54176060, 0);
+    JUMP_TO(label_L274100821, 0);
 
-label_L1202081661:
+label_L470132045:
     __CN1_DEBUG_INFO(3756);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(3757);
@@ -520,22 +520,22 @@ label_L1202081661:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
 
-label_L54176060:
+label_L274100821:
     __CN1_DEBUG_INFO(3760);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_showNativePlayerController___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L664839586:
+label_L1608103523:
     __CN1_DEBUG_INFO(3762);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1895054149, 0);
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ JUMP_TO(label_L2042917213, 0);
     __CN1_DEBUG_INFO(3763);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_startVideoComponent___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
-    JUMP_TO(label_L1895054149, 0);
+    JUMP_TO(label_L2042917213, 0);
 
-label_L869290854:
+label_L1710191146:
     __CN1_DEBUG_INFO(3766);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_playAudio___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L1895054149:
+label_L2042917213:
     __CN1_DEBUG_INFO(3768);
     com_codename1_impl_ios_IOSImplementation_IOSMedia_markActive__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(3769);
@@ -547,18 +547,18 @@ label_L1895054149:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_unmarkActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9679, 9683);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9680, 9684);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3773);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L651235118;
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1520656618;
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject)));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_List_contains___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, __cn1ThisObject);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L651235118;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1520656618;
     __CN1_DEBUG_INFO(3774);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$2000___com_codename1_impl_ios_IOSImplementation_R_java_util_List(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_List_remove___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
 
-label_L651235118:
+label_L1520656618:
     __CN1_DEBUG_INFO(3776);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -566,20 +566,20 @@ label_L651235118:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_pauseImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9679, 8668);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9680, 8669);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3780);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L279781579;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1699265405;
     __CN1_DEBUG_INFO(3781);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2111247080;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L237484673;
     __CN1_DEBUG_INFO(3782);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseVideoComponent___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
-    goto label_L279781579;
+    goto label_L1699265405;
 
-label_L2111247080:
+label_L237484673:
     __CN1_DEBUG_INFO(3784);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseAudio___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L279781579:
+label_L1699265405:
     __CN1_DEBUG_INFO(3787);
     com_codename1_impl_ios_IOSImplementation_IOSMedia_unmarkActive__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(3788);
@@ -591,17 +591,17 @@ label_L279781579:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_prepare__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9679, 2050);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9680, 2051);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3792);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_prepareToPlay(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(3793);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L740827140;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1412656257;
     __CN1_DEBUG_INFO(3794);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L740827140;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1412656257;
     __CN1_DEBUG_INFO(3795);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_prepareVideoComponent___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L740827140:
+label_L1412656257:
     __CN1_DEBUG_INFO(3798);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -609,33 +609,33 @@ label_L740827140:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_cleanup__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9679, 1728);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9680, 1729);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3802);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L36627152;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L358019805;
     __CN1_DEBUG_INFO(3803);
     virtual_com_codename1_impl_ios_IOSImplementation_IOSMedia_pause__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(3804);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L2080125222;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L904208473;
     __CN1_DEBUG_INFO(3805);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_cleanupAudio___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(3806);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, 0 /* LCONST_0 */, __cn1ThisObject);
 
-label_L2080125222:
+label_L904208473:
     __CN1_DEBUG_INFO(3808);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_removeMediaCallback___int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_onCompletionCallbackId(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(3811);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1048128739;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L103118806;
     __CN1_DEBUG_INFO(3812);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_releasePeer___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(3813);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(threadStateData, 0 /* LCONST_0 */, __cn1ThisObject);
 
-label_L1048128739:
+label_L103118806:
     __CN1_DEBUG_INFO(3815);
     com_codename1_impl_ios_IOSImplementation_IOSMedia_unmarkActive__(threadStateData, __cn1ThisObject); 
 
-label_L36627152:
+label_L358019805:
     __CN1_DEBUG_INFO(3818);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -643,7 +643,7 @@ label_L36627152:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9679, 903);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9680, 904);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3821);
     virtual_com_codename1_impl_ios_IOSImplementation_IOSMedia_cleanup__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(3822);
@@ -659,21 +659,21 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_IOSMedia_getTime___R_int(CODEN
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_setTime___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* time */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9679, 3155);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9680, 3156);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(3838);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1008612116;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1998882269;
     __CN1_DEBUG_INFO(3839);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1266093632;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1511180072;
     __CN1_DEBUG_INFO(3840);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_setMediaTimeMS___long_int_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), ilocals_1_); 
-    goto label_L1008612116;
+    goto label_L1998882269;
 
-label_L1266093632:
+label_L1511180072:
     __CN1_DEBUG_INFO(3842);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_setAudioTime___long_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), ilocals_1_); 
 
-label_L1008612116:
+label_L1998882269:
     __CN1_DEBUG_INFO(3845);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -696,11 +696,11 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_IOSMedia_getVolume___R_int(COD
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_IOSMedia_isPlaying___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9679, 8637);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9680, 8638);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3871);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L426288284;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1031968647;
     __CN1_DEBUG_INFO(3872);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1780399359;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1902455960;
     __CN1_DEBUG_INFO(3873);
 
 {
@@ -708,7 +708,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_IOSMedia_isPlaying___R_boo
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1780399359:
+label_L1902455960:
     __CN1_DEBUG_INFO(3875);
 
 {
@@ -716,7 +716,7 @@ label_L1780399359:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L426288284:
+label_L1031968647:
     __CN1_DEBUG_INFO(3878);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -764,7 +764,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_getVariable___java
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1500___com_codename1_impl_ios_IOSImplementation_IOSMedia(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9679, 5759);
+    DEFINE_METHOD_STACK(1, 1, 0, 9680, 5760);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3613);
@@ -776,7 +776,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1500___com_co
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1600___com_codename1_impl_ios_IOSImplementation_IOSMedia_com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 9679, 5762);
+    DEFINE_METHOD_STACK(2, 2, 0, 9680, 5763);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -791,7 +791,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1600___com_
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1700___com_codename1_impl_ios_IOSImplementation_IOSMedia(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9679, 5683);
+    DEFINE_METHOD_STACK(1, 1, 0, 9680, 5684);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3613);
@@ -803,7 +803,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1700___com_co
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1800___com_codename1_impl_ios_IOSImplementation_IOSMedia_com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 9679, 5714);
+    DEFINE_METHOD_STACK(2, 2, 0, 9680, 5715);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -818,7 +818,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1800___com_
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1900___com_codename1_impl_ios_IOSImplementation_IOSMedia_com_codename1_media_AsyncMedia_MediaException_R_com_codename1_media_AsyncMedia_MediaErrorEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 9679, 9685);
+    DEFINE_METHOD_STACK(2, 2, 0, 9680, 9686);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -833,7 +833,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$1900___com_
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_IOSMedia_access$2100___com_codename1_impl_ios_IOSImplementation_IOSMedia_R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_IOSMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9679, 9686);
+    DEFINE_METHOD_STACK(1, 1, 0, 9680, 9687);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3613);

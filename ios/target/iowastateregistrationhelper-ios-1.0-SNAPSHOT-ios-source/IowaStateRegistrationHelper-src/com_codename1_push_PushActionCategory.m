@@ -48,7 +48,7 @@ JAVA_OBJECT __NEW_com_codename1_push_PushActionCategory(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_push_PushActionCategory___INIT_____java_lang_String_com_codename1_push_PushAction_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9785, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9786, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -78,7 +78,7 @@ JAVA_VOID com_codename1_push_PushActionCategory___INIT_____java_lang_String_com_
 
 
 JAVA_OBJECT com_codename1_push_PushActionCategory_getActions___R_com_codename1_push_PushAction_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9785, 9786);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9786, 9787);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(62);
     PUSH_POINTER(get_field_com_codename1_push_PushActionCategory_actions(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_push_PushActionCategory_actions(__cn1ThisObject));
@@ -97,7 +97,7 @@ JAVA_OBJECT com_codename1_push_PushActionCategory_getAllActions___com_codename1_
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_com_codename1_push_PushActionCategory(threadStateData);
-    DEFINE_METHOD_STACK(2, 6, 0, 9785, 9787);
+    DEFINE_METHOD_STACK(2, 6, 0, 9786, 9788);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(71);
@@ -110,8 +110,8 @@ JAVA_OBJECT com_codename1_push_PushActionCategory_getAllActions___com_codename1_
 locals[2].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_3_ = CN1_ARRAY_LENGTH(locals[2].data.o);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L380088157:
-    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1937107943;
+label_L1158016054:
+    if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1945567153;
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;locals[5].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[2].data.o, ilocals_4_);
 locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     BC_ALOAD(1);
@@ -125,9 +125,9 @@ locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     SP--; /* POP */
     __CN1_DEBUG_INFO(72);
     BC_IINC(4, 1);
-    goto label_L380088157;
+    goto label_L1158016054;
 
-label_L1937107943:
+label_L1945567153:
     __CN1_DEBUG_INFO(75);
     BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_java_util_Set_size___R_int(threadStateData, locals[1].data.o);
@@ -143,7 +143,7 @@ label_L1937107943:
 
 
 JAVA_OBJECT com_codename1_push_PushActionCategory_getId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9785, 1531);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9786, 1532);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(86);
 
 {

@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_10(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_10___INIT_____com_codename1_ui_BrowserComponent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8086, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8087, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(574);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_10___INIT_____com_codename1_ui_Brows
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_10_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8086, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8087, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(576);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_BrowserComponent_access$300___com_codename1_ui_BrowserComponent_R_com_codename1_ui_PeerComponent(threadStateData, get_field_com_codename1_ui_BrowserComponent_10_this_0(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_PeerComponent_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o);

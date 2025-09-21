@@ -30,7 +30,7 @@ JAVA_OBJECT __NEW_com_codename1_processing_JSONContent(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7667, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7668, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
@@ -42,7 +42,7 @@ JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_util_Map(CODENAME
 
 
 JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 7667, 200);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 7668, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(59);
@@ -51,11 +51,11 @@ JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_lang_String(CODEN
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_io_ByteArrayInputStream(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(130));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(131));
     PUSH_OBJ(tmpResult); }
     java_io_ByteArrayInputStream___INIT_____byte_1ARRAY(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     /* LDC: 'UTF-8'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(130));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(131));
     java_io_InputStreamReader___INIT_____java_io_InputStream_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     com_codename1_processing_JSONContent___INIT_____java_io_Reader(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(60);
@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_lang_String(CODEN
 
 
 JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 7667, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 7668, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(69);
@@ -87,7 +87,7 @@ JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_io_InputStream(CO
 
 
 JAVA_VOID com_codename1_processing_JSONContent___INIT_____java_io_Reader(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7667, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7668, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(79);

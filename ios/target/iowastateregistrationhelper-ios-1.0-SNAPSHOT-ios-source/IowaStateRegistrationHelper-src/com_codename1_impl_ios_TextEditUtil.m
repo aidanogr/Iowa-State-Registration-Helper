@@ -55,7 +55,7 @@ com_codename1_impl_ios_TextEditUtil___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ios_TextEditUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9744, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9745, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(39);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_impl_ios_TextEditUtil___INIT____(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_codename1_impl_ios_TextEditUtil_setCurrentEditComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9744, 9745);
+    DEFINE_METHOD_STACK(1, 1, 0, 9745, 9746);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(54);
@@ -78,7 +78,7 @@ JAVA_VOID com_codename1_impl_ios_TextEditUtil_setCurrentEditComponent___com_code
 
 JAVA_VOID com_codename1_impl_ios_TextEditUtil_setNextEditComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9744, 9746);
+    DEFINE_METHOD_STACK(1, 1, 0, 9745, 9747);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(58);
@@ -91,23 +91,23 @@ JAVA_VOID com_codename1_impl_ios_TextEditUtil_setNextEditComponent___com_codenam
 
 JAVA_BOOLEAN com_codename1_impl_ios_TextEditUtil_isLastEditComponent___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9744, 9747);
+    DEFINE_METHOD_STACK(1, 0, 0, 9745, 9748);
     __CN1_DEBUG_INFO(66);
-    if (com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L732189840;
+    if (com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L50345623;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L939475028;
+    goto label_L1691629865;
 
-label_L732189840:
+label_L50345623:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L939475028:
+label_L1691629865:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID com_codename1_impl_ios_TextEditUtil_editNextTextArea__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 9744, 9748);
+    DEFINE_METHOD_STACK(2, 1, 0, 9745, 9749);
     __CN1_DEBUG_INFO(74);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_TextEditUtil_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -124,7 +124,7 @@ JAVA_VOID com_codename1_impl_ios_TextEditUtil_editNextTextArea__(CODENAME_ONE_TH
 
 JAVA_OBJECT com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9744, 9749);
+    DEFINE_METHOD_STACK(1, 0, 0, 9745, 9750);
     __CN1_DEBUG_INFO(98);
     PUSH_POINTER(get_static_com_codename1_impl_ios_TextEditUtil_nextEditedComponent(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -134,7 +134,7 @@ JAVA_OBJECT com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_cod
 
 JAVA_OBJECT com_codename1_impl_ios_TextEditUtil_access$000___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_TextEditUtil(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9744, 216);
+    DEFINE_METHOD_STACK(1, 0, 0, 9745, 217);
     __CN1_DEBUG_INFO(39);
     PUSH_OBJ(com_codename1_impl_ios_TextEditUtil_getNextEditComponent___R_com_codename1_ui_Component(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

@@ -64,7 +64,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_util_EventDispatcher_CallbackClass(CODENAME_O
 
 
 JAVA_VOID com_codename1_ui_util_EventDispatcher_CallbackClass___INIT_____com_codename1_ui_util_EventDispatcher_java_lang_Object_1ARRAY_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6441, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6442, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -85,21 +85,21 @@ JAVA_VOID com_codename1_ui_util_EventDispatcher_CallbackClass___INIT_____com_cod
 
 
 JAVA_VOID com_codename1_ui_util_EventDispatcher_CallbackClass_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 6441, 202);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 6442, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(84);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isEdt___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L1682774881;
+    if(POP_INT() != 0) /* IFNE */ goto label_L2053481312;
     __CN1_DEBUG_INFO(85);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6442));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6443));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1682774881:
+label_L2053481312:
     __CN1_DEBUG_INFO(88);
-    if (get_field_com_codename1_ui_util_EventDispatcher_styleListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L38023477;
+    if (get_field_com_codename1_ui_util_EventDispatcher_styleListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L816276798;
     __CN1_DEBUG_INFO(89);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
@@ -108,54 +108,54 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L38023477:
+label_L816276798:
     __CN1_DEBUG_INFO(94);
-    if (get_field_com_codename1_ui_util_EventDispatcher_actionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L407380973;
+    if (get_field_com_codename1_ui_util_EventDispatcher_actionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2097102621;
     __CN1_DEBUG_INFO(95);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$100___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_ActionListener_1ARRAY_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(96);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L407380973:
+label_L2097102621:
     __CN1_DEBUG_INFO(99);
-    if (get_field_com_codename1_ui_util_EventDispatcher_focusListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L817614737;
+    if (get_field_com_codename1_ui_util_EventDispatcher_focusListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1677793418;
     __CN1_DEBUG_INFO(100);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$200___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_FocusListener_1ARRAY_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L817614737:
+label_L1677793418:
     __CN1_DEBUG_INFO(104);
-    if (get_field_com_codename1_ui_util_EventDispatcher_dataChangeListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1017203956;
+    if (get_field_com_codename1_ui_util_EventDispatcher_dataChangeListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L866699721;
     __CN1_DEBUG_INFO(105);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$300___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_DataChangedListener_1ARRAY_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */)); 
     __CN1_DEBUG_INFO(106);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1017203956:
+label_L866699721:
     __CN1_DEBUG_INFO(109);
-    if (get_field_com_codename1_ui_util_EventDispatcher_selectionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L525275084;
+    if (get_field_com_codename1_ui_util_EventDispatcher_selectionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L942523415;
     __CN1_DEBUG_INFO(110);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$400___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_SelectionListener_1ARRAY_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */)); 
     __CN1_DEBUG_INFO(111);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L525275084:
+label_L942523415:
     __CN1_DEBUG_INFO(114);
-    if (get_field_com_codename1_ui_util_EventDispatcher_scrollListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1187053699;
+    if (get_field_com_codename1_ui_util_EventDispatcher_scrollListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1034879960;
     __CN1_DEBUG_INFO(115);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$500___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_ScrollListener_1ARRAY_int_int_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 3 /* ICONST_3 */)); 
     __CN1_DEBUG_INFO(116);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1187053699:
+label_L1034879960:
     __CN1_DEBUG_INFO(119);
-    if (get_field_com_codename1_ui_util_EventDispatcher_bindTargetArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L686327949;
+    if (get_field_com_codename1_ui_util_EventDispatcher_bindTargetArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1359382959;
     __CN1_DEBUG_INFO(120);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(121);
@@ -164,7 +164,7 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(121);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L686327949:
+label_L1359382959:
     __CN1_DEBUG_INFO(124);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

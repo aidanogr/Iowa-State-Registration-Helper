@@ -87,7 +87,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_RadialGradient___INIT_____com
     volatile JAVA_INT ilocals_5_ = 0; /* y */
     volatile JAVA_INT ilocals_6_ = 0; /* width */
     volatile JAVA_INT ilocals_7_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(2, 8, 0, 9616, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 8, 0, 9617, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;

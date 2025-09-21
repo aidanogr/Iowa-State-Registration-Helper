@@ -11,7 +11,7 @@ struct clazz class__com_codename1_ui_ImageFactory = {
 , 0, 0, 0, 0, 0, 0};
 
 JAVA_OBJECT get_static_com_codename1_ui_ImageFactory_KEY(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(78) /* $$IMAGE_FACTORY$$ */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(79) /* $$IMAGE_FACTORY$$ */;
 }
 
 JAVA_OBJECT STATIC_FIELD_com_codename1_ui_ImageFactory_defaultFactory = 0;
@@ -36,7 +36,7 @@ void __GC_MARK_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID com_codename1_ui_ImageFactory___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3895, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3896, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(47);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -51,11 +51,11 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_createImage___int_int_int_R_com_codena
 
 JAVA_OBJECT com_codename1_ui_ImageFactory_getImageFactory___com_codename1_ui_Component_R_com_codename1_ui_ImageFactory(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_ImageFactory(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 3895, 3896);
+    DEFINE_METHOD_STACK(2, 2, 0, 3896, 3897);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(76);
-    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L227080339;
+    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1874901958;
     __CN1_DEBUG_INFO(77);
 
 {
@@ -63,10 +63,10 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_getImageFactory___com_codename1_ui_Com
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L227080339:
+label_L1874901958:
     __CN1_DEBUG_INFO(79);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_ui_Component_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(78));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(80);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L630949334;
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_ui_Component_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(79));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(80);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1886247880;
     __CN1_DEBUG_INFO(81);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getParent___R_com_codename1_ui_Container(threadStateData, locals[0].data.o);
     PUSH_OBJ(tmpResult); }
@@ -75,7 +75,7 @@ label_L227080339:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L630949334:
+label_L1886247880:
     __CN1_DEBUG_INFO(84);
 
 {
@@ -95,7 +95,7 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_createImage___com_codename1_ui_Compone
     volatile JAVA_INT ilocals_2_ = 0; /* h */
     volatile JAVA_INT ilocals_3_ = 0; /* bgColor */
     __STATIC_INITIALIZER_com_codename1_ui_ImageFactory(threadStateData);
-    DEFINE_METHOD_STACK(4, 4, 0, 3895, 288);
+    DEFINE_METHOD_STACK(4, 4, 0, 3896, 289);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
@@ -111,7 +111,7 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_createImage___com_codename1_ui_Compone
 
 
 JAVA_VOID com_codename1_ui_ImageFactory___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 3895, 861);
+    DEFINE_METHOD_STACK(2, 0, 0, 3896, 862);
     __CN1_DEBUG_INFO(53);
     PUSH_POINTER(__NEW_com_codename1_ui_ImageFactory_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

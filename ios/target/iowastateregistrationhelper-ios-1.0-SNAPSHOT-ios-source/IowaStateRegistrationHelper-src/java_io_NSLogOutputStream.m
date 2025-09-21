@@ -30,7 +30,7 @@ java_io_NSLogOutputStream___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_io_NSLogOutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1153, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1154, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_io_OutputStream___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -38,7 +38,7 @@ JAVA_VOID java_io_NSLogOutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID java_io_NSLogOutputStream_write___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 1153, 937);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 1154, 938);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     BC_ALOAD(0);
     PUSH_INT(1); /* ICONST_1 */
@@ -60,7 +60,7 @@ JAVA_VOID java_io_NSLogOutputStream_write___int(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_VOID java_io_NSLogOutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1153, 937);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1154, 938);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_io_OutputStream_write___byte_1ARRAY_int_int(threadStateData, __cn1ThisObject, locals[1].data.o, 0 /* ICONST_0 */, CN1_ARRAY_LENGTH(locals[1].data.o)); 

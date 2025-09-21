@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_java_util_Collections_EmptySet_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Collections_EmptySet_1___INIT_____java_util_Collections_EmptySet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6359, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6360, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Collections_EmptySet_1_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -46,14 +46,14 @@ JAVA_VOID java_util_Collections_EmptySet_1___INIT_____java_util_Collections_Empt
 
 
 JAVA_BOOLEAN java_util_Collections_EmptySet_1_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6359, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6360, 1252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_util_Collections_EmptySet_1_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6359, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6360, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_NoSuchElementException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_NoSuchElementException___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -63,7 +63,7 @@ JAVA_OBJECT java_util_Collections_EmptySet_1_next___R_java_lang_Object(CODENAME_
 
 
 JAVA_VOID java_util_Collections_EmptySet_1_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6359, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6360, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_UnsupportedOperationException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_UnsupportedOperationException___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;

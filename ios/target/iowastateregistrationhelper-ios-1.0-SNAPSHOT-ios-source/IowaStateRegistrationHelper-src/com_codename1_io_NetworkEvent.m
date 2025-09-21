@@ -95,7 +95,7 @@ JAVA_OBJECT __NEW_com_codename1_io_NetworkEvent(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRequest_java_lang_Exception(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3195, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3196, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -114,7 +114,7 @@ JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRe
 
 JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRequest_int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* responseCode */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3195, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3196, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -136,7 +136,7 @@ JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRe
 
 JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRequest_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* progressType */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3195, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3196, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -153,7 +153,7 @@ JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRe
 
 
 JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRequest_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3195, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3196, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -163,14 +163,14 @@ JAVA_VOID com_codename1_io_NetworkEvent___INIT_____com_codename1_io_ConnectionRe
     __CN1_DEBUG_INFO(58);
     set_field_com_codename1_io_NetworkEvent_length(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(107);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L442060811;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1253785665;
     __CN1_DEBUG_INFO(108);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_io_ConnectionRequest_getResponseCode___R_int(threadStateData, locals[1].data.o);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_io_NetworkEvent_progressType(threadStateData, POP_INT(), POP_OBJ());
 
-label_L442060811:
+label_L1253785665:
     __CN1_DEBUG_INFO(110);
     set_field_com_codename1_io_NetworkEvent_metaData(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(111);
@@ -180,7 +180,7 @@ label_L442060811:
 
 
 JAVA_OBJECT com_codename1_io_NetworkEvent_getConnectionRequest___R_com_codename1_io_ConnectionRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3195, 3196);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3196, 3197);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(119);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_NetworkEvent_getSource___R_java_lang_Object(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -190,7 +190,7 @@ JAVA_OBJECT com_codename1_io_NetworkEvent_getConnectionRequest___R_com_codename1
 
 
 JAVA_OBJECT com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3195, 3197);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3196, 3198);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(126);
 
 {
@@ -201,7 +201,7 @@ JAVA_OBJECT com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(CODEN
 
 
 JAVA_VOID com_codename1_io_NetworkEvent_setError___java_lang_Exception(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3195, 936);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3196, 937);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(133);
@@ -213,7 +213,7 @@ JAVA_VOID com_codename1_io_NetworkEvent_setError___java_lang_Exception(CODENAME_
 
 
 JAVA_INT com_codename1_io_NetworkEvent_getProgressType___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3195, 3198);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3196, 3199);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(143);
 
 {
@@ -224,7 +224,7 @@ JAVA_INT com_codename1_io_NetworkEvent_getProgressType___R_int(CODENAME_ONE_THRE
 
 
 JAVA_INT com_codename1_io_NetworkEvent_getResponseCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3195, 654);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3196, 655);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(152);
 
 {
@@ -251,7 +251,7 @@ JAVA_INT com_codename1_io_NetworkEvent_getProgressPercentage___R_int(CODENAME_ON
 
 JAVA_VOID com_codename1_io_NetworkEvent_setLength___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* length */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3195, 1011);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3196, 1012);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(191);
     set_field_com_codename1_io_NetworkEvent_length(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -263,7 +263,7 @@ JAVA_VOID com_codename1_io_NetworkEvent_setLength___int(CODENAME_ONE_THREAD_STAT
 
 JAVA_VOID com_codename1_io_NetworkEvent_setSentReceived___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* received */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3195, 3201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3196, 3202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(198);
     set_field_com_codename1_io_NetworkEvent_received(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -279,7 +279,7 @@ JAVA_OBJECT com_codename1_io_NetworkEvent_getMetaData___R_java_lang_Object(CODEN
 
 
 JAVA_OBJECT com_codename1_io_NetworkEvent_getMessage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3195, 913);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3196, 914);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(212);
 
 {

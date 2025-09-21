@@ -48,7 +48,7 @@ JAVA_OBJECT com_codename1_media_AsyncMedia_MediaStateChangeEvent_getOldState___R
 
 
 JAVA_OBJECT com_codename1_media_AsyncMedia_MediaStateChangeEvent_getNewState___R_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8677, 8679);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 8680);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(71);
 
 {
@@ -59,7 +59,7 @@ JAVA_OBJECT com_codename1_media_AsyncMedia_MediaStateChangeEvent_getNewState___R
 
 
 JAVA_VOID com_codename1_media_AsyncMedia_MediaStateChangeEvent___INIT_____com_codename1_media_AsyncMedia_com_codename1_media_AsyncMedia_State_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8677, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8678, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

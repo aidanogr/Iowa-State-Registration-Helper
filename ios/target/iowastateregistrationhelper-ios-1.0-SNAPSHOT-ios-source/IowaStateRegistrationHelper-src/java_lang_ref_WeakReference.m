@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_java_lang_ref_WeakReference(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_lang_ref_WeakReference___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9194, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9195, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_ref_Reference___INIT____(threadStateData, __cn1ThisObject); 
@@ -44,7 +44,7 @@ JAVA_VOID java_lang_ref_WeakReference___INIT_____java_lang_Object(CODENAME_ONE_T
 
 
 JAVA_OBJECT java_lang_ref_WeakReference_getImpl___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9194, 9195);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9195, 9196);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_lang_ref_WeakReference_objReference(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -52,7 +52,7 @@ JAVA_OBJECT java_lang_ref_WeakReference_getImpl___R_java_lang_Object(CODENAME_ON
 
 
 JAVA_VOID java_lang_ref_WeakReference_clearImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9194, 9196);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9195, 9197);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     set_field_java_lang_ref_WeakReference_objReference(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

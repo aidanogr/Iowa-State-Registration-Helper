@@ -44,7 +44,7 @@ JAVA_OBJECT __NEW_com_codename1_media_AbstractMedia_5(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_5___INIT_____com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8702, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8703, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,15 +59,15 @@ JAVA_VOID com_codename1_media_AbstractMedia_5___INIT_____com_codename1_media_Abs
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_5_onSucess___com_codename1_media_AsyncMedia(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8702, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8703, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(194);
-    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_5_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1666268188;
+    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_5_val_out(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1148045719;
     __CN1_DEBUG_INFO(195);
     /* CustomInvoke */virtual_com_codename1_media_AsyncMedia_PlayRequest_complete___java_lang_Object(threadStateData, get_field_com_codename1_media_AbstractMedia_5_val_out(__cn1ThisObject), locals[1].data.o); 
 
-label_L1666268188:
+label_L1148045719:
     __CN1_DEBUG_INFO(197);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -75,7 +75,7 @@ label_L1666268188:
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_5_onSucess___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8702, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8703, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(191);

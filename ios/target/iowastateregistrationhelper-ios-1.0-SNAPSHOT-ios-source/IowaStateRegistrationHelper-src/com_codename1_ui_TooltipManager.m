@@ -102,7 +102,7 @@ com_codename1_ui_TooltipManager___INIT____(threadStateData, o);
 
 JAVA_OBJECT com_codename1_ui_TooltipManager_getInstance___R_com_codename1_ui_TooltipManager(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_TooltipManager(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 8189, 1320);
+    DEFINE_METHOD_STACK(1, 0, 0, 8190, 1321);
     __CN1_DEBUG_INFO(47);
     PUSH_POINTER(get_static_com_codename1_ui_TooltipManager_instance(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -121,7 +121,7 @@ JAVA_VOID com_codename1_ui_TooltipManager_enableTooltips___com_codename1_ui_Tool
 
 
 JAVA_VOID com_codename1_ui_TooltipManager___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8189, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8190, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(69);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(38);
@@ -129,9 +129,9 @@ JAVA_VOID com_codename1_ui_TooltipManager___INIT____(CODENAME_ONE_THREAD_STATE, 
     PUSH_INT(500);
     set_field_com_codename1_ui_TooltipManager_tooltipShowDelay(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(43);
-    set_field_com_codename1_ui_TooltipManager_dialogUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8191), __cn1ThisObject);
+    set_field_com_codename1_ui_TooltipManager_dialogUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8192), __cn1ThisObject);
     __CN1_DEBUG_INFO(44);
-    set_field_com_codename1_ui_TooltipManager_textUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8192), __cn1ThisObject);
+    set_field_com_codename1_ui_TooltipManager_textUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8193), __cn1ThisObject);
     __CN1_DEBUG_INFO(70);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -139,23 +139,23 @@ JAVA_VOID com_codename1_ui_TooltipManager___INIT____(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID com_codename1_ui_TooltipManager_clearTooltip__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8189, 8193);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8190, 8194);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(76);
-    if (get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1715606187;
+    if (get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1871617286;
     __CN1_DEBUG_INFO(77);
     virtual_com_codename1_components_InteractionDialog_dispose__(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(78);
     set_field_com_codename1_ui_TooltipManager_currentTooltip(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1715606187:
+label_L1871617286:
     __CN1_DEBUG_INFO(80);
-    if (get_field_com_codename1_ui_TooltipManager_pendingTooltip(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L647218712;
+    if (get_field_com_codename1_ui_TooltipManager_pendingTooltip(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2010350054;
     __CN1_DEBUG_INFO(81);
     virtual_com_codename1_ui_util_UITimer_cancel__(threadStateData, get_field_com_codename1_ui_TooltipManager_pendingTooltip(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(82);
     set_field_com_codename1_ui_TooltipManager_pendingTooltip(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L647218712:
+label_L2010350054:
     __CN1_DEBUG_INFO(84);
     set_field_com_codename1_ui_TooltipManager_currentComponent(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(85);
@@ -165,18 +165,18 @@ label_L647218712:
 
 
 JAVA_VOID com_codename1_ui_TooltipManager_prepareTooltip___java_lang_String_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 8189, 8194);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 8190, 8195);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(96);
-    if (get_field_com_codename1_ui_TooltipManager_currentComponent(__cn1ThisObject)!=locals[2].data.o) /* IF_ACMPNE CustomJump */ goto label_L876864630;
+    if (get_field_com_codename1_ui_TooltipManager_currentComponent(__cn1ThisObject)!=locals[2].data.o) /* IF_ACMPNE CustomJump */ goto label_L577948592;
     __CN1_DEBUG_INFO(97);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L876864630:
+label_L577948592:
     __CN1_DEBUG_INFO(99);
     virtual_com_codename1_ui_TooltipManager_clearTooltip__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(100);
@@ -193,11 +193,11 @@ label_L876864630:
     POP_MANY(2);
     __CN1_DEBUG_INFO(108);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(109);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2093996783;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L66515916;
     __CN1_DEBUG_INFO(110);
     /* CustomInvoke */virtual_com_codename1_ui_util_UITimer_schedule___int_boolean_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_TooltipManager_pendingTooltip(__cn1ThisObject), get_field_com_codename1_ui_TooltipManager_tooltipShowDelay(__cn1ThisObject), 0 /* ICONST_0 */, locals[3].data.o); 
 
-label_L2093996783:
+label_L66515916:
     __CN1_DEBUG_INFO(112);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -205,7 +205,7 @@ label_L2093996783:
 
 
 JAVA_VOID com_codename1_ui_TooltipManager_showTooltip___java_lang_String_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8189, 8195);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8190, 8196);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -238,9 +238,9 @@ JAVA_VOID com_codename1_ui_TooltipManager_showTooltip___java_lang_String_com_cod
     __CN1_DEBUG_INFO(130);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), get_field_com_codename1_ui_TooltipManager_dialogUIID(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(131);
-    /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setDialogUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(2347)); 
+    /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setDialogUIID___java_lang_String(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(2348)); 
     __CN1_DEBUG_INFO(132);
-    /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(136), locals[3].data.o); 
+    /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(137), locals[3].data.o); 
     __CN1_DEBUG_INFO(133);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_setAnimateShow___boolean(threadStateData, get_field_com_codename1_ui_TooltipManager_currentTooltip(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(134);
@@ -262,7 +262,7 @@ JAVA_VOID com_codename1_ui_TooltipManager_setTooltipShowDelay___int(CODENAME_ONE
 
 
 JAVA_OBJECT com_codename1_ui_TooltipManager_getDialogUIID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8189, 3244);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8190, 3245);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(163);
 
 {
@@ -273,7 +273,7 @@ JAVA_OBJECT com_codename1_ui_TooltipManager_getDialogUIID___R_java_lang_String(C
 
 
 JAVA_VOID com_codename1_ui_TooltipManager_setDialogUIID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8189, 3243);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8190, 3244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(171);
@@ -285,7 +285,7 @@ JAVA_VOID com_codename1_ui_TooltipManager_setDialogUIID___java_lang_String(CODEN
 
 
 JAVA_OBJECT com_codename1_ui_TooltipManager_getTextUIID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8189, 5975);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8190, 5976);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(179);
 
 {
@@ -296,7 +296,7 @@ JAVA_OBJECT com_codename1_ui_TooltipManager_getTextUIID___R_java_lang_String(COD
 
 
 JAVA_VOID com_codename1_ui_TooltipManager_setTextUIID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8189, 5974);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8190, 5975);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(187);
@@ -309,7 +309,7 @@ JAVA_VOID com_codename1_ui_TooltipManager_setTextUIID___java_lang_String(CODENAM
 
 JAVA_OBJECT com_codename1_ui_TooltipManager_access$002___com_codename1_ui_TooltipManager_com_codename1_ui_util_UITimer_R_com_codename1_ui_util_UITimer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_TooltipManager(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8189, 1524);
+    DEFINE_METHOD_STACK(3, 2, 0, 8190, 1525);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

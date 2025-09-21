@@ -59,7 +59,7 @@ JAVA_OBJECT __NEW_java_lang_Byte(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_lang_Byte___INIT_____byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BYTE __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5820, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5821, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Number___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_lang_Byte_value(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -69,14 +69,14 @@ JAVA_VOID java_lang_Byte___INIT_____byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
 
 
 JAVA_BYTE java_lang_Byte_byteValue___R_byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5820, 1016);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5821, 1017);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Byte_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_BOOLEAN java_lang_Byte_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5820, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5821, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1176932104;
@@ -98,7 +98,7 @@ label_L712410124:
 
 
 JAVA_INT java_lang_Byte_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5820, 883);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5821, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_lang_Byte_intValue___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -116,7 +116,7 @@ JAVA_BYTE java_lang_Byte_parseByte___java_lang_String_int_R_byte(CODENAME_ONE_TH
 
 
 JAVA_OBJECT java_lang_Byte_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5820, 897);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5821, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_toString___int_R_java_lang_String(threadStateData, get_field_java_lang_Byte_value(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -125,7 +125,7 @@ JAVA_OBJECT java_lang_Byte_toString___R_java_lang_String(CODENAME_ONE_THREAD_STA
 
 JAVA_OBJECT java_lang_Byte_valueOf___byte_R_java_lang_Byte(CODENAME_ONE_THREAD_STATE, JAVA_BYTE __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Byte(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 5820, 900);
+    DEFINE_METHOD_STACK(3, 1, 0, 5821, 901);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_lang_Byte(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -136,14 +136,14 @@ JAVA_OBJECT java_lang_Byte_valueOf___byte_R_java_lang_Byte(CODENAME_ONE_THREAD_S
 
 
 JAVA_INT java_lang_Byte_intValue___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5820, 1020);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5821, 1021);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Byte_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_LONG java_lang_Byte_longValue___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5820, 1024);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5821, 1025);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Byte_value(__cn1ThisObject));
     SP[-1].data.l = SP[-1].data.i; /* I2L */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -152,7 +152,7 @@ JAVA_LONG java_lang_Byte_longValue___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_FLOAT java_lang_Byte_floatValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5820, 1019);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5821, 1020);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Byte_value(__cn1ThisObject));
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -161,7 +161,7 @@ JAVA_FLOAT java_lang_Byte_floatValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_DOUBLE java_lang_Byte_doubleValue___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5820, 1018);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5821, 1019);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Byte_value(__cn1ThisObject));
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -175,7 +175,7 @@ JAVA_INT java_lang_Byte_compare___byte_byte_R_int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_INT java_lang_Byte_compareTo___java_lang_Byte_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5820, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5821, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (get_field_java_lang_Byte_value(__cn1ThisObject)>=get_field_java_lang_Byte_value(locals[1].data.o)) /* IF_ICMPGE CustomJump */ goto label_L249177573;
@@ -196,7 +196,7 @@ label_L2096539129:
 
 
 JAVA_INT java_lang_Byte_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5820, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5821, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_Byte_compareTo___java_lang_Byte_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -206,7 +206,7 @@ JAVA_INT java_lang_Byte_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID java_lang_Byte___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 5820, 861);
+    DEFINE_METHOD_STACK(1, 0, 0, 5821, 862);
     set_static_java_lang_Byte_TYPE(threadStateData, get_static_java_lang_Byte_TYPE(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

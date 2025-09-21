@@ -17,7 +17,7 @@ void __GC_MARK_java_util_Dictionary(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objTo
 
 
 JAVA_VOID java_util_Dictionary___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1999, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2000, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_plugin_event_IsGalleryTypeSupportedEvent(CODENAM
 
 JAVA_VOID com_codename1_plugin_event_IsGalleryTypeSupportedEvent___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* type */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9216, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9217, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(41);
     /* CustomInvoke */com_codename1_plugin_event_PluginEvent___INIT_____java_lang_Object_com_codename1_ui_events_ActionEvent_Type(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */, get_static_com_codename1_ui_events_ActionEvent_Type_IsGalleryTypeSupported(threadStateData)); 

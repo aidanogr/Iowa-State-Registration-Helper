@@ -41,7 +41,7 @@ java_util_LinkedHashSet___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_LinkedHashSet___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6095, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6096, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_LinkedHashMap(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -53,7 +53,7 @@ JAVA_VOID java_util_LinkedHashSet___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID java_util_LinkedHashSet___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6095, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6096, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_LinkedHashMap(threadStateData)); /* NEW */
@@ -66,7 +66,7 @@ JAVA_VOID java_util_LinkedHashSet___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID java_util_LinkedHashSet___INIT_____int_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6095, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6096, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_FLOAT flocals_2_ = __cn1Arg2;
     BC_ALOAD(0);
@@ -80,7 +80,7 @@ JAVA_VOID java_util_LinkedHashSet___INIT_____int_float(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID java_util_LinkedHashSet___INIT_____java_util_Collection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6095, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6096, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(0);

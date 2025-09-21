@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_InterFormContainer_2(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_ui_InterFormContainer_2___INIT_____java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6097, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6098, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(119);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_ui_InterFormContainer_2___INIT_____java_util_Map(CODENAM
 
 
 JAVA_BOOLEAN com_codename1_ui_InterFormContainer_2_filter___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6097, 5917);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6098, 5918);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(122);
@@ -55,7 +55,7 @@ JAVA_BOOLEAN com_codename1_ui_InterFormContainer_2_filter___com_codename1_ui_Com
     PUSH_OBJ(tmpResult); }
     /* LDC: 'com_codename1_ui_InterFormContainer'*/
     PUSH_POINTER((JAVA_OBJECT)&class__com_codename1_ui_InterFormContainer);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L174999703;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L403388441;
     __CN1_DEBUG_INFO(123);
     PUSH_POINTER(get_field_com_codename1_ui_InterFormContainer_2_val_set2(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_InterFormContainer_access$000___com_codename1_ui_InterFormContainer_R_com_codename1_ui_Component(threadStateData, locals[1].data.o));
@@ -67,7 +67,7 @@ JAVA_BOOLEAN com_codename1_ui_InterFormContainer_2_filter___com_codename1_ui_Com
     __CN1_DEBUG_INFO(124);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L174999703:
+label_L403388441:
     __CN1_DEBUG_INFO(126);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }

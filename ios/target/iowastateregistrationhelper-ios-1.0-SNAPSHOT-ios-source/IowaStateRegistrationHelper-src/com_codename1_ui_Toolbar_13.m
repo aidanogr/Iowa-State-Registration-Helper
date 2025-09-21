@@ -49,7 +49,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Toolbar_13(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Toolbar_13___INIT_____com_codename1_ui_Toolbar_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7194, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7195, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_ui_Toolbar_13___INIT_____com_codename1_ui_Toolbar_int_bo
 
 
 JAVA_VOID com_codename1_ui_Toolbar_13_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7194, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7195, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1686);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_showOnTopRightSidemenu___int_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_13_this_0(__cn1ThisObject), get_field_com_codename1_ui_Toolbar_13_val_draggedX(__cn1ThisObject), get_field_com_codename1_ui_Toolbar_13_val_fromCurrent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1687);

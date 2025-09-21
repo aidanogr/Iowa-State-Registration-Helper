@@ -10,8 +10,10 @@ import com.codename1.ui.CheckBox;
 import com.codename1.ui.Command;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
+import com.codename1.components.SpanLabel;
 import com.codename1.ui.TextField;
 import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BoxLayout;
@@ -90,6 +92,8 @@ public class CalendarContainerWrapper  {
 		navigationContainer = new Container(new BoxLayout(BoxLayout.X_AXIS));
 		navigationContainer.setUIID("CalendarToolbar");
 		navigationToggle = new Button("Menu");
+		navigationToggle.setUIID("NavButton");
+		
 		navigationToggle.addActionListener(evt -> showNavigationDialog());
 		navigationContainer.add(navigationToggle);
 		navigationContainer.add(conflictButton);
@@ -307,6 +311,64 @@ public class CalendarContainerWrapper  {
 		}
 	}
 
+	private void shareScheduleToNotes() {
+		String summary = buildScheduleSummary();
+		if(summary.length() == 0) {
+			showInfoDialog("Nothing to Share", "No schedule information is available to save.");
+			return;
+		}
+		Display.getInstance().share(summary, null, "text/plain");
+	}
+
+	private String buildScheduleSummary() {
+		if(classList == null || classList.isEmpty()) {
+			return "";
+		}
+		StringBuilder builder = new StringBuilder();
+		for(ClassItem item : classList) {
+			if(item == null) {
+				continue;
+			}
+			MeetingInfo info = item.getCurrentSectionMeetingInfo();
+			String courseName = item.getCourseName();
+			if(courseName == null || courseName.length() == 0) {
+				courseName = "Untitled";
+			}
+			builder.append(courseName);
+			String section = item.getCurrentSection();
+			if(section != null && section.length() > 0 && !"EXT".equals(section)) {
+				builder.append(" - Section ").append(section);
+			}
+			builder.append('\n');
+			if(info != null) {
+				builder.append("  ");
+				builder.append(info.getMeetingDays()).append(" ");
+				builder.append(formatTime(info.getStartHour(), info.getStartMinute()));
+				builder.append(" - ");
+				builder.append(formatTime(info.getEndHour(), info.getEndMinute()));
+			} else {
+				builder.append("  (No meeting information)");
+			}
+			builder.append('\n');
+		}
+		return builder.toString();
+	}
+
+	private String formatTime(int hour24, int minute) {
+		int displayHour = hour24 % 12;
+		if(displayHour == 0) {
+			displayHour = 12;
+		}
+		String meridiem = hour24 < 12 ? "AM" : "PM";
+		StringBuilder builder = new StringBuilder();
+		builder.append(displayHour).append(':');
+		if(minute < 10) {
+			builder.append('0');
+		}
+		builder.append(minute).append(' ').append(meridiem);
+		return builder.toString();
+	}
+
 	public ClassItem addExternalEvent(ClassItem externalEvent) {
 		classList.add(externalEvent);
 		refreshLayout();
@@ -415,6 +477,12 @@ public class CalendarContainerWrapper  {
 			loadSavedSchedule();
 		});
 
+		Button exportButton = new Button("Save Schedule to Notes");
+		exportButton.addActionListener(evt -> {
+			menu.dispose();
+			shareScheduleToNotes();
+		});
+
 		Button addEventButton = new Button("Add External Event");
 		addEventButton.addActionListener(evt -> {
 			menu.dispose();
@@ -434,7 +502,7 @@ public class CalendarContainerWrapper  {
 			nextButton.setText(allowConflicts ? "Next Schedule (allow conflicts)" : "Next Schedule");
 		});
 
-		menu.addAll(saveButton, loadButton, addEventButton, nextButton, conflictCheck);
+		menu.addAll(saveButton, loadButton, exportButton, addEventButton, nextButton, conflictCheck);
 		menu.showPopupDialog(navigationToggle);
 	}
 

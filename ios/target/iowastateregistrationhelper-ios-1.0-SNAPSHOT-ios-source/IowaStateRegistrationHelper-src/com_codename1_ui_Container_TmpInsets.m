@@ -98,7 +98,7 @@ com_codename1_ui_Container_TmpInsets___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7230, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7231, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2513);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -107,22 +107,22 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets___INIT____(CODENAME_ONE_THREAD_ST
 
 
 JAVA_OBJECT com_codename1_ui_Container_TmpInsets_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7230, 897);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7231, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2519);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_TmpInsets_top(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_TmpInsets_right(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_TmpInsets_bottom(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_TmpInsets_left(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -134,7 +134,7 @@ JAVA_OBJECT com_codename1_ui_Container_TmpInsets_toString___R_java_lang_String(C
 
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets_set___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7230, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7231, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2525);
@@ -159,7 +159,7 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets_set___com_codename1_ui_plaf_Style
     set_field_com_codename1_ui_Container_TmpInsets_right(threadStateData, POP_FLOAT(), POP_OBJ());
     __CN1_DEBUG_INFO(2529);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_plaf_Style_getPaddingUnit___R_byte_1ARRAY(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2530);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2045706119;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L776178157;
     __CN1_DEBUG_INFO(2531);
     set_field_com_codename1_ui_Container_TmpInsets_topUnit(threadStateData, CN1_ARRAY_ELEMENT_BYTE(locals[2].data.o, 0 /* ICONST_0 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(2532);
@@ -168,9 +168,9 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets_set___com_codename1_ui_plaf_Style
     set_field_com_codename1_ui_Container_TmpInsets_bottomUnit(threadStateData, CN1_ARRAY_ELEMENT_BYTE(locals[2].data.o, 2 /* ICONST_2 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(2534);
     set_field_com_codename1_ui_Container_TmpInsets_rightUnit(threadStateData, CN1_ARRAY_ELEMENT_BYTE(locals[2].data.o, 3 /* ICONST_3 */), __cn1ThisObject);
-    goto label_L1800389329;
+    goto label_L462487268;
 
-label_L2045706119:
+label_L776178157:
     __CN1_DEBUG_INFO(2536);
     BC_ALOAD(0);
     BC_ALOAD(0);
@@ -185,7 +185,7 @@ label_L2045706119:
     set_field_com_codename1_ui_Container_TmpInsets_leftUnit(threadStateData, POP_INT(), POP_OBJ());
     set_field_com_codename1_ui_Container_TmpInsets_topUnit(threadStateData, POP_INT(), POP_OBJ());
 
-label_L1800389329:
+label_L462487268:
     __CN1_DEBUG_INFO(2539);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -194,7 +194,7 @@ label_L1800389329:
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets_restore___com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7230, 7231);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7231, 7232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2542);
@@ -211,7 +211,7 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets_restore___com_codename1_ui_plaf_S
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_float_boolean(threadStateData, locals[1].data.o, 3 /* ICONST_3 */, get_field_com_codename1_ui_Container_TmpInsets_right(__cn1ThisObject), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(2548);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_plaf_Style_getPaddingUnit___R_byte_1ARRAY(threadStateData, locals[1].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2549);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L146605930;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L890488908;
     __CN1_DEBUG_INFO(2550);
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[3].data.o, 0 /* ICONST_0 */, get_field_com_codename1_ui_Container_TmpInsets_topUnit(__cn1ThisObject));
     __CN1_DEBUG_INFO(2551);
@@ -220,9 +220,9 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets_restore___com_codename1_ui_plaf_S
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[3].data.o, 1 /* ICONST_1 */, get_field_com_codename1_ui_Container_TmpInsets_leftUnit(__cn1ThisObject));
     __CN1_DEBUG_INFO(2553);
     CN1_SET_ARRAY_ELEMENT_BYTE(locals[3].data.o, 3 /* ICONST_3 */, get_field_com_codename1_ui_Container_TmpInsets_rightUnit(__cn1ThisObject));
-    goto label_L501491806;
+    goto label_L1232631679;
 
-label_L146605930:
+label_L890488908:
     __CN1_DEBUG_INFO(2555);
     BC_ALOAD(1);
     PUSH_INT(4); /* ICONST_4 */
@@ -249,7 +249,7 @@ label_L146605930:
     ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
     virtual_com_codename1_ui_plaf_Style_setPaddingUnit___byte_1ARRAY(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L501491806:
+label_L1232631679:
     __CN1_DEBUG_INFO(2557);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setSuppressChangeEvents___boolean(threadStateData, locals[1].data.o, ilocals_2_); 
     __CN1_DEBUG_INFO(2558);
@@ -259,7 +259,7 @@ label_L501491806:
 
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets___INIT_____com_codename1_ui_Container_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7230, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7231, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2513);
@@ -271,7 +271,7 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets___INIT_____com_codename1_ui_Conta
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets_access$500___com_codename1_ui_Container_TmpInsets_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_Container_TmpInsets(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 7230, 1859);
+    DEFINE_METHOD_STACK(2, 2, 0, 7231, 1860);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -285,7 +285,7 @@ JAVA_VOID com_codename1_ui_Container_TmpInsets_access$500___com_codename1_ui_Con
 
 JAVA_VOID com_codename1_ui_Container_TmpInsets_access$600___com_codename1_ui_Container_TmpInsets_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_Container_TmpInsets(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 7230, 1525);
+    DEFINE_METHOD_STACK(2, 2, 0, 7231, 1526);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

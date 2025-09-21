@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_CSSBorder_ColorStop(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID com_codename1_ui_plaf_CSSBorder_ColorStop___INIT_____com_codename1_ui_plaf_CSSBorder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5754, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5755, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(960);
@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_ColorStop___INIT_____com_codename1_ui_
 
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_ColorStop_toCSSString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5754, 5632);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5755, 5633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(966);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -80,15 +80,15 @@ JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_ColorStop_toCSSString___R_java_lang_
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
     __CN1_DEBUG_INFO(968);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_ColorStop_position(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L489523270;
+    if (get_field_com_codename1_ui_plaf_CSSBorder_ColorStop_position(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L501599368;
     __CN1_DEBUG_INFO(969);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(615));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(616));
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_plaf_CSSBorder_ColorStop_position(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));     SP -= 1;
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));     SP -= 1;
 
-label_L489523270:
+label_L501599368:
     __CN1_DEBUG_INFO(971);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }

@@ -58,7 +58,7 @@ JAVA_OBJECT __NEW_java_io_ByteArrayInputStream(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_io_ByteArrayInputStream___INIT_____byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5625, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5626, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_io_InputStream___INIT____(threadStateData, __cn1ThisObject); 
@@ -71,7 +71,7 @@ JAVA_VOID java_io_ByteArrayInputStream___INIT_____byte_1ARRAY(CODENAME_ONE_THREA
 
 
 JAVA_VOID java_io_ByteArrayInputStream___INIT_____byte_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5625, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5626, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -109,7 +109,7 @@ label_L1131184547:
 
 
 JAVA_INT java_io_ByteArrayInputStream_available___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5625, 985);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5626, 986);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_io_ByteArrayInputStream_count(__cn1ThisObject));
     PUSH_INT(get_field_java_io_ByteArrayInputStream_pos(__cn1ThisObject));
@@ -125,7 +125,7 @@ JAVA_VOID java_io_ByteArrayInputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID java_io_ByteArrayInputStream_mark___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5625, 986);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5626, 987);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     set_field_java_io_ByteArrayInputStream_mark(threadStateData, get_field_java_io_ByteArrayInputStream_pos(__cn1ThisObject), __cn1ThisObject);
@@ -136,14 +136,14 @@ JAVA_VOID java_io_ByteArrayInputStream_mark___int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_BOOLEAN java_io_ByteArrayInputStream_markSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5625, 987);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5626, 988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(1); /* ICONST_1 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_INT java_io_ByteArrayInputStream_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 5625, 988);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 5626, 989);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_io_ByteArrayInputStream_pos(__cn1ThisObject)>=get_field_java_io_ByteArrayInputStream_count(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L895599632;
     PUSH_POINTER(get_field_java_io_ByteArrayInputStream_buf(__cn1ThisObject));
@@ -172,7 +172,7 @@ label_L1508059488:
 
 JAVA_INT java_io_ByteArrayInputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 5625, 988);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 5626, 989);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
@@ -213,7 +213,7 @@ label_L552937500:
 
 
 JAVA_VOID java_io_ByteArrayInputStream_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5625, 989);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5626, 990);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     set_field_java_io_ByteArrayInputStream_pos(threadStateData, get_field_java_io_ByteArrayInputStream_mark(__cn1ThisObject), __cn1ThisObject);
     monitorExitBlock(threadStateData, __cn1ThisObject);
@@ -224,7 +224,7 @@ JAVA_VOID java_io_ByteArrayInputStream_reset__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 JAVA_LONG java_io_ByteArrayInputStream_skip___long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5625, 990);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5626, 991);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>0) /* IFGT CustomJump */ goto label_L1455695758;

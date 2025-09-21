@@ -137,7 +137,7 @@ com_codename1_ui_CN1Constants___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_CN1Constants___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8169, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8170, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(31);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

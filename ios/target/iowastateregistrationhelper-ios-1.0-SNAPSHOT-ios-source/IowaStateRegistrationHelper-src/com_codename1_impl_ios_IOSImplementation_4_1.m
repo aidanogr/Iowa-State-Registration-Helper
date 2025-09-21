@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_4_1(CODENAME_ONE_THRE
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_4_1___INIT_____com_codename1_impl_ios_IOSImplementation_4(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9643, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9644, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(648);
@@ -46,7 +46,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_4_1___INIT_____com_codename1_
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_4_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(0, 1, 0, 9643, 202);
+    DEFINE_INSTANCE_METHOD_STACK(0, 1, 0, 9644, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(650);
     com_codename1_impl_ios_IOSImplementation_access$100__(threadStateData); 
     __CN1_DEBUG_INFO(651);

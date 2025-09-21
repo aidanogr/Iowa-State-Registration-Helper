@@ -31,7 +31,7 @@ JAVA_OBJECT __NEW_java_util_AbstractList_SubAbstractListRandomAccess(CODENAME_ON
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractListRandomAccess___INIT_____java_util_AbstractList_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1269, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1270, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;

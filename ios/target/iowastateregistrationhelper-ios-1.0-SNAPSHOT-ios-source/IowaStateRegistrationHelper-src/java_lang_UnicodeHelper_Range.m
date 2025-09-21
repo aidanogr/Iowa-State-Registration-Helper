@@ -58,7 +58,7 @@ JAVA_OBJECT __NEW_ARRAY_java_lang_UnicodeHelper_Range(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_lang_UnicodeHelper_Range___INIT_____int_int_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1122, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1123, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     locals[3].data.o = __cn1Arg3;

@@ -60,7 +60,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Picker_3(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_3___INIT_____com_codename1_ui_spinner_Picker_com_codename1_ui_Form_com_codename1_components_InteractionDialog(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10226, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10227, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -82,7 +82,7 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_actionPerformed___com_codename1_ui_e
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 10226, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 10227, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1089);
@@ -95,10 +95,10 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_actionPerformed___com_codename1_ui_e
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(1090);
-    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L1853751897;
+    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L298507058;
     __CN1_DEBUG_INFO(1091);
     /* LDC: '.SpinnerWrapper'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10227));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10228));
     PUSH_INT(1); /* ICONST_1 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -114,7 +114,7 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_actionPerformed___com_codename1_ui_e
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_ComponentSelector_setPadding___int_R_com_codename1_ui_ComponentSelector(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L1853751897:
+label_L298507058:
     __CN1_DEBUG_INFO(1093);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(1094);

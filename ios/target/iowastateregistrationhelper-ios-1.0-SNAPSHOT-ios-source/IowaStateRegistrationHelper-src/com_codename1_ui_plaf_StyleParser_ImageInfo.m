@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_StyleParser_ImageInfo(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_ui_plaf_StyleParser_ImageInfo___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6794, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6795, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(807);
@@ -50,7 +50,7 @@ JAVA_VOID com_codename1_ui_plaf_StyleParser_ImageInfo___INIT_____java_lang_Strin
 
 
 JAVA_OBJECT com_codename1_ui_plaf_StyleParser_ImageInfo_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6794, 897);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6795, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(813);
 
 {
@@ -61,7 +61,7 @@ JAVA_OBJECT com_codename1_ui_plaf_StyleParser_ImageInfo_toString___R_java_lang_S
 
 
 JAVA_OBJECT com_codename1_ui_plaf_StyleParser_ImageInfo_getImage___com_codename1_ui_util_Resources_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6794, 1588);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6795, 1589);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(823);

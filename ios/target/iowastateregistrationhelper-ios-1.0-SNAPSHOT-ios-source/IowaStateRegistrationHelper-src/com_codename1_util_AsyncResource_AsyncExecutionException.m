@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_util_AsyncResource_AsyncExecutionException(CODEN
 
 
 JAVA_VOID com_codename1_util_AsyncResource_AsyncExecutionException___INIT_____java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7293, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7294, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(190);

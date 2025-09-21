@@ -40,7 +40,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_SubMapEntrySet(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_TreeMap_SubMapEntrySet___INIT_____java_util_TreeMap_SubMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6287, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6288, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_AbstractSet___INIT____(threadStateData, __cn1ThisObject); 
@@ -51,7 +51,7 @@ JAVA_VOID java_util_TreeMap_SubMapEntrySet___INIT_____java_util_TreeMap_SubMap(C
 
 
 JAVA_BOOLEAN java_util_TreeMap_SubMapEntrySet_isEmpty___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6287, 907);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6288, 908);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_TreeMap_SubMap_isEmpty___R_boolean(threadStateData, get_field_java_util_TreeMap_SubMapEntrySet_subMap(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -61,7 +61,7 @@ JAVA_BOOLEAN java_util_TreeMap_SubMapEntrySet_isEmpty___R_boolean(CODENAME_ONE_T
 JAVA_OBJECT java_util_TreeMap_SubMapEntrySet_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 6287, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 6288, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_TreeMap_SubMap_hasStart(get_field_java_util_TreeMap_SubMapEntrySet_subMap(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1715998167;
     /* CustomInvoke */java_util_TreeMap_SubMap_access$300___java_util_TreeMap_SubMap(threadStateData, get_field_java_util_TreeMap_SubMapEntrySet_subMap(__cn1ThisObject)); 
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_java_util_TreeMap_SubMap_firstKeyNode(get_field_java_util_TreeMap_SubMapEntrySet_subMap(__cn1ThisObject));
@@ -204,7 +204,7 @@ label_L3213500:
 
 
 JAVA_INT java_util_TreeMap_SubMapEntrySet_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6287, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6288, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_TreeMap_SubMap_size___R_int(threadStateData, get_field_java_util_TreeMap_SubMapEntrySet_subMap(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -212,7 +212,7 @@ JAVA_INT java_util_TreeMap_SubMapEntrySet_size___R_int(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_BOOLEAN java_util_TreeMap_SubMapEntrySet_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 6287, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 6288, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -244,7 +244,7 @@ label_L923219673:
 
 
 JAVA_BOOLEAN java_util_TreeMap_SubMapEntrySet_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6287, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6288, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (/* CustomInvoke */virtual_java_util_TreeMap_SubMapEntrySet_contains___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1698097425;

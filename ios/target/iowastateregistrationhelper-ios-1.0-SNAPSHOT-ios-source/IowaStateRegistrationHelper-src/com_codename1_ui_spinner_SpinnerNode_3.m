@@ -37,7 +37,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_SpinnerNode_3(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID com_codename1_ui_spinner_SpinnerNode_3___INIT_____com_codename1_ui_spinner_SpinnerNode(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10139, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10140, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(105);
@@ -50,7 +50,7 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerNode_3___INIT_____com_codename1_ui_spi
 
 JAVA_VOID com_codename1_ui_spinner_SpinnerNode_3_paint___com_codename1_ui_Graphics_com_codename1_ui_geom_Rectangle_com_codename1_ui_scene_Node(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 10139, 2357);
+    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 10140, 2358);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

@@ -4,14 +4,12 @@
 #include "cn1_globals.h"
 #include "com_codename1_ui_Button.h"
 extern struct clazz class__com_codename1_ui_CheckBox;
-extern struct clazz class_array1__com_codename1_ui_CheckBox;
 extern void __INIT_VTABLE_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE, void** vtable);
 extern void __STATIC_INITIALIZER_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE);
 extern void __FINALIZER_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
 extern void __GC_MARK_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
 extern JAVA_OBJECT __NEW_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE);
 extern JAVA_OBJECT __NEW_INSTANCE_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE);
-extern JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_CheckBox(CODENAME_ONE_THREAD_STATE, JAVA_INT size);
 
 JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 

@@ -129,7 +129,7 @@ java_util_TreeMap_Node___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_TreeMap_Node___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6251, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6252, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_util_TreeMap_Node_left_idx(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     set_field_java_util_TreeMap_Node_right_idx(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);

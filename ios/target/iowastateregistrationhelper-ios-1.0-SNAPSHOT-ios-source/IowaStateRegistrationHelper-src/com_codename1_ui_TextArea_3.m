@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_TextArea_3(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_TextArea_3___INIT_____com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6857, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6858, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2068);
@@ -46,7 +46,7 @@ JAVA_VOID com_codename1_ui_TextArea_3___INIT_____com_codename1_ui_TextArea(CODEN
 
 
 JAVA_VOID com_codename1_ui_TextArea_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6857, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6858, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2071);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     PUSH_POINTER(get_field_com_codename1_ui_TextArea_3_this_0(__cn1ThisObject));

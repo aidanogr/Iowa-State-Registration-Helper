@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_ARRAY_com_ogradytech_registration_Utilities_AcademicPeriod(COD
 
 
 JAVA_VOID com_ogradytech_registration_Utilities_AcademicPeriod___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10502, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10590, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -70,7 +70,7 @@ JAVA_VOID com_ogradytech_registration_Utilities_AcademicPeriod___INIT_____java_l
 
 
 JAVA_OBJECT com_ogradytech_registration_Utilities_AcademicPeriod_getID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10502, 6736);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10590, 6737);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(13);
 
 {

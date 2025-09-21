@@ -79,19 +79,19 @@ JAVA_OBJECT __NEW_java_io_InputStreamReader(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_io_InputStreamReader___INIT_____java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7756, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7757, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_io_Reader___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_io_InputStreamReader_internal(threadStateData, locals[1].data.o, __cn1ThisObject);
-    set_field_java_io_InputStreamReader_enc(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(130), __cn1ThisObject);
+    set_field_java_io_InputStreamReader_enc(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(131), __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID java_io_InputStreamReader_complete__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 7756, 6666);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 7757, 6667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */java_io_InputStreamReader_readInputStream___java_io_InputStream_R_byte_1ARRAY(threadStateData, get_field_java_io_InputStreamReader_internal(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_io_InputStreamReader_bytesToChars___byte_1ARRAY_int_int_java_lang_String_R_char_1ARRAY(threadStateData, locals[1].data.o, 0 /* ICONST_0 */, CN1_ARRAY_LENGTH(locals[1].data.o), get_field_java_io_InputStreamReader_enc(__cn1ThisObject)));
     set_field_java_io_InputStreamReader_cbuffer(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
@@ -103,7 +103,7 @@ JAVA_VOID java_io_InputStreamReader_complete__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 JAVA_OBJECT java_io_InputStreamReader_readInputStream___java_io_InputStream_R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_io_InputStreamReader(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 7756, 2248);
+    DEFINE_METHOD_STACK(3, 2, 0, 7757, 2249);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_java_io_ByteArrayOutputStream(threadStateData)); /* NEW */
@@ -121,7 +121,7 @@ JAVA_OBJECT java_io_InputStreamReader_readInputStream___java_io_InputStream_R_by
 JAVA_VOID java_io_InputStreamReader_copy___java_io_InputStream_java_io_OutputStream_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_java_io_InputStreamReader(threadStateData);
-    DEFINE_METHOD_STACK(4, 5, 0, 7756, 2242);
+    DEFINE_METHOD_STACK(4, 5, 0, 7757, 2243);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -148,7 +148,7 @@ label_L1911155630:
 
 
 JAVA_VOID java_io_InputStreamReader___INIT_____java_io_InputStream_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7756, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7757, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -166,7 +166,7 @@ JAVA_VOID java_io_InputStreamReader___INIT_____java_io_InputStream_java_lang_Str
 
 
 JAVA_VOID java_io_InputStreamReader_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7756, 931);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7757, 932);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_InputStream_close__(threadStateData, get_field_java_io_InputStreamReader_internal(__cn1ThisObject)); 
     set_field_java_io_InputStreamReader_cbufferOff(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -180,7 +180,7 @@ JAVA_VOID java_io_InputStreamReader_mark___int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_BOOLEAN java_io_InputStreamReader_markSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7756, 987);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7757, 988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -188,7 +188,7 @@ JAVA_BOOLEAN java_io_InputStreamReader_markSupported___R_boolean(CODENAME_ONE_TH
 
 JAVA_INT java_io_InputStreamReader_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7756, 988);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7757, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_io_InputStreamReader_c(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L916835004;
     BC_ALOAD(0);
     PUSH_INT(1); /* ICONST_1 */
@@ -213,7 +213,7 @@ label_L1126185196:
 
 JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 7756, 988);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 7757, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -265,7 +265,7 @@ JAVA_VOID java_io_InputStreamReader_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_LONG java_io_InputStreamReader_skip___long_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7756, 990);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7757, 991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* CustomInvoke */{ JAVA_LONG tmpResult = virtual_java_io_InputStream_skip___long_R_long(threadStateData, get_field_java_io_InputStreamReader_internal(__cn1ThisObject), llocals_1_);
     PUSH_LONG(tmpResult); }

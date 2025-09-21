@@ -79,7 +79,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_push_PushAction(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 9782, 200);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 9783, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -95,7 +95,7 @@ JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_St
 
 
 JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 9782, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 9783, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -125,7 +125,7 @@ JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_St
 
 
 JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9782, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9783, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -139,7 +139,7 @@ JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String_java_lang_St
 
 
 JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9782, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9783, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(78);
@@ -151,7 +151,7 @@ JAVA_VOID com_codename1_push_PushAction___INIT_____java_lang_String(CODENAME_ONE
 
 
 JAVA_OBJECT com_codename1_push_PushAction_getId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9782, 1531);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9783, 1532);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(88);
 
 {
@@ -162,7 +162,7 @@ JAVA_OBJECT com_codename1_push_PushAction_getId___R_java_lang_String(CODENAME_ON
 
 
 JAVA_OBJECT com_codename1_push_PushAction_getTitle___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9782, 2899);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9783, 2900);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(96);
 
 {
@@ -178,7 +178,7 @@ JAVA_OBJECT com_codename1_push_PushAction_getIcon___R_java_lang_String(CODENAME_
 
 
 JAVA_OBJECT com_codename1_push_PushAction_getTextInputPlaceholder___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9782, 9783);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9783, 9784);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(113);
 
 {
@@ -189,7 +189,7 @@ JAVA_OBJECT com_codename1_push_PushAction_getTextInputPlaceholder___R_java_lang_
 
 
 JAVA_OBJECT com_codename1_push_PushAction_getTextInputButtonText___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9782, 9784);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9783, 9785);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(122);
 
 {

@@ -193,7 +193,7 @@ com_codename1_components_FileTree___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_components_FileTree___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8921, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8922, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(40);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_components_FileTreeModel(threadStateData)); /* NEW */
@@ -201,7 +201,7 @@ JAVA_VOID com_codename1_components_FileTree___INIT____(CODENAME_ONE_THREAD_STATE
     /* CustomInvoke */com_codename1_components_FileTreeModel___INIT_____boolean(threadStateData, SP[-1].data.o, 1 /* ICONST_1 */);     SP -= 1;
     com_codename1_ui_tree_Tree___INIT_____com_codename1_ui_tree_TreeModel(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(41);
-    /* CustomInvoke */virtual_com_codename1_components_FileTree_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(8922)); 
+    /* CustomInvoke */virtual_com_codename1_components_FileTree_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(8923)); 
     __CN1_DEBUG_INFO(42);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -209,13 +209,13 @@ JAVA_VOID com_codename1_components_FileTree___INIT____(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_components_FileTree___INIT_____com_codename1_components_FileTreeModel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8921, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8922, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(48);
     /* CustomInvoke */com_codename1_ui_tree_Tree___INIT_____com_codename1_ui_tree_TreeModel(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(49);
-    /* CustomInvoke */virtual_com_codename1_components_FileTree_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(8922)); 
+    /* CustomInvoke */virtual_com_codename1_components_FileTree_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(8923)); 
     __CN1_DEBUG_INFO(50);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -224,18 +224,18 @@ JAVA_VOID com_codename1_components_FileTree___INIT_____com_codename1_components_
 
 JAVA_OBJECT com_codename1_components_FileTree_childToDisplayLabel___java_lang_Object_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8921, 8923);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8922, 8924);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(53);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(54);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1060814439;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L716041009;
     __CN1_DEBUG_INFO(55);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(8924);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(8925);
 
-label_L1060814439:
+label_L716041009:
     __CN1_DEBUG_INFO(57);
-    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1693575672;
+    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1884151725;
     __CN1_DEBUG_INFO(58);
     BC_ALOAD(2);
     PUSH_INT(0); /* ICONST_0 */
@@ -248,7 +248,7 @@ label_L1060814439:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L1693575672:
+label_L1884151725:
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */virtual_java_lang_String_lastIndexOf___int_R_int(threadStateData, locals[2].data.o, 47);
     __CN1_DEBUG_INFO(61);

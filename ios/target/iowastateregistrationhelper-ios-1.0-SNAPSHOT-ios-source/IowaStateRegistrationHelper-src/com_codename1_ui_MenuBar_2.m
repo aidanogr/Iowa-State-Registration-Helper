@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_MenuBar_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_MenuBar_2___INIT_____com_codename1_ui_MenuBar_java_lang_String_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5447, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5448, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -52,7 +52,7 @@ JAVA_VOID com_codename1_ui_MenuBar_2___INIT_____com_codename1_ui_MenuBar_java_la
 
 
 JAVA_VOID com_codename1_ui_MenuBar_2_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 5447, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 5448, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(926);

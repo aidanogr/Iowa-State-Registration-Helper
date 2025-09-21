@@ -126,7 +126,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSType_values___R_com_codename1_ui
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSType_valueOf___java_lang_String_R_com_codename1_ui_BrowserComponent_JSType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_BrowserComponent_JSType(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8122, 900);
+    DEFINE_METHOD_STACK(2, 1, 0, 8123, 901);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1610);
@@ -137,7 +137,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSType_valueOf___java_lang_String_
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8122, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8123, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -155,11 +155,11 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_i
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSType_get___java_lang_String_R_com_codename1_ui_BrowserComponent_JSType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_BrowserComponent_JSType(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8122, 612);
+    DEFINE_METHOD_STACK(2, 1, 0, 8123, 613);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1629);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8123), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L809968973;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8124), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L2044150758;
     __CN1_DEBUG_INFO(1630);
 
 {
@@ -167,9 +167,9 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSType_get___java_lang_String_R_co
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L809968973:
+label_L2044150758:
     __CN1_DEBUG_INFO(1632);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8124), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1827869767;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8125), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L2003305136;
     __CN1_DEBUG_INFO(1633);
 
 {
@@ -177,9 +177,9 @@ label_L809968973:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1827869767:
+label_L2003305136:
     __CN1_DEBUG_INFO(1635);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8125), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1318209130;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8126), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L105663489;
     __CN1_DEBUG_INFO(1636);
 
 {
@@ -187,9 +187,9 @@ label_L1827869767:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1318209130:
+label_L105663489:
     __CN1_DEBUG_INFO(1638);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8126), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1726519676;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8127), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L447320069;
     __CN1_DEBUG_INFO(1639);
 
 {
@@ -197,9 +197,9 @@ label_L1318209130:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1726519676:
+label_L447320069:
     __CN1_DEBUG_INFO(1641);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8127), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1863103905;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8128), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1495414981;
     __CN1_DEBUG_INFO(1642);
 
 {
@@ -207,9 +207,9 @@ label_L1726519676:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1863103905:
+label_L1495414981:
     __CN1_DEBUG_INFO(1644);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8128), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L455726379;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8129), locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1860754643;
     __CN1_DEBUG_INFO(1645);
 
 {
@@ -217,7 +217,7 @@ label_L1863103905:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L455726379:
+label_L1860754643:
     __CN1_DEBUG_INFO(1647);
 
 {
@@ -228,41 +228,41 @@ label_L455726379:
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSType___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(5, 0, 0, 8122, 861);
+    DEFINE_METHOD_STACK(5, 0, 0, 8123, 862);
     __CN1_DEBUG_INFO(1611);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8129), 0 /* ICONST_0 */, STRING_FROM_CONSTANT_POOL_OFFSET(8123));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8130), 0 /* ICONST_0 */, STRING_FROM_CONSTANT_POOL_OFFSET(8124));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_OBJECT(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1612);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8130), 1 /* ICONST_1 */, STRING_FROM_CONSTANT_POOL_OFFSET(8126));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8131), 1 /* ICONST_1 */, STRING_FROM_CONSTANT_POOL_OFFSET(8127));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_FUNCTION(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1613);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8131), 2 /* ICONST_2 */, STRING_FROM_CONSTANT_POOL_OFFSET(8125));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8132), 2 /* ICONST_2 */, STRING_FROM_CONSTANT_POOL_OFFSET(8126));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_NUMBER(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1614);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8132), 3 /* ICONST_3 */, STRING_FROM_CONSTANT_POOL_OFFSET(8124));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8133), 3 /* ICONST_3 */, STRING_FROM_CONSTANT_POOL_OFFSET(8125));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_STRING(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1615);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8133), 4/* ICONST_4 */, STRING_FROM_CONSTANT_POOL_OFFSET(8127));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8134), 4/* ICONST_4 */, STRING_FROM_CONSTANT_POOL_OFFSET(8128));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_UNDEFINED(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1616);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent_JSType(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8134), 5 /* ICONST_5 */, STRING_FROM_CONSTANT_POOL_OFFSET(8128));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_BrowserComponent_JSType___INIT_____java_lang_String_int_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8135), 5 /* ICONST_5 */, STRING_FROM_CONSTANT_POOL_OFFSET(8129));     SP -= 1;
     set_static_com_codename1_ui_BrowserComponent_JSType_BOOLEAN(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(1610);

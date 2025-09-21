@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_com_codename1_payment_Purchase_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_payment_Purchase_1___INIT_____com_codename1_payment_Purchase_com_codename1_payment_Receipt_com_codename1_util_SuccessCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9142, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9143, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -71,11 +71,11 @@ JAVA_VOID com_codename1_payment_Purchase_1___INIT_____com_codename1_payment_Purc
 
 
 JAVA_VOID com_codename1_payment_Purchase_1_onSucess___java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9142, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9143, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(454);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L267463507;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1568156234;
     __CN1_DEBUG_INFO(455);
     PUSH_POINTER(get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, get_field_com_codename1_payment_Purchase_1_val_receipt(__cn1ThisObject));
@@ -88,15 +88,15 @@ JAVA_VOID com_codename1_payment_Purchase_1_onSucess___java_lang_Boolean(CODENAME
     /* CustomInvoke */com_codename1_payment_Purchase_access$102___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(460);
     /* CustomInvoke */virtual_com_codename1_payment_Purchase_synchronizeReceipts___long_com_codename1_util_SuccessCallback(threadStateData, get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject), 0 /* LCONST_0 */, get_field_com_codename1_payment_Purchase_1_val_callback(__cn1ThisObject)); 
-    goto label_L2014583896;
+    goto label_L214507491;
 
-label_L267463507:
+label_L1568156234:
     __CN1_DEBUG_INFO(462);
     /* CustomInvoke */com_codename1_payment_Purchase_access$102___boolean_R_boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(463);
     /* CustomInvoke */com_codename1_payment_Purchase_access$200___com_codename1_payment_Purchase_boolean(threadStateData, get_field_com_codename1_payment_Purchase_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
 
-label_L2014583896:
+label_L214507491:
     __CN1_DEBUG_INFO(465);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -104,7 +104,7 @@ label_L2014583896:
 
 
 JAVA_VOID com_codename1_payment_Purchase_1_onSucess___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9142, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9143, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(451);

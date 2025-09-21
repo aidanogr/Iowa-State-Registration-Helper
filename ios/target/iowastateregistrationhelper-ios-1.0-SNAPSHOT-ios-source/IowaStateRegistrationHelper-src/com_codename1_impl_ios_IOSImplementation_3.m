@@ -39,7 +39,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_3(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_3___INIT_____com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9627, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9628, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(622);
@@ -51,9 +51,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_3___INIT_____com_codename1_ui
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9627, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9628, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(624);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_3_val_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L61304908;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_3_val_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1107404311;
     __CN1_DEBUG_INFO(625);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$000___com_codename1_ui_Form_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_3_val_current(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o);
@@ -95,7 +95,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_3_run__(CODENAME_ONE_THREAD_S
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_3_1___INIT_____com_codename1_impl_ios_IOSImplementation_3(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_ui_Display_callSerially___java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L61304908:
+label_L1107404311:
     __CN1_DEBUG_INFO(634);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

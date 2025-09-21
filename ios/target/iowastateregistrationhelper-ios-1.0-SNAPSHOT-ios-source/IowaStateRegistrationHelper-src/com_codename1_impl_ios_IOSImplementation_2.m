@@ -39,7 +39,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_2(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_2___INIT_____com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9539, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9540, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(446);
@@ -51,9 +51,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_2___INIT_____com_codename1_ui
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9540, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(448);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_2_val_cmp(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L847606512;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_2_val_cmp(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L639105046;
     __CN1_DEBUG_INFO(449);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
@@ -63,20 +63,20 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_2_run__(CODENAME_ONE_THREAD_S
     BC_ALOAD(1);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_2_val_cmp(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1736458419;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1735330400;
     __CN1_DEBUG_INFO(451);
     virtual_com_codename1_ui_Component_requestFocus__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_2_val_cmp(__cn1ThisObject)); 
 
-label_L1736458419:
+label_L1735330400:
     __CN1_DEBUG_INFO(453);
-    if (virtual_com_codename1_impl_ios_IOSNative_isAsyncEditMode___R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData))==0) /* IFEQ CustomJump */ goto label_L401891515;
-    if (virtual_com_codename1_ui_Form_isFormBottomPaddingEditingMode___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L401891515;
+    if (virtual_com_codename1_impl_ios_IOSNative_isAsyncEditMode___R_boolean(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1561347421;
+    if (virtual_com_codename1_ui_Form_isFormBottomPaddingEditingMode___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1561347421;
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$000___com_codename1_ui_Form_R_com_codename1_ui_Container(threadStateData, locals[1].data.o));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_Style_getPaddingBottom___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() <= 0) /* IFLE */ goto label_L401891515;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1561347421;
     __CN1_DEBUG_INFO(454);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$000___com_codename1_ui_Form_R_com_codename1_ui_Container(threadStateData, locals[1].data.o));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o);
@@ -88,11 +88,11 @@ label_L1736458419:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L401891515:
+label_L1561347421:
     __CN1_DEBUG_INFO(461);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, locals[1].data.o); 
 
-label_L847606512:
+label_L639105046:
     __CN1_DEBUG_INFO(463);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

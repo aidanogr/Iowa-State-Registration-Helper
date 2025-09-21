@@ -72,7 +72,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Container_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Container_1___INIT_____com_codename1_ui_Container_com_codename1_ui_layouts_Layout_java_lang_Object_com_codename1_ui_Container_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3411, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3412, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -98,54 +98,54 @@ JAVA_VOID com_codename1_ui_Container_1___INIT_____com_codename1_ui_Container_com
 JAVA_VOID com_codename1_ui_Container_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 3411, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 3412, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(303);
-    if (get_field_com_codename1_ui_Container_1_val_parentLayout(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2055967078;
+    if (get_field_com_codename1_ui_Container_1_val_parentLayout(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L43473566;
     __CN1_DEBUG_INFO(304);
     /* CustomInvoke */virtual_com_codename1_ui_layouts_Layout_removeLayoutComponent___com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_1_val_parentLayout(__cn1ThisObject), get_field_com_codename1_ui_Container_1_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(305);
     /* CustomInvoke */virtual_com_codename1_ui_layouts_Layout_addLayoutComponent___java_lang_Object_com_codename1_ui_Component_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Container_1_val_parentLayout(__cn1ThisObject), get_field_com_codename1_ui_Container_1_val_constraint(__cn1ThisObject), get_field_com_codename1_ui_Container_1_val_newParent(__cn1ThisObject), get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject)); 
 
-label_L2055967078:
+label_L43473566:
     __CN1_DEBUG_INFO(308);
     virtual_com_codename1_ui_Container_initComponentImpl__(threadStateData, get_field_com_codename1_ui_Container_1_val_newParent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(309);
-    if (get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1254907391;
+    if (get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1986001684;
     __CN1_DEBUG_INFO(310);
     /* VarOp.assignFrom */     ilocals_1_ = -1 /* ICONST_M1 */; 
     __CN1_DEBUG_INFO(311);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
-label_L1456464145:
-    if (ilocals_2_>=virtual_com_codename1_ui_Container_getComponentCount___R_int(threadStateData, get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L281487983;
+label_L1112400678:
+    if (ilocals_2_>=virtual_com_codename1_ui_Container_getComponentCount___R_int(threadStateData, get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1465263219;
     __CN1_DEBUG_INFO(312);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_com_codename1_ui_Container_getComponentAt___int_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject), ilocals_2_);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(313);
-    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, get_field_com_codename1_ui_Container_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1894338251;
+    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, get_field_com_codename1_ui_Container_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2050360660;
     __CN1_DEBUG_INFO(314);
     /* VarOp.assignFrom */     ilocals_1_ = ilocals_2_;
     __CN1_DEBUG_INFO(315);
-    goto label_L281487983;
+    goto label_L1465263219;
 
-label_L1894338251:
+label_L2050360660:
     __CN1_DEBUG_INFO(311);
     BC_IINC(2, 1);
-    goto label_L1456464145;
+    goto label_L1112400678;
 
-label_L281487983:
+label_L1465263219:
     __CN1_DEBUG_INFO(319);
-    if (ilocals_1_!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L2118413714;
+    if (ilocals_1_!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L1271084832;
     __CN1_DEBUG_INFO(320);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3412));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3413));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L2118413714:
+label_L1271084832:
     __CN1_DEBUG_INFO(322);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$000___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_Container_1_val_oldParent(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_ArrayList_set___int_java_lang_Object_R_java_lang_Object(threadStateData, SP[-1].data.o, ilocals_1_, get_field_com_codename1_ui_Container_1_val_newParent(__cn1ThisObject));     SP -= 1;
 
-label_L1254907391:
+label_L1986001684:
     __CN1_DEBUG_INFO(325);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setParent___com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Container_1_this_0(__cn1ThisObject), get_field_com_codename1_ui_Container_1_val_newParent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(327);

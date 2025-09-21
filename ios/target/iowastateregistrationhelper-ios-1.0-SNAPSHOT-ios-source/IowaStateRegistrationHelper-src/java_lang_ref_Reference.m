@@ -17,7 +17,7 @@ void __GC_MARK_java_lang_ref_Reference(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT ob
 
 
 JAVA_VOID java_lang_ref_Reference___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -25,7 +25,7 @@ JAVA_VOID java_lang_ref_Reference___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID java_lang_ref_Reference_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_lang_ref_Reference_clearImpl__(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -33,7 +33,7 @@ JAVA_VOID java_lang_ref_Reference_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_OBJECT java_lang_ref_Reference_get___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 612);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_lang_ref_Reference_getImpl___R_java_lang_Object(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -42,7 +42,7 @@ JAVA_OBJECT java_lang_ref_Reference_get___R_java_lang_Object(CODENAME_ONE_THREAD
 
 
 JAVA_OBJECT java_lang_ref_Reference_getImpl___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 9195);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 9196);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();

@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_com_codename1_util_AsyncResource_4(CODENAME_ONE_THREAD_STATE) 
 
 
 JAVA_VOID com_codename1_util_AsyncResource_4___INIT_____com_codename1_util_AsyncResource_com_codename1_util_SuccessCallback_com_codename1_util_SuccessCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7269, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7270, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -70,7 +70,7 @@ JAVA_VOID com_codename1_util_AsyncResource_4___INIT_____com_codename1_util_Async
 
 
 JAVA_VOID com_codename1_util_AsyncResource_4_onSucess___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7269, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7270, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(402);
@@ -84,7 +84,7 @@ JAVA_VOID com_codename1_util_AsyncResource_4_onSucess___java_lang_Throwable(CODE
 
 
 JAVA_VOID com_codename1_util_AsyncResource_4_onSucess___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7269, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7270, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(401);

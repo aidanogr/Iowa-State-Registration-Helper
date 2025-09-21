@@ -44,7 +44,7 @@ JAVA_OBJECT __NEW_com_codename1_io_NetworkManager_NetworkThread_1(CODENAME_ONE_T
 
 
 JAVA_VOID com_codename1_io_NetworkManager_NetworkThread_1___INIT_____com_codename1_io_NetworkManager_NetworkThread_com_codename1_io_ConnectionRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3234, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3235, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,14 +59,14 @@ JAVA_VOID com_codename1_io_NetworkManager_NetworkThread_1___INIT_____com_codenam
 
 
 JAVA_VOID com_codename1_io_NetworkManager_NetworkThread_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 3234, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 3235, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(350);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_io_ConnectionRequest_getDisposeOnCompletion___R_com_codename1_ui_Dialog(threadStateData, get_field_com_codename1_io_NetworkManager_NetworkThread_1_val_finalReq(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(351);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1613856232;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L633964087;
     __CN1_DEBUG_INFO(352);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, locals[1].data.o); 
 
-label_L1613856232:
+label_L633964087:
     __CN1_DEBUG_INFO(354);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

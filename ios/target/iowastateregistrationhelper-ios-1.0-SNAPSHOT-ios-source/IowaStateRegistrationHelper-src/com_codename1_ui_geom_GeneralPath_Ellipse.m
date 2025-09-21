@@ -77,7 +77,7 @@ com_codename1_ui_geom_GeneralPath_Ellipse___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3690, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3691, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(878);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(883);
@@ -98,7 +98,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_initWithBounds___com_codenam
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* w */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* h */
     __STATIC_INITIALIZER_com_codename1_ui_geom_GeneralPath_Ellipse(threadStateData);
-    DEFINE_METHOD_STACK(7, 9, 0, 3690, 3691);
+    DEFINE_METHOD_STACK(7, 9, 0, 3691, 3692);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     dlocals_1_ = __cn1Arg2;
@@ -125,28 +125,28 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_initWithPerimeterPoints___co
 
 
 JAVA_OBJECT com_codename1_ui_geom_GeneralPath_Ellipse_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3690, 897);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3691, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(924);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3693));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3694));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_GeneralPath_Ellipse_cx(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_GeneralPath_Ellipse_cy(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3694));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3695));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_GeneralPath_Ellipse_a(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3695));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3696));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_GeneralPath_Ellipse_b(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3658));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -163,7 +163,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_getPointAtAngle___double_com
     volatile JAVA_DOUBLE dlocals_4_ = 0; /* v4 */
     volatile JAVA_DOUBLE dlocals_6_ = 0; /* v6 */
     volatile JAVA_DOUBLE dlocals_8_ = 0; /* v8 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 16, 0, 3690, 3696);
+    DEFINE_INSTANCE_METHOD_STACK(8, 16, 0, 3691, 3697);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
@@ -186,11 +186,11 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_getPointAtAngle___double_com
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_cos___double_R_double(threadStateData, dlocals_1_));
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L546200355;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L901696468;
     __CN1_DEBUG_INFO(934);
     /* VarOp.assignFrom */ dlocals_12_=(-(dlocals_12_));
 
-label_L546200355:
+label_L901696468:
     __CN1_DEBUG_INFO(936);
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_Ellipse_a(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_Ellipse_b(__cn1ThisObject));
@@ -202,11 +202,11 @@ label_L546200355:
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_sin___double_R_double(threadStateData, dlocals_1_));
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L734729236;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L1003261715;
     __CN1_DEBUG_INFO(938);
     /* VarOp.assignFrom */ dlocals_14_=(-(dlocals_14_));
 
-label_L734729236:
+label_L1003261715:
     __CN1_DEBUG_INFO(940);
     set_field_com_codename1_ui_geom_GeneralPath_EPoint_x(threadStateData, (dlocals_12_ + get_field_com_codename1_ui_geom_GeneralPath_Ellipse_cx(__cn1ThisObject)), locals[3].data.o);
     __CN1_DEBUG_INFO(941);
@@ -220,7 +220,7 @@ label_L734729236:
 JAVA_DOUBLE com_codename1_ui_geom_GeneralPath_Ellipse_getAngleAtPoint___double_double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* v1 */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3690, 3697);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3691, 3698);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(945);
@@ -240,7 +240,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_addToPath___com_codename1_ui
     volatile JAVA_DOUBLE dlocals_2_ = 0; /* startAngle */
     volatile JAVA_DOUBLE dlocals_4_ = 0; /* sweepAngle */
     volatile JAVA_INT ilocals_6_ = 0; /* join */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 3690, 3698);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 3691, 3699);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     dlocals_2_ = __cn1Arg2;
@@ -249,20 +249,20 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_addToPath___com_codename1_ui
     __CN1_DEBUG_INFO(952);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_Ellipse_getPointAtAngle___double_com_codename1_ui_geom_GeneralPath_EPoint(threadStateData, __cn1ThisObject, dlocals_2_, get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(953);
-    if (ilocals_6_==0) /* IFEQ CustomJump */ goto label_L183371252;
+    if (ilocals_6_==0) /* IFEQ CustomJump */ goto label_L63636701;
     __CN1_DEBUG_INFO(955);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_lineTo___double_double(threadStateData, locals[1].data.o, get_field_com_codename1_ui_geom_GeneralPath_EPoint_x(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_EPoint_y(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject))); 
-    goto label_L726149546;
+    goto label_L1943609263;
 
-label_L183371252:
+label_L63636701:
     __CN1_DEBUG_INFO(957);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___double_double(threadStateData, locals[1].data.o, get_field_com_codename1_ui_geom_GeneralPath_EPoint_x(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_EPoint_y(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject))); 
 
-label_L726149546:
+label_L1943609263:
     __CN1_DEBUG_INFO(959);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_Ellipse__addToPath___com_codename1_ui_geom_GeneralPath_double_double(threadStateData, __cn1ThisObject, locals[1].data.o, dlocals_2_, dlocals_4_); 
     __CN1_DEBUG_INFO(960);
-    if (ilocals_6_!=0) /* IFNE CustomJump */ goto label_L2035099811;
+    if (ilocals_6_!=0) /* IFNE CustomJump */ goto label_L821725803;
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_abs___double_R_double(threadStateData, dlocals_4_));
     PUSH_DOUBLE(6.283185307179586); /* LDC */
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
@@ -270,11 +270,11 @@ label_L726149546:
     SP[-1].data.d = tmpResult; SP[-1].type = CN1_TYPE_DOUBLE; }
     PUSH_DOUBLE(0.001); /* LDC */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L2035099811;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L821725803;
     __CN1_DEBUG_INFO(961);
     virtual_com_codename1_ui_geom_GeneralPath_closePath__(threadStateData, locals[1].data.o); 
 
-label_L2035099811:
+label_L821725803:
     __CN1_DEBUG_INFO(963);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -286,7 +286,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse__addToPath___com_codename1_u
     volatile JAVA_DOUBLE dlocals_4_ = 0; /* sweepAngle */
     volatile JAVA_DOUBLE dlocals_6_ = 0; /* v6 */
     volatile JAVA_DOUBLE dlocals_8_ = 0; /* v8 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 10, 0, 3690, 3699);
+    DEFINE_INSTANCE_METHOD_STACK(9, 10, 0, 3691, 3700);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     dlocals_2_ = __cn1Arg2;
@@ -294,30 +294,30 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse__addToPath___com_codename1_u
     __CN1_DEBUG_INFO(967);
     /* VarOp.assignFrom */ dlocals_6_ = /* CustomInvoke */java_lang_Math_abs___double_R_double(threadStateData, dlocals_4_);
     __CN1_DEBUG_INFO(968);
-    if (CN1_CMP_EXPR(dlocals_6_, 1.0E-4)>=0) /* IFGE CustomJump */ goto label_L173402154;
+    if (CN1_CMP_EXPR(dlocals_6_, 1.0E-4)>=0) /* IFGE CustomJump */ goto label_L1863397232;
     __CN1_DEBUG_INFO(971);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L173402154:
+label_L1863397232:
     __CN1_DEBUG_INFO(973);
-    if (CN1_CMP_EXPR(dlocals_6_, 0.7853981633974483)<=0) /* IFLE CustomJump */ goto label_L1894686001;
+    if (CN1_CMP_EXPR(dlocals_6_, 0.7853981633974483)<=0) /* IFLE CustomJump */ goto label_L874980259;
     __CN1_DEBUG_INFO(975);
     /* VarOp.assignFrom */     dlocals_8_ = 0.7853981633974483;
     __CN1_DEBUG_INFO(976);
-    if (CN1_CMP_EXPR(dlocals_4_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L436338687;
+    if (CN1_CMP_EXPR(dlocals_4_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L255358703;
     __CN1_DEBUG_INFO(977);
     /* VarOp.assignFrom */ dlocals_8_=(-(dlocals_8_));
 
-label_L436338687:
+label_L255358703:
     __CN1_DEBUG_INFO(979);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_Ellipse__addToPath___com_codename1_ui_geom_GeneralPath_double_double(threadStateData, __cn1ThisObject, locals[1].data.o, dlocals_2_, dlocals_8_); 
     __CN1_DEBUG_INFO(980);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_Ellipse__addToPath___com_codename1_ui_geom_GeneralPath_double_double(threadStateData, __cn1ThisObject, locals[1].data.o, (dlocals_2_ + dlocals_8_), (dlocals_4_ - dlocals_8_)); 
     __CN1_DEBUG_INFO(981);
-    goto label_L177849388;
+    goto label_L1802837169;
 
-label_L1894686001:
+label_L874980259:
     __CN1_DEBUG_INFO(982);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_Ellipse_getPointAtAngle___double_com_codename1_ui_geom_GeneralPath_EPoint(threadStateData, __cn1ThisObject, (dlocals_2_ + dlocals_4_), get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(984);
@@ -330,7 +330,7 @@ label_L1894686001:
     __CN1_DEBUG_INFO(986);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_quadTo___double_double_double_double(threadStateData, locals[1].data.o, get_field_com_codename1_ui_geom_GeneralPath_EPoint_x(locals[8].data.o), get_field_com_codename1_ui_geom_GeneralPath_EPoint_y(locals[8].data.o), get_field_com_codename1_ui_geom_GeneralPath_EPoint_x(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_EPoint_y(get_field_com_codename1_ui_geom_GeneralPath_Ellipse__tmp1(__cn1ThisObject))); 
 
-label_L177849388:
+label_L1802837169:
     __CN1_DEBUG_INFO(989);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -346,7 +346,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Ellipse_calculateBezierControlPoint_
     volatile JAVA_DOUBLE dlocals_18_ = 0; /* v18 */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* sweepAngle */
     volatile JAVA_DOUBLE dlocals_8_ = 0; /* v8 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 20, 0, 3690, 3700);
+    DEFINE_INSTANCE_METHOD_STACK(9, 20, 0, 3691, 3701);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     locals[5].data.o = __cn1Arg3;

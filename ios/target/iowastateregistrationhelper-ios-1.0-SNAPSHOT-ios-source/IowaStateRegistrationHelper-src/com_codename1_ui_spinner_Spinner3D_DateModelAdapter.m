@@ -49,7 +49,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_DateModelAdapter(CODENAME_O
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter___INIT_____com_codename1_ui_spinner_SpinnerDateModel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10145, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10146, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(227);
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter___INIT_____com_cod
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_l10n_SimpleDateFormat(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_l10n_SimpleDateFormat___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10146));     SP -= 1;
+    /* CustomInvoke */com_codename1_l10n_SimpleDateFormat___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10147));     SP -= 1;
     set_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_fmt(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(228);
@@ -71,7 +71,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter___INIT_____com_cod
 
 JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* index */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 10145, 6820);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 10146, 6821);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(232);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_com_codename1_ui_spinner_SpinnerDateModel_getItemAt___int_R_java_lang_Object(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_inner(__cn1ThisObject), ilocals_1_);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(233);
@@ -106,7 +106,7 @@ JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, SP[-1].data.o);
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     BC_LCMP();
-    if(POP_INT() < 0) /* IFLT */ goto label_L715027790;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1128856117;
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, locals[2].data.o);
     PUSH_LONG(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Calendar_getTime___R_java_util_Date(threadStateData, locals[4].data.o);
@@ -114,11 +114,11 @@ JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, SP[-1].data.o);
     SP[-1].data.l = tmpResult; SP[-1].type = CN1_TYPE_LONG; }
     BC_LCMP();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L715027790;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L1128856117;
     __CN1_DEBUG_INFO(245);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9982);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9983);
 
-label_L715027790:
+label_L1128856117:
     __CN1_DEBUG_INFO(247);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_l10n_DateFormat_format___java_util_Date_R_java_lang_String(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_fmt(__cn1ThisObject), locals[2].data.o);
     PUSH_OBJ(tmpResult); }
@@ -128,7 +128,7 @@ label_L715027790:
 
 
 JAVA_INT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10145, 558);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10146, 559);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(251);
 
 {
@@ -139,7 +139,7 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getSize___R_int(COD
 
 
 JAVA_INT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getSelectedIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10145, 4367);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10146, 4368);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(255);
 
 {
@@ -151,7 +151,7 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getSelectedIndex___
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_setSelectedIndex___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* index */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4451);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4452);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(259);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_SpinnerDateModel_setSelectedIndex___int(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_inner(__cn1ThisObject), ilocals_1_); 
@@ -162,7 +162,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_setSelectedIndex__
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addDataChangedListener___com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4188);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4189);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(263);
@@ -174,7 +174,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addDataChangedList
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeDataChangedListener___com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4189);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4190);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(267);
@@ -186,7 +186,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeDataChangedL
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addSelectionListener___com_codename1_ui_events_SelectionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4523);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4524);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(271);
@@ -198,7 +198,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addSelectionListen
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeSelectionListener___com_codename1_ui_events_SelectionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4524);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4525);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(275);
@@ -210,7 +210,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeSelectionLis
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addItem___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4538);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4539);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(279);
@@ -223,7 +223,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addItem___java_lan
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeItem___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* index */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 6823);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 6824);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(283);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_SpinnerDateModel_removeItem___int(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_inner(__cn1ThisObject), ilocals_1_); 
@@ -234,7 +234,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_removeItem___int(C
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addItem___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 4538);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 4539);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(223);
@@ -245,7 +245,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_DateModelAdapter_addItem___java_lan
 
 
 JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 6820);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10146, 6821);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(223);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_Spinner3D_DateModelAdapter_getItemAt___int_R_java_lang_String(threadStateData, __cn1ThisObject, ilocals_1_);

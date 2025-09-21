@@ -130,7 +130,7 @@ com_codename1_charts_util_ColorUtil___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_charts_util_ColorUtil___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5279, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5280, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(30);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -168,7 +168,7 @@ JAVA_INT com_codename1_charts_util_ColorUtil_rgb___int_int_int_R_int(CODENAME_ON
     volatile JAVA_INT ilocals_1_ = 0; /* g */
     volatile JAVA_INT ilocals_2_ = 0; /* b */
     __STATIC_INITIALIZER_com_codename1_charts_util_ColorUtil(threadStateData);
-    DEFINE_METHOD_STACK(5, 4, 0, 5279, 5285);
+    DEFINE_METHOD_STACK(5, 4, 0, 5280, 5286);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
@@ -187,7 +187,7 @@ JAVA_INT com_codename1_charts_util_ColorUtil_rgb___int_int_int_R_int(CODENAME_ON
 
 
 JAVA_VOID com_codename1_charts_util_ColorUtil___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 5279, 861);
+    DEFINE_METHOD_STACK(1, 0, 0, 5280, 862);
     __CN1_DEBUG_INFO(31);
     set_static_com_codename1_charts_util_ColorUtil_LTGRAY(threadStateData, get_field_com_codename1_charts_util_ColorUtil_IColor_argb(get_static_com_codename1_charts_util_ColorUtil_IColor_LightGray(threadStateData)));
     __CN1_DEBUG_INFO(32);

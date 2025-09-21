@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_com_codename1_util_regex_StringReader(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_util_regex_StringReader___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8165, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8166, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(32);
@@ -69,13 +69,13 @@ JAVA_VOID com_codename1_util_regex_StringReader___INIT_____java_lang_String(CODE
 
 
 JAVA_INT com_codename1_util_regex_StringReader_read___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 8165, 988);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 8166, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L239559548;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L597410879;
     __CN1_DEBUG_INFO(38);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L239559548:
+label_L597410879:
     __CN1_DEBUG_INFO(40);
     PUSH_POINTER(get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject));
     BC_ALOAD(0);
@@ -97,17 +97,17 @@ JAVA_INT com_codename1_util_regex_StringReader_read___char_1ARRAY_int_int_R_int(
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 8165, 988);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 8166, 989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(44);
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1617891184;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)<virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_util_regex_StringReader_str(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L205300866;
     __CN1_DEBUG_INFO(45);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L1617891184:
+label_L205300866:
     __CN1_DEBUG_INFO(47);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(48);
@@ -115,9 +115,9 @@ label_L1617891184:
     __CN1_DEBUG_INFO(49);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
 
-label_L2145350489:
-    if (ilocals_6_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L441691148;
-    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L441691148;
+label_L661943548:
+    if (ilocals_6_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1798538641;
+    if (get_field_com_codename1_util_regex_StringReader_pointer(__cn1ThisObject)>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1798538641;
     __CN1_DEBUG_INFO(50);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -143,9 +143,9 @@ label_L2145350489:
     __CN1_DEBUG_INFO(49);
     BC_IINC(6, 1);
     BC_IINC(4, 1);
-    goto label_L2145350489;
+    goto label_L661943548;
 
-label_L441691148:
+label_L1798538641:
     __CN1_DEBUG_INFO(52);
 
 {

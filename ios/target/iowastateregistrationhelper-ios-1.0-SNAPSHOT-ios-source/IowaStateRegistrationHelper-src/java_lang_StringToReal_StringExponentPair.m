@@ -73,7 +73,7 @@ java_lang_StringToReal_StringExponentPair___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_StringToReal_StringExponentPair___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1124, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1125, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -81,7 +81,7 @@ JAVA_VOID java_lang_StringToReal_StringExponentPair___INIT____(CODENAME_ONE_THRE
 
 
 JAVA_FLOAT java_lang_StringToReal_StringExponentPair_specialValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1124, 1125);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1125, 1126);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_lang_StringToReal_StringExponentPair_infinity(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L972865270;
     if (get_field_java_lang_StringToReal_StringExponentPair_negative(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1716932897;
     PUSH_FLOAT(-1.0f / 0.0f); /* LDC */
@@ -109,7 +109,7 @@ label_L1635378213:
 
 
 JAVA_VOID java_lang_StringToReal_StringExponentPair___INIT_____java_lang_StringToReal_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1124, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1125, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_StringToReal_StringExponentPair___INIT____(threadStateData, __cn1ThisObject); 

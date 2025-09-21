@@ -79,7 +79,7 @@ com_codename1_location_LocationRequest___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_location_LocationRequest___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9076, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9077, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(55);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(48);
@@ -95,7 +95,7 @@ JAVA_VOID com_codename1_location_LocationRequest___INIT____(CODENAME_ONE_THREAD_
 JAVA_VOID com_codename1_location_LocationRequest___INIT_____int_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_LONG __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* priority */
     volatile JAVA_LONG llocals_2_ = 0; /* interval */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9076, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9077, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     llocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(73);
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_location_LocationRequest___INIT_____int_long(CODENAME_ON
 
 
 JAVA_INT com_codename1_location_LocationRequest_getPriority___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9076, 1160);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9077, 1161);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
 
 {
@@ -131,7 +131,7 @@ JAVA_LONG com_codename1_location_LocationRequest_getInterval___R_long(CODENAME_O
 
 
 JAVA_VOID com_codename1_location_LocationRequest___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 9076, 861);
+    DEFINE_METHOD_STACK(1, 0, 0, 9077, 862);
     __CN1_DEBUG_INFO(36);
     set_static_com_codename1_location_LocationRequest_PRIORITY_HIGH_ACCUARCY(threadStateData, 0 /* ICONST_0 */);
     __CN1_DEBUG_INFO(41);

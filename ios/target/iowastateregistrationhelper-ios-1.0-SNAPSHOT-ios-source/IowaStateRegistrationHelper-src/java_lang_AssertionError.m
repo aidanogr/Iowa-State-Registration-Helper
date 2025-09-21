@@ -32,7 +32,7 @@ java_lang_AssertionError___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_AssertionError___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -40,7 +40,7 @@ JAVA_VOID java_lang_AssertionError___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OB
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
@@ -50,7 +50,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____java_lang_String(CODENAME_ONE_THRE
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
@@ -60,7 +60,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____java_lang_Object(CODENAME_ONE_THRE
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -69,7 +69,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____boolean(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_CHAR __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -78,7 +78,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____char(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -87,7 +87,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -96,7 +96,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____long(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_FLOAT flocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -105,7 +105,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____float(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_DOUBLE dlocals_1_ = __cn1Arg1;
     java_lang_Error___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -114,7 +114,7 @@ JAVA_VOID java_lang_AssertionError___INIT_____double(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID java_lang_AssertionError___INIT_____java_lang_String_java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7603, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 7604, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

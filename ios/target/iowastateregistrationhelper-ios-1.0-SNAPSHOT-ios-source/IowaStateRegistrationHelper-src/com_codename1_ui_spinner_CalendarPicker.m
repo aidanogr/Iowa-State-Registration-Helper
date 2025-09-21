@@ -203,7 +203,7 @@ com_codename1_ui_spinner_CalendarPicker___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_spinner_CalendarPicker___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9861, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9862, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(36);
     com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(37);
@@ -215,7 +215,7 @@ JAVA_VOID com_codename1_ui_spinner_CalendarPicker___INIT____(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_spinner_CalendarPicker_init__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9861, 226);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9862, 227);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
@@ -230,7 +230,7 @@ JAVA_VOID com_codename1_ui_spinner_CalendarPicker_init__(CODENAME_ONE_THREAD_STA
     set_field_com_codename1_ui_spinner_CalendarPicker_calendar(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(43);
-    /* CustomInvoke */virtual_com_codename1_ui_spinner_CalendarPicker_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(136), get_field_com_codename1_ui_spinner_CalendarPicker_calendar(__cn1ThisObject)); 
+    /* CustomInvoke */virtual_com_codename1_ui_spinner_CalendarPicker_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(137), get_field_com_codename1_ui_spinner_CalendarPicker_calendar(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(45);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -238,7 +238,7 @@ JAVA_VOID com_codename1_ui_spinner_CalendarPicker_init__(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9861, 2009);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9862, 2010);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
@@ -252,7 +252,7 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(50);
 
 
 JAVA_OBJECT com_codename1_ui_spinner_CalendarPicker_getValue___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9861, 2008);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9862, 2009);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(56);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Calendar_getDate___R_java_util_Date(threadStateData, get_field_com_codename1_ui_spinner_CalendarPicker_calendar(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }

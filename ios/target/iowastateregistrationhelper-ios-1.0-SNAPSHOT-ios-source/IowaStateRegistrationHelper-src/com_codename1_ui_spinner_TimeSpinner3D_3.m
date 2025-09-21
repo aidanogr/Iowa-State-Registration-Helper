@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_TimeSpinner3D_3(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_spinner_TimeSpinner3D_3___INIT_____com_codename1_ui_spinner_TimeSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10199, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10200, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
@@ -47,20 +47,20 @@ JAVA_VOID com_codename1_ui_spinner_TimeSpinner3D_3___INIT_____com_codename1_ui_s
 
 
 JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_3_format___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10199, 905);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10200, 906);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(143);
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[1].data.o));
     PUSH_DOUBLE(1); /* DCONST_1 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L1320260667;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L1221970455;
     __CN1_DEBUG_INFO(144);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(6657);
-
-label_L1320260667:
-    __CN1_DEBUG_INFO(146);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(6658);
+
+label_L1221970455:
+    __CN1_DEBUG_INFO(146);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(6659);
 }
 
 

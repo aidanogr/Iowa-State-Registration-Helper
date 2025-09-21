@@ -30,7 +30,7 @@ java_lang_IllegalArgumentException___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_IllegalArgumentException___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1120, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1121, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_RuntimeException___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -38,7 +38,7 @@ JAVA_VOID java_lang_IllegalArgumentException___INIT____(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID java_lang_IllegalArgumentException___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1120, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1121, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 

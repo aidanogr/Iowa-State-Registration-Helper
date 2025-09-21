@@ -90,7 +90,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_AscendingSubMapEntryIterator(CODENAME_ONE_TH
 
 
 JAVA_VOID java_util_TreeMap_AscendingSubMapEntryIterator___INIT_____java_util_TreeMap_NavigableSubMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6260, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6261, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_TreeMap_AscendingSubMapIterator___INIT_____java_util_TreeMap_NavigableSubMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -100,7 +100,7 @@ JAVA_VOID java_util_TreeMap_AscendingSubMapEntryIterator___INIT_____java_util_Tr
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapEntryIterator_next___R_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6260, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6261, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_TreeMap_AscendingSubMapEntryIterator_getNext___R_java_util_TreeMap_Entry(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -109,7 +109,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapEntryIterator_next___R_java_util_Ma
 
 
 JAVA_OBJECT java_util_TreeMap_AscendingSubMapEntryIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6260, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6261, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_TreeMap_AscendingSubMapEntryIterator_next___R_java_util_Map_Entry(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

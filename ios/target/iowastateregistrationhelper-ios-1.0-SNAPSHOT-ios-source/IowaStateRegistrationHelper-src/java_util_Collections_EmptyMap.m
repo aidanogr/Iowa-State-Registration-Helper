@@ -55,7 +55,7 @@ java_util_Collections_EmptyMap___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Collections_EmptyMap___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6358, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_AbstractMap___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -63,7 +63,7 @@ JAVA_VOID java_util_Collections_EmptyMap___INIT____(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_BOOLEAN java_util_Collections_EmptyMap_containsKey___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 1984);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6358, 1985);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(0); /* ICONST_0 */
@@ -72,7 +72,7 @@ JAVA_BOOLEAN java_util_Collections_EmptyMap_containsKey___java_lang_Object_R_boo
 
 
 JAVA_BOOLEAN java_util_Collections_EmptyMap_containsValue___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 1985);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6358, 1986);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(0); /* ICONST_0 */
@@ -81,7 +81,7 @@ JAVA_BOOLEAN java_util_Collections_EmptyMap_containsValue___java_lang_Object_R_b
 
 
 JAVA_OBJECT java_util_Collections_EmptyMap_entrySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 1987);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6358, 1988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_static_java_util_Collections_EMPTY_SET(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -89,7 +89,7 @@ JAVA_OBJECT java_util_Collections_EmptyMap_entrySet___R_java_util_Set(CODENAME_O
 
 
 JAVA_OBJECT java_util_Collections_EmptyMap_get___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 612);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6358, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
@@ -99,7 +99,7 @@ JAVA_OBJECT java_util_Collections_EmptyMap_get___java_lang_Object_R_java_lang_Ob
 
 
 JAVA_OBJECT java_util_Collections_EmptyMap_keySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 1990);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6358, 1991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_static_java_util_Collections_EMPTY_SET(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -107,7 +107,7 @@ JAVA_OBJECT java_util_Collections_EmptyMap_keySet___R_java_util_Set(CODENAME_ONE
 
 
 JAVA_OBJECT java_util_Collections_EmptyMap_values___R_java_util_Collection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 1865);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6358, 1866);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_static_java_util_Collections_EMPTY_LIST(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -120,7 +120,7 @@ JAVA_OBJECT java_util_Collections_EmptyMap_readResolve___R_java_lang_Object(CODE
 
 
 JAVA_VOID java_util_Collections_EmptyMap___INIT_____java_util_Collections_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6358, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_Collections_EmptyMap___INIT____(threadStateData, __cn1ThisObject); 

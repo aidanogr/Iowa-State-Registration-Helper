@@ -106,7 +106,7 @@ JAVA_OBJECT com_codename1_io_ConnectionRequest_CachingMode_values___R_com_codena
 
 JAVA_OBJECT com_codename1_io_ConnectionRequest_CachingMode_valueOf___java_lang_String_R_com_codename1_io_ConnectionRequest_CachingMode(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_io_ConnectionRequest_CachingMode(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8548, 900);
+    DEFINE_METHOD_STACK(2, 1, 0, 8549, 901);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(226);
@@ -117,7 +117,7 @@ JAVA_OBJECT com_codename1_io_ConnectionRequest_CachingMode_valueOf___java_lang_S
 
 
 JAVA_VOID com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8548, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8549, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -129,35 +129,35 @@ JAVA_VOID com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_St
 
 
 JAVA_VOID com_codename1_io_ConnectionRequest_CachingMode___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 8548, 861);
+    DEFINE_METHOD_STACK(4, 0, 0, 8549, 862);
     __CN1_DEBUG_INFO(227);
     PUSH_POINTER(__NEW_com_codename1_io_ConnectionRequest_CachingMode(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8549), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8550), 0 /* ICONST_0 */);     SP -= 1;
     set_static_com_codename1_io_ConnectionRequest_CachingMode_OFF(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(228);
     PUSH_POINTER(__NEW_com_codename1_io_ConnectionRequest_CachingMode(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8550), 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8551), 1 /* ICONST_1 */);     SP -= 1;
     set_static_com_codename1_io_ConnectionRequest_CachingMode_MANUAL(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(229);
     PUSH_POINTER(__NEW_com_codename1_io_ConnectionRequest_CachingMode(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8551), 2 /* ICONST_2 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8552), 2 /* ICONST_2 */);     SP -= 1;
     set_static_com_codename1_io_ConnectionRequest_CachingMode_SMART(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(230);
     PUSH_POINTER(__NEW_com_codename1_io_ConnectionRequest_CachingMode(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8552), 3 /* ICONST_3 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8553), 3 /* ICONST_3 */);     SP -= 1;
     set_static_com_codename1_io_ConnectionRequest_CachingMode_OFFLINE(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(231);
     PUSH_POINTER(__NEW_com_codename1_io_ConnectionRequest_CachingMode(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8553), 4/* ICONST_4 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_io_ConnectionRequest_CachingMode___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8554), 4/* ICONST_4 */);     SP -= 1;
     set_static_com_codename1_io_ConnectionRequest_CachingMode_OFFLINE_FIRST(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(226);

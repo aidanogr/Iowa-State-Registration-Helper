@@ -41,7 +41,7 @@ com_codename1_l10n_SimpleDateFormat_TimeZoneResult___INIT____(threadStateData, o
 
 
 JAVA_VOID com_codename1_l10n_SimpleDateFormat_TimeZoneResult___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7727, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7728, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1023);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -50,7 +50,7 @@ JAVA_VOID com_codename1_l10n_SimpleDateFormat_TimeZoneResult___INIT____(CODENAME
 
 
 JAVA_VOID com_codename1_l10n_SimpleDateFormat_TimeZoneResult___INIT_____com_codename1_l10n_SimpleDateFormat_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7727, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7728, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1023);

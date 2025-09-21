@@ -30,7 +30,7 @@ java_util_Hashtable_1___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Hashtable_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2003, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2004, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -38,14 +38,14 @@ JAVA_VOID java_util_Hashtable_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJEC
 
 
 JAVA_BOOLEAN java_util_Hashtable_1_hasMoreElements___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2003, 2001);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2004, 2002);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_util_Hashtable_1_nextElement___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2003, 2002);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2004, 2003);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_NoSuchElementException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_NoSuchElementException___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;

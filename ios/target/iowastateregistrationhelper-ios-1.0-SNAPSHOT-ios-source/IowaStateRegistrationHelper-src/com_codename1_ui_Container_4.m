@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Container_4(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Container_4___INIT_____com_codename1_ui_Container_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3432, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3433, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_ui_Container_4___INIT_____com_codename1_ui_Container_com
 
 
 JAVA_VOID com_codename1_ui_Container_4_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3432, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3433, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(996);
     /* CustomInvoke */virtual_com_codename1_ui_Component_refreshTheme___boolean(threadStateData, get_field_com_codename1_ui_Container_4_val_cmp(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(997);

@@ -73,7 +73,7 @@ com_ogradytech_registration_IowaStateRegistrationHelperStub___INIT____(threadSta
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 199, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 200, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8);
     com_codename1_impl_ios_Lifecycle___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(12);
@@ -98,19 +98,19 @@ JAVA_OBJECT com_ogradytech_registration_IowaStateRegistrationHelperStub_d___java
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 199, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 200, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(20);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(203), STRING_FROM_CONSTANT_POOL_OFFSET(37));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(204), STRING_FROM_CONSTANT_POOL_OFFSET(37));     SP -= 1;
     __CN1_DEBUG_INFO(21);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(204), STRING_FROM_CONSTANT_POOL_OFFSET(38));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(205), STRING_FROM_CONSTANT_POOL_OFFSET(38));     SP -= 1;
     __CN1_DEBUG_INFO(22);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(205), STRING_FROM_CONSTANT_POOL_OFFSET(39));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(206), STRING_FROM_CONSTANT_POOL_OFFSET(39));     SP -= 1;
     __CN1_DEBUG_INFO(23);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(206), STRING_FROM_CONSTANT_POOL_OFFSET(207));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Display_setProperty___java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(207), STRING_FROM_CONSTANT_POOL_OFFSET(208));     SP -= 1;
     __CN1_DEBUG_INFO(24);
     if (get_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_initialized(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L2075568954;
     __CN1_DEBUG_INFO(25);
@@ -134,7 +134,7 @@ label_L2145896000:
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_applicationDidEnterBackground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 199, 208);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 200, 209);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(34);
     set_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_stopped(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(35);
@@ -152,7 +152,7 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_applicatio
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_applicationWillEnterForeground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 199, 209);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 200, 210);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     if (get_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_stopped(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1279740095;
     __CN1_DEBUG_INFO(45);
@@ -174,7 +174,7 @@ JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_applicatio
 
 
 JAVA_BOOLEAN com_ogradytech_registration_IowaStateRegistrationHelperStub_shouldApplicationHandleURL___java_lang_String_java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 199, 211);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 200, 212);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -197,7 +197,7 @@ label_L2095677157:
 
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_applicationWillTerminate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 199, 212);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 200, 213);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(59);
     if (get_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_stopped(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L852026681;
     __CN1_DEBUG_INFO(60);
@@ -216,13 +216,13 @@ label_L852026681:
 
 JAVA_VOID com_ogradytech_registration_IowaStateRegistrationHelperStub_main___java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_ogradytech_registration_IowaStateRegistrationHelperStub(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 199, 213);
+    DEFINE_METHOD_STACK(2, 2, 0, 200, 214);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(67);
     if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1943855334;
     if (CN1_ARRAY_LENGTH(locals[0].data.o)<=0) /* IFLE CustomJump */ goto label_L1943855334;
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(locals[0].data.o, 0 /* ICONST_0 */), STRING_FROM_CONSTANT_POOL_OFFSET(214))!=0) /* IFNE CustomJump */ goto label_L1943855334;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(locals[0].data.o, 0 /* ICONST_0 */), STRING_FROM_CONSTANT_POOL_OFFSET(215))!=0) /* IFNE CustomJump */ goto label_L1943855334;
 
 label_L1943855334:
     __CN1_DEBUG_INFO(69);
@@ -233,7 +233,7 @@ label_L1943855334:
     __CN1_DEBUG_INFO(70);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_setMainClass___java_lang_Object(threadStateData, get_field_com_ogradytech_registration_IowaStateRegistrationHelperStub_i(locals[1].data.o)); 
     __CN1_DEBUG_INFO(71);
-    /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_setIosMode___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(215)); 
+    /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_setIosMode___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(216)); 
     __CN1_DEBUG_INFO(72);
     /* CustomInvoke */com_codename1_ui_Display_init___java_lang_Object(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(73);
@@ -250,7 +250,7 @@ int main(int argc, char *argv[]) {
 
 JAVA_OBJECT com_ogradytech_registration_IowaStateRegistrationHelperStub_access$000___com_ogradytech_registration_IowaStateRegistrationHelperStub_R_com_ogradytech_registration_IowaStateRegistrationHelper(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_ogradytech_registration_IowaStateRegistrationHelperStub(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 199, 216);
+    DEFINE_METHOD_STACK(1, 1, 0, 200, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8);

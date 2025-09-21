@@ -41,7 +41,7 @@ java_lang_StringBuffer___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_StringBuffer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1132, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1133, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -55,7 +55,7 @@ JAVA_VOID java_lang_StringBuffer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_lang_StringBuffer___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1132, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1133, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     BC_ALOAD(0);
@@ -70,7 +70,7 @@ JAVA_VOID java_lang_StringBuffer___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_VOID java_lang_StringBuffer___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1132, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1133, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -86,7 +86,7 @@ JAVA_VOID java_lang_StringBuffer___INIT_____java_lang_String(CODENAME_ONE_THREAD
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___boolean_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___boolean_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_); 
     BC_ALOAD(0);
@@ -96,7 +96,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___boolean_R_java_lang_StringBuffer(COD
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___char_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_CHAR __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_); 
     BC_ALOAD(0);
@@ -116,7 +116,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___char_1ARRAY_int_int_R_java_lang_Stri
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___double_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_DOUBLE dlocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), dlocals_1_); 
     BC_ALOAD(0);
@@ -126,7 +126,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___double_R_java_lang_StringBuffer(CODE
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___float_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_FLOAT flocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), flocals_1_); 
     BC_ALOAD(0);
@@ -136,7 +136,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___float_R_java_lang_StringBuffer(CODEN
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___int_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_); 
     BC_ALOAD(0);
@@ -146,7 +146,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___int_R_java_lang_StringBuffer(CODENAM
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___long_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___long_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), llocals_1_); 
     BC_ALOAD(0);
@@ -156,7 +156,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___long_R_java_lang_StringBuffer(CODENA
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___java_lang_Object_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), locals[1].data.o); 
@@ -167,7 +167,7 @@ JAVA_OBJECT java_lang_StringBuffer_append___java_lang_Object_R_java_lang_StringB
 
 
 JAVA_OBJECT java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 938);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 939);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), locals[1].data.o); 
@@ -183,7 +183,7 @@ JAVA_INT java_lang_StringBuffer_capacity___R_int(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_CHAR java_lang_StringBuffer_charAt___int_R_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 871);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 872);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_StringBuilder_charAt___int_R_char(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_);
     PUSH_INT(tmpResult); }
@@ -207,7 +207,7 @@ JAVA_VOID java_lang_StringBuffer_ensureCapacity___int(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_lang_StringBuffer_getChars___int_int_char_1ARRAY_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 1132, 882);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 1133, 883);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     locals[3].data.o = __cn1Arg3;
@@ -265,7 +265,7 @@ JAVA_OBJECT java_lang_StringBuffer_insert___int_java_lang_String_R_java_lang_Str
 
 
 JAVA_INT java_lang_StringBuffer_length___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1132, 887);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1133, 888);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_lang_StringBuilder_length___R_int(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -278,7 +278,7 @@ JAVA_OBJECT java_lang_StringBuffer_reverse___R_java_lang_StringBuffer(CODENAME_O
 
 
 JAVA_VOID java_lang_StringBuffer_setCharAt___int_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_CHAR __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1132, 1010);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1133, 1011);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     /* CustomInvoke */virtual_java_lang_StringBuilder_setCharAt___int_char(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_, ilocals_2_); 
@@ -288,7 +288,7 @@ JAVA_VOID java_lang_StringBuffer_setCharAt___int_char(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_lang_StringBuffer_setLength___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1132, 1011);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1133, 1012);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_StringBuilder_setLength___int(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject), ilocals_1_); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -297,7 +297,7 @@ JAVA_VOID java_lang_StringBuffer_setLength___int(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_OBJECT java_lang_StringBuffer_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1132, 897);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1133, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, get_field_java_lang_StringBuffer_internal(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

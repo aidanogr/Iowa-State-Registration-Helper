@@ -52,7 +52,7 @@ com_codename1_impl_ios_Matrix_Factory___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ios_Matrix_Factory___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9721, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9722, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(74);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(76);
@@ -68,9 +68,9 @@ JAVA_VOID com_codename1_impl_ios_Matrix_Factory___INIT____(CODENAME_ONE_THREAD_S
 
 JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_getDefault___R_com_codename1_impl_ios_Matrix_Factory(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_Matrix_Factory(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 9721, 1277);
+    DEFINE_METHOD_STACK(2, 0, 0, 9722, 1278);
     __CN1_DEBUG_INFO(80);
-    if (get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1298557761;
+    if (get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1933077874;
     __CN1_DEBUG_INFO(81);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_Matrix_Factory(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -78,7 +78,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_getDefault___R_com_codename1_i
     set_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L1298557761:
+label_L1933077874:
     __CN1_DEBUG_INFO(84);
     PUSH_POINTER(get_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -87,7 +87,7 @@ label_L1298557761:
 
 
 JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeMatrix___float_1ARRAY_R_com_codename1_impl_ios_Matrix(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9721, 9722);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9722, 9723);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(88);
@@ -107,7 +107,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeMatrix___float_1ARRAY_R_co
 
 
 JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeIdentity___R_com_codename1_impl_ios_Matrix(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9721, 3602);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9722, 3603);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(94);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_impl_ios_Matrix_Factory_makeMatrix___float_1ARRAY_R_com_codename1_impl_ios_Matrix(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(95);
     /* CustomInvoke */com_codename1_impl_ios_Matrix_access$102___com_codename1_impl_ios_Matrix_com_codename1_impl_ios_Matrix_Factory_R_com_codename1_impl_ios_Matrix_Factory(threadStateData, locals[1].data.o, __cn1ThisObject); 
@@ -127,7 +127,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeRotation___float_float_flo
     volatile JAVA_FLOAT flocals_4_ = 0; /* z */
     volatile JAVA_FLOAT flocals_1_ = 0; /* angle */
     volatile JAVA_FLOAT flocals_2_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9721, 3608);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9722, 3609);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -156,7 +156,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeTranslation___float_float_
     volatile JAVA_FLOAT flocals_3_ = 0; /* z */
     volatile JAVA_FLOAT flocals_1_ = 0; /* x */
     volatile JAVA_FLOAT flocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9721, 3609);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9722, 3610);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -181,7 +181,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makePerspective___float_float_
     volatile JAVA_FLOAT flocals_4_ = 0; /* zFar */
     volatile JAVA_FLOAT flocals_1_ = 0; /* fovy */
     volatile JAVA_FLOAT flocals_2_ = 0; /* aspect */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9721, 3613);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9722, 3614);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -215,7 +215,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeOrtho___float_float_float_
     volatile JAVA_FLOAT flocals_6_ = 0; /* far */
     volatile JAVA_FLOAT flocals_1_ = 0; /* left */
     volatile JAVA_FLOAT flocals_2_ = 0; /* right */
-    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9721, 3614);
+    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9722, 3615);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     flocals_3_ = __cn1Arg3;
@@ -251,7 +251,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_makeCamera___float_float_float
 
 JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_access$300___com_codename1_impl_ios_Matrix_Factory_R_float_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_Matrix_Factory(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9721, 1150);
+    DEFINE_METHOD_STACK(1, 1, 0, 9722, 1151);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(74);
@@ -264,7 +264,7 @@ JAVA_OBJECT com_codename1_impl_ios_Matrix_Factory_access$300___com_codename1_imp
 
 
 JAVA_VOID com_codename1_impl_ios_Matrix_Factory___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 9721, 861);
+    DEFINE_METHOD_STACK(1, 0, 0, 9722, 862);
     __CN1_DEBUG_INFO(77);
     set_static_com_codename1_impl_ios_Matrix_Factory_defaultFactory(threadStateData, JAVA_NULL /* ACONST_NULL */);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

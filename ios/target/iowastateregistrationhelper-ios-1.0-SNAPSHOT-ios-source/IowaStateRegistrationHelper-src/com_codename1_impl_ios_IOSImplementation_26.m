@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_26(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_26___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9569, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9570, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8088);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_26___INIT_____java_lang_Strin
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_26_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9569, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9570, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8090);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_push_PushCallback_pushRegistrationError___java_lang_String_int(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_26_val_message(__cn1ThisObject), 0 /* ICONST_0 */);     SP -= 1;

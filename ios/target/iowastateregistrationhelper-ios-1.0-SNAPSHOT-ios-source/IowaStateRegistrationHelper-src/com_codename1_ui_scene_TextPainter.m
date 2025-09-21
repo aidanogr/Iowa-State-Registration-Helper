@@ -47,7 +47,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_scene_TextPainter(CODENAME_ONE_THREAD_STATE) 
 
 JAVA_VOID com_codename1_ui_scene_TextPainter___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* valign */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10134, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10135, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -75,7 +75,7 @@ JAVA_VOID com_codename1_ui_scene_TextPainter_paint___com_codename1_ui_Graphics_c
     volatile JAVA_INT ilocals_12_ = 0; /* v12 */
     volatile JAVA_INT ilocals_13_ = 0; /* v13 */
     volatile JAVA_INT ilocals_14_ = 0; /* v14 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 15, 0, 10134, 2357);
+    DEFINE_INSTANCE_METHOD_STACK(4, 15, 0, 10135, 2358);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -84,18 +84,18 @@ JAVA_VOID com_codename1_ui_scene_TextPainter_paint___com_codename1_ui_Graphics_c
     locals[3].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(57);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_codename1_ui_scene_Node_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(58);
-    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2028277706;
+    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L677143503;
     __CN1_DEBUG_INFO(59);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2028277706:
+label_L677143503:
     __CN1_DEBUG_INFO(61);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_plaf_Style_getFont___R_com_codename1_ui_Font(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(62);
-    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L626370950;
+    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1312043621;
     __CN1_DEBUG_INFO(63);
     /* VarOp.assignFrom */ locals[5].data.o = com_codename1_ui_Font_getDefaultFont___R_com_codename1_ui_Font(threadStateData);locals[5].type=CN1_TYPE_OBJECT;
-label_L626370950:
+label_L1312043621:
     __CN1_DEBUG_INFO(65);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */virtual_com_codename1_ui_Font_stringWidth___java_lang_String_R_int(threadStateData, locals[5].data.o, get_field_com_codename1_ui_scene_TextPainter_text(__cn1ThisObject));
     __CN1_DEBUG_INFO(66);
@@ -137,42 +137,42 @@ label_L626370950:
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 3: goto label_L1992656846;
-        case 4: goto label_L44989469;
-        default: goto label_L1382394077;
+        case 3: goto label_L1124203065;
+        case 4: goto label_L1943867171;
+        default: goto label_L953436300;
     }
 
-label_L44989469:
+label_L1943867171:
     __CN1_DEBUG_INFO(76);
     /* VarOp.assignFrom */ ilocals_12_=((ilocals_8_ + (ilocals_10_ / 2 /* ICONST_2 */)) - (ilocals_6_ / 2 /* ICONST_2 */));
     __CN1_DEBUG_INFO(77);
-    goto label_L1382394077;
+    goto label_L953436300;
 
-label_L1992656846:
+label_L1124203065:
     __CN1_DEBUG_INFO(79);
     /* VarOp.assignFrom */ ilocals_12_=((ilocals_8_ + ilocals_10_) - ilocals_6_);
 
-label_L1382394077:
+label_L953436300:
     __CN1_DEBUG_INFO(83);
     PUSH_INT(get_field_com_codename1_ui_scene_TextPainter_vAlign(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 2: goto label_L1525953166;
-        case 4: goto label_L5584361;
-        default: goto label_L1911222122;
+        case 2: goto label_L1469899497;
+        case 4: goto label_L461376017;
+        default: goto label_L4172373;
     }
 
-label_L5584361:
+label_L461376017:
     __CN1_DEBUG_INFO(85);
     /* VarOp.assignFrom */ ilocals_13_=((ilocals_9_ + (ilocals_11_ / 2 /* ICONST_2 */)) - (ilocals_7_ / 2 /* ICONST_2 */));
     __CN1_DEBUG_INFO(86);
-    goto label_L1911222122;
+    goto label_L4172373;
 
-label_L1525953166:
+label_L1469899497:
     __CN1_DEBUG_INFO(88);
     /* VarOp.assignFrom */ ilocals_13_=((ilocals_9_ + ilocals_11_) - ilocals_7_);
 
-label_L1911222122:
+label_L4172373:
     __CN1_DEBUG_INFO(91);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setFont___com_codename1_ui_Font(threadStateData, locals[1].data.o, locals[5].data.o); 
     __CN1_DEBUG_INFO(92);
@@ -190,7 +190,7 @@ label_L1911222122:
 
 
 JAVA_OBJECT com_codename1_ui_scene_TextPainter_getText___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10134, 4120);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10135, 4121);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(103);
 
 {
@@ -201,7 +201,7 @@ JAVA_OBJECT com_codename1_ui_scene_TextPainter_getText___R_java_lang_String(CODE
 
 
 JAVA_VOID com_codename1_ui_scene_TextPainter_setText___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10134, 3053);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10135, 3054);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(111);

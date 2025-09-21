@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_java_util_AbstractMap_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_AbstractMap_2___INIT_____java_util_AbstractMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5740, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5741, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_AbstractMap_2_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -47,7 +47,7 @@ JAVA_VOID java_util_AbstractMap_2___INIT_____java_util_AbstractMap(CODENAME_ONE_
 
 
 JAVA_INT java_util_AbstractMap_2_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5740, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5741, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_AbstractMap_size___R_int(threadStateData, get_field_java_util_AbstractMap_2_this_0(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -55,7 +55,7 @@ JAVA_INT java_util_AbstractMap_2_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OB
 
 
 JAVA_BOOLEAN java_util_AbstractMap_2_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5740, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5741, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_AbstractMap_containsValue___java_lang_Object_R_boolean(threadStateData, get_field_java_util_AbstractMap_2_this_0(__cn1ThisObject), locals[1].data.o);
@@ -65,7 +65,7 @@ JAVA_BOOLEAN java_util_AbstractMap_2_contains___java_lang_Object_R_boolean(CODEN
 
 
 JAVA_OBJECT java_util_AbstractMap_2_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5740, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5741, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_AbstractMap_2_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_AbstractMap_2_1___INIT_____java_util_AbstractMap_2(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;

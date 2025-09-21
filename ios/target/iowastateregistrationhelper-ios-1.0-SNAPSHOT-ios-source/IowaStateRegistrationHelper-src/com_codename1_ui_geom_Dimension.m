@@ -48,7 +48,7 @@ com_codename1_ui_geom_Dimension___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_geom_Dimension___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3425, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3426, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(42);
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_ui_geom_Dimension___INIT____(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID com_codename1_ui_geom_Dimension___INIT_____com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3425, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3426, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
@@ -76,7 +76,7 @@ JAVA_VOID com_codename1_ui_geom_Dimension___INIT_____com_codename1_ui_geom_Dimen
 JAVA_VOID com_codename1_ui_geom_Dimension___INIT_____int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* width */
     volatile JAVA_INT ilocals_2_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3425, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3426, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(60);
@@ -93,7 +93,7 @@ JAVA_VOID com_codename1_ui_geom_Dimension___INIT_____int_int(CODENAME_ONE_THREAD
 
 JAVA_VOID com_codename1_ui_geom_Dimension_setWidth___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* width */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3425, 2452);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3426, 2453);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(71);
     set_field_com_codename1_ui_geom_Dimension_width(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -105,7 +105,7 @@ JAVA_VOID com_codename1_ui_geom_Dimension_setWidth___int(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_codename1_ui_geom_Dimension_setHeight___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3425, 2453);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3426, 2454);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(80);
     set_field_com_codename1_ui_geom_Dimension_height(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -116,7 +116,7 @@ JAVA_VOID com_codename1_ui_geom_Dimension_setHeight___int(CODENAME_ONE_THREAD_ST
 
 
 JAVA_INT com_codename1_ui_geom_Dimension_getWidth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3425, 1303);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3426, 1304);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(89);
 
 {
@@ -127,7 +127,7 @@ JAVA_INT com_codename1_ui_geom_Dimension_getWidth___R_int(CODENAME_ONE_THREAD_ST
 
 
 JAVA_INT com_codename1_ui_geom_Dimension_getHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3425, 439);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3426, 440);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(98);
 
 {
@@ -138,16 +138,16 @@ JAVA_INT com_codename1_ui_geom_Dimension_getHeight___R_int(CODENAME_ONE_THREAD_S
 
 
 JAVA_OBJECT com_codename1_ui_geom_Dimension_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3425, 897);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3426, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(105);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3426));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3427));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Dimension_width(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3427));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3428));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Dimension_height(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -160,7 +160,7 @@ JAVA_OBJECT com_codename1_ui_geom_Dimension_toString___R_java_lang_String(CODENA
 
 JAVA_INT com_codename1_ui_geom_Dimension_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3425, 883);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3426, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(112);
     /* VarOp.assignFrom */     ilocals_1_ = 3 /* ICONST_3 */; 
     __CN1_DEBUG_INFO(113);
@@ -177,20 +177,20 @@ JAVA_INT com_codename1_ui_geom_Dimension_hashCode___R_int(CODENAME_ONE_THREAD_ST
 
 
 JAVA_BOOLEAN com_codename1_ui_geom_Dimension_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3425, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3426, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(122);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L83637545;
-    if (get_field_com_codename1_ui_geom_Dimension_width(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_width(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L83637545;
-    if (get_field_com_codename1_ui_geom_Dimension_height(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_height(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L83637545;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1553563112;
+    if (get_field_com_codename1_ui_geom_Dimension_width(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_width(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1553563112;
+    if (get_field_com_codename1_ui_geom_Dimension_height(locals[1].data.o)!=get_field_com_codename1_ui_geom_Dimension_height(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1553563112;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L954492773;
+    goto label_L1170183099;
 
-label_L83637545:
+label_L1553563112:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L954492773:
+label_L1170183099:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

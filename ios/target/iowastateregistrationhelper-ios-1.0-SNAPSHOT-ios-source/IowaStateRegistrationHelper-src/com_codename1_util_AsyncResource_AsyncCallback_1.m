@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_com_codename1_util_AsyncResource_AsyncCallback_1(CODENAME_ONE_
 
 
 JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback_1___INIT_____com_codename1_util_AsyncResource_AsyncCallback_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7276, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7277, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -57,7 +57,7 @@ JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback_1___INIT_____com_codena
 
 
 JAVA_VOID com_codename1_util_AsyncResource_AsyncCallback_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7276, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7277, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(308);
     /* CustomInvoke */virtual_com_codename1_util_AsyncResource_AsyncCallback_onSucess___java_lang_Object(threadStateData, get_field_com_codename1_util_AsyncResource_AsyncCallback_1_this_1(__cn1ThisObject), get_field_com_codename1_util_AsyncResource_AsyncCallback_1_val_value(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(309);

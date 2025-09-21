@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_CSSBorder_LinearGradient(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_plaf_CSSBorder_LinearGradient___INIT_____com_codename1_ui_plaf_CSSBorder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5755, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5756, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(978);
@@ -65,7 +65,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_LinearGradient___INIT_____com_codename
 
 
 JAVA_DOUBLE com_codename1_ui_plaf_CSSBorder_LinearGradient_directionRadian___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5755, 5756);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5756, 5757);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(983);
 
 {
@@ -79,20 +79,20 @@ JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_LinearGradient_toCSSString___R_java_
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 5755, 5632);
+    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 5756, 5633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(987);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(988);
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5757)); 
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5758)); 
     __CN1_DEBUG_INFO(989);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, get_field_com_codename1_ui_plaf_CSSBorder_LinearGradient_angle(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5758));     SP -= 1;
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5759));     SP -= 1;
     __CN1_DEBUG_INFO(990);
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534)); 
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535)); 
     __CN1_DEBUG_INFO(991);
     /* VarOp.assignFrom */     ilocals_2_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(993);
@@ -100,20 +100,20 @@ JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_LinearGradient_toCSSString___R_java_
 locals[3].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_4_ = CN1_ARRAY_LENGTH(locals[3].data.o);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L117701189:
-    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1395740534;
+label_L1560244891:
+    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L995030431;
     /* VarOp.assignFrom */ locals[6].type=CN1_TYPE_INVALID;locals[6].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[3].data.o, ilocals_5_);
 locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(994);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1655072591;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L583744857;
     __CN1_DEBUG_INFO(995);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L1887965475;
+    goto label_L870627780;
 
-label_L1655072591:
+label_L583744857:
     __CN1_DEBUG_INFO(997);
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(534)); 
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(535)); 
 
-label_L1887965475:
+label_L870627780:
     __CN1_DEBUG_INFO(999);
     BC_ALOAD(1);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_CSSBorder_ColorStop_toCSSString___R_java_lang_String(threadStateData, locals[6].data.o);
@@ -124,11 +124,11 @@ label_L1887965475:
     SP--; /* POP */
     __CN1_DEBUG_INFO(993);
     BC_IINC(5, 1);
-    goto label_L117701189;
+    goto label_L1560244891;
 
-label_L1395740534:
+label_L995030431:
     __CN1_DEBUG_INFO(1001);
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3658)); 
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3659)); 
     __CN1_DEBUG_INFO(1002);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -139,7 +139,7 @@ label_L1395740534:
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_LinearGradient_access$1500___com_codename1_ui_plaf_CSSBorder_LinearGradient_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_plaf_CSSBorder_LinearGradient(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 5755, 5759);
+    DEFINE_METHOD_STACK(1, 1, 0, 5756, 5760);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(978);

@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_DefaultLookAndFeel_2(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_2___INIT_____com_codename1_ui_plaf_DefaultLookAndFeel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6840, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6841, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2335);
@@ -47,22 +47,22 @@ JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_2___INIT_____com_codename1_ui
 
 
 JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_2_call___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6840, 6088);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6841, 6089);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2340);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_components_InfiniteProgress);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1024478363;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1448580731;
     __CN1_DEBUG_INFO(2341);
     /* CustomInvoke */virtual_com_codename1_components_InfiniteProgress_animate___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    goto label_L1698990491;
+    goto label_L1631143060;
 
-label_L1024478363:
+label_L1448580731:
     __CN1_DEBUG_INFO(2343);
     virtual_com_codename1_ui_Component_animate___R_boolean(threadStateData, locals[1].data.o); 
 
-label_L1698990491:
+label_L1631143060:
     __CN1_DEBUG_INFO(2345);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

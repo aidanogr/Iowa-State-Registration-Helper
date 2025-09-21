@@ -39,7 +39,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_32_1(CODENAME_ONE_THR
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1___INIT_____com_codename1_impl_ios_IOSImplementation_32(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9633, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9634, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8513);
@@ -51,20 +51,20 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1___INIT_____com_codename1
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1_onSucess___java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9633, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9634, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8517);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1688310330;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1398508580;
     __CN1_DEBUG_INFO(8518);
     virtual_com_codename1_impl_ios_IOSNative_fireUIBackgroundFetchResultNoData__(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData)); 
-    goto label_L2099932844;
+    goto label_L1251285265;
 
-label_L1688310330:
+label_L1398508580:
     __CN1_DEBUG_INFO(8520);
     virtual_com_codename1_impl_ios_IOSNative_fireUIBackgroundFetchResultNewData__(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData)); 
 
-label_L2099932844:
+label_L1251285265:
     __CN1_DEBUG_INFO(8522);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -73,7 +73,7 @@ label_L2099932844:
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1_onError___java_lang_Object_java_lang_Throwable_int_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* errorCode */
-    DEFINE_INSTANCE_METHOD_STACK(1, 5, 0, 9633, 81);
+    DEFINE_INSTANCE_METHOD_STACK(1, 5, 0, 9634, 82);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -92,7 +92,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1_onError___java_lang_Obje
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_1_onSucess___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9633, 1283);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9634, 1284);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8513);

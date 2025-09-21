@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_DateSpinner3D_3(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_3___INIT_____com_codename1_ui_spinner_DateSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10045, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10046, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(130);
@@ -47,11 +47,11 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_3___INIT_____com_codename1_ui_s
 
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_3_format___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10045, 905);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10046, 906);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(134);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1902831987;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L510441778;
     __CN1_DEBUG_INFO(135);
     PUSH_POINTER(__NEW_java_lang_Double(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -63,7 +63,7 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_3_format___java_lang_String_R
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1902831987:
+label_L510441778:
     __CN1_DEBUG_INFO(137);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }

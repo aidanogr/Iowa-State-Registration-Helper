@@ -46,7 +46,7 @@ JAVA_VOID java_lang_Object___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 
 JAVA_BOOLEAN java_lang_Object_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 942, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 943, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o!=__cn1ThisObject) /* IF_ACMPNE CustomJump */ goto label_L1714688478;
@@ -62,7 +62,7 @@ label_L104716441:
 
 
 JAVA_OBJECT java_lang_Object_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 942, 943);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 943, 944);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = java_lang_Object_getClassImpl___R_java_lang_Class(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -71,7 +71,7 @@ JAVA_OBJECT java_lang_Object_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID java_lang_Object_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 942, 947);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 943, 948);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */virtual_java_lang_Object_wait___long(threadStateData, __cn1ThisObject, 0 /* LCONST_0 */); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -79,7 +79,7 @@ JAVA_VOID java_lang_Object_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1T
 
 
 JAVA_VOID java_lang_Object_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 942, 947);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 943, 948);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* CustomInvoke */virtual_java_lang_Object_wait___long_int(threadStateData, __cn1ThisObject, llocals_1_, 0 /* ICONST_0 */); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -88,7 +88,7 @@ JAVA_VOID java_lang_Object_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
 
 
 JAVA_OBJECT java_lang_Object_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 942, 948);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 943, 949);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();

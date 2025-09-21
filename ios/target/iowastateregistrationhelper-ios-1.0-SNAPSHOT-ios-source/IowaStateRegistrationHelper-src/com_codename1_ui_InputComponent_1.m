@@ -170,7 +170,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_InputComponent_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_InputComponent_1___INIT_____com_codename1_ui_InputComponent_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4106, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4107, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -186,7 +186,7 @@ JAVA_VOID com_codename1_ui_InputComponent_1___INIT_____com_codename1_ui_InputCom
 
 
 JAVA_BOOLEAN com_codename1_ui_InputComponent_1_shouldRenderComponentSelection___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4106, 2589);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4107, 2590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(76);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }

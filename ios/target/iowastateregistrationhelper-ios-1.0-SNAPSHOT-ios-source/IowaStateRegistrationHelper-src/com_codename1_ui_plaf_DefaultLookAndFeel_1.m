@@ -77,7 +77,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_plaf_DefaultLookAndFeel_1(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_1___INIT_____com_codename1_ui_plaf_DefaultLookAndFeel_com_codename1_ui_Form_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6838, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6839, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -94,19 +94,19 @@ JAVA_VOID com_codename1_ui_plaf_DefaultLookAndFeel_1___INIT_____com_codename1_ui
     __CN1_DEBUG_INFO(2279);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeImageConstant___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4417));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeImageConstant___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4418));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     set_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(2280);
-    if (get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1114681666;
+    if (get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L72893188;
     __CN1_DEBUG_INFO(2281);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_DefaultLookAndFeel_access$000___com_codename1_ui_plaf_DefaultLookAndFeel_R_com_codename1_ui_FontImage(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_this_0(__cn1ThisObject)));
     set_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1114681666:
+label_L72893188:
     __CN1_DEBUG_INFO(2283);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -114,7 +114,7 @@ label_L1114681666:
 
 
 JAVA_BOOLEAN com_codename1_ui_plaf_DefaultLookAndFeel_1_animate___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6838, 1590);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6839, 1591);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2286);
     set_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_counter(threadStateData, (get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_counter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(2288);
@@ -122,26 +122,26 @@ JAVA_BOOLEAN com_codename1_ui_plaf_DefaultLookAndFeel_1_animate___R_boolean(CODE
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_getComponentAt___int_R_com_codename1_ui_Component(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_DefaultLookAndFeel_access$200___com_codename1_ui_plaf_DefaultLookAndFeel_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_this_0(__cn1ThisObject)));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L771359425;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1367900185;
     __CN1_DEBUG_INFO(2289);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_DefaultLookAndFeel_access$200___com_codename1_ui_plaf_DefaultLookAndFeel_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_this_0(__cn1ThisObject)));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Image_rotate___int_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(__cn1ThisObject), (180 - (30 * get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_counter(__cn1ThisObject))));
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_Label_setIcon___com_codename1_ui_Image(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    goto label_L1662312252;
+    goto label_L1867568476;
 
-label_L771359425:
+label_L1367900185:
     __CN1_DEBUG_INFO(2291);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_DefaultLookAndFeel_access$300___com_codename1_ui_plaf_DefaultLookAndFeel_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_this_0(__cn1ThisObject)));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Image_rotate___int_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(__cn1ThisObject), ((180 * get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_counter(__cn1ThisObject)) / 6));
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_ui_Label_setIcon___com_codename1_ui_Image(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1662312252:
+label_L1867568476:
     __CN1_DEBUG_INFO(2293);
     PUSH_INT(get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_counter(__cn1ThisObject));
     PUSH_INT(6);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1468393491;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L431300939;
     __CN1_DEBUG_INFO(2294);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_DefaultLookAndFeel_access$200___com_codename1_ui_plaf_DefaultLookAndFeel_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_Label_setIcon___com_codename1_ui_Image(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_i(__cn1ThisObject));     SP -= 1;
@@ -153,7 +153,7 @@ label_L1662312252:
     __CN1_DEBUG_INFO(2296);
     /* CustomInvoke */virtual_com_codename1_ui_Form_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, get_field_com_codename1_ui_plaf_DefaultLookAndFeel_1_val_parentForm(__cn1ThisObject), __cn1ThisObject); 
 
-label_L1468393491:
+label_L431300939:
     __CN1_DEBUG_INFO(2301);
     PUSH_POINTER(__NEW_com_codename1_ui_plaf_DefaultLookAndFeel_1_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

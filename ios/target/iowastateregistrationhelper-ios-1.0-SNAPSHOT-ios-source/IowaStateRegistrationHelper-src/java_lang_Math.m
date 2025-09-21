@@ -38,7 +38,7 @@ java_lang_Math___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_Math___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1035, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1036, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -52,7 +52,7 @@ JAVA_DOUBLE java_lang_Math_toDegrees___double_R_double(CODENAME_ONE_THREAD_STATE
 
 JAVA_DOUBLE java_lang_Math_toRadians___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Math(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 1035, 1048);
+    DEFINE_METHOD_STACK(4, 2, 0, 1036, 1049);
     JAVA_DOUBLE dlocals_0_ = __cn1Arg1;
     BC_DLOAD(0);
     PUSH_DOUBLE(57.2957795); /* LDC */
@@ -64,7 +64,7 @@ JAVA_DOUBLE java_lang_Math_toRadians___double_R_double(CODENAME_ONE_THREAD_STATE
 
 JAVA_LONG java_lang_Math_round___double_R_long(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Math(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 1035, 1049);
+    DEFINE_METHOD_STACK(4, 2, 0, 1036, 1050);
     JAVA_DOUBLE dlocals_0_ = __cn1Arg1;
     if (CN1_CMP_EXPR(dlocals_0_, dlocals_0_)==0) /* IFEQ CustomJump */ goto label_L532885071;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* LCONST_0 */;
@@ -79,7 +79,7 @@ label_L532885071:
 
 JAVA_INT java_lang_Math_round___float_R_int(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Math(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1035, 1049);
+    DEFINE_METHOD_STACK(2, 1, 0, 1036, 1050);
     JAVA_FLOAT flocals_0_ = __cn1Arg1;
     if (CN1_CMP_EXPR(flocals_0_, flocals_0_)==0) /* IFEQ CustomJump */ goto label_L795326519;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;

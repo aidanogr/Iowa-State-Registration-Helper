@@ -153,7 +153,7 @@ com_codename1_io_JSONParser___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_io_JSONParser___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7516, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7517, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(63);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(206);
@@ -175,7 +175,7 @@ JAVA_BOOLEAN com_codename1_io_JSONParser_isUseLongs___R_boolean(CODENAME_ONE_THR
 
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_isUseLongsInstance___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7516, 7518);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7517, 7519);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
 
 {
@@ -211,7 +211,7 @@ JAVA_VOID com_codename1_io_JSONParser_setIncludeNullsInstance___boolean(CODENAME
 
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_isIncludeNullsInstance___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7516, 7524);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7517, 7525);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(141);
 
 {
@@ -227,7 +227,7 @@ JAVA_BOOLEAN com_codename1_io_JSONParser_isUseBoolean___R_boolean(CODENAME_ONE_T
 
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_isUseBooleanInstance___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7516, 7526);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7517, 7527);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(159);
 
 {
@@ -249,13 +249,13 @@ JAVA_VOID com_codename1_io_JSONParser_setUseBoolean___boolean(CODENAME_ONE_THREA
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_io_JSONParser(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 7516, 7529);
+    DEFINE_METHOD_STACK(1, 1, 0, 7517, 7530);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(208);
     BC_ALOAD(0);
     BC_INSTANCEOF(cn1_class_id_com_codename1_io_JSONParser);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1747087615;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1948950538;
     __CN1_DEBUG_INFO(209);
 
 {
@@ -263,7 +263,7 @@ JAVA_BOOLEAN com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCa
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1747087615:
+label_L1948950538:
     __CN1_DEBUG_INFO(211);
 
 {
@@ -275,13 +275,13 @@ label_L1747087615:
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParseCallback_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_io_JSONParser(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 7516, 7530);
+    DEFINE_METHOD_STACK(1, 1, 0, 7517, 7531);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(220);
     BC_ALOAD(0);
     BC_INSTANCEOF(cn1_class_id_com_codename1_io_JSONParser);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1807780471;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L736233691;
     __CN1_DEBUG_INFO(221);
 
 {
@@ -289,7 +289,7 @@ JAVA_BOOLEAN com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParse
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1807780471:
+label_L736233691:
     __CN1_DEBUG_INFO(223);
 
 {
@@ -316,29 +316,29 @@ JAVA_VOID com_codename1_io_JSONParser_parse___java_io_Reader_com_codename1_io_JS
     volatile JAVA_INT ilocals_10_ = 0; /* v10 */
     volatile JAVA_INT ilocals_11_ = 0; /* v11 */
     __STATIC_INITIALIZER_com_codename1_io_JSONParser(threadStateData);
-    DEFINE_METHOD_STACK(3, 23, 0, 7516, 1072);
+    DEFINE_METHOD_STACK(3, 23, 0, 7517, 1073);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL29865113cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL29865113cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L29865113cn1_class_id_java_lang_NumberFormatException1, label_L932325687, restoreToL29865113cn1_class_id_java_lang_NumberFormatException1);
-    int restoreToL1450198098cn1_class_id_java_lang_NumberFormatException2;
-    int tryBlockOffsetL1450198098cn1_class_id_java_lang_NumberFormatException2;
-    DEFINE_CATCH_BLOCK(catch_L1450198098cn1_class_id_java_lang_NumberFormatException2, label_L1934114123, restoreToL1450198098cn1_class_id_java_lang_NumberFormatException2);
-    int restoreToL1796504623cn1_class_id_java_lang_NumberFormatException3;
-    int tryBlockOffsetL1796504623cn1_class_id_java_lang_NumberFormatException3;
-    DEFINE_CATCH_BLOCK(catch_L1796504623cn1_class_id_java_lang_NumberFormatException3, label_L144055893, restoreToL1796504623cn1_class_id_java_lang_NumberFormatException3);
-    int restoreToL1475235815cn1_class_id_java_lang_NumberFormatException4;
-    int tryBlockOffsetL1475235815cn1_class_id_java_lang_NumberFormatException4;
-    DEFINE_CATCH_BLOCK(catch_L1475235815cn1_class_id_java_lang_NumberFormatException4, label_L1743437314, restoreToL1475235815cn1_class_id_java_lang_NumberFormatException4);
-    int restoreToL712723382cn1_class_id_java_lang_Exception5;
-    int tryBlockOffsetL712723382cn1_class_id_java_lang_Exception5;
-    DEFINE_CATCH_BLOCK(catch_L712723382cn1_class_id_java_lang_Exception5, label_L1100474457, restoreToL712723382cn1_class_id_java_lang_Exception5);
-    int restoreToL1272708038cn1_class_id_java_lang_Exception6;
-    int tryBlockOffsetL1272708038cn1_class_id_java_lang_Exception6;
-    DEFINE_CATCH_BLOCK(catch_L1272708038cn1_class_id_java_lang_Exception6, label_L1100474457, restoreToL1272708038cn1_class_id_java_lang_Exception6);
+    int restoreToL1501668156cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL1501668156cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L1501668156cn1_class_id_java_lang_NumberFormatException1, label_L1590977463, restoreToL1501668156cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL1853791403cn1_class_id_java_lang_NumberFormatException2;
+    int tryBlockOffsetL1853791403cn1_class_id_java_lang_NumberFormatException2;
+    DEFINE_CATCH_BLOCK(catch_L1853791403cn1_class_id_java_lang_NumberFormatException2, label_L451480761, restoreToL1853791403cn1_class_id_java_lang_NumberFormatException2);
+    int restoreToL252289691cn1_class_id_java_lang_NumberFormatException3;
+    int tryBlockOffsetL252289691cn1_class_id_java_lang_NumberFormatException3;
+    DEFINE_CATCH_BLOCK(catch_L252289691cn1_class_id_java_lang_NumberFormatException3, label_L996328734, restoreToL252289691cn1_class_id_java_lang_NumberFormatException3);
+    int restoreToL1793912921cn1_class_id_java_lang_NumberFormatException4;
+    int tryBlockOffsetL1793912921cn1_class_id_java_lang_NumberFormatException4;
+    DEFINE_CATCH_BLOCK(catch_L1793912921cn1_class_id_java_lang_NumberFormatException4, label_L8238713, restoreToL1793912921cn1_class_id_java_lang_NumberFormatException4);
+    int restoreToL1797553910cn1_class_id_java_lang_Exception5;
+    int tryBlockOffsetL1797553910cn1_class_id_java_lang_Exception5;
+    DEFINE_CATCH_BLOCK(catch_L1797553910cn1_class_id_java_lang_Exception5, label_L2110370842, restoreToL1797553910cn1_class_id_java_lang_Exception5);
+    int restoreToL49322247cn1_class_id_java_lang_Exception6;
+    int tryBlockOffsetL49322247cn1_class_id_java_lang_Exception6;
+    DEFINE_CATCH_BLOCK(catch_L49322247cn1_class_id_java_lang_Exception6, label_L2110370842, restoreToL49322247cn1_class_id_java_lang_Exception6);
     __CN1_DEBUG_INFO(266);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(267);
@@ -365,31 +365,31 @@ JAVA_VOID com_codename1_io_JSONParser_parse___java_io_Reader_com_codename1_io_JS
     com_codename1_io_JSONParser_KeyStack___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(7);
     __CN1_DEBUG_INFO(274);
-    /* VarOp.assignFrom */ locals[8].type=CN1_TYPE_INVALID;    locals[8].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(218);
+    /* VarOp.assignFrom */ locals[8].type=CN1_TYPE_INVALID;    locals[8].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(219);
 locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(275);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;
-label_L712723382:
- tryBlockOffsetL712723382cn1_class_id_java_lang_Exception5 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L712723382cn1_class_id_java_lang_Exception5);
-    restoreToL712723382cn1_class_id_java_lang_Exception5 = threadStateData->threadObjectStackOffset;
+label_L1797553910:
+ tryBlockOffsetL1797553910cn1_class_id_java_lang_Exception5 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1797553910cn1_class_id_java_lang_Exception5);
+    restoreToL1797553910cn1_class_id_java_lang_Exception5 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(277);
-    if (virtual_com_codename1_io_JSONParseCallback_isAlive___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1929848645, 1);
+    if (virtual_com_codename1_io_JSONParseCallback_isAlive___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L798483422, 1);
     __CN1_DEBUG_INFO(278);
     /* VarOp.assignFrom */ ilocals_10_ = /* CustomInvoke */virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     __CN1_DEBUG_INFO(279);
-    if (ilocals_10_>=0) /* IFGE CustomJump */ JUMP_TO(label_L1272708038, 0);
+    if (ilocals_10_>=0) /* IFGE CustomJump */ JUMP_TO(label_L49322247, 0);
 
-label_L302859689:
+label_L2102888084:
 END_TRY(1);    __CN1_DEBUG_INFO(280);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L1272708038:
- tryBlockOffsetL1272708038cn1_class_id_java_lang_Exception6 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1272708038cn1_class_id_java_lang_Exception6);
-    restoreToL1272708038cn1_class_id_java_lang_Exception6 = threadStateData->threadObjectStackOffset;
+label_L49322247:
+ tryBlockOffsetL49322247cn1_class_id_java_lang_Exception6 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L49322247cn1_class_id_java_lang_Exception6);
+    restoreToL49322247cn1_class_id_java_lang_Exception6 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(282);
     /* VarOp.assignFrom */ ilocals_11_=(ilocals_10_ & 0xffff);
@@ -398,56 +398,56 @@ label_L1272708038:
     (*SP).data.i = ilocals_11_; 
     SP++;
     PUSH_INT(10);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L2037601809, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1867721054, 1);
     __CN1_DEBUG_INFO(284);
     BC_IINC(4, 1);
     __CN1_DEBUG_INFO(285);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
-    JUMP_TO(label_L123251782, 1);
+    JUMP_TO(label_L1602890186, 1);
 
-label_L2037601809:
+label_L1867721054:
     __CN1_DEBUG_INFO(287);
     BC_IINC(5, 1);
 
-label_L123251782:
+label_L1602890186:
     __CN1_DEBUG_INFO(290);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ JUMP_TO(label_L1294962407, 1);
+    if (ilocals_2_==0) /* IFEQ CustomJump */ JUMP_TO(label_L1335077110, 1);
     __CN1_DEBUG_INFO(291);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_11_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 34: JUMP_TO(label_L1497258319, 1);
-        case 92: JUMP_TO(label_L975069095, 1);
-        default: JUMP_TO(label_L2020015678, 1);
+        case 34: JUMP_TO(label_L1227700386, 1);
+        case 92: JUMP_TO(label_L1069736192, 1);
+        default: JUMP_TO(label_L831019851, 1);
     }
 
-label_L1497258319:
+label_L1227700386:
     __CN1_DEBUG_INFO(293);
     /* VarOp.assignFrom */ locals[12].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[12].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(294);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, locals[12].data.o); 
     __CN1_DEBUG_INFO(295);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1234116451, 1);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1670283668, 1);
     __CN1_DEBUG_INFO(296);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, locals[12].data.o); 
     __CN1_DEBUG_INFO(297);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
-locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L1649464124, 1);
+locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L1137069423, 1);
 
-label_L1234116451:
+label_L1670283668:
     __CN1_DEBUG_INFO(299);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = locals[12].data.o;
 locals[9].type=CN1_TYPE_OBJECT;
-label_L1649464124:
+label_L1137069423:
     __CN1_DEBUG_INFO(301);
     /* CustomInvoke */virtual_java_lang_StringBuilder_setLength___int(threadStateData, locals[6].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(302);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(303);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L975069095:
+label_L1069736192:
     __CN1_DEBUG_INFO(305);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     PUSH_INT(tmpResult); }
@@ -458,12 +458,12 @@ label_L975069095:
     (*SP).data.i = ilocals_11_; 
     SP++;
     PUSH_INT(117);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1705236425, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L411382490, 1);
     __CN1_DEBUG_INFO(307);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     PUSH_INT(tmpResult); }
@@ -493,21 +493,21 @@ label_L975069095:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(13);
 
-label_L29865113:
- tryBlockOffsetL29865113cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L29865113cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL29865113cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L1501668156:
+ tryBlockOffsetL1501668156cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1501668156cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL1501668156cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(309);
     /* CustomInvoke */PUSH_INT(java_lang_Integer_parseInt___java_lang_String_int_R_int(threadStateData, locals[13].data.o, 16));
     SP[-1].data.i = (SP[-1].data.i & 0xffff); /* I2C */
     BC_ISTORE(11);
 
-label_L986065593:
+label_L109892426:
 END_TRY(1);    __CN1_DEBUG_INFO(314);
-    JUMP_TO(label_L1416013849, 1);
+    JUMP_TO(label_L252744319, 1);
 
-label_L932325687:
+label_L1590977463:
     __CN1_DEBUG_INFO(310);
     BC_ASTORE(14);
     __CN1_DEBUG_INFO(312);
@@ -517,7 +517,7 @@ label_L932325687:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7531));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7532));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[13].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -525,180 +525,180 @@ label_L932325687:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_io_PrintStream_println___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1416013849:
+label_L252744319:
     __CN1_DEBUG_INFO(315);
-    JUMP_TO(label_L818628762, 1);
+    JUMP_TO(label_L2118912967, 1);
 
-label_L1705236425:
+label_L411382490:
     __CN1_DEBUG_INFO(316);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_11_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 110: JUMP_TO(label_L1075676110, 1);
-        case 114: JUMP_TO(label_L997919131, 1);
-        case 116: JUMP_TO(label_L1522288781, 1);
-        default: JUMP_TO(label_L818628762, 1);
+        case 110: JUMP_TO(label_L911673654, 1);
+        case 114: JUMP_TO(label_L125173444, 1);
+        case 116: JUMP_TO(label_L209524543, 1);
+        default: JUMP_TO(label_L2118912967, 1);
     }
 
-label_L1075676110:
+label_L911673654:
     __CN1_DEBUG_INFO(318);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, 10); 
     __CN1_DEBUG_INFO(319);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1522288781:
+label_L209524543:
     __CN1_DEBUG_INFO(321);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, 9); 
     __CN1_DEBUG_INFO(322);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L997919131:
+label_L125173444:
     __CN1_DEBUG_INFO(324);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, 13); 
     __CN1_DEBUG_INFO(325);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L818628762:
+label_L2118912967:
     __CN1_DEBUG_INFO(328);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, ilocals_11_); 
     __CN1_DEBUG_INFO(329);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L2020015678:
+label_L831019851:
     __CN1_DEBUG_INFO(331);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, ilocals_11_); 
-    JUMP_TO(label_L819545304, 1);
+    JUMP_TO(label_L317794116, 1);
 
-label_L1294962407:
+label_L1335077110:
     __CN1_DEBUG_INFO(333);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_11_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 9: JUMP_TO(label_L477541118, 1);
-        case 10: JUMP_TO(label_L477541118, 1);
-        case 11: JUMP_TO(label_L819545304, 1);
-        case 12: JUMP_TO(label_L819545304, 1);
-        case 13: JUMP_TO(label_L477541118, 1);
-        case 14: JUMP_TO(label_L819545304, 1);
-        case 15: JUMP_TO(label_L819545304, 1);
-        case 16: JUMP_TO(label_L819545304, 1);
-        case 17: JUMP_TO(label_L819545304, 1);
-        case 18: JUMP_TO(label_L819545304, 1);
-        case 19: JUMP_TO(label_L819545304, 1);
-        case 20: JUMP_TO(label_L819545304, 1);
-        case 21: JUMP_TO(label_L819545304, 1);
-        case 22: JUMP_TO(label_L819545304, 1);
-        case 23: JUMP_TO(label_L819545304, 1);
-        case 24: JUMP_TO(label_L819545304, 1);
-        case 25: JUMP_TO(label_L819545304, 1);
-        case 26: JUMP_TO(label_L819545304, 1);
-        case 27: JUMP_TO(label_L819545304, 1);
-        case 28: JUMP_TO(label_L819545304, 1);
-        case 29: JUMP_TO(label_L819545304, 1);
-        case 30: JUMP_TO(label_L819545304, 1);
-        case 31: JUMP_TO(label_L819545304, 1);
-        case 32: JUMP_TO(label_L477541118, 1);
-        case 33: JUMP_TO(label_L819545304, 1);
-        case 34: JUMP_TO(label_L2141341498, 1);
-        case 35: JUMP_TO(label_L819545304, 1);
-        case 36: JUMP_TO(label_L819545304, 1);
-        case 37: JUMP_TO(label_L819545304, 1);
-        case 38: JUMP_TO(label_L819545304, 1);
-        case 39: JUMP_TO(label_L819545304, 1);
-        case 40: JUMP_TO(label_L819545304, 1);
-        case 41: JUMP_TO(label_L819545304, 1);
-        case 42: JUMP_TO(label_L819545304, 1);
-        case 43: JUMP_TO(label_L819545304, 1);
-        case 44: JUMP_TO(label_L1197641827, 1);
-        case 45: JUMP_TO(label_L1030218707, 1);
-        case 46: JUMP_TO(label_L1030218707, 1);
-        case 47: JUMP_TO(label_L819545304, 1);
-        case 48: JUMP_TO(label_L1030218707, 1);
-        case 49: JUMP_TO(label_L1030218707, 1);
-        case 50: JUMP_TO(label_L1030218707, 1);
-        case 51: JUMP_TO(label_L1030218707, 1);
-        case 52: JUMP_TO(label_L1030218707, 1);
-        case 53: JUMP_TO(label_L1030218707, 1);
-        case 54: JUMP_TO(label_L1030218707, 1);
-        case 55: JUMP_TO(label_L1030218707, 1);
-        case 56: JUMP_TO(label_L1030218707, 1);
-        case 57: JUMP_TO(label_L1030218707, 1);
-        case 58: JUMP_TO(label_L1197641827, 1);
-        case 59: JUMP_TO(label_L819545304, 1);
-        case 60: JUMP_TO(label_L819545304, 1);
-        case 61: JUMP_TO(label_L819545304, 1);
-        case 62: JUMP_TO(label_L819545304, 1);
-        case 63: JUMP_TO(label_L819545304, 1);
-        case 64: JUMP_TO(label_L819545304, 1);
-        case 65: JUMP_TO(label_L819545304, 1);
-        case 66: JUMP_TO(label_L819545304, 1);
-        case 67: JUMP_TO(label_L819545304, 1);
-        case 68: JUMP_TO(label_L819545304, 1);
-        case 69: JUMP_TO(label_L1030218707, 1);
-        case 70: JUMP_TO(label_L819545304, 1);
-        case 71: JUMP_TO(label_L819545304, 1);
-        case 72: JUMP_TO(label_L819545304, 1);
-        case 73: JUMP_TO(label_L819545304, 1);
-        case 74: JUMP_TO(label_L819545304, 1);
-        case 75: JUMP_TO(label_L819545304, 1);
-        case 76: JUMP_TO(label_L819545304, 1);
-        case 77: JUMP_TO(label_L819545304, 1);
-        case 78: JUMP_TO(label_L819545304, 1);
-        case 79: JUMP_TO(label_L819545304, 1);
-        case 80: JUMP_TO(label_L819545304, 1);
-        case 81: JUMP_TO(label_L819545304, 1);
-        case 82: JUMP_TO(label_L819545304, 1);
-        case 83: JUMP_TO(label_L819545304, 1);
-        case 84: JUMP_TO(label_L819545304, 1);
-        case 85: JUMP_TO(label_L819545304, 1);
-        case 86: JUMP_TO(label_L819545304, 1);
-        case 87: JUMP_TO(label_L819545304, 1);
-        case 88: JUMP_TO(label_L819545304, 1);
-        case 89: JUMP_TO(label_L819545304, 1);
-        case 90: JUMP_TO(label_L819545304, 1);
-        case 91: JUMP_TO(label_L347035587, 1);
-        case 92: JUMP_TO(label_L819545304, 1);
-        case 93: JUMP_TO(label_L2035894779, 1);
-        case 94: JUMP_TO(label_L819545304, 1);
-        case 95: JUMP_TO(label_L819545304, 1);
-        case 96: JUMP_TO(label_L819545304, 1);
-        case 97: JUMP_TO(label_L819545304, 1);
-        case 98: JUMP_TO(label_L819545304, 1);
-        case 99: JUMP_TO(label_L819545304, 1);
-        case 100: JUMP_TO(label_L1030218707, 1);
-        case 101: JUMP_TO(label_L1030218707, 1);
-        case 102: JUMP_TO(label_L720060219, 1);
-        case 103: JUMP_TO(label_L819545304, 1);
-        case 104: JUMP_TO(label_L819545304, 1);
-        case 105: JUMP_TO(label_L819545304, 1);
-        case 106: JUMP_TO(label_L819545304, 1);
-        case 107: JUMP_TO(label_L819545304, 1);
-        case 108: JUMP_TO(label_L1030218707, 1);
-        case 109: JUMP_TO(label_L819545304, 1);
-        case 110: JUMP_TO(label_L672147662, 1);
-        case 111: JUMP_TO(label_L819545304, 1);
-        case 112: JUMP_TO(label_L819545304, 1);
-        case 113: JUMP_TO(label_L819545304, 1);
-        case 114: JUMP_TO(label_L819545304, 1);
-        case 115: JUMP_TO(label_L819545304, 1);
-        case 116: JUMP_TO(label_L1190097728, 1);
-        case 117: JUMP_TO(label_L819545304, 1);
-        case 118: JUMP_TO(label_L819545304, 1);
-        case 119: JUMP_TO(label_L819545304, 1);
-        case 120: JUMP_TO(label_L1030218707, 1);
-        case 121: JUMP_TO(label_L819545304, 1);
-        case 122: JUMP_TO(label_L819545304, 1);
-        case 123: JUMP_TO(label_L1976233207, 1);
-        case 124: JUMP_TO(label_L819545304, 1);
-        case 125: JUMP_TO(label_L103483282, 1);
-        default: JUMP_TO(label_L819545304, 1);
+        case 9: JUMP_TO(label_L476152469, 1);
+        case 10: JUMP_TO(label_L476152469, 1);
+        case 11: JUMP_TO(label_L317794116, 1);
+        case 12: JUMP_TO(label_L317794116, 1);
+        case 13: JUMP_TO(label_L476152469, 1);
+        case 14: JUMP_TO(label_L317794116, 1);
+        case 15: JUMP_TO(label_L317794116, 1);
+        case 16: JUMP_TO(label_L317794116, 1);
+        case 17: JUMP_TO(label_L317794116, 1);
+        case 18: JUMP_TO(label_L317794116, 1);
+        case 19: JUMP_TO(label_L317794116, 1);
+        case 20: JUMP_TO(label_L317794116, 1);
+        case 21: JUMP_TO(label_L317794116, 1);
+        case 22: JUMP_TO(label_L317794116, 1);
+        case 23: JUMP_TO(label_L317794116, 1);
+        case 24: JUMP_TO(label_L317794116, 1);
+        case 25: JUMP_TO(label_L317794116, 1);
+        case 26: JUMP_TO(label_L317794116, 1);
+        case 27: JUMP_TO(label_L317794116, 1);
+        case 28: JUMP_TO(label_L317794116, 1);
+        case 29: JUMP_TO(label_L317794116, 1);
+        case 30: JUMP_TO(label_L317794116, 1);
+        case 31: JUMP_TO(label_L317794116, 1);
+        case 32: JUMP_TO(label_L476152469, 1);
+        case 33: JUMP_TO(label_L317794116, 1);
+        case 34: JUMP_TO(label_L877317123, 1);
+        case 35: JUMP_TO(label_L317794116, 1);
+        case 36: JUMP_TO(label_L317794116, 1);
+        case 37: JUMP_TO(label_L317794116, 1);
+        case 38: JUMP_TO(label_L317794116, 1);
+        case 39: JUMP_TO(label_L317794116, 1);
+        case 40: JUMP_TO(label_L317794116, 1);
+        case 41: JUMP_TO(label_L317794116, 1);
+        case 42: JUMP_TO(label_L317794116, 1);
+        case 43: JUMP_TO(label_L317794116, 1);
+        case 44: JUMP_TO(label_L1357570394, 1);
+        case 45: JUMP_TO(label_L1270490884, 1);
+        case 46: JUMP_TO(label_L1270490884, 1);
+        case 47: JUMP_TO(label_L317794116, 1);
+        case 48: JUMP_TO(label_L1270490884, 1);
+        case 49: JUMP_TO(label_L1270490884, 1);
+        case 50: JUMP_TO(label_L1270490884, 1);
+        case 51: JUMP_TO(label_L1270490884, 1);
+        case 52: JUMP_TO(label_L1270490884, 1);
+        case 53: JUMP_TO(label_L1270490884, 1);
+        case 54: JUMP_TO(label_L1270490884, 1);
+        case 55: JUMP_TO(label_L1270490884, 1);
+        case 56: JUMP_TO(label_L1270490884, 1);
+        case 57: JUMP_TO(label_L1270490884, 1);
+        case 58: JUMP_TO(label_L1357570394, 1);
+        case 59: JUMP_TO(label_L317794116, 1);
+        case 60: JUMP_TO(label_L317794116, 1);
+        case 61: JUMP_TO(label_L317794116, 1);
+        case 62: JUMP_TO(label_L317794116, 1);
+        case 63: JUMP_TO(label_L317794116, 1);
+        case 64: JUMP_TO(label_L317794116, 1);
+        case 65: JUMP_TO(label_L317794116, 1);
+        case 66: JUMP_TO(label_L317794116, 1);
+        case 67: JUMP_TO(label_L317794116, 1);
+        case 68: JUMP_TO(label_L317794116, 1);
+        case 69: JUMP_TO(label_L1270490884, 1);
+        case 70: JUMP_TO(label_L317794116, 1);
+        case 71: JUMP_TO(label_L317794116, 1);
+        case 72: JUMP_TO(label_L317794116, 1);
+        case 73: JUMP_TO(label_L317794116, 1);
+        case 74: JUMP_TO(label_L317794116, 1);
+        case 75: JUMP_TO(label_L317794116, 1);
+        case 76: JUMP_TO(label_L317794116, 1);
+        case 77: JUMP_TO(label_L317794116, 1);
+        case 78: JUMP_TO(label_L317794116, 1);
+        case 79: JUMP_TO(label_L317794116, 1);
+        case 80: JUMP_TO(label_L317794116, 1);
+        case 81: JUMP_TO(label_L317794116, 1);
+        case 82: JUMP_TO(label_L317794116, 1);
+        case 83: JUMP_TO(label_L317794116, 1);
+        case 84: JUMP_TO(label_L317794116, 1);
+        case 85: JUMP_TO(label_L317794116, 1);
+        case 86: JUMP_TO(label_L317794116, 1);
+        case 87: JUMP_TO(label_L317794116, 1);
+        case 88: JUMP_TO(label_L317794116, 1);
+        case 89: JUMP_TO(label_L317794116, 1);
+        case 90: JUMP_TO(label_L317794116, 1);
+        case 91: JUMP_TO(label_L1532977612, 1);
+        case 92: JUMP_TO(label_L317794116, 1);
+        case 93: JUMP_TO(label_L957846640, 1);
+        case 94: JUMP_TO(label_L317794116, 1);
+        case 95: JUMP_TO(label_L317794116, 1);
+        case 96: JUMP_TO(label_L317794116, 1);
+        case 97: JUMP_TO(label_L317794116, 1);
+        case 98: JUMP_TO(label_L317794116, 1);
+        case 99: JUMP_TO(label_L317794116, 1);
+        case 100: JUMP_TO(label_L1270490884, 1);
+        case 101: JUMP_TO(label_L1270490884, 1);
+        case 102: JUMP_TO(label_L1055932985, 1);
+        case 103: JUMP_TO(label_L317794116, 1);
+        case 104: JUMP_TO(label_L317794116, 1);
+        case 105: JUMP_TO(label_L317794116, 1);
+        case 106: JUMP_TO(label_L317794116, 1);
+        case 107: JUMP_TO(label_L317794116, 1);
+        case 108: JUMP_TO(label_L1270490884, 1);
+        case 109: JUMP_TO(label_L317794116, 1);
+        case 110: JUMP_TO(label_L610844900, 1);
+        case 111: JUMP_TO(label_L317794116, 1);
+        case 112: JUMP_TO(label_L317794116, 1);
+        case 113: JUMP_TO(label_L317794116, 1);
+        case 114: JUMP_TO(label_L317794116, 1);
+        case 115: JUMP_TO(label_L317794116, 1);
+        case 116: JUMP_TO(label_L77173924, 1);
+        case 117: JUMP_TO(label_L317794116, 1);
+        case 118: JUMP_TO(label_L317794116, 1);
+        case 119: JUMP_TO(label_L317794116, 1);
+        case 120: JUMP_TO(label_L1270490884, 1);
+        case 121: JUMP_TO(label_L317794116, 1);
+        case 122: JUMP_TO(label_L317794116, 1);
+        case 123: JUMP_TO(label_L27796563, 1);
+        case 124: JUMP_TO(label_L317794116, 1);
+        case 125: JUMP_TO(label_L1039486933, 1);
+        default: JUMP_TO(label_L317794116, 1);
     }
 
-label_L672147662:
+label_L610844900:
     __CN1_DEBUG_INFO(336);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     PUSH_INT(tmpResult); }
@@ -719,41 +719,41 @@ label_L672147662:
     (*SP).data.i = ilocals_12_; 
     SP++;
     PUSH_INT(117);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L802425281, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1610143599, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_13_; 
     SP++;
     PUSH_INT(108);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L802425281, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1610143599, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_14_; 
     SP++;
     PUSH_INT(108);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L802425281, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L1610143599, 1);
     __CN1_DEBUG_INFO(341);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(342);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L712723382, 0);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1797553910, 0);
     __CN1_DEBUG_INFO(343);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(344);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
-locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L712723382, 0);
+locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L1797553910, 0);
 
-label_L802425281:
+label_L1610143599:
     __CN1_DEBUG_INFO(348);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7532));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7533));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_4_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7533));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_5_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -764,9 +764,9 @@ label_L802425281:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     com_codename1_io_Log_p___java_lang_String(threadStateData, SP[-1].data.o);     SP-= 1;
     __CN1_DEBUG_INFO(351);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1190097728:
+label_L77173924:
     __CN1_DEBUG_INFO(354);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     PUSH_INT(tmpResult); }
@@ -787,50 +787,50 @@ label_L1190097728:
     (*SP).data.i = ilocals_15_; 
     SP++;
     PUSH_INT(114);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L303831560, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L395068544, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_16_; 
     SP++;
     PUSH_INT(117);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L303831560, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L395068544, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_17_; 
     SP++;
     PUSH_INT(101);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L303831560, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L395068544, 1);
     __CN1_DEBUG_INFO(358);
-    if (/* CustomInvoke */com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L806609384, 1);
+    if (/* CustomInvoke */com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1464230046, 1);
     __CN1_DEBUG_INFO(359);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_booleanToken___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    JUMP_TO(label_L1851422703, 1);
+    JUMP_TO(label_L1088034372, 1);
 
-label_L806609384:
+label_L1464230046:
     __CN1_DEBUG_INFO(361);
-    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(207)); 
+    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(208)); 
 
-label_L1851422703:
+label_L1088034372:
     __CN1_DEBUG_INFO(363);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L712723382, 0);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1797553910, 0);
     __CN1_DEBUG_INFO(364);
-    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(207)); 
+    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(208)); 
     __CN1_DEBUG_INFO(365);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
-locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L712723382, 0);
+locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L1797553910, 0);
 
-label_L303831560:
+label_L395068544:
     __CN1_DEBUG_INFO(369);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7535));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7536));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_4_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7533));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_5_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -841,17 +841,17 @@ label_L303831560:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     com_codename1_io_Log_p___java_lang_String(threadStateData, SP[-1].data.o);     SP-= 1;
     __CN1_DEBUG_INFO(372);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L720060219:
+label_L1055932985:
     __CN1_DEBUG_INFO(376);
-    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1641017828, 1);
+    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1501618847, 1);
     __CN1_DEBUG_INFO(377);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, 102); 
     __CN1_DEBUG_INFO(378);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1641017828:
+label_L1501618847:
     __CN1_DEBUG_INFO(381);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_JSONParser_ReaderClass_read___java_io_Reader_R_int(threadStateData, locals[3].data.o, locals[0].data.o);
     PUSH_INT(tmpResult); }
@@ -877,55 +877,55 @@ label_L1641017828:
     (*SP).data.i = ilocals_18_; 
     SP++;
     PUSH_INT(97);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L334592911, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L752686443, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_19_; 
     SP++;
     PUSH_INT(108);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L334592911, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L752686443, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_20_; 
     SP++;
     PUSH_INT(115);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L334592911, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L752686443, 1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_21_; 
     SP++;
     PUSH_INT(101);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L334592911, 1);
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ JUMP_TO(label_L752686443, 1);
     __CN1_DEBUG_INFO(386);
-    if (/* CustomInvoke */com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1019397304, 1);
+    if (/* CustomInvoke */com_codename1_io_JSONParser_useBoolean___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1216070398, 1);
     __CN1_DEBUG_INFO(387);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_booleanToken___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
-    JUMP_TO(label_L18491840, 1);
+    JUMP_TO(label_L1476625795, 1);
 
-label_L1019397304:
+label_L1216070398:
     __CN1_DEBUG_INFO(389);
-    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(264)); 
+    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_stringToken___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(265)); 
 
-label_L18491840:
+label_L1476625795:
     __CN1_DEBUG_INFO(391);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L712723382, 0);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1797553910, 0);
     __CN1_DEBUG_INFO(392);
-    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(264)); 
+    /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_keyValue___java_lang_String_java_lang_String(threadStateData, locals[1].data.o, locals[9].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(265)); 
     __CN1_DEBUG_INFO(393);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
-locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L712723382, 0);
+locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L1797553910, 0);
 
-label_L334592911:
+label_L752686443:
     __CN1_DEBUG_INFO(397);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7536));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7537));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_4_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7533));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_5_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -936,21 +936,21 @@ label_L334592911:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     com_codename1_io_Log_p___java_lang_String(threadStateData, SP[-1].data.o);     SP-= 1;
     __CN1_DEBUG_INFO(400);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1976233207:
+label_L27796563:
     __CN1_DEBUG_INFO(402);
-    if (locals[9].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L532986070, 1);
+    if (locals[9].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L105451526, 1);
     __CN1_DEBUG_INFO(403);
-    if (virtual_com_codename1_io_JSONParser_KeyStack_size___R_int(threadStateData, locals[7].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L124880290, 1);
+    if (virtual_com_codename1_io_JSONParser_KeyStack_size___R_int(threadStateData, locals[7].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1123757033, 1);
     __CN1_DEBUG_INFO(404);
-    /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(7537);
-locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L532986070, 1);
+    /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(7538);
+locals[9].type=CN1_TYPE_OBJECT;    JUMP_TO(label_L105451526, 1);
 
-label_L124880290:
+label_L1123757033:
     __CN1_DEBUG_INFO(406);
     /* VarOp.assignFrom */ locals[9].data.o = virtual_com_codename1_io_JSONParser_KeyStack_peek___R_java_lang_String(threadStateData, locals[7].data.o);locals[9].type=CN1_TYPE_OBJECT;
-label_L532986070:
+label_L105451526:
     __CN1_DEBUG_INFO(409);
     /* CustomInvoke */virtual_com_codename1_io_JSONParser_KeyStack_push___java_lang_String(threadStateData, locals[7].data.o, locals[9].data.o); 
     __CN1_DEBUG_INFO(410);
@@ -958,38 +958,38 @@ label_L532986070:
     __CN1_DEBUG_INFO(411);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(412);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L103483282:
+label_L1039486933:
     __CN1_DEBUG_INFO(414);
-    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L767321840, 1);
+    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1417768314, 1);
 
-label_L1450198098:
- tryBlockOffsetL1450198098cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1450198098cn1_class_id_java_lang_NumberFormatException2);
-    restoreToL1450198098cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
+label_L1853791403:
+ tryBlockOffsetL1853791403cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1853791403cn1_class_id_java_lang_NumberFormatException2);
+    restoreToL1853791403cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(416);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(417);
-    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L2100829870, 2);
+    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L275432948, 2);
     __CN1_DEBUG_INFO(418);
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L1199573975, 2);
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L1592602335, 2);
     __CN1_DEBUG_INFO(419);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L1280821776, 2);
+    JUMP_TO(label_L1163059848, 2);
 
-label_L1199573975:
+label_L1592602335:
     __CN1_DEBUG_INFO(421);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_longToken___long(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Long_parseLong___java_lang_String_R_long(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L1280821776, 2);
+    JUMP_TO(label_L1163059848, 2);
 
-label_L2100829870:
+label_L275432948:
     __CN1_DEBUG_INFO(424);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
 
-label_L1280821776:
+label_L1163059848:
     __CN1_DEBUG_INFO(426);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L34782860, 1);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L443006437, 1);
     __CN1_DEBUG_INFO(427);
     BC_ALOAD(1);
     BC_ALOAD(9);
@@ -1001,26 +1001,26 @@ label_L1280821776:
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(429);
     /* CustomInvoke */virtual_java_lang_StringBuilder_setLength___int(threadStateData, locals[6].data.o, 0 /* ICONST_0 */); 
 
-label_L34782860:
+label_L443006437:
 END_TRY(1);    __CN1_DEBUG_INFO(435);
-    JUMP_TO(label_L767321840, 1);
+    JUMP_TO(label_L1417768314, 1);
 
-label_L1934114123:
+label_L451480761:
     __CN1_DEBUG_INFO(432);
     BC_ASTORE(22);
     __CN1_DEBUG_INFO(433);
     /* CustomInvoke */com_codename1_io_Log_e___java_lang_Throwable(threadStateData, locals[22].data.o); 
 
-label_L767321840:
+label_L1417768314:
     __CN1_DEBUG_INFO(437);
     /* VarOp.assignFrom */ locals[8].data.o = virtual_com_codename1_io_JSONParser_KeyStack_pop___R_java_lang_String(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(438);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_endBlock___java_lang_String(threadStateData, locals[1].data.o, locals[8].data.o); 
     __CN1_DEBUG_INFO(439);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(440);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L347035587:
+label_L1532977612:
     __CN1_DEBUG_INFO(442);
     /* CustomInvoke */virtual_com_codename1_io_JSONParser_KeyStack_push___java_lang_String(threadStateData, locals[7].data.o, locals[9].data.o); 
     __CN1_DEBUG_INFO(444);
@@ -1028,38 +1028,38 @@ label_L347035587:
     __CN1_DEBUG_INFO(445);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(446);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L2035894779:
+label_L957846640:
     __CN1_DEBUG_INFO(448);
-    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1071783182, 1);
+    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1550093880, 1);
 
-label_L1796504623:
- tryBlockOffsetL1796504623cn1_class_id_java_lang_NumberFormatException3 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1796504623cn1_class_id_java_lang_NumberFormatException3);
-    restoreToL1796504623cn1_class_id_java_lang_NumberFormatException3 = threadStateData->threadObjectStackOffset;
+label_L252289691:
+ tryBlockOffsetL252289691cn1_class_id_java_lang_NumberFormatException3 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L252289691cn1_class_id_java_lang_NumberFormatException3);
+    restoreToL252289691cn1_class_id_java_lang_NumberFormatException3 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(450);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(451);
-    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L2021357462, 2);
+    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1808324797, 2);
     __CN1_DEBUG_INFO(452);
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L168703427, 2);
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L962339310, 2);
     __CN1_DEBUG_INFO(453);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L494865616, 2);
+    JUMP_TO(label_L510868405, 2);
 
-label_L168703427:
+label_L962339310:
     __CN1_DEBUG_INFO(455);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_longToken___long(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Long_parseLong___java_lang_String_R_long(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L494865616, 2);
+    JUMP_TO(label_L510868405, 2);
 
-label_L2021357462:
+label_L1808324797:
     __CN1_DEBUG_INFO(458);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
 
-label_L494865616:
+label_L510868405:
     __CN1_DEBUG_INFO(460);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L844789788, 1);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1721660173, 1);
     __CN1_DEBUG_INFO(461);
     BC_ALOAD(1);
     BC_ALOAD(9);
@@ -1069,15 +1069,15 @@ label_L494865616:
     __CN1_DEBUG_INFO(462);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;
-label_L844789788:
+label_L1721660173:
 END_TRY(1);    __CN1_DEBUG_INFO(466);
-    JUMP_TO(label_L1071783182, 1);
+    JUMP_TO(label_L1550093880, 1);
 
-label_L144055893:
+label_L996328734:
     __CN1_DEBUG_INFO(464);
     BC_ASTORE(22);
 
-label_L1071783182:
+label_L1550093880:
     __CN1_DEBUG_INFO(468);
     /* CustomInvoke */virtual_java_lang_StringBuilder_setLength___int(threadStateData, locals[6].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(470);
@@ -1086,48 +1086,48 @@ label_L1071783182:
     __CN1_DEBUG_INFO(472);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(473);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L477541118:
+label_L476152469:
     __CN1_DEBUG_INFO(479);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L2141341498:
+label_L877317123:
     __CN1_DEBUG_INFO(482);
     /* VarOp.assignFrom */     ilocals_2_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(483);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1197641827:
+label_L1357570394:
     __CN1_DEBUG_INFO(486);
-    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L289304070, 1);
+    if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1262371411, 1);
 
-label_L1475235815:
- tryBlockOffsetL1475235815cn1_class_id_java_lang_NumberFormatException4 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1475235815cn1_class_id_java_lang_NumberFormatException4);
-    restoreToL1475235815cn1_class_id_java_lang_NumberFormatException4 = threadStateData->threadObjectStackOffset;
+label_L1793912921:
+ tryBlockOffsetL1793912921cn1_class_id_java_lang_NumberFormatException4 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1793912921cn1_class_id_java_lang_NumberFormatException4);
+    restoreToL1793912921cn1_class_id_java_lang_NumberFormatException4 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(488);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(489);
-    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1793450447, 2);
+    if (/* CustomInvoke */com_codename1_io_JSONParser_useLongs___com_codename1_io_JSONParseCallback_R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L330652043, 2);
     __CN1_DEBUG_INFO(490);
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L261716431, 2);
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[22].data.o, 46)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ JUMP_TO(label_L337405659, 2);
     __CN1_DEBUG_INFO(491);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L1851947704, 2);
+    JUMP_TO(label_L26179918, 2);
 
-label_L261716431:
+label_L337405659:
     __CN1_DEBUG_INFO(493);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_longToken___long(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Long_parseLong___java_lang_String_R_long(threadStateData, locals[22].data.o)); 
-    JUMP_TO(label_L1851947704, 2);
+    JUMP_TO(label_L26179918, 2);
 
-label_L1793450447:
+label_L330652043:
     __CN1_DEBUG_INFO(496);
     /* CustomInvoke */virtual_com_codename1_io_JSONParseCallback_numericToken___double(threadStateData, locals[1].data.o, /* CustomInvoke */java_lang_Double_parseDouble___java_lang_String_R_double(threadStateData, locals[22].data.o)); 
 
-label_L1851947704:
+label_L26179918:
     __CN1_DEBUG_INFO(498);
-    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L214853420, 1);
+    if (locals[9].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L949657590, 1);
     __CN1_DEBUG_INFO(499);
     BC_ALOAD(1);
     BC_ALOAD(9);
@@ -1137,35 +1137,35 @@ label_L1851947704:
     __CN1_DEBUG_INFO(500);
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;    locals[9].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[9].type=CN1_TYPE_OBJECT;
-label_L214853420:
+label_L949657590:
 END_TRY(1);    __CN1_DEBUG_INFO(504);
-    JUMP_TO(label_L289304070, 1);
+    JUMP_TO(label_L1262371411, 1);
 
-label_L1743437314:
+label_L8238713:
     __CN1_DEBUG_INFO(502);
     BC_ASTORE(22);
 
-label_L289304070:
+label_L1262371411:
     __CN1_DEBUG_INFO(506);
     /* CustomInvoke */virtual_java_lang_StringBuilder_setLength___int(threadStateData, locals[6].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(507);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1030218707:
+label_L1270490884:
     __CN1_DEBUG_INFO(525);
     /* CustomInvoke */virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, locals[6].data.o, ilocals_11_); 
     __CN1_DEBUG_INFO(526);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L819545304:
+label_L317794116:
     __CN1_DEBUG_INFO(529);
-    JUMP_TO(label_L712723382, 0);
+    JUMP_TO(label_L1797553910, 0);
 
-label_L1929848645:
+label_L798483422:
 END_TRY(1);    __CN1_DEBUG_INFO(540);
-    JUMP_TO(label_L1231029475, 0);
+    JUMP_TO(label_L22737007, 0);
 
-label_L1100474457:
+label_L2110370842:
     __CN1_DEBUG_INFO(530);
     BC_ASTORE(10);
     __CN1_DEBUG_INFO(531);
@@ -1174,15 +1174,15 @@ label_L1100474457:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7538));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7539));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_4_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7533));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_5_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7534));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7535));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
@@ -1195,7 +1195,7 @@ label_L1100474457:
     __CN1_DEBUG_INFO(539);
     virtual_java_io_Reader_close__(threadStateData, locals[0].data.o); 
 
-label_L1231029475:
+label_L22737007:
     __CN1_DEBUG_INFO(541);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1203,7 +1203,7 @@ label_L1231029475:
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_parseJSON___java_io_Reader_R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7516, 7539);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7517, 7540);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(561);
@@ -1225,7 +1225,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_parseJSON___java_io_Reader_R_java_util_M
     __CN1_DEBUG_INFO(564);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(565);
-    if (get_field_com_codename1_io_JSONParser_strict(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L234048257;
+    if (get_field_com_codename1_io_JSONParser_strict(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1988584481;
     __CN1_DEBUG_INFO(566);
     PUSH_POINTER(__NEW_com_codename1_io_CharArrayReader(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1237,7 +1237,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_parseJSON___java_io_Reader_R_java_util_M
     com_codename1_io_CharArrayReader___INIT_____char_1ARRAY(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(1);
 
-label_L234048257:
+label_L1988584481:
     __CN1_DEBUG_INFO(568);
     /* CustomInvoke */com_codename1_io_JSONParser_parse___java_io_Reader_com_codename1_io_JSONParseCallback(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(569);
@@ -1250,7 +1250,7 @@ label_L234048257:
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_parse___java_io_Reader_R_java_util_Hashtable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7516, 1072);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7517, 1073);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(581);
@@ -1272,7 +1272,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_parse___java_io_Reader_R_java_util_Hasht
     __CN1_DEBUG_INFO(584);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(585);
-    if (get_field_com_codename1_io_JSONParser_strict(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1882802109;
+    if (get_field_com_codename1_io_JSONParser_strict(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L205010614;
     __CN1_DEBUG_INFO(586);
     /* CustomInvoke */PUSH_OBJ(com_codename1_io_Util_readToString___java_io_Reader_R_java_lang_String(threadStateData, locals[1].data.o));
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONSanitizer_sanitize___java_lang_String_R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -1286,7 +1286,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_parse___java_io_Reader_R_java_util_Hasht
     com_codename1_io_CharArrayReader___INIT_____char_1ARRAY(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(1);
 
-label_L1882802109:
+label_L205010614:
     __CN1_DEBUG_INFO(589);
     /* CustomInvoke */com_codename1_io_JSONParser_parse___java_io_Reader_com_codename1_io_JSONParseCallback(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(590);
@@ -1299,9 +1299,9 @@ label_L1882802109:
 
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_isStackHash___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7516, 7540);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7517, 7541);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(594);
-    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L254917009;
+    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1613856232;
     PUSH_POINTER(get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
     __CN1_DEBUG_INFO(595);
@@ -1313,21 +1313,21 @@ JAVA_BOOLEAN com_codename1_io_JSONParser_isStackHash___R_boolean(CODENAME_ONE_TH
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_INSTANCEOF(cn1_class_id_java_util_Map);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L254917009;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1613856232;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1186984840;
+    goto label_L910041097;
 
-label_L254917009:
+label_L1613856232:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1186984840:
+label_L910041097:
     __CN1_DEBUG_INFO(594);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_getStackHash___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7516, 7541);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7517, 7542);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(599);
     PUSH_POINTER(get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
@@ -1343,7 +1343,7 @@ JAVA_OBJECT com_codename1_io_JSONParser_getStackHash___R_java_util_Map(CODENAME_
 
 
 JAVA_OBJECT com_codename1_io_JSONParser_getStackVec___R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7516, 7542);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7517, 7543);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(603);
     PUSH_POINTER(get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject));
@@ -1359,54 +1359,54 @@ JAVA_OBJECT com_codename1_io_JSONParser_getStackVec___R_java_util_List(CODENAME_
 
 
 JAVA_VOID com_codename1_io_JSONParser_startBlock___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7516, 7543);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7517, 7544);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(610);
-    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1367544605;
+    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L2069232771;
     __CN1_DEBUG_INFO(611);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject), get_field_com_codename1_io_JSONParser_state(__cn1ThisObject)); 
-    goto label_L1799201343;
+    goto label_L907409625;
 
-label_L1367544605:
+label_L2069232771:
     __CN1_DEBUG_INFO(614);
-    if (get_field_com_codename1_io_JSONParser_modern(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1774347256;
+    if (get_field_com_codename1_io_JSONParser_modern(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1562381774;
     __CN1_DEBUG_INFO(615);
     PUSH_POINTER(__NEW_java_util_LinkedHashMap(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_LinkedHashMap___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
-    goto label_L1348009723;
+    goto label_L442060811;
 
-label_L1774347256:
+label_L1562381774:
     __CN1_DEBUG_INFO(617);
     PUSH_POINTER(__NEW_java_util_Hashtable(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Hashtable___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L1348009723:
+label_L442060811:
     __CN1_DEBUG_INFO(619);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L428475414;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1312556583;
     __CN1_DEBUG_INFO(620);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-1].data.o, get_field_com_codename1_io_JSONParser_currentKey(__cn1ThisObject), locals[2].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(621);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L522219842;
+    goto label_L1475804169;
 
-label_L428475414:
+label_L1312556583:
     __CN1_DEBUG_INFO(623);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, locals[2].data.o);     SP -= 1;
 
-label_L522219842:
+label_L1475804169:
     __CN1_DEBUG_INFO(625);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject), locals[2].data.o); 
 
-label_L1799201343:
+label_L907409625:
     __CN1_DEBUG_INFO(627);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1414,7 +1414,7 @@ label_L1799201343:
 
 
 JAVA_VOID com_codename1_io_JSONParser_endBlock___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7516, 7544);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7517, 7545);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(633);
@@ -1444,51 +1444,51 @@ JAVA_VOID com_codename1_io_JSONParser_setStrict___boolean(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID com_codename1_io_JSONParser_startArray___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7516, 7547);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7517, 7548);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(685);
-    if (get_field_com_codename1_io_JSONParser_modern(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1703353597;
+    if (get_field_com_codename1_io_JSONParser_modern(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L182834500;
     __CN1_DEBUG_INFO(686);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_ArrayList___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
-    goto label_L1916766608;
+    goto label_L1525421339;
 
-label_L1703353597:
+label_L182834500:
     __CN1_DEBUG_INFO(688);
     PUSH_POINTER(__NEW_java_util_Vector(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Vector___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L1916766608:
+label_L1525421339:
     __CN1_DEBUG_INFO(692);
-    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1004308853;
+    if (virtual_java_util_List_size___R_int(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1959734623;
     __CN1_DEBUG_INFO(693);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject), get_field_com_codename1_io_JSONParser_state(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(694);
-    set_field_com_codename1_io_JSONParser_currentKey(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(7537), __cn1ThisObject);
+    set_field_com_codename1_io_JSONParser_currentKey(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(7538), __cn1ThisObject);
 
-label_L1004308853:
+label_L1959734623:
     __CN1_DEBUG_INFO(696);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L669668653;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L347701627;
     __CN1_DEBUG_INFO(697);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-1].data.o, get_field_com_codename1_io_JSONParser_currentKey(__cn1ThisObject), locals[2].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(698);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L2052572633;
+    goto label_L810695005;
 
-label_L669668653:
+label_L347701627:
     __CN1_DEBUG_INFO(700);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, locals[2].data.o);     SP -= 1;
 
-label_L2052572633:
+label_L810695005:
     __CN1_DEBUG_INFO(702);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_JSONParser_parseStack(__cn1ThisObject), locals[2].data.o); 
     __CN1_DEBUG_INFO(703);
@@ -1498,7 +1498,7 @@ label_L2052572633:
 
 
 JAVA_VOID com_codename1_io_JSONParser_endArray___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7516, 7548);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7517, 7549);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(709);
@@ -1518,40 +1518,40 @@ JAVA_VOID com_codename1_io_JSONParser_endArray___java_lang_String(CODENAME_ONE_T
 
 
 JAVA_VOID com_codename1_io_JSONParser_stringToken___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7516, 7549);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7517, 7550);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(716);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1948950538;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L170698369;
     __CN1_DEBUG_INFO(717);
-    if (get_field_com_codename1_io_JSONParser_currentKey(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L736233691;
+    if (get_field_com_codename1_io_JSONParser_currentKey(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L126142286;
     __CN1_DEBUG_INFO(718);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, locals[1].data.o, __cn1ThisObject);
-    goto label_L1590977463;
+    goto label_L1609448604;
 
-label_L736233691:
+label_L126142286:
     __CN1_DEBUG_INFO(720);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L451480761;
-    if (virtual_com_codename1_io_JSONParser_isIncludeNullsInstance___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L996328734;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2119663341;
+    if (virtual_com_codename1_io_JSONParser_isIncludeNullsInstance___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L295749384;
 
-label_L451480761:
+label_L2119663341:
     __CN1_DEBUG_INFO(721);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-1].data.o, get_field_com_codename1_io_JSONParser_currentKey(__cn1ThisObject), locals[1].data.o);     SP -= 1;
 
-label_L996328734:
+label_L295749384:
     __CN1_DEBUG_INFO(723);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L1590977463;
+    goto label_L1609448604;
 
-label_L1948950538:
+label_L170698369:
     __CN1_DEBUG_INFO(726);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L1590977463:
+label_L1609448604:
     __CN1_DEBUG_INFO(728);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1560,10 +1560,10 @@ label_L1590977463:
 
 JAVA_VOID com_codename1_io_JSONParser_numericToken___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* tok */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7516, 7550);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7517, 7551);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(734);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L8238713;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L817880261;
     __CN1_DEBUG_INFO(735);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1577,9 +1577,9 @@ JAVA_VOID com_codename1_io_JSONParser_numericToken___double(CODENAME_ONE_THREAD_
     SP--; /* POP */
     __CN1_DEBUG_INFO(736);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L2110370842;
+    goto label_L513477778;
 
-label_L8238713:
+label_L817880261:
     __CN1_DEBUG_INFO(738);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1591,7 +1591,7 @@ label_L8238713:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L2110370842:
+label_L513477778:
     __CN1_DEBUG_INFO(740);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1600,10 +1600,10 @@ label_L2110370842:
 
 JAVA_VOID com_codename1_io_JSONParser_longToken___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* tok */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7516, 7551);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 7517, 7552);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(746);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L798483422;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1543420346;
     __CN1_DEBUG_INFO(747);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1617,9 +1617,9 @@ JAVA_VOID com_codename1_io_JSONParser_longToken___long(CODENAME_ONE_THREAD_STATE
     SP--; /* POP */
     __CN1_DEBUG_INFO(748);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L49322247;
+    goto label_L1290911050;
 
-label_L798483422:
+label_L1543420346:
     __CN1_DEBUG_INFO(750);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1631,7 +1631,7 @@ label_L798483422:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L49322247:
+label_L1290911050:
     __CN1_DEBUG_INFO(752);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1640,10 +1640,10 @@ label_L49322247:
 
 JAVA_VOID com_codename1_io_JSONParser_booleanToken___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* tok */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7516, 7552);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7517, 7553);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(758);
-    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1867721054;
+    if (com_codename1_io_JSONParser_isStackHash___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L40245733;
     __CN1_DEBUG_INFO(759);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackHash___R_java_util_Map(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1655,9 +1655,9 @@ JAVA_VOID com_codename1_io_JSONParser_booleanToken___boolean(CODENAME_ONE_THREAD
     SP--; /* POP */
     __CN1_DEBUG_INFO(760);
     set_field_com_codename1_io_JSONParser_currentKey(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L1602890186;
+    goto label_L1147103911;
 
-label_L1867721054:
+label_L40245733:
     __CN1_DEBUG_INFO(762);
     { JAVA_OBJECT tmpResult = com_codename1_io_JSONParser_getStackVec___R_java_util_List(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1667,7 +1667,7 @@ label_L1867721054:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L1602890186:
+label_L1147103911:
     __CN1_DEBUG_INFO(764);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1680,7 +1680,7 @@ JAVA_VOID com_codename1_io_JSONParser_keyValue___java_lang_String_java_lang_Stri
 
 
 JAVA_BOOLEAN com_codename1_io_JSONParser_isAlive___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7516, 1162);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7517, 1163);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(776);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }

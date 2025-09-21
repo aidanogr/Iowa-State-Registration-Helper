@@ -66,7 +66,7 @@ java_util_LinkedList___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_LinkedList___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 7338, 200);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 7339, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_AbstractSequentialList___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_util_LinkedList_size(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     BC_ALOAD(0);
@@ -83,7 +83,7 @@ JAVA_VOID java_util_LinkedList___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_VOID java_util_LinkedList___INIT_____java_util_Collection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7338, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7339, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_LinkedList___INIT____(threadStateData, __cn1ThisObject); 
@@ -95,7 +95,7 @@ JAVA_VOID java_util_LinkedList___INIT_____java_util_Collection(CODENAME_ONE_THRE
 
 JAVA_VOID java_util_LinkedList_add___int_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 7338, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 7339, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -148,7 +148,7 @@ label_L79644918:
 
 
 JAVA_BOOLEAN java_util_LinkedList_add___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7338, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7339, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = java_util_LinkedList_addLastImpl___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -158,7 +158,7 @@ JAVA_BOOLEAN java_util_LinkedList_add___java_lang_Object_R_boolean(CODENAME_ONE_
 
 
 JAVA_BOOLEAN java_util_LinkedList_addLastImpl___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7338, 7339);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7339, 7340);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;locals[2].data.o = get_field_java_util_LinkedList_Link_previous(get_field_java_util_LinkedList_voidLink(__cn1ThisObject));
@@ -178,7 +178,7 @@ locals[2].type=CN1_TYPE_OBJECT;    PUSH_POINTER(__NEW_java_util_LinkedList_Link(
 JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 7338, 1229);
+    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 7339, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -259,7 +259,7 @@ label_L176342513:
 
 JAVA_BOOLEAN java_util_LinkedList_addAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 7338, 1229);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 7339, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ ilocals_2_ = virtual_java_util_Collection_size___R_int(threadStateData, locals[1].data.o);
@@ -320,7 +320,7 @@ JAVA_VOID java_util_LinkedList_addLast___java_lang_Object(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID java_util_LinkedList_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7338, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7339, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_size(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L2143582219;
     set_field_java_util_LinkedList_size(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     set_field_java_util_LinkedList_Link_next(threadStateData, get_field_java_util_LinkedList_voidLink(__cn1ThisObject), get_field_java_util_LinkedList_voidLink(__cn1ThisObject));
@@ -334,7 +334,7 @@ label_L2143582219:
 
 
 JAVA_BOOLEAN java_util_LinkedList_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7338, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7339, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;locals[2].data.o = get_field_java_util_LinkedList_Link_next(get_field_java_util_LinkedList_voidLink(__cn1ThisObject));
@@ -366,7 +366,7 @@ label_L1221027335:
 
 JAVA_OBJECT java_util_LinkedList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7338, 612);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7339, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L409195262;
     if (ilocals_1_>=get_field_java_util_LinkedList_size(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L409195262;
@@ -425,7 +425,7 @@ JAVA_OBJECT java_util_LinkedList_getLast___R_java_lang_Object(CODENAME_ONE_THREA
 
 JAVA_INT java_util_LinkedList_indexOf___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7338, 884);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7339, 885);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
@@ -472,7 +472,7 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object_R_int(CODENAME_ONE_
 
 
 JAVA_OBJECT java_util_LinkedList_listIterator___int_R_java_util_ListIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7338, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7339, 1233);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_util_LinkedList_LinkIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -484,7 +484,7 @@ JAVA_OBJECT java_util_LinkedList_listIterator___int_R_java_util_ListIterator(COD
 
 JAVA_OBJECT java_util_LinkedList_remove___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7338, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7339, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L1869039062;
     if (ilocals_1_>=get_field_java_util_LinkedList_size(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1869039062;
@@ -533,7 +533,7 @@ label_L1869039062:
 
 
 JAVA_BOOLEAN java_util_LinkedList_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7338, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7339, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = java_util_LinkedList_removeFirstOccurrenceImpl___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -543,7 +543,7 @@ JAVA_BOOLEAN java_util_LinkedList_remove___java_lang_Object_R_boolean(CODENAME_O
 
 
 JAVA_OBJECT java_util_LinkedList_removeFirst___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 6345);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7339, 6346);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = java_util_LinkedList_removeFirstImpl___R_java_lang_Object(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -552,7 +552,7 @@ JAVA_OBJECT java_util_LinkedList_removeFirst___R_java_lang_Object(CODENAME_ONE_T
 
 
 JAVA_OBJECT java_util_LinkedList_removeFirstImpl___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7338, 7342);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7339, 7343);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_java_util_LinkedList_Link_next(get_field_java_util_LinkedList_voidLink(__cn1ThisObject));
 locals[1].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==get_field_java_util_LinkedList_voidLink(__cn1ThisObject)) /* IF_ACMPEQ CustomJump */ goto label_L1884155890;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;locals[2].data.o = get_field_java_util_LinkedList_Link_next(locals[1].data.o);
@@ -576,7 +576,7 @@ label_L1884155890:
 
 
 JAVA_OBJECT java_util_LinkedList_removeLast___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 6346);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7339, 6347);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = java_util_LinkedList_removeLastImpl___R_java_lang_Object(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -585,7 +585,7 @@ JAVA_OBJECT java_util_LinkedList_removeLast___R_java_lang_Object(CODENAME_ONE_TH
 
 
 JAVA_OBJECT java_util_LinkedList_removeLastImpl___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7338, 7343);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7339, 7344);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_java_util_LinkedList_Link_previous(get_field_java_util_LinkedList_voidLink(__cn1ThisObject));
 locals[1].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==get_field_java_util_LinkedList_voidLink(__cn1ThisObject)) /* IF_ACMPEQ CustomJump */ goto label_L932582590;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;locals[2].data.o = get_field_java_util_LinkedList_Link_previous(locals[1].data.o);
@@ -664,7 +664,7 @@ JAVA_BOOLEAN java_util_LinkedList_removeLastOccurrence___java_lang_Object_R_bool
 
 
 JAVA_BOOLEAN java_util_LinkedList_removeFirstOccurrenceImpl___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 7338, 7344);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 7339, 7345);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_java_util_LinkedList_LinkIterator(threadStateData)); /* NEW */
@@ -678,7 +678,7 @@ JAVA_BOOLEAN java_util_LinkedList_removeFirstOccurrenceImpl___java_lang_Object_R
 
 
 JAVA_BOOLEAN java_util_LinkedList_removeOneOccurrence___java_lang_Object_java_util_Iterator_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7338, 7345);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7339, 7346);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -708,7 +708,7 @@ label_L1845623216:
 
 JAVA_OBJECT java_util_LinkedList_set___int_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7338, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7339, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -755,7 +755,7 @@ label_L1507118393:
 
 
 JAVA_INT java_util_LinkedList_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7339, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_LinkedList_size(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -767,7 +767,7 @@ JAVA_BOOLEAN java_util_LinkedList_offer___java_lang_Object_R_boolean(CODENAME_ON
 
 
 JAVA_OBJECT java_util_LinkedList_poll___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 6336);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7339, 6337);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_size(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L310016558;
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
     goto label_L335580595;
@@ -783,7 +783,7 @@ label_L335580595:
 
 
 JAVA_OBJECT java_util_LinkedList_remove___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7338, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7339, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = java_util_LinkedList_removeFirstImpl___R_java_lang_Object(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -808,7 +808,7 @@ JAVA_OBJECT java_util_LinkedList_element___R_java_lang_Object(CODENAME_ONE_THREA
 
 JAVA_OBJECT java_util_LinkedList_toArray___R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7338, 1236);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7339, 1237);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
     PUSH_INT(get_field_java_util_LinkedList_size(__cn1ThisObject));
     SP--;
@@ -840,7 +840,7 @@ label_L380274260:
 
 JAVA_OBJECT java_util_LinkedList_toArray___java_lang_Object_1ARRAY_R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7338, 1236);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 7339, 1237);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 

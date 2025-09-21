@@ -58,7 +58,7 @@ JAVA_OBJECT __NEW_com_codename1_io_ConnectionRequest_8(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_io_ConnectionRequest_8___INIT_____com_codename1_io_ConnectionRequest_com_codename1_util_SuccessCallback_com_codename1_util_FailureCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8543, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8544, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -77,7 +77,7 @@ JAVA_VOID com_codename1_io_ConnectionRequest_8___INIT_____com_codename1_io_Conne
 
 JAVA_VOID com_codename1_io_ConnectionRequest_8_actionPerformed___com_codename1_io_NetworkEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8543, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8544, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2836);
@@ -87,21 +87,21 @@ JAVA_VOID com_codename1_io_ConnectionRequest_8_actionPerformed___com_codename1_i
     (*SP).data.i = ilocals_2_; 
     SP++;
     PUSH_INT(200);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1535875885;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L878535710;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
     PUSH_INT(201);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L2054926467;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1892531480;
 
-label_L1535875885:
+label_L878535710:
     __CN1_DEBUG_INFO(2838);
     /* CustomInvoke */com_codename1_io_ConnectionRequest_access$400___com_codename1_io_ConnectionRequest_com_codename1_util_SuccessCallback_com_codename1_util_FailureCallback_boolean(threadStateData, get_field_com_codename1_io_ConnectionRequest_8_this_0(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_8_val_onSuccess(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_8_val_onFail(__cn1ThisObject), 1 /* ICONST_1 */); 
-    goto label_L561566358;
+    goto label_L953718248;
 
-label_L2054926467:
+label_L1892531480:
     __CN1_DEBUG_INFO(2840);
-    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1489504599;
+    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L49534413;
     __CN1_DEBUG_INFO(2841);
     BC_ALOAD(1);
     PUSH_POINTER(__NEW_java_io_IOException(threadStateData)); /* NEW */
@@ -109,7 +109,7 @@ label_L2054926467:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8544));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8545));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, virtual_com_codename1_io_NetworkEvent_getResponseCode___R_int(threadStateData, locals[1].data.o));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -118,14 +118,14 @@ label_L2054926467:
     java_io_IOException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     virtual_com_codename1_io_NetworkEvent_setError___java_lang_Exception(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1489504599:
+label_L49534413:
     __CN1_DEBUG_INFO(2843);
     PUSH_POINTER(get_field_com_codename1_io_ConnectionRequest_8_val_onFail(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_util_CallbackDispatcher_dispatchError___com_codename1_util_FailureCallback_java_lang_Throwable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L561566358:
+label_L953718248:
     __CN1_DEBUG_INFO(2845);
     /* CustomInvoke */virtual_com_codename1_io_ConnectionRequest_removeResponseListener___com_codename1_ui_events_ActionListener(threadStateData, get_field_com_codename1_io_ConnectionRequest_8_this_0(__cn1ThisObject), __cn1ThisObject); 
     __CN1_DEBUG_INFO(2846);
@@ -135,7 +135,7 @@ label_L561566358:
 
 
 JAVA_VOID com_codename1_io_ConnectionRequest_8_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8543, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8544, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2833);

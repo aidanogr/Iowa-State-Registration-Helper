@@ -76,7 +76,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_UnboundedEntryIterator(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID java_util_TreeMap_UnboundedEntryIterator___INIT_____java_util_TreeMap_java_util_TreeMap_Node_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6255, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6256, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -89,7 +89,7 @@ JAVA_VOID java_util_TreeMap_UnboundedEntryIterator___INIT_____java_util_TreeMap_
 
 
 JAVA_VOID java_util_TreeMap_UnboundedEntryIterator___INIT_____java_util_TreeMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6255, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6256, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_TreeMap_AbstractMapIterator___INIT_____java_util_TreeMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -100,7 +100,7 @@ JAVA_VOID java_util_TreeMap_UnboundedEntryIterator___INIT_____java_util_TreeMap(
 
 JAVA_OBJECT java_util_TreeMap_UnboundedEntryIterator_next___R_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 6255, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 6256, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_TreeMap_UnboundedEntryIterator_makeNext__(threadStateData, __cn1ThisObject); 
     /* VarOp.assignFrom */ ilocals_1_ = get_field_java_util_TreeMap_UnboundedEntryIterator_lastOffset(__cn1ThisObject);
     PUSH_POINTER(__NEW_java_util_TreeMap_TreeMapEntry(threadStateData)); /* NEW */
@@ -112,7 +112,7 @@ JAVA_OBJECT java_util_TreeMap_UnboundedEntryIterator_next___R_java_util_Map_Entr
 
 
 JAVA_OBJECT java_util_TreeMap_UnboundedEntryIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6255, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6256, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_TreeMap_UnboundedEntryIterator_next___R_java_util_Map_Entry(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

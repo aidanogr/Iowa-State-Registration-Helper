@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_com_codename1_properties_PropertyIndex_1(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_properties_PropertyIndex_1___INIT_____com_codename1_properties_PropertyIndex(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8517, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8518, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(143);
@@ -56,7 +56,7 @@ JAVA_VOID com_codename1_properties_PropertyIndex_1___INIT_____com_codename1_prop
 
 
 JAVA_BOOLEAN com_codename1_properties_PropertyIndex_1_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8517, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8518, 1252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(146);
     PUSH_INT(get_field_com_codename1_properties_PropertyIndex_1_off(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(com_codename1_properties_PropertyIndex_access$000___com_codename1_properties_PropertyIndex_R_com_codename1_properties_PropertyBase_1ARRAY(threadStateData, get_field_com_codename1_properties_PropertyIndex_1_this_0(__cn1ThisObject)));
@@ -67,14 +67,14 @@ JAVA_BOOLEAN com_codename1_properties_PropertyIndex_1_hasNext___R_boolean(CODENA
         SP[-1].type = CN1_TYPE_INT; 
         SP[-1].data.i = (*((JAVA_ARRAY)SP[-1].data.o)).length; 
     }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1661048214;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1752227897;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1860010238;
+    goto label_L1113168772;
 
-label_L1661048214:
+label_L1752227897:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1860010238:
+label_L1113168772:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -86,7 +86,7 @@ JAVA_VOID com_codename1_properties_PropertyIndex_1_remove__(CODENAME_ONE_THREAD_
 
 JAVA_OBJECT com_codename1_properties_PropertyIndex_1_next___R_com_codename1_properties_PropertyBase(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8517, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8518, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(153);
     /* VarOp.assignFrom */ ilocals_1_ = get_field_com_codename1_properties_PropertyIndex_1_off(__cn1ThisObject);
     __CN1_DEBUG_INFO(154);
@@ -106,7 +106,7 @@ JAVA_OBJECT com_codename1_properties_PropertyIndex_1_next___R_com_codename1_prop
 
 
 JAVA_OBJECT com_codename1_properties_PropertyIndex_1_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8517, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8518, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(143);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_properties_PropertyIndex_1_next___R_com_codename1_properties_PropertyBase(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }

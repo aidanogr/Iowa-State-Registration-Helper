@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_l10n_ParseException(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_VOID com_codename1_l10n_ParseException___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* errorOffset */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6740, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6741, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -59,7 +59,7 @@ JAVA_VOID com_codename1_l10n_ParseException___INIT_____java_lang_String_int(CODE
 
 JAVA_VOID com_codename1_l10n_ParseException___INIT_____java_lang_Throwable_java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_3_ = 0; /* errorOffset */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6740, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6741, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -67,16 +67,16 @@ JAVA_VOID com_codename1_l10n_ParseException___INIT_____java_lang_Throwable_java_
     ilocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(47);
     BC_ALOAD(0);
-    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1924480807;
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1924480807;
+    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1342723482;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1342723482;
     { JAVA_OBJECT tmpResult = virtual_java_lang_Throwable_getMessage___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
-    goto label_L467970019;
+    goto label_L1275854494;
 
-label_L1924480807:
+label_L1342723482:
     BC_ALOAD(2);
 
-label_L467970019:
+label_L1275854494:
     java_lang_Exception___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(48);
     set_field_com_codename1_l10n_ParseException_causedBy(threadStateData, locals[1].data.o, __cn1ThisObject);

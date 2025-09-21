@@ -67,7 +67,7 @@ JAVA_OBJECT __NEW_com_codename1_properties_MapProperty(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_properties_MapProperty___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8510, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8511, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(47);
@@ -86,7 +86,7 @@ JAVA_VOID com_codename1_properties_MapProperty___INIT_____java_lang_String(CODEN
 
 
 JAVA_VOID com_codename1_properties_MapProperty___INIT_____java_lang_String_java_lang_Class_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8510, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8511, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -117,7 +117,7 @@ JAVA_VOID com_codename1_properties_MapProperty___INIT_____java_lang_String_java_
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_getKeyType___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 8511);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 8512);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(70);
 
 {
@@ -128,7 +128,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_getKeyType___R_java_lang_Class(
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_getValueType___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 8512);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 8513);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(78);
 
 {
@@ -139,7 +139,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_getValueType___R_java_lang_Clas
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_get___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8510, 612);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8511, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(87);
@@ -153,7 +153,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_get___java_lang_Object_R_java_l
 
 
 JAVA_INT com_codename1_properties_MapProperty_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(96);
     virtual_com_codename1_properties_MapProperty_internalGet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(97);
@@ -166,7 +166,7 @@ JAVA_INT com_codename1_properties_MapProperty_size___R_int(CODENAME_ONE_THREAD_S
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_set___java_lang_Object_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8510, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8511, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -187,7 +187,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_set___java_lang_Object_java_lan
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_put___java_lang_Object_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8510, 1991);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8511, 1992);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -201,7 +201,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_put___java_lang_Object_java_lan
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_remove___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8510, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8511, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(127);
@@ -218,15 +218,15 @@ JAVA_OBJECT com_codename1_properties_MapProperty_remove___java_lang_Object_R_jav
 
 
 JAVA_BOOLEAN com_codename1_properties_MapProperty_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8510, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8511, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
-    if (/* CustomInvoke */com_codename1_properties_PropertyBase_equals___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1948328253;
+    if (/* CustomInvoke */com_codename1_properties_PropertyBase_equals___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L136289025;
     __CN1_DEBUG_INFO(140);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1948328253:
+label_L136289025:
     __CN1_DEBUG_INFO(142);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(143);
@@ -239,7 +239,7 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(143);
 
 
 JAVA_INT com_codename1_properties_MapProperty_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 883);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(152);
 
 {
@@ -250,7 +250,7 @@ JAVA_INT com_codename1_properties_MapProperty_hashCode___R_int(CODENAME_ONE_THRE
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(160);
     virtual_com_codename1_properties_MapProperty_internalGet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(161);
@@ -264,7 +264,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_iterator___R_java_util_Iterator
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_keySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 1990);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 1991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(169);
     { JAVA_OBJECT tmpResult = virtual_java_util_LinkedHashMap_keySet___R_java_util_Set(threadStateData, get_field_com_codename1_properties_MapProperty_value(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -279,7 +279,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_valueSet___R_java_util_Collecti
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_asMap___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8510, 8514);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8511, 8515);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(185);
     virtual_com_codename1_properties_MapProperty_internalGet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(186);
@@ -292,7 +292,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_asMap___R_java_util_Map(CODENAM
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_asExplodedMap___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 8510, 8515);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 8511, 8516);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(195);
     PUSH_POINTER(__NEW_java_util_LinkedHashMap(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -305,13 +305,13 @@ JAVA_OBJECT com_codename1_properties_MapProperty_asExplodedMap___R_java_util_Map
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L2131266396:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1855520016;
+label_L961312738:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1406749291;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(197);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_LinkedHashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_properties_MapProperty_value(__cn1ThisObject), locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(198);
     BC_ALOAD(4);
     BC_INSTANCEOF(cn1_class_id_com_codename1_properties_PropertyBusinessObject);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L977213187;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1191695882;
     __CN1_DEBUG_INFO(199);
     BC_ALOAD(1);
     BC_ALOAD(3);
@@ -323,17 +323,17 @@ label_L2131266396:
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    goto label_L39676643;
+    goto label_L1300183775;
 
-label_L977213187:
+label_L1191695882:
     __CN1_DEBUG_INFO(201);
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, locals[3].data.o, locals[4].data.o); 
 
-label_L39676643:
+label_L1300183775:
     __CN1_DEBUG_INFO(203);
-    goto label_L2131266396;
+    goto label_L961312738;
 
-label_L1855520016:
+label_L1406749291:
     __CN1_DEBUG_INFO(204);
     virtual_com_codename1_properties_MapProperty_internalGet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(205);
@@ -346,7 +346,7 @@ label_L1855520016:
 
 
 JAVA_OBJECT com_codename1_properties_MapProperty_setMap___java_util_Map_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8510, 8516);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8511, 8517);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(214);
@@ -367,7 +367,7 @@ JAVA_OBJECT com_codename1_properties_MapProperty_setMap___java_util_Map_R_java_l
 
 
 JAVA_VOID com_codename1_properties_MapProperty_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8510, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8511, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(225);
     virtual_com_codename1_properties_MapProperty_internalSet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(226);

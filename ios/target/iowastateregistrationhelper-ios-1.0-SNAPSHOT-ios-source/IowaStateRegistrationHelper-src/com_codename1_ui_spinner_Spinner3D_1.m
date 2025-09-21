@@ -204,7 +204,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_1(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_1___INIT_____com_codename1_ui_spinner_Spinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10114, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10115, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(72);
@@ -217,7 +217,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_1___INIT_____com_codename1_ui_spinn
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_1_setWidth___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* width */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10114, 2452);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10115, 2453);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(75);
     /* CustomInvoke */com_codename1_ui_scene_Scene_setWidth___int(threadStateData, __cn1ThisObject, ilocals_1_); 
@@ -235,7 +235,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_1_setWidth___int(CODENAME_ONE_THREA
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_1_setHeight___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10114, 2453);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10115, 2454);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(81);
     /* CustomInvoke */com_codename1_ui_scene_Scene_setHeight___int(threadStateData, __cn1ThisObject, ilocals_1_); 

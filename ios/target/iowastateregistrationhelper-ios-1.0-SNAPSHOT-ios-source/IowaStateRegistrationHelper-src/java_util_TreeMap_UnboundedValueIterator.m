@@ -74,7 +74,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_UnboundedValueIterator(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID java_util_TreeMap_UnboundedValueIterator___INIT_____java_util_TreeMap_java_util_TreeMap_Node_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6253, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6254, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -87,7 +87,7 @@ JAVA_VOID java_util_TreeMap_UnboundedValueIterator___INIT_____java_util_TreeMap_
 
 
 JAVA_VOID java_util_TreeMap_UnboundedValueIterator___INIT_____java_util_TreeMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6253, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6254, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_TreeMap_AbstractMapIterator___INIT_____java_util_TreeMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -97,7 +97,7 @@ JAVA_VOID java_util_TreeMap_UnboundedValueIterator___INIT_____java_util_TreeMap(
 
 
 JAVA_OBJECT java_util_TreeMap_UnboundedValueIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6253, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6254, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_TreeMap_UnboundedValueIterator_makeNext__(threadStateData, __cn1ThisObject); 
     PUSH_POINTER(get_field_java_util_TreeMap_Node_values(get_field_java_util_TreeMap_UnboundedValueIterator_lastNode(__cn1ThisObject)));
     PUSH_INT(get_field_java_util_TreeMap_UnboundedValueIterator_lastOffset(__cn1ThisObject));

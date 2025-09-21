@@ -30,7 +30,7 @@ com_codename1_ui_ImageFactory_1___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_ImageFactory_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3898, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3899, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(53);
     com_codename1_ui_ImageFactory___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -42,7 +42,7 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_1_createImage___int_int_int_R_com_code
     volatile JAVA_INT ilocals_1_ = 0; /* w */
     volatile JAVA_INT ilocals_2_ = 0; /* h */
     volatile JAVA_INT ilocals_3_ = 0; /* bgColor */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3898, 288);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3899, 289);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;

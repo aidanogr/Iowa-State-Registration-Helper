@@ -98,7 +98,7 @@ JAVA_VOID java_util_TreeMap_Entry_setLocation___java_util_TreeMap_Node_int_java_
 
 
 JAVA_VOID java_util_TreeMap_Entry___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6249, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6250, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_MapEntry___INIT_____java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -108,7 +108,7 @@ JAVA_VOID java_util_TreeMap_Entry___INIT_____java_lang_Object(CODENAME_ONE_THREA
 
 
 JAVA_VOID java_util_TreeMap_Entry___INIT_____java_lang_Object_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6249, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6250, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

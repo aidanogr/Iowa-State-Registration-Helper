@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_29(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_29___INIT_____com_codename1_impl_ios_IOSImplementation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9572, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9573, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8245);
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_save___java_io_InputStream
     volatile JAVA_FLOAT flocals_6_ = 0; /* quality */
     volatile JAVA_INT ilocals_4_ = 0; /* width */
     volatile JAVA_INT ilocals_5_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(7, 11, 0, 9572, 5620);
+    DEFINE_INSTANCE_METHOD_STACK(7, 11, 0, 9573, 5621);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -71,7 +71,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_save___java_io_InputStream
     __CN1_DEBUG_INFO(8248);
     /* VarOp.assignFrom */ locals[7].data.o = /* CustomInvoke */com_codename1_ui_Image_createImage___java_io_InputStream_R_com_codename1_ui_Image(threadStateData, locals[1].data.o);locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(8249);
     /* VarOp.assignFrom */ locals[8].data.o = virtual_com_codename1_ui_Image_getImage___R_java_lang_Object(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(8250);
-    /* VarOp.assignFrom */ llocals_9_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_createImageFile___long_boolean_int_int_float_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(locals[8].data.o), /* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(99)), ilocals_4_, ilocals_5_, flocals_6_);
+    /* VarOp.assignFrom */ llocals_9_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_createImageFile___long_boolean_int_int_float_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(locals[8].data.o), /* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(100)), ilocals_4_, ilocals_5_, flocals_6_);
     __CN1_DEBUG_INFO(8251);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_29_writeNSData___long_java_io_OutputStream(threadStateData, __cn1ThisObject, llocals_9_, locals[2].data.o); 
     __CN1_DEBUG_INFO(8252);
@@ -83,14 +83,14 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_save___java_io_InputStream
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_writeNSData___long_java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_LONG llocals_1_ = 0; /* p */
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9572, 9573);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9573, 9574);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8255);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_getNSDataSize___long_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), llocals_1_);
     __CN1_DEBUG_INFO(8256);
-    if (ilocals_4_>=131072) /* IF_ICMPGE CustomJump */ goto label_L1187410086;
+    if (ilocals_4_>=131072) /* IF_ICMPGE CustomJump */ goto label_L2113243119;
     __CN1_DEBUG_INFO(8257);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
@@ -106,9 +106,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_writeNSData___long_java_io
     __CN1_DEBUG_INFO(8261);
     virtual_java_io_OutputStream_close__(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(8262);
-    goto label_L1509713998;
+    goto label_L1851255134;
 
-label_L1187410086:
+label_L2113243119:
     __CN1_DEBUG_INFO(8263);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_NSDataInputStream(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -119,7 +119,7 @@ label_L1187410086:
     __CN1_DEBUG_INFO(8265);
     virtual_com_codename1_impl_ios_NSDataInputStream_close__(threadStateData, locals[5].data.o); 
 
-label_L1509713998:
+label_L1851255134:
     __CN1_DEBUG_INFO(8267);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -129,7 +129,7 @@ label_L1509713998:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_saveImage___com_codename1_ui_Image_java_io_OutputStream_java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_FLOAT __cn1Arg4) {
     volatile JAVA_FLOAT flocals_4_ = 0; /* quality */
     volatile JAVA_LONG llocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 8, 0, 9572, 5623);
+    DEFINE_INSTANCE_METHOD_STACK(7, 8, 0, 9573, 5624);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -142,7 +142,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_saveImage___com_codename1_
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_checkControl__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(8272);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_Image_getImage___R_java_lang_Object(threadStateData, locals[1].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(8273);
-    /* VarOp.assignFrom */ llocals_6_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_createImageFile___long_boolean_int_int_float_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(locals[5].data.o), /* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(99)), virtual_com_codename1_ui_Image_getWidth___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, locals[1].data.o), flocals_4_);
+    /* VarOp.assignFrom */ llocals_6_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_createImageFile___long_boolean_int_int_float_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(locals[5].data.o), /* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(100)), virtual_com_codename1_ui_Image_getWidth___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, locals[1].data.o), flocals_4_);
     __CN1_DEBUG_INFO(8274);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_29_writeNSData___long_java_io_OutputStream(threadStateData, __cn1ThisObject, llocals_6_, locals[2].data.o); 
     __CN1_DEBUG_INFO(8275);
@@ -152,21 +152,21 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_saveImage___com_codename1_
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_29_isFormatSupported___java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9572, 5624);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9573, 5625);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8279);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(99))!=0) /* IFNE CustomJump */ goto label_L95322593;
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(100))==0) /* IFEQ CustomJump */ goto label_L802255644;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(100))!=0) /* IFNE CustomJump */ goto label_L659937029;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(101))==0) /* IFEQ CustomJump */ goto label_L1457226878;
 
-label_L95322593:
+label_L659937029:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1525114112;
+    goto label_L121678773;
 
-label_L802255644:
+label_L1457226878:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1525114112:
+label_L121678773:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

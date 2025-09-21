@@ -32,7 +32,7 @@ JAVA_OBJECT __NEW_com_codename1_properties_LongProperty(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_properties_LongProperty___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8503, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8504, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(37);
@@ -44,7 +44,7 @@ JAVA_VOID com_codename1_properties_LongProperty___INIT_____java_lang_String(CODE
 
 
 JAVA_VOID com_codename1_properties_LongProperty___INIT_____java_lang_String_java_lang_Long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8503, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8504, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

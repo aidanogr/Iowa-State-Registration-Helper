@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Component_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Component_2___INIT_____com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8203, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8204, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2870);
@@ -45,14 +45,14 @@ JAVA_VOID com_codename1_ui_Component_2___INIT_____com_codename1_ui_Component(COD
 
 
 JAVA_VOID com_codename1_ui_Component_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8203, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8204, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2873);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Component_access$600___com_codename1_ui_Component_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_Component_2_this_0(__cn1ThisObject)));
     virtual_java_lang_Runnable_run__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(2875);
     /* CustomInvoke */virtual_com_codename1_ui_Component_startTensile___int_int_boolean(threadStateData, get_field_com_codename1_ui_Component_2_this_0(__cn1ThisObject), /* CustomInvoke */com_codename1_ui_Component_access$700___com_codename1_ui_Component_R_int(threadStateData, get_field_com_codename1_ui_Component_2_this_0(__cn1ThisObject)), 0 /* ICONST_0 */, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(2876);
-    /* CustomInvoke */virtual_com_codename1_ui_Component_putClientProperty___java_lang_String_java_lang_Object(threadStateData, get_field_com_codename1_ui_Component_2_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(2513), JAVA_NULL /* ACONST_NULL */); 
+    /* CustomInvoke */virtual_com_codename1_ui_Component_putClientProperty___java_lang_String_java_lang_Object(threadStateData, get_field_com_codename1_ui_Component_2_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(2514), JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(2877);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

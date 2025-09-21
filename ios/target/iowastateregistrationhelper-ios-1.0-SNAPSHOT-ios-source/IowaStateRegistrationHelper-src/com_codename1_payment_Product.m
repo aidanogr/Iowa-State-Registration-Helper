@@ -77,7 +77,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_payment_Product(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID com_codename1_payment_Product___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9134, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9135, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(30);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -91,7 +91,7 @@ JAVA_OBJECT com_codename1_payment_Product_getDisplayName___R_java_lang_String(CO
 
 
 JAVA_VOID com_codename1_payment_Product_setDisplayName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9134, 1541);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9135, 1542);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(47);
@@ -108,7 +108,7 @@ JAVA_OBJECT com_codename1_payment_Product_getDescription___R_java_lang_String(CO
 
 
 JAVA_VOID com_codename1_payment_Product_setDescription___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9134, 9136);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9135, 9137);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(61);
@@ -125,7 +125,7 @@ JAVA_OBJECT com_codename1_payment_Product_getLocalizedPrice___R_java_lang_String
 
 
 JAVA_VOID com_codename1_payment_Product_setLocalizedPrice___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9134, 9138);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9135, 9139);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(75);
@@ -137,7 +137,7 @@ JAVA_VOID com_codename1_payment_Product_setLocalizedPrice___java_lang_String(COD
 
 
 JAVA_OBJECT com_codename1_payment_Product_getSku___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9134, 9139);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9135, 9140);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
 
 {
@@ -148,7 +148,7 @@ JAVA_OBJECT com_codename1_payment_Product_getSku___R_java_lang_String(CODENAME_O
 
 
 JAVA_VOID com_codename1_payment_Product_setSku___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9134, 9140);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9135, 9141);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(89);

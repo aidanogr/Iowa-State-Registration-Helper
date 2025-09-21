@@ -31,7 +31,7 @@ void __GC_MARK_com_codename1_properties_CollectionProperty(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_properties_CollectionProperty___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8491, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8492, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(38);
@@ -43,7 +43,7 @@ JAVA_VOID com_codename1_properties_CollectionProperty___INIT_____java_lang_Strin
 
 
 JAVA_VOID com_codename1_properties_CollectionProperty___INIT_____java_lang_String_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8491, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8492, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

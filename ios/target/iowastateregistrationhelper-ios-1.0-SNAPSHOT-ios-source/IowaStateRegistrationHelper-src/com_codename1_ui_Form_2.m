@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Form_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Form_2___INIT_____com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8179, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8180, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(697);
@@ -46,7 +46,7 @@ JAVA_VOID com_codename1_ui_Form_2___INIT_____com_codename1_ui_Form(CODENAME_ONE_
 
 
 JAVA_BOOLEAN com_codename1_ui_Form_2_filter___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8179, 5917);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8180, 5918);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(701);

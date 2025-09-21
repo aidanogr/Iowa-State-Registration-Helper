@@ -31,7 +31,7 @@ java_lang_reflect_Array___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_reflect_Array___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1221, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1222, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -45,7 +45,7 @@ JAVA_OBJECT java_lang_reflect_Array_newInstance___java_lang_Class_int_1ARRAY_R_j
 
 JAVA_OBJECT java_lang_reflect_Array_newInstance___java_lang_Class_int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     __STATIC_INITIALIZER_java_lang_reflect_Array(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 1221, 958);
+    DEFINE_METHOD_STACK(2, 2, 0, 1222, 959);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_1_ = __cn1Arg2;

@@ -55,7 +55,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_6(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_6___INIT_____com_codename1_ui_BrowserComponent_com_codename1_util_SuccessCallback_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8139, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8140, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -73,11 +73,11 @@ JAVA_VOID com_codename1_ui_BrowserComponent_6___INIT_____com_codename1_ui_Browse
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_6_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 8139, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 8140, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(483);
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_callback(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_util_Callback);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L238654703;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1267110705;
     __CN1_DEBUG_INFO(484);
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_callback(__cn1ThisObject));
     BC_ALOAD(0);
@@ -88,7 +88,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_6_run__(CODENAME_ONE_THREAD_STATE, J
     PUSH_POINTER(get_field_com_codename1_ui_BrowserComponent_6_val_errorMessage(__cn1ThisObject));
     virtual_com_codename1_util_Callback_onError___java_lang_Object_java_lang_Throwable_int_java_lang_String(threadStateData, SP[-5].data.o, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.o);     SP-= 5;
 
-label_L238654703:
+label_L1267110705:
     __CN1_DEBUG_INFO(487);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

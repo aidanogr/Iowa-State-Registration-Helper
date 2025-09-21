@@ -43,7 +43,7 @@ void __GC_MARK_com_codename1_impl_ios_IOSImplementation_Gradient(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_Gradient___INIT_____com_codename1_impl_ios_IOSImplementation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9617, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9618, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4327);

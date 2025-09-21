@@ -37,7 +37,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSVirtualKeyboard(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID com_codename1_impl_ios_IOSVirtualKeyboard___INIT_____com_codename1_impl_ios_IOSImplementation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9710, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9711, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(38);
@@ -56,54 +56,54 @@ JAVA_VOID com_codename1_impl_ios_IOSVirtualKeyboard_setInputType___int(CODENAME_
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSVirtualKeyboard_getVirtualKeyboardName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9710, 9214);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9711, 9215);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(49);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9712);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9713);
 }
 
 
 JAVA_VOID com_codename1_impl_ios_IOSVirtualKeyboard_showKeyboard___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* show */
-    DEFINE_INSTANCE_METHOD_STACK(1, 4, 0, 9710, 9215);
+    DEFINE_INSTANCE_METHOD_STACK(1, 4, 0, 9711, 9216);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(54);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1869247587;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L828241083;
     __CN1_DEBUG_INFO(55);
-    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L467313213;
+    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1069584108;
     __CN1_DEBUG_INFO(56);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L467313213:
+label_L1069584108:
     __CN1_DEBUG_INFO(58);
     /* VarOp.assignFrom */ locals[2].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(59);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2045913001;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1554877309;
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Form_getFocused___R_com_codename1_ui_Component(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(61);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2045913001;
-    if (virtual_com_codename1_ui_Component_isEditable___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L2045913001;
-    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L2045913001;
-    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L2045913001;
-    if (virtual_com_codename1_ui_Component_isEditing___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L2045913001;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1554877309;
+    if (virtual_com_codename1_ui_Component_isEditable___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1554877309;
+    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1554877309;
+    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1554877309;
+    if (virtual_com_codename1_ui_Component_isEditing___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L1554877309;
     __CN1_DEBUG_INFO(62);
     virtual_com_codename1_ui_Component_startEditingAsync__(threadStateData, locals[3].data.o); 
 
-label_L2045913001:
+label_L1554877309:
     __CN1_DEBUG_INFO(65);
-    goto label_L1822630059;
+    goto label_L2063786038;
 
-label_L1869247587:
+label_L828241083:
     __CN1_DEBUG_INFO(66);
-    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1356236848;
+    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L623131585;
     __CN1_DEBUG_INFO(67);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1356236848:
+label_L623131585:
     __CN1_DEBUG_INFO(69);
     virtual_com_codename1_impl_ios_IOSImplementation_stopTextEditing__(threadStateData, get_field_com_codename1_impl_ios_IOSVirtualKeyboard_impl(__cn1ThisObject)); 
 
-label_L1822630059:
+label_L2063786038:
     __CN1_DEBUG_INFO(71);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -111,7 +111,7 @@ label_L1822630059:
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9710, 1422);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9711, 1423);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(75);
 
 {

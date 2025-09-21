@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_java_util_Hashtable_4_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Hashtable_4_1___INIT_____java_util_Hashtable_4(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2014, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2015, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Hashtable_4_1_this_1(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -46,7 +46,7 @@ JAVA_VOID java_util_Hashtable_4_1___INIT_____java_util_Hashtable_4(CODENAME_ONE_
 
 
 JAVA_OBJECT java_util_Hashtable_4_1_get___java_util_MapEntry_R_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 2014, 612);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 2015, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -56,7 +56,7 @@ JAVA_OBJECT java_util_Hashtable_4_1_get___java_util_MapEntry_R_java_util_Map_Ent
 
 
 JAVA_OBJECT java_util_Hashtable_4_1_get___java_util_MapEntry_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2014, 612);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2015, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Hashtable_4_1_get___java_util_MapEntry_R_java_util_Map_Entry(threadStateData, __cn1ThisObject, locals[1].data.o);

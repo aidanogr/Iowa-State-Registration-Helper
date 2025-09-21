@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_java_nio_charset_Charset(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_nio_charset_Charset___INIT_____java_lang_String_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1272, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1273, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -46,7 +46,7 @@ JAVA_VOID java_nio_charset_Charset___INIT_____java_lang_String_java_lang_String_
 
 
 JAVA_INT java_nio_charset_Charset_compareTo___java_nio_charset_Charset_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1272, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1273, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_compareTo___java_lang_String_R_int(threadStateData, get_field_java_nio_charset_Charset_name(__cn1ThisObject), get_field_java_nio_charset_Charset_name(locals[1].data.o));
@@ -56,7 +56,7 @@ JAVA_INT java_nio_charset_Charset_compareTo___java_nio_charset_Charset_R_int(COD
 
 
 JAVA_OBJECT java_nio_charset_Charset_displayName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1272, 1273);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1273, 1274);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_nio_charset_Charset_name(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -69,7 +69,7 @@ JAVA_OBJECT java_nio_charset_Charset_forName___java_lang_String_R_java_nio_chars
 
 
 JAVA_INT java_nio_charset_Charset_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1272, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1273, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_nio_charset_Charset_compareTo___java_nio_charset_Charset_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);

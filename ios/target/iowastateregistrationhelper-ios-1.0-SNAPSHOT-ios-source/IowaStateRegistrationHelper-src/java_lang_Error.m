@@ -30,7 +30,7 @@ java_lang_Error___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_Error___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7203, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7204, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Throwable___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -38,7 +38,7 @@ JAVA_VOID java_lang_Error___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __c
 
 
 JAVA_VOID java_lang_Error___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7203, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7204, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_lang_Throwable___INIT_____java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -48,7 +48,7 @@ JAVA_VOID java_lang_Error___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_lang_Error___INIT_____java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7203, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7204, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_lang_Throwable___INIT_____java_lang_Throwable(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -58,7 +58,7 @@ JAVA_VOID java_lang_Error___INIT_____java_lang_Throwable(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID java_lang_Error___INIT_____java_lang_String_java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7203, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7204, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

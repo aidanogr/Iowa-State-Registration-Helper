@@ -37,7 +37,7 @@ JAVA_OBJECT __NEW_java_util_Hashtable_6(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Hashtable_6___INIT_____java_util_Hashtable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2020, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2021, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Hashtable_6_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -48,7 +48,7 @@ JAVA_VOID java_util_Hashtable_6___INIT_____java_util_Hashtable(CODENAME_ONE_THRE
 
 
 JAVA_BOOLEAN java_util_Hashtable_6_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2020, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2021, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Hashtable_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Hashtable_6_this_0(__cn1ThisObject), locals[1].data.o);
@@ -58,14 +58,14 @@ JAVA_BOOLEAN java_util_Hashtable_6_contains___java_lang_Object_R_boolean(CODENAM
 
 
 JAVA_INT java_util_Hashtable_6_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2020, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2021, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_Hashtable_elementCount(get_field_java_util_Hashtable_6_this_0(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID java_util_Hashtable_6_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2020, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2021, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_Hashtable_clear__(threadStateData, get_field_java_util_Hashtable_6_this_0(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -73,7 +73,7 @@ JAVA_VOID java_util_Hashtable_6_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  
 
 
 JAVA_BOOLEAN java_util_Hashtable_6_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2020, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2021, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (/* CustomInvoke */virtual_java_util_Hashtable_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Hashtable_6_this_0(__cn1ThisObject), locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1920907467;
@@ -87,7 +87,7 @@ label_L1920907467:
 
 
 JAVA_OBJECT java_util_Hashtable_6_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 2020, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 2021, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_Hashtable_6_size___R_int(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L970535245;
     PUSH_OBJ(java_util_Hashtable_access$000___R_java_util_Iterator(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

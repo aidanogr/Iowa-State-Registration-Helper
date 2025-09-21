@@ -38,7 +38,7 @@ JAVA_OBJECT __NEW_java_util_HashMap_HashMapEntrySet(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_HashMap_HashMapEntrySet___INIT_____java_util_HashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5750, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5751, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_AbstractSet___INIT____(threadStateData, __cn1ThisObject); 
@@ -49,7 +49,7 @@ JAVA_VOID java_util_HashMap_HashMapEntrySet___INIT_____java_util_HashMap(CODENAM
 
 
 JAVA_OBJECT java_util_HashMap_HashMapEntrySet_hashMap___R_java_util_HashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5750, 5751);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5751, 5752);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_HashMap_HashMapEntrySet_associatedMap(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -57,14 +57,14 @@ JAVA_OBJECT java_util_HashMap_HashMapEntrySet_hashMap___R_java_util_HashMap(CODE
 
 
 JAVA_INT java_util_HashMap_HashMapEntrySet_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5750, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5751, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_HashMap_elementCount(get_field_java_util_HashMap_HashMapEntrySet_associatedMap(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID java_util_HashMap_HashMapEntrySet_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5750, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5751, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_HashMap_clear__(threadStateData, get_field_java_util_HashMap_HashMapEntrySet_associatedMap(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -72,7 +72,7 @@ JAVA_VOID java_util_HashMap_HashMapEntrySet_clear__(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5750, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5751, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -97,7 +97,7 @@ label_L602423811:
 
 
 JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5750, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5751, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -125,7 +125,7 @@ label_L429075478:
 
 JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_valuesEq___java_util_HashMap_Entry_java_util_Map_Entry_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_java_util_HashMap_HashMapEntrySet(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 5750, 5752);
+    DEFINE_METHOD_STACK(2, 2, 0, 5751, 5753);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -157,7 +157,7 @@ label_L808228639:
 
 
 JAVA_OBJECT java_util_HashMap_HashMapEntrySet_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5750, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5751, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_HashMap_EntryIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_HashMap_EntryIterator___INIT_____java_util_HashMap(threadStateData, SP[-1].data.o, get_field_java_util_HashMap_HashMapEntrySet_associatedMap(__cn1ThisObject));     SP -= 1;

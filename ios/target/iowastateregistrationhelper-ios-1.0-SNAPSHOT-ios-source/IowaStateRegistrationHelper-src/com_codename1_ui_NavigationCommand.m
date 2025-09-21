@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_NavigationCommand(CODENAME_ONE_THREAD_STATE) 
 
 
 JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7060, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7061, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(45);
@@ -48,7 +48,7 @@ JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String(CODENAM
 
 
 JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7060, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7061, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -63,7 +63,7 @@ JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String_com_cod
 
 JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* id */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7060, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7061, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -77,7 +77,7 @@ JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String_int(COD
 
 JAVA_VOID com_codename1_ui_NavigationCommand___INIT_____java_lang_String_com_codename1_ui_Image_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_3_ = 0; /* id */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 7060, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 7061, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -97,7 +97,7 @@ JAVA_VOID com_codename1_ui_NavigationCommand_setNextForm___com_codename1_ui_Form
 
 
 JAVA_OBJECT com_codename1_ui_NavigationCommand_getNextForm___R_com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7060, 7062);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7061, 7063);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(97);
 
 {
@@ -108,18 +108,18 @@ JAVA_OBJECT com_codename1_ui_NavigationCommand_getNextForm___R_com_codename1_ui_
 
 
 JAVA_VOID com_codename1_ui_NavigationCommand_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7060, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7061, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(102);
     /* CustomInvoke */com_codename1_ui_Command_actionPerformed___com_codename1_ui_events_ActionEvent(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(103);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_NavigationCommand_getNextForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(104);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1483998054;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L987255094;
     __CN1_DEBUG_INFO(105);
     virtual_com_codename1_ui_Form_show__(threadStateData, locals[2].data.o); 
 
-label_L1483998054:
+label_L987255094:
     __CN1_DEBUG_INFO(107);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

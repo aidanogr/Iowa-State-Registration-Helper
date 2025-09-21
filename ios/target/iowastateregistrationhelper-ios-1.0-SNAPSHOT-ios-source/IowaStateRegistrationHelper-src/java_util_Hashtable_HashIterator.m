@@ -88,7 +88,7 @@ JAVA_OBJECT __NEW_java_util_Hashtable_HashIterator(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Hashtable_HashIterator___INIT_____java_util_Hashtable_java_util_MapEntry_Type(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2015, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2016, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -105,7 +105,7 @@ JAVA_VOID java_util_Hashtable_HashIterator___INIT_____java_util_Hashtable_java_u
 
 
 JAVA_BOOLEAN java_util_Hashtable_HashIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 2015, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 2016, 1252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashIterator_lastEntry(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L133250414;
     if (get_field_java_util_Hashtable_Entry_next(get_field_java_util_Hashtable_HashIterator_lastEntry(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L133250414;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
@@ -126,7 +126,7 @@ label_L85777802:
 
 
 JAVA_OBJECT java_util_Hashtable_HashIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 2015, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 2016, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_Hashtable_modCount(get_field_java_util_Hashtable_HashIterator_this_0(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L603650290;
     if (get_field_java_util_Hashtable_HashIterator_lastEntry(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L762227630;
     set_field_java_util_Hashtable_HashIterator_lastEntry(threadStateData, get_field_java_util_Hashtable_Entry_next(get_field_java_util_Hashtable_HashIterator_lastEntry(__cn1ThisObject)), __cn1ThisObject);
@@ -180,10 +180,10 @@ label_L603650290:
 
 JAVA_VOID java_util_Hashtable_HashIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 2015, 1233);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL184318742801;
-    int tryBlockOffsetL184318742801;
-    DEFINE_CATCH_BLOCK(catch_L184318742801, label_L1754638213, restoreToL184318742801);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 2016, 1234);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL160566657101;
+    int tryBlockOffsetL160566657101;
+    DEFINE_CATCH_BLOCK(catch_L160566657101, label_L1754638213, restoreToL160566657101);
     int restoreToL96141979102;
     int tryBlockOffsetL96141979102;
     DEFINE_CATCH_BLOCK(catch_L96141979102, label_L1754638213, restoreToL96141979102);
@@ -198,10 +198,10 @@ JAVA_VOID java_util_Hashtable_HashIterator_remove__(CODENAME_ONE_THREAD_STATE, J
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1843187428:
- tryBlockOffsetL184318742801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L184318742801);
-    restoreToL184318742801 = threadStateData->threadObjectStackOffset;
+label_L1605666571:
+ tryBlockOffsetL160566657101 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L160566657101);
+    restoreToL160566657101 = threadStateData->threadObjectStackOffset;
 
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o=CN1_ARRAY_ELEMENT_OBJECT(get_field_java_util_Hashtable_elementData(get_field_java_util_Hashtable_HashIterator_this_0(__cn1ThisObject)), get_field_java_util_Hashtable_HashIterator_lastPosition(__cn1ThisObject));
@@ -239,7 +239,7 @@ label_L1511785794:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L956303508:
+label_L1317025467:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
@@ -251,7 +251,7 @@ label_L961419791:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1330675946:
+label_L2084277030:
 END_TRY(1);    JUMP_TO(label_L665188480, 0);
 
 label_L1754638213:
@@ -263,7 +263,7 @@ label_L1754638213:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L684484877:
+label_L1360243494:
 END_TRY(1);    BC_ALOAD(4);
     throwException(threadStateData, POP_OBJ());
 

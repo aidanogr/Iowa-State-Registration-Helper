@@ -43,7 +43,7 @@ java_util_Random___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Random___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6385, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6386, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */java_util_Random___INIT_____long(threadStateData, __cn1ThisObject, java_lang_System_currentTimeMillis___R_long(threadStateData)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -51,7 +51,7 @@ JAVA_VOID java_util_Random___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 
 JAVA_VOID java_util_Random___INIT_____long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6385, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6386, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     /* CustomInvoke */virtual_java_util_Random_setSeed___long(threadStateData, __cn1ThisObject, llocals_1_); 
@@ -91,7 +91,7 @@ JAVA_LONG java_util_Random_nextLong___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID java_util_Random_setSeed___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6385, 6390);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6386, 6391);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     set_field_java_util_Random_seed(threadStateData, ((llocals_1_ ^ 25214903917LL) & 281474976710655LL), __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

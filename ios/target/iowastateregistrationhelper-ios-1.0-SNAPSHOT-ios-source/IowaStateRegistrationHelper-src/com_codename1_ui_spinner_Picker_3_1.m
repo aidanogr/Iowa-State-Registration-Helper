@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Picker_3_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_3_1___INIT_____com_codename1_ui_spinner_Picker_3_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10228, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10229, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -57,7 +57,7 @@ JAVA_VOID com_codename1_ui_spinner_Picker_3_1___INIT_____com_codename1_ui_spinne
 
 
 JAVA_VOID com_codename1_ui_spinner_Picker_3_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10228, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10229, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1104);
     /* CustomInvoke */virtual_com_codename1_components_InteractionDialog_resize___int_int_int_int(threadStateData, get_field_com_codename1_ui_spinner_Picker_3_val_dlg(get_field_com_codename1_ui_spinner_Picker_3_1_this_1(__cn1ThisObject)), get_field_com_codename1_ui_spinner_Picker_3_1_val_top(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1105);

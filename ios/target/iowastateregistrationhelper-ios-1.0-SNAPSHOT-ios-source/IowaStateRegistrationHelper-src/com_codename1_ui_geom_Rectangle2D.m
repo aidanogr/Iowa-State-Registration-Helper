@@ -72,7 +72,7 @@ com_codename1_ui_geom_Rectangle2D___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3588, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3589, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(45);
@@ -91,7 +91,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT____(CODENAME_ONE_THREAD_STATE
 JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT_____double_double_com_codename1_ui_geom_Dimension2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* x */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 3588, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 3589, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     locals[5].data.o = __cn1Arg3;
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT_____double_double_double_doub
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* y */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* w */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 3588, 200);
+    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 3589, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -140,7 +140,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT_____double_double_double_doub
 
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D___INIT_____com_codename1_ui_geom_Rectangle2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3588, 200);
+    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3589, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(83);
@@ -172,7 +172,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setBounds___double_double_double_dou
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* y */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* w */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(3, 9, 0, 3588, 3589);
+    DEFINE_INSTANCE_METHOD_STACK(3, 9, 0, 3589, 3590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -194,7 +194,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setBounds___double_double_double_dou
 
 
 JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getWidth___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3588, 1303);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3589, 1304);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(103);
 
 {
@@ -206,7 +206,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getWidth___R_double(CODENAME_ONE_T
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setWidth___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* w */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3588, 2452);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3589, 2453);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(112);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Dimension2D_setWidth___double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject), dlocals_1_); 
@@ -220,7 +220,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setWidth___double(CODENAME_ONE_THREA
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setHeight___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3588, 2453);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3589, 2454);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(121);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Dimension2D_setHeight___double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject), dlocals_1_); 
@@ -233,7 +233,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setHeight___double(CODENAME_ONE_THRE
 
 
 JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getHeight___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3588, 439);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3589, 440);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(130);
 
 {
@@ -244,7 +244,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getHeight___R_double(CODENAME_ONE_
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getSize___R_com_codename1_ui_geom_Dimension2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3588, 558);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3589, 559);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(139);
 
 {
@@ -255,7 +255,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getSize___R_com_codename1_ui_geom_
 
 
 JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getX___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3588, 2404);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3589, 2405);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(148);
 
 {
@@ -266,7 +266,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getX___R_double(CODENAME_ONE_THREA
 
 
 JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getY___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3588, 2407);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3589, 2408);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(157);
 
 {
@@ -277,20 +277,20 @@ JAVA_DOUBLE com_codename1_ui_geom_Rectangle2D_getY___R_double(CODENAME_ONE_THREA
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3588, 897);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3589, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(164);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3590));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3591));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3591));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3592));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3592));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3593));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -303,7 +303,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_toString___R_java_lang_String(CODE
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3588, 2425);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3589, 2426);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(173);
     set_field_com_codename1_ui_geom_Rectangle2D_x(threadStateData, ((JAVA_DOUBLE)ilocals_1_), __cn1ThisObject);
@@ -317,7 +317,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setX___int(CODENAME_ONE_THREAD_STATE
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setX___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3588, 2425);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3589, 2426);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(183);
     set_field_com_codename1_ui_geom_Rectangle2D_x(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -331,7 +331,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setX___double(CODENAME_ONE_THREAD_ST
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3588, 2426);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3589, 2427);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(193);
     set_field_com_codename1_ui_geom_Rectangle2D_y(threadStateData, ((JAVA_DOUBLE)ilocals_1_), __cn1ThisObject);
@@ -345,7 +345,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setY___int(CODENAME_ONE_THREAD_STATE
 
 JAVA_VOID com_codename1_ui_geom_Rectangle2D_setY___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3588, 2426);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3589, 2427);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(202);
     set_field_com_codename1_ui_geom_Rectangle2D_y(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -358,7 +358,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_setY___double(CODENAME_ONE_THREAD_ST
 
 
 JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___com_codename1_ui_geom_Rectangle2D_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3588, 906);
+    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3589, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(215);
@@ -375,14 +375,14 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* rY */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* rWidth */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* rHeight */
-    DEFINE_INSTANCE_METHOD_STACK(6, 9, 0, 3588, 906);
+    DEFINE_INSTANCE_METHOD_STACK(6, 9, 0, 3589, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
     dlocals_7_ = __cn1Arg4;
     __CN1_DEBUG_INFO(231);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L1319921115;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L1319921115;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L2099044017;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L2099044017;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject));
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Dimension2D_getWidth___R_double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     PUSH_DOUBLE(tmpResult); }
@@ -391,7 +391,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     BC_DLOAD(5);
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L1319921115;
+    if(POP_INT() < 0) /* IFLT */ goto label_L2099044017;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     __CN1_DEBUG_INFO(232);
@@ -402,14 +402,14 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     BC_DLOAD(7);
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L1319921115;
+    if(POP_INT() < 0) /* IFLT */ goto label_L2099044017;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L232681351;
+    goto label_L205869510;
 
-label_L1319921115:
+label_L2099044017:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L232681351:
+label_L205869510:
     __CN1_DEBUG_INFO(231);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -425,7 +425,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     volatile JAVA_DOUBLE dlocals_6_ = 0; /* h1 */
     volatile JAVA_DOUBLE dlocals_8_ = 0; /* x2 */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Rectangle2D(threadStateData);
-    DEFINE_METHOD_STACK(6, 16, 0, 3588, 906);
+    DEFINE_METHOD_STACK(6, 16, 0, 3589, 907);
     dlocals_0_ = __cn1Arg1;
     dlocals_2_ = __cn1Arg2;
     dlocals_4_ = __cn1Arg3;
@@ -435,17 +435,17 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_double_d
     dlocals_12_ = __cn1Arg7;
     dlocals_14_ = __cn1Arg8;
     __CN1_DEBUG_INFO(251);
-    if (CN1_CMP_EXPR(dlocals_0_, dlocals_8_)>0) /* IFGT CustomJump */ goto label_L2021979938;
-    if (CN1_CMP_EXPR(dlocals_2_, dlocals_10_)>0) /* IFGT CustomJump */ goto label_L2021979938;
-    if (CN1_CMP_EXPR((dlocals_0_ + dlocals_4_), (dlocals_8_ + dlocals_12_))<0) /* IFLT CustomJump */ goto label_L2021979938;
-    if (CN1_CMP_EXPR((dlocals_2_ + dlocals_6_), (dlocals_10_ + dlocals_14_))<0) /* IFLT CustomJump */ goto label_L2021979938;
+    if (CN1_CMP_EXPR(dlocals_0_, dlocals_8_)>0) /* IFGT CustomJump */ goto label_L976426678;
+    if (CN1_CMP_EXPR(dlocals_2_, dlocals_10_)>0) /* IFGT CustomJump */ goto label_L976426678;
+    if (CN1_CMP_EXPR((dlocals_0_ + dlocals_4_), (dlocals_8_ + dlocals_12_))<0) /* IFLT CustomJump */ goto label_L976426678;
+    if (CN1_CMP_EXPR((dlocals_2_ + dlocals_6_), (dlocals_10_ + dlocals_14_))<0) /* IFLT CustomJump */ goto label_L976426678;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L369270319;
+    goto label_L1303667524;
 
-label_L2021979938:
+label_L976426678:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L369270319:
+label_L1303667524:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -453,19 +453,19 @@ label_L369270319:
 JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* rX */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* rY */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3588, 906);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3589, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(265);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L992850825;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L992850825;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject), dlocals_1_)>0) /* IFGT CustomJump */ goto label_L1455871253;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject), dlocals_3_)>0) /* IFGT CustomJump */ goto label_L1455871253;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_x(__cn1ThisObject));
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Dimension2D_getWidth___R_double(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     PUSH_DOUBLE(tmpResult); }
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DLOAD(1);
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L992850825;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1455871253;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_Rectangle2D_y(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Rectangle2D_size(__cn1ThisObject));
     __CN1_DEBUG_INFO(266);
@@ -474,14 +474,14 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___double_double_R_boolea
     SP--; SP[-1].data.d = SP[-1].data.d + (*SP).data.d; /* DADD */
     BC_DLOAD(3);
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L992850825;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1455871253;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1173438780;
+    goto label_L1881892202;
 
-label_L992850825:
+label_L1455871253:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1173438780:
+label_L1881892202:
     __CN1_DEBUG_INFO(265);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -500,7 +500,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_intersection___double_double_doubl
     volatile JAVA_DOUBLE dlocals_19_ = 0; /* v19 */
     volatile JAVA_DOUBLE dlocals_21_ = 0; /* v21 */
     volatile JAVA_DOUBLE dlocals_23_ = 0; /* v23 */
-    DEFINE_INSTANCE_METHOD_STACK(10, 25, 0, 3588, 3593);
+    DEFINE_INSTANCE_METHOD_STACK(10, 25, 0, 3589, 3594);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -534,45 +534,45 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_intersection___double_double_doubl
     /* VarOp.assignFrom */     dlocals_23_ = dlocals_15_;
     /* VarOp.assignFrom */ dlocals_23_=(dlocals_23_ + dlocals_7_);
     __CN1_DEBUG_INFO(287);
-    if (CN1_CMP_EXPR(dlocals_9_, dlocals_13_)>=0) /* IFGE CustomJump */ goto label_L437490503;
+    if (CN1_CMP_EXPR(dlocals_9_, dlocals_13_)>=0) /* IFGE CustomJump */ goto label_L1385126783;
     __CN1_DEBUG_INFO(288);
     /* VarOp.assignFrom */     dlocals_9_ = dlocals_13_;
 
-label_L437490503:
+label_L1385126783:
     __CN1_DEBUG_INFO(290);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_15_)>=0) /* IFGE CustomJump */ goto label_L409114060;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_15_)>=0) /* IFGE CustomJump */ goto label_L1020242985;
     __CN1_DEBUG_INFO(291);
     /* VarOp.assignFrom */     dlocals_11_ = dlocals_15_;
 
-label_L409114060:
+label_L1020242985:
     __CN1_DEBUG_INFO(293);
-    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)<=0) /* IFLE CustomJump */ goto label_L1317395634;
+    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)<=0) /* IFLE CustomJump */ goto label_L1547811032;
     __CN1_DEBUG_INFO(294);
     /* VarOp.assignFrom */     dlocals_17_ = dlocals_21_;
 
-label_L1317395634:
+label_L1547811032:
     __CN1_DEBUG_INFO(296);
-    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)<=0) /* IFLE CustomJump */ goto label_L28478719;
+    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)<=0) /* IFLE CustomJump */ goto label_L2011862543;
     __CN1_DEBUG_INFO(297);
     /* VarOp.assignFrom */     dlocals_19_ = dlocals_23_;
 
-label_L28478719:
+label_L2011862543:
     __CN1_DEBUG_INFO(299);
     /* VarOp.assignFrom */ dlocals_17_=(dlocals_17_ - dlocals_9_);
     __CN1_DEBUG_INFO(300);
     /* VarOp.assignFrom */ dlocals_19_=(dlocals_19_ - dlocals_11_);
     __CN1_DEBUG_INFO(304);
-    if (CN1_CMP_EXPR(dlocals_17_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L121486885;
+    if (CN1_CMP_EXPR(dlocals_17_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1595305774;
     __CN1_DEBUG_INFO(305);
     /* VarOp.assignFrom */     dlocals_17_ = -2.147483648E9;
 
-label_L121486885:
+label_L1595305774:
     __CN1_DEBUG_INFO(307);
-    if (CN1_CMP_EXPR(dlocals_19_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L201168891;
+    if (CN1_CMP_EXPR(dlocals_19_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L519650817;
     __CN1_DEBUG_INFO(308);
     /* VarOp.assignFrom */     dlocals_19_ = -2.147483648E9;
 
-label_L201168891:
+label_L519650817:
     __CN1_DEBUG_INFO(310);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle2D(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -600,7 +600,7 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_intersection___double_double_double_
     volatile JAVA_DOUBLE dlocals_21_ = 0; /* v21 */
     volatile JAVA_DOUBLE dlocals_23_ = 0; /* v23 */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Rectangle2D(threadStateData);
-    DEFINE_METHOD_STACK(4, 33, 0, 3588, 3593);
+    DEFINE_METHOD_STACK(4, 33, 0, 3589, 3594);
     dlocals_0_ = __cn1Arg1;
     dlocals_2_ = __cn1Arg2;
     dlocals_4_ = __cn1Arg3;
@@ -634,45 +634,45 @@ JAVA_VOID com_codename1_ui_geom_Rectangle2D_intersection___double_double_double_
     /* VarOp.assignFrom */     dlocals_31_ = dlocals_23_;
     /* VarOp.assignFrom */ dlocals_31_=(dlocals_31_ + dlocals_6_);
     __CN1_DEBUG_INFO(337);
-    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)>=0) /* IFGE CustomJump */ goto label_L1811786362;
+    if (CN1_CMP_EXPR(dlocals_17_, dlocals_21_)>=0) /* IFGE CustomJump */ goto label_L1336922750;
     __CN1_DEBUG_INFO(338);
     /* VarOp.assignFrom */     dlocals_17_ = dlocals_21_;
 
-label_L1811786362:
+label_L1336922750:
     __CN1_DEBUG_INFO(340);
-    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)>=0) /* IFGE CustomJump */ goto label_L2117932686;
+    if (CN1_CMP_EXPR(dlocals_19_, dlocals_23_)>=0) /* IFGE CustomJump */ goto label_L1825992554;
     __CN1_DEBUG_INFO(341);
     /* VarOp.assignFrom */     dlocals_19_ = dlocals_23_;
 
-label_L2117932686:
+label_L1825992554:
     __CN1_DEBUG_INFO(343);
-    if (CN1_CMP_EXPR(dlocals_25_, dlocals_29_)<=0) /* IFLE CustomJump */ goto label_L345723898;
+    if (CN1_CMP_EXPR(dlocals_25_, dlocals_29_)<=0) /* IFLE CustomJump */ goto label_L13963969;
     __CN1_DEBUG_INFO(344);
     /* VarOp.assignFrom */     dlocals_25_ = dlocals_29_;
 
-label_L345723898:
+label_L13963969:
     __CN1_DEBUG_INFO(346);
-    if (CN1_CMP_EXPR(dlocals_27_, dlocals_31_)<=0) /* IFLE CustomJump */ goto label_L1941851357;
+    if (CN1_CMP_EXPR(dlocals_27_, dlocals_31_)<=0) /* IFLE CustomJump */ goto label_L1468739052;
     __CN1_DEBUG_INFO(347);
     /* VarOp.assignFrom */     dlocals_27_ = dlocals_31_;
 
-label_L1941851357:
+label_L1468739052:
     __CN1_DEBUG_INFO(349);
     /* VarOp.assignFrom */ dlocals_25_=(dlocals_25_ - dlocals_17_);
     __CN1_DEBUG_INFO(350);
     /* VarOp.assignFrom */ dlocals_27_=(dlocals_27_ - dlocals_19_);
     __CN1_DEBUG_INFO(355);
-    if (CN1_CMP_EXPR(dlocals_25_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1964410538;
+    if (CN1_CMP_EXPR(dlocals_25_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1720072513;
     __CN1_DEBUG_INFO(356);
     /* VarOp.assignFrom */     dlocals_25_ = -2.147483648E9;
 
-label_L1964410538:
+label_L1720072513:
     __CN1_DEBUG_INFO(358);
-    if (CN1_CMP_EXPR(dlocals_27_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L1669953504;
+    if (CN1_CMP_EXPR(dlocals_27_, -2.147483648E9)>=0) /* IFGE CustomJump */ goto label_L972335044;
     __CN1_DEBUG_INFO(359);
     /* VarOp.assignFrom */     dlocals_27_ = -2.147483648E9;
 
-label_L1669953504:
+label_L972335044:
     __CN1_DEBUG_INFO(362);
     set_field_com_codename1_ui_geom_Rectangle2D_x(threadStateData, dlocals_17_, locals[16].data.o);
     __CN1_DEBUG_INFO(363);
@@ -688,7 +688,7 @@ label_L1669953504:
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_intersection___com_codename1_ui_geom_Rectangle2D_R_com_codename1_ui_geom_Rectangle2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3588, 3593);
+    DEFINE_INSTANCE_METHOD_STACK(9, 2, 0, 3589, 3594);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(375);
@@ -715,11 +715,11 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_intersects___double_double_double
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___com_codename1_ui_Transform_R_com_codename1_ui_geom_PathIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 3588, 3595);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 3589, 3596);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(448);
-    if (get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L600872011;
+    if (get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L496695089;
     __CN1_DEBUG_INFO(449);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_GeneralPath(threadStateData)); /* NEW */
@@ -759,7 +759,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___com_codename1_ui
     __CN1_DEBUG_INFO(454);
     virtual_com_codename1_ui_geom_GeneralPath_closePath__(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject)); 
 
-label_L600872011:
+label_L496695089:
     __CN1_DEBUG_INFO(457);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_geom_GeneralPath_getPathIterator___com_codename1_ui_Transform_R_com_codename1_ui_geom_PathIterator(threadStateData, get_field_com_codename1_ui_geom_Rectangle2D_path(__cn1ThisObject), locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -769,7 +769,7 @@ label_L600872011:
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___R_com_codename1_ui_geom_PathIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3588, 3595);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3589, 3596);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(465);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_geom_Rectangle2D_getPathIterator___com_codename1_ui_Transform_R_com_codename1_ui_geom_PathIterator(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */);
     PUSH_OBJ(tmpResult); }
@@ -779,7 +779,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getPathIterator___R_com_codename1_
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3588, 2556);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3589, 2557);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(472);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -819,7 +819,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getBounds___R_com_codename1_ui_geo
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getBounds2D___R_float_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 3588, 3596);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 3589, 3597);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(484);
     PUSH_INT(4); /* ICONST_4 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_FLOAT, sizeof(JAVA_ARRAY_FLOAT), 1));
@@ -857,7 +857,7 @@ JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_getBounds2D___R_float_1ARRAY(CODEN
 
 
 JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_isRectangle___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3588, 3597);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3589, 3598);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(491);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -866,7 +866,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_isRectangle___R_boolean(CODENAME_
 JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___int_int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 3588, 906);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 3589, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(495);
@@ -879,7 +879,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Rectangle2D_contains___int_int_R_boolean(CODE
 
 
 JAVA_OBJECT com_codename1_ui_geom_Rectangle2D_intersection___com_codename1_ui_geom_Rectangle_R_com_codename1_ui_geom_Shape(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(10, 3, 0, 3588, 3593);
+    DEFINE_INSTANCE_METHOD_STACK(10, 3, 0, 3589, 3594);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(499);

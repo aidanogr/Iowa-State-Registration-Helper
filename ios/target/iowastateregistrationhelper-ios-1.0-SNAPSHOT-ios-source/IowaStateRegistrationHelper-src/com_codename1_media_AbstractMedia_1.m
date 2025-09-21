@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_com_codename1_media_AbstractMedia_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_1___INIT_____com_codename1_media_AbstractMedia(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8672, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8673, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(143);
@@ -64,17 +64,17 @@ JAVA_VOID com_codename1_media_AbstractMedia_1___INIT_____com_codename1_media_Abs
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_1_complete___com_codename1_media_AsyncMedia(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8672, 6666);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8673, 6667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(146);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$000___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PlayRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_1_this_0(__cn1ThisObject)));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1304342085;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1254593146;
     __CN1_DEBUG_INFO(147);
     /* CustomInvoke */com_codename1_media_AbstractMedia_access$002___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PlayRequest_R_com_codename1_media_AsyncMedia_PlayRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_1_this_0(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L1304342085:
+label_L1254593146:
     __CN1_DEBUG_INFO(149);
     /* CustomInvoke */com_codename1_media_AsyncMedia_PlayRequest_complete___java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(150);
@@ -84,17 +84,17 @@ label_L1304342085:
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_1_error___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8672, 67);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8673, 68);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(154);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_media_AbstractMedia_access$000___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PlayRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_1_this_0(__cn1ThisObject)));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L464345779;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L633324888;
     __CN1_DEBUG_INFO(155);
     /* CustomInvoke */com_codename1_media_AbstractMedia_access$002___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PlayRequest_R_com_codename1_media_AsyncMedia_PlayRequest(threadStateData, get_field_com_codename1_media_AbstractMedia_1_this_0(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L464345779:
+label_L633324888:
     __CN1_DEBUG_INFO(157);
     /* CustomInvoke */com_codename1_media_AsyncMedia_PlayRequest_error___java_lang_Throwable(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(158);
@@ -104,7 +104,7 @@ label_L464345779:
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_1_complete___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8672, 6666);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8673, 6667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(143);

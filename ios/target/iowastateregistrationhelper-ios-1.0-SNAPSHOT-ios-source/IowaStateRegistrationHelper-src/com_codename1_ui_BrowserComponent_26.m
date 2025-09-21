@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_26(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_26___INIT_____com_codename1_ui_BrowserComponent_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8105, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8106, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -70,7 +70,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_26___INIT_____com_codename1_ui_Brows
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_26_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8105, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8106, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(985);
     /* CustomInvoke */virtual_com_codename1_ui_BrowserComponent_setPage___java_lang_String_java_lang_String(threadStateData, get_field_com_codename1_ui_BrowserComponent_26_this_0(__cn1ThisObject), get_field_com_codename1_ui_BrowserComponent_26_val_html(__cn1ThisObject), get_field_com_codename1_ui_BrowserComponent_26_val_baseUrl(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(986);

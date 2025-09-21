@@ -57,7 +57,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_geom_GeneralPath_Pt(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Pt___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3727, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3728, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3289);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -66,7 +66,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Pt___INIT____(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Pt_clone___com_codename1_ui_geom_GeneralPath_Pt(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3727, 948);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3728, 949);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3294);
@@ -80,7 +80,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Pt_clone___com_codename1_ui_geom_Gen
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Pt___INIT_____com_codename1_ui_geom_GeneralPath_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 3727, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 3728, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3289);

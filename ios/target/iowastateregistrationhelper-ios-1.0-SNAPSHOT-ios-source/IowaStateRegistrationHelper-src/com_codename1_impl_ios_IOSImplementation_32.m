@@ -33,7 +33,7 @@ com_codename1_impl_ios_IOSImplementation_32___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9632, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9633, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8508);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -42,9 +42,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_32___INIT____(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 9632, 202);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 9633, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8512);
-    if (com_codename1_impl_ios_IOSImplementation_access$6400___R_com_codename1_background_BackgroundFetch(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2078239671;
+    if (com_codename1_impl_ios_IOSImplementation_access$6400___R_com_codename1_background_BackgroundFetch(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L54176060;
     __CN1_DEBUG_INFO(8513);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6400___R_com_codename1_background_BackgroundFetch(threadStateData));
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
@@ -55,7 +55,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_32_run__(CODENAME_ONE_THREAD_
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_32_1___INIT_____com_codename1_impl_ios_IOSImplementation_32(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_codename1_background_BackgroundFetch_performBackgroundFetch___long_com_codename1_util_Callback(threadStateData, SP[-3].data.o, SP[-2].data.l, SP[-1].data.o);     SP-= 3;
 
-label_L2078239671:
+label_L54176060:
     __CN1_DEBUG_INFO(8532);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

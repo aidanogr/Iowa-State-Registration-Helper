@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy___INIT_____com_codename1_impl_ios_IOSImplementation_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 9678, 200);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 9679, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -135,7 +135,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy___INIT_
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy_getBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9678, 2556);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9679, 2557);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4305);
 
 {
@@ -146,7 +146,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy_getBo
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy_setBounds___com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9678, 3589);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9679, 3590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4309);
@@ -158,7 +158,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy_setBoun
 
 
 JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureAlphaMaskProxy_getTextureName___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9678, 9619);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9679, 9620);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4313);
 
 {

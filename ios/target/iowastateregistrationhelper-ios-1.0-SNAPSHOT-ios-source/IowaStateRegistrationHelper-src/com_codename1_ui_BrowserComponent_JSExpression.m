@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_JSExpression(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSExpression___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8145, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8146, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1897);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSExpression___INIT_____java_lang_St
 
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSExpression_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8145, 897);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8146, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1906);
 
 {
@@ -59,7 +59,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSExpression_toString___R_java_lan
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSExpression_access$1200___com_codename1_ui_BrowserComponent_JSExpression_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_BrowserComponent_JSExpression(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8145, 812);
+    DEFINE_METHOD_STACK(1, 1, 0, 8146, 813);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1889);

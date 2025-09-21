@@ -31,7 +31,7 @@ com_codename1_impl_ios_IOSImplementation_38___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_38___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9640, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9641, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8745);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -40,7 +40,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_38___INIT____(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_38_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9640, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9641, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8748);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6800___R_com_codename1_payment_RestoreCallback(threadStateData));
     virtual_com_codename1_payment_RestoreCallback_restoreRequestComplete__(threadStateData, SP[-1].data.o);     SP -= 1;

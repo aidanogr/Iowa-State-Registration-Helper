@@ -61,7 +61,7 @@ void __GC_MARK_java_util_TimerTask(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToM
 
 
 JAVA_VOID java_util_TimerTask___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3147, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3148, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -74,7 +74,7 @@ JAVA_BOOLEAN java_util_TimerTask_cancel___R_boolean(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_VOID java_util_TimerTask_runImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 3147, 1164);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 3148, 1165);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     BC_ALOAD(0);
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
     set_field_java_util_TimerTask_lastExecution(threadStateData, POP_LONG(), POP_OBJ());

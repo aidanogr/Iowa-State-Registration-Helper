@@ -60,7 +60,7 @@ java_util_Locale___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Locale___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1275, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1276, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -75,7 +75,7 @@ JAVA_VOID java_util_Locale___INIT_____java_lang_String_java_lang_String(CODENAME
 
 JAVA_VOID java_util_Locale___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1275, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1276, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     BC_ALOAD(0);
     PUSH_OBJ(java_util_Locale_getOSLanguage___R_java_lang_String(threadStateData));
@@ -120,7 +120,7 @@ label_L1765250898:
 
 label_L670971910:
     if (get_field_java_util_Locale_country(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1601292138;
-    set_field_java_util_Locale_country(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(1276), __cn1ThisObject);
+    set_field_java_util_Locale_country(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(1277), __cn1ThisObject);
 
 label_L1601292138:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -130,7 +130,7 @@ label_L1601292138:
 
 JAVA_OBJECT java_util_Locale_getDefault___R_java_util_Locale(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_Locale(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 1275, 1277);
+    DEFINE_METHOD_STACK(2, 0, 0, 1276, 1278);
     if (get_static_java_util_Locale_defaultLocale(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L494586676;
     PUSH_POINTER(__NEW_java_util_Locale(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -147,7 +147,7 @@ label_L494586676:
 
 JAVA_VOID java_util_Locale_setDefault___java_util_Locale(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_Locale(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 1275, 1278);
+    DEFINE_METHOD_STACK(1, 1, 0, 1276, 1279);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     set_static_java_util_Locale_defaultLocale(threadStateData, locals[0].data.o);
@@ -157,7 +157,7 @@ JAVA_VOID java_util_Locale_setDefault___java_util_Locale(CODENAME_ONE_THREAD_STA
 
 
 JAVA_OBJECT java_util_Locale_getLanguage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1275, 1279);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1276, 1280);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_Locale_language(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -165,7 +165,7 @@ JAVA_OBJECT java_util_Locale_getLanguage___R_java_lang_String(CODENAME_ONE_THREA
 
 
 JAVA_OBJECT java_util_Locale_getCountry___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1275, 1280);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1276, 1281);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_Locale_country(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();

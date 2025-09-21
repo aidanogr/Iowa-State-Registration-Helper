@@ -193,7 +193,7 @@ com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT____(threadStateData
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10142, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10143, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(47);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_layouts_BoxLayout_y___R_com_codename1_ui_layouts_BoxLayout(threadStateData));
@@ -211,7 +211,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer___INIT____(CODEN
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* scrollY */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10142, 2546);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10143, 2547);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(52);
     /* CustomInvoke */com_codename1_ui_Container_setScrollY___int(threadStateData, __cn1ThisObject, ilocals_1_); 

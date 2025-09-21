@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_TextSelection_3(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_TextSelection_3___INIT_____com_codename1_ui_TextSelection_java_util_TreeSet(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6152, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6153, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -60,17 +60,17 @@ JAVA_VOID com_codename1_ui_TextSelection_3___INIT_____com_codename1_ui_TextSelec
 
 
 JAVA_VOID com_codename1_ui_TextSelection_3_call___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6152, 6088);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6153, 6089);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(843);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_Component_getTextSelectionSupport___R_com_codename1_ui_TextSelection_TextSelectionSupport(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(844);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L285058000;
-    if (/* CustomInvoke */virtual_com_codename1_ui_TextSelection_TextSelectionSupport_isTextSelectionEnabled___com_codename1_ui_TextSelection_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_TextSelection_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L285058000;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1508720236;
+    if (/* CustomInvoke */virtual_com_codename1_ui_TextSelection_TextSelectionSupport_isTextSelectionEnabled___com_codename1_ui_TextSelection_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_TextSelection_3_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1508720236;
     __CN1_DEBUG_INFO(845);
     /* CustomInvoke */virtual_java_util_TreeSet_add___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_TextSelection_3_val_selectedComponents(__cn1ThisObject), locals[1].data.o); 
 
-label_L285058000:
+label_L1508720236:
     __CN1_DEBUG_INFO(847);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

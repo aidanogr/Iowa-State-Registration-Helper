@@ -217,7 +217,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_TextSelection_SelectionMenu(CODENAME_ONE_THRE
 
 
 JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu___INIT_____com_codename1_ui_TextSelection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 6411, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 6412, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1306);
@@ -227,14 +227,14 @@ JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu___INIT_____com_codename1_
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_HeavyButton(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_HeavyButton___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6412));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_HeavyButton___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6413));     SP -= 1;
     set_field_com_codename1_ui_TextSelection_SelectionMenu_copy(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(1304);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_HeavyButton(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_HeavyButton___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6413));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_HeavyButton___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6414));     SP -= 1;
     set_field_com_codename1_ui_TextSelection_SelectionMenu_selectAll(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(1307);
@@ -332,23 +332,23 @@ JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu___INIT_____com_codename1_
 
 
 JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6411, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6412, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1319);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_SelectionMenu_selectAll(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1293389141;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1582330795;
     __CN1_DEBUG_INFO(1320);
     virtual_com_codename1_ui_TextSelection_selectAll__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
-    goto label_L952288009;
+    goto label_L1010983633;
 
-label_L1293389141:
+label_L1582330795:
     __CN1_DEBUG_INFO(1322);
     virtual_com_codename1_ui_TextSelection_copy__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
 
-label_L952288009:
+label_L1010983633:
     __CN1_DEBUG_INFO(1324);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

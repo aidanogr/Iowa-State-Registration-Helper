@@ -45,7 +45,7 @@ java_util_Collections_EmptyList___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Collections_EmptyList___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6356, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_AbstractList___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -53,7 +53,7 @@ JAVA_VOID java_util_Collections_EmptyList___INIT____(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_BOOLEAN java_util_Collections_EmptyList_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6356, 906);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(0); /* ICONST_0 */
@@ -62,14 +62,14 @@ JAVA_BOOLEAN java_util_Collections_EmptyList_contains___java_lang_Object_R_boole
 
 
 JAVA_INT java_util_Collections_EmptyList_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6356, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6357, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_util_Collections_EmptyList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6356, 612);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6357, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_lang_IndexOutOfBoundsException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -85,7 +85,7 @@ JAVA_OBJECT java_util_Collections_EmptyList_readResolve___R_java_lang_Object(COD
 
 
 JAVA_VOID java_util_Collections_EmptyList___INIT_____java_util_Collections_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6356, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6357, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_Collections_EmptyList___INIT____(threadStateData, __cn1ThisObject); 

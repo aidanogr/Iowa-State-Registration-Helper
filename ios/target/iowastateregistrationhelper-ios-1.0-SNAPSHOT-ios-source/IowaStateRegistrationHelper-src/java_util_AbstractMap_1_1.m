@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_java_util_AbstractMap_1_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_AbstractMap_1_1___INIT_____java_util_AbstractMap_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5739, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5740, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_AbstractMap_1_1_this_1(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -63,7 +63,7 @@ JAVA_VOID java_util_AbstractMap_1_1___INIT_____java_util_AbstractMap_1(CODENAME_
 
 
 JAVA_BOOLEAN java_util_AbstractMap_1_1_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5739, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5740, 1252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, get_field_java_util_AbstractMap_1_1_setIterator(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -71,7 +71,7 @@ JAVA_BOOLEAN java_util_AbstractMap_1_1_hasNext___R_boolean(CODENAME_ONE_THREAD_S
 
 
 JAVA_OBJECT java_util_AbstractMap_1_1_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5739, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5740, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, get_field_java_util_AbstractMap_1_1_setIterator(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, SP[-1].data.o);
@@ -82,7 +82,7 @@ JAVA_OBJECT java_util_AbstractMap_1_1_next___R_java_lang_Object(CODENAME_ONE_THR
 
 
 JAVA_VOID java_util_AbstractMap_1_1_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5739, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5740, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_Iterator_remove__(threadStateData, get_field_java_util_AbstractMap_1_1_setIterator(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

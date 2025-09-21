@@ -58,7 +58,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_TreeMapEntry(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_TreeMap_TreeMapEntry___INIT_____java_lang_Object_java_lang_Object_java_util_TreeMap_Node_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 6256, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 6257, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

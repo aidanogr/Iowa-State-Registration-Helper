@@ -70,7 +70,7 @@ com_codename1_ui_html_HTMLUtils___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_html_HTMLUtils___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7861, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7862, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(39);
@@ -93,29 +93,29 @@ JAVA_OBJECT com_codename1_ui_html_HTMLUtils_convertCharEntity___java_lang_String
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_1_ = 0; /* lookupHTMLentities */
     __STATIC_INITIALIZER_com_codename1_ui_html_HTMLUtils(threadStateData);
-    DEFINE_METHOD_STACK(4, 5, 0, 7861, 7815);
+    DEFINE_METHOD_STACK(4, 5, 0, 7862, 7816);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL2099091301cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL2099091301cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L2099091301cn1_class_id_java_lang_NumberFormatException1, label_L1253466407, restoreToL2099091301cn1_class_id_java_lang_NumberFormatException1);
-    int restoreToL752090153cn1_class_id_java_lang_NumberFormatException2;
-    int tryBlockOffsetL752090153cn1_class_id_java_lang_NumberFormatException2;
-    DEFINE_CATCH_BLOCK(catch_L752090153cn1_class_id_java_lang_NumberFormatException2, label_L594043354, restoreToL752090153cn1_class_id_java_lang_NumberFormatException2);
+    int restoreToL1210263827cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL1210263827cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L1210263827cn1_class_id_java_lang_NumberFormatException1, label_L1282128509, restoreToL1210263827cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL725579524cn1_class_id_java_lang_NumberFormatException2;
+    int tryBlockOffsetL725579524cn1_class_id_java_lang_NumberFormatException2;
+    DEFINE_CATCH_BLOCK(catch_L725579524cn1_class_id_java_lang_NumberFormatException2, label_L1105778967, restoreToL725579524cn1_class_id_java_lang_NumberFormatException2);
     __CN1_DEBUG_INFO(112);
     /* VarOp.assignFrom */     ilocals_3_ = -1 /* ICONST_M1 */; 
     __CN1_DEBUG_INFO(113);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4595))==0) /* IFEQ CustomJump */ JUMP_TO(label_L939455271, 0);
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4596))==0) /* IFEQ CustomJump */ JUMP_TO(label_L719699252, 0);
     __CN1_DEBUG_INFO(114);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7864))==0) /* IFEQ CustomJump */ JUMP_TO(label_L752090153, 0);
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7865))==0) /* IFEQ CustomJump */ JUMP_TO(label_L725579524, 0);
 
-label_L2099091301:
- tryBlockOffsetL2099091301cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L2099091301cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL2099091301cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L1210263827:
+ tryBlockOffsetL1210263827cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1210263827cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL1210263827cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(116);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_substring___int_R_java_lang_String(threadStateData, locals[0].data.o, 2 /* ICONST_2 */);
@@ -126,20 +126,20 @@ label_L2099091301:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L75929764:
+label_L1387468185:
 END_TRY(1);    __CN1_DEBUG_INFO(119);
-    JUMP_TO(label_L1435836365, 0);
+    JUMP_TO(label_L974559308, 0);
 
-label_L1253466407:
+label_L1282128509:
     __CN1_DEBUG_INFO(117);
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(119);
-    JUMP_TO(label_L1435836365, 0);
+    JUMP_TO(label_L974559308, 0);
 
-label_L752090153:
- tryBlockOffsetL752090153cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L752090153cn1_class_id_java_lang_NumberFormatException2);
-    restoreToL752090153cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
+label_L725579524:
+ tryBlockOffsetL725579524cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L725579524cn1_class_id_java_lang_NumberFormatException2);
+    restoreToL725579524cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(122);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_substring___int_R_java_lang_String(threadStateData, locals[0].data.o, 1 /* ICONST_1 */);
@@ -148,28 +148,28 @@ label_L752090153:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L366005644:
+label_L1869942250:
 END_TRY(1);    __CN1_DEBUG_INFO(125);
-    JUMP_TO(label_L1435836365, 0);
+    JUMP_TO(label_L974559308, 0);
 
-label_L594043354:
+label_L1105778967:
     __CN1_DEBUG_INFO(123);
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(125);
-    JUMP_TO(label_L1435836365, 0);
+    JUMP_TO(label_L974559308, 0);
 
-label_L939455271:
+label_L719699252:
     __CN1_DEBUG_INFO(128);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */com_codename1_ui_html_HTMLUtils_getCharEntityCode___java_lang_String_boolean_java_util_Hashtable_R_int(threadStateData, locals[0].data.o, ilocals_1_, locals[2].data.o);
 
-label_L1435836365:
+label_L974559308:
     __CN1_DEBUG_INFO(131);
-    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ JUMP_TO(label_L890491412, 0);
+    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ JUMP_TO(label_L1035062904, 0);
     __CN1_DEBUG_INFO(132);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(218));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___char_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, (ilocals_3_ & 0xffff));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -178,14 +178,14 @@ label_L1435836365:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L890491412:
+label_L1035062904:
     __CN1_DEBUG_INFO(134);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7865));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7866));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[0].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -202,7 +202,7 @@ JAVA_INT com_codename1_ui_html_HTMLUtils_getCharEntityCode___java_lang_String_bo
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_1_ = 0; /* html */
     __STATIC_INITIALIZER_com_codename1_ui_html_HTMLUtils(threadStateData);
-    DEFINE_METHOD_STACK(3, 5, 0, 7861, 7866);
+    DEFINE_METHOD_STACK(3, 5, 0, 7862, 7867);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
@@ -213,10 +213,10 @@ JAVA_INT com_codename1_ui_html_HTMLUtils_getCharEntityCode___java_lang_String_bo
     __CN1_DEBUG_INFO(144);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L1000600589:
-    if (ilocals_4_>=CN1_ARRAY_LENGTH(get_static_com_codename1_ui_html_HTMLUtils_XML_CHAR_ENTITIES(threadStateData))) /* IF_ICMPGE CustomJump */ goto label_L1966372954;
+label_L1689730570:
+    if (ilocals_4_>=CN1_ARRAY_LENGTH(get_static_com_codename1_ui_html_HTMLUtils_XML_CHAR_ENTITIES(threadStateData))) /* IF_ICMPGE CustomJump */ goto label_L976935143;
     __CN1_DEBUG_INFO(145);
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, CN1_ARRAY_ELEMENT_OBJECT(get_static_com_codename1_ui_html_HTMLUtils_XML_CHAR_ENTITIES(threadStateData), ilocals_4_))==0) /* IFEQ CustomJump */ goto label_L1186328673;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, CN1_ARRAY_ELEMENT_OBJECT(get_static_com_codename1_ui_html_HTMLUtils_XML_CHAR_ENTITIES(threadStateData), ilocals_4_))==0) /* IFEQ CustomJump */ goto label_L1785536499;
     __CN1_DEBUG_INFO(146);
 
 {
@@ -224,14 +224,14 @@ label_L1000600589:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1186328673:
+label_L1785536499:
     __CN1_DEBUG_INFO(144);
     BC_IINC(4, 1);
-    goto label_L1000600589;
+    goto label_L1689730570;
 
-label_L1966372954:
+label_L976935143:
     __CN1_DEBUG_INFO(149);
-    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ goto label_L277549599;
+    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ goto label_L1472659178;
     __CN1_DEBUG_INFO(150);
 
 {
@@ -239,13 +239,13 @@ label_L1966372954:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L277549599:
+label_L1472659178:
     __CN1_DEBUG_INFO(152);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1185631996;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L995621141;
     __CN1_DEBUG_INFO(154);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */com_codename1_ui_html_HTMLUtils_getStringVal___java_lang_String_java_lang_String_1ARRAY_R_int(threadStateData, locals[0].data.o, get_static_com_codename1_ui_html_HTMLUtils_HTML_BASIC_CHAR_ENTITY_STRINGS(threadStateData));
     __CN1_DEBUG_INFO(155);
-    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ goto label_L1185631996;
+    if (ilocals_3_==-1 /* ICONST_M1 */) /* IF_ICMPEQ CustomJump */ goto label_L995621141;
     __CN1_DEBUG_INFO(156);
 
 {
@@ -253,12 +253,12 @@ label_L277549599:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1185631996:
+label_L995621141:
     __CN1_DEBUG_INFO(161);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L804559024;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L969407243;
     __CN1_DEBUG_INFO(162);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_Hashtable_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, locals[0].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(163);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L804559024;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L969407243;
     __CN1_DEBUG_INFO(164);
 
 {
@@ -266,7 +266,7 @@ label_L1185631996:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L804559024:
+label_L969407243:
     __CN1_DEBUG_INFO(169);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 }
@@ -279,22 +279,22 @@ JAVA_OBJECT com_codename1_ui_html_HTMLUtils_encodeString___java_lang_String_R_ja
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     __STATIC_INITIALIZER_com_codename1_ui_html_HTMLUtils(threadStateData);
-    DEFINE_METHOD_STACK(3, 7, 0, 7861, 7867);
+    DEFINE_METHOD_STACK(3, 7, 0, 7862, 7868);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(181);
-    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L189993695;
+    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1683866967;
     __CN1_DEBUG_INFO(182);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(218);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(219);
 
-label_L189993695:
+label_L1683866967:
     __CN1_DEBUG_INFO(184);
-    /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(218);
+    /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(219);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(185);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
-label_L1578052738:
-    if (ilocals_2_>=virtual_java_lang_String_length___R_int(threadStateData, locals[0].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1124131392;
+label_L1713999849:
+    if (ilocals_2_>=virtual_java_lang_String_length___R_int(threadStateData, locals[0].data.o)) /* IF_ICMPGE CustomJump */ goto label_L76306072;
     __CN1_DEBUG_INFO(186);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */virtual_java_lang_String_charAt___int_R_char(threadStateData, locals[0].data.o, ilocals_2_);
     __CN1_DEBUG_INFO(187);
@@ -302,60 +302,60 @@ label_L1578052738:
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(97);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1598068850;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1542221;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(122);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L109978855;
 
-label_L1598068850:
+label_L1542221:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(65);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1194106760;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L208875036;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(90);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L109978855;
 
-label_L1194106760:
+label_L208875036:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(48);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L58353615;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1789759900;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(57);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L109978855;
 
-label_L58353615:
+label_L1789759900:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(45);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L109978855;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(46);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L109978855;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(95);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1417325106;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L109978855;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(126);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1478683866;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1455696228;
 
-label_L1417325106:
+label_L109978855:
     __CN1_DEBUG_INFO(194);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -367,16 +367,16 @@ label_L1417325106:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
-    goto label_L1493755606;
+    goto label_L555390535;
 
-label_L1478683866:
+label_L1455696228:
     __CN1_DEBUG_INFO(195);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(128);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L2063332000;
-    if (ilocals_3_>65535) /* IF_ICMPGT CustomJump */ goto label_L2063332000;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L873226166;
+    if (ilocals_3_>65535) /* IF_ICMPGT CustomJump */ goto label_L873226166;
     __CN1_DEBUG_INFO(196);
     /* VarOp.assignFrom */ ilocals_4_=(ilocals_3_ / 256);
     __CN1_DEBUG_INFO(197);
@@ -386,7 +386,7 @@ label_L1478683866:
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(2047);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L711964207;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L841681370;
     __CN1_DEBUG_INFO(199);
     /* VarOp.assignFrom */ ilocals_4_=((192 + BC_ISHL_EXPR(ilocals_4_, 2 /* ICONST_2 */)) + BC_ISHR_EXPR(ilocals_5_, 6));
     __CN1_DEBUG_INFO(200);
@@ -397,7 +397,7 @@ label_L1478683866:
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_toHexString___int_R_java_lang_String(threadStateData, ilocals_4_));
     { JAVA_OBJECT tmpResult = virtual_java_lang_String_toUpperCase___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -405,7 +405,7 @@ label_L1478683866:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_toHexString___int_R_java_lang_String(threadStateData, ilocals_5_));
     { JAVA_OBJECT tmpResult = virtual_java_lang_String_toUpperCase___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -416,9 +416,9 @@ label_L1478683866:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
-    goto label_L1709493124;
+    goto label_L1171491314;
 
-label_L711964207:
+label_L841681370:
     __CN1_DEBUG_INFO(203);
     /* VarOp.assignFrom */ ilocals_6_=(128 + (ilocals_5_ & 63));
     __CN1_DEBUG_INFO(204);
@@ -431,7 +431,7 @@ label_L711964207:
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_toHexString___int_R_java_lang_String(threadStateData, ilocals_4_));
     { JAVA_OBJECT tmpResult = virtual_java_lang_String_toUpperCase___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -439,7 +439,7 @@ label_L711964207:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_toHexString___int_R_java_lang_String(threadStateData, ilocals_5_));
     { JAVA_OBJECT tmpResult = virtual_java_lang_String_toUpperCase___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -447,7 +447,7 @@ label_L711964207:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1649));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1650));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
@@ -464,32 +464,32 @@ label_L711964207:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
 
-label_L1709493124:
+label_L1171491314:
     __CN1_DEBUG_INFO(223);
-    goto label_L1493755606;
+    goto label_L555390535;
 
-label_L2063332000:
+label_L873226166:
     __CN1_DEBUG_INFO(224);
-    /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;    locals[4].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(1649);
+    /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;    locals[4].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(1650);
 locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(225);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(16);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L2068103096;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L814647201;
     __CN1_DEBUG_INFO(226);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[4].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1851));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1852));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(4);
 
-label_L2068103096:
+label_L814647201:
     __CN1_DEBUG_INFO(228);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -508,12 +508,12 @@ label_L2068103096:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
 
-label_L1493755606:
+label_L555390535:
     __CN1_DEBUG_INFO(185);
     BC_IINC(2, 1);
-    goto label_L1578052738;
+    goto label_L1713999849;
 
-label_L1124131392:
+label_L76306072:
     __CN1_DEBUG_INFO(232);
 
 {
@@ -525,7 +525,7 @@ label_L1124131392:
 
 JAVA_INT com_codename1_ui_html_HTMLUtils_getStringVal___java_lang_String_java_lang_String_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_html_HTMLUtils(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 7861, 7868);
+    DEFINE_METHOD_STACK(4, 2, 0, 7862, 7869);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -553,7 +553,7 @@ JAVA_INT com_codename1_ui_html_HTMLUtils_getStringVal___java_lang_String_java_la
     volatile JAVA_INT ilocals_3_ = 0; /* defaultValue */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_com_codename1_ui_html_HTMLUtils(threadStateData);
-    DEFINE_METHOD_STACK(3, 5, 0, 7861, 7868);
+    DEFINE_METHOD_STACK(3, 5, 0, 7862, 7869);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -562,16 +562,16 @@ JAVA_INT com_codename1_ui_html_HTMLUtils_getStringVal___java_lang_String_java_la
     locals[2].type = CN1_TYPE_OBJECT;
     ilocals_3_ = __cn1Arg4;
     __CN1_DEBUG_INFO(281);
-    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L159791010;
+    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L203829039;
     __CN1_DEBUG_INFO(282);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L861339480:
-    if (ilocals_4_>=CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_ICMPGE CustomJump */ goto label_L159791010;
+label_L1005063886:
+    if (ilocals_4_>=CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_ICMPGE CustomJump */ goto label_L203829039;
     __CN1_DEBUG_INFO(283);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[0].data.o, CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_4_))==0) /* IFEQ CustomJump */ goto label_L1258120701;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[0].data.o, CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_4_))==0) /* IFEQ CustomJump */ goto label_L1432599360;
     __CN1_DEBUG_INFO(284);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L337295973;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L286559682;
     __CN1_DEBUG_INFO(285);
 
 {
@@ -579,7 +579,7 @@ label_L861339480:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L337295973:
+label_L286559682:
     __CN1_DEBUG_INFO(287);
 
 {
@@ -587,12 +587,12 @@ label_L337295973:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1258120701:
+label_L1432599360:
     __CN1_DEBUG_INFO(282);
     BC_IINC(4, 1);
-    goto label_L861339480;
+    goto label_L1005063886;
 
-label_L159791010:
+label_L203829039:
     __CN1_DEBUG_INFO(292);
 
 {
@@ -603,7 +603,7 @@ label_L159791010:
 
 
 JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 7861, 861);
+    DEFINE_METHOD_STACK(4, 0, 0, 7862, 862);
     __CN1_DEBUG_INFO(44);
     PUSH_INT(5); /* ICONST_5 */
     SP--;
@@ -611,7 +611,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(0); /* ICONST_0 */
     /* LDC: 'lt'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7869));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7870));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -619,7 +619,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(1); /* ICONST_1 */
     /* LDC: 'gt'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7870));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7871));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -627,7 +627,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(2); /* ICONST_2 */
     /* LDC: 'amp'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7871));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7872));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -635,7 +635,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(3); /* ICONST_3 */
     /* LDC: 'quot'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7872));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7873));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -643,7 +643,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(4); /* ICONST_4 */
     /* LDC: 'apos'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7873));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7874));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -687,7 +687,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(0); /* ICONST_0 */
     /* LDC: 'nbsp'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7874));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7875));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -695,7 +695,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(1); /* ICONST_1 */
     /* LDC: 'iexcl'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7875));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7876));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -703,7 +703,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(2); /* ICONST_2 */
     /* LDC: 'cent'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7876));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7877));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -711,7 +711,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(3); /* ICONST_3 */
     /* LDC: 'pound'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7877));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7878));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -719,7 +719,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(4); /* ICONST_4 */
     /* LDC: 'curren'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7878));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7879));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -727,7 +727,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(5); /* ICONST_5 */
     /* LDC: 'yen'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7879));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7880));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -735,7 +735,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(6);
     /* LDC: 'brvbar'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7880));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7881));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -743,7 +743,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(7);
     /* LDC: 'sect'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7881));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7882));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -751,7 +751,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(8);
     /* LDC: 'uml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7882));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7883));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -759,7 +759,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(9);
     /* LDC: 'copy'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(2242));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(2243));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -767,7 +767,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(10);
     /* LDC: 'ordf'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7883));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7884));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -775,7 +775,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(11);
     /* LDC: 'laquo'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7884));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7885));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -783,7 +783,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(12);
     /* LDC: 'not'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7885));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7886));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -791,7 +791,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(13);
     /* LDC: 'shy'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7886));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7887));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -799,7 +799,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(14);
     /* LDC: 'reg'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7887));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7888));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -807,7 +807,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(15);
     /* LDC: 'macr'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7888));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7889));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -815,7 +815,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(16);
     /* LDC: 'deg'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(5758));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(5759));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -823,7 +823,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(17);
     /* LDC: 'plusmn'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7889));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7890));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -831,7 +831,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(18);
     /* LDC: 'sup2'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7890));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7891));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -839,7 +839,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(19);
     /* LDC: 'sup3'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7891));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7892));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -847,7 +847,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(20);
     /* LDC: 'acute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7892));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7893));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -855,7 +855,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(21);
     /* LDC: 'micro'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7893));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7894));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -863,7 +863,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(22);
     /* LDC: 'para'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7894));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7895));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -871,7 +871,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(23);
     /* LDC: 'middot'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7895));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7896));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -879,7 +879,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(24);
     /* LDC: 'cedil'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7896));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7897));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -887,7 +887,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(25);
     /* LDC: 'sup1'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7897));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7898));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -895,7 +895,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(26);
     /* LDC: 'ordm'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7898));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7899));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -903,7 +903,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(27);
     /* LDC: 'raquo'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7899));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7900));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -911,7 +911,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(28);
     /* LDC: 'frac14'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7900));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7901));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -919,7 +919,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(29);
     /* LDC: 'frac12'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7901));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7902));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -927,7 +927,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(30);
     /* LDC: 'frac34'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7902));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7903));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -935,7 +935,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(31);
     /* LDC: 'iquest'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7903));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7904));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -943,7 +943,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(32);
     /* LDC: 'Agrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7904));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7905));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -951,7 +951,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(33);
     /* LDC: 'Aacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7905));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7906));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -959,7 +959,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(34);
     /* LDC: 'Acirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7906));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7907));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -967,7 +967,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(35);
     /* LDC: 'Atilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7907));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7908));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -975,7 +975,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(36);
     /* LDC: 'Auml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7908));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7909));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -983,7 +983,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(37);
     /* LDC: 'Aring'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7909));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7910));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -991,7 +991,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(38);
     /* LDC: 'AElig'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7910));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7911));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -999,7 +999,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(39);
     /* LDC: 'Ccedil'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7911));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7912));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1007,7 +1007,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(40);
     /* LDC: 'Egrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7912));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7913));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1015,7 +1015,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(41);
     /* LDC: 'Eacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7913));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7914));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1023,7 +1023,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(42);
     /* LDC: 'Ecirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7914));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7915));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1031,7 +1031,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(43);
     /* LDC: 'Euml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7915));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7916));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1039,7 +1039,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(44);
     /* LDC: 'Igrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7916));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7917));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1047,7 +1047,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(45);
     /* LDC: 'Iacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7917));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7918));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1055,7 +1055,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(46);
     /* LDC: 'Icirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7918));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7919));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1063,7 +1063,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(47);
     /* LDC: 'Iuml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7919));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7920));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1071,7 +1071,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(48);
     /* LDC: 'ETH'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7920));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7921));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1079,7 +1079,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(49);
     /* LDC: 'Ntilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7921));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7922));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1087,7 +1087,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(50);
     /* LDC: 'Ograve'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7922));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7923));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1095,7 +1095,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(51);
     /* LDC: 'Oacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7923));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7924));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1103,7 +1103,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(52);
     /* LDC: 'Ocirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7924));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7925));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1111,7 +1111,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(53);
     /* LDC: 'Otilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7925));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7926));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1119,7 +1119,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(54);
     /* LDC: 'Ouml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7926));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7927));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1127,7 +1127,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(55);
     /* LDC: 'times'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7927));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7928));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1135,7 +1135,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(56);
     /* LDC: 'Oslash'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7928));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7929));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1143,7 +1143,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(57);
     /* LDC: 'Ugrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7929));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7930));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1151,7 +1151,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(58);
     /* LDC: 'Uacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7930));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7931));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1159,7 +1159,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(59);
     /* LDC: 'Ucirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7931));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7932));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1167,7 +1167,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(60);
     /* LDC: 'Uuml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7932));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7933));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1175,7 +1175,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(61);
     /* LDC: 'Yacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7933));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7934));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1183,7 +1183,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(62);
     /* LDC: 'THORN'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7934));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7935));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1191,7 +1191,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(63);
     /* LDC: 'szlig'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7935));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7936));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1199,7 +1199,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(64);
     /* LDC: 'agrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7936));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7937));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1207,7 +1207,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(65);
     /* LDC: 'aacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7937));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7938));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1215,7 +1215,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(66);
     /* LDC: 'acirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7938));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7939));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1223,7 +1223,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(67);
     /* LDC: 'atilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7939));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7940));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1231,7 +1231,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(68);
     /* LDC: 'auml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7940));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7941));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1239,7 +1239,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(69);
     /* LDC: 'aring'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7941));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7942));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1247,7 +1247,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(70);
     /* LDC: 'aelig'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7942));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7943));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1255,7 +1255,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(71);
     /* LDC: 'ccedil'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7943));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7944));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1263,7 +1263,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(72);
     /* LDC: 'egrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7944));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7945));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1271,7 +1271,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(73);
     /* LDC: 'eacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7945));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7946));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1279,7 +1279,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(74);
     /* LDC: 'ecirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7946));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7947));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1287,7 +1287,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(75);
     /* LDC: 'euml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7947));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7948));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1295,7 +1295,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(76);
     /* LDC: 'igrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7948));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7949));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1303,7 +1303,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(77);
     /* LDC: 'iacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7949));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7950));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1311,7 +1311,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(78);
     /* LDC: 'icirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7950));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7951));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1319,7 +1319,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(79);
     /* LDC: 'iuml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7951));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7952));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1327,7 +1327,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(80);
     /* LDC: 'eth'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7952));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7953));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1335,7 +1335,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(81);
     /* LDC: 'ntilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7953));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7954));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1343,7 +1343,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(82);
     /* LDC: 'ograve'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7954));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7955));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1351,7 +1351,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(83);
     /* LDC: 'oacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7955));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7956));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1359,7 +1359,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(84);
     /* LDC: 'ocirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7956));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7957));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1367,7 +1367,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(85);
     /* LDC: 'otilde'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7957));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7958));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1375,7 +1375,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(86);
     /* LDC: 'ouml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7958));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7959));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1383,7 +1383,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(87);
     /* LDC: 'divide'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7959));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7960));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1391,7 +1391,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(88);
     /* LDC: 'oslash'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7960));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7961));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1399,7 +1399,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(89);
     /* LDC: 'ugrave'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7961));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7962));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1407,7 +1407,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(90);
     /* LDC: 'uacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7962));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7963));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1415,7 +1415,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(91);
     /* LDC: 'ucirc'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7963));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7964));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1423,7 +1423,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(92);
     /* LDC: 'uuml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7964));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7965));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1431,7 +1431,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(93);
     /* LDC: 'yacute'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7965));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7966));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1439,7 +1439,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(94);
     /* LDC: 'thorn'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7966));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7967));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -1447,7 +1447,7 @@ JAVA_VOID com_codename1_ui_html_HTMLUtils___CLINIT____(CODENAME_ONE_THREAD_STATE
     BC_DUP(); /* DUP */
     PUSH_INT(95);
     /* LDC: 'yuml'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7967));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(7968));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 

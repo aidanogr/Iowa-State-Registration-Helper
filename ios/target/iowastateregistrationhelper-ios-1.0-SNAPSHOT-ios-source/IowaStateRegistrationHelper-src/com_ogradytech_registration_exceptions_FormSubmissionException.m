@@ -47,7 +47,7 @@ JAVA_OBJECT __NEW_com_ogradytech_registration_exceptions_FormSubmissionException
 
 
 JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException___INIT_____com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10511, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10600, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -65,7 +65,7 @@ JAVA_VOID com_ogradytech_registration_exceptions_FormSubmissionException___INIT_
 
 
 JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getMessage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10511, 913);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10600, 914);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
 
 {
@@ -76,7 +76,7 @@ JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getMe
 
 
 JAVA_OBJECT com_ogradytech_registration_exceptions_FormSubmissionException_getExceptionType___R_com_ogradytech_registration_exceptions_FormSubmissionException_ExceptionType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10511, 10512);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10600, 10601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
 
 {

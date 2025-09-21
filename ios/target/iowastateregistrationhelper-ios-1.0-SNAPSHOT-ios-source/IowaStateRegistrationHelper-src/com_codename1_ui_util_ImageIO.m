@@ -15,11 +15,11 @@ struct clazz class__com_codename1_ui_util_ImageIO = {
 , 0, 0, 0, 0, 0, 0};
 
 JAVA_OBJECT get_static_com_codename1_ui_util_ImageIO_FORMAT_JPEG(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(99) /* jpeg */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(100) /* jpeg */;
 }
 
 JAVA_OBJECT get_static_com_codename1_ui_util_ImageIO_FORMAT_PNG(CODENAME_ONE_THREAD_STATE) {
-    return STRING_FROM_CONSTANT_POOL_OFFSET(100) /* png */;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(101) /* png */;
 }
 
 JAVA_VOID __FINALIZER_com_codename1_ui_util_ImageIO(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
@@ -33,7 +33,7 @@ void __GC_MARK_com_codename1_ui_util_ImageIO(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID com_codename1_ui_util_ImageIO___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5619, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5620, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -48,7 +48,7 @@ JAVA_VOID com_codename1_ui_util_ImageIO_save___java_io_InputStream_java_io_Outpu
 
 JAVA_VOID com_codename1_ui_util_ImageIO_save___com_codename1_ui_Image_java_io_OutputStream_java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_FLOAT __cn1Arg4) {
     volatile JAVA_FLOAT flocals_4_ = 0; /* quality */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 5619, 5620);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 5620, 5621);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,7 +59,7 @@ JAVA_VOID com_codename1_ui_util_ImageIO_save___com_codename1_ui_Image_java_io_Ou
     __CN1_DEBUG_INFO(78);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_EncodedImage);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L289333710;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L955994360;
     __CN1_DEBUG_INFO(79);
     /* VarOp.assignFrom */ locals[5].type=CN1_TYPE_INVALID;    locals[5].data.o = locals[1].data.o;
 locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(80);
@@ -78,11 +78,11 @@ locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(80);
     BC_FLOAD(4);
     virtual_com_codename1_ui_util_ImageIO_save___java_io_InputStream_java_io_OutputStream_java_lang_String_int_int_float(threadStateData, SP[-7].data.o, SP[-6].data.o, SP[-5].data.o, SP[-4].data.o, SP[-3].data.i, SP[-2].data.i, SP[-1].data.f);     SP-= 7;
     __CN1_DEBUG_INFO(81);
-    goto label_L1292683326;
+    goto label_L2058879732;
 
-label_L289333710:
+label_L955994360:
     __CN1_DEBUG_INFO(82);
-    if (virtual_com_codename1_ui_Image_getImage___R_java_lang_Object(threadStateData, locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1138362709;
+    if (virtual_com_codename1_ui_Image_getImage___R_java_lang_Object(threadStateData, locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1619842305;
     __CN1_DEBUG_INFO(83);
     /* VarOp.assignFrom */ locals[5].data.o = /* CustomInvoke */com_codename1_ui_Image_createImage___int_int_int_R_com_codename1_ui_Image(threadStateData, virtual_com_codename1_ui_Image_getWidth___R_int(threadStateData, locals[1].data.o), virtual_com_codename1_ui_Image_getHeight___R_int(threadStateData, locals[1].data.o), 0 /* ICONST_0 */);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(84);
     /* VarOp.assignFrom */ locals[6].data.o = virtual_com_codename1_ui_Image_getGraphics___R_com_codename1_ui_Graphics(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(85);
@@ -90,13 +90,13 @@ label_L289333710:
     __CN1_DEBUG_INFO(86);
     /* CustomInvoke */virtual_com_codename1_ui_util_ImageIO_saveImage___com_codename1_ui_Image_java_io_OutputStream_java_lang_String_float(threadStateData, __cn1ThisObject, locals[5].data.o, locals[2].data.o, locals[3].data.o, flocals_4_); 
     __CN1_DEBUG_INFO(87);
-    goto label_L1292683326;
+    goto label_L2058879732;
 
-label_L1138362709:
+label_L1619842305:
     __CN1_DEBUG_INFO(88);
     /* CustomInvoke */virtual_com_codename1_ui_util_ImageIO_saveImage___com_codename1_ui_Image_java_io_OutputStream_java_lang_String_float(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o, locals[3].data.o, flocals_4_); 
 
-label_L1292683326:
+label_L2058879732:
     __CN1_DEBUG_INFO(91);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -130,7 +130,7 @@ JAVA_BOOLEAN com_codename1_ui_util_ImageIO_isFormatSupported___java_lang_String_
 
 JAVA_OBJECT com_codename1_ui_util_ImageIO_getImageIO___R_com_codename1_ui_util_ImageIO(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_util_ImageIO(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 5619, 720);
+    DEFINE_METHOD_STACK(1, 0, 0, 5620, 721);
     __CN1_DEBUG_INFO(200);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getImageIO___R_com_codename1_ui_util_ImageIO(threadStateData, SP[-1].data.o);

@@ -75,7 +75,7 @@ void __GC_MARK_com_codename1_media_AbstractMedia(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID com_codename1_media_AbstractMedia___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8669, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8670, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(35);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(36);
@@ -98,9 +98,9 @@ JAVA_VOID com_codename1_media_AbstractMedia___INIT____(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_getState___R_com_codename1_media_AsyncMedia_State(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8669, 1854);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8670, 1855);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(55);
-    if (virtual_com_codename1_media_AbstractMedia_isPlaying___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1244221966;
+    if (virtual_com_codename1_media_AbstractMedia_isPlaying___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1495063172;
     __CN1_DEBUG_INFO(56);
 
 {
@@ -108,7 +108,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_getState___R_com_codename1_media_A
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1244221966:
+label_L1495063172:
     __CN1_DEBUG_INFO(58);
 
 {
@@ -119,7 +119,7 @@ label_L1244221966:
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8669, 8670);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8670, 8671);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(68);
@@ -132,11 +132,11 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_fireMediaStateChange___com_codenam
     com_codename1_media_AsyncMedia_MediaStateChangeEvent___INIT_____com_codename1_media_AsyncMedia_com_codename1_media_AsyncMedia_State_com_codename1_media_AsyncMedia_State(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 4;
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(69);
-    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_stateChangeListeners(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L458898362;
+    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_stateChangeListeners(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1284852601;
     __CN1_DEBUG_INFO(71);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireActionEvent___com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_media_AbstractMedia_stateChangeListeners(__cn1ThisObject), locals[2].data.o); 
 
-label_L458898362:
+label_L1284852601:
     __CN1_DEBUG_INFO(74);
 
 {
@@ -157,7 +157,7 @@ JAVA_VOID com_codename1_media_AbstractMedia_removeMediaStateChangeListener___com
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_fireMediaError___com_codename1_media_AsyncMedia_MediaException_R_com_codename1_media_AsyncMedia_MediaErrorEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8669, 8671);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8670, 8672);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(103);
@@ -166,11 +166,11 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_fireMediaError___com_codename1_med
     /* CustomInvoke */com_codename1_media_AsyncMedia_MediaErrorEvent___INIT_____com_codename1_media_Media_com_codename1_media_AsyncMedia_MediaException(threadStateData, SP[-1].data.o, __cn1ThisObject, locals[1].data.o);     SP -= 1;
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(104);
-    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_errorListeners(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L983175841;
+    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_media_AbstractMedia_errorListeners(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1479770936;
     __CN1_DEBUG_INFO(105);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireActionEvent___com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_media_AbstractMedia_errorListeners(__cn1ThisObject), locals[2].data.o); 
 
-label_L983175841:
+label_L1479770936:
     __CN1_DEBUG_INFO(108);
 
 {
@@ -196,7 +196,7 @@ JAVA_VOID com_codename1_media_AbstractMedia_addMediaCompletionHandler___java_lan
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_playAsync___R_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8669, 8628);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8670, 8629);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(143);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_1(threadStateData)); /* NEW */
@@ -211,11 +211,11 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_playAsync___R_com_codename1_media_
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_playAsync___com_codename1_media_AsyncMedia_PlayRequest_R_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8669, 8628);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8670, 8629);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(164);
-    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L34804405;
+    if (virtual_com_codename1_media_AsyncMedia_PlayRequest_isDone___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1457883621;
     __CN1_DEBUG_INFO(165);
 
 {
@@ -223,9 +223,9 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_playAsync___com_codename1_media_As
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L34804405:
+label_L1457883621:
     __CN1_DEBUG_INFO(169);
-    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L36342235;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1771217223;
     __CN1_DEBUG_INFO(170);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_3(threadStateData)); /* NEW */
@@ -253,10 +253,10 @@ label_L34804405:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L36342235:
+label_L1771217223:
     __CN1_DEBUG_INFO(190);
-    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1214772687;
-    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1214772687;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L255517071;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L255517071;
     __CN1_DEBUG_INFO(191);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_5(threadStateData)); /* NEW */
@@ -280,14 +280,14 @@ label_L36342235:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1214772687:
+label_L255517071:
     __CN1_DEBUG_INFO(208);
     set_field_com_codename1_media_AbstractMedia_pendingPlayRequest(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(211);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_media_AbstractMedia_getState___R_com_codename1_media_AsyncMedia_State(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_static_com_codename1_media_AsyncMedia_State_Playing(threadStateData));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L570616184;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1263831315;
     __CN1_DEBUG_INFO(212);
     /* CustomInvoke */virtual_com_codename1_media_AsyncMedia_PlayRequest_complete___java_lang_Object(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(213);
@@ -297,7 +297,7 @@ label_L1214772687:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L570616184:
+label_L1263831315:
     __CN1_DEBUG_INFO(234);
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_1StateChangeListener(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -326,7 +326,7 @@ label_L570616184:
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_pauseAsync___R_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8669, 8629);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 8670, 8630);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(261);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_7(threadStateData)); /* NEW */
@@ -341,11 +341,11 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_pauseAsync___R_com_codename1_media
 
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_pauseAsync___com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8669, 8629);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8670, 8630);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(285);
-    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L941543735;
+    if (virtual_com_codename1_media_AsyncMedia_PauseRequest_isDone___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L822381373;
     __CN1_DEBUG_INFO(286);
 
 {
@@ -353,9 +353,9 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_pauseAsync___com_codename1_media_A
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L941543735:
+label_L822381373:
     __CN1_DEBUG_INFO(290);
-    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1856828350;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1298177219;
     __CN1_DEBUG_INFO(291);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_pendingPlayRequest(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_9(threadStateData)); /* NEW */
@@ -383,10 +383,10 @@ label_L941543735:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1856828350:
+label_L1298177219:
     __CN1_DEBUG_INFO(310);
-    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L420657705;
-    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L420657705;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L361642617;
+    if (get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject)==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L361642617;
     __CN1_DEBUG_INFO(311);
     PUSH_POINTER(get_field_com_codename1_media_AbstractMedia_pendingPauseRequest(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_11(threadStateData)); /* NEW */
@@ -410,14 +410,14 @@ label_L1856828350:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L420657705:
+label_L361642617:
     __CN1_DEBUG_INFO(328);
     set_field_com_codename1_media_AbstractMedia_pendingPauseRequest(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(331);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_media_AbstractMedia_getState___R_com_codename1_media_AsyncMedia_State(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_static_com_codename1_media_AsyncMedia_State_Paused(threadStateData));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L745462106;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L2055022026;
     __CN1_DEBUG_INFO(332);
     /* CustomInvoke */virtual_com_codename1_media_AsyncMedia_PauseRequest_complete___java_lang_Object(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(333);
@@ -427,7 +427,7 @@ label_L420657705:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L745462106:
+label_L2055022026:
     __CN1_DEBUG_INFO(355);
     PUSH_POINTER(__NEW_com_codename1_media_AbstractMedia_2StateChangeListener(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -471,7 +471,7 @@ JAVA_VOID com_codename1_media_AbstractMedia_play__(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID com_codename1_media_AbstractMedia_pause__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8669, 2134);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8670, 2135);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(398);
     virtual_com_codename1_media_AbstractMedia_pauseAsync___R_com_codename1_media_AsyncMedia_PauseRequest(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(399);
@@ -482,7 +482,7 @@ JAVA_VOID com_codename1_media_AbstractMedia_pause__(CODENAME_ONE_THREAD_STATE, J
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$000___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8669, 216);
+    DEFINE_METHOD_STACK(1, 1, 0, 8670, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(35);
@@ -496,7 +496,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$000___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$002___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PlayRequest_R_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8669, 1524);
+    DEFINE_METHOD_STACK(3, 2, 0, 8670, 1525);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -514,7 +514,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$002___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$100___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PlayRequest_R_com_codename1_media_AsyncMedia_PlayRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 8669, 800);
+    DEFINE_METHOD_STACK(2, 2, 0, 8670, 801);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -529,7 +529,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$100___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$200___com_codename1_media_AbstractMedia_R_com_codename1_ui_util_EventDispatcher(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8669, 801);
+    DEFINE_METHOD_STACK(1, 1, 0, 8670, 802);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(35);
@@ -543,7 +543,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$200___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$300___com_codename1_media_AbstractMedia_R_com_codename1_ui_util_EventDispatcher(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8669, 1150);
+    DEFINE_METHOD_STACK(1, 1, 0, 8670, 1151);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(35);
@@ -557,7 +557,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$300___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$400___com_codename1_media_AbstractMedia_R_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8669, 1151);
+    DEFINE_METHOD_STACK(1, 1, 0, 8670, 1152);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(35);
@@ -571,7 +571,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$400___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$402___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8669, 804);
+    DEFINE_METHOD_STACK(3, 2, 0, 8670, 805);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -589,7 +589,7 @@ JAVA_OBJECT com_codename1_media_AbstractMedia_access$402___com_codename1_media_A
 
 JAVA_OBJECT com_codename1_media_AbstractMedia_access$500___com_codename1_media_AbstractMedia_com_codename1_media_AsyncMedia_PauseRequest_R_com_codename1_media_AsyncMedia_PauseRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_media_AbstractMedia(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 8669, 1859);
+    DEFINE_METHOD_STACK(2, 2, 0, 8670, 1860);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

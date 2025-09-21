@@ -26,7 +26,7 @@ JAVA_OBJECT __NEW_java_util_LinkedHashMap_LinkedHashMapEntrySet(CODENAME_ONE_THR
 
 
 JAVA_VOID java_util_LinkedHashMap_LinkedHashMapEntrySet___INIT_____java_util_LinkedHashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5899, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5900, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_HashMap_HashMapEntrySet___INIT_____java_util_HashMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -36,7 +36,7 @@ JAVA_VOID java_util_LinkedHashMap_LinkedHashMapEntrySet___INIT_____java_util_Lin
 
 
 JAVA_OBJECT java_util_LinkedHashMap_LinkedHashMapEntrySet_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5899, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5900, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_LinkedHashMap_EntryIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     { JAVA_OBJECT tmpResult = virtual_java_util_LinkedHashMap_LinkedHashMapEntrySet_hashMap___R_java_util_HashMap(threadStateData, __cn1ThisObject);

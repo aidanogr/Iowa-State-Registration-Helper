@@ -46,7 +46,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_JSProxy(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy___INIT_____com_codename1_ui_BrowserComponent_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8146, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8147, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -124,7 +124,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSProxy_getAndWait___java_util_Col
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___int_java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_1_ = 0; /* timeout */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8146, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 8147, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -139,7 +139,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___int_java_lang_String_j
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8146, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 8147, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -154,7 +154,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___java_lang_String_java_
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___int_java_lang_String_java_lang_Object_com_codename1_util_SuccessCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     volatile JAVA_INT ilocals_1_ = 0; /* timeout */
-    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 8146, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 8147, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -174,11 +174,11 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_set___int_java_lang_String_j
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_BrowserComponent_JSProxy_self(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8157));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8158));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[2].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8158));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8159));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -247,7 +247,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy_setAndWait___java_lang_Strin
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy___INIT_____com_codename1_ui_BrowserComponent_java_lang_String_com_codename1_ui_BrowserComponent_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8146, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8147, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -263,7 +263,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSProxy___INIT_____com_codename1_ui_
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSProxy_access$1100___com_codename1_ui_BrowserComponent_JSProxy_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_BrowserComponent_JSProxy(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8146, 1862);
+    DEFINE_METHOD_STACK(1, 1, 0, 8147, 1863);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1168);

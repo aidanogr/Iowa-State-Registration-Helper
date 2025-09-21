@@ -314,7 +314,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_NativeGraphics(CODENA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics___INIT_____com_codename1_impl_ios_IOSImplementation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9574, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9575, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4345);
@@ -376,14 +376,14 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics___INIT_____com
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasingSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 565);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 566);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4383);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasTextSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 9575);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 9576);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4387);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -391,7 +391,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAlias
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliasedText___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* a */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9574, 611);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9575, 612);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4391);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedText(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -404,26 +404,26 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliased
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 563);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 564);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4397);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedTextSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1156210828;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedText(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1355766307;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedTextSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1298557761;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedText(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1704214570;
 
-label_L1156210828:
+label_L1298557761:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1158124724;
+    goto label_L821342630;
 
-label_L1355766307:
+label_L1704214570:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1158124724:
+label_L821342630:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliased___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* antialiased */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9574, 610);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9575, 611);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4401);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedSet(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
@@ -438,29 +438,29 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliased
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliased___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 562);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 563);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4410);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L658281599;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiased(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L809860628;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiasedSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1079190991;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_antialiased(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1041326823;
 
-label_L658281599:
+label_L1079190991:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L452015229;
+    goto label_L2042884127;
 
-label_L809860628:
+label_L1041326823:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L452015229:
+label_L2042884127:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setClip___com_codename1_ui_geom_Shape(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9574, 335);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9575, 336);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4414);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1663738275;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1815025408;
     __CN1_DEBUG_INFO(4415);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_ClipShape(threadStateData)); /* NEW */
@@ -469,9 +469,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setClip___com_
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1663738275:
+label_L1815025408:
     __CN1_DEBUG_INFO(4417);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), locals[1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L544628437;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), locals[1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L889928215;
     __CN1_DEBUG_INFO(4418);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), locals[1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4419);
@@ -483,7 +483,7 @@ label_L1663738275:
     __CN1_DEBUG_INFO(4422);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(threadStateData, __cn1ThisObject); 
 
-label_L544628437:
+label_L889928215:
     __CN1_DEBUG_INFO(4424);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -495,13 +495,13 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setClip___int_
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* w */
     volatile JAVA_INT ilocals_4_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9574, 335);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9575, 336);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(4428);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L995631377;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L3694603;
     __CN1_DEBUG_INFO(4429);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_ClipShape(threadStateData)); /* NEW */
@@ -510,14 +510,14 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setClip___int_
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L995631377:
+label_L3694603:
     __CN1_DEBUG_INFO(4431);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L681158875;
-    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L512238546;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1721576219;
+    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1914615775;
 
-label_L681158875:
+label_L1721576219:
     __CN1_DEBUG_INFO(4432);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___int_int_int_int_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L203048480;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___int_int_int_int_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L514453513;
     __CN1_DEBUG_INFO(4433);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_); 
     __CN1_DEBUG_INFO(4434);
@@ -528,13 +528,13 @@ label_L681158875:
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClipDirty(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(4437);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(threadStateData, __cn1ThisObject); 
-    goto label_L203048480;
+    goto label_L514453513;
 
-label_L512238546:
+label_L1914615775:
     __CN1_DEBUG_INFO(4440);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_); 
     __CN1_DEBUG_INFO(4441);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L203048480;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L514453513;
     __CN1_DEBUG_INFO(4442);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4443);
@@ -546,7 +546,7 @@ label_L512238546:
     __CN1_DEBUG_INFO(4446);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(threadStateData, __cn1ThisObject); 
 
-label_L203048480:
+label_L514453513:
     __CN1_DEBUG_INFO(4450);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -559,69 +559,69 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipRect___int
     volatile JAVA_INT ilocals_3_ = 0; /* w */
     volatile JAVA_INT ilocals_4_ = 0; /* h */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9574, 341);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 9575, 342);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
     __CN1_DEBUG_INFO(4453);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1991290395;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1565713391;
     __CN1_DEBUG_INFO(4454);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_setClip___int_int_int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_); 
     __CN1_DEBUG_INFO(4455);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1991290395:
+label_L1565713391:
     __CN1_DEBUG_INFO(4458);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L319426406;
-    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1279469670;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1385750189;
+    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1430207342;
 
-label_L319426406:
+label_L1385750189:
     __CN1_DEBUG_INFO(4460);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_getBounds___com_codename1_ui_geom_Rectangle(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4461);
-    if (virtual_com_codename1_ui_geom_Rectangle_getWidth___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L305552520;
-    if (virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))>0) /* IFGT CustomJump */ goto label_L1627781283;
+    if (virtual_com_codename1_ui_geom_Rectangle_getWidth___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L80191608;
+    if (virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))>0) /* IFGT CustomJump */ goto label_L1312843412;
 
-label_L305552520:
+label_L80191608:
     __CN1_DEBUG_INFO(4463);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1627781283:
+label_L1312843412:
     __CN1_DEBUG_INFO(4465);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect2(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_); 
     __CN1_DEBUG_INFO(4467);
     /* VarOp.assignFrom */ ilocals_5_ = virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_isRect___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject));
     __CN1_DEBUG_INFO(4468);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L574077658;
-    if (/* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_contains___com_codename1_ui_geom_Rectangle_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect2(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L574077658;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1522119751;
+    if (/* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_contains___com_codename1_ui_geom_Rectangle_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect2(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1522119751;
     __CN1_DEBUG_INFO(4471);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L574077658:
+label_L1522119751:
     __CN1_DEBUG_INFO(4473);
-    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L2011342562;
+    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L1995505717;
     __CN1_DEBUG_INFO(4474);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L2011342562:
+label_L1995505717:
     __CN1_DEBUG_INFO(4476);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_intersect___int_int_int_int_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L1460696714;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_intersect___int_int_int_int_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L1334618867;
     __CN1_DEBUG_INFO(4477);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */); 
 
-label_L1460696714:
+label_L1334618867:
     __CN1_DEBUG_INFO(4479);
-    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L429804587;
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */)==0) /* IFEQ CustomJump */ goto label_L429804587;
+    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L45416784;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */)==0) /* IFEQ CustomJump */ goto label_L45416784;
     __CN1_DEBUG_INFO(4480);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L429804587:
+label_L45416784:
     __CN1_DEBUG_INFO(4482);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipDirty(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(4483);
@@ -631,30 +631,30 @@ label_L429804587:
     __CN1_DEBUG_INFO(4485);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4486);
-    goto label_L115397800;
+    goto label_L364480205;
 
-label_L1279469670:
+label_L1430207342:
     __CN1_DEBUG_INFO(4487);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(4489);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip___R_com_codename1_ui_geom_GeneralPath(threadStateData, __cn1ThisObject);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4490);
-    if (/* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_intersect___int_int_int_int_R_boolean(threadStateData, locals[5].data.o, ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L1691858720;
+    if (/* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_intersect___int_int_int_int_R_boolean(threadStateData, locals[5].data.o, ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_)!=0) /* IFNE CustomJump */ goto label_L1807207655;
     __CN1_DEBUG_INFO(4491);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */); 
-    goto label_L807872790;
+    goto label_L1103505488;
 
-label_L1691858720:
+label_L1807207655:
     __CN1_DEBUG_INFO(4493);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), locals[5].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)); 
 
-label_L807872790:
+label_L1103505488:
     __CN1_DEBUG_INFO(4495);
-    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */)==0) /* IFEQ CustomJump */ goto label_L1538511917;
+    if (/* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableClipShape(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */)==0) /* IFEQ CustomJump */ goto label_L1800605369;
     __CN1_DEBUG_INFO(4496);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1538511917:
+label_L1800605369:
     __CN1_DEBUG_INFO(4498);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipDirty(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(4499);
@@ -664,7 +664,7 @@ label_L1538511917:
     __CN1_DEBUG_INFO(4501);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(threadStateData, __cn1ThisObject); 
 
-label_L115397800:
+label_L364480205:
     __CN1_DEBUG_INFO(4504);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -672,31 +672,31 @@ label_L115397800:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_loadClipBounds__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9574, 9576);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9575, 9577);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4507);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = __cn1ThisObject;
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4508);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipDirty(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1542856295;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipDirty(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L847606512;
     __CN1_DEBUG_INFO(4509);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipDirty(threadStateData, 0 /* ICONST_0 */, locals[1].data.o);
     __CN1_DEBUG_INFO(4510);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L46259342;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1736458419;
     __CN1_DEBUG_INFO(4511);
     BC_ALOAD(1);
     PUSH_OBJ(com_codename1_ui_Transform_makeIdentity___R_com_codename1_ui_Transform(threadStateData));
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L46259342:
+label_L1736458419:
     __CN1_DEBUG_INFO(4513);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L187120217;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(locals[1].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L401891515;
     __CN1_DEBUG_INFO(4514);
     BC_ALOAD(1);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_ClipShape_create___R_com_codename1_impl_ios_IOSImplementation_ClipShape(threadStateData));
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(4515);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1316001196;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1688310330;
     __CN1_DEBUG_INFO(4516);
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(locals[1].data.o));
     PUSH_INT(0); /* ICONST_0 */
@@ -708,15 +708,15 @@ label_L46259342:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setBounds___int_int_int_int(threadStateData, SP[-5].data.o, SP[-4].data.i, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);     SP-= 5;
-    goto label_L187120217;
+    goto label_L401891515;
 
-label_L1316001196:
+label_L1688310330:
     __CN1_DEBUG_INFO(4518);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(locals[1].data.o), 0 /* ICONST_0 */, 0 /* ICONST_0 */, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_width(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_height(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject))); 
 
-label_L187120217:
+label_L401891515:
     __CN1_DEBUG_INFO(4521);
-    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(locals[1].data.o))==0) /* IFEQ CustomJump */ goto label_L622772003;
+    if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(locals[1].data.o))==0) /* IFEQ CustomJump */ goto label_L2099932844;
     __CN1_DEBUG_INFO(4522);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;locals[2].data.o = get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject);
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4524);
@@ -742,9 +742,9 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4524);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipH(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(4529);
-    goto label_L1542856295;
+    goto label_L847606512;
 
-label_L622772003:
+label_L2099932844:
     __CN1_DEBUG_INFO(4531);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip___R_com_codename1_ui_geom_GeneralPath(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4532);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o = get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject);
@@ -771,7 +771,7 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4533);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipH(threadStateData, POP_INT(), POP_OBJ());
 
-label_L1542856295:
+label_L847606512:
     __CN1_DEBUG_INFO(4541);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -779,7 +779,7 @@ label_L1542856295:
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 330);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 331);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4544);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_loadClipBounds__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4545);
@@ -792,7 +792,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipX___R_in
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 331);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 332);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4549);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_loadClipBounds__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4550);
@@ -805,12 +805,12 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipY___R_in
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipW___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 9577);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 9578);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4554);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_loadClipBounds__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4555);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipW(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L699871906;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L699871906;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipW(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L415906914;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L415906914;
     __CN1_DEBUG_INFO(4556);
 
 {
@@ -818,7 +818,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipW___R_in
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L699871906:
+label_L415906914:
     __CN1_DEBUG_INFO(4558);
 
 {
@@ -829,12 +829,12 @@ label_L699871906:
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipH___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 9578);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 9579);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4562);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_loadClipBounds__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4563);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipH(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L460333119;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L460333119;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipH(__cn1ThisObject)>=0) /* IFGE CustomJump */ goto label_L739210872;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L739210872;
     __CN1_DEBUG_INFO(4564);
 
 {
@@ -842,7 +842,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getClipH___R_in
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L460333119:
+label_L739210872:
     __CN1_DEBUG_INFO(4566);
 
 {
@@ -853,18 +853,18 @@ label_L460333119:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setTransform___com_codename1_ui_Transform(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9574, 419);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9575, 420);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4570);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1365711624;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1154941313;
     __CN1_DEBUG_INFO(4571);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_Transform_makeIdentity___R_com_codename1_ui_Transform(threadStateData));
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1365711624:
+label_L1154941313:
     __CN1_DEBUG_INFO(4573);
     /* CustomInvoke */virtual_com_codename1_ui_Transform_setTransform___com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(4574);
@@ -882,40 +882,40 @@ label_L1365711624:
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform___R_com_codename1_ui_Transform(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9574, 9579);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1;
-    int tryBlockOffsetL1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1;
-    DEFINE_CATCH_BLOCK(catch_L1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1, label_L22040992, restoreToL1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9575, 9580);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1;
+    int tryBlockOffsetL143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1;
+    DEFINE_CATCH_BLOCK(catch_L143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1, label_L1789282489, restoreToL143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1);
     __CN1_DEBUG_INFO(4582);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransformDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L291651850, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransformDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L600199331, 0);
     __CN1_DEBUG_INFO(4583);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L185203393, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1949126165, 0);
     __CN1_DEBUG_INFO(4584);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_Transform_makeIdentity___R_com_codename1_ui_Transform(threadStateData));
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L185203393:
+label_L1949126165:
     __CN1_DEBUG_INFO(4586);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1658785779, 0);
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L143295000, 0);
     __CN1_DEBUG_INFO(4587);
     virtual_com_codename1_ui_Transform_setIdentity__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(__cn1ThisObject)); 
-    JUMP_TO(label_L1627496281, 0);
+    JUMP_TO(label_L1353838640, 0);
 
-label_L1658785779:
- tryBlockOffsetL1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_com_codename1_ui_Transform_NotInvertibleException, catch_L1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1);
-    restoreToL1658785779cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1 = threadStateData->threadObjectStackOffset;
+label_L143295000:
+ tryBlockOffsetL143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_com_codename1_ui_Transform_NotInvertibleException, catch_L143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1);
+    restoreToL143295000cn1_class_id_com_codename1_ui_Transform_NotInvertibleException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(4590);
     /* CustomInvoke */virtual_com_codename1_ui_Transform_getInverse___com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(__cn1ThisObject)); 
 
-label_L2021874006:
+label_L1978975308:
 END_TRY(1);    __CN1_DEBUG_INFO(4593);
-    JUMP_TO(label_L1627496281, 0);
+    JUMP_TO(label_L1353838640, 0);
 
-label_L22040992:
+label_L1789282489:
     __CN1_DEBUG_INFO(4591);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(4592);
@@ -924,22 +924,22 @@ label_L22040992:
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9580));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9581));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9581));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9582));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1627496281:
+label_L1353838640:
     __CN1_DEBUG_INFO(4595);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransformDirty(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L291651850:
+label_L600199331:
     __CN1_DEBUG_INFO(4597);
 
 {
@@ -950,17 +950,17 @@ label_L291651850:
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip___R_com_codename1_ui_geom_GeneralPath(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9574, 9582);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9575, 9583);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4603);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClipDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1659435106;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClipDirty(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1097069005;
     __CN1_DEBUG_INFO(4605);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L653515020;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1604342290;
     __CN1_DEBUG_INFO(4606);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L653515020:
+label_L1604342290:
     __CN1_DEBUG_INFO(4608);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1011481270;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L65438140;
     __CN1_DEBUG_INFO(4609);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_GeneralPath(threadStateData)); /* NEW */
@@ -969,7 +969,7 @@ label_L653515020:
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1011481270:
+label_L65438140:
     __CN1_DEBUG_INFO(4611);
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClip(__cn1ThisObject));
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject));
@@ -979,7 +979,7 @@ label_L1011481270:
     __CN1_DEBUG_INFO(4612);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseClipDirty(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1659435106:
+label_L1097069005:
     __CN1_DEBUG_INFO(4614);
 
 {
@@ -990,9 +990,9 @@ label_L1659435106:
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getFont___R_com_codename1_impl_ios_IOSImplementation_NativeFont(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 3457);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 3458);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4620);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1365197105;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1544147328;
     __CN1_DEBUG_INFO(4621);
 
 {
@@ -1000,7 +1000,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getFont___R_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1365197105:
+label_L1544147328:
     __CN1_DEBUG_INFO(4623);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_getDefaultFont___R_java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -1010,15 +1010,15 @@ label_L1365197105:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyTransform__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9574, 9583);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9575, 9584);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4627);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transformApplied(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1951500432;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transformApplied(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L37400149;
     __CN1_DEBUG_INFO(4628);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_setNativeTransformMutable___com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4629);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transformApplied(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1951500432:
+label_L37400149:
     __CN1_DEBUG_INFO(4631);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1026,7 +1026,7 @@ label_L1951500432:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_pushClip__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9574, 336);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 9575, 337);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4635);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_impl_ios_IOSImplementation_ClipShape_create___R_com_codename1_impl_ios_IOSImplementation_ClipShape(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4636);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, locals[1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
@@ -1057,39 +1057,39 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_popClip___R_
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyClip__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 9574, 9584);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 9575, 9585);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4652);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipApplied(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1280443567;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipApplied(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1599556802;
     __CN1_DEBUG_INFO(4653);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1280443567:
+label_L1599556802:
     __CN1_DEBUG_INFO(4656);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1061018585;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1745608181;
     __CN1_DEBUG_INFO(4658);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L348148678;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2057077925;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayWidth___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    goto label_L1814908102;
+    goto label_L763610533;
 
-label_L348148678:
+label_L2057077925:
     PUSH_INT(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_width(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)));
 
-label_L1814908102:
+label_L763610533:
     BC_ISTORE(1);
     __CN1_DEBUG_INFO(4659);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L814111376;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1222094219;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    goto label_L1630841930;
+    goto label_L2114270481;
 
-label_L814111376:
+label_L1222094219:
     PUSH_INT(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_height(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)));
 
-label_L1630841930:
+label_L2114270481:
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(4660);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipX(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
@@ -1116,9 +1116,9 @@ label_L1630841930:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1061018585:
+label_L1745608181:
     __CN1_DEBUG_INFO(4670);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_isRect___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2004655561;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_isRect___R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1612853208;
     __CN1_DEBUG_INFO(4673);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4674);
@@ -1128,15 +1128,15 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4674);
     __CN1_DEBUG_INFO(4676);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipApplied(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(4677);
-    goto label_L1907467420;
+    goto label_L1405055124;
 
-label_L2004655561:
+label_L1612853208:
     __CN1_DEBUG_INFO(4680);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_setNativeClipping___com_codename1_impl_ios_IOSImplementation_ClipShape(threadStateData, __cn1ThisObject, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clip(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4681);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipApplied(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1907467420:
+label_L1405055124:
     __CN1_DEBUG_INFO(4684);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1144,26 +1144,26 @@ label_L1907467420:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_checkControl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9574, 9585);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9575, 9586);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4687);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$2800___com_codename1_impl_ios_IOSImplementation_R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject)));
     BC_ALOAD(0);
-    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L1944138464;
+    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L653337757;
     __CN1_DEBUG_INFO(4688);
-    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2800___com_codename1_impl_ios_IOSImplementation_R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L930317866;
+    if (/* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2800___com_codename1_impl_ios_IOSImplementation_R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1896558831;
     __CN1_DEBUG_INFO(4689);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$2800___com_codename1_impl_ios_IOSImplementation_R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject)));
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(POP_OBJ()));
     PUSH_LONG(com_codename1_impl_ios_IOSImplementation_access$2900___R_long(threadStateData));
     set_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(threadStateData, POP_LONG(), POP_OBJ());
 
-label_L930317866:
+label_L1896558831:
     __CN1_DEBUG_INFO(4691);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$3000___int_int_long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_width(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_height(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject)), get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(4692);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$2802___com_codename1_impl_ios_IOSImplementation_com_codename1_impl_ios_IOSImplementation_NativeGraphics_R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject), __cn1ThisObject); 
 
-label_L1944138464:
+label_L653337757:
     __CN1_DEBUG_INFO(4694);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1176,7 +1176,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setNativeClipp
     volatile JAVA_INT ilocals_3_ = 0; /* width */
     volatile JAVA_INT ilocals_4_ = 0; /* height */
     volatile JAVA_INT ilocals_5_ = 0; /* firstClip */
-    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 9574, 9586);
+    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 9575, 9587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1193,18 +1193,18 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setNativeClipp
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setNativeClipping___com_codename1_impl_ios_IOSImplementation_ClipShape(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 9574, 9586);
+    DEFINE_INSTANCE_METHOD_STACK(6, 6, 0, 9575, 9587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4703);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_isRect___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L611502040;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_isRect___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L10915321;
     __CN1_DEBUG_INFO(4704);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_getBounds___com_codename1_ui_geom_Rectangle(threadStateData, locals[1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4705);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$3100___com_codename1_impl_ios_IOSImplementation_int_int_int_int_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_this_0(__cn1ThisObject), virtual_com_codename1_ui_geom_Rectangle_getX___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getWidth___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_reusableRect(__cn1ThisObject)), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_clipApplied(__cn1ThisObject)); 
-    goto label_L1486553742;
+    goto label_L682981033;
 
-label_L611502040:
+label_L10915321:
     __CN1_DEBUG_INFO(4708);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_getTypesSize___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(4709);
@@ -1218,7 +1218,7 @@ label_L611502040:
     __CN1_DEBUG_INFO(4714);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_setNativeClippingMutable___int_byte_1ARRAY_int_float_1ARRAY(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), ilocals_2_, locals[4].data.o, ilocals_3_, locals[5].data.o); 
 
-label_L1486553742:
+label_L682981033:
     __CN1_DEBUG_INFO(4716);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1232,7 +1232,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawLine
     volatile JAVA_INT ilocals_4_ = 0; /* y1 */
     volatile JAVA_INT ilocals_5_ = 0; /* x2 */
     volatile JAVA_INT ilocals_6_ = 0; /* y2 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9574, 9587);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9575, 9588);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1254,7 +1254,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillRect
     volatile JAVA_INT ilocals_4_ = 0; /* y */
     volatile JAVA_INT ilocals_5_ = 0; /* width */
     volatile JAVA_INT ilocals_6_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9574, 9588);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9575, 9589);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1276,7 +1276,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawRect
     volatile JAVA_INT ilocals_4_ = 0; /* y */
     volatile JAVA_INT ilocals_5_ = 0; /* width */
     volatile JAVA_INT ilocals_6_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9574, 9589);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 9575, 9590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1300,7 +1300,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawRoun
     volatile JAVA_INT ilocals_6_ = 0; /* height */
     volatile JAVA_INT ilocals_7_ = 0; /* arcWidth */
     volatile JAVA_INT ilocals_8_ = 0; /* arcHeight */
-    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9574, 9590);
+    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9575, 9591);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1326,7 +1326,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillRoun
     volatile JAVA_INT ilocals_6_ = 0; /* height */
     volatile JAVA_INT ilocals_7_ = 0; /* arcWidth */
     volatile JAVA_INT ilocals_8_ = 0; /* arcHeight */
-    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9574, 9591);
+    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9575, 9592);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1357,7 +1357,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillArc_
     volatile JAVA_INT ilocals_6_ = 0; /* height */
     volatile JAVA_INT ilocals_7_ = 0; /* startAngle */
     volatile JAVA_INT ilocals_8_ = 0; /* arcAngle */
-    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9574, 9593);
+    DEFINE_INSTANCE_METHOD_STACK(8, 9, 0, 9575, 9594);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1381,7 +1381,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawStri
     volatile JAVA_LONG llocals_3_ = 0; /* fontPeer */
     volatile JAVA_INT ilocals_6_ = 0; /* x */
     volatile JAVA_INT ilocals_7_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 9574, 9594);
+    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 9575, 9595);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     llocals_3_ = __cn1Arg3;
@@ -1392,30 +1392,30 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawStri
     __CN1_DEBUG_INFO(4747);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(4748);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliased___R_boolean(threadStateData, __cn1ThisObject)==virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L571956559;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliased___R_boolean(threadStateData, __cn1ThisObject)==virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L131037934;
     __CN1_DEBUG_INFO(4750);
     /* VarOp.assignFrom */     ilocals_8_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(4751);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliased___boolean(threadStateData, __cn1ThisObject, virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(threadStateData, __cn1ThisObject)); 
 
-label_L571956559:
+label_L131037934:
     __CN1_DEBUG_INFO(4754);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$3800___int_int_long_java_lang_String_int_int(threadStateData, ilocals_1_, ilocals_2_, llocals_3_, locals[5].data.o, ilocals_6_, ilocals_7_); 
     __CN1_DEBUG_INFO(4755);
-    if (ilocals_8_==0) /* IFEQ CustomJump */ goto label_L167693809;
+    if (ilocals_8_==0) /* IFEQ CustomJump */ goto label_L795590320;
     __CN1_DEBUG_INFO(4756);
     BC_ALOAD(0);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L998283025;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAntiAliasedText___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L454440929;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L990870941;
+    goto label_L404036116;
 
-label_L998283025:
+label_L454440929:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L990870941:
+label_L404036116:
     virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_setAntiAliased___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L167693809:
+label_L795590320:
     __CN1_DEBUG_INFO(4758);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1429,7 +1429,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawImag
     volatile JAVA_INT ilocals_5_ = 0; /* y */
     volatile JAVA_INT ilocals_6_ = 0; /* width */
     volatile JAVA_INT ilocals_7_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(9, 8, 0, 9574, 9595);
+    DEFINE_INSTANCE_METHOD_STACK(9, 8, 0, 9575, 9596);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     ilocals_4_ = __cn1Arg3;
@@ -1451,10 +1451,10 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawAlph
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTmpNativeDrawShape_coords___int_R_float_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* size */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9574, 9597);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9575, 9598);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4777);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L594195094;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1685134322;
     __CN1_DEBUG_INFO(4778);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -1464,9 +1464,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTmpNative
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L594195094:
+label_L1685134322:
     __CN1_DEBUG_INFO(4780);
-    if (CN1_ARRAY_LENGTH(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(__cn1ThisObject))>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1552179791;
+    if (CN1_ARRAY_LENGTH(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(__cn1ThisObject))>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L379430898;
     __CN1_DEBUG_INFO(4781);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -1478,7 +1478,7 @@ label_L594195094:
     __CN1_DEBUG_INFO(4783);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_coords(threadStateData, locals[2].data.o, __cn1ThisObject);
 
-label_L1552179791:
+label_L379430898:
     __CN1_DEBUG_INFO(4785);
 
 {
@@ -1495,10 +1495,10 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_growTmpNativ
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTmpNativeDrawShape_commands___int_R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* size */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9574, 9599);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9575, 9600);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4798);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L589309113;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L216746962;
     __CN1_DEBUG_INFO(4799);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -1508,9 +1508,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTmpNative
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L589309113:
+label_L216746962:
     __CN1_DEBUG_INFO(4801);
-    if (CN1_ARRAY_LENGTH(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(__cn1ThisObject))>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1437129801;
+    if (CN1_ARRAY_LENGTH(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(__cn1ThisObject))>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1613332278;
     __CN1_DEBUG_INFO(4802);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -1522,7 +1522,7 @@ label_L589309113:
     __CN1_DEBUG_INFO(4804);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_tmpNativeDrawShape_commands(threadStateData, locals[2].data.o, __cn1ThisObject);
 
-label_L1437129801:
+label_L1613332278:
     __CN1_DEBUG_INFO(4806);
 
 {
@@ -1535,7 +1535,7 @@ label_L1437129801:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawShape___com_codename1_ui_geom_Shape_com_codename1_ui_Stroke(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(11, 8, 0, 9574, 9600);
+    DEFINE_INSTANCE_METHOD_STACK(11, 8, 0, 9575, 9601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -1545,7 +1545,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawShap
     PUSH_OBJ(tmpResult); }
     /* LDC: 'com_codename1_ui_geom_GeneralPath'*/
     PUSH_POINTER((JAVA_OBJECT)&class__com_codename1_ui_geom_GeneralPath);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L708926121;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L468776694;
     __CN1_DEBUG_INFO(4819);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = locals[1].data.o;
 locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4820);
@@ -1561,13 +1561,13 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4820);
     __CN1_DEBUG_INFO(4827);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativeDrawShapeMutable___int_int_int_byte_1ARRAY_int_float_1ARRAY_float_int_int_float(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_color(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_alpha(__cn1ThisObject), ilocals_4_, locals[6].data.o, ilocals_5_, locals[7].data.o, virtual_com_codename1_ui_Stroke_getLineWidth___R_float(threadStateData, locals[2].data.o), virtual_com_codename1_ui_Stroke_getCapStyle___R_int(threadStateData, locals[2].data.o), virtual_com_codename1_ui_Stroke_getJoinStyle___R_int(threadStateData, locals[2].data.o), virtual_com_codename1_ui_Stroke_getMiterLimit___R_float(threadStateData, locals[2].data.o)); 
     __CN1_DEBUG_INFO(4828);
-    goto label_L1406004470;
+    goto label_L1455177644;
 
-label_L708926121:
+label_L468776694:
     __CN1_DEBUG_INFO(4829);
-    /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9601)); 
+    /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9602)); 
 
-label_L1406004470:
+label_L1455177644:
     __CN1_DEBUG_INFO(4833);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1577,7 +1577,7 @@ label_L1406004470:
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillShape___com_codename1_ui_geom_Shape(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9574, 9602);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9575, 9603);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4840);
@@ -1585,7 +1585,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillShap
     PUSH_OBJ(tmpResult); }
     /* LDC: 'com_codename1_ui_geom_GeneralPath'*/
     PUSH_POINTER((JAVA_OBJECT)&class__com_codename1_ui_geom_GeneralPath);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1911168986;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L14633842;
     __CN1_DEBUG_INFO(4842);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4843);
@@ -1601,13 +1601,13 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4843);
     __CN1_DEBUG_INFO(4850);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_nativeFillShapeMutable___int_int_int_byte_1ARRAY_int_float_1ARRAY(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_color(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_alpha(__cn1ThisObject), ilocals_3_, locals[5].data.o, ilocals_4_, locals[6].data.o); 
     __CN1_DEBUG_INFO(4851);
-    goto label_L1655955258;
+    goto label_L732189840;
 
-label_L1911168986:
+label_L14633842:
     __CN1_DEBUG_INFO(4852);
-    /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9601)); 
+    /* CustomInvoke */com_codename1_io_Log_p___java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9602)); 
 
-label_L1655955258:
+label_L732189840:
     __CN1_DEBUG_INFO(4854);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1615,7 +1615,7 @@ label_L1655955258:
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isDrawShadowSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 413);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 414);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4857);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -1631,7 +1631,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawShad
     volatile JAVA_INT ilocals_7_ = 0; /* blurRadius */
     volatile JAVA_INT ilocals_8_ = 0; /* spreadRadius */
     volatile JAVA_INT ilocals_9_ = 0; /* color */
-    DEFINE_INSTANCE_METHOD_STACK(11, 11, 0, 9574, 9603);
+    DEFINE_INSTANCE_METHOD_STACK(11, 11, 0, 9575, 9604);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     ilocals_4_ = __cn1Arg3;
@@ -1650,21 +1650,21 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeDrawShad
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isTransformSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 342);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 343);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4865);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isPerspectiveTransformSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 343);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 344);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4869);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isShapeSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 423);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 424);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4873);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -1676,7 +1676,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isAlphaMask
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_resetAffine__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9574, 496);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9575, 497);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4884);
     virtual_com_codename1_ui_Transform_setIdentity__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(4885);
@@ -1698,7 +1698,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_resetAffine__(
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_scale___float_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* x */
     volatile JAVA_FLOAT flocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9574, 314);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9575, 315);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     flocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(4893);
@@ -1728,7 +1728,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_rotate___float
     volatile JAVA_INT ilocals_2_ = 0; /* x */
     volatile JAVA_INT ilocals_3_ = 0; /* y */
     volatile JAVA_FLOAT flocals_1_ = 0; /* angle */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9574, 497);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9575, 498);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1756,14 +1756,14 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_translate___in
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTranslateX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 1658);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 1659);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4924);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getTranslateY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 1659);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 1660);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4927);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -1784,7 +1784,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_fillRectRadial
     volatile JAVA_INT ilocals_4_ = 0; /* y */
     volatile JAVA_INT ilocals_5_ = 0; /* width */
     volatile JAVA_INT ilocals_6_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(10, 10, 0, 9574, 632);
+    DEFINE_INSTANCE_METHOD_STACK(10, 10, 0, 9575, 633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1810,7 +1810,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_fillLinearGrad
     volatile JAVA_INT ilocals_4_ = 0; /* y */
     volatile JAVA_INT ilocals_5_ = 0; /* width */
     volatile JAVA_INT ilocals_6_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(8, 8, 0, 9574, 633);
+    DEFINE_INSTANCE_METHOD_STACK(8, 8, 0, 9575, 634);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1837,25 +1837,25 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_drawConvexPoly
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeGraphics_isShapeClipSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 334);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 335);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4950);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_applyPaint__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9574, 9606);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9575, 9607);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4954);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1107772887;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L939475028;
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_impl_ios_IOSImplementation_RadialGradient);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1107772887;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L939475028;
     __CN1_DEBUG_INFO(4955);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(4956);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_applyRadialGradientPaintMutable___int_int_int_int_int_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_startColor(locals[1].data.o), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_endColor(locals[1].data.o), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_x(locals[1].data.o), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_y(locals[1].data.o), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_width(locals[1].data.o), get_field_com_codename1_impl_ios_IOSImplementation_RadialGradient_height(locals[1].data.o)); 
 
-label_L1107772887:
+label_L939475028:
     __CN1_DEBUG_INFO(4958);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1863,16 +1863,16 @@ label_L1107772887:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_unapplyPaint__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9574, 9607);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9575, 9608);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4961);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2115087165;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L8996952;
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_paint(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_impl_ios_IOSImplementation_RadialGradient);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2115087165;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L8996952;
     __CN1_DEBUG_INFO(4962);
     virtual_com_codename1_impl_ios_IOSNative_clearRadialGradientPaintMutable__(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData)); 
 
-label_L2115087165:
+label_L8996952:
     __CN1_DEBUG_INFO(4964);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1884,7 +1884,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeClearRec
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* width */
     volatile JAVA_INT ilocals_4_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9574, 9608);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 9575, 9609);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -1902,7 +1902,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_fillPolygon___
     volatile JAVA_INT ilocals_2_ = 0; /* alpha */
     volatile JAVA_INT ilocals_5_ = 0; /* nPoints */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 9574, 378);
+    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 9575, 379);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     locals[3].data.o = __cn1Arg3;
@@ -1910,66 +1910,66 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_fillPolygon___
     locals[4].data.o = __cn1Arg4;
     locals[4].type = CN1_TYPE_OBJECT;
     ilocals_5_ = __cn1Arg5;
-    int restoreToL205821198401;
-    int tryBlockOffsetL205821198401;
-    DEFINE_CATCH_BLOCK(catch_L205821198401, label_L1604616170, restoreToL205821198401);
-    int restoreToL160461617002;
-    int tryBlockOffsetL160461617002;
-    DEFINE_CATCH_BLOCK(catch_L160461617002, label_L1604616170, restoreToL160461617002);
+    int restoreToL97565038701;
+    int tryBlockOffsetL97565038701;
+    DEFINE_CATCH_BLOCK(catch_L97565038701, label_L2063009760, restoreToL97565038701);
+    int restoreToL206300976002;
+    int tryBlockOffsetL206300976002;
+    DEFINE_CATCH_BLOCK(catch_L206300976002, label_L2063009760, restoreToL206300976002);
     __CN1_DEBUG_INFO(4975);
     /* VarOp.assignFrom */ locals[6].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[6].type=CN1_TYPE_OBJECT;
-label_L2058211984:
- tryBlockOffsetL205821198401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L205821198401);
-    restoreToL205821198401 = threadStateData->threadObjectStackOffset;
+label_L975650387:
+ tryBlockOffsetL97565038701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L97565038701);
+    restoreToL97565038701 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(4977);
     /* VarOp.assignFrom */     ilocals_7_ = 0 /* ICONST_0 */; 
 
-label_L1415545023:
-    if (ilocals_7_>=ilocals_5_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L596779307, 1);
+label_L918899286:
+    if (ilocals_7_>=ilocals_5_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1937693946, 1);
     __CN1_DEBUG_INFO(4978);
-    if (ilocals_7_!=0) /* IFNE CustomJump */ JUMP_TO(label_L1531175283, 1);
+    if (ilocals_7_!=0) /* IFNE CustomJump */ JUMP_TO(label_L1053744929, 1);
     __CN1_DEBUG_INFO(4979);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___float_float(threadStateData, locals[6].data.o, ((JAVA_FLOAT)CN1_ARRAY_ELEMENT_INT(locals[3].data.o, 0 /* ICONST_0 */)), ((JAVA_FLOAT)CN1_ARRAY_ELEMENT_INT(locals[4].data.o, 0 /* ICONST_0 */))); 
-    JUMP_TO(label_L687399269, 1);
+    JUMP_TO(label_L1959758632, 1);
 
-label_L1531175283:
+label_L1053744929:
     __CN1_DEBUG_INFO(4981);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_lineTo___float_float(threadStateData, locals[6].data.o, ((JAVA_FLOAT)CN1_ARRAY_ELEMENT_INT(locals[3].data.o, ilocals_7_)), ((JAVA_FLOAT)CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ilocals_7_))); 
 
-label_L687399269:
+label_L1959758632:
     __CN1_DEBUG_INFO(4977);
     BC_IINC(7, 1);
-    JUMP_TO(label_L1415545023, 1);
+    JUMP_TO(label_L918899286, 1);
 
-label_L596779307:
+label_L1937693946:
     __CN1_DEBUG_INFO(4984);
     virtual_com_codename1_ui_geom_GeneralPath_closePath__(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(4985);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillShape___com_codename1_ui_geom_Shape(threadStateData, __cn1ThisObject, locals[6].data.o); 
 
-label_L457107443:
+label_L709811979:
 END_TRY(1);    __CN1_DEBUG_INFO(4987);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(4988);
-    JUMP_TO(label_L1727424614, 0);
+    JUMP_TO(label_L861522296, 0);
 
-label_L1604616170:
- tryBlockOffsetL160461617002 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L160461617002);
-    restoreToL160461617002 = threadStateData->threadObjectStackOffset;
+label_L2063009760:
+ tryBlockOffsetL206300976002 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L206300976002);
+    restoreToL206300976002 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(4987);
     BC_ASTORE(8);
 
-label_L1579004542:
+label_L955435390:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(4988);
     BC_ALOAD(8);
     throwException(threadStateData, POP_OBJ());
 
-label_L1727424614:
+label_L861522296:
     __CN1_DEBUG_INFO(4989);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1978,7 +1978,7 @@ label_L1727424614:
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_setRenderingHints___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* hints */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9574, 399);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9575, 400);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4992);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_renderingHints(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -1996,7 +1996,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeGraphics_getRenderingHin
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_access$1000___com_codename1_impl_ios_IOSImplementation_NativeGraphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x1 */
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 9574, 1861);
+    DEFINE_METHOD_STACK(2, 2, 0, 9575, 1862);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;

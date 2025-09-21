@@ -89,7 +89,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_Arrow___INIT_____com_codename1_ui_plaf
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 5706, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 5707, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -110,7 +110,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_Arrow___INIT_____com_codename1_ui_plaf
     __CN1_DEBUG_INFO(2281);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentVerticalPosition(threadStateData, -1.0, __cn1ThisObject);
     __CN1_DEBUG_INFO(2284);
-    if (virtual_com_codename1_ui_plaf_CSSBorder_getTrackComponent___R_com_codename1_ui_geom_Rectangle(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1166021410;
+    if (virtual_com_codename1_ui_plaf_CSSBorder_getTrackComponent___R_com_codename1_ui_geom_Rectangle(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L895280806;
     __CN1_DEBUG_INFO(2285);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_Component_getAbsoluteY___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(2286);
@@ -141,7 +141,7 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_Arrow___INIT_____com_codename1_ui_plaf
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1969958288;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L541330540;
     __CN1_DEBUG_INFO(2292);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2293);
@@ -168,11 +168,11 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_Arrow___INIT_____com_codename1_ui_plaf
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L891327883;
+    goto label_L507479765;
 
-label_L1969958288:
+label_L541330540:
     __CN1_DEBUG_INFO(2295);
-    if (get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentSide(__cn1ThisObject)==2 /* ICONST_2 */) /* IF_ICMPEQ CustomJump */ goto label_L1824931880;
+    if (get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentSide(__cn1ThisObject)==2 /* ICONST_2 */) /* IF_ICMPEQ CustomJump */ goto label_L1443000737;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
@@ -182,9 +182,9 @@ label_L1969958288:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
     SP++;
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L689588113;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L79283217;
 
-label_L1824931880:
+label_L1443000737:
     __CN1_DEBUG_INFO(2297);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 2 /* ICONST_2 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2298);
@@ -211,9 +211,9 @@ label_L1824931880:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L891327883;
+    goto label_L507479765;
 
-label_L689588113:
+label_L79283217:
     __CN1_DEBUG_INFO(2300);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
@@ -226,7 +226,7 @@ label_L689588113:
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getWidth___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L95545487;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L69115782;
     __CN1_DEBUG_INFO(2302);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2303);
@@ -253,9 +253,9 @@ label_L689588113:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L891327883;
+    goto label_L507479765;
 
-label_L95545487:
+label_L69115782:
     __CN1_DEBUG_INFO(2305);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
@@ -266,7 +266,7 @@ label_L95545487:
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_5_; 
     SP++;
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L891327883;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L507479765;
     __CN1_DEBUG_INFO(2307);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 3 /* ICONST_3 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2308);
@@ -294,30 +294,30 @@ label_L95545487:
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
 
-label_L891327883:
+label_L507479765:
     __CN1_DEBUG_INFO(2313);
-    goto label_L873249151;
+    goto label_L1727379710;
 
-label_L1166021410:
-    if (get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentSide(__cn1ThisObject)<0) /* IFLT CustomJump */ goto label_L873249151;
+label_L895280806:
+    if (get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentSide(__cn1ThisObject)<0) /* IFLT CustomJump */ goto label_L1727379710;
     __CN1_DEBUG_INFO(2314);
     PUSH_INT(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentSide(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L1779787990;
-        case 1: goto label_L298355914;
-        case 2: goto label_L456653804;
-        case 3: goto label_L1243705012;
-        default: goto label_L873249151;
+        case 0: goto label_L591352568;
+        case 1: goto label_L1777112002;
+        case 2: goto label_L436126678;
+        case 3: goto label_L1384626783;
+        default: goto label_L1727379710;
     }
 
-label_L1779787990:
+label_L591352568:
     __CN1_DEBUG_INFO(2316);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2317);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, 0 /* FCONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2318);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentHorizontalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L873249151;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentHorizontalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1727379710;
     __CN1_DEBUG_INFO(2319);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, locals[2].data.o);
@@ -328,15 +328,15 @@ label_L1779787990:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L873249151;
+    goto label_L1727379710;
 
-label_L456653804:
+label_L436126678:
     __CN1_DEBUG_INFO(2322);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 2 /* ICONST_2 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2323);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, 0 /* FCONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2324);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentHorizontalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L873249151;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentHorizontalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1727379710;
     __CN1_DEBUG_INFO(2325);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getWidth___R_int(threadStateData, locals[2].data.o);
@@ -347,15 +347,15 @@ label_L456653804:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L873249151;
+    goto label_L1727379710;
 
-label_L298355914:
+label_L1777112002:
     __CN1_DEBUG_INFO(2328);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2329);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, 0 /* FCONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2330);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentVerticalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L873249151;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentVerticalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1727379710;
     __CN1_DEBUG_INFO(2331);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, locals[2].data.o);
@@ -366,15 +366,15 @@ label_L298355914:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L873249151;
+    goto label_L1727379710;
 
-label_L1243705012:
+label_L1384626783:
     __CN1_DEBUG_INFO(2334);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_direction(threadStateData, 3 /* ICONST_3 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2335);
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, 0 /* FCONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(2336);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentVerticalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L873249151;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_plaf_CSSBorder_Arrow_trackComponentVerticalPosition(__cn1ThisObject), 0 /* FCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1727379710;
     __CN1_DEBUG_INFO(2337);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getHeight___R_int(threadStateData, locals[2].data.o);
@@ -385,9 +385,9 @@ label_L1243705012:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
     set_field_com_codename1_ui_plaf_CSSBorder_Arrow_position(threadStateData, POP_FLOAT(), POP_OBJ());
-    goto label_L873249151;
+    goto label_L1727379710;
 
-label_L873249151:
+label_L1727379710:
     __CN1_DEBUG_INFO(2343);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

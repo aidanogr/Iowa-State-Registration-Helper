@@ -29,7 +29,7 @@ com_codename1_media_RemoteControlListener___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_media_RemoteControlListener___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8721, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8722, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(34);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -83,7 +83,7 @@ JAVA_VOID com_codename1_media_RemoteControlListener_rewind__(CODENAME_ONE_THREAD
 
 
 JAVA_BOOLEAN com_codename1_media_RemoteControlListener_isPlaying___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8721, 8637);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8722, 8638);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(107);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }

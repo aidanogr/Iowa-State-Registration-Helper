@@ -31,7 +31,7 @@ com_codename1_util_CallbackAdapter___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_util_CallbackAdapter___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8168, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8169, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(30);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

@@ -47,7 +47,7 @@ JAVA_OBJECT __NEW_com_codename1_components_FileTreeModel(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_codename1_components_FileTreeModel___INIT_____boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* showFiles */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8878, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8879, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(60);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -60,11 +60,11 @@ JAVA_VOID com_codename1_components_FileTreeModel___INIT_____boolean(CODENAME_ONE
 
 
 JAVA_VOID com_codename1_components_FileTreeModel_addExtensionFilter___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8878, 8879);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8879, 8880);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(70);
-    if (get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1385539444;
+    if (get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L843774579;
     __CN1_DEBUG_INFO(71);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_Vector(threadStateData)); /* NEW */
@@ -73,7 +73,7 @@ JAVA_VOID com_codename1_components_FileTreeModel_addExtensionFilter___java_lang_
     set_field_com_codename1_components_FileTreeModel_ext(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1385539444:
+label_L843774579:
     __CN1_DEBUG_INFO(73);
     /* CustomInvoke */virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(74);
@@ -86,25 +86,25 @@ JAVA_OBJECT com_codename1_components_FileTreeModel_getChildren___java_lang_Objec
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 8878, 7632);
+    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 8879, 7633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL650672391cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL650672391cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L650672391cn1_class_id_java_lang_Throwable1, label_L65048679, restoreToL650672391cn1_class_id_java_lang_Throwable1);
+    int restoreToL763228368cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL763228368cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L763228368cn1_class_id_java_lang_Throwable1, label_L275672574, restoreToL763228368cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(81);
     PUSH_POINTER(__NEW_java_util_Vector(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Vector___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L650672391:
- tryBlockOffsetL650672391cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L650672391cn1_class_id_java_lang_Throwable1);
-    restoreToL650672391cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L763228368:
+ tryBlockOffsetL763228368cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L763228368cn1_class_id_java_lang_Throwable1);
+    restoreToL763228368cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(83);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L2055167044, 1);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L2113010778, 1);
     __CN1_DEBUG_INFO(84);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_FileSystemStorage_getRoots___R_java_lang_String_1ARRAY(threadStateData, SP[-1].data.o);
@@ -113,23 +113,23 @@ label_L650672391:
     __CN1_DEBUG_INFO(85);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
-label_L903928094:
-    if (ilocals_4_>=CN1_ARRAY_LENGTH(locals[3].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1253140795, 1);
+label_L834152358:
+    if (ilocals_4_>=CN1_ARRAY_LENGTH(locals[3].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1413793343, 1);
     __CN1_DEBUG_INFO(86);
     /* CustomInvoke */virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, locals[2].data.o, CN1_ARRAY_ELEMENT_OBJECT(locals[3].data.o, ilocals_4_)); 
     __CN1_DEBUG_INFO(85);
     BC_IINC(4, 1);
-    JUMP_TO(label_L903928094, 1);
+    JUMP_TO(label_L834152358, 1);
 
-label_L1253140795:
+label_L1413793343:
     __CN1_DEBUG_INFO(88);
-    JUMP_TO(label_L839128173, 1);
+    JUMP_TO(label_L1381674482, 1);
 
-label_L2055167044:
+label_L2113010778:
     __CN1_DEBUG_INFO(89);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = locals[1].data.o;
 locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
-    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))!=0) /* IFNE CustomJump */ JUMP_TO(label_L848945941, 1);
+    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))!=0) /* IFNE CustomJump */ JUMP_TO(label_L540776655, 1);
     __CN1_DEBUG_INFO(91);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -142,21 +142,21 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
 
-label_L848945941:
+label_L540776655:
     __CN1_DEBUG_INFO(93);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_FileSystemStorage_listFiles___java_lang_String_R_java_lang_String_1ARRAY(threadStateData, SP[-1].data.o, locals[3].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(94);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L839128173, 1);
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1381674482, 1);
     __CN1_DEBUG_INFO(95);
-    if (get_field_com_codename1_components_FileTreeModel_showFiles(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1931525324, 1);
+    if (get_field_com_codename1_components_FileTreeModel_showFiles(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1388107721, 1);
     __CN1_DEBUG_INFO(96);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L1157159044:
-    if (ilocals_5_>=CN1_ARRAY_LENGTH(locals[4].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1077650335, 1);
+label_L93607649:
+    if (ilocals_5_>=CN1_ARRAY_LENGTH(locals[4].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L575233839, 1);
     __CN1_DEBUG_INFO(97);
     /* VarOp.assignFrom */ locals[6].type=CN1_TYPE_INVALID;locals[6].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[4].data.o, ilocals_5_);
 locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(98);
@@ -173,15 +173,15 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(98);
     { JAVA_INT tmpResult = virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ JUMP_TO(label_L1376673929, 1);
-    if (get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1376673929, 1);
+    if(POP_INT() != 0) /* IFNE */ JUMP_TO(label_L637223849, 1);
+    if (get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L637223849, 1);
     __CN1_DEBUG_INFO(99);
     /* VarOp.assignFrom */ ilocals_7_ = /* CustomInvoke */virtual_java_lang_String_lastIndexOf___int_R_int(threadStateData, locals[6].data.o, 46);
     __CN1_DEBUG_INFO(100);
-    if (ilocals_7_<=0) /* IFLE CustomJump */ JUMP_TO(label_L804429974, 1);
+    if (ilocals_7_<=0) /* IFLE CustomJump */ JUMP_TO(label_L1509579321, 1);
     __CN1_DEBUG_INFO(101);
     /* VarOp.assignFrom */ locals[8].data.o = /* CustomInvoke */virtual_java_lang_String_substring___int_int_R_java_lang_String(threadStateData, locals[6].data.o, (ilocals_7_ + 1 /* ICONST_1 */), virtual_java_lang_String_length___R_int(threadStateData, locals[6].data.o));locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(102);
-    if (/* CustomInvoke */virtual_java_util_Vector_contains___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject), locals[8].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L804429974, 1);
+    if (/* CustomInvoke */virtual_java_util_Vector_contains___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_components_FileTreeModel_ext(__cn1ThisObject), locals[8].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1509579321, 1);
     __CN1_DEBUG_INFO(103);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -195,11 +195,11 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(98);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L804429974:
+label_L1509579321:
     __CN1_DEBUG_INFO(106);
-    JUMP_TO(label_L1505935224, 1);
+    JUMP_TO(label_L1842142288, 1);
 
-label_L1376673929:
+label_L637223849:
     __CN1_DEBUG_INFO(107);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -213,20 +213,20 @@ label_L1376673929:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1505935224:
+label_L1842142288:
     __CN1_DEBUG_INFO(96);
     BC_IINC(5, 1);
-    JUMP_TO(label_L1157159044, 1);
+    JUMP_TO(label_L93607649, 1);
 
-label_L1077650335:
-    JUMP_TO(label_L839128173, 1);
+label_L575233839:
+    JUMP_TO(label_L1381674482, 1);
 
-label_L1931525324:
+label_L1388107721:
     __CN1_DEBUG_INFO(111);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L1604262022:
-    if (ilocals_5_>=CN1_ARRAY_LENGTH(locals[4].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L839128173, 1);
+label_L1907170571:
+    if (ilocals_5_>=CN1_ARRAY_LENGTH(locals[4].data.o)) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1381674482, 1);
     __CN1_DEBUG_INFO(112);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -241,7 +241,7 @@ label_L1604262022:
     { JAVA_INT tmpResult = virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1708384954, 1);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L2056109041, 1);
     __CN1_DEBUG_INFO(113);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -255,16 +255,16 @@ label_L1604262022:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1708384954:
+label_L2056109041:
     __CN1_DEBUG_INFO(111);
     BC_IINC(5, 1);
-    JUMP_TO(label_L1604262022, 1);
+    JUMP_TO(label_L1907170571, 1);
 
-label_L839128173:
+label_L1381674482:
 END_TRY(1);    __CN1_DEBUG_INFO(122);
-    JUMP_TO(label_L325735794, 0);
+    JUMP_TO(label_L2047373618, 0);
 
-label_L65048679:
+label_L275672574:
     __CN1_DEBUG_INFO(119);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(120);
@@ -276,7 +276,7 @@ label_L65048679:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L325735794:
+label_L2047373618:
     __CN1_DEBUG_INFO(123);
 
 {
@@ -287,21 +287,21 @@ label_L325735794:
 
 
 JAVA_BOOLEAN com_codename1_components_FileTreeModel_isLeaf___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8878, 8880);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8879, 8881);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(130);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L290751331;
+    if(POP_INT() != 0) /* IFNE */ goto label_L1569457100;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1810392513;
+    goto label_L1246329279;
 
-label_L290751331:
+label_L1569457100:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1810392513:
+label_L1246329279:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

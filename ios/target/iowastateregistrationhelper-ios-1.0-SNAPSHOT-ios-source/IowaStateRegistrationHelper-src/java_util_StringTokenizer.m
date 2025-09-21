@@ -59,17 +59,17 @@ JAVA_OBJECT __NEW_java_util_StringTokenizer(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_StringTokenizer___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6845, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6846, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */java_util_StringTokenizer___INIT_____java_lang_String_java_lang_String_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6846), 0 /* ICONST_0 */); 
+    /* CustomInvoke */java_util_StringTokenizer___INIT_____java_lang_String_java_lang_String_boolean(threadStateData, __cn1ThisObject, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6847), 0 /* ICONST_0 */); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID java_util_StringTokenizer___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6845, 200);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6846, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -81,7 +81,7 @@ JAVA_VOID java_util_StringTokenizer___INIT_____java_lang_String_java_lang_String
 
 
 JAVA_VOID java_util_StringTokenizer___INIT_____java_lang_String_java_lang_String_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6845, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6846, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -112,7 +112,7 @@ JAVA_INT java_util_StringTokenizer_countTokens___R_int(CODENAME_ONE_THREAD_STATE
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 6845, 6847);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 6846, 6848);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     /* VarOp.assignFrom */ ilocals_3_ = get_field_java_util_StringTokenizer_position(__cn1ThisObject);
@@ -150,7 +150,7 @@ label_L1484531981:
 
 
 JAVA_BOOLEAN java_util_StringTokenizer_hasMoreElements___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6845, 2001);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6846, 2002);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_StringTokenizer_hasMoreTokens___R_boolean(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -160,7 +160,7 @@ JAVA_BOOLEAN java_util_StringTokenizer_hasMoreElements___R_boolean(CODENAME_ONE_
 JAVA_BOOLEAN java_util_StringTokenizer_hasMoreTokens___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6845, 6848);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6846, 6849);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_StringTokenizer_delimiters(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1159114532;
     PUSH_POINTER(__NEW_java_lang_NullPointerException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -192,7 +192,7 @@ label_L1256728724:
 
 
 JAVA_OBJECT java_util_StringTokenizer_nextElement___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6845, 2002);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6846, 2003);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_StringTokenizer_nextToken___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -203,7 +203,7 @@ JAVA_OBJECT java_util_StringTokenizer_nextElement___R_java_lang_Object(CODENAME_
 JAVA_OBJECT java_util_StringTokenizer_nextToken___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6845, 6849);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6846, 6850);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_StringTokenizer_delimiters(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L369241501;
     PUSH_POINTER(__NEW_java_lang_NullPointerException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

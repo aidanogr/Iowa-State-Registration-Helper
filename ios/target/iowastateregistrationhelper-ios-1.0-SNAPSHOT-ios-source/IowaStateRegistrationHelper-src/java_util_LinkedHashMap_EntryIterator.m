@@ -58,7 +58,7 @@ JAVA_OBJECT __NEW_java_util_LinkedHashMap_EntryIterator(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID java_util_LinkedHashMap_EntryIterator___INIT_____java_util_LinkedHashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5900, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5901, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_LinkedHashMap_AbstractMapIterator___INIT_____java_util_LinkedHashMap(threadStateData, __cn1ThisObject, locals[1].data.o); 
@@ -68,7 +68,7 @@ JAVA_VOID java_util_LinkedHashMap_EntryIterator___INIT_____java_util_LinkedHashM
 
 
 JAVA_OBJECT java_util_LinkedHashMap_EntryIterator_next___R_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5900, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5901, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_LinkedHashMap_EntryIterator_makeNext__(threadStateData, __cn1ThisObject); 
     PUSH_POINTER(get_field_java_util_LinkedHashMap_EntryIterator_currentEntry(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -77,7 +77,7 @@ JAVA_OBJECT java_util_LinkedHashMap_EntryIterator_next___R_java_util_Map_Entry(C
 
 
 JAVA_OBJECT java_util_LinkedHashMap_EntryIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5900, 1252);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5901, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_LinkedHashMap_EntryIterator_next___R_java_util_Map_Entry(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

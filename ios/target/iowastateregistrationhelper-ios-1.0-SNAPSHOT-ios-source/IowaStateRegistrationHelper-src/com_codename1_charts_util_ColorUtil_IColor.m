@@ -211,25 +211,25 @@ JAVA_OBJECT __NEW_com_codename1_charts_util_ColorUtil_IColor(CODENAME_ONE_THREAD
 JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* argb */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5286, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5287, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(156);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(158);
     /* VarOp.assignFrom */ ilocals_2_=(BC_IUSHR_EXPR(ilocals_1_, 24) & 255);
     __CN1_DEBUG_INFO(159);
-    if (0 /* ICONST_0 */!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L44341075;
+    if (0 /* ICONST_0 */!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L875191127;
     __CN1_DEBUG_INFO(160);
     BC_ALOAD(0);
     PUSH_INT(255);
     set_field_com_codename1_charts_util_ColorUtil_IColor_alpha(threadStateData, POP_INT(), POP_OBJ());
-    goto label_L1852361929;
+    goto label_L1584929615;
 
-label_L44341075:
+label_L875191127:
     __CN1_DEBUG_INFO(162);
     set_field_com_codename1_charts_util_ColorUtil_IColor_alpha(threadStateData, ilocals_2_, __cn1ThisObject);
 
-label_L1852361929:
+label_L1584929615:
     __CN1_DEBUG_INFO(164);
     set_field_com_codename1_charts_util_ColorUtil_IColor_red(threadStateData, (BC_IUSHR_EXPR(ilocals_1_, 16) & 255), __cn1ThisObject);
     __CN1_DEBUG_INFO(165);
@@ -250,7 +250,7 @@ JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___INIT_____int_int_int(CODE
     volatile JAVA_INT ilocals_1_ = 0; /* r */
     volatile JAVA_INT ilocals_2_ = 0; /* g */
     volatile JAVA_INT ilocals_3_ = 0; /* b */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5286, 200);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 5287, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -267,7 +267,7 @@ JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___INIT_____int_int_int_int(
     volatile JAVA_INT ilocals_2_ = 0; /* r */
     volatile JAVA_INT ilocals_3_ = 0; /* g */
     volatile JAVA_INT ilocals_4_ = 0; /* b */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 5286, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 5287, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -293,7 +293,7 @@ JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___INIT_____int_int_int_int(
 
 
 JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_clone___R_com_codename1_charts_util_ColorUtil_IColor(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5286, 948);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5287, 949);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(189);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -304,7 +304,7 @@ JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_clone___R_com_codename1_c
 
 
 JAVA_INT com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5286, 883);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5287, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(193);
 
 {
@@ -315,37 +315,37 @@ JAVA_INT com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(CODENAME_ON
 
 
 JAVA_BOOLEAN com_codename1_charts_util_ColorUtil_IColor_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5286, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5287, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(196);
-    if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L394591403;
+    if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L462020284;
     __CN1_DEBUG_INFO(197);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L394591403:
+label_L462020284:
     __CN1_DEBUG_INFO(198);
-    if (JAVA_NULL /* ACONST_NULL */!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L1675934713;
+    if (JAVA_NULL /* ACONST_NULL */!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L1929713950;
     __CN1_DEBUG_INFO(199);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1675934713:
+label_L1929713950:
     __CN1_DEBUG_INFO(200);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_charts_util_ColorUtil_IColor);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1163704025;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L361960650;
     __CN1_DEBUG_INFO(201);
-    if (virtual_com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(threadStateData, __cn1ThisObject)!=virtual_java_lang_Object_hashCode___R_int(threadStateData, locals[1].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1836725311;
+    if (virtual_com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(threadStateData, __cn1ThisObject)!=virtual_java_lang_Object_hashCode___R_int(threadStateData, locals[1].data.o)) /* IF_ICMPNE CustomJump */ goto label_L196069204;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1563163807;
+    goto label_L1585874083;
 
-label_L1836725311:
+label_L196069204:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1563163807:
+label_L1585874083:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1163704025:
+label_L361960650:
     __CN1_DEBUG_INFO(203);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -353,7 +353,7 @@ label_L1163704025:
 
 JAVA_INT com_codename1_charts_util_ColorUtil_IColor_ToARGB___com_codename1_charts_util_ColorUtil_IColor_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_charts_util_ColorUtil_IColor(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 5286, 5287);
+    DEFINE_METHOD_STACK(3, 1, 0, 5287, 5288);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(209);
@@ -366,28 +366,28 @@ JAVA_INT com_codename1_charts_util_ColorUtil_IColor_ToARGB___com_codename1_chart
 
 
 JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5286, 897);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5287, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(216);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5288));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5289));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_charts_util_ColorUtil_IColor_red(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5289));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5290));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_charts_util_ColorUtil_IColor_green(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5290));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5291));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_charts_util_ColorUtil_IColor_blue(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5291));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(5292));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_charts_util_ColorUtil_IColor_alpha(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1289));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1290));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -397,7 +397,7 @@ JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_toString___R_java_lang_St
 
 
 JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5286, 948);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5287, 949);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(104);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_charts_util_ColorUtil_IColor_clone___R_com_codename1_charts_util_ColorUtil_IColor(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -407,7 +407,7 @@ JAVA_OBJECT com_codename1_charts_util_ColorUtil_IColor_clone___R_java_lang_Objec
 
 
 JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(5, 0, 0, 5286, 861);
+    DEFINE_METHOD_STACK(5, 0, 0, 5287, 862);
     __CN1_DEBUG_INFO(109);
     PUSH_POINTER(__NEW_com_codename1_charts_util_ColorUtil_IColor(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

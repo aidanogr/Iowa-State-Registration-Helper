@@ -24,7 +24,7 @@ void __GC_MARK_java_util_AbstractCollection(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_util_AbstractCollection___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1237, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1238, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -32,7 +32,7 @@ JAVA_VOID java_util_AbstractCollection___INIT____(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_BOOLEAN java_util_AbstractCollection_add___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1237, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1238, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_java_lang_UnsupportedOperationException(threadStateData)); /* NEW */
@@ -45,7 +45,7 @@ JAVA_BOOLEAN java_util_AbstractCollection_add___java_lang_Object_R_boolean(CODEN
 
 JAVA_BOOLEAN java_util_AbstractCollection_addAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1237, 1229);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1238, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
@@ -71,7 +71,7 @@ label_L1034568234:
 
 
 JAVA_VOID java_util_AbstractCollection_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1237, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1238, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_AbstractCollection_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;
 label_L667821226:
     if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L482082765;
@@ -86,7 +86,7 @@ label_L482082765:
 
 
 JAVA_BOOLEAN java_util_AbstractCollection_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1237, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1238, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_AbstractCollection_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1209702763;
@@ -114,7 +114,7 @@ label_L1028780142:
 
 
 JAVA_BOOLEAN java_util_AbstractCollection_containsAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1237, 1238);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1238, 1239);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_Collection_iterator___R_java_util_Iterator(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;
@@ -136,7 +136,7 @@ label_L686466458:
 
 
 JAVA_BOOLEAN java_util_AbstractCollection_isEmpty___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1237, 907);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1238, 908);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_AbstractCollection_size___R_int(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L105374791;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1107024580;
@@ -155,7 +155,7 @@ JAVA_OBJECT java_util_AbstractCollection_iterator___R_java_util_Iterator(CODENAM
 
 
 JAVA_BOOLEAN java_util_AbstractCollection_remove___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1237, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1238, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_AbstractCollection_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1010856212;
@@ -186,7 +186,7 @@ label_L904861801:
 
 JAVA_BOOLEAN java_util_AbstractCollection_removeAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1237, 1239);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1238, 1240);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
@@ -214,7 +214,7 @@ label_L318857719:
 
 JAVA_BOOLEAN java_util_AbstractCollection_retainAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1237, 1240);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1238, 1241);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
@@ -246,9 +246,9 @@ JAVA_INT java_util_AbstractCollection_size___R_int(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_OBJECT java_util_AbstractCollection_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1237, 897);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1238, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_AbstractCollection_isEmpty___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1754894440;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1206);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1207);
 
 label_L1754894440:
     PUSH_POINTER(__NEW_java_lang_StringBuffer(threadStateData)); /* NEW */
@@ -268,11 +268,11 @@ label_L1642030774:
     goto label_L607932305;
 
 label_L787738361:
-    /* CustomInvoke */virtual_java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1241)); 
+    /* CustomInvoke */virtual_java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1242)); 
 
 label_L607932305:
     if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L168366;
-    /* CustomInvoke */virtual_java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1207)); 
+    /* CustomInvoke */virtual_java_lang_StringBuffer_append___java_lang_String_R_java_lang_StringBuffer(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1208)); 
 
 label_L168366:
     goto label_L1642030774;
@@ -287,7 +287,7 @@ label_L1998767043:
 
 
 JAVA_OBJECT java_util_AbstractCollection_toArray___R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1237, 1236);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1238, 1237);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_OBJ(java_util_ArrayList_toObjectArray___java_util_Collection_R_java_lang_Object_1ARRAY(threadStateData, __cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -296,7 +296,7 @@ JAVA_OBJECT java_util_AbstractCollection_toArray___R_java_lang_Object_1ARRAY(COD
 
 JAVA_OBJECT java_util_AbstractCollection_toArray___java_lang_Object_1ARRAY_R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 1237, 1236);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 1238, 1237);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;

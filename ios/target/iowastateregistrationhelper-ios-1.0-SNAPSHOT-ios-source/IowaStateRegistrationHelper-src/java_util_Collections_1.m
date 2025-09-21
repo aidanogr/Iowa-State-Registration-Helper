@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_java_util_Collections_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Collections_1___INIT_____java_util_Collection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6332, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6333, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Collections_1_val_c(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -59,7 +59,7 @@ JAVA_VOID java_util_Collections_1___INIT_____java_util_Collection(CODENAME_ONE_T
 
 
 JAVA_BOOLEAN java_util_Collections_1_hasMoreElements___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6332, 2001);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6333, 2002);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, get_field_java_util_Collections_1_it(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -67,7 +67,7 @@ JAVA_BOOLEAN java_util_Collections_1_hasMoreElements___R_boolean(CODENAME_ONE_TH
 
 
 JAVA_OBJECT java_util_Collections_1_nextElement___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6332, 2002);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6333, 2003);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_OBJECT tmpResult = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, get_field_java_util_Collections_1_it(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

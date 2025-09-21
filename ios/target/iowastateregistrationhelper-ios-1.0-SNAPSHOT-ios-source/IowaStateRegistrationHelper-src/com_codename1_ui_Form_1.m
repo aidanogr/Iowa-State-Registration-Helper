@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Form_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Form_1___INIT_____com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8178, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8179, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(606);
@@ -48,7 +48,7 @@ JAVA_VOID com_codename1_ui_Form_1___INIT_____com_codename1_ui_Form(CODENAME_ONE_
 
 
 JAVA_VOID com_codename1_ui_Form_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 3, 0, 8178, 3055);
+    DEFINE_INSTANCE_METHOD_STACK(7, 3, 0, 8179, 3056);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(609);
@@ -60,7 +60,7 @@ JAVA_VOID com_codename1_ui_Form_1_actionPerformed___com_codename1_ui_events_Acti
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(610);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1655939830;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1835713430;
     __CN1_DEBUG_INFO(611);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle(threadStateData)); /* NEW */
@@ -69,7 +69,7 @@ JAVA_VOID com_codename1_ui_Form_1_actionPerformed___com_codename1_ui_events_Acti
     BC_ALOAD(2);
     virtual_com_codename1_ui_Component_scrollRectToVisible___com_codename1_ui_geom_Rectangle_com_codename1_ui_Component(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L1655939830:
+label_L1835713430:
     __CN1_DEBUG_INFO(613);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

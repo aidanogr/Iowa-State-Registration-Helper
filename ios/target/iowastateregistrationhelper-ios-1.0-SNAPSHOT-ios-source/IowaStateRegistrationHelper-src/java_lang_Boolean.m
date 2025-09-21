@@ -56,7 +56,7 @@ JAVA_OBJECT __NEW_java_lang_Boolean(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_lang_Boolean___INIT_____boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3823, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3824, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_lang_Boolean_value(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -66,14 +66,14 @@ JAVA_VOID java_lang_Boolean___INIT_____boolean(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_BOOLEAN java_lang_Boolean_booleanValue___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3823, 3824);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3824, 3825);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Boolean_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_BOOLEAN java_lang_Boolean_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3823, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3824, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1506951181;
@@ -95,20 +95,20 @@ label_L1976401987:
 
 
 JAVA_INT java_lang_Boolean_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3823, 883);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3824, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_lang_Boolean_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3823, 897);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3824, 898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_lang_Boolean_value(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L867288517;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(207);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(208);
 
 label_L867288517:
     /* LDC: 'false'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(264));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(265));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }
@@ -116,7 +116,7 @@ label_L867288517:
 
 JAVA_OBJECT java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Boolean(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 3823, 900);
+    DEFINE_METHOD_STACK(1, 1, 0, 3824, 901);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     if (ilocals_0_==0) /* IFEQ CustomJump */ goto label_L1528834618;
     PUSH_POINTER(get_static_java_lang_Boolean_TRUE(threadStateData));
@@ -138,11 +138,11 @@ JAVA_OBJECT java_lang_Boolean_valueOf___java_lang_String_R_java_lang_Boolean(COD
 
 JAVA_BOOLEAN java_lang_Boolean_parseBoolean___java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Boolean(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 3823, 3825);
+    DEFINE_METHOD_STACK(2, 1, 0, 3824, 3826);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L166694583;
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(207))==0) /* IFEQ CustomJump */ goto label_L166694583;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(208))==0) /* IFEQ CustomJump */ goto label_L166694583;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L885910946;
 
@@ -155,7 +155,7 @@ label_L885910946:
 
 
 JAVA_INT java_lang_Boolean_compareTo___java_lang_Boolean_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3823, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3824, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (get_field_java_lang_Boolean_value(locals[1].data.o)!=get_field_java_lang_Boolean_value(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1860591867;
@@ -172,7 +172,7 @@ label_L811207775:
 
 
 JAVA_INT java_lang_Boolean_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3823, 872);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3824, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_Boolean_compareTo___java_lang_Boolean_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -182,7 +182,7 @@ JAVA_INT java_lang_Boolean_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREA
 
 
 JAVA_VOID java_lang_Boolean___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(3, 0, 0, 3823, 861);
+    DEFINE_METHOD_STACK(3, 0, 0, 3824, 862);
     PUSH_POINTER(__NEW_java_lang_Boolean(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_Boolean___INIT_____boolean(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;

@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_java_util_TimeZone_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_TimeZone_2___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6739, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6740, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_TimeZone_2_val_ID(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -46,7 +46,7 @@ JAVA_VOID java_util_TimeZone_2___INIT_____java_lang_String(CODENAME_ONE_THREAD_S
 
 
 JAVA_INT java_util_TimeZone_2_getOffset___int_int_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_INT __cn1Arg6) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6739, 6686);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6740, 6687);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     JAVA_INT ilocals_3_ = __cn1Arg3;
@@ -59,14 +59,14 @@ JAVA_INT java_util_TimeZone_2_getOffset___int_int_int_int_int_int_R_int(CODENAME
 
 
 JAVA_INT java_util_TimeZone_2_getRawOffset___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6739, 6695);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6740, 6696);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_INT(java_util_TimeZone_access$100___java_lang_String_R_int(threadStateData, get_field_java_util_TimeZone_2_val_ID(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_BOOLEAN java_util_TimeZone_2_inDaylightTime___java_util_Date_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6739, 6697);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6740, 6698);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */PUSH_INT(java_util_TimeZone_access$200___java_lang_String_long_R_boolean(threadStateData, get_field_java_util_TimeZone_2_val_ID(__cn1ThisObject), virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o)));
@@ -75,7 +75,7 @@ JAVA_BOOLEAN java_util_TimeZone_2_inDaylightTime___java_util_Date_R_boolean(CODE
 
 
 JAVA_BOOLEAN java_util_TimeZone_2_useDaylightTime___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6739, 6726);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6740, 6727);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (/* CustomInvoke */java_util_TimeZone_access$200___java_lang_String_long_R_boolean(threadStateData, get_field_java_util_TimeZone_2_val_ID(__cn1ThisObject), java_util_TimeZone_access$300___R_long(threadStateData))==/* CustomInvoke */java_util_TimeZone_access$200___java_lang_String_long_R_boolean(threadStateData, get_field_java_util_TimeZone_2_val_ID(__cn1ThisObject), java_util_TimeZone_access$400___R_long(threadStateData))) /* IF_ICMPEQ CustomJump */ goto label_L1771243284;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L2052256418;
@@ -89,7 +89,7 @@ label_L2052256418:
 
 
 JAVA_BOOLEAN java_util_TimeZone_2_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6739, 878);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6740, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -113,7 +113,7 @@ label_L143695640:
 
 
 JAVA_INT java_util_TimeZone_2_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6739, 883);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6740, 884);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_lang_String_hashCode___R_int(threadStateData, get_field_java_util_TimeZone_2_val_ID(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;

@@ -78,7 +78,7 @@ java_util_Collections___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Collections___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6298, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6299, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -102,7 +102,7 @@ JAVA_VOID java_util_Collections_copy___java_util_List_java_util_List(CODENAME_ON
 
 JAVA_OBJECT java_util_Collections_enumeration___java_util_Collection_R_java_util_Enumeration(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_Collections(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 6298, 6299);
+    DEFINE_METHOD_STACK(3, 2, 0, 6299, 6300);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = locals[0].data.o;
@@ -192,7 +192,7 @@ JAVA_VOID java_util_Collections_sort___java_util_List(CODENAME_ONE_THREAD_STATE,
 JAVA_VOID java_util_Collections_sort___java_util_List_java_util_Comparator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     __STATIC_INITIALIZER_java_util_Collections(threadStateData);
-    DEFINE_METHOD_STACK(3, 5, 0, 6298, 1197);
+    DEFINE_METHOD_STACK(3, 5, 0, 6299, 1198);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -268,7 +268,7 @@ JAVA_OBJECT java_util_Collections_synchronizedCollection___java_util_Collection_
 
 JAVA_OBJECT java_util_Collections_synchronizedList___java_util_List_R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_Collections(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 6298, 6311);
+    DEFINE_METHOD_STACK(3, 1, 0, 6299, 6312);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L704024720;
@@ -397,7 +397,7 @@ JAVA_OBJECT java_util_Collections_asLifoQueue___java_util_Deque_R_java_util_Queu
 
 
 JAVA_VOID java_util_Collections___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(3, 0, 0, 6298, 861);
+    DEFINE_METHOD_STACK(3, 0, 0, 6299, 862);
     PUSH_POINTER(__NEW_java_util_Collections_EmptyList(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_Collections_EmptyList___INIT_____java_util_Collections_1(threadStateData, SP[-1].data.o, JAVA_NULL /* ACONST_NULL */);     SP -= 1;

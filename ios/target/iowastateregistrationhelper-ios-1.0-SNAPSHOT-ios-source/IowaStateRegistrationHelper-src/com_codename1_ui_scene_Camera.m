@@ -46,7 +46,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_scene_Camera(CODENAME_ONE_THREAD_STATE) {
 JAVA_VOID com_codename1_ui_scene_Camera___INIT_____double_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* zNear */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* zFar */
-    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 10069, 200);
+    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 10070, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(37);
@@ -56,7 +56,7 @@ JAVA_VOID com_codename1_ui_scene_Camera___INIT_____double_double(CODENAME_ONE_TH
     PUSH_POINTER(__NEW_com_codename1_properties_Property(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* LDC: 'farClip'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10070));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10071));
     /* CustomInvoke */PUSH_OBJ(java_lang_Double_valueOf___double_R_java_lang_Double(threadStateData, dlocals_1_));
     com_codename1_properties_Property___INIT_____java_lang_String_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     set_field_com_codename1_ui_scene_Camera_farClip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
@@ -66,7 +66,7 @@ JAVA_VOID com_codename1_ui_scene_Camera___INIT_____double_double(CODENAME_ONE_TH
     PUSH_POINTER(__NEW_com_codename1_properties_Property(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* LDC: 'nearClip'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10071));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10072));
     /* CustomInvoke */PUSH_OBJ(java_lang_Double_valueOf___double_R_java_lang_Double(threadStateData, dlocals_3_));
     com_codename1_properties_Property___INIT_____java_lang_String_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     set_field_com_codename1_ui_scene_Camera_nearClip(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
@@ -78,7 +78,7 @@ JAVA_VOID com_codename1_ui_scene_Camera___INIT_____double_double(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_codename1_ui_scene_Camera_getTransform___R_com_codename1_ui_Transform(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10069, 418);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10070, 419);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }

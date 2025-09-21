@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_java_util_Arrays_ArrayList(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Arrays_ArrayList___INIT_____java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1223, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1224, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_AbstractList___INIT____(threadStateData, __cn1ThisObject); 
@@ -65,7 +65,7 @@ label_L2028371466:
 JAVA_BOOLEAN java_util_Arrays_ArrayList_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 1223, 906);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 1224, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L198761306;
@@ -108,16 +108,16 @@ label_L110771485:
 
 
 JAVA_OBJECT java_util_Arrays_ArrayList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1223, 612);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1224, 613);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
-    int restoreToL602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    int tryBlockOffsetL602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    DEFINE_CATCH_BLOCK(catch_L602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L710239027, restoreToL602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    int restoreToL711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    int tryBlockOffsetL711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    DEFINE_CATCH_BLOCK(catch_L711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L710239027, restoreToL711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
 
-label_L602679582:
- tryBlockOffsetL602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    restoreToL602679582cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
+label_L711254736:
+ tryBlockOffsetL711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    restoreToL711254736cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
 
     PUSH_POINTER(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject));
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -128,7 +128,7 @@ label_L602679582:
     SP[-1].data.o = ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     SP[-1].type = CN1_TYPE_OBJECT; 
 
-label_L445763935:
+label_L1696480457:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -144,7 +144,7 @@ label_L710239027:
 
 JAVA_INT java_util_Arrays_ArrayList_indexOf___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1223, 884);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1224, 885);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2104545713;
@@ -194,30 +194,30 @@ JAVA_INT java_util_Arrays_ArrayList_lastIndexOf___java_lang_Object_R_int(CODENAM
 
 
 JAVA_OBJECT java_util_Arrays_ArrayList_set___int_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1223, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1224, 1225);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    int tryBlockOffsetL1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
-    DEFINE_CATCH_BLOCK(catch_L1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L103887628, restoreToL1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    int restoreToL1368212791cn1_class_id_java_lang_ArrayStoreException2;
-    int tryBlockOffsetL1368212791cn1_class_id_java_lang_ArrayStoreException2;
-    DEFINE_CATCH_BLOCK(catch_L1368212791cn1_class_id_java_lang_ArrayStoreException2, label_L1123629720, restoreToL1368212791cn1_class_id_java_lang_ArrayStoreException2);
+    int restoreToL1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    int tryBlockOffsetL1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1;
+    DEFINE_CATCH_BLOCK(catch_L1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1, label_L103887628, restoreToL1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    int restoreToL1172105719cn1_class_id_java_lang_ArrayStoreException2;
+    int tryBlockOffsetL1172105719cn1_class_id_java_lang_ArrayStoreException2;
+    DEFINE_CATCH_BLOCK(catch_L1172105719cn1_class_id_java_lang_ArrayStoreException2, label_L1123629720, restoreToL1172105719cn1_class_id_java_lang_ArrayStoreException2);
 
-label_L1368212791:
- tryBlockOffsetL1368212791cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayStoreException, catch_L1368212791cn1_class_id_java_lang_ArrayStoreException2);
-    restoreToL1368212791cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->threadObjectStackOffset;
- tryBlockOffsetL1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
-    restoreToL1368212791cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
+label_L1172105719:
+ tryBlockOffsetL1172105719cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayStoreException, catch_L1172105719cn1_class_id_java_lang_ArrayStoreException2);
+    restoreToL1172105719cn1_class_id_java_lang_ArrayStoreException2 = threadStateData->threadObjectStackOffset;
+ tryBlockOffsetL1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ArrayIndexOutOfBoundsException, catch_L1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1);
+    restoreToL1172105719cn1_class_id_java_lang_ArrayIndexOutOfBoundsException1 = threadStateData->threadObjectStackOffset;
 
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o=CN1_ARRAY_ELEMENT_OBJECT(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject), ilocals_1_);
 locals[3].type=CN1_TYPE_OBJECT;    CN1_SET_ARRAY_ELEMENT_OBJECT(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject), ilocals_1_, locals[2].data.o);
     BC_ALOAD(3);
 
-label_L440588810:
+label_L165290225:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -239,7 +239,7 @@ label_L1123629720:
 
 
 JAVA_INT java_util_Arrays_ArrayList_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1223, 1225);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1224, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_Arrays_ArrayList_a(__cn1ThisObject));
     { /* ARRAYLENGTH */
         if(SP[-1].data.o == JAVA_NULL) { 

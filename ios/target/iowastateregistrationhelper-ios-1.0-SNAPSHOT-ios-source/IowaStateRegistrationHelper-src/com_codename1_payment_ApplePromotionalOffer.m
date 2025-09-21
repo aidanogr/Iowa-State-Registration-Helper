@@ -75,7 +75,7 @@ com_codename1_payment_ApplePromotionalOffer___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_payment_ApplePromotionalOffer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9770, 200);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9771, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(31);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -84,7 +84,7 @@ JAVA_VOID com_codename1_payment_ApplePromotionalOffer___INIT____(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_codename1_payment_ApplePromotionalOffer_getOfferIdentifier___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9770, 9771);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9771, 9772);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(46);
 
 {
@@ -100,7 +100,7 @@ JAVA_VOID com_codename1_payment_ApplePromotionalOffer_setOfferIdentifier___java_
 
 
 JAVA_OBJECT com_codename1_payment_ApplePromotionalOffer_getKeyIdentifier___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9770, 9773);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9771, 9774);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(67);
 
 {
@@ -116,7 +116,7 @@ JAVA_VOID com_codename1_payment_ApplePromotionalOffer_setKeyIdentifier___java_la
 
 
 JAVA_OBJECT com_codename1_payment_ApplePromotionalOffer_getNonce___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9770, 9775);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9771, 9776);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(87);
 
 {
@@ -132,7 +132,7 @@ JAVA_VOID com_codename1_payment_ApplePromotionalOffer_setNonce___java_lang_Strin
 
 
 JAVA_OBJECT com_codename1_payment_ApplePromotionalOffer_getSignature___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9770, 9777);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9771, 9778);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(108);
 
 {
@@ -148,7 +148,7 @@ JAVA_VOID com_codename1_payment_ApplePromotionalOffer_setSignature___java_lang_S
 
 
 JAVA_LONG com_codename1_payment_ApplePromotionalOffer_getTimestamp___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9770, 9779);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9771, 9780);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(128);
 
 {

@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_22(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_22___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9543, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9544, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -77,7 +77,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_22___INIT_____com_codename1_i
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_22_complete___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9543, 6666);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9544, 6667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(6290);
@@ -92,7 +92,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_22_complete___java_lang_Strin
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_22_error___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9543, 67);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9544, 68);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(6296);
@@ -107,7 +107,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_22_error___java_lang_Throwabl
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_22_complete___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9543, 6666);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9544, 6667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(6287);

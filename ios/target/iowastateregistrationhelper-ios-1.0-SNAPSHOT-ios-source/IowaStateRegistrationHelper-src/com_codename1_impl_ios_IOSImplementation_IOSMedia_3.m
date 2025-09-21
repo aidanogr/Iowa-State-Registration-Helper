@@ -55,7 +55,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_IOSMedia_3(CODENAME_O
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_3___INIT_____com_codename1_impl_ios_IOSImplementation_IOSMedia_com_codename1_impl_ios_IOSImplementation_java_io_IOException(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9689, 200);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9690, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -73,7 +73,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_3___INIT_____com_cod
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9689, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9690, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3680);
     PUSH_POINTER(get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_3_this_1(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_media_AsyncMedia_MediaException(threadStateData)); /* NEW */

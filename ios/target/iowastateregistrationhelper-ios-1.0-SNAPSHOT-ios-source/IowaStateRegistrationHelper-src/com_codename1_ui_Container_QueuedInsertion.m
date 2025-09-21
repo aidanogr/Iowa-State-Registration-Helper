@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Container_QueuedInsertion(CODENAME_ONE_THREAD
 
 JAVA_VOID com_codename1_ui_Container_QueuedInsertion___INIT_____int_java_lang_Object_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_1_ = 0; /* index */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3430, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 3431, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -63,7 +63,7 @@ JAVA_VOID com_codename1_ui_Container_QueuedInsertion___INIT_____int_java_lang_Ob
 
 JAVA_INT com_codename1_ui_Container_QueuedInsertion_access$900___com_codename1_ui_Container_QueuedInsertion_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Container_QueuedInsertion(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 3430, 811);
+    DEFINE_METHOD_STACK(1, 1, 0, 3431, 812);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(146);

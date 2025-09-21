@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask(CODE
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask___INIT_____com_codename1_impl_ios_IOSImplementation_long_com_codename1_ui_geom_Rectangle_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     volatile JAVA_LONG llocals_2_ = 0; /* textureName */
-    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 9618, 200);
+    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 9619, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     llocals_2_ = __cn1Arg2;
@@ -90,7 +90,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setPadding__
     volatile JAVA_INT ilocals_2_ = 0; /* e */
     volatile JAVA_INT ilocals_3_ = 0; /* s */
     volatile JAVA_INT ilocals_4_ = 0; /* w */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9618, 3491);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9619, 3492);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -120,19 +120,19 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getPadding
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_dispose__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9618, 1592);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9619, 1593);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4244);
     { JAVA_LONG tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getTextureName___R_long(threadStateData, __cn1ThisObject);
     PUSH_LONG(tmpResult); }
     PUSH_LONG(0); /* LCONST_0 */
     BC_LCMP();
-    if(POP_INT() == 0) /* IFEQ */ goto label_L586831282;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L2074492901;
     __CN1_DEBUG_INFO(4245);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_nativeDeleteTexture___long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_this_0(__cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getTextureName___R_long(threadStateData, __cn1ThisObject)); 
     __CN1_DEBUG_INFO(4246);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setTextureName___long(threadStateData, __cn1ThisObject, 0 /* LCONST_0 */); 
 
-label_L586831282:
+label_L2074492901:
     __CN1_DEBUG_INFO(4248);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -140,7 +140,7 @@ label_L586831282:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9618, 903);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9619, 904);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4253);
     virtual_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_dispose__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(4255);
@@ -150,7 +150,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_finalize__(C
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getBounds___R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9618, 2556);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9619, 2557);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4261);
 
 {
@@ -161,7 +161,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getBounds_
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setBounds___com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9618, 3589);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9619, 3590);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4268);
@@ -173,7 +173,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setBounds___
 
 
 JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getTextureName___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9618, 9619);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9619, 9620);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4275);
 
 {
@@ -185,7 +185,7 @@ JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_getTextureNa
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setTextureName___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* textureName */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9618, 9620);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9619, 9621);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(4282);
     set_field_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_textureName(threadStateData, llocals_1_, __cn1ThisObject);
@@ -197,7 +197,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_setTextureNa
 
 JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_access$2500___com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 9618, 9621);
+    DEFINE_METHOD_STACK(2, 1, 0, 9619, 9622);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4217);
@@ -211,7 +211,7 @@ JAVA_LONG com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_access$2500_
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_access$2600___com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9618, 9622);
+    DEFINE_METHOD_STACK(1, 1, 0, 9619, 9623);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4217);
@@ -225,7 +225,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_access$260
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_access$2700___com_codename1_impl_ios_IOSImplementation_TextureAlphaMask_R_int_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_IOSImplementation_TextureAlphaMask(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9618, 9623);
+    DEFINE_METHOD_STACK(1, 1, 0, 9619, 9624);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(4217);
