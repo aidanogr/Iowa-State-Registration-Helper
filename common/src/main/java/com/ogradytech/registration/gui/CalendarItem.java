@@ -5,23 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
-import com.codename1.ui.Container;
-import com.codename1.ui.Font;
-import com.codename1.ui.TextArea;
-import com.codename1.ui.layouts.LayeredLayout;
 import com.ogradytech.registration.Utilities.MeetingInfo;
-import com.ogradytech.registration.Utilities.BikeLock.MinimallyIterable;
-import com.ogradytech.registration.exceptions.FormSubmissionException;
 
-public class CalendarItem implements MinimallyIterable{
+public class CalendarItem {
 
 	private static int allColors[] = {0x000, 0x005C09, 0x540085, 0x850009, 0x850098, 0x000098, 0xCE7800, 0x00787A, 0x007185, 0xFF6200, };
 	private static int currentColorIndex = 0;
 
 	private String courseName;
-	private String instructor;
 	private InstructionFormat format;
 
 	private Map<String, MeetingInfo> sectionMeetingInfo;
@@ -32,6 +24,9 @@ public class CalendarItem implements MinimallyIterable{
 	public int color;
 	private boolean areButtonsInitialized = false;
 	private boolean isLocked = false;
+	private String snapshotSection;
+	private int snapshotSectionIndex;
+	private boolean hasSnapshot;
 	
 	public enum InstructionFormat {
 		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
@@ -48,7 +43,7 @@ public class CalendarItem implements MinimallyIterable{
 		if(currentColorIndex >= allColors.length) {
 			currentColorIndex = 0;
 		}
-		sections = new ArrayList<String>(10);
+		sections = new ArrayList<>(10);
 		currentSectionIndex = 0;
 	}
 	
@@ -198,9 +193,26 @@ public class CalendarItem implements MinimallyIterable{
 		return this;
 	}
 	
-	//to implement MinimallyIterable...
-	public void next() {
-		this.nextSection();
+	public void snapshotSelection() {
+		snapshotSection = currentSection;
+		snapshotSectionIndex = currentSectionIndex;
+		hasSnapshot = true;
+	}
+	
+	public void nextNoCheck() {
+		if(!hasSnapshot) {
+			return;
+		}
+		if(snapshotSection != null) {
+			setCurrentSection(snapshotSection);
+			currentSectionIndex = snapshotSectionIndex;
+		}
+		clearSnapshot();
+	}
+
+	public void clearSnapshot() {
+		hasSnapshot = false;
+		snapshotSection = null;
 	}
 	
 	public InstructionFormat getFormat() {
@@ -223,6 +235,16 @@ public class CalendarItem implements MinimallyIterable{
 
 	public void setCurrentSection(String currentSection) {
 		this.currentSection = currentSection;
+		if(sections.isEmpty() || currentSection == null) {
+			currentSectionIndex = 0;
+			return;
+		}
+		int sectionIndex = sections.indexOf(currentSection);
+		if(sectionIndex < 0) {
+			sectionIndex = 0;
+			this.currentSection = sections.get(0);
+		}
+		currentSectionIndex = (sectionIndex + 1) % sections.size();
 	}
 
 
@@ -233,17 +255,7 @@ public class CalendarItem implements MinimallyIterable{
 
 
 
-	@Override
 	public int getSize() {
 		return this.sections.size();
 	}
-
-
-
-	@Override
-	public boolean condition() {
-		return !CalendarContainerWrapper.hasConflict;
-	}
-
-
 }

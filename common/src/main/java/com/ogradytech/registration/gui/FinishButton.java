@@ -3,26 +3,21 @@ package com.ogradytech.registration.gui;
 import java.util.ArrayList;
 
 import com.codename1.ui.Button;
-import com.codename1.ui.Container;
-import com.codename1.ui.Dialog;
 import com.codename1.ui.Display;
 import com.codename1.ui.events.ActionListener;
-import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.spinner.Picker;
 
-//TODO
 public class FinishButton extends Button {
 
-	private InstructionalDialog dialog;
-	private ArrayList<CalendarItem> courseSectionsReference;
-	private boolean dropdownIsActive = false;
-	private Picker saveAsPicker = new Picker();
+	private final InstructionalDialog dialog;
+	private final ArrayList<CalendarItem> classListReference;
+	private final Picker saveAsPicker = new Picker();
 	
 	
-	public FinishButton(ArrayList<CalendarItem> courseSectionsReference) {
+	public FinishButton(ArrayList<CalendarItem> classListReference) {
 		this.setText("Finish and Save");
 		this.dialog = new InstructionalDialog("DialogTitle", "DialogBody");
-		this.courseSectionsReference = courseSectionsReference;
+		this.classListReference = classListReference;
 		this.saveAsPicker.setType(Display.PICKER_TYPE_STRINGS);
 		this.saveAsPicker.setStrings("Image (PNG)", "Registration Schedule (isu)", "CSV");
 		
@@ -30,7 +25,7 @@ public class FinishButton extends Button {
 		this.addActionListener(evt -> {
 
 			StringBuilder b = new StringBuilder();
-			for(CalendarItem i : this.courseSectionsReference) {
+			for(CalendarItem i : this.classListReference) {
 				b.append(i.getCourseName() + " Section " + i.getCurrentSection() + " " + i.getInstructionFormat() + "\n");
 			}
 
