@@ -3,7 +3,6 @@ package com.ogradytech.registration.gui;
 import java.awt.BorderLayout;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 
 import com.codename1.components.MultiButton;
@@ -16,7 +15,6 @@ import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.plaf.Style;
 import com.ogradytech.registration.Utilities.GUIUtilities;
 import com.ogradytech.registration.Utilities.MeetingInfo;
-import com.ogradytech.registration.Utilities.BikeLock.BikeLockList;
 
 public class CalendarContainerWrapper  {
 
@@ -37,11 +35,12 @@ public class CalendarContainerWrapper  {
 	private Label[] dayOfWeekLabels;
 	private Label[] timeLabels;
 
-	private ArrayList<CalendarItem> courseSections;
+	private ArrayList<CalendarItem> classList;
 
 	private Button findNextNonConflictingScheduleButton;
 	private ConflictInfoButton conflictButton;
 	public static boolean hasConflict = false;
+	private CalendarItem[] lastKnownConflictPair;
 
 	private static final int TIME_COLUMN_WIDTH_MM = 5;
 	private static final int DAY_ROW_HEIGHT_MM = 3;
@@ -52,8 +51,8 @@ public class CalendarContainerWrapper  {
 	
 
 	
-	public CalendarContainerWrapper(ArrayList<CalendarItem> courseSections) throws IOException {
-		this.courseSections = courseSections;
+	public CalendarContainerWrapper(ArrayList<CalendarItem> classList) throws IOException {
+		this.classList = classList;
 		
 		//toolbar buttons
 
@@ -140,7 +139,7 @@ public class CalendarContainerWrapper  {
 		parentContainerLayout.setInsets(calendarToolbar, "0 0 0 0");
 		parentContainerLayout.setReferenceComponentBottom(calendarToolbar, dayOfWeekContainer, 1f);
 		
-		for(CalendarItem courseSection : this.courseSections) {
+		for(CalendarItem courseSection : this.classList) {
 			setButtonInsets(courseSection);
 		}
 		
@@ -159,17 +158,83 @@ public class CalendarContainerWrapper  {
 
 
 	private void findNextNonConflictingSchedule(CalendarContainerWrapper calendarContainerWrapper) {
-		BikeLockList<CalendarItem> b = new BikeLockList<CalendarItem>(this);
-		for(CalendarItem i : courseSections) {
-			b.add(i);
+		findNextAvailableCourseSections();
+	}
+
+	private void findNextAvailableCourseSections() {
+		lastKnownConflictPair = null;
+		if(classList.isEmpty()) {
+			return;
 		}
-		b.executeUntilCondition();
-		for(CalendarItem i : courseSections) {
-			this.setButtonInsets(i);
+		findNextAvailableCourseSectionsRecursive(0);
+		for(CalendarItem item : classList) {
+			setButtonInsets(item);
 		}
-		this.calendarItemContainer.revalidate();
-		this.parentContainer.revalidate();
-		
+		calendarItemContainer.revalidate();
+		parentContainer.revalidate();
+	}
+
+	private int findNextAvailableCourseSectionsRecursive(int index) {
+		if(index >= classList.size()) {
+			return -1;
+		}
+
+		CalendarItem currentClass = classList.get(index);
+		if(currentClass == null) {
+			return -1;
+		}
+
+		currentClass.snapshotSelection();
+		int numberOfSections = currentClass.getSize();
+		if(numberOfSections <= 0) {
+			int result = findNextAvailableCourseSectionsRecursive(index + 1);
+			currentClass.nextNoCheck();
+			return result;
+		}
+
+		boolean canAdvance = !currentClass.isLocked();
+		int iterations = canAdvance ? numberOfSections : 1;
+		for(int j = 0; j < iterations; j++) {
+			if(findNextAvailableCourseSectionsRecursive(index + 1) == 1) {
+				return 1;
+			}
+			if(!canAdvance) {
+				continue;
+			}
+			if(advanceAndCheck(currentClass) == 1) {
+				return 1;
+			}
+		}
+
+		currentClass.nextNoCheck();
+		return -1;
+	}
+
+	private int advanceAndCheck(CalendarItem currentClass) {
+		if(currentClass == null || currentClass.isLocked()) {
+			return -1;
+		}
+		currentClass.nextSection();
+		return checkConflicts(currentClass);
+	}
+
+	private int checkConflicts(CalendarItem updatedClass) {
+		if(lastKnownConflictPair != null) {
+			CalendarItem first = lastKnownConflictPair[0];
+			CalendarItem second = lastKnownConflictPair[1];
+			if((updatedClass == first || updatedClass == second) && first != null && second != null) {
+				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
+					return -1;
+				}
+			}
+		}
+
+		try {
+			handleCollisions();
+		} catch (IOException e) {
+			return -1;
+		}
+		return hasConflict ? -1 : 1;
 	}
 
 
@@ -325,7 +390,7 @@ public class CalendarContainerWrapper  {
 	 * @throws IOException 
 	 */
 	public void nextSections() throws IOException {
-		for(CalendarItem courseSection : courseSections) {
+		for(CalendarItem courseSection : classList) {
 			if(!courseSection.isLocked()) {
 				setButtonInsets(courseSection.nextSection());
 			}
@@ -338,10 +403,17 @@ public class CalendarContainerWrapper  {
 	public void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
 		LinkedList<CalendarItem[]> conflictingSections = new LinkedList<>();
-		for(int i = 0 ; i < courseSections.size()-1; i++) {
-			for(int j = i+1; j < courseSections.size(); j++) {
-				if(isColliding(courseSections.get(i).getCurrentSectionMeetingInfo(), courseSections.get(j).getCurrentSectionMeetingInfo())) {
-					conflictingSections.add(new CalendarItem[] {courseSections.get(i), courseSections.get(j)});
+		CalendarItem[] firstConflict = null;
+		for(int i = 0 ; i < classList.size() - 1; i++) {
+			for(int j = i + 1; j < classList.size(); j++) {
+				CalendarItem first = classList.get(i);
+				CalendarItem second = classList.get(j);
+				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
+					CalendarItem[] pair = new CalendarItem[] {first, second};
+					conflictingSections.add(pair);
+					if(firstConflict == null) {
+						firstConflict = pair;
+					}
 					conflictDetected = true;
 					System.out.println("collision");
 				}
@@ -349,6 +421,7 @@ public class CalendarContainerWrapper  {
 		}
 		if(conflictDetected) {
 			hasConflict = true;
+			lastKnownConflictPair = firstConflict;
 			conflictButton.updateConflictingSections(conflictingSections);
 			conflictButton.getAllStyles().setFgColor(0xFF0000);
 			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_UNDERLINE);
@@ -356,6 +429,7 @@ public class CalendarContainerWrapper  {
 		}
 		else {
 			hasConflict = false;
+			lastKnownConflictPair = null;
 			conflictButton.updateConflictingSections(null);
 			conflictButton.getAllStyles().setFgColor(0x000000);
 			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_NONE);

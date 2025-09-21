@@ -32,6 +32,9 @@ public class CalendarItem implements MinimallyIterable{
 	public int color;
 	private boolean areButtonsInitialized = false;
 	private boolean isLocked = false;
+	private String snapshotSection;
+	private int snapshotSectionIndex;
+	private boolean hasSnapshot;
 	
 	public enum InstructionFormat {
 		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
@@ -198,6 +201,23 @@ public class CalendarItem implements MinimallyIterable{
 		return this;
 	}
 	
+	public void snapshotSelection() {
+		snapshotSection = currentSection;
+		snapshotSectionIndex = currentSectionIndex;
+		hasSnapshot = true;
+	}
+	
+	public void nextNoCheck() {
+		if(!hasSnapshot) {
+			return;
+		}
+		if(snapshotSection != null) {
+			setCurrentSection(snapshotSection);
+			currentSectionIndex = snapshotSectionIndex;
+		}
+		hasSnapshot = false;
+	}
+	
 	//to implement MinimallyIterable...
 	public void next() {
 		this.nextSection();
@@ -223,6 +243,16 @@ public class CalendarItem implements MinimallyIterable{
 
 	public void setCurrentSection(String currentSection) {
 		this.currentSection = currentSection;
+		if(sections.isEmpty() || currentSection == null) {
+			currentSectionIndex = 0;
+			return;
+		}
+		int sectionIndex = sections.indexOf(currentSection);
+		if(sectionIndex < 0) {
+			sectionIndex = 0;
+			this.currentSection = sections.get(0);
+		}
+		currentSectionIndex = (sectionIndex + 1) % sections.size();
 	}
 
 

@@ -14,15 +14,15 @@ import com.codename1.ui.spinner.Picker;
 public class FinishButton extends Button {
 
 	private InstructionalDialog dialog;
-	private ArrayList<CalendarItem> courseSectionsReference;
+	private ArrayList<CalendarItem> classListReference;
 	private boolean dropdownIsActive = false;
 	private Picker saveAsPicker = new Picker();
 	
 	
-	public FinishButton(ArrayList<CalendarItem> courseSectionsReference) {
+	public FinishButton(ArrayList<CalendarItem> classListReference) {
 		this.setText("Finish and Save");
 		this.dialog = new InstructionalDialog("DialogTitle", "DialogBody");
-		this.courseSectionsReference = courseSectionsReference;
+		this.classListReference = classListReference;
 		this.saveAsPicker.setType(Display.PICKER_TYPE_STRINGS);
 		this.saveAsPicker.setStrings("Image (PNG)", "Registration Schedule (isu)", "CSV");
 		
@@ -30,7 +30,7 @@ public class FinishButton extends Button {
 		this.addActionListener(evt -> {
 
 			StringBuilder b = new StringBuilder();
-			for(CalendarItem i : this.courseSectionsReference) {
+			for(CalendarItem i : this.classListReference) {
 				b.append(i.getCourseName() + " Section " + i.getCurrentSection() + " " + i.getInstructionFormat() + "\n");
 			}
 
