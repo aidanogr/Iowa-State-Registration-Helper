@@ -6,9 +6,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.codename1.ui.Button;
+import com.codename1.ui.CheckBox;
+import com.codename1.ui.Command;
 import com.codename1.ui.Container;
+import com.codename1.ui.Dialog;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
+import com.codename1.ui.TextField;
+import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.plaf.Style;
@@ -24,7 +29,8 @@ public class CalendarContainerWrapper  {
 	private Container calendarItemContainer;
 	protected DropdownContainer dropdownContainer;
 	protected InfoDialog infoDialog;
-	private Container calendarToolbar;
+	private final Container navigationContainer;
+	private final Button navigationToggle;
 
 	private LayeredLayout parentContainerLayout;
 	private LayeredLayout timeLayout;
@@ -36,9 +42,10 @@ public class CalendarContainerWrapper  {
 
 	private final List<ClassItem> classList;
 
-	private final Button nextScheduleButton;
 	private final ConflictInfoButton conflictButton;
 	public static boolean hasConflict = false;
+	private boolean allowConflicts;
+	private List<String> savedSchedule;
 
 	private static final int TIME_COLUMN_WIDTH_MM = 5;
 	private static final int DAY_ROW_HEIGHT_MM = 3;
@@ -55,8 +62,6 @@ public class CalendarContainerWrapper  {
 		//toolbar buttons
 
 		conflictButton = new ConflictInfoButton(null);
-		nextScheduleButton = new Button("Next non-conflicting schedule");
-		nextScheduleButton.addActionListener(evt -> advanceToNextSchedule());
 		initializeDropdownContainer(); //handles its children's insets, etc
 
 		dayOfWeekLabels = new Label[5];
@@ -82,9 +87,13 @@ public class CalendarContainerWrapper  {
 		calendarItemContainer = new Container();
 		calendarItemContainer.setUIID("CalendarContainer");
 		
-		calendarToolbar = new Container();
-		calendarToolbar.setUIID("CalendarToolbar");
-		
+		navigationContainer = new Container(new BoxLayout(BoxLayout.X_AXIS));
+		navigationContainer.setUIID("CalendarToolbar");
+		navigationToggle = new Button("Menu");
+		navigationToggle.addActionListener(evt -> showNavigationDialog());
+		navigationContainer.add(navigationToggle);
+		navigationContainer.add(conflictButton);
+
 
 		//================== INITIALIZE LAYOUTS ====================// 
 		parentContainerLayout = new LayeredLayout();
@@ -98,14 +107,12 @@ public class CalendarContainerWrapper  {
 
 		calendarItemContainerLayout = new LayeredLayout();
 		calendarItemContainer.setLayout(calendarItemContainerLayout);
-		
-		calendarToolbar.setLayout(new BoxLayout(BoxLayout.X_AXIS));
 
 		//=================== LINK COMPONENTS =====================//
 		parentContainer.add(dayOfWeekContainer);
 		parentContainer.add(calendarItemContainer);
 		parentContainer.add(timeContainer);
-		parentContainer.add(calendarToolbar);
+		parentContainer.add(navigationContainer);
 
 		for(Label l : dayOfWeekLabels) {
 			dayOfWeekContainer.add(l);
@@ -117,8 +124,6 @@ public class CalendarContainerWrapper  {
 			l.setUIID("WeekdayLabel");
 		}
 
-		calendarToolbar.add(conflictButton);
-		calendarToolbar.add(nextScheduleButton);
 		calendarItemContainer.add(dropdownContainer);
 
 
@@ -131,8 +136,8 @@ public class CalendarContainerWrapper  {
 		parentContainerLayout.setInsets(timeContainer, (DAY_ROW_HEIGHT_MM + TOOLBAR_HEIGHT_MM) + "mm 0mm 0mm 0mm");
 		parentContainerLayout.setReferenceComponentRight(timeContainer, calendarItemContainer, 1f);
 		
-		parentContainerLayout.setInsets(calendarToolbar, "0 0 0 0");
-		parentContainerLayout.setReferenceComponentBottom(calendarToolbar, dayOfWeekContainer, 1f);
+		parentContainerLayout.setInsets(navigationContainer, "0 0 0 0");
+		parentContainerLayout.setReferenceComponentBottom(navigationContainer, dayOfWeekContainer, 1f);
 		
 		for(ClassItem courseSection : this.classList) {
 			setButtonInsets(courseSection);
@@ -158,19 +163,12 @@ public class CalendarContainerWrapper  {
 		}
 
 		List<String> startingSections = snapshotCurrentSections();
-		boolean wrapped = moveToNextCombination();
-		if(wrapped) {
-			restoreSections(startingSections);
-			refreshLayout();
-			showNoSchedulesDialog();
+		if(handleNextCombinationWithWrapCheck(startingSections)) {
 			return;
 		}
 
 		while(hasConflictsInCurrentSelection()) {
-			if(moveToNextCombination()) {
-				restoreSections(startingSections);
-				refreshLayout();
-				showNoSchedulesDialog();
+			if(handleNextCombinationWithWrapCheck(startingSections)) {
 				return;
 			}
 		}
@@ -211,6 +209,23 @@ public class CalendarContainerWrapper  {
 		return wrapped;
 	}
 
+	private boolean handleNextCombinationWithWrapCheck(List<String> startingSections) {
+		if(moveToNextCombination()) {
+			restoreSections(startingSections);
+			refreshLayout();
+			showNoSchedulesDialog();
+			return true;
+		}
+		List<String> current = snapshotCurrentSections();
+		if(current.equals(startingSections)) {
+			restoreSections(startingSections);
+			refreshLayout();
+			showNoSchedulesDialog();
+			return true;
+		}
+		return false;
+	}
+
 	private boolean hasConflictsInCurrentSelection() {
 		for(int i = 0 ; i < classList.size() - 1; i++) {
 			MeetingInfo first = classList.get(i).getCurrentSectionMeetingInfo();
@@ -235,6 +250,7 @@ public class CalendarContainerWrapper  {
 		}
 		calendarItemContainer.revalidate();
 		parentContainer.revalidate();
+		navigationContainer.revalidate();
 	}
 
 	private void showNoSchedulesDialog() {
@@ -242,6 +258,184 @@ public class CalendarContainerWrapper  {
 		dialog.title.setText("No Schedule Found");
 		dialog.body.setText("There are no additional non-conflicting schedules available with the current class selections.");
 		dialog.show();
+	}
+
+	public void advanceSchedule() {
+		handleNextScheduleAction();
+	}
+
+	private void handleNextScheduleAction() {
+		if(allowConflicts) {
+			try {
+				nextSections();
+			} catch (IOException e) {
+				e.printStackTrace();
+				showInfoDialog("Error", "Unable to advance to the next schedule.");
+			}
+		} else {
+			advanceToNextSchedule();
+		}
+	}
+
+	private void saveCurrentSchedule() {
+		savedSchedule = snapshotCurrentSections();
+		showInfoDialog("Schedule Saved", "Your current class selections have been saved.");
+	}
+
+	private void loadSavedSchedule() {
+		if(savedSchedule == null || savedSchedule.isEmpty()) {
+			showInfoDialog("No Saved Schedule", "Please save a schedule before attempting to load one.");
+			return;
+		}
+		restoreSections(savedSchedule);
+		refreshLayout();
+		showInfoDialog("Schedule Loaded", "Saved class selections have been restored.");
+	}
+
+	private void showInfoDialog(String title, String body) {
+		Dialog info = new Dialog(title);
+		info.setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+		info.setDisposeWhenPointerOutOfBounds(true);
+		info.add(new com.codename1.components.SpanLabel(body));
+		Button close = new Button("Close");
+		close.addActionListener(evt -> info.dispose());
+		info.add(close);
+		if(navigationToggle != null) {
+			info.showPopupDialog(navigationToggle);
+		} else {
+			info.show();
+		}
+	}
+
+	public ClassItem addExternalEvent(ClassItem externalEvent) {
+		classList.add(externalEvent);
+		refreshLayout();
+		return externalEvent;
+	}
+
+	private void showExternalEventDialog() {
+		Dialog dialog = new Dialog("Add External Event");
+		dialog.setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+		Toolbar toolbar = dialog.getToolbar();
+		if(toolbar != null) {
+			toolbar.addCommandToRightBar(new Command("Close") {
+				@Override
+				public void actionPerformed(com.codename1.ui.events.ActionEvent evt) {
+					dialog.dispose();
+				}
+			});
+		}
+		dialog.setDisposeWhenPointerOutOfBounds(true);
+
+		TextField nameField = new TextField("", "Event name");
+		TextField daysField = new TextField("", "Meeting days (e.g. MTWR)");
+		TextField startField = new TextField("", "Start time (24h HH:MM)");
+		TextField endField = new TextField("", "End time (24h HH:MM)");
+		Label errorLabel = new Label("");
+		errorLabel.getAllStyles().setFgColor(0xFF0000);
+
+		Button saveButton = new Button("Add Event");
+		saveButton.addActionListener(evt -> {
+			try {
+				int[] start = parse24HourTime(startField.getText());
+				int[] end = parse24HourTime(endField.getText());
+				ExternalEventBuilder builder = new ExternalEventBuilder()
+					.withName(nameField.getText())
+					.withMeetingDays(daysField.getText())
+					.startingAt(start[0], start[1])
+					.endingAt(end[0], end[1]);
+				ClassItem event = builder.build();
+				addExternalEvent(event);
+				dialog.dispose();
+				showInfoDialog("External Event Added", "The event has been added to your schedule.");
+			} catch (IllegalArgumentException ex) {
+				errorLabel.setText(ex.getMessage());
+				dialog.revalidate();
+			}
+		});
+
+		Button cancelButton = new Button("Cancel");
+		cancelButton.addActionListener(evt -> dialog.dispose());
+
+		dialog.addAll(nameField, daysField, startField, endField, errorLabel, saveButton, cancelButton);
+		dialog.showPopupDialog(navigationToggle);
+	}
+
+	private int[] parse24HourTime(String candidate) {
+		if(candidate == null) {
+			throw new IllegalArgumentException("Please provide start and end times in HH:MM format.");
+		}
+		String value = candidate.trim();
+		int colonIndex = value.indexOf(':');
+		if(colonIndex <= 0 || colonIndex == value.length() - 1) {
+			throw new IllegalArgumentException("Time must match HH:MM in 24-hour format.");
+		}
+		String hourPart = value.substring(0, colonIndex);
+		String minutePart = value.substring(colonIndex + 1);
+		if(!isNumeric(hourPart) || !isNumeric(minutePart) || minutePart.length() != 2) {
+			throw new IllegalArgumentException("Time must match HH:MM in 24-hour format.");
+		}
+		int hour = Integer.parseInt(hourPart);
+		int minute = Integer.parseInt(minutePart);
+		if(hour < 0 || hour > 23) {
+			throw new IllegalArgumentException("Hour must be between 0 and 23.");
+		}
+		if(minute < 0 || minute > 59) {
+			throw new IllegalArgumentException("Minute must be between 0 and 59.");
+		}
+		return new int[] {hour, minute};
+	}
+
+	private boolean isNumeric(String text) {
+		if(text == null || text.length() == 0) {
+			return false;
+		}
+		for(int i = 0; i < text.length(); i++) {
+			char c = text.charAt(i);
+			if(c < '0' || c > '9') {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private void showNavigationDialog() {
+		Dialog menu = new Dialog("Schedule Menu");
+		menu.setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+
+		Button saveButton = new Button("Save Current Schedule");
+		saveButton.addActionListener(evt -> {
+			menu.dispose();
+			saveCurrentSchedule();
+		});
+
+		Button loadButton = new Button("Load Saved Schedule");
+		loadButton.addActionListener(evt -> {
+			menu.dispose();
+			loadSavedSchedule();
+		});
+
+		Button addEventButton = new Button("Add External Event");
+		addEventButton.addActionListener(evt -> {
+			menu.dispose();
+			showExternalEventDialog();
+		});
+
+		Button nextButton = new Button(allowConflicts ? "Next Schedule (allow conflicts)" : "Next Schedule");
+		nextButton.addActionListener(evt -> {
+			menu.dispose();
+			handleNextScheduleAction();
+		});
+
+		CheckBox conflictCheck = new CheckBox("Allow Conflicts");
+		conflictCheck.setSelected(allowConflicts);
+		conflictCheck.addActionListener(evt -> {
+			allowConflicts = conflictCheck.isSelected();
+			nextButton.setText(allowConflicts ? "Next Schedule (allow conflicts)" : "Next Schedule");
+		});
+
+		menu.addAll(saveButton, loadButton, addEventButton, nextButton, conflictCheck);
+		menu.showPopupDialog(navigationToggle);
 	}
 
 

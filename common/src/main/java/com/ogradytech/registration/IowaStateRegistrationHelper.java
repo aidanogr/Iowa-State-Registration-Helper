@@ -348,13 +348,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 		calendarViewLayout.setInsets(calendarView, "5mm 0 0 0");
 		
 		Button arrowButton = new Button(">");
-		arrowButton.addActionListener(evt -> {
-			try {
-				calendarContainerWrapper.nextSections();
-			} catch (IOException e) {
-				handleFormSubmissionException(new FormSubmissionException(ExceptionType.IO_EXCEPTION, ""));
-			}
-		});
+		arrowButton.addActionListener(evt -> calendarContainerWrapper.advanceSchedule());
 		calendarView.getToolbar().add(BorderLayout.EAST, arrowButton);
 
 		
