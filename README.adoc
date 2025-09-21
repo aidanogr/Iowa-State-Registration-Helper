@@ -9,7 +9,8 @@ This project is not yet available in the App Store or Google Play, but it soon w
 ## ✨ Features
 - 📅 **Section Browser** – View all available sections with times and meeting days
 - 🔔 **Conflict Detection** – Detect overlapping sections to prevent schedule conflicts.
-- Core functionality is shown in the following beta test:
+- Core functionality is shown in the following beta tests (top is most recent):
+https://www.youtube.com/shorts/k95a2mL73pI
 https://www.youtube.com/shorts/3Vi4C1HuLZw
 
 ---
