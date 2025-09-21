@@ -35,6 +35,7 @@ public class ClassItem {
 	public ClassItem(String courseName) {
 		this.courseName = courseName;
 		this.sectionMeetingInfo = new HashMap<>();
+		currentSectionIndex = -1;
 		currentSection = "";
 		buttons = new ArrayList<>(3); 
 
@@ -44,7 +45,6 @@ public class ClassItem {
 			currentColorIndex = 0;
 		}
 		sections = new ArrayList<>(10);
-		currentSectionIndex = 0;
 	}
 	
 
@@ -63,8 +63,10 @@ public class ClassItem {
 		}
 		sections.add(section);
 		this.sectionMeetingInfo.put(section, info);
-		this.currentSection = section;
-		currentSectionIndex++;
+		if(currentSectionIndex == -1) {
+			currentSectionIndex = 0;
+			this.currentSection = section;
+		}
 	}
 	
 
@@ -182,23 +184,18 @@ public class ClassItem {
 	 * of currentMeetingInfo is changed
 	 */
 	public ClassItem nextSection() {
-		if(isLocked) { return this; }
-		if(currentSectionIndex >= sections.size()) {
-			currentSectionIndex = 0;
-		}
+		if(isLocked || sections.isEmpty()) { return this; }
+		currentSectionIndex = (currentSectionIndex + 1) % sections.size();
 		this.currentSection = sections.get(currentSectionIndex);
-		
-		currentSectionIndex++;
-		
 		return this;
 	}
-	
+
 	public void snapshotSelection() {
 		snapshotSection = currentSection;
 		snapshotSectionIndex = currentSectionIndex;
 		hasSnapshot = true;
 	}
-	
+
 	public void nextNoCheck() {
 		if(!hasSnapshot) {
 			return;
@@ -213,6 +210,15 @@ public class ClassItem {
 	public void clearSnapshot() {
 		hasSnapshot = false;
 		snapshotSection = null;
+	}
+
+	public boolean advanceSection() {
+		if(isLocked || sections.isEmpty()) {
+			return true;
+		}
+		int previousIndex = currentSectionIndex;
+		nextSection();
+		return currentSectionIndex <= previousIndex;
 	}
 	
 	public InstructionFormat getFormat() {
@@ -236,7 +242,7 @@ public class ClassItem {
 	public void setCurrentSection(String currentSection) {
 		this.currentSection = currentSection;
 		if(sections.isEmpty() || currentSection == null) {
-			currentSectionIndex = 0;
+			currentSectionIndex = sections.isEmpty() ? -1 : 0;
 			return;
 		}
 		int sectionIndex = sections.indexOf(currentSection);
@@ -244,7 +250,7 @@ public class ClassItem {
 			sectionIndex = 0;
 			this.currentSection = sections.get(0);
 		}
-		currentSectionIndex = (sectionIndex + 1) % sections.size();
+		currentSectionIndex = sectionIndex;
 	}
 
 

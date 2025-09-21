@@ -1,6 +1,7 @@
 package com.ogradytech.registration.gui;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,7 +39,6 @@ public class CalendarContainerWrapper  {
 	private final Button nextScheduleButton;
 	private final ConflictInfoButton conflictButton;
 	public static boolean hasConflict = false;
-	private ClassItem[] lastKnownConflictPair;
 
 	private static final int TIME_COLUMN_WIDTH_MM = 5;
 	private static final int DAY_ROW_HEIGHT_MM = 3;
@@ -55,9 +55,8 @@ public class CalendarContainerWrapper  {
 		//toolbar buttons
 
 		conflictButton = new ConflictInfoButton(null);
-		nextScheduleButton = new Button("Next no-conflict schedule");
+		nextScheduleButton = new Button("Next non-conflicting schedule");
 		nextScheduleButton.addActionListener(evt -> advanceToNextSchedule());
-		nextScheduleButton.setUIID("InfoButton");
 		initializeDropdownContainer(); //handles its children's insets, etc
 
 		dayOfWeekLabels = new Label[5];
@@ -158,8 +157,74 @@ public class CalendarContainerWrapper  {
 			return;
 		}
 
-		lastKnownConflictPair = null;
-		advanceFromIndex(0);
+		List<String> startingSections = snapshotCurrentSections();
+		boolean wrapped = moveToNextCombination();
+		if(wrapped) {
+			restoreSections(startingSections);
+			refreshLayout();
+			showNoSchedulesDialog();
+			return;
+		}
+
+		while(hasConflictsInCurrentSelection()) {
+			if(moveToNextCombination()) {
+				restoreSections(startingSections);
+				refreshLayout();
+				showNoSchedulesDialog();
+				return;
+			}
+		}
+
+		refreshLayout();
+	}
+
+	private List<String> snapshotCurrentSections() {
+		List<String> snapshot = new ArrayList<>(classList.size());
+		for(ClassItem item : classList) {
+			snapshot.add(item.getCurrentSection());
+		}
+		return snapshot;
+	}
+
+	private void restoreSections(List<String> sectionsSnapshot) {
+		for(int i = 0; i < classList.size(); i++) {
+			String section = sectionsSnapshot.get(i);
+			if(section != null) {
+				classList.get(i).setCurrentSection(section);
+			}
+		}
+	}
+
+	private boolean moveToNextCombination() {
+		boolean wrapped = true;
+		for(int idx = classList.size() - 1; idx >= 0; idx--) {
+			ClassItem item = classList.get(idx);
+			if(item.isLocked() || item.getSize() <= 1) {
+				continue;
+			}
+			boolean itemWrapped = item.advanceSection();
+			wrapped &= itemWrapped;
+			if(!itemWrapped) {
+				return false;
+			}
+		}
+		return wrapped;
+	}
+
+	private boolean hasConflictsInCurrentSelection() {
+		for(int i = 0 ; i < classList.size() - 1; i++) {
+			MeetingInfo first = classList.get(i).getCurrentSectionMeetingInfo();
+			for(int j = i + 1; j < classList.size(); j++) {
+				MeetingInfo second = classList.get(j).getCurrentSectionMeetingInfo();
+				if(isColliding(first, second)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	private void refreshLayout() {
 		for(ClassItem item : classList) {
 			setButtonInsets(item);
 		}
@@ -172,78 +237,11 @@ public class CalendarContainerWrapper  {
 		parentContainer.revalidate();
 	}
 
-	private boolean advanceFromIndex(int index) {
-		if(index >= classList.size()) {
-			return false;
-		}
-
-		ClassItem currentClass = classList.get(index);
-		if(currentClass == null) {
-			return false;
-		}
-
-		currentClass.snapshotSelection();
-		int numberOfSections = currentClass.getSize();
-		if(numberOfSections <= 0) {
-			boolean found = advanceFromIndex(index + 1);
-			if(found) {
-				currentClass.clearSnapshot();
-			} else {
-				currentClass.nextNoCheck();
-			}
-			return found;
-		}
-
-		boolean canAdvance = !currentClass.isLocked();
-		int iterations = canAdvance ? numberOfSections : 1;
-		boolean found = false;
-		for(int j = 0; j < iterations; j++) {
-			if(advanceFromIndex(index + 1)) {
-				found = true;
-				break;
-			}
-			if(!canAdvance) {
-				continue;
-			}
-			if(advanceAndValidate(currentClass)) {
-				found = true;
-				break;
-			}
-		}
-
-		if(found) {
-			currentClass.clearSnapshot();
-		} else {
-			currentClass.nextNoCheck();
-		}
-		return found;
-	}
-
-	private boolean advanceAndValidate(ClassItem currentClass) {
-		if(currentClass == null || currentClass.isLocked()) {
-			return false;
-		}
-		currentClass.nextSection();
-		return checkConflicts(currentClass);
-	}
-
-	private boolean checkConflicts(ClassItem updatedClass) {
-		if(lastKnownConflictPair != null) {
-			ClassItem first = lastKnownConflictPair[0];
-			ClassItem second = lastKnownConflictPair[1];
-			if((updatedClass == first || updatedClass == second) && first != null && second != null) {
-				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
-					return false;
-				}
-			}
-		}
-
-		try {
-			handleCollisions();
-		} catch (IOException e) {
-			return false;
-		}
-		return !hasConflict;
+	private void showNoSchedulesDialog() {
+		InstructionalDialog dialog = new InstructionalDialog("DialogTitle", "DialogBody");
+		dialog.title.setText("No Schedule Found");
+		dialog.body.setText("There are no additional non-conflicting schedules available with the current class selections.");
+		dialog.show();
 	}
 
 
@@ -414,7 +412,6 @@ public class CalendarContainerWrapper  {
 	public void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
 		LinkedList<ClassItem[]> conflictingSections = new LinkedList<>();
-		ClassItem[] firstConflict = null;
 		for(int i = 0 ; i < classList.size() - 1; i++) {
 			for(int j = i + 1; j < classList.size(); j++) {
 				ClassItem first = classList.get(i);
@@ -422,16 +419,12 @@ public class CalendarContainerWrapper  {
 				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
 					ClassItem[] pair = new ClassItem[] {first, second};
 					conflictingSections.add(pair);
-					if(firstConflict == null) {
-						firstConflict = pair;
-					}
 					conflictDetected = true;
 				}
 			}
 		}
 		if(conflictDetected) {
 			hasConflict = true;
-			lastKnownConflictPair = firstConflict;
 			conflictButton.updateConflictingSections(conflictingSections);
 			conflictButton.getAllStyles().setFgColor(0xFF0000);
 			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_UNDERLINE);
@@ -439,7 +432,6 @@ public class CalendarContainerWrapper  {
 		}
 		else {
 			hasConflict = false;
-			lastKnownConflictPair = null;
 			conflictButton.updateConflictingSections(null);
 			conflictButton.getAllStyles().setFgColor(0x000000);
 			conflictButton.getAllStyles().setTextDecoration(Style.TEXT_DECORATION_NONE);
@@ -448,6 +440,9 @@ public class CalendarContainerWrapper  {
 	}
 	
 	private boolean isColliding(MeetingInfo f1, MeetingInfo f2) {
+		if(f1 == null || f2 == null) {
+			return false;
+		}
 		for(int i = 0; i < f1.getMeetingDays().length(); i++) {
 			char meetingDay1 = f1.getMeetingDays().charAt(i);
 			if(f2.getMeetingDays().contains(meetingDay1 + "")) {
