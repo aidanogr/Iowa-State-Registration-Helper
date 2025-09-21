@@ -286,7 +286,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 		LayeredLayout calendarViewLayout = new LayeredLayout();
 		calendarView.setLayout(calendarViewLayout);
 
-		calendarView.add(calendarContainerWrapper.parentContainer);
+		calendarView.add(calendarContainerWrapper.getParentContainer());
 		calendarViewLayout.setInsets(calendarView, "5mm 0 0 0");
 		
 		Button arrowButton = new Button(">");

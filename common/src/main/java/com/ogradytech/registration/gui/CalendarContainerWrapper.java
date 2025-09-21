@@ -1,11 +1,9 @@
 package com.ogradytech.registration.gui;
 
-import java.awt.BorderLayout;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
-import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Image;
@@ -19,10 +17,10 @@ import com.ogradytech.registration.Utilities.MeetingInfo;
 public class CalendarContainerWrapper  {
 
 	
-	public Container parentContainer;
+	private final Container parentContainer;
 	private Container timeContainer;
 	private Container dayOfWeekContainer;
-	private Container calendarItemContainer; //TODO i dont think this needs to be public anymore
+	private Container calendarItemContainer;
 	protected DropdownContainer dropdownContainer;
 	protected InfoDialog infoDialog;
 	private Container calendarToolbar;
@@ -35,10 +33,10 @@ public class CalendarContainerWrapper  {
 	private Label[] dayOfWeekLabels;
 	private Label[] timeLabels;
 
-	private ArrayList<CalendarItem> classList;
+	private final List<CalendarItem> classList;
 
-	private Button findNextNonConflictingScheduleButton;
-	private ConflictInfoButton conflictButton;
+	private final Button nextScheduleButton;
+	private final ConflictInfoButton conflictButton;
 	public static boolean hasConflict = false;
 	private CalendarItem[] lastKnownConflictPair;
 
@@ -51,16 +49,14 @@ public class CalendarContainerWrapper  {
 	
 
 	
-	public CalendarContainerWrapper(ArrayList<CalendarItem> classList) throws IOException {
+	public CalendarContainerWrapper(List<CalendarItem> classList) throws IOException {
 		this.classList = classList;
 		
 		//toolbar buttons
 
 		conflictButton = new ConflictInfoButton(null);
-		findNextNonConflictingScheduleButton = new Button("Next non-conflicting schedule");
-		findNextNonConflictingScheduleButton.addActionListener(evt -> {
-			findNextNonConflictingSchedule(this);
-		});
+		nextScheduleButton = new Button("Next non-conflicting schedule");
+		nextScheduleButton.addActionListener(evt -> advanceToNextSchedule());
 		
 		initializeDropdownContainer(); //handles its children's insets, etc
 
@@ -123,7 +119,7 @@ public class CalendarContainerWrapper  {
 		}
 
 		calendarToolbar.add(conflictButton);
-		calendarToolbar.add(findNextNonConflictingScheduleButton);
+		calendarToolbar.add(nextScheduleButton);
 		calendarItemContainer.add(dropdownContainer);
 
 
@@ -157,74 +153,87 @@ public class CalendarContainerWrapper  {
 
 
 
-	private void findNextNonConflictingSchedule(CalendarContainerWrapper calendarContainerWrapper) {
-		findNextAvailableCourseSections();
-	}
-
-	private void findNextAvailableCourseSections() {
-		lastKnownConflictPair = null;
+	private void advanceToNextSchedule() {
 		if(classList.isEmpty()) {
 			return;
 		}
-		findNextAvailableCourseSectionsRecursive(0);
+
+		lastKnownConflictPair = null;
+		advanceFromIndex(0);
 		for(CalendarItem item : classList) {
 			setButtonInsets(item);
+		}
+		try {
+			handleCollisions();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		calendarItemContainer.revalidate();
 		parentContainer.revalidate();
 	}
 
-	private int findNextAvailableCourseSectionsRecursive(int index) {
+	private boolean advanceFromIndex(int index) {
 		if(index >= classList.size()) {
-			return -1;
+			return false;
 		}
 
 		CalendarItem currentClass = classList.get(index);
 		if(currentClass == null) {
-			return -1;
+			return false;
 		}
 
 		currentClass.snapshotSelection();
 		int numberOfSections = currentClass.getSize();
 		if(numberOfSections <= 0) {
-			int result = findNextAvailableCourseSectionsRecursive(index + 1);
-			currentClass.nextNoCheck();
-			return result;
+			boolean found = advanceFromIndex(index + 1);
+			if(found) {
+				currentClass.clearSnapshot();
+			} else {
+				currentClass.nextNoCheck();
+			}
+			return found;
 		}
 
 		boolean canAdvance = !currentClass.isLocked();
 		int iterations = canAdvance ? numberOfSections : 1;
+		boolean found = false;
 		for(int j = 0; j < iterations; j++) {
-			if(findNextAvailableCourseSectionsRecursive(index + 1) == 1) {
-				return 1;
+			if(advanceFromIndex(index + 1)) {
+				found = true;
+				break;
 			}
 			if(!canAdvance) {
 				continue;
 			}
-			if(advanceAndCheck(currentClass) == 1) {
-				return 1;
+			if(advanceAndValidate(currentClass)) {
+				found = true;
+				break;
 			}
 		}
 
-		currentClass.nextNoCheck();
-		return -1;
+		if(found) {
+			currentClass.clearSnapshot();
+		} else {
+			currentClass.nextNoCheck();
+		}
+		return found;
 	}
 
-	private int advanceAndCheck(CalendarItem currentClass) {
+	private boolean advanceAndValidate(CalendarItem currentClass) {
 		if(currentClass == null || currentClass.isLocked()) {
-			return -1;
+			return false;
 		}
 		currentClass.nextSection();
 		return checkConflicts(currentClass);
 	}
 
-	private int checkConflicts(CalendarItem updatedClass) {
+	private boolean checkConflicts(CalendarItem updatedClass) {
 		if(lastKnownConflictPair != null) {
 			CalendarItem first = lastKnownConflictPair[0];
 			CalendarItem second = lastKnownConflictPair[1];
 			if((updatedClass == first || updatedClass == second) && first != null && second != null) {
 				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
-					return -1;
+					return false;
 				}
 			}
 		}
@@ -232,9 +241,9 @@ public class CalendarContainerWrapper  {
 		try {
 			handleCollisions();
 		} catch (IOException e) {
-			return -1;
+			return false;
 		}
-		return hasConflict ? -1 : 1;
+		return !hasConflict;
 	}
 
 
@@ -378,8 +387,6 @@ public class CalendarContainerWrapper  {
 						insetString
 				);
 
-				System.out.println(insetString);
-				
 			}	
 			calendarItemContainer.revalidate();
 	}
@@ -399,6 +406,10 @@ public class CalendarContainerWrapper  {
 
 	}
 
+	public Container getParentContainer() {
+		return parentContainer;
+	}
+
 
 	public void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
@@ -415,7 +426,6 @@ public class CalendarContainerWrapper  {
 						firstConflict = pair;
 					}
 					conflictDetected = true;
-					System.out.println("collision");
 				}
 			}
 		}

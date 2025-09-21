@@ -5,23 +5,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
-import com.codename1.ui.Container;
-import com.codename1.ui.Font;
-import com.codename1.ui.TextArea;
-import com.codename1.ui.layouts.LayeredLayout;
 import com.ogradytech.registration.Utilities.MeetingInfo;
-import com.ogradytech.registration.Utilities.BikeLock.MinimallyIterable;
-import com.ogradytech.registration.exceptions.FormSubmissionException;
 
-public class CalendarItem implements MinimallyIterable{
+public class CalendarItem {
 
 	private static int allColors[] = {0x000, 0x005C09, 0x540085, 0x850009, 0x850098, 0x000098, 0xCE7800, 0x00787A, 0x007185, 0xFF6200, };
 	private static int currentColorIndex = 0;
 
 	private String courseName;
-	private String instructor;
 	private InstructionFormat format;
 
 	private Map<String, MeetingInfo> sectionMeetingInfo;
@@ -51,7 +43,7 @@ public class CalendarItem implements MinimallyIterable{
 		if(currentColorIndex >= allColors.length) {
 			currentColorIndex = 0;
 		}
-		sections = new ArrayList<String>(10);
+		sections = new ArrayList<>(10);
 		currentSectionIndex = 0;
 	}
 	
@@ -215,12 +207,12 @@ public class CalendarItem implements MinimallyIterable{
 			setCurrentSection(snapshotSection);
 			currentSectionIndex = snapshotSectionIndex;
 		}
-		hasSnapshot = false;
+		clearSnapshot();
 	}
-	
-	//to implement MinimallyIterable...
-	public void next() {
-		this.nextSection();
+
+	public void clearSnapshot() {
+		hasSnapshot = false;
+		snapshotSection = null;
 	}
 	
 	public InstructionFormat getFormat() {
@@ -263,17 +255,7 @@ public class CalendarItem implements MinimallyIterable{
 
 
 
-	@Override
 	public int getSize() {
 		return this.sections.size();
 	}
-
-
-
-	@Override
-	public boolean condition() {
-		return !CalendarContainerWrapper.hasConflict;
-	}
-
-
 }
