@@ -8,7 +8,7 @@ import java.util.Map;
 import com.codename1.ui.Button;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 
-public class CalendarItem {
+public class ClassItem {
 
 	private static int allColors[] = {0x000, 0x005C09, 0x540085, 0x850009, 0x850098, 0x000098, 0xCE7800, 0x00787A, 0x007185, 0xFF6200, };
 	private static int currentColorIndex = 0;
@@ -32,7 +32,7 @@ public class CalendarItem {
 		LECTURE, DISCUSSION, LABORATORY, STUDIO, OTHER
 	}
 	
-	public CalendarItem(String courseName) {
+	public ClassItem(String courseName) {
 		this.courseName = courseName;
 		this.sectionMeetingInfo = new HashMap<>();
 		currentSection = "";
@@ -181,7 +181,7 @@ public class CalendarItem {
 	 * Shifts the currentMeetingInfo field and returns self (for chaining). The new value
 	 * of currentMeetingInfo is changed
 	 */
-	public CalendarItem nextSection() {
+	public ClassItem nextSection() {
 		if(isLocked) { return this; }
 		if(currentSectionIndex >= sections.size()) {
 			currentSectionIndex = 0;

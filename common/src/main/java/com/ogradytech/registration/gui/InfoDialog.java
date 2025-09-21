@@ -45,7 +45,7 @@ public class InfoDialog extends Dialog{
 		layout.setInsets(exitButton, "0 0 auto auto");
 	}
 
-	public void toggleInfoDialog(CalendarItem selectedCourseSection) {
+	public void toggleInfoDialog(ClassItem selectedCourseSection) {
 		this.courseName.setText("Course: " + selectedCourseSection.getCourseName());
 		this.section.setText("Section: " + selectedCourseSection.getCurrentSection());
 		this.instructionFormat.setText("Format: " + selectedCourseSection.getInstructionFormat().name());

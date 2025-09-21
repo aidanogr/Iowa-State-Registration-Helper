@@ -10,11 +10,11 @@ import com.codename1.ui.spinner.Picker;
 public class FinishButton extends Button {
 
 	private final InstructionalDialog dialog;
-	private final ArrayList<CalendarItem> classListReference;
+	private final ArrayList<ClassItem> classListReference;
 	private final Picker saveAsPicker = new Picker();
 	
 	
-	public FinishButton(ArrayList<CalendarItem> classListReference) {
+	public FinishButton(ArrayList<ClassItem> classListReference) {
 		this.setText("Finish and Save");
 		this.dialog = new InstructionalDialog("DialogTitle", "DialogBody");
 		this.classListReference = classListReference;
@@ -25,7 +25,7 @@ public class FinishButton extends Button {
 		this.addActionListener(evt -> {
 
 			StringBuilder b = new StringBuilder();
-			for(CalendarItem i : this.classListReference) {
+			for(ClassItem i : this.classListReference) {
 				b.append(i.getCourseName() + " Section " + i.getCurrentSection() + " " + i.getInstructionFormat() + "\n");
 			}
 

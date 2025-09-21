@@ -33,12 +33,12 @@ public class CalendarContainerWrapper  {
 	private Label[] dayOfWeekLabels;
 	private Label[] timeLabels;
 
-	private final List<CalendarItem> classList;
+	private final List<ClassItem> classList;
 
 	private final Button nextScheduleButton;
 	private final ConflictInfoButton conflictButton;
 	public static boolean hasConflict = false;
-	private CalendarItem[] lastKnownConflictPair;
+	private ClassItem[] lastKnownConflictPair;
 
 	private static final int TIME_COLUMN_WIDTH_MM = 5;
 	private static final int DAY_ROW_HEIGHT_MM = 3;
@@ -49,7 +49,7 @@ public class CalendarContainerWrapper  {
 	
 
 	
-	public CalendarContainerWrapper(List<CalendarItem> classList) throws IOException {
+	public CalendarContainerWrapper(List<ClassItem> classList) throws IOException {
 		this.classList = classList;
 		
 		//toolbar buttons
@@ -135,7 +135,7 @@ public class CalendarContainerWrapper  {
 		parentContainerLayout.setInsets(calendarToolbar, "0 0 0 0");
 		parentContainerLayout.setReferenceComponentBottom(calendarToolbar, dayOfWeekContainer, 1f);
 		
-		for(CalendarItem courseSection : this.classList) {
+		for(ClassItem courseSection : this.classList) {
 			setButtonInsets(courseSection);
 		}
 		
@@ -160,7 +160,7 @@ public class CalendarContainerWrapper  {
 
 		lastKnownConflictPair = null;
 		advanceFromIndex(0);
-		for(CalendarItem item : classList) {
+		for(ClassItem item : classList) {
 			setButtonInsets(item);
 		}
 		try {
@@ -177,7 +177,7 @@ public class CalendarContainerWrapper  {
 			return false;
 		}
 
-		CalendarItem currentClass = classList.get(index);
+		ClassItem currentClass = classList.get(index);
 		if(currentClass == null) {
 			return false;
 		}
@@ -219,7 +219,7 @@ public class CalendarContainerWrapper  {
 		return found;
 	}
 
-	private boolean advanceAndValidate(CalendarItem currentClass) {
+	private boolean advanceAndValidate(ClassItem currentClass) {
 		if(currentClass == null || currentClass.isLocked()) {
 			return false;
 		}
@@ -227,10 +227,10 @@ public class CalendarContainerWrapper  {
 		return checkConflicts(currentClass);
 	}
 
-	private boolean checkConflicts(CalendarItem updatedClass) {
+	private boolean checkConflicts(ClassItem updatedClass) {
 		if(lastKnownConflictPair != null) {
-			CalendarItem first = lastKnownConflictPair[0];
-			CalendarItem second = lastKnownConflictPair[1];
+			ClassItem first = lastKnownConflictPair[0];
+			ClassItem second = lastKnownConflictPair[1];
 			if((updatedClass == first || updatedClass == second) && first != null && second != null) {
 				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
 					return false;
@@ -311,7 +311,7 @@ public class CalendarContainerWrapper  {
 	}
 
 	
-	private void toggleInfoDialog(CalendarItem selectedCourseSection) {
+	private void toggleInfoDialog(ClassItem selectedCourseSection) {
 		infoDialog.toggleInfoDialog(selectedCourseSection);
 		infoDialog.show();
 	}
@@ -339,7 +339,7 @@ public class CalendarContainerWrapper  {
 		}
 	}
 
-	private void setButtonInsets(CalendarItem courseSection) {
+	private void setButtonInsets(ClassItem courseSection) {
 			MeetingInfo sectionMeetingInfo = courseSection.getCurrentSectionMeetingInfo();
 			double[] verticalInsets = GUIUtilities.getVerticalInsetPercentages(sectionMeetingInfo); 
 			String daysOfTheWeek = sectionMeetingInfo.getMeetingDays();
@@ -397,7 +397,7 @@ public class CalendarContainerWrapper  {
 	 * @throws IOException 
 	 */
 	public void nextSections() throws IOException {
-		for(CalendarItem courseSection : classList) {
+		for(ClassItem courseSection : classList) {
 			if(!courseSection.isLocked()) {
 				setButtonInsets(courseSection.nextSection());
 			}
@@ -413,14 +413,14 @@ public class CalendarContainerWrapper  {
 
 	public void handleCollisions() throws IOException {
 		boolean conflictDetected = false;
-		LinkedList<CalendarItem[]> conflictingSections = new LinkedList<>();
-		CalendarItem[] firstConflict = null;
+		LinkedList<ClassItem[]> conflictingSections = new LinkedList<>();
+		ClassItem[] firstConflict = null;
 		for(int i = 0 ; i < classList.size() - 1; i++) {
 			for(int j = i + 1; j < classList.size(); j++) {
-				CalendarItem first = classList.get(i);
-				CalendarItem second = classList.get(j);
+				ClassItem first = classList.get(i);
+				ClassItem second = classList.get(j);
 				if(isColliding(first.getCurrentSectionMeetingInfo(), second.getCurrentSectionMeetingInfo())) {
-					CalendarItem[] pair = new CalendarItem[] {first, second};
+					ClassItem[] pair = new ClassItem[] {first, second};
 					conflictingSections.add(pair);
 					if(firstConflict == null) {
 						firstConflict = pair;

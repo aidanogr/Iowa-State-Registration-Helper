@@ -2,7 +2,6 @@ package com.ogradytech.registration;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -16,11 +15,10 @@ import com.codename1.util.regex.StringReader;
 import com.ogradytech.registration.Utilities.MeetingInfo;
 import com.ogradytech.registration.Utilities.NetworkUtilities;
 import com.ogradytech.registration.Utilities.ParsingUtilities;
-import com.ogradytech.registration.Utilities.TestingUtilities;
 import com.ogradytech.registration.Utilities.FunctionQueue;
 import com.ogradytech.registration.exceptions.FormSubmissionException;
 import com.ogradytech.registration.exceptions.FormSubmissionException.ExceptionType;
-import com.ogradytech.registration.gui.CalendarItem;
+import com.ogradytech.registration.gui.ClassItem;
 import com.ogradytech.registration.gui.InstructionalDialog;
 import com.ogradytech.registration.gui.*;
 
@@ -42,7 +40,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 	public static int networkRequestCounter = 0;	//this is a debugging / DDOS prevention counter, although it it should be the same as networkRequestCompletionCounter
 	public static final int maxNumberOfClasses = 10; 
 	public static Form inputForm;
-	public static ArrayList<CalendarItem> calendarCourseInformation = new ArrayList<>(10);
+	public static ArrayList<ClassItem> calendarCourseInformation = new ArrayList<>(10);
 	public static int networkRequestCompletionCounter = 0;	//this is to poll for API request completion (so program knows we can move on to generating schedule)
 	public static int totalNumberOfValidClasses = 0;
 	public static boolean academicPeriodsFetchCompleted = false;
@@ -52,7 +50,10 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     @Override
     public void runApp() {
     	showPreface();
-    	awaitFormSubmission();	 
+    	awaitFormSubmission(); 
+    	//Control flow given to:
+    	//formSubmitted() => requestCourseInfo() => parseAndStoreCourseAPIResponse()
+    	//										 => createCalendarView() *After last stored API response*
    }
     
 
@@ -69,7 +70,8 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     }
 
     /**
-     * handles form GUI and waits until submit button is pressed
+     * handles form GUI and waits until submit button is pressed.
+     * A successful form submission transfers control flow to {@link #formSubmitted(TextField[], int)}
      */
     public static void awaitFormSubmission() {
     	inputForm = new Form("Class Input", BoxLayout.y());
@@ -275,6 +277,62 @@ public class IowaStateRegistrationHelper extends Lifecycle {
     }
 
 
+
+
+
+
+	/**
+     * Stores parsed JSON in global  "calendarCourseInformation" list (see top of file)
+     * @param courseAPIResponseBody JSON of the request body, specifically for api.classes.iastate.edu/api/courses/search
+	 * @throws IOException 
+     */
+	@SuppressWarnings("unchecked")
+	private static void parseAndStoreCourseAPIResponse(String courseAPIResponseBody) throws IOException {
+		JSONParser courseAPIResponseParser = new JSONParser();
+		StringReader reader = new StringReader(courseAPIResponseBody);
+		Map<String, Object> parsedResponse = courseAPIResponseParser.parseJSON(reader);
+		
+		//response is in a "data" array with one object (the course found)
+		//i dont think multiple courses can be returned but if so just use the first one
+		List<Map<String, Object>> temp = ((List<Map<String, Object>>)parsedResponse.get("data"));
+		if(temp.size() <= 0) return;
+		Map<String, Object> courseFound =  temp.get(0);
+
+		ClassItem courseCalendarItem = new ClassItem((String) courseFound.get("courseId")); 
+
+		java.util.List<Map<String,Object>> sections = (List<Map<String, Object>>) courseFound.get("sections");
+		if(sections.size() < 1) { System.err.println("Assertion failed; sections size < 1"); return; } //TODO throw exception here? eh its probably fine
+
+		//we need to check if there are multiple instruction formats under the same class (i.e COMS 2270 has lecture and discussion)
+		String meetingType = (String) sections.get(0).get("instructionalFormat"); 
+		courseCalendarItem.setInstructionFormat(meetingType);
+		
+		for(int i = 0; i < sections.size(); i++) {
+			Map<String,Object> section = sections.get(i);
+			if(!meetingType.equals((String) section.get("instructionalFormat"))) {
+				String base = courseCalendarItem.getCourseName(); //TODO im not sure if these should be different names or not
+				if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
+				calendarCourseInformation.add(courseCalendarItem);
+				courseCalendarItem = new ClassItem(base);
+				meetingType = (String) section.get("instructionalFormat");
+				courseCalendarItem.setInstructionFormat(meetingType);
+				//System.err.println("Created new course block for different format");
+			}
+			String meetingPatterns = (String) section.get("meetingPatterns");
+			if(meetingPatterns == null) {
+				arrangedSections.add(courseCalendarItem.getCourseName() + " section " + (String) section.get("number") + " " + meetingType);
+			} else {
+			courseCalendarItem.addMeetingInfo(
+					(String) section.get("number"),new MeetingInfo(meetingPatterns)
+			); }
+
+		}
+
+		if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
+		calendarCourseInformation.add(courseCalendarItem);
+			
+	}
+
     /**
      * CalendarContainer handler
      * @throws IOException
@@ -304,63 +362,7 @@ public class IowaStateRegistrationHelper extends Lifecycle {
 		calendarView.show();
 	}
 
-
-
-
-	/**
-     * Stores parsed JSON in global  "calendarCourseInformation" list (see top of file)
-     * @param courseAPIResponseBody JSON of the request body, specifically for api.classes.iastate.edu/api/courses/search
-	 * @throws IOException 
-     */
-	@SuppressWarnings("unchecked")
-	private static void parseAndStoreCourseAPIResponse(String courseAPIResponseBody) throws IOException {
-		JSONParser courseAPIResponseParser = new JSONParser();
-		StringReader reader = new StringReader(courseAPIResponseBody);
-		Map<String, Object> parsedResponse = courseAPIResponseParser.parseJSON(reader);
-		
-		//response is in a "data" array with one object (the course found)
-		//i dont think multiple courses can be returned but if so just use the first one
-		List<Map<String, Object>> temp = ((List<Map<String, Object>>)parsedResponse.get("data"));
-		if(temp.size() <= 0) return;
-		Map<String, Object> courseFound =  temp.get(0);
-
-		CalendarItem courseCalendarItem = new CalendarItem((String) courseFound.get("courseId")); 
-
-		java.util.List<Map<String,Object>> sections = (List<Map<String, Object>>) courseFound.get("sections");
-		if(sections.size() < 1) { System.err.println("Assertion failed; sections size < 1"); return; } //TODO throw exception here? eh its probably fine
-
-		//we need to check if there are multiple instruction formats under the same class (i.e COMS 2270 has lecture and discussion)
-		String meetingType = (String) sections.get(0).get("instructionalFormat"); 
-		courseCalendarItem.setInstructionFormat(meetingType);
-		
-		for(int i = 0; i < sections.size(); i++) {
-			Map<String,Object> section = sections.get(i);
-			if(!meetingType.equals((String) section.get("instructionalFormat"))) {
-				String base = courseCalendarItem.getCourseName(); //TODO im not sure if these should be different names or not
-				if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
-				calendarCourseInformation.add(courseCalendarItem);
-				courseCalendarItem.debugPrint();
-				courseCalendarItem = new CalendarItem(base);
-				meetingType = (String) section.get("instructionalFormat");
-				courseCalendarItem.setInstructionFormat(meetingType);
-				System.err.println("Created new course block for different format");
-			}
-			String meetingPatterns = (String) section.get("meetingPatterns");
-			if(meetingPatterns == null) {
-				arrangedSections.add(courseCalendarItem.getCourseName() + " section " + (String) section.get("number") + " " + meetingType);
-			} else {
-			courseCalendarItem.addMeetingInfo(
-					(String) section.get("number"),new MeetingInfo(meetingPatterns)
-			); }
-
-		}
-
-		if(!courseCalendarItem.getSectionMeetingInfo().isEmpty())
-		calendarCourseInformation.add(courseCalendarItem);
-			
-	}
-
-
+    
 	public static void handleFormSubmissionException(FormSubmissionException e) {
 
     	InstructionalDialog d = new InstructionalDialog("DialogTitle", "DialogBody");

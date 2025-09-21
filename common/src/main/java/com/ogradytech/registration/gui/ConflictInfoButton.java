@@ -9,9 +9,9 @@ import com.codename1.ui.Image;
 
 public class ConflictInfoButton extends Button {
 
-	private LinkedList<CalendarItem[]> conflictingSections;
+	private LinkedList<ClassItem[]> conflictingSections;
 
-	public ConflictInfoButton(LinkedList<CalendarItem[]> conflictingSections) throws IOException {
+	public ConflictInfoButton(LinkedList<ClassItem[]> conflictingSections) throws IOException {
 		this.setText("Conflicts | ");
 		this.setUIID("InfoButton");
 		this.addActionListener(evt ->{
@@ -19,7 +19,7 @@ public class ConflictInfoButton extends Button {
 			d.title.setText("Conflicting Course Sections: ");			
 			StringBuilder b = new StringBuilder();
 			if(this.conflictingSections != null && !this.conflictingSections.isEmpty()) {
-				for(CalendarItem[] pair : this.conflictingSections) {
+				for(ClassItem[] pair : this.conflictingSections) {
 					b.append(pair[0].getCourseName() + " section " + pair[0].getCurrentSection() + "\n");
 					b.append(pair[1].getCourseName() + " section " + pair[1].getCurrentSection() + "\n\n");
 				}
@@ -41,7 +41,7 @@ public class ConflictInfoButton extends Button {
 		});
 	}
 	
-	public void updateConflictingSections(LinkedList<CalendarItem[]> sectionPairs) {
+	public void updateConflictingSections(LinkedList<ClassItem[]> sectionPairs) {
 		this.conflictingSections = sectionPairs;
 	}
 	

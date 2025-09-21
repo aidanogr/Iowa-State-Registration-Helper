@@ -5,7 +5,7 @@ import com.codename1.ui.Container;
 import com.codename1.ui.Image;
 
 public class DropdownContainer extends Container{
-	protected CalendarItem selectedCourseSection;
+	protected ClassItem selectedCourseSection;
 	protected Image lockButtonIcon;	//these are stored because the icon is constantly changing 
 	protected Image unlockedButtonIcon;
 	protected Button lockButtonReference;
